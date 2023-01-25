@@ -6,6 +6,7 @@
   * [User Persona](product/user-persona.md)
   * [Functional Specifications](product/functional-specifications.md)
   * [Product Roadmap](product/product-roadmap.md)
+  * [Complaints Management v1](product/complaints-management-v1.md)
 * [Platform](platform/README.md)
   * [High Level Design](platform/high-level-design/README.md)
     * [Health Campaign System High Level Design](platform/high-level-design/health-campaign-system-high-level-design.md)
