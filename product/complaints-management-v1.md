@@ -92,6 +92,59 @@ Helpdesk View: (Web app and mobile responsive app)&#x20;
 2. Helpdesk user must be able to filter, sort, and search complaints.
 3. The helpdesk user must review all complaints received in the helpdesk’s inbox and perform one of the following actions:
 
+* Resolve: For complaints that can be resolved by the L1 support helpdesk, the helpdesk user must be able to view the details mentioned in the complaints, mark them as “Resolved” and add resolution details.
+* Reject: If the helpdesk user determines a complaint to be false, irrelevant, or invalid, the user must be able to mark the complaint as “Rejected” and give proper justification for rejecting the complaint.
+* Assign: For complaints that cannot be resolved by the L1 support helpdesk, the helpdesk user must be able to select the appropriate role and assign the complaint. Once the helpdesk user assigns a complaint, the status must be shown as “Assigned."
+
+&#x20;     a. Workflow to be set up during implementation.&#x20;
+
+&#x20;     b. The core product would offer the following workflow: Create→ Submitted to L1 Helpdesk→ Assign to L2 support.
+
+&#x20;     c. The workflow must be configurable to support additions of more workflow states: (For eg. Assign to: Program Managers, Supervisors, etc).
+
+&#x20;4\. Help desk users must be able to create new complaints. The new complaint created must be visible in the helpdesk user’s inbox to take action on (Use case: Helpdesk user receives a complaint over call and creates a complaint in the system for tracking on the user’s behalf).
+
+&#x20; 5\. Report Generation: (Good to have for v1 since already covered in the dashboard)
+
+&#x20;    a. Helpdesk performance report: Report generated on the following parameters:
+
+&#x20;        1\. Time range
+
+&#x20;        2\. Status of complaints
+
+&#x20;        3\. User name
+
+## Risk/ Limitations:&#x20;
+
+Addressed in the Out of Scope section.
+
+## Out of scope:
+
+* Re-opening of complaints
+* Auto-escalation of complaints
+* Auto-routing of complaints
+* Sharing feedback on complaint resolution
+* Notification to users on status change
+* SLA tracking
+
+## Specifications
+
+| Field                        | Data Type       | Data Validation                                                       | Required (Y/N) | Comment                                                                                                                                                  |
+| ---------------------------- | --------------- | --------------------------------------------------------------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Complaint type               | Dropdown        | Only one complaint type must be selected.                             | Y              | <p>Values to be configured. </p><p>If type is “Other”: Display text box to enter type.</p><p><br></p>                                                    |
+| Date of complaint            | Date            | System fetches the current date.                                      | Y              | Must be non-editable (no action required by user).                                                                                                       |
+| Administrative area          | String dropdown |                                                                       | Y              | For mobile view: Admin area must be populated based on value set in the location picker For Web view: Select from list of assigned projects/ boundaries. |
+| Complaint raised for         | Boolean         |                                                                       | Y              | Options available: Self and other.                                                                                                                       |
+| Complainant’s name           | String          | If “self”: Name must be populated as entered in the user’s profile.   | Y              | If “Name” is blank in the user’s profile, the text field must be empty.                                                                                  |
+| Complainant’s contact number | Numeric         | If “self”: Number must be populated as entered in the user’s profile. | Y              | If “Number” is blank in the user’s profile, the text field must be empty.                                                                                |
+| Supervisor’s name            | String          |                                                                       | N              |                                                                                                                                                          |
+| Supervisor’s contact number  | Numeric         |                                                                       | N              |                                                                                                                                                          |
+| Complaint description        | String          | Max limit of description: TBD                                         | Y              |                                                                                                                                                          |
+| Upload photo                 | Media           | Max size of media: TBD                                                | N              |                                                                                                                                                          |
+| Complaint number             | String          |                                                                       | Y              | Unique ID generated by the system.                                                                                                                       |
+| Reason for rejection         | Dropdown        |                                                                       | Y              | Must be configurable during impel.                                                                                                                       |
+| Assign to                    | Dropdown        | Mandatory if action taken to assign.                                  | C(Y)           | Must be configurable during impel depending on the workflow. Default value: Assign to L2.                                                                |
+
 
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
