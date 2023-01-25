@@ -16,6 +16,10 @@ Out of scope
 
 Specifications
 
+Design
+
+Metrics to track
+
 ## Background
 
 This document describes the need and scope of a digital platform for health campaigns, explaining the product’s features, specifications, purpose, and functionality. It also provides a descriptive view of the application along with the specification of each element.

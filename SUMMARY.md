@@ -19,3 +19,4 @@
     * [Services](platform/low-level-design/services/README.md)
       * [Project](platform/low-level-design/services/project.md)
       * [Stock](platform/low-level-design/services/stock.md)
+  * [Field App Architecture](platform/field-app-architecture.md)
