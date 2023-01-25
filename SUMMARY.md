@@ -10,6 +10,7 @@
 * [Platform](platform/README.md)
   * [High Level Design](platform/high-level-design/README.md)
     * [Health Campaign System High Level Design](platform/high-level-design/health-campaign-system-high-level-design.md)
+    * [Design Decision Log](platform/high-level-design/design-decision-log.md)
   * [Low Level Design](platform/low-level-design/README.md)
     * [Registries](platform/low-level-design/registries/README.md)
       * [Individual](platform/low-level-design/registries/individual.md)
