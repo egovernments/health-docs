@@ -37,7 +37,7 @@ Since the app is expected to work while users are offline, there is the need to 
 
 These functionalities are collectively called sync. The retrieval of configuration and data is referred to as sync down while the sending of data collected using the app is called sync up. Login and sync can only be done while the user is online.
 
-When a user logs in, a sync down is performed to fetch the required configuration and data for the field app to run. After collecting data using the app, the user can perform a sync which will perform a sync up (to send all data collected) followed by a sync down (to retrieve any fresh configuration).
+When a user logs in, a sync down is performed to fetch the required configuration and data for the field app to run. After collecting data using the app, the user can perform a sync which will perform a sync up (to send all data collected) followed by a sync down (to retrieve any fresh configuration). Syncing of data down is not required for the initial implementation and can be turned off.
 
 **Configurability**
 
