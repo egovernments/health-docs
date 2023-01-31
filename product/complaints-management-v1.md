@@ -284,7 +284,7 @@ Assign Complaint
 
 If the user wants to assign any project to P2, she must click on the assign button which opens this screen. The date of assigning the complaint is user input which can be filled in with the help of the calendar icon within the field.&#x20;
 
-In the assigned to field, the user needs to select the person to whom she wants to assign that complaint. There is an additional comments field in which the user can provide any remarks if she wants. The user can attach any supporting documents such as photos, documents, etc.&#x20;
+In the "assigned to" field, the user needs to select the person to whom she wants to assign that complaint. There is an additional comments field in which the user can provide any remarks if she wants. The user can attach any supporting documents such as photos, documents, etc.&#x20;
 
 At the bottom, there is a cancel button which takes the user back to the complaint summary screen, and an assign button which assigns the complaint to the selected person.
 
@@ -292,7 +292,7 @@ At the bottom, there is a cancel button which takes the user back to the complai
 
 Confirmation Screen
 
-If the complaint has been assigned successfully, then the first screen must appear. If the complaint could not be assigned, then the second screen must appear. There is a back to complaints button on both screens which navigates the user to the complaints screen.
+If the complaint has been assigned successfully, then the first screen must appear. If the complaint could not be assigned, then the second screen must appear. There is a "Back to Complaints" button on both screens which navigates the user to the complaints screen.
 
 ![](https://lh6.googleusercontent.com/Lixo5ZC-BgUxcUBk9sQ-e4IYULbCdEgfiIed6OsQsPmvzthBueWe9Vx5FV1mDXU74hVmC5vWVg6tGxzSb0xtq7upT6UX4gIttpboc2aGVXWK28BYuxfpkmMWy-FwraQkuPSr-F\_Yp8pHzWu-YWfdyvwgRO6tBM6Gl4UFHG4Pomg98UTaadoJzJIjPlQbIQ)
 
@@ -319,7 +319,7 @@ Complaint Details
 
 When the user clicks on a complaint, the details screen appears which provides the entire information of that complaint. The summary includes the same information mentioned in the card along with the additional comments/remarks, and photos provided by the complainant.
 
-There is a take action button at the bottom. When the user clicks on it, the actions appear above the button as displayed on the screen. The actions include resolve complaint, assign to P2, and reject complaint. If the user clicks on any blank area on the screen, the actions collapse.
+There is a "Take Action" button at the bottom. When the user clicks on it, the actions appear above the button as displayed on the screen. The actions include resolve complaint, assign to P2, and reject complaint. If the user clicks on any blank area on the screen, the actions collapse.
 
 ![](https://lh6.googleusercontent.com/mjN6ctLMI3EepxMKVpcGAnaz3ukkBA994Y1GFDRaxynpgZW6UrJwTD5ncdaNeMx9E49KiQPdkdpC2IwM8uTUKu09E4nJJEa0UkCaYUOwwovXAwH4bcXwgP03LzMfRrRJm0riRgwAJkMYxPsplKklExtOIDdB7p1HcF4JR2OhC8\_Y\_M542PY1zap\_QLrQIw)
 
@@ -328,7 +328,7 @@ There is a take action button at the bottom. When the user clicks on it, the act
 
 Resolve Complaint
 
-If the complaint has been resolved, then the user must click on the resolve complaint button which opens this screen. There is an additional comments field in which the user can provide any remarks if he wants. At the bottom, there is a submit button that updates the complaint status as resolved.
+If the complaint has been resolved, then the user must click on the "Resolve Complaint" button which opens this screen. There is an "Additional Comments" field in which the user can provide any remarks if he wants. At the bottom, there is a submit button that updates the complaint status as resolved.
 
 ![](https://lh3.googleusercontent.com/63lOU1UE5ygWt5cVqnyzWwsa6NjrbWe3Hbd3O0a2bfvzCiQXqvrqQreE4dkJ1h6F8Bx2l57RRuMdc8tgbPPmwrjObiF9bcXIJ0qZ0eYAJ8NwwqoDoHUxwTwBZbD6ebWdk5vO5azrQRW3XxwIqpv\_8KBNUDlZ9-uz6t9W4ayJ\_7TGcSnQ2NFZGJwwBTDwuw)
 
