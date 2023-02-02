@@ -145,7 +145,7 @@ b. Fill assigned checklists.
 
 &#x20;      i. Filter based on role.
 
-## Risk/Limitations&#x20;
+## Risk/Limitations:&#x20;
 
 Addressed in the out of scope section.
 
