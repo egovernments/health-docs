@@ -110,6 +110,18 @@ A campaign can be any collection where:
 
 &#x20;     b. Or can be set up only at the village level: where village A, village B are two separate campaigns (can be of the same campaign type or different).
 
+### User Accounts
+
+There are two types of user accounts that need to be created during a health campaign:
+
+1. Mobile app users’ accounts: Frontline workers (mostly contractual) who will log in on the phones and submit data into their assigned project. These users must also be able to view mobile reports to track their progress or the progress of their teams.
+2. Web app user accounts: Supervisors, system administrators, helpdesk users (most likely permanent employees of the health system, but some can also be contractual), who are mostly responsible for viewing online dashboards and reports to monitor campaign progress and view data submitted by the frontline workers (mobile app users).
+
+&#x20;      a. However, some supervisors may also be responsible for data collection and may act as both data collection agents as well as data reviewers.
+
+3. The system administration must be able to create all user roles and assign actions to each role as mentioned in the role-action mapping section.
+4. The system administrator must have the ability to provide user management permissions to other roles as required (example, supervisors, managers).
+
 \
 
 
