@@ -79,6 +79,37 @@ Assumptions and Validations
 
 &#x20;      c. Assign/update/delete campaign assignments.
 
+## Process Flow
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-07 at 11.22.49 AM.png" alt=""><figcaption></figcaption></figure>
+
+## Solution
+
+High-level scope:
+
+* Along with APIs, provide a UI to empower district managers/supervisors to own and manage user account creations/updates for their respective campaigns.&#x20;
+* Both bulk user management (template-based upload) and individual user management functionalities would be required on the UI.
+
+&#x20;     \- Bulk user creation will be done at the beginning of the campaign.
+
+&#x20;     \- Individual user create/updates/deletes will most likely be done before and during the campaign.
+
+&#x20;     \- Bulk user deactivation will be done after the campaign.
+
+* The program would need the flexibility to move actors from one campaign to another for operational reasons. Hence, to change campaign assignments, a UI component would be required so that user management can be decentralised.
+
+Note: A project (aka campaign) is defined as follows in the HCM system:
+
+A campaign can be any collection where:
+
+* Either service delivery takes place (that is, the lowest level in the administrative hierarchy),&#x20;
+* Or any boundary, which is a parent of the boundaries where the service delivery takes place but needs to report on metrics by aggregating metrics from all the child boundaries.
+* Example:
+
+&#x20;     a. Either the campaigns can be setup as a parent-child relationship (tree structure), that is, National (only reporting)-Province(s) (only reporting)-District(s)-only reporting–villages (service delivery and reporting). (Must be of the same campaign type);
+
+&#x20;     b. Or can be set up only at the village level: where village A, village B are two separate campaigns (can be of the same campaign type or different).
+
 \
 
 

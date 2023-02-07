@@ -123,6 +123,11 @@ The Health Campaign system does not make heavy use of workflows. Most flows in v
 ![](https://lh6.googleusercontent.com/Gnv9XNSQA1UoCQ59jh2CaPAulwd6q0eXClhR3YsLr211Tn4mYJ1PvoUlNi\_d86GgWGj9SNcRgBqM-aU5UzCfcSXaGD289IxKR3oZtKq2gpx-dThnOos3r\_ngIof9cHXYPO51IWxUpRgZ-R3M62Of3gDrT\_0gph0XxPfqLANCE\_k\_y7dpfVj7B1HJ7Zd1JA)
 
 \
+**ER Diagram**
+--------------
+
+****![](https://lh4.googleusercontent.com/Ac3FtywEjTuUL35VLbvbOAIrdq1J7PfwOj4-QWvjMs78kdPdTMk791UqHUahQIyR3dZH40YPlMAKvIptBW835ACKWPFfJ4iFQX8DVj\_k6R72MyzlHWF7PNpmTC8PVLbPKRtiLp4OhhMBeeknsGZesjtbFAfM8Ueb2AHR1smw6dpoa1T37UZjOeIeBpc-Tw)
+
 \
 
 
