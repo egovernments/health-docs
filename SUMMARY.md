@@ -6,6 +6,7 @@
   * [User Persona](product/user-persona.md)
   * [Functional Specifications](product/functional-specifications.md)
   * [Product Roadmap](product/product-roadmap.md)
+  * [User Management v1](product/user-management-v1.md)
   * [Complaints Management v1](product/complaints-management-v1.md)
   * [Supervision Flow v1](product/supervision-flow-v1.md)
 * [Platform](platform/README.md)
