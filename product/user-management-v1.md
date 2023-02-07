@@ -121,6 +121,17 @@ There are two types of user accounts that need to be created during a health cam
 
 3. The system administration must be able to create all user roles and assign actions to each role as mentioned in the role-action mapping section.
 4. The system administrator must have the ability to provide user management permissions to other roles as required (example, supervisors, managers).
+5. Any user, who has the permission to manage/create users in the system, must also be able to perform the following actions:
+
+&#x20;      a. Create users (except system admin).
+
+&#x20;      b. Search for existing users - Search parameters: Name, username, etc.&#x20;
+
+&#x20;      c. Edit user details.
+
+&#x20;      d. Deactivate users.
+
+&#x20;      e. Edit campaign assignment.
 
 \
 
