@@ -79,6 +79,16 @@
 | Storage capacity       | Physical storage capacity of the facility in cubic metres.                                | Optional  | User   | Numeric   |                |                |            |                                                                                                    | Yes                          |
 | Address                |                                                                                           | Mandatory | User   | String    |                |                |            |                                                                                                    |                              |
 
+## Boundary Hierarchy&#x20;
+
+| Name of the field | Description | Mandatory | Input | Data type | Minimum length | Maximum length |   |
+| ----------------- | ----------- | --------- | ----- | --------- | -------------- | -------------- | - |
+|                   |             |           |       |           |                |                |   |
+|                   |             |           |       |           |                |                |   |
+|                   |             |           |       |           |                |                |   |
+
+
+
 ## Service Delivery
 
 | Field name               | Description                                                            | Mandatory | Input   | Data type | Validation                                     | Comments                                                                                                                                           |
