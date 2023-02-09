@@ -81,12 +81,12 @@
 
 ## Boundary Hierarchy&#x20;
 
-| Name of the field       | Description                                                                          | Mandatory | Input | Data type | Minimum length | Maximum length |   |
-| ----------------------- | ------------------------------------------------------------------------------------ | --------- | ----- | --------- | -------------- | -------------- | - |
-| Sr. number              | Sequence number for the list.                                                        |           |       |           |                |                |   |
-| Boundary hierarchy type | The meaningful name to define a group of boundaries defined to perform one function. | Mandatory | MDMS  | String    |                |                |   |
-| Code                    | Code is used to identify a certain classification of the type of boundary hierarchy. | Mandatory | MDMS  | String    |                |                |   |
-| Description             |                                                                                      | Mandatory | MDMS  | String    |                |                |   |
+| Name of the field       | Description                                                                          | Mandatory | Input | Data type | Minimum length | Maximum length | Need data from program/state |
+| ----------------------- | ------------------------------------------------------------------------------------ | --------- | ----- | --------- | -------------- | -------------- | ---------------------------- |
+| Sr. number              | Sequence number for the list.                                                        |           |       |           |                |                |                              |
+| Boundary hierarchy type | The meaningful name to define a group of boundaries defined to perform one function. | Mandatory | MDMS  | String    | 2              | 256            | Yes                          |
+| Code                    | Code is used to identify a certain classification of the type of boundary hierarchy. | Mandatory | MDMS  | String    | 2              | 64             | Yes                          |
+| Description             |                                                                                      | Mandatory | MDMS  | String    | 2              | 256            | Yes                          |
 
 
 
