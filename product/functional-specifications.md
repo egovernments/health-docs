@@ -90,11 +90,15 @@
 
 ## Beneficiary
 
-| Name of the field | Description | Mandatory | Input | Data type | Minimum length | Maximum length  | Validation | Comments | Need input from program/state |
-| ----------------- | ----------- | --------- | ----- | --------- | -------------- | --------------- | ---------- | -------- | ----------------------------- |
-|                   |             |           |       |           |                |                 |            |          |                               |
-|                   |             |           |       |           |                |                 |            |          |                               |
-|                   |             |           |       |           |                |                 |            |          |                               |
+| Name of the field   | Description                                 | Mandatory | Input            | Data type | Minimum length | Maximum length  | Validation | Comments                                                                                    | Need input from program/state |
+| ------------------- | ------------------------------------------- | --------- | ---------------- | --------- | -------------- | --------------- | ---------- | ------------------------------------------------------------------------------------------- | ----------------------------- |
+| ID                  | Unique system generated GUID.               | Mandatory | System           | String    | 2              | 64              |            |                                                                                             | No                            |
+| Client Reference ID | Unique client generated GUID.               | Mandatory | Client generated | String    | 2              | 64              |            |                                                                                             | No                            |
+| Household ID        | ID of the household.                        | Mandatory | User/system      | String    | 2              | 64              |            |                                                                                             | No                            |
+| Member count        | Total number of individuals in a household. | Mandatory | User             | Numueric  | 1              | 1000            |            | A household can be created only when it has atleast 1 individual assigned to the household. |                               |
+| Individual ID       | ID of the individual                        | Mandatory | User/system      | String    | 2              | 64              |            |                                                                                             |                               |
+|                     |                                             |           |                  |           |                |                 |            |                                                                                             |                               |
+|                     |                                             |           |                  |           |                |                 |            |                                                                                             |                               |
 
 ## Service Delivery
 
