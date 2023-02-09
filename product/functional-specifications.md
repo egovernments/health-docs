@@ -130,11 +130,26 @@
 
 ## Draft System User Setup
 
-| Name of the field | Description | Mandatory | Input | Data type | Minimum length | Maximum length | Validation |   |   |
-| ----------------- | ----------- | --------- | ----- | --------- | -------------- | -------------- | ---------- | - | - |
-|                   |             |           |       |           |                |                |            |   |   |
-|                   |             |           |       |           |                |                |            |   |   |
-|                   |             |           |       |           |                |                |            |   |   |
+| Name of the field        | Description | Mandatory | Input | Data type | Minimum length | Maximum length | Validation |   |   |
+| ------------------------ | ----------- | --------- | ----- | --------- | -------------- | -------------- | ---------- | - | - |
+| Name\*                   |             |           |       |           |                |                |            |   |   |
+| Mobile No.\*             |             |           |       |           |                |                |            |   |   |
+| Father/Husband's Name\*  |             |           |       |           |                |                |            |   |   |
+| Gender\*                 |             |           |       |           |                |                |            |   |   |
+| Date of Birth\*          |             |           |       |           |                |                |            |   |   |
+| Email                    |             |           |       |           |                |                |            |   |   |
+| Correspondence Address\* |             |           |       |           |                |                |            |   |   |
+| ULB\*                    |             |           |       |           |                |                |            |   |   |
+| Role\*                   |             |           |       |           |                |                |            |   |   |
+| Employment Type\*        |             |           |       |           |                |                |            |   |   |
+| Current assignment       |             |           |       |           |                |                |            |   |   |
+| Status\*                 |             |           |       |           |                |                |            |   |   |
+| Hierarchy \*             |             |           |       |           |                |                |            |   |   |
+|                          |             |           |       |           |                |                |            |   |   |
+|                          |             |           |       |           |                |                |            |   |   |
+|                          |             |           |       |           |                |                |            |   |   |
+|                          |             |           |       |           |                |                |            |   |   |
+|                          |             |           |       |           |                |                |            |   |   |
 
 
 
