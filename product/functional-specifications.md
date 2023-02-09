@@ -88,7 +88,13 @@
 | Code                    | Code is used to identify a certain classification of the type of boundary hierarchy. | Mandatory | MDMS  | String    | 2              | 64             | Yes                          |
 | Description             |                                                                                      | Mandatory | MDMS  | String    | 2              | 256            | Yes                          |
 
+## Beneficiary
 
+| Name of the field | Description | Mandatory | Input | Data type | Minimum length | Maximum length  | Validation | Comments | Need input from program/state |
+| ----------------- | ----------- | --------- | ----- | --------- | -------------- | --------------- | ---------- | -------- | ----------------------------- |
+|                   |             |           |       |           |                |                 |            |          |                               |
+|                   |             |           |       |           |                |                 |            |          |                               |
+|                   |             |           |       |           |                |                 |            |          |                               |
 
 ## Service Delivery
 
