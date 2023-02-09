@@ -55,48 +55,44 @@
 | Delivery comment                                      | Capture comments regarding the delivery of campaign resources.                                           | Mandatory | User    |            | Final list of reasons t.o be given by the state/program during impel       | Yes                          |
 | Status                                                | Status of the task. For example, delivered, not delivered, partial delivery, refused, insufficient, etc. | Mandatory | User    |            | Final list of tasks' status to be given by the state/program during impel. | Yes                          |
 
-## Inventory Flow
+## Inventory&#x20;
 
-| Name of the field                                | Description                                   | Mandatory | Input  | Data type | Validation | Comments |
-| ------------------------------------------------ | --------------------------------------------- | --------- | ------ | --------- | ---------- | -------- |
-| Warehouse details and location                   |                                               |           |        |           |            |          |
-| Administrative unit                              | Administrative jurisdiction of the warehouse  | R         | User   |           | Dropdown   |          |
-| Warehouse ID                                     | Identifier for the warehouse                  | R         | User   |           | Dropdown   |          |
-| Warehouse location                               |                                               |           |        |           |            |          |
-| Latitude                                         |                                               | O         | System |           | Numeric    |          |
-| Longitude                                        |                                               | O         | System |           | Numeric    |          |
-| Accuracy                                         | Accuracy of the GPS coordinates in meters     | O         | System |           | Numeric    |          |
-| Received from                                    | Enter details of the sending entity           | R         | User   |           | String     |          |
-| Dispatched to                                    | Enter details of the receiving entity         | R         | User   |           | String     |          |
-|                                                  |                                               |           |        |           |            |          |
-| Resource details                                 |                                               |           |        |           |            |          |
-| Type of resource                                 | Bed nets                                      | R         | User   | Dropdown  |            |          |
-| Name of the resource                             | LLIN                                          | R         | User   | String    |            |          |
-| Quantity received                                | 100                                           | R         | User   | Numeric   |            |          |
-| Unit of measurement                              | Nets, vials, litres                           | R         | User   | String    |            |          |
-| Transaction type                                 | Received, dispatched                          | R         | User   | Dropdown  |            |          |
-| Reason for transaction                           | Received, returned, dispatched                | R         | User   | Dropdown  |            |          |
-| Date of transaction                              |                                               | R         | User   | Date      |            |          |
-|                                                  |                                               |           |        |           |            |          |
-| Audit details                                    |                                               |           |        |           |            |          |
-| Transaction logged by                            | Name or ID of the individual filling the form | R         | System | String    |            |          |
-| Transaction logged on                            | Timestamp when the form was filled            | R         | System | Date      |            |          |
-| Custom fields                                    |                                               |           |        |           |            |          |
-| Type of vehicle used for transport               |                                               | O         | User   | String    |            |          |
-| Vehicle registration number                      |                                               | O         | User   | String    |            |          |
-|                                                  |                                               |           |        |           |            |          |
-| Resource reconciliation                          |                                               |           |        |           |            |          |
-| Reconciliation                                   |                                               |           |        |           |            |          |
-| Warehouse ID                                     |                                               | R         | System | String    |            |          |
-| Date of reconciliation                           |                                               | R         | System | Date      |            |          |
-| Resources reconciled                             |                                               |           |        |           |            |          |
-| Resource ID                                      |                                               | R         | System | String    |            |          |
-| Resource type                                    |                                               | R         | User   | Dropdown  |            |          |
-| Resource name                                    |                                               | R         | User   | String    |            |          |
-| Calculated count                                 |                                               | R         | System | Numeric   |            |          |
-| Physical count                                   |                                               | R         | User   | Numeric   |            |          |
-| Difference between calculated and physical count |                                               | R         | System | Numeric   |            |          |
-| Comment                                          |                                               | O         | User   | String    |            |          |
+| Name of the field                                | Description                                                                     | Mandatory | Input  | Data type | Minimum length | Maximum length | Validation | Comments | Need data from program/state |
+| ------------------------------------------------ | ------------------------------------------------------------------------------- | --------- | ------ | --------- | -------------- | -------------- | ---------- | -------- | ---------------------------- |
+| Product variant ID                               | Product variant that is being transferred.                                      | Mandatory | User   | String    | 2              | 64             |            |          | No                           |
+| Longitude                                        | Number/Quantity/Count of units of the product variant that are being transacted | Mandatory | User   | String    |                |                | Numeric    |          |                              |
+| Accuracy                                         | Accuracy of the GPS coordinates in meters                                       | Mandatory | User   | String    |                |                | Numeric    |          |                              |
+| Received from                                    | Enter details of the sending entity                                             | Mandatory | User   | String    |                |                | String     |          |                              |
+| Dispatched to                                    | Enter details of the receiving entity                                           | Mandatory | User   | String    |                |                | String     |          |                              |
+|                                                  |                                                                                 |           |        |           |                |                |            |          |                              |
+| Resource details                                 |                                                                                 |           |        |           |                |                |            |          |                              |
+| Type of resource                                 | Bed nets                                                                        | R         | User   | Dropdown  |                |                |            |          |                              |
+| Name of the resource                             | LLIN                                                                            | R         | User   | String    |                |                |            |          |                              |
+| Quantity received                                | 100                                                                             | R         | User   | Numeric   |                |                |            |          |                              |
+| Unit of measurement                              | Nets, vials, litres                                                             | R         | User   | String    |                |                |            |          |                              |
+| Transaction type                                 | Received, dispatched                                                            | R         | User   | Dropdown  |                |                |            |          |                              |
+| Reason for transaction                           | Received, returned, dispatched                                                  | R         | User   | Dropdown  |                |                |            |          |                              |
+| Date of transaction                              |                                                                                 | R         | User   | Date      |                |                |            |          |                              |
+|                                                  |                                                                                 |           |        |           |                |                |            |          |                              |
+| Audit details                                    |                                                                                 |           |        |           |                |                |            |          |                              |
+| Transaction logged by                            | Name or ID of the individual filling the form                                   | R         | System | String    |                |                |            |          |                              |
+| Transaction logged on                            | Timestamp when the form was filled                                              | R         | System | Date      |                |                |            |          |                              |
+| Custom fields                                    |                                                                                 |           |        |           |                |                |            |          |                              |
+| Type of vehicle used for transport               |                                                                                 | O         | User   | String    |                |                |            |          |                              |
+| Vehicle registration number                      |                                                                                 | O         | User   | String    |                |                |            |          |                              |
+|                                                  |                                                                                 |           |        |           |                |                |            |          |                              |
+| Resource reconciliation                          |                                                                                 |           |        |           |                |                |            |          |                              |
+| Reconciliation                                   |                                                                                 |           |        |           |                |                |            |          |                              |
+| Warehouse ID                                     |                                                                                 | R         | System | String    |                |                |            |          |                              |
+| Date of reconciliation                           |                                                                                 | R         | System | Date      |                |                |            |          |                              |
+| Resources reconciled                             |                                                                                 |           |        |           |                |                |            |          |                              |
+| Resource ID                                      |                                                                                 | R         | System | String    |                |                |            |          |                              |
+| Resource type                                    |                                                                                 | R         | User   | Dropdown  |                |                |            |          |                              |
+| Resource name                                    |                                                                                 | R         | User   | String    |                |                |            |          |                              |
+| Calculated count                                 |                                                                                 | R         | System | Numeric   |                |                |            |          |                              |
+| Physical count                                   |                                                                                 | R         | User   | Numeric   |                |                |            |          |                              |
+| Difference between calculated and physical count |                                                                                 | R         | System | Numeric   |                |                |            |          |                              |
+| Comment                                          |                                                                                 | O         | User   | String    |                |                |            |          |                              |
 
 ## Service Delivery
 
