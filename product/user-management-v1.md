@@ -110,53 +110,6 @@ A campaign can be any collection where:
 
 &#x20;     b. Or can be set up only at the village level: where village A, village B are two separate campaigns (can be of the same campaign type or different).
 
-### User Accounts
-
-There are two types of user accounts that need to be created during a health campaign:
-
-1. Mobile app users’ accounts: Frontline workers (mostly contractual) who will log in on the phones and submit data into their assigned project. These users must also be able to view mobile reports to track their progress or the progress of their teams.
-2. Web app user accounts: Supervisors, system administrators, helpdesk users (most likely permanent employees of the health system, but some can also be contractual), who are mostly responsible for viewing online dashboards and reports to monitor campaign progress and view data submitted by the frontline workers (mobile app users).
-
-&#x20;      a. However, some supervisors may also be responsible for data collection and may act as both data collection agents as well as data reviewers.
-
-3. The system administration must be able to create all user roles and assign actions to each role as mentioned in the role-action mapping section.
-4. The system administrator must have the ability to provide user management permissions to other roles as required (example, supervisors, managers).
-5. Any user, who has the permission to manage/create users in the system, must also be able to perform the following actions:
-
-&#x20;      a. Create users (except system admin).
-
-&#x20;      b. Search for existing users - Search parameters: Name, username, etc.&#x20;
-
-&#x20;      c. Edit user details.
-
-&#x20;      d. Deactivate users.
-
-&#x20;      e. Edit campaign assignment.
-
-6. The system administrator must be able to create a new user by only specifying the username (credential used to login to the system) and setting the password with an ability to add other demographic information later.
-
-&#x20;      a. The system user must be able to share the list of usernames and passwords with the program, once created.
-
-7. Once created during user creation, the username must not be changed. Users creating user accounts must NOT be able to change usernames once created. Product recommendations on choosing a username (these are only recommendations and the program can decide to create their own username format):&#x20;
-
-&#x20;      a. First name: This is for people to remember. But if there are multiple users with the same name, then use serials (user, user2) or add a second initial.&#x20;
-
-&#x20;      b. Phone number: This is a unique number and easy for most people to remember (existing DIGIT functionality).
-
-&#x20;      c. First-last name: This may be longer and more complex but more likely to be unique for each user.
-
-&#x20;      d. Administrative area name: This approach may be adopted if there is a high turnover as multiple users may use the same username. However, the system will not be able to tell which individual person has submitted the data during analysis (current approach following in LLIN campaign in Mozambique).
-
-&#x20;         i. If the program wants to track the performance of each frontline worker individually, then the product SOP recommends that each mobile app user should have their own username even if they are sharing a device. Since the system will provide reports on the performance/productivity of your mobile app users, If there are multiple mobile users sharing a username, then the performance reports will reflect the team performance and not necessarily individual performance, provided the username to individual mapping is maintained outside the system.
-
-&#x20;     e. Regarding the use of special characters: It is recommended that only commonly known special characters like period (.) be used in the username to make it easy to remember.
-
-&#x20;      f. Regarding the use of capital case: It is recommended to use either all lowercase or all uppercase characters to make it easy for the users to remember and enter the login credentials (lowercase preferred).
-
-&#x20;      g. Regarding the setting of passwords: It is highly recommended that passwords for system administrators, training applications and production applications be kept distinct to avoid confusion.
-
-&#x20;      h. It is also recommended to keep passwords simple so that mobile app users do not forget the password and hence do not face a barrier in using the app.
-
 \
 
 
