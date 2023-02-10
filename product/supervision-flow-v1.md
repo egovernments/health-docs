@@ -55,7 +55,7 @@ b. Assign checklists to projects.
 
 c. Edit/delete filled checklists.&#x20;
 
-Supervisor:&#x20;
+Supervisors:&#x20;
 
 a. View assigned checklists.
 
@@ -107,14 +107,15 @@ b. Fill assigned checklists.
 
 &#x20;      vi. The system admin must be able to view all filled-in checklists and be able to edit or delete the submitted checklists (via backend, No UI).
 
-4. Ability to assign checklists to particular projects (boundaries): Not all checklists may be required by all supervisors. For example, a provincial supervisor may be responsible for inspecting X while a district supervisor may be responsible for performing X and Y.
-
-&#x20;      a. One checklist can be mapped to multiple projects.
-
-5.  Users must be able to view and fill the checklists that are assigned to their assigned projects.
+4.  Ability to assign checklists to particular roles: Not all checklists may be required by all supervisors. For example, a provincial supervisor may be responsible for inspecting X while a district supervisor may be responsible for performing X and Y.
 
 
-6. Users must be able to view all previously submitted checklists:
+
+    a. One checklist can be mapped to multiple roles\
+    \
+    b. Users must be able to view and fill the checklists that are assigned to their assigned roles.\
+
+5. Users must be able to view all previously submitted checklists:
 
 &#x20;      a. Good to have: Inform users if the checklist submission is due.
 
