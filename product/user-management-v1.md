@@ -179,6 +179,26 @@ There are two types of user accounts that need to be created during a health cam
 | Email                  | String    | Y        | Add a common email for all users to support OTP-based authorisation-recovery email. |
 | Correspondence address | String    | Y        |                                                                                     |
 
+### Administrative Information
+
+| Field              | Data type | Required | Comments                                                                                          |
+| ------------------ | --------- | -------- | ------------------------------------------------------------------------------------------------- |
+| Role               | MDMS      | Y        | Users must have the ability to assign multiple ones.                                              |
+| Employment type    | Dropdown  | Y        | Values: Permanent, temporary, daily wage, contractual (defined during impel in MDMS).             |
+| Date of employment | Date      | N        |                                                                                                   |
+| Designation        | String    | N        |                                                                                                   |
+| Department         | Dropdown  | Y        | Users must be assigned to a department during onboarding. For example, NMCP, polio programs, etc. |
+| Status             | Boolean   | Y        | To specify if the user is active or deactivated in the system.                                    |
+
+Campaign Details
+
+| Field               | Data type | Data validation                                                    | Required | Comments                                                                                                                      |   |
+| ------------------- | --------- | ------------------------------------------------------------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------- | - |
+| Campaign name       | Dropdown  |                                                                    | Y        | Users must have the ability to assign multiple campaigns. Users can exist in the system without being assigned to a campaign. |   |
+| Administrative area | Boolean   | Must be able to select multiple ones.                              | C(Y)     | (Mandatory if a campaign is assigned). To specify if the user is currently assigned to one or many administrative areas.      |   |
+| Assigned from date  | Date      | Project start and end dates must take precedence over these dates. | N        |                                                                                                                               |   |
+| Assigned till date  | Date      | Project start and end dates must take precedence over these dates. | N        |                                                                                                                               |   |
+
 
 
 ## Risk/Limitations:&#x20;
