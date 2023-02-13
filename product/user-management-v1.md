@@ -168,16 +168,16 @@ There are two types of user accounts that need to be created during a health cam
 
 ### Demographic Information
 
-| Field                  | Data type | Required | Comments |   |
-| ---------------------- | --------- | -------- | -------- | - |
-| First name             | String    | Y        |          |   |
-| Last name              | String    | Y        |          |   |
-| Mobile number          | Numeric   | N        |          |   |
-| Father/husband's name  | String    | N        |          |   |
-| Gender                 | Dropdown  | N        |          |   |
-| Date of birth          | Date      | N        |          |   |
-| Email                  | String    | Y        |          |   |
-| Correspondence address | String    | Y        |          |   |
+| Field                  | Data type | Required | Comments                                                                            |
+| ---------------------- | --------- | -------- | ----------------------------------------------------------------------------------- |
+| First name             | String    | Y        | Must be editable.                                                                   |
+| Last name              | String    | Y        | Must be editable.                                                                   |
+| Mobile number          | Numeric   | N        | Must be editable.                                                                   |
+| Father/husband's name  | String    | N        |                                                                                     |
+| Gender                 | Dropdown  | N        | Values: Male, female, others.                                                       |
+| Date of birth          | Date      | N        |                                                                                     |
+| Email                  | String    | Y        | Add a common email for all users to support OTP-based authorisation-recovery email. |
+| Correspondence address | String    | Y        |                                                                                     |
 
 
 
