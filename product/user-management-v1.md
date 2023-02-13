@@ -192,16 +192,24 @@ There are two types of user accounts that need to be created during a health cam
 
 Campaign Details
 
-| Field               | Data type | Data validation                                                    | Required | Comments                                                                                                                      |   |
-| ------------------- | --------- | ------------------------------------------------------------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------- | - |
-| Campaign name       | Dropdown  |                                                                    | Y        | Users must have the ability to assign multiple campaigns. Users can exist in the system without being assigned to a campaign. |   |
-| Administrative area | Boolean   | Must be able to select multiple ones.                              | C(Y)     | (Mandatory if a campaign is assigned). To specify if the user is currently assigned to one or many administrative areas.      |   |
-| Assigned from date  | Date      | Project start and end dates must take precedence over these dates. | N        |                                                                                                                               |   |
-| Assigned till date  | Date      | Project start and end dates must take precedence over these dates. | N        |                                                                                                                               |   |
+| Field               | Data type | Data validation                                                    | Required | Comments                                                                                                                      |
+| ------------------- | --------- | ------------------------------------------------------------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Campaign name       | Dropdown  |                                                                    | Y        | Users must have the ability to assign multiple campaigns. Users can exist in the system without being assigned to a campaign. |
+| Administrative area | Boolean   | Must be able to select multiple ones.                              | C(Y)     | (Mandatory if a campaign is assigned). To specify if the user is currently assigned to one or many administrative areas.      |
+| Assigned from date  | Date      | Project start and end dates must take precedence over these dates. | N        |                                                                                                                               |
+| Assigned till date  | Date      | Project start and end dates must take precedence over these dates. | N        |                                                                                                                               |
 
+### User Deactivation
 
+| Field                   | Data type | Data validation                                              | Required | Comments                                               |
+| ----------------------- | --------- | ------------------------------------------------------------ | -------- | ------------------------------------------------------ |
+| Reason for deactivation | Dropdown  |                                                              | Y        | The list of reasons must be configurable during impel. |
+| Date of deactivation    | Date      | Auto populate from the system date, but it must be editable. | Y        |                                                        |
+| Order number            | String    |                                                              | N        |                                                        |
+| Upload documents        | Media     |                                                              | N        |                                                        |
+| Remarks                 | String    |                                                              | N        |                                                        |
 
-## Risk/Limitations:&#x20;
+## Risk/Limitations&#x20;
 
 Due to the existing system design, the system cannot support the following use cases:
 
@@ -213,7 +221,7 @@ Due to the existing system design, the system cannot support the following use c
 
 4. However, this is an edge case and needs to be resolved in future versions of the product. No risk is anticipated for the v1 and v1.1 rollout in Mozambique.
 
-## Out of scope:
+## Out of scope
 
 1. UI for performing bulk user management actions: CRUD (Will be supported via backend APIs).
 2. Collecting additional user details such as payment, education, skills, language, and previous work experience (to be picked up in v2 for supporting training, staffing, attendance, and payment use cases in the future).
