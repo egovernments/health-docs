@@ -166,7 +166,20 @@ There are two types of user accounts that need to be created during a health cam
 | Username | String    | Must be unique and non-editable once set. | Y        | The format for creating user names must be configurable. |
 | Password | String    |                                           | Y        |                                                          |
 
-###
+### Demographic Information
+
+| Field                  | Data type | Required | Comments |   |
+| ---------------------- | --------- | -------- | -------- | - |
+| First name             | String    | Y        |          |   |
+| Last name              | String    | Y        |          |   |
+| Mobile number          | Numeric   | N        |          |   |
+| Father/husband's name  | String    | N        |          |   |
+| Gender                 | Dropdown  | N        |          |   |
+| Date of birth          | Date      | N        |          |   |
+| Email                  | String    | Y        |          |   |
+| Correspondence address | String    | Y        |          |   |
+
+
 
 ## Risk/Limitations:&#x20;
 
