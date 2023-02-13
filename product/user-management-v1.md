@@ -157,6 +157,34 @@ There are two types of user accounts that need to be created during a health cam
 
 &#x20;      h. It is also recommended to keep passwords simple so that mobile app users do not forget the password and hence do not face a barrier in using the app.
 
+## Specifications
+
+### Login Credentials (Must have)
+
+| Field    | Data type | Data Validation                           | Required | Comments                                                 |
+| -------- | --------- | ----------------------------------------- | -------- | -------------------------------------------------------- |
+| Username | String    | Must be unique and non-editable once set. | Y        | The format for creating user names must be configurable. |
+| Password | String    |                                           | Y        |                                                          |
+
+###
+
+## Risk/Limitations:&#x20;
+
+Due to the existing system design, the system cannot support the following use cases:
+
+1. If a user has role R1 in the LLIN campaign, access to boundaries 1 and 2, and has a different role R2 in the IRS campaign with access to the same boundary (1 and 2). This is due to the HRMS limitation that a role is a common attribute assigned to the user and will remain constant across all campaign assignments.&#x20;
+2. Scope for future versions: Linking of role attributes to project assignments \<Needs further discussion>
+3. Workaround: During user creation, assign both R1 and R2 roles to the user along with IRS and LLIN campaign assignments.
+
+&#x20;      i. Cons: Users will be able to perform actions associated with both roles in both campaigns assigned.
+
+4. However, this is an edge case and needs to be resolved in future versions of the product. No risk is anticipated for the v1 and v1.1 rollout in Mozambique.
+
+## Out of scope:
+
+1. UI for performing bulk user management actions: CRUD (Will be supported via backend APIs).
+2. Collecting additional user details such as payment, education, skills, language, and previous work experience (to be picked up in v2 for supporting training, staffing, attendance, and payment use cases in the future).
+
 \
 
 
