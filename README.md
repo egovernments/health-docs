@@ -62,8 +62,8 @@ The APIs will allow data and functionality to be reused across multiple departme
 [platform](platform/)
 {% endcontent-ref %}
 
-{% content-ref url="community/product-roadmap.md" %}
-[product-roadmap.md](community/product-roadmap.md)
+{% content-ref url="product/product-roadmap.md" %}
+[product-roadmap.md](product/product-roadmap.md)
 {% endcontent-ref %}
 
 ## Contact Us
