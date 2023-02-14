@@ -226,6 +226,32 @@ Due to the existing system design, the system cannot support the following use c
 1. UI for performing bulk user management actions: CRUD (Will be supported via backend APIs).
 2. Collecting additional user details such as payment, education, skills, language, and previous work experience (to be picked up in v2 for supporting training, staffing, attendance, and payment use cases in the future).
 
+## Design
+
+Find the mock-ups below:
+
+### Landing Page:
+
+A landing page must be available to the user to access all available modules.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-14 at 9.11.37 AM.png" alt=""><figcaption></figcaption></figure>
+
+### User Management Module
+
+#### Search Page
+
+A user must be able to search for an existing employee using search parameters (name, mobile number, username).
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-14 at 9.16.46 AM.png" alt=""><figcaption></figcaption></figure>
+
+#### Create New Employee
+
+Users must be able to create new users by providing the following details. Refer to the section on specifications.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-14 at 9.20.17 AM.png" alt=""><figcaption></figcaption></figure>
+
+
+
 \
 
 
