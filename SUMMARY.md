@@ -27,3 +27,4 @@
   * [User Management v1](product/user-management-v1.md)
   * [Complaints Management v1](product/complaints-management-v1.md)
   * [Supervision Flow v1](product/supervision-flow-v1.md)
+  * [Role Action Mapping](community/products-requirement-documents-prds/role-action-mapping.md)
