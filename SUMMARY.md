@@ -22,8 +22,8 @@
 
 ## COMMUNITY
 
-* [Product Roadmap](product/product-roadmap.md)
+* [Roadmap](community/roadmap.md)
 * [Products Requirement Documents (PRDs)](community/products-requirement-documents-prds/README.md)
-  * [User Management v1](community/products-requirement-documents-prds/user-management-v1.md)
-  * [Complaints Management v1](community/products-requirement-documents-prds/complaints-management-v1.md)
-  * [Supervision Flow v1](community/products-requirement-documents-prds/supervision-flow-v1.md)
+  * [User Management v1](product/user-management-v1.md)
+  * [Complaints Management v1](product/complaints-management-v1.md)
+  * [Supervision Flow v1](product/supervision-flow-v1.md)

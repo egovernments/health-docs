@@ -47,7 +47,7 @@ Click on the links below to learn more about the functional specifications and p
 
 * [User persona](user-persona.md)
 * [Functional specifications](functional-specifications.md)
-* [Product roadmap](product-roadmap.md)
+* [Product roadmap](../community/roadmap.md)
 
 
 
