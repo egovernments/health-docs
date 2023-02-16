@@ -54,7 +54,15 @@ Access needed to the following:&#x20;
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.12.52 PM.png" alt=""><figcaption></figcaption></figure>
 
-*
+* Click on “Console Output”.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.14.14 PM.png" alt=""><figcaption></figcaption></figure>
+
+* If the build is successful, you will see the following message: “Finished: SUCCESS”.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.15.23 PM.png" alt=""><figcaption></figcaption></figure>
+
+
 
 
 
