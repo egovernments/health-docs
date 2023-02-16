@@ -95,13 +95,31 @@ Access needed to the following:&#x20;
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.25.21 PM.png" alt=""><figcaption></figcaption></figure>
 
+* Paste the image name from the build step and paste it in the text box.&#x20;
+* Cluster Config: If there is a change at the infra level or it is the first deployment for the service on the infra, select this check box: default keep it unchecked.&#x20;
+* Click on ‘Build’.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.27.26 PM.png" alt=""><figcaption></figcaption></figure>
+
+* You will see the latest deployment in progress on the top of the deployment list.&#x20;
+* Click on the top to see the deployment logs.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.27.55 PM.png" alt=""><figcaption></figcaption></figure>
+
+* This will show the Git data.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.28.57 PM.png" alt=""><figcaption></figcaption></figure>
+
+* Click on “Console Output”.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.29.27 PM.png" alt=""><figcaption></figcaption></figure>
+
+* If the deployment is successful in the logs, you will see the following message: “Finished: SUCCESS”.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.30.22 PM.png" alt=""><figcaption></figcaption></figure>
+
+* Check the status of Kubernetes to verify if the new pod is running or not.
 
 
 
-
-
-
-
-
-
-
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
