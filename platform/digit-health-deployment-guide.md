@@ -12,11 +12,11 @@ Access needed to the following:&#x20;
 
 [Stage 1: Build](digit-health-deployment-guide.md#deployment-stage-1-build)
 
-Stage 2: Deployment
+[Stage 2: Deploy](digit-health-deployment-guide.md#deployment-stage-2-deploy)
 
 ## Deployment Stage 1: Build
 
-### Steps for Building the image
+### Steps for building the image
 
 * Click on ‘builds’.
 * Visit [https://builds.digit.org/](https://builds.digit.org/) &#x20;
@@ -72,6 +72,28 @@ Stage 2: Deployment
 * Copy household:qa-efb0e0ac09-20.
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.17.20 PM.png" alt=""><figcaption></figcaption></figure>
+
+## Deployment Stage 2: Deploy
+
+### Steps for deploying on QA
+
+* Visit https://builds.digit.org/.&#x20;
+* Click on deployments.
+*
+
+    <figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.22.04 PM.png" alt=""><figcaption></figcaption></figure>
+* Select the environment where you want to deploy.&#x20;
+* For QA, click on “deploy-to-health-qa”.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.22.49 PM.png" alt=""><figcaption></figcaption></figure>
+
+* Click on “Build with Parameters”.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.24.39 PM.png" alt=""><figcaption></figcaption></figure>
+
+* Click on ‘Build’.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.25.21 PM.png" alt=""><figcaption></figcaption></figure>
 
 
 
