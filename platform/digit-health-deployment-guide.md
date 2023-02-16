@@ -8,6 +8,12 @@ Access needed to the following:&#x20;
 * eGoV email Id&#x20;
 * Jenkins: https://builds.digit.org
 
+### Deployment Stages:
+
+[Stage 1: Build](digit-health-deployment-guide.md#deployment-stage-1-build)
+
+Stage 2: Deployment
+
 ## Deployment Stage 1: Build
 
 ### Steps for Building the image
@@ -61,6 +67,11 @@ Access needed to the following:&#x20;
 * If the build is successful, you will see the following message: “Finished: SUCCESS”.
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.15.23 PM.png" alt=""><figcaption></figcaption></figure>
+
+* Scroll up to see the image name, which has been pushed: docker.io/egovio/household:qa-efb0e0ac09-20 pushed successfully!&#x20;
+* Copy household:qa-efb0e0ac09-20.
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-16 at 2.17.20 PM.png" alt=""><figcaption></figcaption></figure>
 
 
 
