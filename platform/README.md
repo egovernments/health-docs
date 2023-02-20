@@ -14,8 +14,8 @@ The articles in this section includes:
 [field-app-architecture.md](field-app-architecture.md)
 {% endcontent-ref %}
 
-{% content-ref url="digit-health-deployment-guide.md" %}
-[digit-health-deployment-guide.md](digit-health-deployment-guide.md)
+{% content-ref url="setup.md" %}
+[setup.md](setup.md)
 {% endcontent-ref %}
 
 

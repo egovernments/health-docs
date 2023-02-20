@@ -1,4 +1,8 @@
-# DIGIT Health Deployment Guide
+---
+description: HCM deployment guide
+---
+
+# Setup
 
 ## Prerequisites&#x20;
 
@@ -10,9 +14,9 @@ Access needed to the following:&#x20;
 
 ### Deployment Stages:
 
-[Stage 1: Build](digit-health-deployment-guide.md#deployment-stage-1-build)
+[Stage 1: Build](setup.md#deployment-stage-1-build)
 
-[Stage 2: Deploy](digit-health-deployment-guide.md#deployment-stage-2-deploy)
+[Stage 2: Deploy](setup.md#deployment-stage-2-deploy)
 
 ## Deployment Stage 1: Build
 
