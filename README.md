@@ -54,8 +54,8 @@ The APIs will allow data and functionality to be reused across multiple departme
 
 ## Useful links
 
-{% content-ref url="product/functional-specifications/" %}
-[functional-specifications](product/functional-specifications/)
+{% content-ref url="product/functional-specifications.md" %}
+[functional-specifications.md](product/functional-specifications.md)
 {% endcontent-ref %}
 
 {% content-ref url="platform/" %}
