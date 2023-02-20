@@ -1,6 +1,6 @@
 # APK Installation
 
-Steps
+## Steps
 
 * Uninstall the application if already installed.
 
