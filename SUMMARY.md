@@ -4,7 +4,8 @@
 * [Product](product/README.md)
   * [Health Campaign Management](product/health-campaign-management.md)
   * [User Persona](product/user-persona.md)
-  * [Functional Specifications](product/functional-specifications.md)
+  * [Functional Specifications](product/functional-specifications/README.md)
+    * [Setup](product/functional-specifications/setup.md)
 * [Platform](platform/README.md)
   * [High Level Design](platform/high-level-design/README.md)
     * [Health Campaign System High Level Design](platform/high-level-design/health-campaign-system-high-level-design.md)
@@ -19,7 +20,6 @@
       * [Project](platform/low-level-design/services/project.md)
       * [Stock](platform/low-level-design/services/stock.md)
   * [Field App Architecture](platform/field-app-architecture.md)
-  * [Setup](platform/setup.md)
 
 ## COMMUNITY
 
