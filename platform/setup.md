@@ -66,35 +66,59 @@ If you need to set up AWS CLI on the machine, the following commands assume that
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-02-22 at 10.41.16 AM.png" alt=""><figcaption></figcaption></figure>
 
+### Steps to Create AWS KMS Key for SOPS
 
+* Search KMS on the top of the search bar.
 
-\
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-22 at 10.43.19 AM.png" alt=""><figcaption></figcaption></figure>
 
+* Click on the “Create Key” on the top right.
 
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-22 at 10.44.36 AM.png" alt=""><figcaption></figcaption></figure>
 
+* Configure the key. We used the symmetric key and the encrypt and decrypt as usage. There are advanced options as well.&#x20;
+* Click on ‘Next’.
 
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-22 at 10.46.26 AM.png" alt=""><figcaption></figcaption></figure>
 
+* Give an alias and description.&#x20;
+* Click on ‘Next’.
 
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-22 at 10.47.49 AM.png" alt=""><figcaption></figcaption></figure>
 
+* Select the administrative permission. Ideally, it should be only env-based.
 
-\
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-22 at 10.53.59 AM.png" alt=""><figcaption></figcaption></figure>
 
+* Select the key usage permission. Ideally, it should be only env-based.
 
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-22 at 10.54.45 AM.png" alt=""><figcaption></figcaption></figure>
 
+* Review the keys.
 
-##
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-22 at 10.56.52 AM.png" alt=""><figcaption></figcaption></figure>
 
-\
+* The key will be generated.
 
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-22 at 10.58.04 AM (1).png" alt=""><figcaption></figcaption></figure>
 
-\
+* You can copy the Amazon Resource Name (ARN).
 
+<figure><img src="../.gitbook/assets/Screenshot 2023-02-22 at 10.58.50 AM.png" alt=""><figcaption></figcaption></figure>
 
+Encrypting and decrypting file with SOPS
 
+❯ export SOPS\_KMS\_ARN=arn:aws:kms:ap-south-1:680148267093:key/4cc5ed9f-75c7-43ef-a6bb-b36c03c5b5e8
 
+❯ export AWS\_PROFILE=health-eGov
 
+❯ export AWS\_SDK\_LOAD\_CONFIG=1
 
+❯sops -e -i health-dev-secrets.yaml
 
+```
+>sops -d -i health-dev-secrets.yaml
+```
 
 
 
