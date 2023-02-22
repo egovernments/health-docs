@@ -194,6 +194,13 @@ Since there are no separate fields for first name and last name, the cell will c
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 3.15.10 PM.png" alt=""><figcaption></figcaption></figure>
 
+### Household Dropdown (for individual-level campaigns)
+
+In this case, a column for delivery status is added to the table. The format for the delivery status must be the same for every screen wherever the status needs to be displayed. The format is check mark+status. The household-level delivery status is omitted in this case.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 3.21.14 PM.png" alt=""><figcaption></figcaption></figure>
+
+\
 \
 \
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
