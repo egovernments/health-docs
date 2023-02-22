@@ -184,6 +184,16 @@ At the end of the search results, a query message is displayed stating “Match 
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 3.05.36 PM.png" alt=""><figcaption></figcaption></figure>
 
+### Household Dropdown (for household-level campaigns)&#x20;
+
+After the user searches for a household, the search results are displayed with a dropdown arrow. The dropdown has a significant circular area of touch response for the user. When the user clicks on the dropdown, it will expand and display the tabular data of all the members in that particular household. The table is scrollable, both vertically as well as horizontally, but the card dimension of the dropdown must remain fixed to show 5 members.&#x20;
+
+The table must not display the household head icon ‘H’, as shown on the individual level screen. This will help the user to verify whether it is their household or not. In the beneficiary column, only the first 14 characters will be displayed.&#x20;
+
+Since there are no separate fields for first name and last name, the cell will count 14 characters, counting space as 1 character. If it is the same household, the user can click on the ‘Open’ button on the card, which will open the household card. The ‘Back’ button will take the user to the home screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 3.15.10 PM.png" alt=""><figcaption></figcaption></figure>
+
 \
 \
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
