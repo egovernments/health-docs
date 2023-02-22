@@ -12,6 +12,8 @@ Assumptions and Validations
 
 Out of Scope
 
+Specifications
+
 ## Background
 
 This document describes the need and scope of a digital platform for health campaigns, explaining the product’s features, specifications, purpose, and functionality for beneficiary registration. It also provides a descriptive view of the application along with the specification of each element within the flow.
@@ -79,4 +81,37 @@ Assumptions and Validations
 | Gender                                    | Dropdown                                                    | NA                                    | N              | Gender of the individual.                                                                                                                                                                                             |   |
 | Mobile number                             | Numeric                                                     | Length: 10 digits.                    | N              | Mobile number of the individual if they have a mobile phone.                                                                                                                                                          |   |
 | Reasoon for deletion                      | Select from the options                                     | NA                                    | Y              | Select the reason for deleting the household/individual.                                                                                                                                                              |   |
+
+## Design
+
+Find the mock-ups below:
+
+### HCM Home screen
+
+After logging into the application, the user lands on this screen which displays the daily performance (number of households registered). The progress bar must reset daily at 00:00 hours and start from 0 registrations.&#x20;
+
+The action buttons related to the beneficiary are present, which include:&#x20;
+
+* Beneficiaries&#x20;
+* View Reports&#x20;
+* Sync Data&#x20;
+* Call Supervisor&#x20;
+* File Complaint&#x20;
+
+At the bottom, there is a card that shows how many records are unsynced for the user’s convenience to sync data. If all the records are synced, then the card must say “All records are synced”. The help button is on every screen of the application, clicking on which a user can get a walkthrough of the elements on that screen.&#x20;
+
+On the top right, the administrative area assigned to the user is displayed, which will be based on the level of hierarchy. The hamburger button on the top left corner covers some other actions mentioned further.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 2.17.26 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Hamburger Menu
+
+After clicking on the hamburger button, a list of actions appears on the user screen. The top displays the user name and contact number, followed by other options such as the home button, language select, edit profile, projects, and logout. The ‘Edit Profile’ option is not in scope for V1, it needs to be taken in V1.1
+
+If the user clicks on the hamburger button again, it collapses the hamburger menu. The button is available on all screens of the application.
+
+\
+
+
+
 
