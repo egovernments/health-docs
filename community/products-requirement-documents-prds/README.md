@@ -2,16 +2,16 @@
 
 The articles in this section include the following:
 
-{% content-ref url="../../product/user-management-v1.md" %}
-[user-management-v1.md](../../product/user-management-v1.md)
+{% content-ref url="user-management.md" %}
+[user-management.md](user-management.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../product/complaints-management-v1.md" %}
-[complaints-management-v1.md](../../product/complaints-management-v1.md)
+{% content-ref url="complaints-management.md" %}
+[complaints-management.md](complaints-management.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../product/supervision-flow-v1.md" %}
-[supervision-flow-v1.md](../../product/supervision-flow-v1.md)
+{% content-ref url="supervision-flow.md" %}
+[supervision-flow.md](supervision-flow.md)
 {% endcontent-ref %}
 
 
