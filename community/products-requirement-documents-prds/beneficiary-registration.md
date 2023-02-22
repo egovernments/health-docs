@@ -210,7 +210,14 @@ The back button takes the user to the “List of Households”  screen. The ‘N
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 3.32.05 PM.png" alt=""><figcaption></figcaption></figure>
 
-\
+### Household Details
+
+The “Date of Registration” is auto-populated by the system, and is non-editable. The user provides the details on the total number of members in a particular household with the help of the increment/decrement buttons on both sides. The field must default to one and validation must be applied, where at least one member should be there in a household for registration.
+
+After providing the numbers, the user clicks on the ‘Next’ button at the bottom of the screen, which will navigate them to the ‘Individual Details’ screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 3.43.13 PM.png" alt=""><figcaption></figcaption></figure>
+
 \
 \
 \
