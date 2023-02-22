@@ -22,6 +22,7 @@
   * [Functional Specifications](product/functional-specifications.md)
   * [Setup](product/setup/README.md)
     * [APK Installation](product/setup/apk-installation.md)
+  * [Gate 1 Dashboard](product/gate-1-dashboard.md)
 
 ## COMMUNITY
 
