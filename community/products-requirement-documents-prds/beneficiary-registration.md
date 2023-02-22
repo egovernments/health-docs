@@ -200,6 +200,17 @@ In this case, a column for delivery status is added to the table. The format for
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 3.21.14 PM.png" alt=""><figcaption></figcaption></figure>
 
+### Location
+
+Household registration begins from this screen. The user needs to provide the location details of the household. The administrative area field must be auto-captured from the boundary selected, which is mandatory, denoted by \* and is non-editable. If the user wants to change the area, he/she can click on the location picker on the top, which opens the boundary selection screen.
+
+The system must fetch the lat/long coordinates of the household. If it is unable to detect the coordinates, it will be left blank in the dashboard to avoid errors.&#x20;
+
+The back button takes the user to the “List of Households”  screen. The ‘Next’ button at the bottom takes them to the “Household Details” screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 3.32.05 PM.png" alt=""><figcaption></figcaption></figure>
+
+\
 \
 \
 \
