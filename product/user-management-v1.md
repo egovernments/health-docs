@@ -192,7 +192,7 @@ There are two types of user accounts that need to be created during a health cam
 | Department         | Dropdown  | Y        | Users must be assigned to a department during onboarding. For example, NMCP, polio programs, etc. |
 | Status             | Boolean   | Y        | To specify if the user is active or deactivated in the system.                                    |
 
-Campaign Details
+### Campaign Details
 
 | Field               | Data type | Data validation                                                    | Required | Comments                                                                                                                      |
 | ------------------- | --------- | ------------------------------------------------------------------ | -------- | ----------------------------------------------------------------------------------------------------------------------------- |

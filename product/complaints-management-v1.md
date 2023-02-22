@@ -53,7 +53,7 @@ a. Create, view, update, and cancel complaints.
 
 b.  Resolve complaints, assign complaints, and reject complaints.
 
-### Statuses in the workflow
+### Statuses in the Workflow
 
 | Status name                                  | Description                                                                                                                                                                | Leads to (next status)                                                                                |
 | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -110,11 +110,11 @@ Helpdesk View: (Web app and mobile responsive app)&#x20;
 
 &#x20;        3\. User name
 
-## Risk/ Limitations:&#x20;
+## Risk/Limitations
 
 Addressed in the Out of Scope section.
 
-## Out of scope:
+## Out of Scope
 
 * Re-opening of complaints
 * Auto-escalation of complaints
