@@ -110,7 +110,7 @@ After clicking on the hamburger button, a list of actions appears on the user sc
 
 If the user clicks on the hamburger button again, it collapses the hamburger menu. The button is available on all screens of the application.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 2.18.31 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 2.18.31 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Edit Profile
 
@@ -142,14 +142,47 @@ At least the highest boundary must be selected to enable the select button, whic
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 2.34.57 PM.png" alt=""><figcaption></figcaption></figure>
 
+### Help Button&#x20;
+
+If the user clicks on the help button, it will give a walkthrough of the entire screen, including the role of each button placed with two buttons:&#x20;
+
+* Skip: If the user wants to skip the walkthrough at any point.&#x20;
+* Next: It will proceed to the next action aligned.&#x20;
+
+The text box appears at the bottom of the button.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 2.40.48 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Search Households
+
+When a user clicks on the ‘Beneficiaries’ button, they will be navigated to this screen. It displays the number of households registered along with the number of bednets delivered in that administrative area.
+
+The register button is primarily disabled to ensure that the user performs the search action.
+
+The search bar allows the user to search by the household head’s name and the system provides the search results. The minimum string length to show results is 2 characters and the order of the results will be the last record displayed first. Two cases can be generated:
+
+1. No results are displayed.
+2. The search results displayed do not match.
+
+Both cases are discussed further. The ‘Back’ button on the top will navigate to the home screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 2.45.11 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Case 1: No match found&#x20;
+
+If a user is searching for a household and there are no households registered by that name, it will display: “Match not found! Register New Household button to add details”. The register button is enabled to proceed with the household registration. When the user clicks on the “Register New Household” button, it takes them to the “Household Location” screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 2.52.30 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Case 2: Results do not match&#x20;
+
+If the user searches for a household by the name Jose, for example, all the household cards by the name Jose will be displayed. The cards will provide details such as the household name, members in the household, service delivery status, administrative area, and a dropdown arrow at the centre.&#x20;
+
+The open button at the right corner of each card is for the user’s understanding to open the household card. The search results displayed must be 10 at a time followed by pagination for the next 10 results.&#x20;
+
+At the end of the search results, a query message is displayed stating “Match not found” and the register button is enabled. If the results do not match, the user can click on the register button for household registration. The back button will take them to the home screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 3.01.29 PM.png" alt=""><figcaption></figcaption></figure>
+
 \
-
-
 \
-\
-\
-\
-
-
-
-
