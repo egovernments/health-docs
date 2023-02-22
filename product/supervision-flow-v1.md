@@ -1,4 +1,4 @@
-# Supervision Flow v1
+# Supervision Flow
 
 ## Table of Contents
 

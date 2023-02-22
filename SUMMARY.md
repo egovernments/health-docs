@@ -28,8 +28,8 @@
 
 * [Roadmap](community/roadmap.md)
 * [Products Requirement Documents (PRDs)](community/products-requirement-documents-prds/README.md)
-  * [User Management](community/products-requirement-documents-prds/user-management.md)
-  * [Complaints Management](community/products-requirement-documents-prds/complaints-management.md)
-  * [Supervision Flow](community/products-requirement-documents-prds/supervision-flow.md)
+  * [User Management](product/user-management-v1.md)
+  * [Complaints Management](product/complaints-management-v1.md)
+  * [Supervision Flow](product/supervision-flow-v1.md)
   * [Role Action Mapping](community/products-requirement-documents-prds/role-action-mapping.md)
   * [Beneficiary Registration](community/products-requirement-documents-prds/beneficiary-registration.md)

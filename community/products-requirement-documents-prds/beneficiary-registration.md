@@ -10,6 +10,8 @@ Objectives (of this release)
 
 Assumptions and Validations
 
+Out of Scope
+
 ## Background
 
 This document describes the need and scope of a digital platform for health campaigns, explaining the product’s features, specifications, purpose, and functionality for beneficiary registration. It also provides a descriptive view of the application along with the specification of each element within the flow.
@@ -42,9 +44,15 @@ Assumptions and Validations
 | Location picker                            | <ul><li>The user must select at least the highest boundary to proceed with registration and delivery.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Date of birth                              | <ul><li>The system captures only the date at the backend, irrespective of whether the user enters the date of birth or age.</li><li>For date of birth, the system captures the exact date, and for age (eg 23), the date must be 01-01-2000.</li><li>The reason why the system captures only the date is that in health campaigns, the approximate age can be used for providing interventions. The exact age is required in periodic campaigns, where an individual’s dosage depends upon his age, gender, height, weight, and other factors. Another reason for capturing the date is that it is easier to update the age for future use cases.</li><li>The date of birth must be validated to restrict the users from entering a future date value.</li></ul> |
 | Additional fields                          | <ul><li>All the non-mandatory fields must be taken care of during implementation. This must be done across all the flows.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
+### Risk/Limitations&#x20;
 
+* Addressed in the out-of-scope section.
 
+## Out of scope&#x20;
 
+* Search and view beneficiaries on the map based on proximity.&#x20;
+* Filter and sort beneficiaries.&#x20;
+* Generate QR codes for registered beneficiaries.&#x20;
+* Edit the user profile.
 

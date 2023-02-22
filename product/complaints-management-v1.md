@@ -66,7 +66,7 @@ b.  Resolve complaints, assign complaints, and reject complaints.
 
 ## Process Flow
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-01-25 at 10.46.33 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-01-25 at 10.46.33 AM.png" alt=""><figcaption></figcaption></figure>
 
 ## Solution
 
