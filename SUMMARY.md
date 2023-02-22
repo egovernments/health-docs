@@ -1,12 +1,6 @@
 # Table of contents
 
 * [Introducing DIGIT Health Platform](README.md)
-* [Product](product/README.md)
-  * [Health Campaign Management](product/health-campaign-management.md)
-  * [User Persona](product/user-persona.md)
-  * [Functional Specifications](product/functional-specifications.md)
-  * [Setup](product/setup/README.md)
-    * [APK Installation](product/setup/apk-installation.md)
 * [Platform](platform/README.md)
   * [High Level Design](platform/high-level-design/README.md)
     * [Health Campaign System High Level Design](platform/high-level-design/health-campaign-system-high-level-design.md)
@@ -22,6 +16,12 @@
       * [Stock](platform/low-level-design/services/stock.md)
   * [Field App Architecture](platform/field-app-architecture.md)
   * [Setup](platform/setup.md)
+* [Product](product/README.md)
+  * [Health Campaign Management](product/health-campaign-management.md)
+  * [User Persona](product/user-persona.md)
+  * [Functional Specifications](product/functional-specifications.md)
+  * [Setup](product/setup/README.md)
+    * [APK Installation](product/setup/apk-installation.md)
 
 ## COMMUNITY
 
