@@ -110,6 +110,44 @@ After clicking on the hamburger button, a list of actions appears on the user sc
 
 If the user clicks on the hamburger button again, it collapses the hamburger menu. The button is available on all screens of the application.
 
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 2.18.31 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Edit Profile
+
+The user can edit his/her name, and phone number, and select the gender. After updating the details, the user needs to click on the save button which opens a prompt stating “saved successfully”.&#x20;
+
+If the user does not want to make any changes, he/she can click on the back button, which will take them back to the hamburger menu. Not in scope for V1.0, needs to be taken in V1.1.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 2.27.44 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Project Selection
+
+When a user clicks on the projects option in the hamburger menu, it navigates them to the project selection screen, from where the user can select another project to work on.
+
+Though the automatic sync is triggered by the login action, after selecting another project, the system must now sync the data for the new project, and the same flow must be followed.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 2.29.18 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Location
+
+For a user assigned multiple boundaries, after logging in, the boundary selection overlay must appear. This forces the user to select a boundary, only after which the user will be able to view the home screen. The user can then change the boundary whenever required from the location picker placed on the top right.
+
+It has dropdown fields to select the boundary, which depends on the hierarchy level of the user. For example, in the case of an FLW, the boundary selection starts from the administrative post. The values in the dropdown are linked to the higher hierarchy and the user cannot select a boundary if the previous field is left blank.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 2.33.48 PM.png" alt=""><figcaption></figcaption></figure>
+
+The dropdown must only consist of the boundaries that are assigned to the user, not all the boundaries under a particular hierarchy. For example, if the user is assigned localities 1, 2, and 3, and there are 5 localities in all under admin post 1, then the dropdown must have only 1, 2, and 3 localities.&#x20;
+
+At least the highest boundary must be selected to enable the select button, which navigates the user to the home screen. For multiple projects, sync needs to download the data only for the selected project.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 2.34.57 PM.png" alt=""><figcaption></figcaption></figure>
+
+\
+
+
+\
+\
+\
 \
 
 
