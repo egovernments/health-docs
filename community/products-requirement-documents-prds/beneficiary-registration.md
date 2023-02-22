@@ -182,7 +182,8 @@ The open button at the right corner of each card is for the user’s understandi
 
 At the end of the search results, a query message is displayed stating “Match not found” and the register button is enabled. If the results do not match, the user can click on the register button for household registration. The back button will take them to the home screen.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 3.01.29 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 3.05.36 PM.png" alt=""><figcaption></figcaption></figure>
 
 \
 \
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
