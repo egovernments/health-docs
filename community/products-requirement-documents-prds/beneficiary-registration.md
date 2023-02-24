@@ -242,6 +242,18 @@ At the bottom, there is a ‘Submit’ button, clicking on which the user can re
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 2.39.11 PM.png" alt=""><figcaption></figcaption></figure>
 
+### Confirmation Screen&#x20;
+
+When the user clicks on the ‘Submit’ button, a popup appears asking for confirmation. If the user wants to edit any detail, they can click on the ‘Cancel’ button, which will take the user back to the previous screen. If the user clicks on ‘Submit’, the household is registered and the household card is opened.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 2.52.13 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Acknowledgement Screen&#x20;
+
+Once the user clicks on the submit button, the acknowledgement screen appears providing the information that the data has been recorded successfully. When the user clicks on “Back to Search”, he/she must be navigated to the search household screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 3.02.16 PM.png" alt=""><figcaption></figcaption></figure>
+
 \
 \
 \
