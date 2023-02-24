@@ -254,6 +254,20 @@ Once the user clicks on the submit button, the acknowledgement screen appears pr
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 3.02.16 PM.png" alt=""><figcaption></figcaption></figure>
 
+### Household Card (for a household-level campaign)&#x20;
+
+After registering the household, the user can search for the household and open the card. The household name is displayed as household only, to avoid the risk of names that may be longer. There is also an ‘Edit Household’ button for editing household details, which navigates the user to the household location screen.&#x20;
+
+The service delivery status is present below the household’s name followed by the administrative area and the number of members. There are cards for each member, starting from the household head. The card consists of the member's name, gender, age, and the ‘Edit’ button for individual-level actions. Age will be denoted in years for this version, as for household-level campaigns, age is not a considerable parameter for providing interventions.&#x20;
+
+For adding new members to the household, there is the ‘Add Member’ button below the member cards, which navigates the user to the ‘Individual Details’ screen. At the bottom, the ‘Deliver Intervention’ button navigates the user to the update delivery screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 3.35.31 PM.png" alt=""><figcaption></figcaption></figure>
+
+If the intervention is delivered to that household, the second screen will appear. The deliver intervention button must be replaced by the ‘Update Delivery Details’ button in case more interventions are needed to be delivered. The back button on top takes the user to the list of households screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 3.36.13 PM.png" alt=""><figcaption></figcaption></figure>
+
 \
 \
 \
