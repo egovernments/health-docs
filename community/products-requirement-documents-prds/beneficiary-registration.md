@@ -283,7 +283,18 @@ Household-Level Actions When the user clicks on the “Edit Household” button,
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 3.47.15 PM.png" alt=""><figcaption></figcaption></figure>
 
-\
+### Delete Household&#x20;
+
+After a user clicks on the “Delete Household”’ button, an overlay appears with a message asking whether he/she wants to delete that beneficiary. It has two buttons: Delete: This will delete the beneficiary from the system records. Cancel: if the user does not want to delete the beneficiary, clicking on this button will collapse the overlay.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 3.53.55 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Reason for Deletion (household)&#x20;
+
+If a user selects the delete option, it will bring them to this screen, where he/she must select the reason for deleting a particular household. The screen will be the same as that of individual deletion, only the reasons will vary. The reasons may include the household having relocated, the household does not exist, etc. The reasons must be configured in the MDMS.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 3.54.05 PM.png" alt=""><figcaption></figcaption></figure>
+
 \
 \
 \
