@@ -228,6 +228,21 @@ If the individual does not hold any ID, an option for ‘System generated ID’ 
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 2.32.30 PM.png" alt=""><figcaption></figcaption></figure>
 
+The “Date of birth” is a calendar input field, where the individual’s birth date is entered. If the individual does not know his/her date of birth, there is an option to enter the age. The system captures only the date of birth at the backend, which is described in the two cases below:
+
+1. If the user enters the date of birth,  the age field is disabled. The system captures the exact date entered.&#x20;
+2. If the user has entered the age, the date of birth field must remain editable (date of birth takes precedence over age).
+3. If age has been entered, the date captured by the system must be the first day of January and the year must be the difference between the current year and age. For example, if the user has entered the age 23, then the date captured must be 01-01-2000 (as of 2023).
+4. During the edit flow, the application user must not see the system-derived date. This means that while creating the record, the user had input age and the system calculated the date of birth as 01-01-XXXX, but during the edit flow, only the data entered by the user while creating the record must be visible to the user.
+5. If the user has entered age (Eg. 23) in the current year, the system must derive the date as 01-01-2000. After a year, during the edit flow, the age displayed must be 24 (incremented by 1 year).&#x20;
+
+The date of birth field must be validated where the value cannot be in the future, and if a user has entered a future date, then an error message must appear stating the date cannot be in the future. Gender is a dropdown field to select the individual’s gender. The user needs to enter the mobile number of the individual if they have a mobile phone.
+
+At the bottom, there is a ‘Submit’ button, clicking on which the user can register the beneficiary into the system. For every submit action, the system validates the information entered. If the user enters incomplete or incorrect data, clicking on the submit button will show an error message above it, along with the validated message below the field (as shown in the adjacent screen).
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 2.39.11 PM.png" alt=""><figcaption></figcaption></figure>
+
+\
 \
 \
 \
