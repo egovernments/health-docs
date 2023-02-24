@@ -218,6 +218,16 @@ After providing the numbers, the user clicks on the ‘Next’ button at the bot
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-22 at 3.43.13 PM.png" alt=""><figcaption></figcaption></figure>
 
+### Individual Details&#x20;
+
+In the name field, the system fetches the name from the search action performed on the beneficiaries screen, which is editable. The first individual will be the head of the household by default, denoted by a checkbox below the field. The checkbox must be non-editable as the users are trained in such a way that the first member registered should always be the household head.&#x20;
+
+The name, ID type, and ID number fields are kept mandatory for data collection. The ID type is a dropdown field where the individual must provide the type of ID they hold if any. The ID types must be configured in the MDMS.&#x20;
+
+If the individual does not hold any ID, an option for ‘System generated ID’ must be there, which will inform the system to generate an ID for that individual. In “ID Number”, the user needs to enter the individual’s ID number. If the user selects a system-generated ID, then this field must be disabled. The system must capture the ID number when the device is online and sync can take place.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 2.32.30 PM.png" alt=""><figcaption></figcaption></figure>
+
 \
 \
 \
