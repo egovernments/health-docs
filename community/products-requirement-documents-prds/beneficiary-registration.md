@@ -268,6 +268,21 @@ If the intervention is delivered to that household, the second screen will appea
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 3.36.13 PM.png" alt=""><figcaption></figcaption></figure>
 
+### Household Card (for an individual-level campaign)&#x20;
+
+If the campaign is at an individual level, the household card appears in a similar format with some changes. The ‘Deliver Intervention’ button is present at the bottom of every member’s card. If the intervention is delivered to a member, it will display ‘Delivered’ below their details on the card and the button will be replaced with ‘Update Delivery Details’. If the intervention is not delivered, it will display “Not Delivered”. The ‘Deliver Intervention’ button in this case navigates the user to the update delivery screen. The back button navigates the user to the search households screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 3.42.32 PM.png" alt=""><figcaption></figcaption></figure>
+
+Household-Level Actions When the user clicks on the “Edit Household” button, the actions appear on the screen.&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 3.46.24 PM.png" alt=""><figcaption></figcaption></figure>
+
+* Edit Household: The user is navigated to the household location screen followed by household details. In this screen, the ‘Next’ button is now replaced by the ‘Submit’ button.&#x20;
+* Delete Household: If the user wants to delete the entire household.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 3.47.15 PM.png" alt=""><figcaption></figcaption></figure>
+
 \
 \
 \
