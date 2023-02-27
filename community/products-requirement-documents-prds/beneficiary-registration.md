@@ -295,7 +295,18 @@ If a user selects the delete option, it will bring them to this screen, where he
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-24 at 3.54.05 PM.png" alt=""><figcaption></figcaption></figure>
 
-\
+### Individual-Level Actions
+
+When a user clicks on the ‘Edit’ button on an individual’s card, an overlay screen appears with the following actions:&#x20;
+
+* Assign as household head: If the user wants to change the head of household, they can select this option and that member will be assigned as household head. The option must be disabled for the household head.
+* Edit individual details: If the user wants to edit the member’s details. It will navigate them to the individual details screen and the same flow is to be followed.
+* Delete individual: This option allows the user to delete a particular member. A user must not be able to delete the household head and hence the delete individual button must be disabled if the beneficiary is marked as the head of the household. If the user wants to delete the beneficiary marked as a household head,  the user must assign another member in the household as the head and then delete the beneficiary.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-27 at 4.23.34 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+
 \
 \
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
