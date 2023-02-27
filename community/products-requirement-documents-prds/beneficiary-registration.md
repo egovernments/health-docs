@@ -305,6 +305,28 @@ When a user clicks on the ‘Edit’ button on an individual’s card, an overla
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-27 at 4.23.34 PM.png" alt=""><figcaption></figcaption></figure>
 
+### Edit Individual Details&#x20;
+
+When a user clicks on edit individual details, he/she navigates to the individual details screen where he/she can edit the previously entered data. For edit flow, all the fields must be editable at the front end.&#x20;
+
+For the date of birth and age fields, the date of birth must always be given precedence over age. If the user has entered the date of birth while creating an individual, only that field must be editable, and the age field must be disabled. If the user has entered age, then the age entered must be visible, and the date of birth field must be blank, but editable. If the user wants to enter the exact date of birth, then he/she must be able to enter the value, in which case the age field is disabled (as in create flow).
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-27 at 4.28.43 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Delete Individual&#x20;
+
+Clicking on the delete button opens a popup that asks whether the user wants to delete that member. If the user clicks on the delete button, it will proceed further to delete the member. If the user clicks on cancel, it will take him/her back to the household card.&#x20;
+
+If the member is the household head, a popup should appear stating that deletion cannot happen unless some other member is assigned the household head. If there is only one member in a household, a popup should appear stating that there should be at least one member for creating a household. The user needs to either add another member or delete the entire household.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-27 at 4.31.28 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Reason for Deletion (Individual)&#x20;
+
+If the user selects the delete option, it will bring him/her to this screen, where he/she needs to select the reason for deleting a member. The reasons must be configured in the MDMS.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-27 at 4.32.56 PM.png" alt=""><figcaption></figcaption></figure>
+
 
 
 \
