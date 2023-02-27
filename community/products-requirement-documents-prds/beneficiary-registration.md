@@ -18,6 +18,8 @@ Design
 
 Success Criteria
 
+Metrics to Track
+
 ## Background
 
 This document describes the need and scope of a digital platform for health campaigns, explaining the product’s features, specifications, purpose, and functionality for beneficiary registration. It also provides a descriptive view of the application along with the specification of each element within the flow.
