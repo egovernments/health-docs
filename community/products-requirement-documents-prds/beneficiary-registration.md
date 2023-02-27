@@ -14,6 +14,10 @@ Out of Scope
 
 Specifications
 
+Design
+
+Success Criteria
+
 ## Background
 
 This document describes the need and scope of a digital platform for health campaigns, explaining the product’s features, specifications, purpose, and functionality for beneficiary registration. It also provides a descriptive view of the application along with the specification of each element within the flow.
@@ -327,8 +331,59 @@ If the user selects the delete option, it will bring him/her to this screen, whe
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-02-27 at 4.32.56 PM.png" alt=""><figcaption></figcaption></figure>
 
+### Sync&#x20;
 
+Before going into the field, the user needs to log into the application every day, which will initiate an automatic sync process (mentioned in the user login PRD). For manual sync, there is a ‘Sync Data’ button on the home screen, which allows the user to sync data according to his/her convenience. At the bottom of the screen, there is a card that shows the message “Data unsynced” along with the number of records unsynced.
 
-\
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-27 at 4.38.06 PM.png" alt=""><figcaption></figcaption></figure>
+
+When the user clicks on the ‘Sync’ button, the sync action starts along with an overlay showing “Sync in Progress” over the home page. The user cannot perform any other action until the sync is complete or there is some error.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-27 at 4.38.17 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Sync Status&#x20;
+
+Once the data is synced, it will show a popup, stating “Data Synced” along with a ‘Close’ button at the bottom. When the user clicks on close, it navigates him/her to the home screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-27 at 4.42.24 PM.png" alt=""><figcaption></figcaption></figure>
+
+If the data is not synced due to any error, it will show a popup stating “Sync Failed” with two buttons below it:&#x20;
+
+1. Retry: If the user wants to retry syncing the data.&#x20;
+2. Close: Clicking on this will navigate the user back to the home screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-27 at 4.42.33 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Reports&#x20;
+
+The reports dashboard provides a tabular and visualised representation of user performance. The reports are not in V1.0 for mobile applications, except for the stock reconciliation. They are generated based on the offline data present in the local device, associated with the user’s login.&#x20;
+
+If a user selects the ‘Data’ option, it will provide a data-wise report of the campaign. The bar graph shows the day-to-day comparison of registered beneficiaries along with a threshold of the daily target for registration. Below the graph, the table is added which displays the households registered as well as bednets distributed.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-27 at 4.48.01 PM.png" alt=""><figcaption></figcaption></figure>
+
+In the leaderboard section, the overall number of households registered will be displayed in the form of a milestone. Below that, all the individual users’ performance will be listed separately. The leaderboard option will not be available at the registrar level (field level) but at the field supervisor level.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-27 at 4.49.52 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Call Supervisor&#x20;
+
+If the user is facing any challenge and requires an immediate solution, he/she can click on the call supervisor button on the home screen, which will redirect them to their phone’s dial pad with the supervisor’s number auto-filled. By clicking on the ‘Call’ button, the user can contact the supervisor for immediate assistance.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-02-27 at 4.52.20 PM.png" alt=""><figcaption></figcaption></figure>
+
+## Success Criteria
+
+1. Various actors involved in the process will be able to collect, track, and analyse the data for beneficiaries registered using a bug-free platform.
+2. The supervisors, district officers, and program managers will be able to monitor team performance, which will help them understand the problems and challenges faced by the teams.
+3. Digital records will result in maximum coverage with fewer chances of households being missed during a certain campaign.
+
+## Metrics to Track
+
+The following metrics will be tracked:
+
+1. Households registered.
+2. Individuals registered in households.
+
 \
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
