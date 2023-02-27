@@ -4,8 +4,6 @@
 
 {% embed url="https://editor.swagger.io/?url=https://raw.githubusercontent.com/digit-egov/health-api-specs/main/contracts/registries/household.yml" %}
 
-
-
 ## Sequence Diagrams
 
 {% tabs %}
@@ -18,13 +16,21 @@
 {% endtab %}
 
 {% tab title="Member" %}
-<figure><img src="../../../.gitbook/assets/household_member_create.svg" alt=""><figcaption><p>Household Member - Create</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/create-Household_Member.svg" alt=""><figcaption><p>Household Member - Create</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/household_member_update.svg" alt=""><figcaption><p>Household Member - Update</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bulk_create-Household_Member.svg" alt=""><figcaption><p>Household Members - bulk create</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/update-Household_Member___Update.svg" alt=""><figcaption><p>Household Member - Update</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/bulk_update-Household_Member.svg" alt=""><figcaption><p>Household Members - Bulk Update</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/household_member_search.svg" alt=""><figcaption><p>Household Member - Search</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/delete-Household_Member.svg" alt=""><figcaption><p>Household Member - Delete</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
+
+<figure><img src="../../../.gitbook/assets/bulk_delete-Household_Member.png" alt=""><figcaption><p>Household Members - Bulk Delete</p></figcaption></figure>
 
 
 
