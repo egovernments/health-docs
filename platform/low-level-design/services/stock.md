@@ -2,9 +2,7 @@
 
 ## API Spec
 
-{% embed url="https://editor.swagger.io/?url=https://raw.githubusercontent.com/digit-egov/health-api-specs/main/contracts/stock.yml" %}
-Stock Spec
-{% endembed %}
+{% embed url="https://editor.swagger.io/?url=https://raw.githubusercontent.com/egovernments/health-campaign-services/master/docs/health-api-specs/contracts/stock.yml" %}
 
 ## Sequence Diagrams
 
