@@ -194,6 +194,28 @@ The user can add a delivery comment if the service is not delivered due to some 
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.44.18 AM.png" alt=""><figcaption></figcaption></figure>
 
+### Confirmation screen
+
+After submitting the details, a pop-up window appears, asking the user to review the details before submitting.
+
+* If the user clicks on the ‘Submit’ button, the data will be submitted and the next screen will appear.
+* If the user clicks on the ‘Cancel’ button, the popup will close and the user will be taken back to the “Deliver Intervention’ screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 12.02.44 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Acknowledgement Screen&#x20;
+
+When the user clicks on submit, this screen appears, confirming to the user that his/her data has been recorded successfully. Below the message, there is a “Back to Search” button which navigates the user to the search households screen for household-level campaigns. The search bar must be blank and previous results must not be displayed. For individual-level campaigns, the user will land on the household card screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 12.03.08 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Delete Service Delivery Details
+
+The front end must not have the capability to delete any delivery details to avoid any misuse of this function. The backend must be able to delete any delivery record if needed.\
+
+
+
+
 \
 \
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
