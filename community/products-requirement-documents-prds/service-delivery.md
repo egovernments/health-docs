@@ -211,8 +211,17 @@ When the user clicks on submit, this screen appears, confirming to the user that
 
 ### Delete Service Delivery Details
 
-The front end must not have the capability to delete any delivery details to avoid any misuse of this function. The backend must be able to delete any delivery record if needed.\
+The front end must not have the capability to delete any delivery details to avoid any misuse of this function. The backend must be able to delete any delivery record if needed.
 
+### Sync&#x20;
+
+Before going into the field, the user needs to log into the application daily, which will initiate an automatic sync process mentioned in the user login PRD. For manual sync, there is a “Sync Data” button on the home screen which allows the user to sync data according to their convenience. At the bottom of the screen, there is a card that shows the message “Data Unsynced” along with the number of records unsynced.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 12.16.34 PM.png" alt=""><figcaption></figcaption></figure>
+
+When the user clicks on the ‘Sync’ button, the sync action starts along with an overlay showing “Sync in Progress” over the home page. The user cannot perform any other action until the sync is complete or there is some error.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 12.17.20 PM.png" alt=""><figcaption></figcaption></figure>
 
 
 
