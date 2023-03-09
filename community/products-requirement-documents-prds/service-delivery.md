@@ -30,6 +30,18 @@ The module aims to reduce the risks of data redundancy, provide better service d
 
 The document is intended for the engineering and platform (tech teams), product management, and implementation teams to agree on the requirements for the platform.
 
+Objectives (of this release)
+
+1. Enabling actors with a digital system to manage and implement health campaign activities.&#x20;
+
+* Facilitate FLWs, supervisors, district officers, and other actors to collect and analyse data accurately, along with monitoring the tasks from registration to service delivery. Regular progress checks can be performed at any time and a comparative analysis can be derived at the district levels for different teams.&#x20;
+* Facilitate better diagnostics with improved access to healthcare interventions for the general public.
+
+2. Enabling adoption of the HCM platform for multiple health campaigns by providing flexibility in the UI and UX as well as product specifications.
+
+* Emphasis on adopting digital systems by collaborating with several healthcare bodies.
+* Provide scope for future changes and improvements in the application.
+
 
 
 \
