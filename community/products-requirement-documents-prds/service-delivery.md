@@ -221,10 +221,22 @@ Before going into the field, the user needs to log into the application daily, w
 
 When the user clicks on the ‘Sync’ button, the sync action starts along with an overlay showing “Sync in Progress” over the home page. The user cannot perform any other action until the sync is complete or there is some error.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 12.17.20 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 12.17.20 PM (1).png" alt=""><figcaption></figcaption></figure>
 
+### Sync Status&#x20;
 
+Once the data is synced, a pop-up comes up stating “Data Synced” along with a ‘Close’ button. When the user clicks on this button, it navigates them to the home screen.
 
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 1.46.40 PM.png" alt=""><figcaption></figcaption></figure>
+
+If the data did not sync, a popup comes up, stating “Sync Failed” with two buttons below it:
+
+1. Retry: If the user wants to retry syncing the data.
+2. Close: Clicking on this will navigate the user back to the home screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 1.48.08 PM.png" alt=""><figcaption></figcaption></figure>
+
+\
 \
 \
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
