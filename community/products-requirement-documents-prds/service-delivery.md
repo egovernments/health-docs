@@ -54,7 +54,16 @@ Objectives (of this release)
 | Additional fields    | <ul><li>All the non-mandatory fields must be taken care of during implementation. This must be done across all the flows.</li></ul>                                                                                                                                                                                                          |
 | Dropdown             | <ul><li>If the field contains only one value, then it must be auto-populated by the system.</li></ul>                                                                                                                                                                                                                                        |
 
+## Risk/Limitations
 
+Addressed in the out-of-scope section.
+
+## Out of scope
+
+* Search and view beneficiaries on the map based on proximity.
+* Filter and sort beneficiaries.
+* Generate QR codes for registered beneficiaries.
+* View payments due for services delivered.
 
 \
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
