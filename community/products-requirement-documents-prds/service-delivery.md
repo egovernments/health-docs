@@ -65,5 +65,17 @@ Addressed in the out-of-scope section.
 * Generate QR codes for registered beneficiaries.
 * View payments due for services delivered.
 
+## Specifications
+
+| Field name             | Data type                     | Data validation                       | Required (Y/N) | Comments                                                                              |   |
+| ---------------------- | ----------------------------- | ------------------------------------- | -------------- | ------------------------------------------------------------------------------------- | - |
+| Location picker        | Dropdown                      | Select at least the highest boundary. | Y              | The area boundary assigned to a specific user.                                        |   |
+| Search for a household | String                        | Search by the household head.         | Y              | After two characters, it will start showing related search results.                   |   |
+| Resource delivered     | Dropdown                      | NA                                    | Y              | Resource to be delivered in the campaign.                                             |   |
+| Quantity distributed   | Numeric; increment/ decrement | NA                                    | Y              | Quantity of the resources distributed. It is defaulted to 1, but can be reduced to 0. |   |
+| Delivery comment       | Dropdown                      | NA                                    | N              |                                                                                       |   |
+
+
+
 \
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
