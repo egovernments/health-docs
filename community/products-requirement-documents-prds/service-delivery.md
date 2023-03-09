@@ -42,6 +42,18 @@ Objectives (of this release)
 * Emphasis on adopting digital systems by collaborating with several healthcare bodies.
 * Provide scope for future changes and improvements in the application.
 
+## Assumptions and Validations
+
+| Theme                | Assumption                                                                                                                                                                                                                                                                                                                                   |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Customer persona     | <ul><li>The actors using the application are not digitally literate and need training before they can use the application independently.</li></ul>                                                                                                                                                                                           |
+| Device and services  | <ul><li>The actors have a smartphone and there should be internet connectivity to enable syncing of data from the mobile application to the server for populating the dashboards.</li><li>The actors using the mobile application must sync at least once daily.</li><li>Logging into the application needs internet connectivity.</li></ul> |
+| Deliver intervention | <ul><li>The user will be able to add delivery details only after registering a household. </li><li>The option to deliver an intervention must be provided either to the household (in case of a household-based campaign) or to an individual (for an individual-based campaign) and must be configured during system setup.</li></ul>       |
+| Peer-to-peer sync    | <ul><li>For v1.0, the product will not support peer-to-peer sync, either by directly syncing phones or routing traffic through the server.</li></ul>                                                                                                                                                                                         |
+| Location picker      | <ul><li>The user must select at least the highest boundary to proceed with the registration and delivery.</li></ul>                                                                                                                                                                                                                          |
+| Additional fields    | <ul><li>All the non-mandatory fields must be taken care of during implementation. This must be done across all the flows.</li></ul>                                                                                                                                                                                                          |
+| Dropdown             | <ul><li>If the field contains only one value, then it must be auto-populated by the system.</li></ul>                                                                                                                                                                                                                                        |
+
 
 
 \
