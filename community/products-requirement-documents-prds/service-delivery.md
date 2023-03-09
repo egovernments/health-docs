@@ -73,7 +73,90 @@ Addressed in the out-of-scope section.
 | Search for a household | String                        | Search by the household head.         | Y              | After two characters, it will start showing related search results.                   |   |
 | Resource delivered     | Dropdown                      | NA                                    | Y              | Resource to be delivered in the campaign.                                             |   |
 | Quantity distributed   | Numeric; increment/ decrement | NA                                    | Y              | Quantity of the resources distributed. It is defaulted to 1, but can be reduced to 0. |   |
-| Delivery comment       | Dropdown                      | NA                                    | N              |                                                                                       |   |
+| Delivery comment       | Dropdown                      | NA                                    | N              | Select any comment/reason from the dropdown.                                          |   |
+
+## Design
+
+Find the mock ups below:
+
+### HCM Home screen
+
+After logging into the application, the user lands on this screen which displays daily performance (the number of households registered). The progress bar must reset daily at 00:00 hours and start from 0 registration. The action buttons related to the beneficiary are present, which include:
+
+* Beneficiaries
+* View Reports
+* Sync Data
+* Call Supervisor
+* File Complaint
+
+At the bottom, there is a card that shows how many records are unsynced for the user’s convenience to sync data. If all the records are synced, then the card must say, “All records are synced”.
+
+The help button is on every screen of the application. By clicking on this button, a user can get a walkthrough of the elements on that screen. On the top right, the administrative area assigned to the user is displayed which will be based on the level of hierarchy. The hamburger button on the top left corner covers other actions.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 10.59.24 AM.png" alt=""><figcaption></figcaption></figure>
+
+### Hamburger Menu
+
+After clicking on the hamburger button, a list of actions appears on the user screen. On top, it displays the user name and contact number, followed by other options such as the home button, language select, edit profile, projects, and logout. The “Edit Profile” option is not in scope for V1, it needs to be taken in V1.1.
+
+If the user clicks on the hamburger button again, it collapses the hamburger menu. The button is available on all screens of the application.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.00.54 AM.png" alt=""><figcaption></figcaption></figure>
+
+### Edit Profile
+
+The user can edit his/her name, phone number, and select the gender. After updating the details, the user needs to click on the save button which opens a prompt stating “saved successfully”.&#x20;
+
+If the user does not want to make any changes, he/she can click on the back button which will take him/her back to the hamburger menu. This is not in scope for V1.0; it needs to be taken up in V1.1.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.01.44 AM.png" alt=""><figcaption></figcaption></figure>
+
+### Project Selection
+
+When a user clicks on the projects option in the hamburger menu, it navigates them to the project selection screen from where the user can select another project to work on.
+
+Though the automatic sync is triggered by the login action, after selecting another project, the system must now sync the data for the new project, and the same flow must be followed.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.02.29 AM.png" alt=""><figcaption></figcaption></figure>
+
+### Location
+
+For a user assigned multiple boundaries, after logging in, the boundary selection overlay must appear. This forces the user to select a boundary only after which the user can view the home screen. The user can then change the boundary whenever required from the location picker placed at the top right. It has dropdown fields to select the boundary, which depends upon the hierarchy level of the user. For an FLW, the boundary selection starts from the administrative post. The values in the dropdown are linked to the higher hierarchy and the user cannot select a boundary if the previous field is left blank.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.04.29 AM.png" alt=""><figcaption></figcaption></figure>
+
+The dropdown must only consist of the boundaries which are assigned to the user, not all the boundaries under a particular hierarchy. For example, if the user is assigned localities 1, 2, and 3, and there are a total of 5 localities under admin post 1, then the dropdown must have only 1, 2, and 3 localities. The highest boundary must at least be selected to enable the select button which navigates the user to the home screen. For multiple projects, the sync needs to download the data only for the selected project.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.05.10 AM.png" alt=""><figcaption></figcaption></figure>
+
+### Help Button
+
+If the user clicks on the help button, it will give a walkthrough of the entire screen, including the role of each button placed with two buttons:
+
+* Skip: If the user wants to skip the walkthrough at any point.
+* Next: It will proceed to the next action aligned.&#x20;
+
+The text box appears at the bottom of the button.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.06.17 AM.png" alt=""><figcaption></figcaption></figure>
+
+### Search Households
+
+When a user clicks on the ‘Beneficiaries’ button, he/she will be navigated to this screen. It displays the number of households registered along with the number of bednets delivered in that administrative area. The register button is primarily disabled to ensure that the user performs the search action.
+
+The search bar allows the user to search by the household head’s name, and the system provides the search results. The minimum string length to show results is 2 characters and the order of the results will be the last record displayed first.
+
+Two cases can be generated:
+
+1. No results are displayed.
+2. The search results displayed do not match.
+
+Both cases are discussed further. The ‘Back’ button on the top will navigate to the home screen.
+
+When the user searches for a household, there can be two outcomes:
+
+1. The list of households will appear as a search result. The user can then open the household card and proceed with service delivery.
+2. No results appear. In this case, the user needs to register the household first, so that he/she can deliver the intervention. (Note: Refer to the [**beneficiary registration**](beneficiary-registration.md) PRD).
 
 
 
