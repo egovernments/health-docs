@@ -158,6 +158,21 @@ When the user searches for a household, there can be two outcomes:
 1. The list of households will appear as a search result. The user can then open the household card and proceed with service delivery.
 2. No results appear. In this case, the user needs to register the household first, so that he/she can deliver the intervention. (Note: Refer to the [**beneficiary registration**](beneficiary-registration.md) PRD).
 
+Household Card (For a household-level campaign)
+
+After registering the household, a user can search for the household and open the card. The household name is displayed as household to avoid the risk of names that may be longer. There is an “Edit Household” button for editing the household details which navigates the user to the household location screen. Below the household’s name, the service delivery status is present followed by the administrative area and the number of members.&#x20;
+
+There are cards for each member, starting from the household head. The card consists of the member's name, gender, age, and the ‘Edit’ button for individual-level actions. Age will be denoted in years for this version. This is because, for household-level campaigns, age is not a considerable parameter to provide interventions.
+
+For adding new members to the household, there is an “Add Member” button below the member cards, which navigates the user to the “Individual Details” screen. At the bottom, the “Deliver Intervention” button navigates the user to the update delivery screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.23.39 AM.png" alt=""><figcaption></figcaption></figure>
+
+If the intervention is delivered to that household, a second screen will appear. The deliver intervention button must be replaced by the ‘Update Delivery Details’ button if more interventions are needed to be delivered. The back button at the top takes the user to the list of households screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.24.20 AM.png" alt=""><figcaption></figcaption></figure>
+
+\
 
 
 \
