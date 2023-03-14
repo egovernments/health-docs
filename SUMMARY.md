@@ -23,6 +23,7 @@
   * [Setup](product/setup/README.md)
     * [APK Installation](product/setup/apk-installation.md)
   * [Gate 1 Dashboard](product/gate-1-dashboard.md)
+  * [Gate 2 Release Checklist](product/gate-2-release-checklist.md)
 
 ## COMMUNITY
 
