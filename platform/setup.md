@@ -41,7 +41,7 @@ If you need to set up AWS CLI on the machine, the following commands assume that
 * A profile is required for multi-account setup.
 * Make note of whatever profile name one has given.
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-02-22 at 9.54.46 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-03-14 at 9.25.05 AM.png" alt=""><figcaption></figcaption></figure>
 
 * Add the AWS key, which was created earlier.
 
