@@ -236,7 +236,39 @@ If the data did not sync, a popup comes up, stating “Sync Failed” with two b
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 1.48.08 PM.png" alt=""><figcaption></figcaption></figure>
 
-\
-\
-\
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+### Reports
+
+The reports dashboard provides a tabular and visualised representation of user performance. They are generated based on the offline data present in the local device, associated with the user’s login. If a user selects the ‘Data’ option, it will provide a data-wise report of the campaign.&#x20;
+
+The bar graph shows the day-to-day comparison of registered beneficiaries along with a threshold of the daily target for registration. The table, which is added below the graph, displays the households registered as well as bednets distributed.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-14 at 9.45.48 AM (1).png" alt=""><figcaption></figcaption></figure>
+
+In the ‘Leaderboard’ section, the overall number of households registered will be displayed in the form of a milestone. Below that, all the individual users’ performance will be listed separately. The leaderboard option will not be available at the registrar level (field level) but at the field supervisor level.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-14 at 9.45.48 AM.png" alt=""><figcaption></figcaption></figure>
+
+### Call Supervisor&#x20;
+
+If the user is facing any challenge and requires immediate solutions, they can click on the “Call Supervisor” button on the home screen. It will redirect them to their phone’s dial pad with the supervisor’s number auto-filled. By clicking on the ‘Call’ button, the user can contact the supervisor for immediate assistance.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-14 at 9.48.43 AM.png" alt=""><figcaption></figcaption></figure>
+
+## Success Criteria&#x20;
+
+* Various actors involved in the process will be able to collect, track, and analyse data for the services delivered to them using a bug-free platform.&#x20;
+* The supervisors, district officers, and program managers will be able to monitor the team’s performance which will help them understand the problems and challenges faced by the teams.&#x20;
+* Digital records will result in maximum coverage with fewer chances of households being missed during a certain campaign.
+
+## Metrics to track&#x20;
+
+The following metrics will be tracked:&#x20;
+
+* Households delivered.&#x20;
+* Households not delivered.&#x20;
+* Households rejected.&#x20;
+* Team progress.\
+  \
+  \
+  \
+  [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
