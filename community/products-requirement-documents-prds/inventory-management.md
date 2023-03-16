@@ -51,4 +51,24 @@ b. Provide scope for future changes and improvements in the application.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-16 at 3.05.37 PM.png" alt=""><figcaption></figcaption></figure>
 
-##
+Specifications
+
+| Field                                   | Data type   | Data validation         | Required (Y/N) | Comments                                                                                                                                                                                                  |   |
+| --------------------------------------- | ----------- | ----------------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - |
+| Latitude/ Longitude                     | Numeric     | NA                      | Y              | The geographical coordinates of the house/household. It is captured by the system at the backend.                                                                                                         |   |
+| Warehouse name/ID                       |             | NA                      | Y              | The warehouse name/ID where the transaction is taking place. The search field must contain the values assigned to the project.                                                                            |   |
+| Date of receipt                         | Date        | Cannot be in the future | Y              | The date when a receipt was created. It is system-generated and non-editable.                                                                                                                             |   |
+| Administrative unit                     | String      | NA                      | Y              | The area boundary assigned to a specific user. It is captured from the location picker and is non-editable.                                                                                               |   |
+| Select product                          | Dropdown    | NA                      | Y              | This describes the type of resources needed.                                                                                                                                                              |   |
+| Received from                           | Search text | NA                      | Y              | The warehouse name from where the stock is received. The list must consist of all the warehouses, irrespective of the boundary and the distribution team value on top. This applies to every transaction. |   |
+| Waybill number                          | Numeric     | NA                      | N              | The unique packing slip number.                                                                                                                                                                           |   |
+| Number of nets indicated on the waybill | Numeric     | NA                      | N              | The total number of bed net counts indicated on the waybill.                                                                                                                                              |   |
+| Quantity received                       | Numeric     | NA                      | Y              | The total number of bed nets received.                                                                                                                                                                    |   |
+| Type of transport                       | Dropdown    | NA                      | N              | The type of transport which is used for delivery.                                                                                                                                                         |   |
+| Comments                                | String      | NA                      | N              | Additional comments for the transaction.                                                                                                                                                                  |   |
+| Vehicle number                          | String      | NA                      | N              |                                                                                                                                                                                                           |   |
+
+
+
+
+
