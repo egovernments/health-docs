@@ -208,8 +208,16 @@ Project: Click [**here**](https://github.com/egovernments/health-campaign-devops
 | EGOV\_MDMS\_MODULE\_NAME                  | project                                                | Not required                                   |   |
 | EGOV\_HOUSEHOLD\_HOST                     |                                                        | Host of the household service                  |   |
 | EGOV\_INDIVIDUAL\_HOST                    |                                                        |                                                |   |
-|                                           |                                                        |                                                |   |
-|                                           |                                                        |                                                |   |
+| EGOV\_SEARCH\_INDIVIDUAL\_URL             | /individual/v1/\_search                                | Search the URL of the individual               |   |
+| EGOV\_PRODUCT\_HOST                       |                                                        | Host of the product service                    |   |
+| EGOV\_SEARCH\_PRODUCT\_VARIANT\_URL       | /product/variant/v1/\_search                           | The URL of the product variant search          |   |
+| PROJECT.TASK.KAFKA.CREATE.TOPIC           | save-project-task-topic                                | The topic to save the project task             |   |
+| PROJECT.TASK.CONSUMER.BULK.CREATE.TOPIC   | save-project-task-bulk-topic                           | The topic to save the bulk project tasks       |   |
+| PROJECT.TASK.KAFKA.UPDATE.TOPIC           | update-project-task-topic                              | The topic to update the project task           |   |
+| PROJECT.TASK.CONSUMER.BULK.UPDATE.TOPIC   | update-project-task-bulk-topic                         | The topic to update the bulk project tasks     |   |
+| PROJECT.TASK.KAFKA.DELETE.TOPIC           | delete-project-task-topic                              | The topic to delete the project task           |   |
+| PROJECT.TASK.CONSUMER.BULK.DELETE.TOPIC   | delete-project-task-bulk-topic                         | The topic to delete the bulk project tasks     |   |
+| PROJECT.BENEFICIARY.KAFKA.CREATE.TOPIC    |                                                        |                                                |   |
 |                                           |                                                        |                                                |   |
 
 \
