@@ -237,6 +237,14 @@ Project: Click [**here**](https://github.com/egovernments/health-campaign-devops
 | PROJECT.DEFAULT.LIMIT                          | 100                                                    |                                                      |   |
 | PROJECT.SEARCH.MAX.LIMIT                       | 200                                                    |                                                      |   |
 | EGOV.IDGEN.PROJECT.NUMBER.NAME                 | project.number                                         |                                                      |   |
+| PROJECT.RESOURCE.IDGEN.ID.FORMAT               | project.resource.id                                    |                                                      |   |
+| PROJECT.RESOURCE.KAFKA.CREATE.TOPIC            | save-project-resource-topic                            | The topic to save the project resource               |   |
+| PROJECT.RESOURCE.KAFKA.UPDATE.TOPIC            | update-project-resource-topic                          | The topic to update the project resource             |   |
+| PROJECT.RESOURCE.KAFKA.DELETE.TOPIC            | delete-project-resource-topic                          | The topic to delete the project resource             |   |
+| PROJECT.RESOURCE.CONSUMER.BULK.CREATE.TOPIC    | delete-project-resource-topic                          | The topic to create bulk project resources           |   |
+| PROJECT.RESOURCE.CONSUMER.BULK.UPDATE.TOPIC    | update-project-resource-bulk-topic                     | The topic to update bulk project resources           |   |
+| PROJECT.RESOURCE.CONSUMER.BULK.DELETE.TOPIC    | delete-project-resource-bulk-topic                     | The topic to delete bulk project resources           |   |
+|                                                |                                                        |                                                      |   |
 |                                                |                                                        |                                                      |   |
 |                                                |                                                        |                                                      |   |
 |                                                |                                                        |                                                      |   |
