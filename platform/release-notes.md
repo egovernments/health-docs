@@ -115,6 +115,33 @@ Household: Click [here](https://github.com/egovernments/health-campaign-devops/b
 | HOUSEHOLD.MEMBER.CONSUMER.BULK.UPDATE.TOPIC | household-member-consumer-bulk-update-topic            | Topic to update bulk household members |
 | HOUSEHOLD.MEMBER.CONSUMER.BULK.DELETE.TOPIC | household-member-consumer-bulk-delete-topic            | Topic to delete bulk household members |
 
+Product: Click [here](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/health-services/product/values.yaml) to know more.
+
+| Environment variables                     | Value                                                  | Comments                        |   |
+| ----------------------------------------- | ------------------------------------------------------ | ------------------------------- | - |
+| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID        | health-product                                         |                                 |   |
+| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER  | org.apache.kafka.common.serialization.StringSerializer |                                 |   |
+| TRACER\_ERRORS\_PROVIDEEXCEPTIONINDETAILS |                                                        |                                 |   |
+| EGOV\_IDGEN\_HOST                         |                                                        | Value of IDGEN host server      |   |
+| EGOV\_IDGEN\_PATH                         | egov-idgen/id/\_generate                               |                                 |   |
+| EGOV\_IDGEN\_INTEGRATION\_ENABLED         | true/false                                             |                                 |   |
+| SPRING\_REDIS\_HOST                       | redis.backbone                                         |                                 |   |
+| SPRING\_REDIS\_PORT                       | 6379                                                   |                                 |   |
+| SPRING\_CACHE\_TYPE                       | redis                                                  |                                 |   |
+| SPRING\_CACHE\_REDIS\_TIME-TO-LIVE        |                                                        |                                 |   |
+| SPRING\_CACHE\_AUTOEXPIRY                 | true                                                   |                                 |   |
+| JAVA\_OPTS                                |                                                        |                                 |   |
+| JAVA\_ARGS                                |                                                        |                                 |   |
+| JAVA\_ENABLE\_DEBUG                       |                                                        |                                 |   |
+| SERVER\_PORT                              | 8080                                                   |                                 |   |
+| SECURITY\_BASIC\_ENABLED                  | false                                                  |                                 |   |
+| MANAGEMENT\_SECURITY\_ENABLED             | false                                                  |                                 |   |
+| TRACER\_OPENTRACING\_ENABLED              | true/false                                             |                                 |   |
+| PRODUCT\_KAFKA\_CREATE\_TOPIC             | save-product-topic                                     | Topic to save product           |   |
+| PRODUCT\_KAFKA\_UPDATE\_TOPIC             | update-product-topic                                   | Topic to update product         |   |
+| PRODUCT\_VARIANT\_KAFKA\_CREATE\_TOPIC    | save-product-variant-topic                             | Topic to create product variant |   |
+| PRODUCT\_VARIANT\_KAFKA\_UPDATE\_TOPIC    | update-product-variant-topic                           | Topic to update product variant |   |
+
 \
 
 
