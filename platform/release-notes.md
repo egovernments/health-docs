@@ -174,80 +174,87 @@ Facility: Click **** [**here**](https://github.com/egovernments/health-campaign-
 
 Project: Click [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/health-services/project/values.yaml) to know more.
 
-| Environment variables                          | Value                                                  | Comments                                             |   |
-| ---------------------------------------------- | ------------------------------------------------------ | ---------------------------------------------------- | - |
-| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID             | health-project                                         |                                                      |   |
-| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER       | org.apache.kafka.common.serialization.StringSerializer |                                                      |   |
-| TRACER\_ERRORS\_PROVIDEEXCEPTIONINDETAILS      |                                                        |                                                      |   |
-| EGOV\_IDGEN\_HOST                              |                                                        | Value of IDGEN host server                           |   |
-| EGOV\_IDGEN\_PATH                              | egov-idgen/id/\_generate                               |                                                      |   |
-| EGOV\_IDGEN\_INTEGRATION\_ENABLED              | true/false                                             |                                                      |   |
-| PROJECT.STAFF.IDGEN.ID.FORMAT                  | project.staff.id                                       | Project staff ID generated format                    |   |
-| PROJECT.FACILITY.IDGEN.ID.FORMAT               | project.facility.id                                    | Project facility id generated format                 |   |
-| PROJECT.TASK.IDGEN.ID.FORMAT                   | project.task.id                                        | Project task id generated format                     |   |
-| IDGEN.PROJECT.BENEFICIARY.ID.FORMAT            | project.beneficiary.id                                 | Project beneficiary id generated format              |   |
-| EGOV\_USER\_CONTEXT\_PATH                      |                                                        | User service context path                            |   |
-| EGOV\_SEARCH\_USER\_URL                        | /user/\_search                                         | User service search url                              |   |
-| EGOV\_USER\_INTEGRATION\_ENABLED               | true/false                                             | User service integration enabled if it is true       |   |
-| SPRING\_REDIS\_HOST                            | redis.backbone                                         |                                                      |   |
-| SPRING\_REDIS\_PORT                            | 6379                                                   |                                                      |   |
-| SPRING\_CACHE\_TYPE                            | redis                                                  |                                                      |   |
-| SPRING\_CACHE\_REDIS\_TIME-TO-LIVE             |                                                        |                                                      |   |
-| SPRING\_CACHE\_AUTOEXPIRY                      | true                                                   |                                                      |   |
-| JAVA\_OPTS                                     |                                                        |                                                      |   |
-| JAVA\_ARGS                                     |                                                        |                                                      |   |
-| JAVA\_ENABLE\_DEBUG                            |                                                        |                                                      |   |
-| SERVER\_PORT                                   | 8080                                                   |                                                      |   |
-| SECURITY\_BASIC\_ENABLED                       | false                                                  |                                                      |   |
-| MANAGEMENT\_SECURITY\_ENABLED                  | false                                                  |                                                      |   |
-| TRACER\_OPENTRACING\_ENABLED                   | true/false                                             |                                                      |   |
-| EGOV\_LOCATION\_CONTEXT\_PATH                  | /egov-location/location/v11                            |                                                      |   |
-| EGOV\_LOCATION\_ENDPOINT                       | /boundarys/\_search                                    | eGov location end -point                             |   |
-| EGOV\_MDMS\_INTEGRATION\_ENABLED               | true/false                                             |                                                      |   |
-| EGOV\_MDMS\_MASTER\_NAME                       | project\_master                                        | Creating an MDMS service bean                        |   |
-| EGOV\_MDMS\_MODULE\_NAME                       | project                                                | Not required                                         |   |
-| EGOV\_HOUSEHOLD\_HOST                          |                                                        | Host of the household service                        |   |
-| EGOV\_INDIVIDUAL\_HOST                         |                                                        |                                                      |   |
-| EGOV\_SEARCH\_INDIVIDUAL\_URL                  | /individual/v1/\_search                                | Search the URL of the individual                     |   |
-| EGOV\_PRODUCT\_HOST                            |                                                        | Host of the product service                          |   |
-| EGOV\_SEARCH\_PRODUCT\_VARIANT\_URL            | /product/variant/v1/\_search                           | The URL of the product variant search                |   |
-| PROJECT.TASK.KAFKA.CREATE.TOPIC                | save-project-task-topic                                | The topic to save the project task                   |   |
-| PROJECT.TASK.CONSUMER.BULK.CREATE.TOPIC        | save-project-task-bulk-topic                           | The topic to save the bulk project tasks             |   |
-| PROJECT.TASK.KAFKA.UPDATE.TOPIC                | update-project-task-topic                              | The topic to update the project task                 |   |
-| PROJECT.TASK.CONSUMER.BULK.UPDATE.TOPIC        | update-project-task-bulk-topic                         | The topic to update the bulk project tasks           |   |
-| PROJECT.TASK.KAFKA.DELETE.TOPIC                | delete-project-task-topic                              | The topic to delete the project task                 |   |
-| PROJECT.TASK.CONSUMER.BULK.DELETE.TOPIC        | delete-project-task-bulk-topic                         | The topic to delete the bulk project tasks           |   |
-| PROJECT.BENEFICIARY.KAFKA.CREATE.TOPIC         | save-project-beneficiary-topic                         | The topic to create the project beneficiary          |   |
-| PROJECT.BENEFICIARY.KAFKA.UPDATE.TOPIC         | update-project-beneficiary-topic                       | The topic to update the project beneficiary          |   |
-| PROJECT.BENEFICIARY.KAFKA.DELETE.TOPIC         | delete-project-beneficiary-topic                       | The topic to delete the project beneficiary          |   |
-| PROJECT.BENEFICIARY.CONSUMER.BULK.CREATE.TOPIC | project-beneficiary-consumer-bulk-create-topic         | The topic to create bulk project beneficiaries       |   |
-| PROJECT.BENEFICIARY.CONSUMER.BULK.UPDATE.TOPIC | project-beneficiary-consumer-bulk-update-topic         | The topic to update bulk project beneficiaries       |   |
-| PROJECT.BENEFICIARY.CONSUMER.BULK.DELETE.TOPIC | project-beneficiary-consumer-bulk-delete-topic         |  The topic to delete bulk project beneficiaries      |   |
-| PROJECT.STAFF.KAFKA.DELETE.TOPIC               | delete-project-staff-topic                             | The topic to delete the project staff                |   |
-| PROJECT.STAFF.KAFKA.CREATE.TOPIC               | save-project-staff-topic                               | The topic to create the project staff                |   |
-| PROJECT.STAFF.KAFKA.UPDATE.TOPIC               | update-project-staff-topic                             | The topic to update the project staff                |   |
-| PROJECT.STAFF.CONSUMER.BULK.DELETE.TOPIC       | delete-project-staff-bulk-topic                        | The topic to delete bulk project staff               |   |
-| PROJECT.STAFF.CONSUMER.BULK.CREATE.TOPIC       | create-project-staff-bulk-topic                        | The topic to create bulk project staff               |   |
-| PROJECT.STAFF.CONSUMER.BULK.UPDATE.TOPIC       | update-project-staff-bulk-topic                        | The topic to update bulk project staff               |   |
-| SEARCH\_API\_LIMIT                             | 1000                                                   | Search API limit                                     |   |
-| PROJECT.DOCUMENT.ID.VERIFICATION.REQUIRED      | false                                                  | Project ID verification is done if the value is true |   |
-| PROJECT.MANAGEMENT.SYSTEM.KAFKA.CREATE.TOPIC   | save-project                                           | The topic to save the project                        |   |
-| PROJECT.MANAGEMENT.SYSTEM.KAFKA.UPDATE.TOPIC   | update-project                                         | The topic to update the project                      |   |
-| PROJECT.DEFAULT.OFFSET                         | 0                                                      |                                                      |   |
-| PROJECT.DEFAULT.LIMIT                          | 100                                                    |                                                      |   |
-| PROJECT.SEARCH.MAX.LIMIT                       | 200                                                    |                                                      |   |
-| EGOV.IDGEN.PROJECT.NUMBER.NAME                 | project.number                                         |                                                      |   |
-| PROJECT.RESOURCE.IDGEN.ID.FORMAT               | project.resource.id                                    |                                                      |   |
-| PROJECT.RESOURCE.KAFKA.CREATE.TOPIC            | save-project-resource-topic                            | The topic to save the project resource               |   |
-| PROJECT.RESOURCE.KAFKA.UPDATE.TOPIC            | update-project-resource-topic                          | The topic to update the project resource             |   |
-| PROJECT.RESOURCE.KAFKA.DELETE.TOPIC            | delete-project-resource-topic                          | The topic to delete the project resource             |   |
-| PROJECT.RESOURCE.CONSUMER.BULK.CREATE.TOPIC    | delete-project-resource-topic                          | The topic to create bulk project resources           |   |
-| PROJECT.RESOURCE.CONSUMER.BULK.UPDATE.TOPIC    | update-project-resource-bulk-topic                     | The topic to update bulk project resources           |   |
-| PROJECT.RESOURCE.CONSUMER.BULK.DELETE.TOPIC    | delete-project-resource-bulk-topic                     | The topic to delete bulk project resources           |   |
-|                                                |                                                        |                                                      |   |
-|                                                |                                                        |                                                      |   |
-|                                                |                                                        |                                                      |   |
-|                                                |                                                        |                                                      |   |
+| Environment variables                          | Value                                                  | Comments                                               |   |
+| ---------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------ | - |
+| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID             | health-project                                         |                                                        |   |
+| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER       | org.apache.kafka.common.serialization.StringSerializer |                                                        |   |
+| TRACER\_ERRORS\_PROVIDEEXCEPTIONINDETAILS      |                                                        |                                                        |   |
+| EGOV\_IDGEN\_HOST                              |                                                        | Value of IDGEN host server                             |   |
+| EGOV\_IDGEN\_PATH                              | egov-idgen/id/\_generate                               |                                                        |   |
+| EGOV\_IDGEN\_INTEGRATION\_ENABLED              | true/false                                             |                                                        |   |
+| PROJECT.STAFF.IDGEN.ID.FORMAT                  | project.staff.id                                       | Project staff ID generated format                      |   |
+| PROJECT.FACILITY.IDGEN.ID.FORMAT               | project.facility.id                                    | Project facility id generated format                   |   |
+| PROJECT.TASK.IDGEN.ID.FORMAT                   | project.task.id                                        | Project task id generated format                       |   |
+| IDGEN.PROJECT.BENEFICIARY.ID.FORMAT            | project.beneficiary.id                                 | Project beneficiary id generated format                |   |
+| EGOV\_USER\_CONTEXT\_PATH                      |                                                        | User service context path                              |   |
+| EGOV\_SEARCH\_USER\_URL                        | /user/\_search                                         | User service search url                                |   |
+| EGOV\_USER\_INTEGRATION\_ENABLED               | true/false                                             | User service integration enabled if it is true         |   |
+| SPRING\_REDIS\_HOST                            | redis.backbone                                         |                                                        |   |
+| SPRING\_REDIS\_PORT                            | 6379                                                   |                                                        |   |
+| SPRING\_CACHE\_TYPE                            | redis                                                  |                                                        |   |
+| SPRING\_CACHE\_REDIS\_TIME-TO-LIVE             |                                                        |                                                        |   |
+| SPRING\_CACHE\_AUTOEXPIRY                      | true                                                   |                                                        |   |
+| JAVA\_OPTS                                     |                                                        |                                                        |   |
+| JAVA\_ARGS                                     |                                                        |                                                        |   |
+| JAVA\_ENABLE\_DEBUG                            |                                                        |                                                        |   |
+| SERVER\_PORT                                   | 8080                                                   |                                                        |   |
+| SECURITY\_BASIC\_ENABLED                       | false                                                  |                                                        |   |
+| MANAGEMENT\_SECURITY\_ENABLED                  | false                                                  |                                                        |   |
+| TRACER\_OPENTRACING\_ENABLED                   | true/false                                             |                                                        |   |
+| EGOV\_LOCATION\_CONTEXT\_PATH                  | /egov-location/location/v11                            |                                                        |   |
+| EGOV\_LOCATION\_ENDPOINT                       | /boundarys/\_search                                    | eGov location end -point                               |   |
+| EGOV\_MDMS\_INTEGRATION\_ENABLED               | true/false                                             |                                                        |   |
+| EGOV\_MDMS\_MASTER\_NAME                       | project\_master                                        | Creating an MDMS service bean                          |   |
+| EGOV\_MDMS\_MODULE\_NAME                       | project                                                | Not required                                           |   |
+| EGOV\_HOUSEHOLD\_HOST                          |                                                        | Host of the household service                          |   |
+| EGOV\_INDIVIDUAL\_HOST                         |                                                        |                                                        |   |
+| EGOV\_SEARCH\_INDIVIDUAL\_URL                  | /individual/v1/\_search                                | Search the URL of the individual                       |   |
+| EGOV\_PRODUCT\_HOST                            |                                                        | Host of the product service                            |   |
+| EGOV\_SEARCH\_PRODUCT\_VARIANT\_URL            | /product/variant/v1/\_search                           | The URL of the product variant search                  |   |
+| PROJECT.TASK.KAFKA.CREATE.TOPIC                | save-project-task-topic                                | The topic to save the project task                     |   |
+| PROJECT.TASK.CONSUMER.BULK.CREATE.TOPIC        | save-project-task-bulk-topic                           | The topic to save the bulk project tasks               |   |
+| PROJECT.TASK.KAFKA.UPDATE.TOPIC                | update-project-task-topic                              | The topic to update the project task                   |   |
+| PROJECT.TASK.CONSUMER.BULK.UPDATE.TOPIC        | update-project-task-bulk-topic                         | The topic to update the bulk project tasks             |   |
+| PROJECT.TASK.KAFKA.DELETE.TOPIC                | delete-project-task-topic                              | The topic to delete the project task                   |   |
+| PROJECT.TASK.CONSUMER.BULK.DELETE.TOPIC        | delete-project-task-bulk-topic                         | The topic to delete the bulk project tasks             |   |
+| PROJECT.BENEFICIARY.KAFKA.CREATE.TOPIC         | save-project-beneficiary-topic                         | The topic to create the project beneficiary            |   |
+| PROJECT.BENEFICIARY.KAFKA.UPDATE.TOPIC         | update-project-beneficiary-topic                       | The topic to update the project beneficiary            |   |
+| PROJECT.BENEFICIARY.KAFKA.DELETE.TOPIC         | delete-project-beneficiary-topic                       | The topic to delete the project beneficiary            |   |
+| PROJECT.BENEFICIARY.CONSUMER.BULK.CREATE.TOPIC | project-beneficiary-consumer-bulk-create-topic         | The topic to create bulk project beneficiaries         |   |
+| PROJECT.BENEFICIARY.CONSUMER.BULK.UPDATE.TOPIC | project-beneficiary-consumer-bulk-update-topic         | The topic to update bulk project beneficiaries         |   |
+| PROJECT.BENEFICIARY.CONSUMER.BULK.DELETE.TOPIC | project-beneficiary-consumer-bulk-delete-topic         |  The topic to delete bulk project beneficiaries        |   |
+| PROJECT.STAFF.KAFKA.DELETE.TOPIC               | delete-project-staff-topic                             | The topic to delete the project staff                  |   |
+| PROJECT.STAFF.KAFKA.CREATE.TOPIC               | save-project-staff-topic                               | The topic to create the project staff                  |   |
+| PROJECT.STAFF.KAFKA.UPDATE.TOPIC               | update-project-staff-topic                             | The topic to update the project staff                  |   |
+| PROJECT.STAFF.CONSUMER.BULK.DELETE.TOPIC       | delete-project-staff-bulk-topic                        | The topic to delete bulk project staff                 |   |
+| PROJECT.STAFF.CONSUMER.BULK.CREATE.TOPIC       | create-project-staff-bulk-topic                        | The topic to create bulk project staff                 |   |
+| PROJECT.STAFF.CONSUMER.BULK.UPDATE.TOPIC       | update-project-staff-bulk-topic                        | The topic to update bulk project staff                 |   |
+| SEARCH\_API\_LIMIT                             | 1000                                                   | Search API limit                                       |   |
+| PROJECT.DOCUMENT.ID.VERIFICATION.REQUIRED      | false                                                  | Project ID verification is done if the value is true   |   |
+| PROJECT.MANAGEMENT.SYSTEM.KAFKA.CREATE.TOPIC   | save-project                                           | The topic to save the project                          |   |
+| PROJECT.MANAGEMENT.SYSTEM.KAFKA.UPDATE.TOPIC   | update-project                                         | The topic to update the project                        |   |
+| PROJECT.DEFAULT.OFFSET                         | 0                                                      |                                                        |   |
+| PROJECT.DEFAULT.LIMIT                          | 100                                                    |                                                        |   |
+| PROJECT.SEARCH.MAX.LIMIT                       | 200                                                    |                                                        |   |
+| EGOV.IDGEN.PROJECT.NUMBER.NAME                 | project.number                                         |                                                        |   |
+| PROJECT.RESOURCE.IDGEN.ID.FORMAT               | project.resource.id                                    |                                                        |   |
+| PROJECT.RESOURCE.KAFKA.CREATE.TOPIC            | save-project-resource-topic                            | The topic to save the project resource                 |   |
+| PROJECT.RESOURCE.KAFKA.UPDATE.TOPIC            | update-project-resource-topic                          | The topic to update the project resource               |   |
+| PROJECT.RESOURCE.KAFKA.DELETE.TOPIC            | delete-project-resource-topic                          | The topic to delete the project resource               |   |
+| PROJECT.RESOURCE.CONSUMER.BULK.CREATE.TOPIC    | delete-project-resource-topic                          | The topic to create bulk project resources             |   |
+| PROJECT.RESOURCE.CONSUMER.BULK.UPDATE.TOPIC    | update-project-resource-bulk-topic                     | The topic to update bulk project resources             |   |
+| PROJECT.RESOURCE.CONSUMER.BULK.DELETE.TOPIC    | delete-project-resource-bulk-topic                     | The topic to delete bulk project resources             |   |
+| PROJECT.FACILITY.KAFKA.CREATE.TOPIC            | save-project-facility-topic                            | The topic to save the project facility                 |   |
+| PROJECT.FACILITY.KAFKA.UPDATE.TOPIC            | update-project-facility-topic                          | The topic to update the project facility               |   |
+| PROJECT.FACILITY.KAFKA.DELETE.TOPIC            | delete-project-facility-topic                          | The topic to delete the project facility               |   |
+| PROJECT.FACILITY.CONSUMER.BULK.CREATE.TOPIC    | create-project-facility-bulk-topic                     | The topic to create bulk project facilities            |   |
+| PROJECT.FACILITY.CONSUMER.BULK.UPDATE.TOPIC    | update-project-facility-bulk-topic                     | The topic to update bulk project facilities            |   |
+| PROJECT.FACILITY.CONSUMER.BULK.DELETE.TOPIC    | delete-project-facility-bulk-topic                     | The topic to delete bulk project facilities            |   |
+| EGOV\_FACILITY\_HOST                           |                                                        | The host of the facility service                       |   |
+| EGOV\_SEARCH\_FACILITY\_URL                    | /facility/v1/\_search                                  | The URL of the search facility                         |   |
+| PROJECT\_MDMS\_MODULE                          | HCM-PROJECT-TYPES                                      |                                                        |   |
+| EGOV\_LOCATION\_HIERARCHY\_TYPE                | Admin                                                  | The hierarchy value used to get boundary values        |   |
+| EGOV\_LOCATION\_CODES\_QUERY\_PARAM            | code                                                   | The query param used at the eGov location boundary API |   |
 
 \
 \
