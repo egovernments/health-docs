@@ -67,5 +67,6 @@ DIGIT platform and its user interfaces are completely open source. Also, all ext
 * Service Usage feedback - DIGIT user interfaces include a telemetry SDK which is backed by telemetry infrastructure in DIGIT platform. Coupled with API access logs, this enables DIGIT to gather usage feedback through live action and can be used for fine tuning interfaces and APIs
 * Design/Feature feedback - As an open source project on github, DIGIT provides a mechanism to provide comments/feedback on its various components using github. This feedback can be leveraged to create a Point of View on the future roadmap for the platform.
 
-​​[​![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)​](http://creativecommons.org/licenses/by/4.0/)
+​​[​](http://creativecommons.org/licenses/by/4.0/)\
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)[​](http://creativecommons.org/licenses/by/4.0/)
 
