@@ -293,8 +293,12 @@ Stock: Click [here](https://github.com/egovernments/health-campaign-devops/blob/
 | STOCK.RECONCILIATION.KAFKA.DELETE.TOPIC         | delete-stock-reconciliation-topic                      | The topic to delete stock reconciliation audits                   |   |
 | STOCK.RECONCILIATION.CONSUMER.BULK.CREATE.TOPIC | create-stock-reconciliation-bulk-topic                 | The topic to create bulk stock reconciliation                     |   |
 | STOCK.RECONCILIATION.CONSUMER.BULK.UPDATE.TOPIC | update-stock-reconciliation-bulk-topic                 | The topic to update bulk stock reconciliation                     |   |
-| xxxx                                            |                                                        |                                                                   |   |
-|                                                 |                                                        |                                                                   |   |
+| STOCK.RECONCILIATION.CONSUMER.BULK.DELETE.TOPIC | delete-stock-reconciliation-bulk-topic                 | The topic to delete bulk stock reconciliation                     |   |
+| SEARCH\_API\_LIMIT                              | 1000                                                   | Search API limit                                                  |   |
+| EGOV\_FACILITY\_HOST                            |                                                        | The host of the facility services                                 |   |
+| EGOV\_SEARCH\_FACILITY\_URL                     | /facility/v1/\_search                                  | The search URL of the facility                                    |   |
+| EGOV\_PROJECT\_FACILITY\_HOST                   |                                                        |                                                                   |   |
+| EGOV\_SEARCH\_PROJECT\_FACILITY\_URL            | /project/facility/v1/\_search                          |                                                                   |   |
 
 \
 \
