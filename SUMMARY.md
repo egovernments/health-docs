@@ -37,3 +37,4 @@
   * [Role Action Mapping](community/products-requirement-documents-prds/role-action-mapping.md)
   * [Beneficiary Registration](community/products-requirement-documents-prds/beneficiary-registration.md)
   * [Service Delivery](community/products-requirement-documents-prds/service-delivery.md)
+  * [Inventory Management](community/products-requirement-documents-prds/inventory-management.md)
