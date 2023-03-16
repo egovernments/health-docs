@@ -1,8 +1,8 @@
 # Platform Features
 
-## Platform Features
+DIGIT is an open-source platform licensed under the MIT license ([https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)) compliant with the NUIS digital blueprint.
 
-DIGIT is an open-source platform licensed under the MIT license ([https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)) compliant with the NUIS digital blueprint.Detailed mapping of DIGIT’s capabilities with the core requirements mentioned in the NUIS digital blueprint has been done below:
+The detailed mapping of DIGIT’s capabilities with the core requirements mentioned in the NUIS digital blueprint has been done below:
 
 | Key Principles                               | Description                                                                                                                                                                                                                                                                                                                                                                                                             |
 | -------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
