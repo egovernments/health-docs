@@ -47,5 +47,35 @@ The following applications are part of the release
 | Document uploader  | egovio/egov-document-uploader:v1.1.0-75d461a4d2-4  |
 | Playground         | egovio/playground:1.0                              |
 
+## Environment Variables for HCM Services
 
+Individual: Click [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/health-services/individual/values.yaml) to know more.
+
+| Environment variables                     | Value                                                  | Comments                            |
+| ----------------------------------------- | ------------------------------------------------------ | ----------------------------------- |
+| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID        | health-individual                                      |                                     |
+| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER  | org.apache.kafka.common.serialization.StringSerializer |                                     |
+| TRACER\_ERRORS\_PROVIDEEXCEPTIONINDETAILS |                                                        |                                     |
+| EGOV\_IDGEN\_HOST                         |                                                        | Value of IDGEN host server          |
+| EGOV\_IDGEN\_PATH                         | egov-idgen/id/\_generate                               |                                     |
+| EGOV\_IDGEN\_INTEGRATION\_ENABLED         | true/false                                             |                                     |
+| IDGEN.INDIVIDUAL.ID.FORMAT                | individual.id                                          |                                     |
+| SPRING\_REDIS\_HOST                       | redis.backbone                                         |                                     |
+| SPRING\_REDIS\_PORT                       |                                                        |                                     |
+| SPRING\_CACHE\_TYPE                       | redis                                                  |                                     |
+| SPRING\_CACHE\_REDIS\_TIME-TO-LIVE        |                                                        |                                     |
+| SPRING\_CACHE\_AUTOEXPIRY                 | true                                                   |                                     |
+| JAVA\_OPTS                                |                                                        |                                     |
+| JAVA\_ARGS                                |                                                        |                                     |
+| JAVA\_ENABLE\_DEBUG                       |                                                        |                                     |
+| SERVER\_PORT                              |                                                        |                                     |
+| SECURITY\_BASIC\_ENABLED                  | false                                                  |                                     |
+| MANAGEMENT\_SECURITY\_ENABLED             | false                                                  |                                     |
+| TRACER\_OPENTRACING\_ENABLED              | true/false                                             |                                     |
+| INDIVIDUAL.CONSUMER.SAVE.TOPIC            | save-individual-topic                                  | Topic to save individual            |
+| INDIVIDUAL.CONSUMER.UPDATE.TOPIC          | update-individual-topic                                | Topic to update individual          |
+| INDIVIDUAL.CONSUMER.DELETE.TOPIC          | delete-individual-topic                                | Topic to delete individua           |
+| INDIVIDUAL.CONSUMER.BULK.CREATE.TOPIC     | individual-consumer-bulk-create-topic                  | Topic to create individuals in bulk |
+| INDIVIDUAL.CONSUMER.BULK.UPDATE.TOPIC     | individual-consumer-bulk-update-topic                  | Topic to update individuals in bulk |
+| INDIVIDUAL.CONSUMER.BULK.DELETE.TOPIC     | individual-consumer-bulk-delete-topic                  | Topic to delete individuals in bulk |
 
