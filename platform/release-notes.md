@@ -258,51 +258,48 @@ Project: Click [**here**](https://github.com/egovernments/health-campaign-devops
 
 Stock: Click [here](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/health-services/stock/values.yaml) to know more.
 
-| Environment variables                           | Value                                                  | Comments                                                          |   |
-| ----------------------------------------------- | ------------------------------------------------------ | ----------------------------------------------------------------- | - |
-| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID              | health-project                                         |                                                                   |   |
-| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER        | org.apache.kafka.common.serialization.StringSerializer |                                                                   |   |
-| TRACER\_ERRORS\_PROVIDEEXCEPTIONINDETAILS       |                                                        |                                                                   |   |
-| EGOV\_IDGEN\_HOST                               |                                                        | Value of IDGEN host server                                        |   |
-| EGOV\_IDGEN\_PATH                               | egov-idgen/id/\_generate                               |                                                                   |   |
-| EGOV\_IDGEN\_INTEGRATION\_ENABLED               | true/false                                             |                                                                   |   |
-| STOCK.IDGEN.ID.FORMAT                           | stock.id                                               | The stock ID generated format                                     |   |
-| STOCK.RECONCILIATION.IDGEN.ID.FORMA             | stock.reconciliation.id                                | The stock reconciliation ID generated format                      |   |
-| PROJECT.TASK.IDGEN.ID.FORMAT                    | project.task.id                                        | The project task ID generated format                              |   |
-| SPRING\_REDIS\_HOST                             | redis.backbone                                         |                                                                   |   |
-| SPRING\_REDIS\_PORT                             | 6379                                                   |                                                                   |   |
-| SPRING\_CACHE\_TYPE                             | redis                                                  |                                                                   |   |
-| SPRING\_CACHE\_REDIS\_TIME-TO-LIVE              |                                                        |                                                                   |   |
-| SPRING\_CACHE\_AUTOEXPIRY                       | true                                                   |                                                                   |   |
-| JAVA\_OPTS                                      |                                                        |                                                                   |   |
-| JAVA\_ARGS                                      |                                                        |                                                                   |   |
-| JAVA\_ENABLE\_DEBUG                             |                                                        |                                                                   |   |
-| SERVER\_PORT                                    | 8080                                                   |                                                                   |   |
-| SECURITY\_BASIC\_ENABLED                        | false                                                  |                                                                   |   |
-| MANAGEMENT\_SECURITY\_ENABLED                   | false                                                  |                                                                   |   |
-| TRACER\_OPENTRACING\_ENABLED                    | true/false                                             |                                                                   |   |
-| EGOV\_SEARCH\_PRODUCT\_VARIANT\_URL             | /product/variant/v1/\_search                           | The product variant search URL to validate the product variant ID |   |
-| STOCK.KAFKA.CREATE.TOPIC                        | save-stock-topic                                       | The topic to save the stock receipts                              |   |
-| STOCK.KAFKA.UPDATE.TOPIC                        | update-stock-topic                                     | The topic to update the stock receipts                            |   |
-| STOCK.KAFKA.DELETE.TOPIC                        | delete-stock-topic                                     | The topic to delete the stock receipts                            |   |
-| STOCK.CONSUMER.BULK.CREATE.TOPIC                | create-stock-bulk-topic                                | The topic to create bulk stock receipts                           |   |
-| STOCK.CONSUMER.BULK.UPDATE.TOPIC                | update-stock-bulk-topic                                | The topic to update bulk stock receipts                           |   |
-| STOCK.CONSUMER.BULK.DELETE.TOPIC                | delete-stock-bulk-topic                                | The topic to delete bulk stock receipts                           |   |
-| STOCK.RECONCILIATION.KAFKA.CREATE.TOPIC         | save-stock-reconciliation-topic                        | The topic to create stock reconciliation audits                   |   |
-| STOCK.RECONCILIATION.KAFKA.UPDATE.TOPIC         | update-stock-reconciliation-topic                      | The topic to create stock reconciliation audits                   |   |
-| STOCK.RECONCILIATION.KAFKA.DELETE.TOPIC         | delete-stock-reconciliation-topic                      | The topic to delete stock reconciliation audits                   |   |
-| STOCK.RECONCILIATION.CONSUMER.BULK.CREATE.TOPIC | create-stock-reconciliation-bulk-topic                 | The topic to create bulk stock reconciliation                     |   |
-| STOCK.RECONCILIATION.CONSUMER.BULK.UPDATE.TOPIC | update-stock-reconciliation-bulk-topic                 | The topic to update bulk stock reconciliation                     |   |
-| STOCK.RECONCILIATION.CONSUMER.BULK.DELETE.TOPIC | delete-stock-reconciliation-bulk-topic                 | The topic to delete bulk stock reconciliation                     |   |
-| SEARCH\_API\_LIMIT                              | 1000                                                   | Search API limit                                                  |   |
-| EGOV\_FACILITY\_HOST                            |                                                        | The host of the facility services                                 |   |
-| EGOV\_SEARCH\_FACILITY\_URL                     | /facility/v1/\_search                                  | The search URL of the facility                                    |   |
-| EGOV\_PROJECT\_FACILITY\_HOST                   |                                                        |                                                                   |   |
-| EGOV\_SEARCH\_PROJECT\_FACILITY\_URL            | /project/facility/v1/\_search                          |                                                                   |   |
+| Environment variables                           | Value                                                  | Comments                                                          |
+| ----------------------------------------------- | ------------------------------------------------------ | ----------------------------------------------------------------- |
+| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID              | health-project                                         |                                                                   |
+| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER        | org.apache.kafka.common.serialization.StringSerializer |                                                                   |
+| TRACER\_ERRORS\_PROVIDEEXCEPTIONINDETAILS       |                                                        |                                                                   |
+| EGOV\_IDGEN\_HOST                               |                                                        | Value of IDGEN host server                                        |
+| EGOV\_IDGEN\_PATH                               | egov-idgen/id/\_generate                               |                                                                   |
+| EGOV\_IDGEN\_INTEGRATION\_ENABLED               | true/false                                             |                                                                   |
+| STOCK.IDGEN.ID.FORMAT                           | stock.id                                               | The stock ID generated format                                     |
+| STOCK.RECONCILIATION.IDGEN.ID.FORMA             | stock.reconciliation.id                                | The stock reconciliation ID generated format                      |
+| PROJECT.TASK.IDGEN.ID.FORMAT                    | project.task.id                                        | The project task ID generated format                              |
+| SPRING\_REDIS\_HOST                             | redis.backbone                                         |                                                                   |
+| SPRING\_REDIS\_PORT                             | 6379                                                   |                                                                   |
+| SPRING\_CACHE\_TYPE                             | redis                                                  |                                                                   |
+| SPRING\_CACHE\_REDIS\_TIME-TO-LIVE              |                                                        |                                                                   |
+| SPRING\_CACHE\_AUTOEXPIRY                       | true                                                   |                                                                   |
+| JAVA\_OPTS                                      |                                                        |                                                                   |
+| JAVA\_ARGS                                      |                                                        |                                                                   |
+| JAVA\_ENABLE\_DEBUG                             |                                                        |                                                                   |
+| SERVER\_PORT                                    | 8080                                                   |                                                                   |
+| SECURITY\_BASIC\_ENABLED                        | false                                                  |                                                                   |
+| MANAGEMENT\_SECURITY\_ENABLED                   | false                                                  |                                                                   |
+| TRACER\_OPENTRACING\_ENABLED                    | true/false                                             |                                                                   |
+| EGOV\_SEARCH\_PRODUCT\_VARIANT\_URL             | /product/variant/v1/\_search                           | The product variant search URL to validate the product variant ID |
+| STOCK.KAFKA.CREATE.TOPIC                        | save-stock-topic                                       | The topic to save the stock receipts                              |
+| STOCK.KAFKA.UPDATE.TOPIC                        | update-stock-topic                                     | The topic to update the stock receipts                            |
+| STOCK.KAFKA.DELETE.TOPIC                        | delete-stock-topic                                     | The topic to delete the stock receipts                            |
+| STOCK.CONSUMER.BULK.CREATE.TOPIC                | create-stock-bulk-topic                                | The topic to create bulk stock receipts                           |
+| STOCK.CONSUMER.BULK.UPDATE.TOPIC                | update-stock-bulk-topic                                | The topic to update bulk stock receipts                           |
+| STOCK.CONSUMER.BULK.DELETE.TOPIC                | delete-stock-bulk-topic                                | The topic to delete bulk stock receipts                           |
+| STOCK.RECONCILIATION.KAFKA.CREATE.TOPIC         | save-stock-reconciliation-topic                        | The topic to create stock reconciliation audits                   |
+| STOCK.RECONCILIATION.KAFKA.UPDATE.TOPIC         | update-stock-reconciliation-topic                      | The topic to create stock reconciliation audits                   |
+| STOCK.RECONCILIATION.KAFKA.DELETE.TOPIC         | delete-stock-reconciliation-topic                      | The topic to delete stock reconciliation audits                   |
+| STOCK.RECONCILIATION.CONSUMER.BULK.CREATE.TOPIC | create-stock-reconciliation-bulk-topic                 | The topic to create bulk stock reconciliation                     |
+| STOCK.RECONCILIATION.CONSUMER.BULK.UPDATE.TOPIC | update-stock-reconciliation-bulk-topic                 | The topic to update bulk stock reconciliation                     |
+| STOCK.RECONCILIATION.CONSUMER.BULK.DELETE.TOPIC | delete-stock-reconciliation-bulk-topic                 | The topic to delete bulk stock reconciliation                     |
+| SEARCH\_API\_LIMIT                              | 1000                                                   | Search API limit                                                  |
+| EGOV\_FACILITY\_HOST                            |                                                        | The host of the facility services                                 |
+| EGOV\_SEARCH\_FACILITY\_URL                     | /facility/v1/\_search                                  | The search URL of the facility                                    |
+| EGOV\_PROJECT\_FACILITY\_HOST                   |                                                        |                                                                   |
+| EGOV\_SEARCH\_PROJECT\_FACILITY\_URL            | /project/facility/v1/\_search                          |                                                                   |
 
 \
-\
-
-
 
 
