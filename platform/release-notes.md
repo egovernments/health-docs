@@ -234,9 +234,9 @@ Project: Click [**here**](https://github.com/egovernments/health-campaign-devops
 | PROJECT.MANAGEMENT.SYSTEM.KAFKA.CREATE.TOPIC   | save-project                                           | The topic to save the project                        |   |
 | PROJECT.MANAGEMENT.SYSTEM.KAFKA.UPDATE.TOPIC   | update-project                                         | The topic to update the project                      |   |
 | PROJECT.DEFAULT.OFFSET                         | 0                                                      |                                                      |   |
-|                                                | 100                                                    |                                                      |   |
-|                                                |                                                        |                                                      |   |
-|                                                |                                                        |                                                      |   |
+| PROJECT.DEFAULT.LIMIT                          | 100                                                    |                                                      |   |
+| PROJECT.SEARCH.MAX.LIMIT                       | 200                                                    |                                                      |   |
+| EGOV.IDGEN.PROJECT.NUMBER.NAME                 | project.number                                         |                                                      |   |
 |                                                |                                                        |                                                      |   |
 |                                                |                                                        |                                                      |   |
 |                                                |                                                        |                                                      |   |
