@@ -174,21 +174,43 @@ Facility: Click **** [**here**](https://github.com/egovernments/health-campaign-
 
 Project: Click [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/health-services/project/values.yaml) to know more.
 
-| Environment variables                     | Value                                                  | Comments                                |   |
-| ----------------------------------------- | ------------------------------------------------------ | --------------------------------------- | - |
-| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID        | health-project                                         |                                         |   |
-| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER  | org.apache.kafka.common.serialization.StringSerializer |                                         |   |
-| TRACER\_ERRORS\_PROVIDEEXCEPTIONINDETAILS |                                                        |                                         |   |
-| EGOV\_IDGEN\_HOST                         |                                                        | Value of IDGEN host server              |   |
-| EGOV\_IDGEN\_PATH                         | egov-idgen/id/\_generate                               |                                         |   |
-| EGOV\_IDGEN\_INTEGRATION\_ENABLED         | true/false                                             |                                         |   |
-| PROJECT.STAFF.IDGEN.ID.FORMAT             | project.staff.id                                       | Project staff ID generated format       |   |
-| PROJECT.FACILITY.IDGEN.ID.FORMAT          | project.facility.id                                    | Project facility id generated format    |   |
-| PROJECT.TASK.IDGEN.ID.FORMAT              | project.task.id                                        | Project task id generated format        |   |
-| IDGEN.PROJECT.BENEFICIARY.ID.FORMAT       | project.beneficiary.id                                 | Project beneficiary id generated format |   |
-| EGOV\_USER\_CONTEXT\_PATH                 |                                                        | User service context                    |   |
-|                                           |                                                        |                                         |   |
-|                                           |                                                        |                                         |   |
+| Environment variables                     | Value                                                  | Comments                                       |   |
+| ----------------------------------------- | ------------------------------------------------------ | ---------------------------------------------- | - |
+| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID        | health-project                                         |                                                |   |
+| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER  | org.apache.kafka.common.serialization.StringSerializer |                                                |   |
+| TRACER\_ERRORS\_PROVIDEEXCEPTIONINDETAILS |                                                        |                                                |   |
+| EGOV\_IDGEN\_HOST                         |                                                        | Value of IDGEN host server                     |   |
+| EGOV\_IDGEN\_PATH                         | egov-idgen/id/\_generate                               |                                                |   |
+| EGOV\_IDGEN\_INTEGRATION\_ENABLED         | true/false                                             |                                                |   |
+| PROJECT.STAFF.IDGEN.ID.FORMAT             | project.staff.id                                       | Project staff ID generated format              |   |
+| PROJECT.FACILITY.IDGEN.ID.FORMAT          | project.facility.id                                    | Project facility id generated format           |   |
+| PROJECT.TASK.IDGEN.ID.FORMAT              | project.task.id                                        | Project task id generated format               |   |
+| IDGEN.PROJECT.BENEFICIARY.ID.FORMAT       | project.beneficiary.id                                 | Project beneficiary id generated format        |   |
+| EGOV\_USER\_CONTEXT\_PATH                 |                                                        | User service context path                      |   |
+| EGOV\_SEARCH\_USER\_URL                   | /user/\_search                                         | User service search url                        |   |
+| EGOV\_USER\_INTEGRATION\_ENABLED          | true/false                                             | User service integration enabled if it is true |   |
+| SPRING\_REDIS\_HOST                       | redis.backbone                                         |                                                |   |
+| SPRING\_REDIS\_PORT                       | 6379                                                   |                                                |   |
+| SPRING\_CACHE\_TYPE                       | redis                                                  |                                                |   |
+| SPRING\_CACHE\_REDIS\_TIME-TO-LIVE        |                                                        |                                                |   |
+| SPRING\_CACHE\_AUTOEXPIRY                 | true                                                   |                                                |   |
+| JAVA\_OPTS                                |                                                        |                                                |   |
+| JAVA\_ARGS                                |                                                        |                                                |   |
+| JAVA\_ENABLE\_DEBUG                       |                                                        |                                                |   |
+| SERVER\_PORT                              | 8080                                                   |                                                |   |
+| SECURITY\_BASIC\_ENABLED                  | false                                                  |                                                |   |
+| MANAGEMENT\_SECURITY\_ENABLED             | false                                                  |                                                |   |
+| TRACER\_OPENTRACING\_ENABLED              | true/false                                             |                                                |   |
+| EGOV\_LOCATION\_CONTEXT\_PATH             | /egov-location/location/v11                            |                                                |   |
+| EGOV\_LOCATION\_ENDPOINT                  | /boundarys/\_search                                    | eGov location end -point                       |   |
+| EGOV\_MDMS\_INTEGRATION\_ENABLED          | true/false                                             |                                                |   |
+| EGOV\_MDMS\_MASTER\_NAME                  | project\_master                                        | Creating an MDMS service bean                  |   |
+| EGOV\_MDMS\_MODULE\_NAME                  | project                                                | Not required                                   |   |
+| EGOV\_HOUSEHOLD\_HOST                     |                                                        | Host of the household service                  |   |
+| EGOV\_INDIVIDUAL\_HOST                    |                                                        |                                                |   |
+|                                           |                                                        |                                                |   |
+|                                           |                                                        |                                                |   |
+|                                           |                                                        |                                                |   |
 
 \
 \
