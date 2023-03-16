@@ -174,11 +174,21 @@ Facility: Click **** [**here**](https://github.com/egovernments/health-campaign-
 
 Project: Click [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/health-services/project/values.yaml) to know more.
 
-| Environment variables | Value | Comments |   |
-| --------------------- | ----- | -------- | - |
-|                       |       |          |   |
-|                       |       |          |   |
-|                       |       |          |   |
+| Environment variables                     | Value                                                  | Comments                                |   |
+| ----------------------------------------- | ------------------------------------------------------ | --------------------------------------- | - |
+| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID        | health-project                                         |                                         |   |
+| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER  | org.apache.kafka.common.serialization.StringSerializer |                                         |   |
+| TRACER\_ERRORS\_PROVIDEEXCEPTIONINDETAILS |                                                        |                                         |   |
+| EGOV\_IDGEN\_HOST                         |                                                        | Value of IDGEN host server              |   |
+| EGOV\_IDGEN\_PATH                         | egov-idgen/id/\_generate                               |                                         |   |
+| EGOV\_IDGEN\_INTEGRATION\_ENABLED         | true/false                                             |                                         |   |
+| PROJECT.STAFF.IDGEN.ID.FORMAT             | project.staff.id                                       | Project staff ID generated format       |   |
+| PROJECT.FACILITY.IDGEN.ID.FORMAT          | project.facility.id                                    | Project facility id generated format    |   |
+| PROJECT.TASK.IDGEN.ID.FORMAT              | project.task.id                                        | Project task id generated format        |   |
+| IDGEN.PROJECT.BENEFICIARY.ID.FORMAT       | project.beneficiary.id                                 | Project beneficiary id generated format |   |
+| EGOV\_USER\_CONTEXT\_PATH                 |                                                        | User service context                    |   |
+|                                           |                                                        |                                         |   |
+|                                           |                                                        |                                         |   |
 
 \
 \
