@@ -79,3 +79,44 @@ Individual: Click [**here**](https://github.com/egovernments/health-campaign-dev
 | INDIVIDUAL.CONSUMER.BULK.UPDATE.TOPIC     | individual-consumer-bulk-update-topic                  | Topic to update individuals in bulk |
 | INDIVIDUAL.CONSUMER.BULK.DELETE.TOPIC     | individual-consumer-bulk-delete-topic                  | Topic to delete individuals in bulk |
 
+Household: Click [here](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/health-services/household/values.yaml) to know more.
+
+| Environment variables                       | Value                                                  | Comments                               |
+| ------------------------------------------- | ------------------------------------------------------ | -------------------------------------- |
+| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID          | health-household                                       |                                        |
+| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER    | org.apache.kafka.common.serialization.StringSerializer |                                        |
+| TRACER\_ERRORS\_PROVIDEEXCEPTIONINDETAILS   |                                                        | Value of IDGEN host serve              |
+| EGOV\_IDGEN\_HOST                           |                                                        |                                        |
+| EGOV\_IDGEN\_PATH                           | egov-idgen/id/\_generate                               |                                        |
+| EGOV\_IDGEN\_INTEGRATION\_ENABLED           | true/false                                             |                                        |
+| HOUSEHOLD.IDGEN.ID.FORMAT                   | household.id                                           |                                        |
+| SPRING\_REDIS\_HOST                         | redis.backbone                                         |                                        |
+| SPRING\_REDIS\_PORT                         | 6379                                                   |                                        |
+| SPRING\_CACHE\_TYPE                         | redis                                                  |                                        |
+| SPRING\_CACHE\_REDIS\_TIME-TO-LIVE          |                                                        |                                        |
+| SPRING\_CACHE\_AUTOEXPIRY                   | true                                                   |                                        |
+| JAVA\_OPTS                                  |                                                        |                                        |
+| JAVA\_ARGS                                  |                                                        |                                        |
+| JAVA\_ENABLE\_DEBUG                         |                                                        |                                        |
+| SERVER\_PORT                                | 8080                                                   |                                        |
+| SECURITY\_BASIC\_ENABLED                    | false                                                  |                                        |
+| MANAGEMENT\_SECURITY\_ENABLED               | false                                                  |                                        |
+| TRACER\_OPENTRACING\_ENABLED                | true/false                                             |                                        |
+| HOUSEHOLD.KAFKA.CREATE.TOPIC                | save-household-topic                                   | Topic to save household                |
+| HOUSEHOLD.KAFKA.UPDATE.TOPIC                | update-household-topic                                 | Topic to update household              |
+| HOUSEHOLD.KAFKA.DELETE.TOPIC                | delete-household-topic                                 | Topic to delete household              |
+| HOUSEHOLD.CONSUMER.BULK.CREATE.TOPIC        | create-household-bulk-topic                            | Topic to create households in bulk     |
+| HOUSEHOLD.CONSUMER.BULK.UPDATE.TOPIC        | update-household-bulk-topic                            | Topic to update households in bulk     |
+| HOUSEHOLD.CONSUMER.BULK.DELETE.TOPIC        | delete-household-bulk-topic                            | Topic to delete households in bulk     |
+| HOUSEHOLD\_MEMBER\_KAFKA\_CREATE\_TOPIC     | save-household-member-topic                            | Topic to create household member       |
+| HOUSEHOLD\_MEMBER\_KAFKA\_UPDATE\_TOPIC     | update-household-member-topic                          | Topic to update household member       |
+| HOUSEHOLD\_MEMBER\_KAFKA\_DELETE\_TOPIC     | delete-household-member-topic                          | Topic to delete household member       |
+| HOUSEHOLD.MEMBER.CONSUMER.BULK.CREATE.TOPIC | household-member-consumer-bulk-create-topic            | Topic to create bulk household members |
+| HOUSEHOLD.MEMBER.CONSUMER.BULK.UPDATE.TOPIC | household-member-consumer-bulk-update-topic            | Topic to update bulk household members |
+| HOUSEHOLD.MEMBER.CONSUMER.BULK.DELETE.TOPIC | household-member-consumer-bulk-delete-topic            | Topic to delete bulk household members |
+
+\
+
+
+
+
