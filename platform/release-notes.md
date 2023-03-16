@@ -286,9 +286,9 @@ Stock: Click [here](https://github.com/egovernments/health-campaign-devops/blob/
 | STOCK.KAFKA.UPDATE.TOPIC                  | update-stock-topic                                     | The topic to update the stock receipts                            |   |
 | STOCK.KAFKA.DELETE.TOPIC                  | delete-stock-topic                                     | The topic to delete the stock receipts                            |   |
 | STOCK.CONSUMER.BULK.CREATE.TOPIC          | create-stock-bulk-topic                                | The topic to create bulk stock receipts                           |   |
-|                                           |                                                        |                                                                   |   |
-|                                           |                                                        |                                                                   |   |
-|                                           |                                                        |                                                                   |   |
+| STOCK.CONSUMER.BULK.DELETE.TOPIC          | delete-stock-bulk-topic                                |                                                                   |   |
+| STOCK.RECONCILIATION.KAFKA.CREATE.TOPIC   | save-stock-reconciliation-topic                        |                                                                   |   |
+| STOCK.RECONCILIATION.KAFKA.UPDATE.TOPIC   | update-stock-reconciliation-topic                      |                                                                   |   |
 |                                           |                                                        |                                                                   |   |
 |                                           |                                                        |                                                                   |   |
 |                                           |                                                        |                                                                   |   |
