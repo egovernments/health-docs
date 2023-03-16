@@ -172,6 +172,14 @@ Facility: Click **** [**here**](https://github.com/egovernments/health-campaign-
 | FACILITY.CONSUMER.BULK.UPDATE.TOPIC       | update-facility-bulk-topic                             |                            |   |
 | FACILITY.CONSUMER.BULK.DELETE.TOPIC       | delete-facility-bulk-topic                             |                            |   |
 
+Project: Click [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/health-services/project/values.yaml) to know more.
+
+| Environment variables | Value | Comments |   |
+| --------------------- | ----- | -------- | - |
+|                       |       |          |   |
+|                       |       |          |   |
+|                       |       |          |   |
+
 \
 \
 
