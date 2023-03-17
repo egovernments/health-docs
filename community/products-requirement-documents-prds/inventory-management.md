@@ -12,6 +12,10 @@ Assumptions and Validations&#x20;
 
 Process flow
 
+Design
+
+Success Criteria
+
 ## Background
 
 This document describes the need and scope of a digital platform for health campaigns, explaining the product’s features, specifications, purpose, and functionality.
@@ -245,11 +249,20 @@ When the user clicks on the “Stock Received” button, the report for stock re
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.48.32 PM.png" alt=""><figcaption></figcaption></figure>
 
+### Report (Stock Reconciliation)
+
+For the stock reconciliation report, the table consists of the date in the first column and other columns. The “Back To Home” button will navigate users to the home screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.51.34 PM.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.51.42 PM.png" alt=""><figcaption></figcaption></figure>
+
+## Success Criteria
+
+1. Various actors involved in the process will be able to collect, track, and analyse the data for beneficiaries registered as well as services delivered to them using a bug-free platform.
+2. The supervisors, district officers, and program managers will be able to monitor the team’s performance which will help them understand the problems and challenges faced by the teams.
+3. This will facilitate the warehouse managers to optimise the inventory management of interventions which will further improve the supply chain and prevent surplus or deficit of stock. This includes stock receipts, issues, returns, and lateral movements of the stock.&#x20;
+4. Digital records will result in maximum coverage with fewer chances of households being missed during a certain campaign.
+
 \
-\
-\
-\
-\
-\
-\
-\
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
