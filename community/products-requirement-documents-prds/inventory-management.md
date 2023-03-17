@@ -86,3 +86,30 @@ Specifications
 | Manual stock count                      | Numeric      | NA                      | Y              | Manual count of the stock.                                                                                                                                                                                |
 | Comments                                | String       | NA                      | N              | If needed, comments can be manually added.                                                                                                                                                                |
 
+## Design
+
+Find the mockups below:
+
+### Home Screen
+
+After successful login, a user lands on the home screen of inventory management which consists of the following actions and elements:
+
+* Manage Stock
+* Stock Reconciliation
+* View Reports
+* Sync Data
+* Call Supervisor
+* File Complaint
+
+There is a location picker on the top right that displays the assigned boundary for the user. The help button provides a walkthrough of the screen to the user. The hamburger button on the top left consists of a few quick actions. The location picker, help button, and hamburger buttons are available on every screen for a user’s convenience.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 2.53.04 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Hamburger Button
+
+After clicking on the hamburger button, a list of actions appears on the user screen. On top, it displays the user name and contact number, followed by other options such as the home button, language select, edit profile, projects, and logout. The “Edit Profile” option is not in scope for V1; it needs to be taken in V1.1 If the user clicks on the hamburger button again, it collapses the hamburger menu. The button is available on all screens of the application.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 2.54.42 PM.png" alt=""><figcaption></figcaption></figure>
+
+\
+\
