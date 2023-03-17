@@ -2,7 +2,7 @@
 
 ## Overview
 
-The individual registry helps and provides APIs to create citizens or users to the DIGIT digit platform. This page provides the configuration details for setting up individuals.
+The individual registry helps and provides APIs to create citizens or users to the DIGIT platform. This document provides the configuration details for setting up individuals.
 
 ## **Pre-requisites**
 
