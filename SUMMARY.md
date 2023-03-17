@@ -21,6 +21,7 @@
     * [Setup Requirements](platform/installation/setup-requirements.md)
     * [Setup](platform/setup.md)
     * [Tech Enablement Training: Essential Skills and                    Pre-requisites](platform/installation/tech-enablement-training-essential-skills-and-pre-requisites.md)
+    * [DevOps Skills Requirements](platform/installation/devops-skills-requirements.md)
 * [Page 1](page-1.md)
 * [Product](product/README.md)
   * [Health Campaign Management](product/health-campaign-management.md)
