@@ -210,6 +210,44 @@ The user must provide the details for the stock loss.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.35.31 PM.png" alt=""><figcaption></figcaption></figure>
 
+Stock Reconciliation
+
+When the user clicks on the stock reconciliation button on the home screen, they are navigated to this screen where they need to verify whether the physical count and calculated stock values are the same or not. In the select product field, the user needs to select a product from the dropdown. There are warehouse name and administrative area fields as well, all of which are mandatory. The following details are there:
+
+* Date of Reconciliation
+* Received Stock&#x20;
+* Issued Stock
+* Returned Stock
+* Damaged Stock
+* Stock Lost
+* Stock on Hand- The stock on hand is calculated as incoming stock minus outgoing stock. There is a hint icon for how the stock on hand is calculated. The received and returned stocks will be considered incoming stocks. The issued, damaged and lost stocks will be considered outgoing stocks.
+
+The date of reconciliation is system-generated and non-editable. Other values are calculated based on the data recorded in stock receipts, stock issued, and the stock returned screens. In the manual stock count, the user needs to enter the value for manually counted inventory. If the stock on hand does not match the physical count, then the latter must take precedence, provided the user has submitted the form with a proper reason. In the comments field, the user can add remarks and comments.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.43.09 PM.png" alt=""><figcaption></figcaption></figure>
+
+### View Reports (Scope for v1.1)
+
+When a user clicks on the view reports button on the home screen, he/she is navigated to this page where he/she has the provision to view the following reports:
+
+* Stock Received
+* Stock Issued
+* Stock Returned
+* Stock Reconciliation
+
+Users can click on the arrow button placed next to every transaction to open the respective report. The back button will navigate them back to the home screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.45.04 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Report (Stock Received)
+
+When the user clicks on the “Stock Received” button, the report for stock received appears which provides a tabular representation of the data. The table is scrollable, both vertically and horizontally, to cater to multiple values and columns. The date column is kept frozen and other columns are scrollable. The first column is for the date of the receipt, followed by units received in the second column, and received from (warehouse name) in the third column. The “Back To Home” button is placed at the bottom of the screen which navigates the user back to the home screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.48.32 PM.png" alt=""><figcaption></figcaption></figure>
+
+\
+\
+\
 \
 \
 \
