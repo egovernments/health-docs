@@ -17,7 +17,7 @@ The individual registry helps and provides APIs to create citizens or users to t
 
 1. Provides APIs to create, update, and delete individuals.
 2. Provides APIs to bulk create, update, and delete individuals.
-3. Inactivates the status of an individual post deletion.
+3. Inactivates the status of individuals post deletion.
 4. Provides search API for individuals on name, individual ID, unique ID, and date of birth.&#x20;
 
 **Setup Details**
@@ -32,7 +32,7 @@ Refer to the Swagger API for YAML file details. Link -<img src="https://github.c
 
 **Application.properties file information**_**:**_
 
-kafka topics persister configs for eGov persister
+Kafka topics persister configs for eGov persister
 
 ```
 individual.consumer.bulk.create.topic=individual-consumer-bulk-create-topic
