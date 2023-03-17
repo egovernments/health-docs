@@ -177,5 +177,41 @@ When the user clicks on stock returned, the warehouse details screen appears. Th
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.21.33 PM.png" alt=""><figcaption></figcaption></figure>
 
+### Stock Returned Details
+
+The user needs to provide details for the stock returned. The “Select product” field acts the same as that for stock receipt. In the “Returned from” field, the user needs to select the warehouse from where the stock has been returned.  The “Quantity returned” field collects the information for how much quantity of stock has been returned. When the user has entered all the details, he/she must click on the submit button which leads to the confirmation screen that confirms whether the record has been created successfully or there are some errors.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.24.45 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Warehouse Details (Stock Damaged)
+
+For the damaged stock, the user must provide the details asked on the screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.26.19 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Damaged Stock Details
+
+The user needs to provide the details for the damaged stock. There can be two cases for the damaged stock:
+
+1. If the stock is damaged during transit, then the user must select the warehouse name from where the stock was received.
+2. If the stock is damaged during storage, then the user must select N/A from the dropdown.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.30.08 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Warehouse Details (Stock Loss)&#x20;
+
+The user needs to provide the details for the lost stock.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.34.18 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Lost Stock Details
+
+The user must provide the details for the stock loss.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.35.31 PM.png" alt=""><figcaption></figcaption></figure>
+
+\
+\
+\
 \
 \
