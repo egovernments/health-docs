@@ -111,5 +111,71 @@ After clicking on the hamburger button, a list of actions appears on the user sc
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 2.54.42 PM.png" alt=""><figcaption></figcaption></figure>
 
+### Manage Stocks
+
+This screen consists of different types of transactions that take place for the inventory. These include:
+
+* Stock Receipt
+* Stock Issued
+* Stock Returned
+* Stock Damaged
+* Stock Loss
+
+Every transaction has a separate card with an arrow button, an icon, and a brief description below the title. Clicking on the arrow button will navigate the user to the warehouse details screen. The back button is located below the hamburger button, which takes the user to the previous screen (In this case, it is the home screen).
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 3.59.23 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Error Popup
+
+If the user is not assigned any warehouse, then an error popup must appear over the warehouse details screen, asking the user to contact the system administrator to assign a warehouse. The user must be able to close the popup and change the administrative area on the warehouse details screen to check if he/she is assigned any warehouse in any other boundary. This must force the screen to load again and check for the warehouse.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.01.28 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Warehouse Details (Stock Receipt)
+
+When the user clicks on record stock receipt, the warehouse details screen will appear. The latitude/longitude captures the Geo-location of the warehouse which can be fetched with the help of the location icon within the field. It is a mandatory field denoted by \*. The warehouse name/ID is a dropdown field which contains the list of warehouses assigned to the project for a particular user. If there is only one warehouse, the field must be auto-populated by the system.
+
+The date of receipt field captures the date of transaction which can be fetched with the help of a calendar icon placed inside the box. The field must be validated, where the date cannot be in the future. If the user puts a future value, it must show an error message stating “date cannot be in future”. The user must select the administrative unit from the dropdown of the administrative unit field. The next button navigates the user to the stock receipt details screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.04.39 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Received Stock Details
+
+The user must provide details of the stock received. The select product field has a dropdown that consists of all the products under a campaign. The user can select from the list the desired product that he has received. The type of transaction is provided to specify whether the stock is being received, issued, or returned.
+
+In the ‘received from’ section, the user needs to select from the dropdown the warehouse from which the stock is being received. The dropdown must contain the list of all the warehouses that are part of the campaign, that is, the list must be of the warehouse assigned to the root project. The list is taken from the facility registry and must be the same for all the transactions. The quantity received field collects the information for how much quantity of stock is being received.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.10.48 PM.png" alt=""><figcaption></figcaption></figure>
+
+For a pack of a certain number of nets, there is a packing slip attached to the packet which indicates the number of nets within that pack. The user needs to mention the value in the number of nets field.
+
+The total number of packing slips must be mentioned in the following field. The user can add any comments/remarks in the additional comments field. The following - select product, type of transaction, received from, and quantity received fields - are mandatory for this screen. When the user has entered all the details, he must click on the submit button which leads to the confirmation screen whether the record has been created successfully or there are some errors.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.11.04 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Confirmation Screen
+
+When the user clicks on the submit button, he/she lands on this page with the confirmation message “Record created Successfully”. Users can go back to the home screen by clicking on the “Back To Home” button. This screen must appear for every other transaction (issued, returned, damaged, lost, reconciliation).
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.13.39 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Warehouse Details (Stock Issued)
+
+When the user clicks on record stock issued, the warehouse details screen will appear. The screen is similar to the stock receipt one. The only difference is that instead of the date of receipt, the field is the date of issue. The next button navigates the user to the stock issued details screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.17.18 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Issued Stock Details
+
+The user needs to provide details for the stock issued. The select product field acts the same as that for stock receipt. In the destination field, the user needs to select the warehouse where the stock is being sent.  The quantity sent field collects the information on how much quantity of stock is being sent. When the user has entered all the details, he must click on the submit button which leads to the confirmation screen whether the record has been created successfully or there are some errors.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.19.50 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Warehouse Details (Stock Returned)
+
+When the user clicks on stock returned, the warehouse details screen appears. The fields are similar to that for stock receipt; only the date of receipt label is changed to the date of return. The next button navigates the user to the stock returned details screen.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.21.33 PM.png" alt=""><figcaption></figcaption></figure>
+
 \
 \
