@@ -14,8 +14,8 @@ The articles in this section includes:
 [field-app-architecture.md](field-app-architecture.md)
 {% endcontent-ref %}
 
-{% content-ref url="installation/setup.md" %}
-[setup.md](installation/setup.md)
+{% content-ref url="setup.md" %}
+[setup.md](setup.md)
 {% endcontent-ref %}
 
 
