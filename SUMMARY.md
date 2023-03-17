@@ -36,6 +36,8 @@
   * [Health Campaign Management](product/health-campaign-management.md)
   * [User Persona](product/user-persona.md)
   * [Functional Specifications](product/functional-specifications.md)
+  * [Product & Modules](product/product-and-modules/README.md)
+    * [Individual Registry Setup](product/product-and-modules/individual-registry-setup.md)
   * [Setup](product/setup/README.md)
     * [APK Installation](product/setup/apk-installation.md)
   * [Gate 1 Dashboard](product/gate-1-dashboard.md)
