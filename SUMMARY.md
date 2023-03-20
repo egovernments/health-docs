@@ -35,6 +35,7 @@
 * [Product](product/README.md)
   * [Health Campaign Management](product/health-campaign-management.md)
   * [User Persona](product/user-persona.md)
+  * [HCM Login Credentials](product/hcm-login-credentials.md)
   * [Functional Specifications](product/functional-specifications.md)
   * [Product & Modules](product/product-and-modules/README.md)
     * [Individual Registry Setup](product/product-and-modules/individual-registry-setup.md)
