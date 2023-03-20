@@ -2,7 +2,8 @@
 
 * [Introducing DIGIT Health Platform](README.md)
 * [Platform](platform/README.md)
-  * [Release Notes](platform/release-notes.md)
+  * [Release Notes](platform/release-notes/README.md)
+    * [Test Cases](platform/release-notes/test-cases.md)
   * [Platform Features](platform/platform-features.md)
   * [High Level Design](platform/high-level-design/README.md)
     * [Health Campaign System High Level Design](platform/high-level-design/health-campaign-system-high-level-design.md)
