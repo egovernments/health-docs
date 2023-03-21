@@ -33,6 +33,7 @@
       * [AWS](platform/installation/supported-clouds/aws.md)
       * [VSphere](platform/installation/supported-clouds/vsphere.md)
       * [SDC](platform/installation/supported-clouds/sdc.md)
+  * [HCM Master Promotion Guide](platform/hcm-master-promotion-guide.md)
 * [Product](product/README.md)
   * [Health Campaign Management](product/health-campaign-management.md)
   * [User Persona](product/user-persona.md)
