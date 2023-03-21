@@ -2,7 +2,7 @@
 
 * [Introducing DIGIT Health Platform](README.md)
 * [Platform](platform/README.md)
-  * [Release Notes](platform/release-notes/README.md)
+  * [Release Notes](platform/release-notes.md)
     * [Test Cases](platform/release-notes/test-cases.md)
   * [Platform Features](platform/platform-features.md)
   * [High Level Design](platform/high-level-design/README.md)
