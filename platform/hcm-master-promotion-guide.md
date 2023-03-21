@@ -352,5 +352,100 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 | SERVER\_PORT                               | 8080                                                        | <p><br></p>               |
 | SECURITY\_BASIC\_ENABLED                   | false                                                       | <p><br></p>               |
 
+## Promotion guide
+
+This section will detail out the promotion guide steps for HCM Product
+
+### Digit Environment Production Setup & deployments
+
+Digit Environment setup refer documentation [here](https://core.digit.org/guides/installation-guide/production-setup).
+
+### HCM Promotion
+
+#### Steps to Create a tenant for HCM
+
+Refer to the [document](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/638713938/Configuring+Tenants) for creating a tenant in DIGIT.
+
+#### Steps to add localisation using Rest API
+
+Refer to this [document](https://core.digit.org/platform/core-services/localization-service) for more details
+
+```
+curl --location --request POST 'https://health-dev.digit.org/localization/messages/v1/_upsert' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+   "RequestInfo": {
+       "apiId": "Rainmaker",
+       "ver": ".01",
+       "ts": "",
+       "action": "_create",
+       "did": "1",
+       "key": "",
+       "msgId": "20170310130900|en_IN",
+       "authToken": "052c8e95-35c1-4f97-b366-c5f23e23ce05"
+   },
+   "tenantId": "default",
+   "messages":[
+ {
+   "code": "ABG_COMMON_TABLE_COL_ACTION",
+   "message": "Action",
+   "locale": "en_IN",
+   "module": "rainmaker-common"
+ },{
+   "code": "ABG_COMMON_TABLE_COL_ACTION",
+   "message": "Action",
+   "locale": "en_IN",
+   "module": "rainmaker-common"
+ }
+]
+}'
+
+```
+
+### Steps to configure MDMS configs
+
+1. Create Common Masters
+
+&#x20;      a. Create [IdFormat.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/common-masters/IdFormat.json) which will be used by [egov-id-gen](https://core.digit.org/platform/core-services/id-generation-service) service.
+
+&#x20;      b. Create [StateInfo.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/common-masters/StateInfo.json) which will configure eligible languages for tenant
+
+2. Create sample [boundary data](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/egov-location/boundary-data.json). Refer for to this [document](https://core.digit.org/guides/data-setup-guide/location-module) for more details&#x20;
+3. Create [field-app-configuration.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/field-app-configuration.json) which will be used for drop-down values or select options to be presented in the HCM app&#x20;
+4. Create [project-task-configuration.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/project-task-configuration.json)
+5. Create [project-types.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/project-types.json) which will be used as Health campaign configuration
+6. Create [service-registry.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/service-registry.json) which has a list of APIs that HCM app will call.
+7. Create configs for [Access Control Sevices](https://core.digit.org/platform/core-services/access-control-services)
+
+* [actions-test.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)
+* [roleactions.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ROLEACTIONS/roleactions.json)&#x20;
+
+8. Configure map-config for the [tenant](https://github.com/egovernments/health-campaign-mdms/tree/DEV/data/default/map-config)
+
+&#x20;Restart MDMS server and restart Zuul api gateway.&#x20;
+
+Note: Any modifications in the above configuration, needs to restart the MDMS server. Any modifications to action-test.json and roleactions.json requires restart of Zuul api gateway
+
+### Steps to configure health campaign configs
+
+Step 1: Create [persister config](https://github.com/egovernments/health-campaign-config/tree/DEV/egov-persister) for each backend service which will be picked by the [persister service](https://core.digit.org/platform/core-services/persister-service)
+
+Step 2: Create[ indexer config](https://github.com/egovernments/health-campaign-config/tree/DEV/egov-indexer) for each backend service which will be picked by the [indexer service](https://core.digit.org/platform/core-services/indexer-service)
+
+Note: Any changes to indexer and persister configs, requires restart of indexer and persister.
+
+### Deploy Digit Core Services
+
+Refer to [section](https://docs.google.com/document/d/1MCgmlSBHn\_dQCtAfhdjt8c4P2gatUESga-\_KqmcsuZc/edit#heading=h.5sx0iznhbz4o) for list of core services to be deployed
+
+### Deploy HCM services
+
+Refer to [section](https://docs.google.com/document/d/1MCgmlSBHn\_dQCtAfhdjt8c4P2gatUESga-\_KqmcsuZc/edit#heading=h.8p5dgojzzzho) for list of HCM services to be deployed
+
+### UI/APK promotion guide
+
+[https://health.digit.org/product/setup/apk-installation](https://health.digit.org/product/setup/apk-installation)
 
 
+
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
