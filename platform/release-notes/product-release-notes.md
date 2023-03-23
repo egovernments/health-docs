@@ -13,23 +13,15 @@ The Health Campaign Management V1.0 frontline worker’s app includes four new m
 | Inventory Management | <p>A mobile app that enables warehouse managers to capture the inflow and outflow of resources from their warehouses to identify potential stockouts, wastage, and fraud, and take corrective action. It facilitates the following:</p><ul><li>Ability to record stock received into the warehouse as well as issued to other warehouses or frontline teams.</li><li>Ability to record stocks that were lost and damaged either during storage or during transit.</li><li>Ability to perform auto-stock reconciliation to provide visibility into available stock on hand.</li><li>Sync stock records collected while offline on connecting to the internet.</li></ul>                                                                                                                                |   |
 | Supervision (Survey) | <p>A mobile app that enables supervisors to to track the campaign staff's adherence to the campaign’s standard operating protocols, and record observations after the inspection. It facilitates the following:</p><ul><li>Ability to configure a checklist with support for the following question types:</li></ul><p>       - Yes/no type questions (Radio buttons).</p><p>       - Short answer questions (Text box).</p><p>       - Long answer questions (Text box).</p><p>       - Multiple response questions (Checkbox).</p><ul><li>Ability to configure basic validations on checklist question.s</li><li>Sync checklist responses collected while offline on connecting to the internet.</li></ul>                                                                                          |   |
 
-Bug Fixes (Feedback from the bug bash):&#x20;
+## Bug Fixes (Feedback from the bug bash)&#x20;
 
-Click [**here**](https://digit-discuss.atlassian.net/jira/dashboards/10208) to access the Jira Dashboard.
+* Click [**here**](https://digit-discuss.atlassian.net/jira/dashboards/10208) to access the Jira Dashboard.
 
 ## Related Documents and Links
 
-Feedback from UX Audit:\
-Link to the Audit Document: [Here](https://docs.google.com/spreadsheets/d/1HpbTql7r6vXP-NcyXK9w5g6PIZlZ8ndbsb8oW-yD9-8/edit?usp=sharing)
+* Click [**here**](https://docs.google.com/spreadsheets/d/1HpbTql7r6vXP-NcyXK9w5g6PIZlZ8ndbsb8oW-yD9-8/edit#gid=0) to view the feedback from the UX audit.
+* Click here to view our [**product roadmap**](../../community/roadmap.md).&#x20;
 
-#### Product Roadmap:
-
-\
-
-
-Link to Roadmap Document: [Here](https://docs.google.com/spreadsheets/d/1m0tLE6hGLZxFtmkerFPWDGHaYDdc\_w-4pe2YDLFr9GQ/edit?usp=sharing)
-
-\
 
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
