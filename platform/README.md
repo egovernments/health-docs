@@ -2,6 +2,14 @@
 
 The articles in this section includes:
 
+{% content-ref url="release-notes.md" %}
+[release-notes.md](release-notes.md)
+{% endcontent-ref %}
+
+{% content-ref url="platform-features.md" %}
+[platform-features.md](platform-features.md)
+{% endcontent-ref %}
+
 {% content-ref url="high-level-design/" %}
 [high-level-design](high-level-design/)
 {% endcontent-ref %}
@@ -14,8 +22,16 @@ The articles in this section includes:
 [field-app-architecture.md](field-app-architecture.md)
 {% endcontent-ref %}
 
-{% content-ref url="setup.md" %}
-[setup.md](setup.md)
+{% content-ref url="functional-specifications.md" %}
+[functional-specifications.md](functional-specifications.md)
+{% endcontent-ref %}
+
+{% content-ref url="installation/" %}
+[installation](installation/)
+{% endcontent-ref %}
+
+{% content-ref url="configuration/README (1).md" %}
+[README (1).md](<configuration/README (1).md>)
 {% endcontent-ref %}
 
 
