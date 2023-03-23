@@ -15,7 +15,7 @@ The Health Campaign Management V1.0 frontline worker’s app includes four new m
 
 ## Bug Fixes (Feedback from the bug bash)&#x20;
 
-* Click [**here**](https://digit-discuss.atlassian.net/jira/dashboards/10208) to access the Jira Dashboard.
+* Click [**here**](https://digit-discuss.atlassian.net/jira/dashboards/10208) to access the Jira dashboard.
 
 ## Related Documents and Links
 
