@@ -39,15 +39,15 @@ Health campaigns are categorised based on the following characteristics:&#x20;
 * Campaign design (vertical/horizontal, reactive/proactive)&#x20;
 * Type of Intervention delivered (product/service/information)
 
-<figure><img src="../.gitbook/assets/Health Campaign Management Platform - Gate 1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Health Campaign Management Platform - Gate 1.png" alt=""><figcaption></figcaption></figure>
 
 ## Section Overview
 
 Click on the links below to learn more about the functional specifications and product roadmap.&#x20;
 
 * [User persona](user-persona.md)
-* [Functional specifications](functional-specifications.md)
-* [Product roadmap](../community/roadmap.md)
+* [Functional specifications](../functional-specifications.md)
+* [Product roadmap](../../community/roadmap.md)
 
 
 
