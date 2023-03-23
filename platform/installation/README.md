@@ -2,12 +2,12 @@
 
 Here are the articles in this section:
 
-{% content-ref url="../setup.md" %}
-[setup.md](../setup.md)
-{% endcontent-ref %}
-
 {% content-ref url="setup-requirements.md" %}
 [setup-requirements.md](setup-requirements.md)
+{% endcontent-ref %}
+
+{% content-ref url="../setup.md" %}
+[setup.md](../setup.md)
 {% endcontent-ref %}
 
 {% content-ref url="supported-clouds/" %}
