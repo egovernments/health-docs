@@ -18,6 +18,7 @@
       * [Project](platform/low-level-design/services/project.md)
       * [Stock](platform/low-level-design/services/stock.md)
   * [Field App Architecture](platform/field-app-architecture.md)
+  * [Functional Specifications](platform/functional-specifications.md)
   * [Installation](platform/installation/README.md)
     * [Setup](platform/setup.md)
     * [Setup Requirements](platform/installation/setup-requirements.md)
@@ -66,7 +67,6 @@
       * [Service Delivery](community/products-requirement-documents-prds/service-delivery.md)
       * [Inventory Management](community/products-requirement-documents-prds/inventory-management.md)
       * [User Login](community/products-requirement-documents-prds/user-login.md)
-  * [Functional Specifications](product/functional-specifications.md)
   * [Gate 1 Dashboard](product/gate-1-dashboard.md)
   * [Gate 2 Release Checklist](product/gate-2-release-checklist.md)
 
