@@ -53,7 +53,7 @@ b. Provide scope for future changes and improvements in the application.
 
 ## Process flow
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-16 at 3.05.37 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-16 at 3.05.37 PM.png" alt=""><figcaption></figcaption></figure>
 
 Specifications
 
@@ -107,13 +107,13 @@ After successful login, a user lands on the home screen of inventory management 
 
 There is a location picker on the top right that displays the assigned boundary for the user. The help button provides a walkthrough of the screen to the user. The hamburger button on the top left consists of a few quick actions. The location picker, help button, and hamburger buttons are available on every screen for a user’s convenience.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 2.53.04 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 2.53.04 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Hamburger Button
 
 After clicking on the hamburger button, a list of actions appears on the user screen. On top, it displays the user name and contact number, followed by other options such as the home button, language select, edit profile, projects, and logout. The “Edit Profile” option is not in scope for V1; it needs to be taken in V1.1 If the user clicks on the hamburger button again, it collapses the hamburger menu. The button is available on all screens of the application.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 2.54.42 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 2.54.42 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Manage Stocks
 
@@ -127,13 +127,13 @@ This screen consists of different types of transactions that take place for the 
 
 Every transaction has a separate card with an arrow button, an icon, and a brief description below the title. Clicking on the arrow button will navigate the user to the warehouse details screen. The back button is located below the hamburger button, which takes the user to the previous screen (In this case, it is the home screen).
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 3.59.23 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 3.59.23 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Error Popup
 
 If the user is not assigned any warehouse, then an error popup must appear over the warehouse details screen, asking the user to contact the system administrator to assign a warehouse. The user must be able to close the popup and change the administrative area on the warehouse details screen to check if he/she is assigned any warehouse in any other boundary. This must force the screen to load again and check for the warehouse.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.01.28 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.01.28 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Warehouse Details (Stock Receipt)
 
@@ -141,7 +141,7 @@ When the user clicks on record stock receipt, the warehouse details screen will 
 
 The date of receipt field captures the date of transaction which can be fetched with the help of a calendar icon placed inside the box. The field must be validated, where the date cannot be in the future. If the user puts a future value, it must show an error message stating “date cannot be in future”. The user must select the administrative unit from the dropdown of the administrative unit field. The next button navigates the user to the stock receipt details screen.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.04.39 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.04.39 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Received Stock Details
 
@@ -149,49 +149,49 @@ The user must provide details of the stock received. The select product field ha
 
 In the ‘received from’ section, the user needs to select from the dropdown the warehouse from which the stock is being received. The dropdown must contain the list of all the warehouses that are part of the campaign, that is, the list must be of the warehouse assigned to the root project. The list is taken from the facility registry and must be the same for all the transactions. The quantity received field collects the information for how much quantity of stock is being received.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.10.48 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.10.48 PM.png" alt=""><figcaption></figcaption></figure>
 
 For a pack of a certain number of nets, there is a packing slip attached to the packet which indicates the number of nets within that pack. The user needs to mention the value in the number of nets field.
 
 The total number of packing slips must be mentioned in the following field. The user can add any comments/remarks in the additional comments field. The following - select product, type of transaction, received from, and quantity received fields - are mandatory for this screen. When the user has entered all the details, he must click on the submit button which leads to the confirmation screen whether the record has been created successfully or there are some errors.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.11.04 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.11.04 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Confirmation Screen
 
 When the user clicks on the submit button, he/she lands on this page with the confirmation message “Record created Successfully”. Users can go back to the home screen by clicking on the “Back To Home” button. This screen must appear for every other transaction (issued, returned, damaged, lost, reconciliation).
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.13.39 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.13.39 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Warehouse Details (Stock Issued)
 
 When the user clicks on record stock issued, the warehouse details screen will appear. The screen is similar to the stock receipt one. The only difference is that instead of the date of receipt, the field is the date of issue. The next button navigates the user to the stock issued details screen.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.17.18 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.17.18 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Issued Stock Details
 
 The user needs to provide details for the stock issued. The select product field acts the same as that for stock receipt. In the destination field, the user needs to select the warehouse where the stock is being sent.  The quantity sent field collects the information on how much quantity of stock is being sent. When the user has entered all the details, he must click on the submit button which leads to the confirmation screen whether the record has been created successfully or there are some errors.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.19.50 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.19.50 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Warehouse Details (Stock Returned)
 
 When the user clicks on stock returned, the warehouse details screen appears. The fields are similar to that for stock receipt; only the date of receipt label is changed to the date of return. The next button navigates the user to the stock returned details screen.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.21.33 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.21.33 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Stock Returned Details
 
 The user needs to provide details for the stock returned. The “Select product” field acts the same as that for stock receipt. In the “Returned from” field, the user needs to select the warehouse from where the stock has been returned.  The “Quantity returned” field collects the information for how much quantity of stock has been returned. When the user has entered all the details, he/she must click on the submit button which leads to the confirmation screen that confirms whether the record has been created successfully or there are some errors.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.24.45 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.24.45 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Warehouse Details (Stock Damaged)
 
 For the damaged stock, the user must provide the details asked on the screen.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.26.19 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.26.19 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Damaged Stock Details
 
@@ -200,19 +200,19 @@ The user needs to provide the details for the damaged stock. There can be two ca
 1. If the stock is damaged during transit, then the user must select the warehouse name from where the stock was received.
 2. If the stock is damaged during storage, then the user must select N/A from the dropdown.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.30.08 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.30.08 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Warehouse Details (Stock Loss)&#x20;
 
 The user needs to provide the details for the lost stock.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.34.18 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.34.18 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Lost Stock Details
 
 The user must provide the details for the stock loss.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.35.31 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.35.31 PM.png" alt=""><figcaption></figcaption></figure>
 
 Stock Reconciliation
 
@@ -228,7 +228,7 @@ When the user clicks on the stock reconciliation button on the home screen, they
 
 The date of reconciliation is system-generated and non-editable. Other values are calculated based on the data recorded in stock receipts, stock issued, and the stock returned screens. In the manual stock count, the user needs to enter the value for manually counted inventory. If the stock on hand does not match the physical count, then the latter must take precedence, provided the user has submitted the form with a proper reason. In the comments field, the user can add remarks and comments.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.43.09 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.43.09 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### View Reports (Scope for v1.1)
 
@@ -241,21 +241,21 @@ When a user clicks on the view reports button on the home screen, he/she is navi
 
 Users can click on the arrow button placed next to every transaction to open the respective report. The back button will navigate them back to the home screen.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.45.04 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.45.04 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Report (Stock Received)
 
 When the user clicks on the “Stock Received” button, the report for stock received appears which provides a tabular representation of the data. The table is scrollable, both vertically and horizontally, to cater to multiple values and columns. The date column is kept frozen and other columns are scrollable. The first column is for the date of the receipt, followed by units received in the second column, and received from (warehouse name) in the third column. The “Back To Home” button is placed at the bottom of the screen which navigates the user back to the home screen.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.48.32 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.48.32 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Report (Stock Reconciliation)
 
 For the stock reconciliation report, the table consists of the date in the first column and other columns. The “Back To Home” button will navigate users to the home screen.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.51.34 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.51.34 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-03-17 at 4.51.42 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 at 4.51.42 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Success Criteria
 

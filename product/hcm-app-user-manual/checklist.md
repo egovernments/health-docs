@@ -12,7 +12,7 @@ On this page, the following actions can be performed:
 
 * Clicking on "My Checklist," will display the checklists assigned to the user role.
 
-![](https://lh3.googleusercontent.com/\_y963QR2vmvgdJKq7fFeLuGSdi2-oJJhNpRicQZaS7iR0ILsJd4afTRYUTkJoUVFdsBIti6z4hMaIIWEV03U8m60MWSrpFB\_2Bx47YitftvZx4\_I9aDYLZLPlVNqLjT-696hzQEmS8R-wrIvJzfbprQ)![](<../../../.gitbook/assets/image (13).png>)
+![](https://lh3.googleusercontent.com/\_y963QR2vmvgdJKq7fFeLuGSdi2-oJJhNpRicQZaS7iR0ILsJd4afTRYUTkJoUVFdsBIti6z4hMaIIWEV03U8m60MWSrpFB\_2Bx47YitftvZx4\_I9aDYLZLPlVNqLjT-696hzQEmS8R-wrIvJzfbprQ)![](<../../.gitbook/assets/image (13).png>)
 
 * Clicking on any checklist will show a popup with
 
@@ -27,7 +27,7 @@ On this page, the following actions can be performed:
 
 * The "View Submitted Checklists" will show the checklists submitted by the supervisor.
 
-![](<../../../.gitbook/assets/image (16).png>)\
+![](<../../.gitbook/assets/image (16).png>)\
 
 
 ## **API details**

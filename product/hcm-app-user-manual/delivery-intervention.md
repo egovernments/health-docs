@@ -10,7 +10,7 @@ On this page, the following actions can be performed:
 
 * The "Deliver Intervention" button navigates the user to the following screen:
 
-![](<../../../.gitbook/assets/image (9).png>)![](<../../../.gitbook/assets/image (17).png>)
+![](<../../.gitbook/assets/image (9).png>)![](<../../.gitbook/assets/image (17).png>)
 
 * The “Number Of Resources For Delivery” must be automatically calculated by the system based on the value entered in the number of household members registered, including the household head.&#x20;
 * The ‘Resource Delivered’ field consists of all the possible resources that can be delivered in a particular project.&#x20;
@@ -18,7 +18,7 @@ On this page, the following actions can be performed:
 * The user can add a delivery comment if the service is not delivered due to a specific reason or situation in the "Delivery Comment" field, which is a dropdown field with some common reasons that may take place.&#x20;
 * After reviewing the details, the user can click on the submit button which will save the details of the household in the system. After validating the details, the confirmation screen appears.
 
-![](<../../../.gitbook/assets/image (10).png>)
+![](<../../.gitbook/assets/image (10).png>)
 
 ## API details
 

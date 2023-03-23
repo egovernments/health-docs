@@ -289,7 +289,7 @@ individual.producer.delete.topic=delete-individual-topic
 
 #### Database schema
 
-<figure><img src="../../.gitbook/assets/Individual.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Individual.png" alt=""><figcaption></figcaption></figure>
 
 #### Postman collection
 
