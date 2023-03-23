@@ -1,4 +1,4 @@
-# Individual Registry Setup
+# Individual Registry
 
 ## Overview
 
