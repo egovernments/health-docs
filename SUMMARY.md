@@ -5,6 +5,7 @@
   * [Release Notes](platform/release-notes.md)
     * [Test Cases](platform/release-notes/test-cases.md)
     * [Product Release Notes](platform/release-notes/product-release-notes.md)
+    * [Gate 2 Release Checklist](platform/release-notes/gate-2-release-checklist.md)
   * [Platform Features](platform/platform-features.md)
   * [High Level Design](platform/high-level-design/README.md)
     * [Health Campaign System High Level Design](platform/high-level-design/health-campaign-system-high-level-design.md)
@@ -69,7 +70,6 @@
       * [Inventory Management](community/products-requirement-documents-prds/inventory-management.md)
       * [User Login](community/products-requirement-documents-prds/user-login.md)
   * [Gate 1 Dashboard](product/gate-1-dashboard.md)
-  * [Gate 2 Release Checklist](product/gate-2-release-checklist.md)
 
 ## COMMUNITY
 
