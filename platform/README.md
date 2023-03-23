@@ -14,6 +14,10 @@ The articles in this section includes:
 [high-level-design](high-level-design/)
 {% endcontent-ref %}
 
+{% content-ref url="architecture.md" %}
+[architecture.md](architecture.md)
+{% endcontent-ref %}
+
 {% content-ref url="low-level-design/" %}
 [low-level-design](low-level-design/)
 {% endcontent-ref %}
