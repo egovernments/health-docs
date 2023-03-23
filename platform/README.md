@@ -22,8 +22,8 @@ The articles in this section includes:
 [field-app-architecture.md](field-app-architecture.md)
 {% endcontent-ref %}
 
-{% content-ref url="functional-specifications.md" %}
-[functional-specifications.md](functional-specifications.md)
+{% content-ref url="../product/functional-specifications.md" %}
+[functional-specifications.md](../product/functional-specifications.md)
 {% endcontent-ref %}
 
 {% content-ref url="installation/" %}

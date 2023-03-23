@@ -46,7 +46,7 @@ Health campaigns are categorised based on the following characteristics:&#x20;
 Click on the links below to learn more about the functional specifications and product roadmap.&#x20;
 
 * [User persona](user-persona.md)
-* [Functional specifications](../platform/functional-specifications.md)
+* [Functional specifications](functional-specifications.md)
 * [Product roadmap](../community/roadmap.md)
 
 
