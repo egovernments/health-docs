@@ -1,9 +1,5 @@
 # Release Notes
 
-## Version: 1.0&#x20;
-
-### Release date: 03/03/2023
-
 ## Release Summary&#x20;
 
 DIGIT Health 1.0 covers individual, household, facility, product, project, and stock services, as well as service requests.
