@@ -17,6 +17,15 @@ The Health Campaign Management V1.0 frontline worker’s app includes four new m
 
 * Click [**here**](https://digit-discuss.atlassian.net/jira/dashboards/10208) to access the Jira dashboard.
 
+## Known Issues
+
+* Field 'type' does not exist or this field cannot be viewed by anonymous users.
+* The field 'assignee' does not exist or this field cannot be viewed by anonymous users.
+* A value with ID '10141' does not exist for the field 'project'.
+* Field 'labels' do not exist or this field cannot be viewed by anonymous users.
+* The field 'priority' does not exist or this field cannot be viewed by anonymous users.
+* Not able to sort using field 'priority'.
+
 ## Related Documents and Links
 
 * Click [**here**](https://docs.google.com/spreadsheets/d/1HpbTql7r6vXP-NcyXK9w5g6PIZlZ8ndbsb8oW-yD9-8/edit#gid=0) to view the feedback from the UX audit.
