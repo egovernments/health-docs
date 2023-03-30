@@ -70,15 +70,16 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 
 ### Services built for HCM
 
-| Service         | Tag                                    | Description                                                                                                                              |
-| --------------- | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Individual      | egovio/individual:qa-6b25ac0bdc-31     | Individual service built in to digit platform, all the CRUD operations are allowed using api                                             |
-| Household       | egovio/household:qa-6b25ac0bdc-38      | Household service provide to create household and add members to a household                                                             |
-| Facility        | egovio/facility:qa-70438364e6-16       | Facility services provide the apis to create, update, delete and read facilities                                                         |
-| Product         | egovio/product:qa-0ec164c4d3-7         | Product services provide the apis for CRUD operations for products and product variants                                                  |
-| Project         | egovio/project:dev-4ba215e908-66       | Project services provide the apis for CRUD operations for project, project task, project staff, project resource and project beneficiary |
-| Stock           | egovio/stock:qa-70438364e6-29          | Stock services provide the apis for creating, updating, deleting of stock receipts and stock reconciliations                             |
-| Service Request | egovio/service-request:qa-2b9bf0593e-5 | Service Requests provide the create and submission apis for checklists.                                                                  |
+| Service         | Tag                                        | Description                                                                                                                              |
+| --------------- | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Individual      | egovio/individual:v1.0.0-a51bee1435-33     | Individual service built in to digit platform, all the CRUD operations are allowed using api                                             |
+| Household       | egovio/household:v1.0.0-a51bee1435-42      | Household service provide to create household and add members to a household                                                             |
+| Facility        | egovio/facility:v1.0.0-a51bee1435-19       | Facility services provide the apis to create, update, delete and read facilities                                                         |
+| Product         | egovio/product:v1.0.0-a51bee1435-11        | Product services provide the apis for CRUD operations for products and product variants                                                  |
+| Project         | egovio/project:v1.0.0-a51bee1435-69        | Project services provide the apis for CRUD operations for project, project task, project staff, project resource and project beneficiary |
+| Stock           | egovio/stock:v1.0.0-a51bee1435-35          | Stock services provide the apis for creating, updating, deleting of stock receipts and stock reconciliations                             |
+| Service Request | egovio/service-request:v1.0.0-a51bee1435-7 | Service Requests provide the create and submission apis for checklists.                                                                  |
+| Transformer     | egovio/transformer:v1.0.0-a51bee1435-33    | Library that transforms the data according to the analytics dashboard requirements                                                       |
 
 ### Environment Variables for HCM services
 
@@ -406,21 +407,21 @@ curl --location --request POST 'https://health-dev.digit.org/localization/messag
 
 1. Create Common Masters
 
-&#x20;      a. Create [IdFormat.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/common-masters/IdFormat.json) which will be used by [egov-id-gen](https://core.digit.org/platform/core-services/id-generation-service) service.
+&#x20;      a. Create [IdFormat.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/common-masters/IdFormat.json) which will be used by [egov-id-gen](https://core.digit.org/platform/core-services/id-generation-service) service.
 
-&#x20;      b. Create [StateInfo.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/common-masters/StateInfo.json) which will configure eligible languages for tenant
+&#x20;      b. Create [StateInfo.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/common-masters/StateInfo.json) which will configure eligible languages for tenant
 
-2. Create sample [boundary data](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/egov-location/boundary-data.json). Refer for to this [document](https://core.digit.org/guides/data-setup-guide/location-module) for more details&#x20;
-3. Create [field-app-configuration.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/field-app-configuration.json) which will be used for drop-down values or select options to be presented in the HCM app&#x20;
-4. Create [project-task-configuration.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/project-task-configuration.json)
-5. Create [project-types.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/project-types.json) which will be used as Health campaign configuration
-6. Create [service-registry.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/service-registry.json) which has a list of APIs that HCM app will call.
+2. Create sample [boundary data](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/egov-location/boundary-data.json). Refer for to this [document](https://core.digit.org/guides/data-setup-guide/location-module) for more details&#x20;
+3. Create [field-app-configuration.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/egov-location/boundary-data.json) which will be used for drop-down values or select options to be presented in the HCM app&#x20;
+4. Create [project-task-configuration.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/project-task-configuration.json)
+5. Create [project-types.json ](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/project-types.json)which will be used as Health campaign configuration
+6. Create [service-registry.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/service-registry.json) which has a list of APIs that HCM app will call.
 7. Create configs for [Access Control Sevices](https://core.digit.org/platform/core-services/access-control-services)
 
-* [actions-test.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)
-* [roleactions.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ROLEACTIONS/roleactions.json)&#x20;
+* [actions-test.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)
+* [roleactions.json ](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/ACCESSCONTROL-ROLEACTIONS/roleactions.json)
 
-8. Configure map-config for the [tenant](https://github.com/egovernments/health-campaign-mdms/tree/DEV/data/default/map-config)
+8. Configure map-config for the [tenant](https://github.com/egovernments/health-campaign-mdms/tree/v1.0.0/data/default/map-config)
 
 &#x20;Restart MDMS server and restart Zuul api gateway.&#x20;
 
@@ -428,19 +429,19 @@ Note: Any modifications in the above configuration, needs to restart the MDMS se
 
 ### Steps to configure health campaign configs
 
-Step 1: Create [persister config](https://github.com/egovernments/health-campaign-config/tree/DEV/egov-persister) for each backend service which will be picked by the [persister service](https://core.digit.org/platform/core-services/persister-service)
+Step 1: Create [persister config](https://github.com/egovernments/health-campaign-config/tree/v1.0.0/egov-persister) for each backend service which will be picked by the [persister service](https://core.digit.org/platform/core-services/persister-service)
 
-Step 2: Create[ indexer config](https://github.com/egovernments/health-campaign-config/tree/DEV/egov-indexer) for each backend service which will be picked by the [indexer service](https://core.digit.org/platform/core-services/indexer-service)
+Step 2: Create [indexer config](https://github.com/egovernments/health-campaign-config/tree/v1.0.0/egov-indexer) for each backend service which will be picked by the [indexer service](https://core.digit.org/platform/core-services/indexer-service)
 
 Note: Any changes to indexer and persister configs, requires restart of indexer and persister.
 
 ### Deploy Digit Core Services
 
-Refer to [section](https://docs.google.com/document/d/1MCgmlSBHn\_dQCtAfhdjt8c4P2gatUESga-\_KqmcsuZc/edit#heading=h.5sx0iznhbz4o) for list of core services to be deployed
+Refer to [section](https://health.digit.org/platform/configuration/hcm-master-promotion-guide#release-features-list-of-core-digit-services-used) for list of core services to be deployed
 
 ### Deploy HCM services
 
-Refer to [section](https://docs.google.com/document/d/1MCgmlSBHn\_dQCtAfhdjt8c4P2gatUESga-\_KqmcsuZc/edit#heading=h.8p5dgojzzzho) for list of HCM services to be deployed
+Refer to [section](https://health.digit.org/platform/configuration/hcm-master-promotion-guide#services-built-for-hcm) for list of HCM services to be deployed
 
 ### UI/APK promotion guide
 
