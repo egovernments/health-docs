@@ -41,13 +41,11 @@ Health campaigns are categorised based on the following characteristics:&#x20;
 
 <figure><img src="../.gitbook/assets/Health Campaign Management Platform - Gate 1.png" alt=""><figcaption></figcaption></figure>
 
-## Section Overview
+## Reference Application
 
-Click on the links below to learn more about the functional specifications and product roadmap.&#x20;
+Click on the links below to learn more about the HCM Product reference application:&#x20;
 
-* [User persona](user-persona.md)
-* [Functional specifications](functional-specifications.md)
-* [Product roadmap](../community/roadmap.md)
+* [Frontline worker's app](health-campaign-management/frontline-workers-app.md)
 
 
 
