@@ -23,7 +23,7 @@
   * [Functional Specifications](product/functional-specifications.md)
   * [Installation](platform/installation/README.md)
     * [Setup Requirements](platform/installation/setup-requirements.md)
-      * [Tech Enablement Training: Essential Skills and                    Pre-requisites](platform/installation/tech-enablement-training-essential-skills-and-pre-requisites.md)
+      * [Tech Enablement Training: Essential Skills & Pre-requisites](platform/installation/tech-enablement-training-essential-skills-and-pre-requisites.md)
       * [DevOps Skills Requirements](platform/installation/devops-skills-requirements.md)
       * [Infra Requirements](platform/installation/setup-requirements/infra-requirements.md)
       * [Infra Best Practices](platform/installation/setup-requirements/infra-best-practices.md)
