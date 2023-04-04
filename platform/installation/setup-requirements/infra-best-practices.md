@@ -2,35 +2,33 @@
 
 ## Best practices for securing your Kubernetes cluster
 
-Kubernetes has changed the way organisations deploy and run their applications, and it has created a significant shift in mindsets. While it has already gained a lot of popularity and more and more organisations are embracing the change, running Kubernetes in production requires care.
+Kubernetes has changed the way organisations deploy and run their applications, and it has created a significant shift in mindsets. While it has already gained a lot of popularity and more organisations are embracing the change, running Kubernetes in production requires care.
 
-Although Kubernetes is open source and does it have its share of vulnerabilities, making the right architectural decision can prevent a disaster from happening.
+Kubernetes is open-source and it does have its share of vulnerabilities, making the right architectural decision can prevent a disaster from happening.
 
-You need to have a deep level of understanding of how Kubernetes works and how to enforce the best practices so that you can run a secure, highly available, production-ready Kubernetes cluster.Although Kubernetes is a robust container orchestration platform, the sheer level of complexity with multiple moving parts overwhelms all administrators.
+You need to have a deep level of understanding of how Kubernetes works and how to enforce the best practices so that you can run a secure, highly available, production-ready Kubernetes cluster. Although Kubernetes is a robust container orchestration platform, the sheer level of complexity with multiple moving parts overwhelms all administrators. That is why Kubernetes has a large attack surface, and, therefore, hardening of the cluster is an absolute must if you are to run Kubernetes in production.
 
-That is the reason why Kubernetes has a large attack surface, and, therefore, hardening of the cluster is an absolute must if you are to run Kubernetes in production.
-
-There are a massive number of configurations in K8s, and while you can configure a few things correctly, the chances are that you might misconfigure a few things.I will describe a few best practices that you can adopt if you are running Kubernetes in production. Let’s find out.
+There are a massive number of configurations in K8s, and while you can configure a few things correctly, the chances are that you might misconfigure a few things. Here we describe a few best practices that you can adopt if you are running Kubernetes in production. Let’s find out.
 
 #### Use a Managed Kubernetes Service if Possible <a href="#use-a-managed-kubernetes-service-if-possible" id="use-a-managed-kubernetes-service-if-possible"></a>
 
-If you are running your Kubernetes cluster in the cloud, consider using a managed Kubernetes cluster such as [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine) or [Azure Kubernetes Service](https://azure.microsoft.com/en-us/services/kubernetes-service/).A managed cluster comes with some level of hardening already in place, and, therefore, there are fewer chances to misconfigure things. A managed cluster also makes upgrades easy, and sometimes automatic. It helps you manage your cluster with ease and provides monitoring and alerting out of the box.
+If you are running your Kubernetes cluster in the cloud, consider using a managed Kubernetes cluster such as [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine) or [Azure Kubernetes Service](https://azure.microsoft.com/en-us/services/kubernetes-service/). A managed cluster comes with some level of hardening already in place, and, therefore, there are fewer chances to misconfigure things. A managed cluster also makes upgrades easy, and sometimes automatic. It helps you manage your cluster with ease and provides monitoring and alerting out-of-the-box.
 
 #### Upgrade Kubernetes Frequently <a href="#upgrade-kubernetes-frequently" id="upgrade-kubernetes-frequently"></a>
 
-Since Kubernetes is open source, vulnerabilities appear quickly and security patches are released regularly. You need to ensure that your cluster is up to date with the latest security patches and for that, add an upgrade schedule in your standard operating procedure.Having a CI/CD pipeline that runs periodically for executing rolling updates for your cluster is a plus. You would not need to check for upgrades manually, and rolling updates would cause minimal disruption and downtime; also, there would be fewer chances to make mistakes.That would make upgrades less of a pain. If you are using a managed Kubernetes cluster, your cloud provider can cover this aspect for you.
+Since Kubernetes is open-source, vulnerabilities appear quickly and security patches are released regularly. You need to ensure that your cluster is up-to-date with the latest security patches and for that, add an upgrade schedule in your standard operating procedure. Having a CI/CD pipeline that runs periodically for executing rolling updates for your cluster is a plus. You do not need to check for upgrades manually, and rolling updates would cause minimal disruption and downtime; also, there would be fewer chances to make mistakes. That would make upgrades less of a pain. If you are using a managed Kubernetes cluster, your cloud provider can cover this aspect for you.
 
 #### Patch and Harden Your OS <a href="#patch-and-harden-your-os" id="patch-and-harden-your-os"></a>
 
-It goes without saying that you should patch and harden the operating system of your Kubernetes nodes. This would ensure that an attacker would have the least attack surface possible.You should upgrade your OS regularly and ensure that it is up to date.
+You should patch and harden the operating system of your Kubernetes nodes. This would ensure that an attacker would have the least attack surface possible.You should upgrade your OS regularly and ensure that it is up-to-date.
 
 #### Enforce RBAC <a href="#enforce-rbac" id="enforce-rbac"></a>
 
-Kubernetes post version 1.6 has role-based access control (RBAC) enabled by default. Ensure that your cluster has this enabled.You also need to ensure that legacy attribute-based access control (ABAC) is disabled. Enforcing RBAC gives you several advantages as you can now control who can access your cluster and ensure that the right people have the right set of permissions.RBAC does not end with securing access to the cluster by Kubectl clients but also by pods running within the cluster, nodes, proxies, scheduler, and volume plugins.Only provide the required access to service accounts and ensure that the API server authenticates and authorizes them every time they make a request.
+Kubernetes post version 1.6 has role-based access control (RBAC) enabled by default. Ensure that your cluster has this enabled. You also need to ensure that legacy attribute-based access control (ABAC) is disabled. Enforcing RBAC gives you several advantages as you can now control who can access your cluster and ensure that the right people have the right set of permissions. RBAC does not end with securing access to the cluster by Kubectl clients but also by pods running within the cluster, nodes, proxies, scheduler, and volume plugins. Only provide the required access to service accounts and ensure that the API server authenticates and authorises them every time they make a request.
 
 #### Use TLS <a href="#use-tls" id="use-tls"></a>
 
-Running your API server on plain HTTP in production is a terrible idea. It opens your cluster to a man in the middle attack and would open up multiple security holes.Always use transport layer security (TLS) to ensure that communication between Kubectl clients and the API server is secure and encrypted.Be aware of any non-TLS ports you expose for managing your cluster. Also ensure that internal clients such as pods running within the cluster, nodes, proxies, scheduler, and volume plugins use TLS to interact with the API server.
+Running your API server on plain HTTP in production is a terrible idea. It opens your cluster to a man in the middle attack and would open up multiple security holes. Always use transport layer security (TLS) to ensure that communication between Kubectl clients and the API server is secure and encrypted. Be aware of any non-TLS ports you expose for managing your cluster. Ensure that internal clients such as pods running within the cluster, nodes, proxies, scheduler, and volume plugins use TLS to interact with the API server.
 
 #### Segregate Resources in Namespaces <a href="#segregate-resources-in-namespaces" id="segregate-resources-in-namespaces"></a>
 
