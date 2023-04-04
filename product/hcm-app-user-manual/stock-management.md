@@ -193,4 +193,4 @@ Clicking on the submit button will take the user to the success page.
 }
 </code></pre>                                                                                                                                                                                                                                                                                                                                      |
 
-\
+File Path : [https://github.com/egovernments/health-campaign-field-worker-app/tree/master/apps/health\_campaign\_field\_worker\_app/lib/pages/inventory](https://github.com/egovernments/health-campaign-field-worker-app/tree/master/apps/health\_campaign\_field\_worker\_app/lib/pages/inventory)\

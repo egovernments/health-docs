@@ -6,23 +6,30 @@ Beneficiary registration involves the registration of households and individuals
 
 ![](<../../.gitbook/assets/image (1).png>)
 
+File Path : [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/home.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/home.dart)
+
 ## User actions
 
 On this page, the following actions can be performed:
 
 * A user can register a new household only after attempting a search.
 * A user has to click on the "Register New Household" button to register a household.
+* File Path : [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/search\_beneficiary.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/search\_beneficiary.dart)
 
 ![](<../../.gitbook/assets/image (12).png>)![](<../../.gitbook/assets/image (23).png>)
 
 * After the user clicks on "Register New Household", the page navigates to the "Household Location" page.&#x20;
+* File Path : [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/beneficiary\_registration\_wrapper.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/beneficiary\_registration\_wrapper.dart)
 * The "Administrative Area" is the only mandatory field. "Address Line 1", "Address Line 2", 'Landmark' and "Postal Code" are optional fields.&#x20;
+* File Path : [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/household\_location.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/household\_location.dart)
 * Clicking on the 'Next' button will take the user to the "Household Details" page where the number of members living in the household can be registered.
+* File Path :  [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/household\_details.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/household\_details.dart)
 
 ![](<../../.gitbook/assets/image (25).png>) ![](<../../.gitbook/assets/image (24).png>)
 
 * Clicking the 'Next' button will take the user the "Individual details" screen.&#x20;
 * The first individual added will be the "Head of Household" by default.
+* File Path : [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/individual\_details.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/individual\_details.dart)
 
 ![](<../../.gitbook/assets/image (21).png>)
 
@@ -34,6 +41,7 @@ On this page, the following actions can be performed:
 
 
 * The user can click on the "Back to Search" button for editing the household or register new household fields.
+* File Path : [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/acknowledgement.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/acknowledgement.dart)
 
 ![](<../../.gitbook/assets/image (22).png>)
 
@@ -44,6 +52,8 @@ On this page, the following actions can be performed:
 * At the bottom, the "Deliver Intervention" button is present which navigates the user to the update delivery screen.
 
 ![](../../.gitbook/assets/image.png)
+
+File Path : [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary/household\_overview.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary/household\_overview.dart)
 
 ## API details
 

@@ -20,6 +20,8 @@ On this page, the following actions can be performed:
 
 &#x20;    \- View Submitted Checklists&#x20;
 
+File Path : [https://github.com/egovernments/health-campaign-field-worker-app/tree/master/apps/health\_campaign\_field\_worker\_app/lib/pages/checklist](https://github.com/egovernments/health-campaign-field-worker-app/tree/master/apps/health\_campaign\_field\_worker\_app/lib/pages/checklist)
+
 * The "Create Checklist" option will allow the supervisor to fill the checklist against the date and the administrative area.
 
 ![](https://lh6.googleusercontent.com/wYAR7sY3g4U\_prDFvzNiW1J7dd6cEpsGgDcutW4io154s3th\_knEzp0XTtG\_iAaY\_Aq7lNMUf3KEktfXq9CgtSPi5CnBMHIkfAht8yJM6tFWjVwbI6xTUFOck1Ebo175erG2GZSMPy2xZGQ2s8Axujc)\
