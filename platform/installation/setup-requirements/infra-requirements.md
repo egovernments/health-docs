@@ -2,15 +2,15 @@
 
 ## Overview
 
-This page discusses the infrastructure requirements for DIGIT services. It also explains why DIGIT services are containerised and deployed on Kubernetes.
+This document discusses the infrastructure requirements for DIGIT services. It also explains why DIGIT services are containerised and deployed on Kubernetes.
 
 #### Requirements <a href="#requirements" id="requirements"></a>
 
-DIGIT Infra is abstracted to **Kubernetes** which is an open-source containers orchestration platform that helps in abstracting a variety of infra types that are being available across each state, like Physical, VMs, on-premises clouds(**VMware, OpenStack, Nutanix**, etc.), commercial clouds (**Google, AWS, Azure, etc**.), SDC and NIC into a standard infra type. Essentially it unifies various infra types into a standard and single type of infrastructure and thus DIGIT becomes **multi-cloud supported, portable, extensible, high-performant and scalable** containerized workloads and services. This facilitates both declarative configuration and automation. Kubernetes services, eco-system, support and tools are widely available.
+DIGIT Infra is abstracted to **Kubernetes**, which is an open-source containers orchestration platform that helps in abstracting a variety of infra types available across each state, like Physical, VMs, on-premises clouds (**VMware, OpenStack, Nutanix, etc.**), commercial clouds (**Google, AWS, Azure, etc**.), SDC and NIC into a standard infra type. It unifies various infra types into a standard and single type of infrastructure and thus DIGIT becomes **multi-cloud supported, portable, extensible, high-performant and scalable** containerised workloads and services. This facilitates both declarative configuration and automation. Kubernetes services, eco-system, support and tools are widely available.
 
 #### The basic need to provision Kubernetes Cluster <a href="#the-basic-need-to-provision-kubernetes-cluster" id="the-basic-need-to-provision-kubernetes-cluster"></a>
 
-Kubernetes as such is a set of components that designated jobs of scheduling, controlling, monitoring
+Kubernetes, as such, is a set of components that designates jobs of scheduling, controlling, monitoring.
 
 **Master Cluster**
 
@@ -31,14 +31,14 @@ Kubernetes as such is a set of components that designated jobs of scheduling, co
   * CentOS 7
   * RHEL 7
   * Container Linux (tested with 1576.4.0)
-* 2 GB or more of RAM per machine (any less will leave little room for your apps)
-* 2 CPUs or more
-* Full network connectivity between all machines in the cluster (public or private network is fine)
+* 2 GB or more of RAM per machine (any less will leave little room for your apps).
+* 2 CPUs or more.
+* Full network connectivity between all machines in the cluster (public or private network is fine).
 * Unique hostname, MAC address, and product\_uuid for every node. Click [here](https://urban.digit.org/platform/installation/more-deploy-docs/setup-digit/cluster-requirements#verify-the-mac-address-and-product-uuid-are-unique-for-every-node) for more details.
-* Certain ports are open on your machines. See below for more details
-* Swap disabled. You **MUST** disable swap in order for the Kubelet to work properly
+* Certain ports are open on your machines. See below for more details.
+* Swap disabled. You **MUST** disable swap in order for the Kubelet to work properly.
 
-**Verify the MAC Address and `product_uuid` Are Unique for Every Node**
+**Verify that the MAC address and `product_uuid` are unique for every node**
 
 * You can get the MAC address of the network interfaces using the command `ip link` or `ifconfig -a`
 * The product\_uuid can be checked by using the command `sudo cat /sys/class/dmi/id/product_uuid`
