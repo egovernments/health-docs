@@ -72,7 +72,6 @@
       * [Service Delivery](community/products-requirement-documents-prds/service-delivery.md)
       * [Inventory Management](community/products-requirement-documents-prds/inventory-management.md)
       * [User Login](community/products-requirement-documents-prds/user-login.md)
-  * [Gate 1 Dashboard](product/gate-1-dashboard.md)
 
 ## COMMUNITY
 
