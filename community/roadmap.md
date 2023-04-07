@@ -1,8 +1,10 @@
-# Product Roadmap
+# Roadmap
 
-Click below to view the Health Mission roadmap:
+Please find the Product Capability Roadmap below:
 
-{% embed url="https://miro.com/app/board/uXjVPGhOra0=/" %}
+<figure><img src="../.gitbook/assets/20230301 Health Campaign Management Platform.png" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Roadmap Ahead
 

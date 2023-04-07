@@ -126,7 +126,7 @@ The Health Campaign system does not make heavy use of workflows. Most flows in v
 **ER Diagram**
 --------------
 
-****![](https://lh4.googleusercontent.com/Ac3FtywEjTuUL35VLbvbOAIrdq1J7PfwOj4-QWvjMs78kdPdTMk791UqHUahQIyR3dZH40YPlMAKvIptBW835ACKWPFfJ4iFQX8DVj\_k6R72MyzlHWF7PNpmTC8PVLbPKRtiLp4OhhMBeeknsGZesjtbFAfM8Ueb2AHR1smw6dpoa1T37UZjOeIeBpc-Tw)
+![](https://lh4.googleusercontent.com/Ac3FtywEjTuUL35VLbvbOAIrdq1J7PfwOj4-QWvjMs78kdPdTMk791UqHUahQIyR3dZH40YPlMAKvIptBW835ACKWPFfJ4iFQX8DVj\_k6R72MyzlHWF7PNpmTC8PVLbPKRtiLp4OhhMBeeknsGZesjtbFAfM8Ueb2AHR1smw6dpoa1T37UZjOeIeBpc-Tw)
 
 \
 
@@ -181,8 +181,6 @@ DSS dashboards are planned to be leveraged for reporting dashboards.&#x20;
 This will be added to implementation scope.
 
 \
-
-
 
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
