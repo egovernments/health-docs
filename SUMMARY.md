@@ -69,6 +69,7 @@
           * [Stock & Inventory](product/health-campaign-management/frontline-workers-app/configuration/hcm-configuration/stock-and-inventory.md)
           * [Project Services](product/health-campaign-management/frontline-workers-app/configuration/hcm-configuration/project-services.md)
         * [HCM Master Promotion Guide](product/health-campaign-management/frontline-workers-app/configuration/hcm-master-promotion-guide.md)
+      * [HCM Login Credentials](product/health-campaign-management/frontline-workers-app/hcm-login-credentials.md)
       * [Release Notes](product/health-campaign-management/release-notes/README.md)
         * [Success Metrics](product/health-campaign-management/release-notes/success-metrics.md)
       * [Product Sign-off](product/health-campaign-management/frontline-workers-app/product-sign-off.md)
