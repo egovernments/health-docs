@@ -2,7 +2,7 @@
 
 Find the mock-ups below:
 
-HCM Homescreen
+### HCM Homescreen
 
 After logging into the application, the user lands on this screen which displays daily performance (number of households registered). The progress bar must reset daily at 00:00 hours and start from 0 registrations. The action buttons related to the beneficiary are present  which include:
 
