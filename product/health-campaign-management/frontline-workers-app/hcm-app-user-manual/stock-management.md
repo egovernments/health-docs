@@ -10,7 +10,7 @@ On this page, the following actions can be performed:
 
 * After a successful login as a warehouse manager, a user lands on the home screen which consists of "Manage Stock", and "Stock Reconciliation".-&#x20;
 
-![](<../../.gitbook/assets/image (8).png>)
+![](<../../../../.gitbook/assets/image (8).png>)
 
 ### Manage Stocks
 
@@ -22,18 +22,18 @@ This screen consists of the following types of transactions that take place for 
 * Stock Damaged
 * Stock Loss
 
-![](<../../.gitbook/assets/image (15).png>)
+![](<../../../../.gitbook/assets/image (15).png>)
 
 #### Stock Receipt
 
 * When a user clicks on record stock receipt, the warehouse details screen will appear.
 * The latitude/longitude captures the geo-location of the warehouse which can be fetched with the help of the location icon within the field.
 
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../../../.gitbook/assets/image (11).png>)
 
 * Clicking on the next button will navigate the user to the "Received Stock" details screen.&#x20;
 
-![](<../../.gitbook/assets/image (5).png>)\
+![](<../../../../.gitbook/assets/image (5).png>)\
 
 
 * The "Receipt Stock Details" form has some mandatory fields: product, received from warehouse, and quantity received.&#x20;
@@ -46,7 +46,7 @@ This screen consists of the following types of transactions that take place for 
 * The optional fields include waybill number, quantity indicated on waybill, transport type, vehicle number and comments. &#x20;
 * Clicking on the submit button will go to the success page.
 
-![](<../../.gitbook/assets/image (4).png>)\
+![](<../../../../.gitbook/assets/image (4).png>)\
 
 
 #### Returned Stock Details
@@ -57,7 +57,7 @@ The optional fields are waybill number, quantity indicated on waybill, transport
 
 Clicking on the submit button will take the user to the success page.
 
-![](<../../.gitbook/assets/image (6).png>)\
+![](<../../../../.gitbook/assets/image (6).png>)\
 \
 
 
@@ -67,7 +67,7 @@ Clicking on the submit button will take the user to the success page.
 * The optional fields include waybill number, quantity indicated on waybill, transport type, vehicle number, and comments. &#x20;
 * Clicking on the submit button will take he user to the success page.
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../../../.gitbook/assets/image (3).png>)
 
 #### Lost Stock Details
 
@@ -77,7 +77,7 @@ The optional fields are wWaybill Number, quantity indicated on waybill, transpor
 
 Clicking on the submit button will take the user to the success page.
 
-![](<../../.gitbook/assets/image (19).png>)\
+![](<../../../../.gitbook/assets/image (19).png>)\
 \
 
 
@@ -87,7 +87,7 @@ Clicking on the submit button will take the user to the success page.
 * In the select product field, the user needs to select a product from the dropdown.&#x20;
 * There are warehouse name and administrative area fields as well, all of which are mandatory.&#x20;
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../../../.gitbook/assets/image (14).png>)
 
 ## API details
 
