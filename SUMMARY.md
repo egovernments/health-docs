@@ -50,6 +50,7 @@
       * [User Interface Design](product/health-campaign-management/frontline-workers-app/user-interface-design.md)
         * [User Management](product/health-campaign-management/frontline-workers-app/user-interface-design/user-management.md)
         * [Complaints Management](product/health-campaign-management/frontline-workers-app/user-interface-design/complaints-management.md)
+        * [Supervision Flow](product/health-campaign-management/frontline-workers-app/user-interface-design/supervision-flow.md)
       * [HCM App User Manual](product/health-campaign-management/frontline-workers-app/hcm-app-user-manual/README.md)
         * [Language Selection](product/health-campaign-management/frontline-workers-app/hcm-app-user-manual/language-selection.md)
         * [Login](product/health-campaign-management/frontline-workers-app/hcm-app-user-manual/login.md)
