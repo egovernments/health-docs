@@ -33,7 +33,6 @@
       * [AWS](platform/installation/supported-clouds/aws.md)
       * [VSphere](platform/installation/supported-clouds/vsphere.md)
       * [SDC](platform/installation/supported-clouds/sdc.md)
-    * [HCM Login Credentials](platform/installation/hcm-login-credentials.md)
 * [Product](product/README.md)
   * [Health Campaign Management](product/health-campaign-management.md)
     * [Frontline Worker's App](product/health-campaign-management/frontline-workers-app.md)
