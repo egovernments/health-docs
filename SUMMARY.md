@@ -3,7 +3,6 @@
 * [Introducing DIGIT Health Platform](README.md)
 * [Platform](platform/README.md)
   * [Release Notes](platform/release-notes.md)
-    * [Test Cases](platform/release-notes/test-cases.md)
     * [Gate 2 Release Checklist](platform/release-notes/gate-2-release-checklist.md)
   * [Platform Features](platform/platform-features.md)
   * [Architecture](platform/architecture.md)
