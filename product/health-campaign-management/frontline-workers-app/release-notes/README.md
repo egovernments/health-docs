@@ -29,7 +29,7 @@ The Health Campaign Management V1.0 frontline worker’s app includes four new m
 ## Related Documents and Links
 
 * Click [**here**](https://docs.google.com/spreadsheets/d/1HpbTql7r6vXP-NcyXK9w5g6PIZlZ8ndbsb8oW-yD9-8/edit#gid=0) to view the feedback from the UX audit.
-* Click here to view our [**product roadmap**](../../../community/roadmap.md).&#x20;
+* Click here to view our [**product roadmap**](../../../../community/roadmap.md).&#x20;
 
 ## Success Metrics
 
