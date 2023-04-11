@@ -46,7 +46,6 @@
     * [HCM Master Promotion Guide](platform/hcm-master-promotion-guide.md)
 * [Product](product/README.md)
   * [Health Campaign Management](product/health-campaign-management.md)
-    * [User Persona](product/user-persona.md)
     * [Frontline Worker's App](product/health-campaign-management/frontline-workers-app.md)
     * [Release Notes](product/health-campaign-management/release-notes/README.md)
       * [Success Metrics](product/health-campaign-management/release-notes/success-metrics.md)
