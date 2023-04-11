@@ -34,8 +34,8 @@ The articles in this section includes:
 [installation](installation/)
 {% endcontent-ref %}
 
-{% content-ref url="configuration/README (1).md" %}
-[README (1).md](<configuration/README (1).md>)
+{% content-ref url="../product/health-campaign-management/frontline-workers-app/configuration/" %}
+[configuration](../product/health-campaign-management/frontline-workers-app/configuration/)
 {% endcontent-ref %}
 
 

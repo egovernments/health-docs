@@ -57,7 +57,7 @@ individual.producer.delete.topic=delete-individual-topic
 
 #### **Action test: URL actions adding**
 
-#### ****[**action-test.json**](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)****
+#### [**action-test.json**](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)
 
 ```
 {
@@ -148,7 +148,7 @@ individual.producer.delete.topic=delete-individual-topic
 
 #### **Access to role-based actions**
 
-#### ****[**roleaction.json**](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ROLEACTIONS/roleactions.json)****
+#### [**roleaction.json**](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ROLEACTIONS/roleactions.json)
 
 ```
 {
@@ -289,7 +289,7 @@ individual.producer.delete.topic=delete-individual-topic
 
 #### Database schema
 
-<figure><img src="../../.gitbook/assets/Individual.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Individual.png" alt=""><figcaption></figcaption></figure>
 
 #### Postman collection
 
