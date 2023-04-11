@@ -53,6 +53,8 @@
         * [Supervision Flow](product/health-campaign-management/frontline-workers-app/user-interface-design/supervision-flow.md)
         * [Beneficiary Registration](product/health-campaign-management/frontline-workers-app/user-interface-design/beneficiary-registration.md)
         * [Service Delivery](product/health-campaign-management/frontline-workers-app/user-interface-design/service-delivery.md)
+        * [Inventory Management](product/health-campaign-management/frontline-workers-app/user-interface-design/inventory-management.md)
+        * [User Login](product/health-campaign-management/frontline-workers-app/user-interface-design/user-login.md)
       * [HCM App User Manual](product/health-campaign-management/frontline-workers-app/hcm-app-user-manual/README.md)
         * [Language Selection](product/health-campaign-management/frontline-workers-app/hcm-app-user-manual/language-selection.md)
         * [Login](product/health-campaign-management/frontline-workers-app/hcm-app-user-manual/login.md)
