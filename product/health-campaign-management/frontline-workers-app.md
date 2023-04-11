@@ -4,15 +4,15 @@ A digital partner for the frontline workers, this is an easy-to-use app with off
 
 ## Section Overview
 
-[Release notes](frontline-workers-app/release-notes/)
+[Release notes](release-notes/)
 
-[Functional specifications](frontline-workers-app/functional-specifications.md)
+[Functional specifications](functional-specifications.md)
 
 [User manual](frontline-workers-app/hcm-app-user-manual/)
 
-[Installation](frontline-workers-app/product-installation/)
+[Installation](../setup/)
 
-[PRDs](frontline-workers-app/products-requirement-documents-prds/)
+[PRDs](../../community/products-requirement-documents-prds/)
 
 
 
