@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introducing DIGIT Health Platform](README.md)
+  * [Roadmap](introducing-digit-health-platform/roadmap.md)
 * [Platform](platform/README.md)
   * [Release Notes](platform/release-notes.md)
     * [Gate 2 Release Checklist](platform/release-notes/gate-2-release-checklist.md)
@@ -19,6 +20,7 @@
       * [Project](platform/low-level-design/services/project.md)
       * [Stock](platform/low-level-design/services/stock.md)
   * [Installation](platform/installation/README.md)
+  * [Source Code](https://github.com/egovernments/health-campaign-services/)
 * [Product](product/README.md)
   * [Health Campaign Management](product/health-campaign-management.md)
     * [Frontline Worker's App](product/health-campaign-management/frontline-workers-app.md)
@@ -73,9 +75,3 @@
         * [User Login](community/products-requirement-documents-prds/user-login.md)
 
 ## COMMUNITY
-
-* [Roadmap](community/roadmap.md)
-
-***
-
-* [Source Code](https://github.com/egovernments/health-campaign-services/)

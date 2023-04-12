@@ -62,8 +62,8 @@ The APIs will allow data and functionality to be reused across multiple departme
 [platform](platform/)
 {% endcontent-ref %}
 
-{% content-ref url="community/roadmap.md" %}
-[roadmap.md](community/roadmap.md)
+{% content-ref url="introducing-digit-health-platform/roadmap.md" %}
+[roadmap.md](introducing-digit-health-platform/roadmap.md)
 {% endcontent-ref %}
 
 ## Contact Us
