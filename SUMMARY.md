@@ -18,7 +18,7 @@
     * [Services](platform/low-level-design/services/README.md)
       * [Project](platform/low-level-design/services/project.md)
       * [Stock](platform/low-level-design/services/stock.md)
-  * [Installation](platform/installation.md)
+  * [Installation](platform/installation/README.md)
 * [Product](product/README.md)
   * [Health Campaign Management](product/health-campaign-management.md)
     * [Frontline Worker's App](product/health-campaign-management/frontline-workers-app.md)

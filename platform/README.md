@@ -30,8 +30,8 @@ The articles in this section includes:
 [functional-specifications.md](../product/health-campaign-management/functional-specifications.md)
 {% endcontent-ref %}
 
-{% content-ref url="installation.md" %}
-[installation.md](installation.md)
+{% content-ref url="installation/" %}
+[installation](installation/)
 {% endcontent-ref %}
 
 {% content-ref url="../product/health-campaign-management/frontline-workers-app/configuration/" %}
