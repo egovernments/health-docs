@@ -4,7 +4,7 @@ description: Health Campaign Management Platform
 
 # Health Campaign Management
 
-## About Health Campaign Management
+## Overview
 
 Our mission is to build a digital tool that enables decision-makers and programme managers to streamline campaign planning, manage workflows and monitor service delivery in real-time to aid data-driven decision-making.&#x20;
 
