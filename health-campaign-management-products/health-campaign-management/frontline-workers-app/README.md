@@ -8,11 +8,11 @@ A digital partner for the frontline workers, this is an easy-to-use app with off
 
 [Functional specifications](functional-specifications.md)
 
-[User manual](frontline-workers-app/hcm-app-user-manual/)
+[User manual](hcm-app-user-manual/)
 
-[Installation](../setup/)
+[Installation](product-installation/)
 
-[PRDs](../../community/products-requirement-documents-prds/)
+[PRDs](products-requirement-documents-prds/)
 
 
 

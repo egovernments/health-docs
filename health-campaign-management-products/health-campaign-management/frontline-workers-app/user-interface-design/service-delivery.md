@@ -1,82 +1,5 @@
 # Service Delivery
 
-## Table of Contents
-
-Background
-
-Target Audience
-
-Objectives (of this release)
-
-Assumptions and Validations
-
-Out of Scope
-
-Specifications
-
-Design
-
-Success Criteria
-
-Metrics to Track
-
-## Background
-
-This document describes the need and scope of a digital platform for health campaigns, explaining the product’s features, specifications, purpose, and functionality. It also provides an overview of the application.
-
-The module aims to reduce the risks of data redundancy, provide better service delivery tracking and visibility of the services provided for maximum area coverage in the quickest time possible. It focuses on the design and features of the user interface of the Health Campaign Management (HCM) Platform for service delivery to households or individuals. The document also describes the elements and the process flow of the application along with a wireframe model for easy comprehension.
-
-## Target Audience
-
-The document is intended for the engineering and platform (tech teams), product management, and implementation teams to agree on the requirements for the platform.
-
-Objectives (of this release)
-
-1. Enabling actors with a digital system to manage and implement health campaign activities.&#x20;
-
-* Facilitate FLWs, supervisors, district officers, and other actors to collect and analyse data accurately, along with monitoring the tasks from registration to service delivery. Regular progress checks can be performed at any time and a comparative analysis can be derived at the district levels for different teams.&#x20;
-* Facilitate better diagnostics with improved access to healthcare interventions for the general public.
-
-2. Enabling adoption of the HCM platform for multiple health campaigns by providing flexibility in the UI and UX as well as product specifications.
-
-* Emphasis on adopting digital systems by collaborating with several healthcare bodies.
-* Provide scope for future changes and improvements in the application.
-
-## Assumptions and Validations
-
-| Theme                | Assumption                                                                                                                                                                                                                                                                                                                                   |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Customer persona     | <ul><li>The actors using the application are not digitally literate and need training before they can use the application independently.</li></ul>                                                                                                                                                                                           |
-| Device and services  | <ul><li>The actors have a smartphone and there should be internet connectivity to enable syncing of data from the mobile application to the server for populating the dashboards.</li><li>The actors using the mobile application must sync at least once daily.</li><li>Logging into the application needs internet connectivity.</li></ul> |
-| Deliver intervention | <ul><li>The user will be able to add delivery details only after registering a household. </li><li>The option to deliver an intervention must be provided either to the household (in case of a household-based campaign) or to an individual (for an individual-based campaign) and must be configured during system setup.</li></ul>       |
-| Peer-to-peer sync    | <ul><li>For v1.0, the product will not support peer-to-peer sync, either by directly syncing phones or routing traffic through the server.</li></ul>                                                                                                                                                                                         |
-| Location picker      | <ul><li>The user must select at least the highest boundary to proceed with the registration and delivery.</li></ul>                                                                                                                                                                                                                          |
-| Additional fields    | <ul><li>All the non-mandatory fields must be taken care of during implementation. This must be done across all the flows.</li></ul>                                                                                                                                                                                                          |
-| Dropdown             | <ul><li>If the field contains only one value, then it must be auto-populated by the system.</li></ul>                                                                                                                                                                                                                                        |
-
-## Risk/Limitations
-
-Addressed in the out-of-scope section.
-
-## Out of scope
-
-* Search and view beneficiaries on the map based on proximity.
-* Filter and sort beneficiaries.
-* Generate QR codes for registered beneficiaries.
-* View payments due for services delivered.
-
-## Specifications
-
-| Field name             | Data type                     | Data validation                       | Required (Y/N) | Comments                                                                              |   |
-| ---------------------- | ----------------------------- | ------------------------------------- | -------------- | ------------------------------------------------------------------------------------- | - |
-| Location picker        | Dropdown                      | Select at least the highest boundary. | Y              | The area boundary assigned to a specific user.                                        |   |
-| Search for a household | String                        | Search by the household head.         | Y              | After two characters, it will start showing related search results.                   |   |
-| Resource delivered     | Dropdown                      | NA                                    | Y              | Resource to be delivered in the campaign.                                             |   |
-| Quantity distributed   | Numeric; increment/ decrement | NA                                    | Y              | Quantity of the resources distributed. It is defaulted to 1, but can be reduced to 0. |   |
-| Delivery comment       | Dropdown                      | NA                                    | N              | Select any comment/reason from the dropdown.                                          |   |
-
-## Design
-
 Find the mock ups below:
 
 ### HCM Home screen
@@ -93,7 +16,7 @@ At the bottom, there is a card that shows how many records are unsynced for the 
 
 The help button is on every screen of the application. By clicking on this button, a user can get a walkthrough of the elements on that screen. On the top right, the administrative area assigned to the user is displayed which will be based on the level of hierarchy. The hamburger button on the top left corner covers other actions.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 10.59.24 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 10.59.24 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Hamburger Menu
 
@@ -101,7 +24,7 @@ After clicking on the hamburger button, a list of actions appears on the user sc
 
 If the user clicks on the hamburger button again, it collapses the hamburger menu. The button is available on all screens of the application.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.00.54 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 11.00.54 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Edit Profile
 
@@ -109,7 +32,7 @@ The user can edit his/her name, phone number, and select the gender. After updat
 
 If the user does not want to make any changes, he/she can click on the back button which will take him/her back to the hamburger menu. This is not in scope for V1.0; it needs to be taken up in V1.1.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.01.44 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 11.01.44 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Project Selection
 
@@ -117,17 +40,17 @@ When a user clicks on the projects option in the hamburger menu, it navigates th
 
 Though the automatic sync is triggered by the login action, after selecting another project, the system must now sync the data for the new project, and the same flow must be followed.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.02.29 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 11.02.29 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Location
 
 For a user assigned multiple boundaries, after logging in, the boundary selection overlay must appear. This forces the user to select a boundary only after which the user can view the home screen. The user can then change the boundary whenever required from the location picker placed at the top right. It has dropdown fields to select the boundary, which depends upon the hierarchy level of the user. For an FLW, the boundary selection starts from the administrative post. The values in the dropdown are linked to the higher hierarchy and the user cannot select a boundary if the previous field is left blank.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.04.29 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 11.04.29 AM.png" alt=""><figcaption></figcaption></figure>
 
 The dropdown must only consist of the boundaries which are assigned to the user, not all the boundaries under a particular hierarchy. For example, if the user is assigned localities 1, 2, and 3, and there are a total of 5 localities under admin post 1, then the dropdown must have only 1, 2, and 3 localities. The highest boundary must at least be selected to enable the select button which navigates the user to the home screen. For multiple projects, the sync needs to download the data only for the selected project.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.05.10 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 11.05.10 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Help Button
 
@@ -138,7 +61,7 @@ If the user clicks on the help button, it will give a walkthrough of the entire 
 
 The text box appears at the bottom of the button.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.06.17 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 11.06.17 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Search Households
 
@@ -156,7 +79,7 @@ Both cases are discussed further. The ‘Back’ button on the top will navigate
 When the user searches for a household, there can be two outcomes:
 
 1. The list of households will appear as a search result. The user can then open the household card and proceed with service delivery.
-2. No results appear. In this case, the user needs to register the household first, so that he/she can deliver the intervention. (Note: Refer to the [**beneficiary registration**](beneficiary-registration.md) PRD).
+2. No results appear. In this case, the user needs to register the household first, so that he/she can deliver the intervention. (Note: Refer to the [**beneficiary registration**](../products-requirement-documents-prds/beneficiary-registration.md) PRD).
 
 Household Card (For a household-level campaign)
 
@@ -166,11 +89,11 @@ There are cards for each member, starting from the household head. The card cons
 
 For adding new members to the household, there is an “Add Member” button below the member cards, which navigates the user to the “Individual Details” screen. At the bottom, the “Deliver Intervention” button navigates the user to the update delivery screen.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.23.39 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 11.23.39 AM.png" alt=""><figcaption></figcaption></figure>
 
 If the intervention is delivered to that household, a second screen will appear. The deliver intervention button must be replaced by the ‘Update Delivery Details’ button if more interventions are needed to be delivered. The back button at the top takes the user to the list of households screen.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.24.20 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 11.24.20 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Household Card (For an individual-level campaign)
 
@@ -178,7 +101,7 @@ In the case of an individual-level campaign, the household card appears in a sim
 
 The deliver intervention button on the individual cards navigates the user to the update delivery screen. The back button navigates the user to the search households screen.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.30.32 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 11.30.32 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Deliver Intervention
 
@@ -188,11 +111,11 @@ The “Number of Resources For Delivery” must be automatically calculated by t
 
 In the “Quantity distributed” field, the user can decide how many bednets need to be delivered to that household against the value generated by the system. The auto-calculation of the quantity must be hard-coded and can be made configurable in later versions. The user can increase or decrease the count through the ‘+’ or ‘-’ buttons, respectively. The field is mandatory and must be defaulted to 1, but can be reduced to 0 to cater to situations where the household receives no intervention due to stock-out.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.43.32 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 11.43.32 AM.png" alt=""><figcaption></figcaption></figure>
 
 The user can add a delivery comment if the service is not delivered due to some reason or situation, in the “Delivery Comment” field, which is a dropdown field with a list of possible reasons. The reasons must be configured in the MDMS. After reviewing the details, the user can click on the submit button which will save details of the household in the system. The confirmation screen appears after the details are validated.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 11.44.18 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 11.44.18 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Confirmation screen
 
@@ -201,13 +124,13 @@ After submitting the details, a pop-up window appears, asking the user to review
 * If the user clicks on the ‘Submit’ button, the data will be submitted and the next screen will appear.
 * If the user clicks on the ‘Cancel’ button, the popup will close and the user will be taken back to the “Deliver Intervention’ screen.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 12.02.44 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 12.02.44 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Acknowledgement Screen&#x20;
 
 When the user clicks on submit, this screen appears, confirming to the user that his/her data has been recorded successfully. Below the message, there is a “Back to Search” button which navigates the user to the search households screen for household-level campaigns. The search bar must be blank and previous results must not be displayed. For individual-level campaigns, the user will land on the household card screen.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 12.03.08 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 12.03.08 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Delete Service Delivery Details
 
@@ -217,24 +140,24 @@ The front end must not have the capability to delete any delivery details to avo
 
 Before going into the field, the user needs to log into the application daily, which will initiate an automatic sync process mentioned in the user login PRD. For manual sync, there is a “Sync Data” button on the home screen which allows the user to sync data according to their convenience. At the bottom of the screen, there is a card that shows the message “Data Unsynced” along with the number of records unsynced.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 12.16.34 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 12.16.34 PM.png" alt=""><figcaption></figcaption></figure>
 
 When the user clicks on the ‘Sync’ button, the sync action starts along with an overlay showing “Sync in Progress” over the home page. The user cannot perform any other action until the sync is complete or there is some error.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 12.17.20 PM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 12.17.20 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Sync Status&#x20;
 
 Once the data is synced, a pop-up comes up stating “Data Synced” along with a ‘Close’ button. When the user clicks on this button, it navigates them to the home screen.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 1.46.40 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 1.46.40 PM.png" alt=""><figcaption></figcaption></figure>
 
 If the data did not sync, a popup comes up, stating “Sync Failed” with two buttons below it:
 
 1. Retry: If the user wants to retry syncing the data.
 2. Close: Clicking on this will navigate the user back to the home screen.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-09 at 1.48.08 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-09 at 1.48.08 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Reports
 
@@ -242,33 +165,16 @@ The reports dashboard provides a tabular and visualised representation of user p
 
 The bar graph shows the day-to-day comparison of registered beneficiaries along with a threshold of the daily target for registration. The table, which is added below the graph, displays the households registered as well as bednets distributed.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-14 at 9.45.48 AM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-14 at 9.45.48 AM (1).png" alt=""><figcaption></figcaption></figure>
 
 In the ‘Leaderboard’ section, the overall number of households registered will be displayed in the form of a milestone. Below that, all the individual users’ performance will be listed separately. The leaderboard option will not be available at the registrar level (field level) but at the field supervisor level.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-14 at 9.45.48 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-14 at 9.45.48 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Call Supervisor&#x20;
 
 If the user is facing any challenge and requires immediate solutions, they can click on the “Call Supervisor” button on the home screen. It will redirect them to their phone’s dial pad with the supervisor’s number auto-filled. By clicking on the ‘Call’ button, the user can contact the supervisor for immediate assistance.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-03-14 at 9.48.43 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-14 at 9.48.43 AM.png" alt=""><figcaption></figcaption></figure>
 
-## Success Criteria&#x20;
-
-* Various actors involved in the process will be able to collect, track, and analyse data for the services delivered to them using a bug-free platform.&#x20;
-* The supervisors, district officers, and program managers will be able to monitor the team’s performance which will help them understand the problems and challenges faced by the teams.&#x20;
-* Digital records will result in maximum coverage with fewer chances of households being missed during a certain campaign.
-
-## Metrics to track&#x20;
-
-The following metrics will be tracked:&#x20;
-
-* Households delivered.&#x20;
-* Households not delivered.&#x20;
-* Households rejected.&#x20;
-* Team progress.\
-  \
-  \
-  \
-  [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

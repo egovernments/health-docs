@@ -32,19 +32,19 @@ The goals include:
 
 **User Persona 1: ASHA Frontline health worker**
 
-<figure><img src="../.gitbook/assets/Health Campaign Landscape_ Process map &#x26; User Persona (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Health Campaign Landscape_ Process map &#x26; User Persona (4).png" alt=""><figcaption></figcaption></figure>
 
 **User Persona 2: Block Program Manager**
 
-<figure><img src="../.gitbook/assets/Health Campaign Landscape_ Process map &#x26; User Persona (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Health Campaign Landscape_ Process map &#x26; User Persona (1).png" alt=""><figcaption></figcaption></figure>
 
 **User Persona 3: District Malaria Officer**
 
-<figure><img src="../.gitbook/assets/Health Campaign Landscape_ Process map &#x26; User Persona (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Health Campaign Landscape_ Process map &#x26; User Persona (6).png" alt=""><figcaption></figcaption></figure>
 
 **User Persona 4: Program Officers- Path, Development Partner**
 
-<figure><img src="../.gitbook/assets/Health Campaign Landscape_ Process map &#x26; User Persona (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Health Campaign Landscape_ Process map &#x26; User Persona (7).png" alt=""><figcaption></figcaption></figure>
 
 ### Approach
 
@@ -57,13 +57,13 @@ Health campaigns are categorised based on the following characteristics:&#x20;
 * Campaign design (vertical/horizontal, reactive/proactive)&#x20;
 * Type of Intervention delivered (product/service/information)
 
-<figure><img src="../.gitbook/assets/Health Campaign Management Platform - Gate 1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Health Campaign Management Platform - Gate 1.png" alt=""><figcaption></figcaption></figure>
 
 ## Products
 
 Click on the links below to learn more about the products:
 
-* [Frontline worker's app](health-campaign-management/frontline-workers-app.md)
+* [Frontline worker's app](frontline-workers-app/)
 * Dashboard (Coming soon)
 
 
