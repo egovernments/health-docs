@@ -1,6 +1,10 @@
-# Health Campaign Management Products
+# Products
 
 Here are the articles in this section:
+
+{% content-ref url="health-campaign-management/" %}
+[health-campaign-management](health-campaign-management/)
+{% endcontent-ref %}
 
 {% content-ref url="health-campaign-management/frontline-workers-app/" %}
 [frontline-workers-app](health-campaign-management/frontline-workers-app/)

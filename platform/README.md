@@ -22,20 +22,20 @@ The articles in this section includes:
 [low-level-design](low-level-design/)
 {% endcontent-ref %}
 
-{% content-ref url="../health-campaign-management-products/health-campaign-management/frontline-workers-app/field-app-architecture.md" %}
-[field-app-architecture.md](../health-campaign-management-products/health-campaign-management/frontline-workers-app/field-app-architecture.md)
+{% content-ref url="../products/health-campaign-management/frontline-workers-app/field-app-architecture.md" %}
+[field-app-architecture.md](../products/health-campaign-management/frontline-workers-app/field-app-architecture.md)
 {% endcontent-ref %}
 
-{% content-ref url="../health-campaign-management-products/health-campaign-management/frontline-workers-app/functional-specifications.md" %}
-[functional-specifications.md](../health-campaign-management-products/health-campaign-management/frontline-workers-app/functional-specifications.md)
+{% content-ref url="../products/health-campaign-management/frontline-workers-app/functional-specifications.md" %}
+[functional-specifications.md](../products/health-campaign-management/frontline-workers-app/functional-specifications.md)
 {% endcontent-ref %}
 
 {% content-ref url="installation/" %}
 [installation](installation/)
 {% endcontent-ref %}
 
-{% content-ref url="../health-campaign-management-products/health-campaign-management/frontline-workers-app/configuration/" %}
-[configuration](../health-campaign-management-products/health-campaign-management/frontline-workers-app/configuration/)
+{% content-ref url="../products/health-campaign-management/frontline-workers-app/configuration/" %}
+[configuration](../products/health-campaign-management/frontline-workers-app/configuration/)
 {% endcontent-ref %}
 
 

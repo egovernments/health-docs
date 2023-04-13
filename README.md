@@ -54,8 +54,8 @@ The APIs will allow data and functionality to be reused across multiple departme
 
 ## Useful links
 
-{% content-ref url="health-campaign-management-products/health-campaign-management/frontline-workers-app/functional-specifications.md" %}
-[functional-specifications.md](health-campaign-management-products/health-campaign-management/frontline-workers-app/functional-specifications.md)
+{% content-ref url="products/health-campaign-management/frontline-workers-app/functional-specifications.md" %}
+[functional-specifications.md](products/health-campaign-management/frontline-workers-app/functional-specifications.md)
 {% endcontent-ref %}
 
 {% content-ref url="platform/" %}
