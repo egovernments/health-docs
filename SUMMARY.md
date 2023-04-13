@@ -73,6 +73,11 @@
         * [Service Delivery](community/products-requirement-documents-prds/service-delivery.md)
         * [Inventory Management](community/products-requirement-documents-prds/inventory-management.md)
         * [User Login](community/products-requirement-documents-prds/user-login.md)
-    * [Campaign Management Dashboard](product/health-campaign-management/campaign-management-dashboard.md)
+    * [Campaign Management Dashboard](product/health-campaign-management/campaign-management-dashboard/README.md)
+      * [Features](product/health-campaign-management/campaign-management-dashboard/features.md)
+      * [User Stories](product/health-campaign-management/campaign-management-dashboard/user-stories.md)
+      * [User Interface Design](product/health-campaign-management/campaign-management-dashboard/user-interface-design.md)
+      * [Dashboard User Manual](product/health-campaign-management/campaign-management-dashboard/dashboard-user-manual.md)
+      * [Test Cases](product/health-campaign-management/campaign-management-dashboard/test-cases.md)
 
 ## COMMUNITY
