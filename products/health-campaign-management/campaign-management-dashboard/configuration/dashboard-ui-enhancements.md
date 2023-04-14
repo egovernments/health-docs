@@ -268,6 +268,121 @@ Include the filters that need to be hidden from the dashboard within the “hide
 }
 ```
 
+## Pie Chart with a Label in the Centre
+
+The pie chart component can be made to display the cumulative value in the centre of the chart based on the “showLabel” config field set for pie charts.
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-04-14 at 10.55.56 AM.png" alt=""><figcaption></figcaption></figure>
+
+#### Setup
+
+Set the “showLabel” field for a pie chart (ChartApiConfig.json) to ‘true’ to enable the label.
+
+```
+{
+"samplePieChart": {
+"chartName": "CHART",
+"queries": [],
+"chartType": "pie",
+"valueType": "number",
+"showLabel": true,
+"drillChart": "none",
+"documentType": "_doc",
+"action": "",
+"aggregationPaths": [],
+"insight": {},
+"_comment": " “
+}
+}
+```
+
+## Line Chart with Prediction
+
+The line chart can be configured to display future projections based on the existing data set by enabling a configuration field in the respective chart configuration.
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-04-14 at 10.57.07 AM.png" alt=""><figcaption></figcaption></figure>
+
+#### Setup
+
+Set the “predictionPath” field in the line chart configuration to point to a specific aggregation path from which the prediction data needs to be calculated. If the “predictionPath” is not available for a line chart, then the prediction will be skipped for the respective chart.
+
+```
+{
+"actualVsPlannedLineGraph": {
+ "chartName": "DSS_HEALTH_ACTUAL_VS_PLANNED_LINE_GRAPH",
+ "queries": [
+   {
+...
+     "aggrQuery": "QUERY_WITH_THE_AGGREGATE_PATH_FOR_PREDICTION”
+   }
+ ],
+ "chartType": "line",
+ "isCumulative": true,
+ "valueType": "number",
+ "drillChart": "none",
+ "documentType": "_doc",
+ "action": "",
+ "predictionPath" : "Target_Path",
+ "aggregationPaths": [
+   "Target_Path"
+ ],
+ "insight": { },
+ "_comment": " "
+}
+}
+```
+
+### Table Chart with Footer
+
+The table chart can be configured to display a footer row at the bottom to show the cumulative total of the row values for all columns with numeric values. Percentages and non-numeric values will not be included in the total value.
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-04-14 at 10.58.28 AM.png" alt=""><figcaption></figcaption></figure>
+
+#### Setup
+
+Set the “showFooter” field in the line chart configuration to ‘true’. This will enable the footer row for the respective table chart.
+
+```
+{
+"tableChart": {
+ "chartName": "CHART_WITH_FOOTER",
+ "queries": [],
+ "chartType": "xtable",
+ "valueType": "number",
+ "documentType": "_doc",
+ "action": "",
+ "hideInsights": true,
+ "showFooter": true,
+ "_comment": " “
+}
+}
+```
+
+## Backend Enhancements
+
+### Filter Data for the Current Day
+
+The charts can be configured to filter the data only for the current day without hard-coding the date range in the aggregation query.
+
+#### Setup
+
+Set the “filterForCurrentDay” field in the line chart configuration to ‘true’. This will override the date range in the backend and filter only the data that are inserted for the current day.
+
+```
+{
+"todaysVisits": {
+ "chartName": "DSS_HEALTH_NATIONAL_HOUSEHOLDS_VISITED_TODAY",
+ "chartType": "metric",
+ "valueType": "number",
+ "drillChart": "none",
+ "documentType": "_doc",
+ "filterForCurrentDay": true,
+ "action": "",
+ "_comment": " “
+}
+}
+```
+
 \
 \
 \
