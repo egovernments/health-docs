@@ -78,7 +78,8 @@
       * [User Stories](products/health-campaign-management/campaign-management-dashboard/user-stories.md)
       * [User Interface Design](products/health-campaign-management/campaign-management-dashboard/user-interface-design.md)
       * [Dashboard User Manual](products/health-campaign-management/campaign-management-dashboard/dashboard-user-manual.md)
-      * [Test Cases](products/health-campaign-management/campaign-management-dashboard/test-cases.md)
+      * [Product Installation](products/health-campaign-management/campaign-management-dashboard/product-installation.md)
+      * [Page 1](products/health-campaign-management/campaign-management-dashboard/page-1.md)
       * [Configuration](products/health-campaign-management/campaign-management-dashboard/configuration/README.md)
         * [HCM Dashboard Master Promotion Guide](products/health-campaign-management/campaign-management-dashboard/configuration/hcm-dashboard-master-promotion-guide.md)
 
