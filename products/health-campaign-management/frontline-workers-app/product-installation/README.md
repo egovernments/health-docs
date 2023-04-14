@@ -2,7 +2,7 @@
 description: HCM deployment guide
 ---
 
-# Product Installation
+# Installation
 
 ## Prerequisites&#x20;
 
