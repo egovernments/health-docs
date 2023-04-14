@@ -383,6 +383,42 @@ Set the “filterForCurrentDay” field in the line chart configuration to ‘tr
 }
 ```
 
+### Percentage Calculation for Line Charts & Bar Charts
+
+Line charts can be configured to display percentages calculated based on the results from two aggregation paths.
+
+#### Setup
+
+* Ensure that there are exactly two aggregation queries.&#x20;
+* The result from the first query will be used as the numerator and the second result set will be used as the denominator for the percentage calculation.
+* Set ‘percentage’ as the value of the ‘action’ field in the chart configuration.
+
+```
+{
+"barChartWithPercentage": {
+ "chartName": "BAR_CHART_WITH_PERCENTAGE",
+ "queries": [
+   {
+     "module": "COMMON",
+     "aggrQuery": "NUMERATOR"
+   },
+   {
+     "module": "COMMON",
+     "aggrQuery": "DENOMINATOR"
+   }
+ ],
+ "chartType": "line",
+ "valueType": "percentage",
+ "documentType": "_doc",
+ "action": "percentage",
+ "aggregationPaths": ["Quantity","Target"],
+}
+}
+```
+
+
+
+\
 \
 \
 \
