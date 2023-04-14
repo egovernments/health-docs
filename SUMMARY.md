@@ -81,6 +81,7 @@
       * [Test Cases](products/health-campaign-management/campaign-management-dashboard/test-cases.md)
       * [Product Installation](<products/health-campaign-management/campaign-management-dashboard/test-cases (1).md>)
       * [Configuration](products/health-campaign-management/campaign-management-dashboard/configuration/README.md)
+        * [Dashboard UI Enhancements](products/health-campaign-management/campaign-management-dashboard/configuration/dashboard-ui-enhancements.md)
         * [HCM Dashboard Master Promotion Guide](products/health-campaign-management/campaign-management-dashboard/configuration/hcm-dashboard-master-promotion-guide.md)
 
 ## COMMUNITY
