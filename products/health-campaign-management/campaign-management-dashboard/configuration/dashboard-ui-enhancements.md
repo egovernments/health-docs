@@ -416,9 +416,217 @@ Line charts can be configured to display percentages calculated based on the res
 }
 ```
 
+### Division Calculation for Line/Bar Charts
 
+Line charts can be configured to divide one dataset by another to calculate the quotient value.&#x20;
 
-\
-\
-\
-\
+**Example:** This is used in the inventory chart on the health dashboard to calculate the number of days the stock will last in an inventory by dividing the existing count by the target value.
+
+#### Setup
+
+* Ensure that there are exactly two aggregation queries .
+* The result from the first query will be used as the numerator and the second result set will be used as the denominator to calculate the quotient.
+* Set ‘division’ as the value of the ‘action’ field in the chart configuration.
+
+```
+{
+"barChartWithPercentage": {
+ "chartName": "BAR_CHART_WITH_PERCENTAGE",
+ "queries": [
+   {
+     "module": "COMMON",
+     "aggrQuery": "NUMERATOR"
+   },
+   {
+     "module": "COMMON",
+     "aggrQuery": "DENOMINATOR"
+   }
+ ],
+ "chartType": "line",
+ "valueType": "number",
+ "documentType": "_doc",
+ "action": "division",
+ "aggregationPaths": ["Quantity","Target"],
+}
+}
+```
+
+### Calculate Sum of 2 Datasets for Line/Bar Charts
+
+Line charts can be configured to calculate the sum of two aggregated datasets returned by the aggregation queries.&#x20;
+
+**Example:** This is used in the inventory chart that displays the number of stocks that are available in hand by calculating the sum of the incoming stocks.
+
+#### Setup
+
+* Ensure that there is more than one aggregation query preset to calculate the sum.
+* Mention the “actionName” as “SumComputedField” within the chart’s computedFields.
+* Include the aggregation paths that are required to calculate the sum.
+
+```
+{
+"chartWithSumOfBuckets": {
+ "chartName": "LINE_CHART",
+ "queries": [
+   {
+     "module": "COMMON",
+     ...
+     "aggrQuery": "QUERY_1"
+   },
+   {
+     "module": "COMMON",
+     ...
+     "aggrQuery": "QUERY_2"
+   }
+ ],
+ "chartType": "line",
+ "computedFields": [
+   {
+     "postAggregationTheory": "",
+     "actionName": "SumComputedField",
+     "fields": [
+       "Result 1",
+       "Result 2"
+     ],
+     "newField": "Sum",
+     "_comments": ""
+   }
+ ],
+...
+}
+}
+```
+
+### Divide Bucket Data by a Constant
+
+Line charts can be configured to perform the division on a bucket of data by a constant value. This can be used to calculate the percentage share of individual bucket items by comparing with the total sum of data.&#x20;
+
+**Example:** This is used in the complaints chart which displays the district-wise share of complaints by comparing against the overall number of complaints registered for the entire province.
+
+#### Setup
+
+* Ensure that there are exactly two aggregation queries. The first should return the aggregation results in a bucket. The second result should be the sum of the values.
+* Set “divisionbyconstant” as the value of the ‘action’ field.
+
+```
+{
+"chartWithDivideByConstant": {
+ "chartName": "DIVIDE_BY_CONSTANT",
+ "queries": [
+   {
+     "module": "COMMON",
+     ...
+     "aggrQuery": "BUCKET_RESULTS"
+   },
+   {
+     "module": "COMMON",
+     ...
+     "aggrQuery": "CONSTANT_VALUE"
+   }
+ ],
+ "chartType": "line",
+ "isCumulative": false,
+ "valueType": "number",
+ "action": "divisionbyconstant",
+ "aggregationPaths": ["BUCKET_RESULTS","CONSTANT_VALUE"],
+ "insight": { },
+ "_comment": " “
+}
+}
+```
+
+### Enable Sorting for Post-Computed Results
+
+Line charts do not retain the original sort order after performing the computation. Using the sort action, the computed results can be sorted based on the bucket keys or values in both ascending and descending order.
+
+#### Setup
+
+* The “computedFields” object accepts the ‘sort’ field and the value should denote the order of the sorting expected.
+* The ‘sort’ field accepts four values:
+
+&#x20;      \- sortValueAsc: To sort based on the increasing order of the values.
+
+&#x20;      \- sortValueDesc: To sort based on the decreasing order of the values.
+
+&#x20;      \- sortKeyAsc: To sort based on the increasing order of the keys.
+
+&#x20;      \- sortKeyDesc: To sort based on the decreasing order of the keys.
+
+```
+{
+"sortedChart":{
+ "chartName": "CHART_WITH_SORT",
+ "queries": [
+   {
+     "module": "COMMON",
+     ...
+     "aggrQuery": "QUERY_1"
+   },
+   {
+     "module": "COMMON",
+     ...
+     "aggrQuery": "QUERY_2"
+   }
+ ],
+ "chartType": "line",
+ "isCumulative": false,
+ "valueType": "percentage",
+ "action": "percentage",
+ "aggregationPaths": ["AGGR1","AGGR2"],
+ "computedFields": [
+   {
+     "postAggregationTheory" : "repsonseToDifferenceOfDates",
+     "actionName": "",
+     "sort": "sortValueDesc",
+     "fields" : ["AGGR1"],
+     "newField" : "RESULT",
+     "_comments": ""
+   }
+ ],
+ "insight": { },
+ "_comment": " "
+}
+}
+```
+
+### Day-Wise Insights for Metric Charts
+
+Enabling insights’ calculation based on the day shows the comparison between the current day’s data and the previous day’s data.
+
+#### Setup
+
+* Setting the ‘interval’ field to ‘day’ inside the ‘insight’ object will enable day-wise insight calculation
+* The date range selected for fetching the data should not be more than a single day to calculate day-wise insights.
+
+```
+"insight": {
+ "chartResponseMap": "todaysVisits",
+ "action": "differenceOfNumbers",
+ "upwardIndicator": "positive",
+ "downwardIndicator": "negative",
+ "textMessage": "$indicator$value% than last $insightInterval",
+ "colorCode": "#228B22",
+ "insightInterval": "day”
+}
+```
+
+### Date-Range Insights for Metric charts
+
+Enabling Insights calculation for a date range shows the comparison between the Data from (project start date to the current date) and (project start date to the previous day).
+
+#### Setup
+
+* Setting the ‘insightInterval’ field to “dateRange” inside the “insight” object will enable date-range insight calculation.
+* The date range Insight interval can be applied only for date ranges more than one day.
+
+```
+"insight": {
+      "chartResponseMap": "bednetsDistributionCoverage",
+      "action": "differenceOfNumbers",
+      "upwardIndicator": "positive",
+      "downwardIndicator": "negative",
+      "textMessage": "$indicator$value% than last $insightInterval",
+      "colorCode": "#228B22",
+      "insightInterval": "dateRange"
+}
+```
