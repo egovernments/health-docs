@@ -45,8 +45,8 @@
       * [Test Cases](products/health-campaign-management/frontline-workers-app/test-cases.md)
       * [Functional Specifications](products/health-campaign-management/frontline-workers-app/functional-specifications.md)
       * [Field App Architecture](products/health-campaign-management/frontline-workers-app/field-app-architecture.md)
-      * [Product Installation](products/health-campaign-management/frontline-workers-app/product-installation/README.md)
-        * [APK Installation](products/health-campaign-management/frontline-workers-app/product-installation/apk-installation.md)
+      * [Installation](products/health-campaign-management/frontline-workers-app/installation/README.md)
+        * [APK Installation](products/health-campaign-management/frontline-workers-app/installation/apk-installation.md)
       * [Configuration](products/health-campaign-management/frontline-workers-app/configuration/README.md)
         * [HCM Configuration](products/health-campaign-management/frontline-workers-app/configuration/hcm-configuration/README.md)
           * [Individual Registry](products/health-campaign-management/frontline-workers-app/configuration/hcm-configuration/individual-registry.md)
@@ -79,9 +79,10 @@
       * [User Interface Design](products/health-campaign-management/campaign-management-dashboard/user-interface-design.md)
       * [Dashboard User Manual](products/health-campaign-management/campaign-management-dashboard/dashboard-user-manual.md)
       * [Test Cases](products/health-campaign-management/campaign-management-dashboard/test-cases.md)
-      * [Product Installation](<products/health-campaign-management/campaign-management-dashboard/test-cases (1).md>)
+      * [Installation](products/health-campaign-management/campaign-management-dashboard/installation.md)
       * [Configuration](products/health-campaign-management/campaign-management-dashboard/configuration/README.md)
         * [Dashboard UI Enhancements](products/health-campaign-management/campaign-management-dashboard/configuration/dashboard-ui-enhancements.md)
         * [HCM Dashboard Master Promotion Guide](products/health-campaign-management/campaign-management-dashboard/configuration/hcm-dashboard-master-promotion-guide.md)
+      * [Release Notes](products/health-campaign-management/campaign-management-dashboard/release-notes.md)
 
 ## COMMUNITY
