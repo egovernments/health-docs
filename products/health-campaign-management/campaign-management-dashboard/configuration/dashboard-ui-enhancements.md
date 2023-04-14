@@ -115,7 +115,159 @@ Setting the vizType field to “stacked-collection” will enable this chart. A 
 }
 ```
 
-\
+### Rich Summary Card
+
+A collection of metrics which are displayed in a grid-based fashion. If the “valueType” of a metric is ‘percentage’, then this chart will display a circular progressbar for the metric. This is a vizType which accepts one or more ‘metric’ charts as children.
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-04-14 at 10.46.19 AM.png" alt=""><figcaption></figcaption></figure>
+
+#### Setup
+
+Setting the vizType field to "stacked-collection" will enable this chart on the dashboard pages (Example: Provincial dashboard).
+
+```
+{
+ "id": 201,
+ "name": "DSS_HEALTH_HOUSEHOLDS",
+ "label": "DSS_HEALTH_HOUSEHOLDS",
+ "vizType": "stacked-collection",
+ "noUnit": true,
+ "isCollapsible": false,
+ "charts": [
+   {
+     "id": "householdVisitsWithinDateRange",
+     "name": "DSS_HEALTH_OVERVIEW_HOUSEHOLDS_VISITED_OVER_DATERANGE",
+     "code": "",
+     "chartType": "metric",
+     "filter": "",
+     "headers": []
+   },
+   {
+     "id": "totalVisits",
+     "name": "DSS_HEALTH_OVERVIEW_TOTAL_HOUSEHOLD_VISITS",
+     "code": "",
+     "chartType": "metric",
+     "filter": "",
+     "headers": []
+   },
+   {
+     "id": "householdVisitsTargetProvince",
+     "name": "DSS_HEALTH_OVERVIEW_TARGET_HOUSEHOLD_VISITS",
+     "code": "",
+     "chartType": "metric",
+     "filter": "",
+     "headers": []
+   },
+   {
+     "id": "totalHouseholdCoverageProvince",
+     "name": "DSS_HEALTH_OVERVIEW_TOTAL_COVERAGE_HOUSEHOLD_VISITS",
+     "code": "",
+     "chartType": "metric",
+     "filter": "",
+     "headers": []
+   }
+ ]
+}
+```
+
+### Vertically Growing Card List
+
+A list of cards inside a container that grows vertically. The container displays a vertical scrollbar if the number of items in the container is more than the height of the container.
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-04-14 at 10.47.47 AM.png" alt=""><figcaption></figcaption></figure>
+
+#### Setup
+
+Setting the vizType field to "stacked-table" will enable this chart on the landing page (Example: National dashboard). The vizType accepts a ‘table’ chart as its child and uses the table chart data to render the list of cards on the page.
+
+```
+{
+ "id": 301,
+ "name": "DSS_COVERAGE_BY_PROVINCE",
+ "label": "DSS_COVERAGE_BY_PROVINCE",
+ "vizType": "stacked-table",
+ "noUnit": true,
+ "isCollapsible": false,
+ "ref": {
+   "url": "provincial-health-dashboard",
+   "logoUrl": "",
+   "type": "internal"
+ },
+ "charts": [
+   {
+     "id": "coverageByProvince",
+     "name": "DSS_COVERAGE_BY_PROVINCE",
+     "code": "",
+     "chartType": "table",
+     "filter": "",
+     "headers": []
+   }
+ ]
+}
+```
+
+### Banner Card
+
+A card with a horizontal list of items displayed on top of the dashboard. It displays the items in a single row with the labels on top and the value at the bottom.
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-04-14 at 10.49.34 AM.png" alt=""><figcaption></figcaption></figure>
+
+#### Setup
+
+This chart can be enabled by setting the “vizType” to “bannercard”. This visualisation accepts a ‘table’ chart as its child, and the table chart’s response should include only a single row.
+
+```
+{
+ "id": 200,
+ "name": "DSS_HEALTH_USER_SYNC_OVERVIEW",
+ "label": "DSS_HEALTH_USER_SYNC_OVERVIEW",
+ "vizType": "bannercard",
+ "noUnit": true,
+ "isCollapsible": false,
+ "charts": [
+   {
+     "id": "userSyncSummaryProvince",
+     "name": "DSS_HEALTH_USER_SYNC_SUMMARY",
+     "code": "",
+     "chartType": "table",
+     "filter": "",
+     "headers": []
+   }
+ ]
+}
+```
+
+### Bar Charts with Brush
+
+The brush component enabled for bar charts will let the users zoom and pan a bar chart without losing view of any data item. This enables the chart to have any number of bars, and the user can focus on the selected range by adjusting the brush displayed at the bottom of the charts.
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-04-14 at 10.50.58 AM.png" alt=""><figcaption></figcaption></figure>
+
+#### Setup
+
+No additional setup is required for enabling the brush component. It is enabled on bar charts by default if the chart contains more than one bar.
+
+Reference: [https://recharts.org/en-US/examples/BrushBarChart](https://recharts.org/en-US/examples/BrushBarChart)
+
+### Config to Hide Filters&#x20;
+
+The visibility of the default filters displayed on the dashboard page can be controlled using a new configuration field introduced in the “MasterDashboardConfig.json” file.
+
+#### Setup&#x20;
+
+Include the filters that need to be hidden from the dashboard within the “hideFilterFields” array. The UI has the logic to conditionally show/hide the filters based on this field. Allowed elements in the array: ModuleFilter, DateRange, DDR, Ulb, Denomination.
+
+```
+{
+ "name": "DSS_HEALTH_OVERVIEW_DASHBOARD_LLIN_HEADING",
+ "id": "district-health-dashboard",
+ "isActive": "",
+ "hideFilterFields": ["DDR", "Ulb", "Denomination", "ModuleFilter"],
+ "style": "linear",
+ "visualizations": []
+}
+```
+
 \
 \
 \
