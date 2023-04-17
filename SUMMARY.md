@@ -22,6 +22,8 @@
       * [Stock](platform/low-level-design/services/stock.md)
   * [Installation](platform/installation/README.md)
   * [Configuration](platform/configuration.md)
+  * [Operations Guide](platform/operations-guide.md)
+  * [Development Guide](platform/development-guide.md)
   * [Source Code](https://github.com/egovernments/health-campaign-services/)
 * [Products](products/README.md)
   * [Health Campaign Management](products/health-campaign-management/README.md)
