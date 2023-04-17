@@ -10,7 +10,7 @@ DIGIT is India’s largest open-source platform for digital governance. The heal
 * Parallelism in development: Micro-services architectures are mainly business-centric.
 * A big software or system can be broken down into multiple small components or services. These components can be designed, developed, and deployed independently without compromising the integrity of the application.
 
-<figure><img src="../../.gitbook/assets/health-architecture-3.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/health-architecture-3.svg" alt=""><figcaption></figcaption></figure>
 
 ### Multi-layer Architecture
 

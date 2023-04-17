@@ -6,7 +6,7 @@
   * [Release Notes](platform/release-notes.md)
     * [Gate 2 Release Checklist](platform/release-notes/gate-2-release-checklist.md)
   * [Platform Features](platform/platform-features.md)
-  * [Architecture](platform/architecture/README.md)
+  * [Architecture](platform/architecture.md)
     * [Master Data Management Service (MDMS)](platform/architecture/master-data-management-service-mdms.md)
   * [High Level Design](platform/high-level-design/README.md)
     * [Health Campaign System High Level Design](platform/high-level-design/health-campaign-system-high-level-design.md)
