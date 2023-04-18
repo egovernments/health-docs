@@ -52,4 +52,4 @@ The features of the dashboard are described below:
 
 ### Known Issues
 
-[UX Audit](ux-audit.md)
+[UX Audit](release-notes/ux-audit.md)

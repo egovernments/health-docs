@@ -87,7 +87,8 @@
       * [Configuration](products/health-campaign-management/campaign-management-dashboard/configuration/README.md)
         * [Dashboard UI Enhancements](products/health-campaign-management/campaign-management-dashboard/configuration/dashboard-ui-enhancements.md)
         * [HCM Dashboard Master Promotion Guide](products/health-campaign-management/campaign-management-dashboard/configuration/hcm-dashboard-master-promotion-guide.md)
-      * [Release Notes](products/health-campaign-management/campaign-management-dashboard/release-notes/README.md)
+      * [Release Notes](products/health-campaign-management/campaign-management-dashboard/release-notes.md)
         * [UX Audit](products/health-campaign-management/campaign-management-dashboard/release-notes/ux-audit.md)
+        * [Page 1](products/health-campaign-management/campaign-management-dashboard/release-notes/page-1.md)
 
 ## COMMUNITY
