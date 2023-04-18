@@ -38,3 +38,10 @@ The articles in this section includes:
 [configuration](../products/health-campaign-management/frontline-workers-app/configuration/)
 {% endcontent-ref %}
 
+{% content-ref url="operations-guide.md" %}
+[operations-guide.md](operations-guide.md)
+{% endcontent-ref %}
+
+{% content-ref url="development-guide.md" %}
+[development-guide.md](development-guide.md)
+{% endcontent-ref %}
