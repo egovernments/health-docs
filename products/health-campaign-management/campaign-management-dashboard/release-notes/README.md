@@ -39,7 +39,7 @@ The features of the dashboard are described below:
 
 * Percentage and number toggle for bar charts.
 * Brush component for bar charts.
-* Heat maps with zoom-in/out, recenter buttons, and drilldowns.
+* Heat maps with zoom-in/out, recenter buttons, and drill-downs.
 * Today, cumulative toggle filters.
 * A new component to display the list of cards based on the chart data, and includes a collection of numeric data and a circular progress bar,
 * Predictive line graphs.
@@ -49,3 +49,7 @@ The features of the dashboard are described below:
 ### Enhancements
 
 * Enhanced pie charts that show the aggregated value at the centre.
+
+### Known Issues
+
+[UX Audit](ux-audit.md)
