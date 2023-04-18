@@ -90,5 +90,4 @@
       * [Release Notes](products/health-campaign-management/campaign-management-dashboard/release-notes.md)
         * [UX Audit](products/health-campaign-management/campaign-management-dashboard/release-notes/ux-audit.md)
         * [PM Audit](products/health-campaign-management/campaign-management-dashboard/release-notes/pm-audit.md)
-
-## COMMUNITY
+* [Program](program.md)
