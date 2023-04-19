@@ -31,6 +31,7 @@
 * [Products](products/README.md)
   * [Health Campaign Management](products/health-campaign-management/README.md)
     * [Frontline Worker's App](products/health-campaign-management/frontline-workers-app/README.md)
+      * [User Stories](products/health-campaign-management/frontline-workers-app/user-stories.md)
       * [Features](products/health-campaign-management/frontline-workers-app/features.md)
       * [User Interface Design](products/health-campaign-management/frontline-workers-app/user-interface-design/README.md)
         * [User Management](products/health-campaign-management/frontline-workers-app/user-interface-design/user-management.md)
