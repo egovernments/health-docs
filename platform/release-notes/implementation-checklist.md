@@ -33,4 +33,3 @@
 | 25            | All implementation-specific documents (both English and Portuguese) - SOP, training made available in drive/Gitbook | In progress | Aparna      | <p><br></p>                                   |
 | 26            | Production sign-off                                                                                                 | Planned     | Ankit       | <p><br></p>                                   |
 
-\
