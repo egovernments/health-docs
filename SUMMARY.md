@@ -5,6 +5,7 @@
 * [Platform](platform/README.md)
   * [Release Notes](platform/release-notes.md)
     * [Gate 2 Release Checklist](platform/release-notes/gate-2-release-checklist.md)
+    * [Implementation Checklist](platform/release-notes/implementation-checklist.md)
   * [Platform Features](platform/platform-features.md)
   * [Architecture](platform/architecture.md)
     * [Master Data Management Service (MDMS)](platform/architecture/master-data-management-service-mdms.md)
