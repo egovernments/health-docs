@@ -14,13 +14,13 @@ When the country-level/province-level/district-level/administrative- level of th
 
 This is the national-level dashboard view for the country head, for a specific campaign. This dashboard displays the overall data of a campaign running in various provinces with a drill-down behaviour so that the supervisor can also view the data for a specific province/district when required.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-20 at 4.00.21 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/National level.png" alt=""><figcaption></figcaption></figure>
 
 ## Province/District-Level Dashboard
 
-This is the campaign-level dashboard for the province. Here, the user can view the overall performance and the status of the campaign which is running at the province/state level. A user can also drilldown to the boundary levels.
+This is the campaign-level dashboard for the province. Here, the user can view the overall performance and the status of the campaign which is running at the province/state level. A user can also drill-down to the boundary levels.
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-04-20 at 4.03.45 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Provincial level.png" alt=""><figcaption></figcaption></figure>
 
 ## Campaign < Province/District Level Dashboard < Registration & Delivery
 
