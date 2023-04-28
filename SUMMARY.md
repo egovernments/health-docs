@@ -95,4 +95,7 @@
         * [UX Audit](products/health-campaign-management/campaign-management-dashboard/release-notes/ux-audit.md)
         * [PM Audit](products/health-campaign-management/campaign-management-dashboard/release-notes/pm-audit.md)
       * [Product Requirement Document (PRD)](products/health-campaign-management/campaign-management-dashboard/product-requirement-document-prd.md)
-* [Program](program.md)
+* [Program](program/README.md)
+  * [Customisation](program/customisation.md)
+  * [Standard Operating Procedures](program/standard-operating-procedures.md)
+  * [Program Roll-Out Plan](program/program-roll-out-plan.md)
