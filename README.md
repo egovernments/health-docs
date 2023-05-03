@@ -59,7 +59,7 @@ The APIs will allow data and functionality to be reused across multiple departme
 
 ## Program
 
-The platform is designed to facilitate the actors with a digital system to manage and implement health campaign activities in Mozambique. Click [here](program/) to know more.&#x20;
+The platform is designed to facilitate stakeholders with a digital system to manage and implement health campaign activities in Mozambique. Click [here](program/) to know more.&#x20;
 
 ## Useful links
 
