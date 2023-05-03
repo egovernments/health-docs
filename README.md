@@ -52,6 +52,15 @@ The common services and shared data registries can be reused to assemble product
 
 The APIs will allow data and functionality to be reused across multiple departments, effectively breaking silos across programs. Through APIs, meaningful data and services can also be made available to the various ecosystem stakeholders for innovation and interoperate with other systems like MOSIP, DHIS2, Sunbird RC, DIVOC, etc. that are focused on other parts of the public health delivery value chain, such as disease surveillance, supply chain, verifiable certificates, and health insurance.
 
+## Products
+
+* [Frontline Worker's App](products/health-campaign-management/frontline-workers-app/)
+* [HCM Dashboard](products/health-campaign-management/campaign-management-dashboard/configuration/hcm-dashboard-master-promotion-guide.md)
+
+## Program
+
+The platform is designed to facilitate the actors with a digital system to manage and implement health campaign activities in Mozambique. Click [here](program/) to know more.&#x20;
+
 ## Useful links
 
 {% content-ref url="products/health-campaign-management/frontline-workers-app/functional-specifications.md" %}
