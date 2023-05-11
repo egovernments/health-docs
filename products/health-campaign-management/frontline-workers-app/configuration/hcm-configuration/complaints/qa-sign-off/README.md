@@ -47,7 +47,7 @@ Information regarding sign-off modules and features for PGR - flutter app, react
 
 ## Test cases executed&#x20;
 
-UI Test cases executed: Click here for details.
+UI Test cases executed: Click [here](test-cases.md) for details.
 
 ## Test cases counts
 
