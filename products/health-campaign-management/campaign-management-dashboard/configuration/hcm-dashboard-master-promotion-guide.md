@@ -4,11 +4,11 @@
 
 This document is a step-by-step promotion guide to setup/promote the Health Campaign Management (HCM) Dashboard to higher environments. The guide can be used by implementation teams and other external teams to set up the product.
 
-## Release Notes for 1.0
+## Release Notes for 1.1
 
 | Version | Date       | Description                                            |
 | ------- | ---------- | ------------------------------------------------------ |
-| 1.0     | 03/04/2023 | This version covers the HCM Dashboard promotion guide. |
+| 1.1     | 10/05/2023 | This version covers the HCM Dashboard promotion guide. |
 
 ## Release Features
 
@@ -23,7 +23,7 @@ The following image of the Dashboard analytics service is required for the HCM d
 
 | Service                     | Tag                                                | Description                                                                                            |
 | --------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Dashboard analytics service | dashboard-analytics:dashboard-v1.0.0-e4b882b67f-22 | The core dashboard analytics service with specific enhancements have been added for the HCM Dashboard. |
+| Dashboard analytics service | dashboard-analytics:dashboard-v1.1.0-2ad7482dbd-32 | The core dashboard analytics service with specific enhancements have been added for the HCM Dashboard. |
 
 ## Promotion guide
 
@@ -33,10 +33,10 @@ Tags created for the release artefacts:
 
 | Artefact                       | Tag              | URL                                                                                                                                                                                                |
 | ------------------------------ | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Dashboard chart configurations | dashboard-v1.0.0 | <p><a href="https://github.com/egovernments/health-campaign-config/releases/tag/dashboard-v1.0.0">https://github.com/egovernments/health-campaign-config/releases/tag/dashboard-v1.0.0<br></a></p> |
-| Dashboard analytics service    | dashboard-v1.0.0 | [https://github.com/egovernments/health-campaign-services/releases/tag/dashboard-v1.0.0](https://github.com/egovernments/health-campaign-services/releases/tag/dashboard-v1.0.0)                   |
-| MDMS                           | dashboard-v1.0.0 | [https://github.com/egovernments/health-campaign-mdms/releases/tag/dashboard-v1.0.0](https://github.com/egovernments/health-campaign-mdms/releases/tag/dashboard-v1.0.0)                           |
-| DIGIT UI                       | health\_v1.0.0   | [https://github.com/egovernments/DIGIT-Dev/releases/tag/health\_v1.0.0](https://github.com/egovernments/DIGIT-Dev/releases/tag/health\_v1.0.0)                                                     |
+| Dashboard chart configurations | dashboard-v1.1.0 | <p><a href="https://github.com/egovernments/health-campaign-config/releases/tag/dashboard-v1.1.0">https://github.com/egovernments/health-campaign-config/releases/tag/dashboard-v1.1.0<br></a></p> |
+| Dashboard analytics service    | dashboard-v1.1.0 | [https://github.com/egovernments/health-campaign-services/releases/tag/dashboard-v1.1.0](https://github.com/egovernments/health-campaign-services/releases/tag/dashboard-v1.1.0)                   |
+| MDMS                           | dashboard-v1.1.0 | [https://github.com/egovernments/health-campaign-mdms/releases/tag/dashboard-v1.1.0](https://github.com/egovernments/health-campaign-mdms/releases/tag/dashboard-v1.1.0)                           |
+| DIGIT UI                       | health\_v1.1.0   | [https://github.com/egovernments/DIGIT-Dev/releases/tag/health\_v1.1.0](https://github.com/egovernments/DIGIT-Dev/releases/tag/health\_v1.1.0)                                                     |
 
 ### Backend and configuration promotion guide
 
@@ -46,9 +46,9 @@ Refer to this [document](https://health.digit.org/platform/configuration/hcm-mas
 
 | Artefact | Image                                  | Description                                                         |
 | -------- | -------------------------------------- | ------------------------------------------------------------------- |
-| DIGIT UI | digit-ui:health\_v1.0.0-da4c8a14b4-216 | DIGIT micro UI with enhancements specific for the health Dashboard. |
+| DIGIT UI | digit-ui:health\_v1.1.0-91a6f61fc1-375 | DIGIT micro UI with enhancements specific for the health Dashboard. |
 
 * The HCM Dashboard includes UI enhancements that are part of the image mentioned above. The stylesheet and the global config used by the UI are as follows:
-* Stylesheet: [https://unpkg.com/@egovernments/digit-ui-css@0.0.8/dist/index.css](https://unpkg.com/@egovernments/digit-ui-css@0.0.8/dist/index.css)
+* Stylesheet: [https://unpkg.com/@egovernments/digit-ui-css@0.1.0/dist/index.css](https://unpkg.com/@egovernments/digit-ui-css@0.1.0/dist/index.css)
 * Global config: [https://egov-health-demo-assets.s3.ap-south-1.amazonaws.com/globalConfigs.js](https://egov-health-demo-assets.s3.ap-south-1.amazonaws.com/globalConfigs.js)&#x20;
 * Deploying the above image to the target environment will include the HCM dashboard for eligible users.

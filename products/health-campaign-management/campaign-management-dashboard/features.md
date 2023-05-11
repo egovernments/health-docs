@@ -1,6 +1,6 @@
 # Features
 
-Following are the features of the HCM Product Dashboard v1:&#x20;
+Following are the features of the HCM Product Dashboard:&#x20;
 
 * Bar charts with percentage and number toggle.
 * Brush component for bar charts to zoom in and out for an enhanced view.
