@@ -45,13 +45,11 @@ Information regarding sign-off modules and features for PGR - flutter app, react
 | Helpdesk User Admin                                                                                                | EMP-defa-000005 | eGov@4321 | Default |
 | L2 Support User Admin                                                                                              | EMP-defa-000006 | eGov@4321 | Default |
 
-## Test cases executed:&#x20;
+## Test cases executed&#x20;
 
-### UI Test cases executed
+UI Test cases executed: Click here for details.
 
-Click here for details.
-
-### Test cases counts
+## Test cases counts
 
 Total Test cases executed - 48+32+35+37 Total passing test cases - 152 Total failing test cases - 0
 
