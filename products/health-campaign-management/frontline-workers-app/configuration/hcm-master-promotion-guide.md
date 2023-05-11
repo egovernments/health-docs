@@ -6,7 +6,7 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 
 ## Table of Contents
 
-### 1. Release Notes for – HCM 1.0&#x20;
+### 1. Release Notes for – HCM 1.1&#x20;
 
 * Release features&#x20;
 * List of Core DIGIT services used
@@ -27,6 +27,10 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 
 &#x20;      \- Service request
 
+&#x20;      \- Complaints Management
+
+&#x20;      \- User Management     &#x20;
+
 ### 2. Promotion guide&#x20;
 
 * DIGIT environment production setup & deployments
@@ -37,81 +41,98 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 * Deploy HCM services&#x20;
 * UI/APK promotion guide&#x20;
 
-## 1. Release Notes: HCM 1.0
+## 1. Release Notes: HCM 1.1
 
 | Version     | Date       | Description                                  |
 | ----------- | ---------- | -------------------------------------------- |
-| Version 1.0 | 03/03/2023 | This version covers the HCM promotion guide. |
+| Version 1.1 | 11/05/2023 | This version covers the HCM promotion guide. |
 
 ### Release Features: List of core digit services used
 
-| Service            | Image                                              |
-| ------------------ | -------------------------------------------------- |
-| Access control     | egovio/egov-accesscontrol:v1.1.3-72f8a8f87b-24     |
-| Encryption Service | egovio/egov-enc-service:v1.1.2-72f8a8f87b-9        |
-| File Store         | egovio/egov-filestore:v1.2.4-72f8a8f87b-10         |
-| Localization       | egovio/egov-localization:v1.1.3-72f8a8f87b-6       |
-| ID Gen             | egovio/egov-idgen:v1.2.3-72f8a8f87b-7              |
-| Indexer            | egovio/egov-indexer:v1.1.7-f52184e6ba-25           |
-| Location           | egovio/egov-location:v1.1.4-72f8a8f87b-6           |
-| MDMS               | egovio/egov-mdms-service:v1.3.2-72f8a8f87b-12      |
-| Notification Mail  | egovio/egov-notification-mail:v1.1.2-72f8a8f87b-12 |
-| Notification sms   | egovio/egov-notification-sms:v1.1.3-48a03ad7bb-10  |
-| OTP                | egovio/egov-otp:v1.2.2-72f8a8f87b-12               |
-| Persister          | egovio/egov-persister:v1.1.4-72f8a8f87b-6          |
-| Searcher           | egovio/egov-searcher:v1.1.5-72f8a8f87b-16          |
-| URL Shortening     | egovio/egov-url-shortening:v1.1.2-1715164454-3     |
-| User               | egovio/egov-user:v1.2.7-cc363f0584-12              |
-| User OTP           | egovio/user-otp:v1.1.5-1715164454-3                |
-| Workflow           | egovio/egov-workflow-v2:v1.2.1-df98ec3c35-2        |
-| Report             | egovio/report:v1.3.4-96b24b0d72-16                 |
-| Document Uploader  | egovio/egov-document-uploader:v1.1.0-75d461a4d2-4  |
-| Playground         | egovio/playground:1.0                              |
+| Service            | Image                                                          |
+| ------------------ | -------------------------------------------------------------- |
+| Access control     | egovio/egov-accesscontrol:v1.1.3-72f8a8f87b-24                 |
+| Encryption Service | egovio/egov-enc-service:v1.1.2-72f8a8f87b-9                    |
+| File Store         | egovio/egov-filestore:v1.2.4-72f8a8f87b-10                     |
+| Localization       | egovio/egov-localization:v1.1.3-72f8a8f87b-6                   |
+| ID Gen             | egovio/egov-idgen:v1.2.3-72f8a8f87b-7                          |
+| Indexer            | egovio/egov-indexer:v1.1.7-f52184e6ba-25                       |
+| Location           | egovio/egov-location:v1.1.5-f9271c8-7                          |
+| MDMS               | egovio/egov-mdms-service:v1.3.2-72f8a8f87b-12                  |
+| Notification Mail  | egovio/egov-notification-mail:health-digit-master-6865af2823-2 |
+| Notification sms   | egovio/egov-notification-sms:v1.1.3-48a03ad7bb-10              |
+| OTP                | egovio/egov-otp:v1.2.2-72f8a8f87b-12                           |
+| Persister          | egovio/egov-persister:v1.1.4-72f8a8f87b-6                      |
+| Searcher           | egovio/egov-searcher:v1.1.5-72f8a8f87b-16                      |
+| URL Shortening     | egovio/egov-url-shortening:v1.1.2-1715164454-3                 |
+| User               | egovio/egov-user:health-digit-master-e27b970-31                |
+| User OTP           | egovio/user-otp:health-digit-master-6865af2823-3               |
+| Workflow           | egovio/egov-workflow-v2:v1.2.1-df98ec3c35-2                    |
+| Report             | egovio/report:v1.3.4-96b24b0d72-16                             |
+| Document Uploader  | egovio/egov-document-uploader:v1.1.0-75d461a4d2-4              |
+| Playground         | egovio/playground:1.0                                          |
 
 ### Services built for HCM
 
-| Service         | Tag                                        | Description                                                                                                                              |
-| --------------- | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Individual      | egovio/individual:v1.0.0-a51bee1435-33     | Individual service built in to digit platform, all the CRUD operations are allowed using api                                             |
-| Household       | egovio/household:v1.0.0-a51bee1435-42      | Household service provide to create household and add members to a household                                                             |
-| Facility        | egovio/facility:v1.0.0-a51bee1435-19       | Facility services provide the apis to create, update, delete and read facilities                                                         |
-| Product         | egovio/product:v1.0.0-a51bee1435-11        | Product services provide the apis for CRUD operations for products and product variants                                                  |
-| Project         | egovio/project:v1.0.0-a51bee1435-69        | Project services provide the apis for CRUD operations for project, project task, project staff, project resource and project beneficiary |
-| Stock           | egovio/stock:v1.0.0-a51bee1435-35          | Stock services provide the apis for creating, updating, deleting of stock receipts and stock reconciliations                             |
-| Service Request | egovio/service-request:v1.0.0-a51bee1435-7 | Service Requests provide the create and submission apis for checklists.                                                                  |
-| Transformer     | egovio/transformer:v1.0.0-a51bee1435-33    | Library that transforms the data according to the analytics dashboard requirements                                                       |
+| Service         | Tag                                                | Description                                                                                                                              |
+| --------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Individual      | egovio/individual:v1.1.0-73167482a2-82             | Individual service built in to digit platform, all the CRUD operations are allowed using api                                             |
+| Household       | egovio/household:v1.1.0-73167482a2-50              | Household service provide to create household and add members to a household                                                             |
+| Facility        | egovio/facility:v1.1.0-73167482a2-28               | Facility services provide the apis to create, update, delete and read facilities                                                         |
+| Product         | egovio/product:v1.1.0-73167482a2-12                | Product services provide the apis for CRUD operations for products and product variants                                                  |
+| Project         | egovio/project:v1.1.0-73167482a2-80                | Project services provide the apis for CRUD operations for project, project task, project staff, project resource and project beneficiary |
+| Stock           | egovio/stock:v1.1.0-73167482a2-36                  | Stock services provide the apis for creating, updating, deleting of stock receipts and stock reconciliations                             |
+| Service Request | egovio/service-request:v1.0.0-a51bee1435-7         | Service Requests provide the create and submission apis for checklists.                                                                  |
+| Transformer     | egovio/transformer:v1.1.0-73167482a2-38            | Library that transforms the data according to the analytics dashboard requirements                                                       |
+| Complaints      | egovio/pgr-services:v1.1.7-f58e5abb0d-8            | Complaints services provide features like add complaints, resolve complaints etc                                                         |
+| User Management | egovio/egov-hrms:health-digit-master-5bc2341e92-14 | Create and manage users and team assignments for their respective boundaries                                                             |
 
 ### Environment Variables for HCM services
 
 **Individual: Click** [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/health-services/individual/values.yaml) **to know more.**&#x20;
 
-| Environment Variable                      | Value                                                  | Comments                            |
-| ----------------------------------------- | ------------------------------------------------------ | ----------------------------------- |
-| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID        | health-individual                                      | <p><br></p>                         |
-| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER  | org.apache.kafka.common.serialization.StringSerializer | <p><br></p>                         |
-| TRACER\_ERRORS\_PROVIDEEXCEPTIONINDETAILS | <p><br></p>                                            | <p><br></p>                         |
-| EGOV\_IDGEN\_HOST                         | <p><br></p>                                            | Value of IDGEN host server          |
-| EGOV\_IDGEN\_PATH                         | egov-idgen/id/\_generate                               | <p><br></p>                         |
-| EGOV\_IDGEN\_INTEGRATION\_ENABLED         | true/false                                             | <p><br></p>                         |
-| IDGEN.INDIVIDUAL.ID.FORMAT                | individual.id                                          | <p><br></p>                         |
-| SPRING\_REDIS\_HOST                       | redis.backbone                                         | <p><br></p>                         |
-| SPRING\_REDIS\_PORT                       | <p><br></p>                                            | <p><br></p>                         |
-| SPRING\_CACHE\_TYPE                       | redis                                                  | <p><br></p>                         |
-| SPRING\_CACHE\_REDIS\_TIME-TO-LIVE        | <p><br></p>                                            | <p><br></p>                         |
-| SPRING\_CACHE\_AUTOEXPIRY                 | true                                                   | <p><br></p>                         |
-| JAVA\_OPTS                                | <p><br></p>                                            | <p><br></p>                         |
-| JAVA\_ARGS                                | <p><br></p>                                            | <p><br></p>                         |
-| JAVA\_ENABLE\_DEBUG                       | <p><br></p>                                            | <p><br></p>                         |
-| SERVER\_PORT                              | <p><br></p>                                            | <p><br></p>                         |
-| SECURITY\_BASIC\_ENABLED                  | false                                                  | <p><br></p>                         |
-| MANAGEMENT\_SECURITY\_ENABLED             | false                                                  | <p><br></p>                         |
-| TRACER\_OPENTRACING\_ENABLED              | true/false                                             | <p><br></p>                         |
-| INDIVIDUAL.CONSUMER.SAVE.TOPIC            | save-individual-topic                                  | Topic to save individual            |
-| INDIVIDUAL.CONSUMER.UPDATE.TOPIC          | update-individual-topic                                | Topic to update individual          |
-| INDIVIDUAL.CONSUMER.DELETE.TOPIC          | delete-individual-topic                                | Topic to delete individual          |
-| INDIVIDUAL.CONSUMER.BULK.CREATE.TOPIC     | individual-consumer-bulk-create-topic                  | Topic to create individuals in bulk |
-| INDIVIDUAL.CONSUMER.BULK.UPDATE.TOPIC     | individual-consumer-bulk-update-topic                  | Topic to update individuals in bulk |
-| INDIVIDUAL.CONSUMER.BULK.DELETE.TOPIC     | individual-consumer-bulk-delete-topic                  | Topic to delete individuals in bulk |
+| Environment Variable                          | Value                                                  | Comments                            |
+| --------------------------------------------- | ------------------------------------------------------ | ----------------------------------- |
+| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID            | health-individual                                      | <p><br></p>                         |
+| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER      | org.apache.kafka.common.serialization.StringSerializer | <p><br></p>                         |
+| TRACER\_ERRORS\_PROVIDEEXCEPTIONINDETAILS     | <p><br></p>                                            | <p><br></p>                         |
+| EGOV\_IDGEN\_HOST                             | <p><br></p>                                            | Value of IDGEN host server          |
+| EGOV\_IDGEN\_PATH                             | egov-idgen/id/\_generate                               | <p><br></p>                         |
+| EGOV\_IDGEN\_INTEGRATION\_ENABLED             | true/false                                             | <p><br></p>                         |
+| IDGEN.INDIVIDUAL.ID.FORMAT                    | individual.id                                          | <p><br></p>                         |
+| SPRING\_REDIS\_HOST                           | redis.backbone                                         | <p><br></p>                         |
+| SPRING\_REDIS\_PORT                           | <p><br></p>                                            | <p><br></p>                         |
+| SPRING\_CACHE\_TYPE                           | redis                                                  | <p><br></p>                         |
+| SPRING\_CACHE\_REDIS\_TIME-TO-LIVE            | <p><br></p>                                            | <p><br></p>                         |
+| SPRING\_CACHE\_AUTOEXPIRY                     | true                                                   | <p><br></p>                         |
+| JAVA\_OPTS                                    | <p><br></p>                                            | <p><br></p>                         |
+| JAVA\_ARGS                                    | <p><br></p>                                            | <p><br></p>                         |
+| JAVA\_ENABLE\_DEBUG                           | <p><br></p>                                            | <p><br></p>                         |
+| SERVER\_PORT                                  | <p><br></p>                                            | <p><br></p>                         |
+| SECURITY\_BASIC\_ENABLED                      | false                                                  | <p><br></p>                         |
+| MANAGEMENT\_SECURITY\_ENABLED                 | false                                                  | <p><br></p>                         |
+| TRACER\_OPENTRACING\_ENABLED                  | true/false                                             | <p><br></p>                         |
+| INDIVIDUAL.CONSUMER.SAVE.TOPIC                | save-individual-topic                                  | Topic to save individual            |
+| INDIVIDUAL.CONSUMER.UPDATE.TOPIC              | update-individual-topic                                | Topic to update individual          |
+| INDIVIDUAL.CONSUMER.DELETE.TOPIC              | delete-individual-topic                                | Topic to delete individual          |
+| INDIVIDUAL.CONSUMER.BULK.CREATE.TOPIC         | individual-consumer-bulk-create-topic                  | Topic to create individuals in bulk |
+| INDIVIDUAL.CONSUMER.BULK.UPDATE.TOPIC         | individual-consumer-bulk-update-topic                  | Topic to update individuals in bulk |
+| INDIVIDUAL.CONSUMER.BULK.DELETE.TOPIC         | individual-consumer-bulk-delete-topic                  | Topic to delete individuals in bulk |
+| STATE\_LEVEL\_TENANT\_ID                      | default                                                |                                     |
+| EGOV\_ENC\_HOST                               |                                                        |                                     |
+| EGOV\_ENC\_ENCRYPT\_ENDPOINT                  | /egov-enc-service/crypto/v1/\_encrypt                  |                                     |
+| EGOV\_ENC\_DECRYPT\_ENDPOINT                  | /egov-enc-service/crypto/v1/\_decrypt                  |                                     |
+| AADHAAR\_PATTERN                              | \d{12}                                                 |                                     |
+| MOBILE\_PATTERN                               | \d+                                                    |                                     |
+| EGOV\_USER\_HOST                              |                                                        |                                     |
+| EGOV\_CREATE\_USER\_URL                       | /user/users/\_createnovalidate                         |                                     |
+| EGOV\_SEARCH\_USER\_URL                       | /user/\_search                                         |                                     |
+| EGOV\_UPDATE\_USER\_URL                       | /user/users/\_updatenovalidate                         |                                     |
+| EGOV\_USER\_INTEGRATION\_ENABLED              | true                                                   |                                     |
+| USER\_SYNC\_ENABLED                           | true                                                   |                                     |
+| USER\_SERVICE\_ACCOUNT\_LOCKED                | false                                                  |                                     |
+| INDIVIDUAL\_PRODUCER\_UPDATE\_USER\_ID\_TOPIC | update-user-id-topic                                   |                                     |
+| NOTIFICATION\_SMS\_ENABLED                    | false                                                  |                                     |
 
 **Household: Click** [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/health-services/household/values.yaml) **to know more.** &#x20;
 
@@ -353,6 +374,92 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 | SERVER\_PORT                               | 8080                                                        | <p><br></p>               |
 | SECURITY\_BASIC\_ENABLED                   | false                                                       | <p><br></p>               |
 
+**Complaints - PGR: Click** [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/core-services/pgr-services/values.yaml) **to know more.**
+
+| Environment Variables                             | Value                                                                             | Comments                   |
+| ------------------------------------------------- | --------------------------------------------------------------------------------- | -------------------------- |
+| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID                | egov-pgr-services                                                                 | <p><br></p>                |
+| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER          | org.apache.kafka.common.serialization.StringSerializer                            | <p><br></p>                |
+| SPRING\_KAFKA\_PRODUCER\_VALUE\_SERIALIZER        | org.egov.tracer.kafka.serializer.ISTTimeZoneJsonSerializer                        | <p><br></p>                |
+| PGR\_KAFKA\_CREATE\_TOPIC                         | save-pgr-request                                                                  | <p><br></p>                |
+| EGOV\_SERVICE\_CREATE\_TOPIC                      | PGR\_KAFKA\_UPDATE\_TOPIC                                                         | <p><br></p>                |
+| KAFKA\_TOPICS\_NOTIFICATION\_SMS                  | egov.core.notification.sms                                                        | <p><br></p>                |
+| PERSISTER\_SAVE\_TRANSITION\_WF\_TOPIC            | save-wf-transitions                                                               | <p><br></p>                |
+| PGR\_KAFKA\_MIGRATION\_TOPIC                      | pgr-migration                                                                     | <p><br></p>                |
+| PGR\_KAFKA\_MIGRATION\_PERSISTOR\_TOPIC           | save-pgr-request-batch                                                            | <p><br></p>                |
+| PERSISTER\_SAVE\_TRANSITION\_WF\_MIGRATION\_TOPIC | save-wf-transitions-batch                                                         | <p><br></p>                |
+| NOTIFICATION\_SMS\_ENABLED                        | <p><br></p>                                                                       | <p><br></p>                |
+| REASSIGN\_COMPLAINT\_ENABLED                      | <p><br></p>                                                                       | <p><br></p>                |
+| NEW\_COMPLAINT\_ENABLED                           | <p><br></p>                                                                       | <p><br></p>                |
+| NOTIFICATION\_EMAIL\_ENABLED                      | <p><br></p>                                                                       | <p><br></p>                |
+| EGOV\_IDGEN\_HOST                                 | <p><br></p>                                                                       | Value of IDGEN host server |
+| EGOV\_URL\_SHORTNER\_HOST                         | <p><br></p>                                                                       | <p><br></p>                |
+| EGOV\_WORKFLOW\_HOST                              | <p><br></p>                                                                       | <p><br></p>                |
+| EGOV\_LOCALIZATION\_HOST                          | <p><br></p>                                                                       | <p><br></p>                |
+| EGOV\_INFRA\_SEARCHER\_HOST                       | <p><br></p>                                                                       | <p><br></p>                |
+| EGOV\_COMMON\_MASTERS\_HOST                       | <p><br></p>                                                                       | <p><br></p>                |
+| EGOV\_FILESTORE\_HOST                             | <p><br></p>                                                                       | <p><br></p>                |
+| EGOV\_UI\_APP\_HOST                               | <p><br></p>                                                                       | <p><br></p>                |
+| EGOV\_USER\_HOST                                  | <p><br></p>                                                                       | <p><br></p>                |
+| EGOV\_MDMS\_SEARCH\_ENDPOINT                      | <p><br></p>                                                                       | <p><br></p>                |
+| REOPEN\_COMPLAINT\_ENABLED                        | <p><br></p>                                                                       | <p><br></p>                |
+| COMMENT\_BY\_EMPLOYEE\_NOTIF\_ENABLED             | <p><br></p>                                                                       | <p><br></p>                |
+| EGOV\_PGR\_APP\_PLAYSTORE\_LINK                   | <p><br></p>                                                                       | <p><br></p>                |
+| EGOV\_HRMS\_HOST                                  | <p><br></p>                                                                       | <p><br></p>                |
+| TRACER\_ERRORS\_PROVIDEEXCEPTIONINDETAILS         | <p><br></p>                                                                       | <p><br></p>                |
+| JAVA\_OPTS                                        | <p><br></p>                                                                       | <p><br></p>                |
+| JAVA\_ARGS                                        | <p><br></p>                                                                       | <p><br></p>                |
+| MANAGEMENT\_SECURITY\_ENABLED                     | false                                                                             | <p><br></p>                |
+| SERVER\_PORT                                      | 8080                                                                              | <p><br></p>                |
+| SECURITY\_BASIC\_ENABLED                          | false                                                                             | <p><br></p>                |
+| EGOV\_LOCATION\_HOST                              | <p><br></p>                                                                       | <p><br></p>                |
+| EGOV\_USR\_EVENTS\_NOTIFICATION\_ENABLED          | false                                                                             | <p><br></p>                |
+| EGOV\_USR\_EVENTS\_CREATE\_TOPIC                  | persist-user-events-async                                                         | <p><br></p>                |
+| EGOV\_USR\_EVENTS\_RATE\_LINK                     | /citizen/otpLogin?mobileNo=$mobile\&redirectTo=feedback/$servicerequestid         | <p><br></p>                |
+| EGOV\_USR\_EVENTS\_REOPEN\_LINK                   | /citizen/otpLogin?mobileNo=$mobile\&redirectTo=reopen-complaint/$servicerequestid | <p><br></p>                |
+| EGOV\_USR\_EVENTS\_RATE\_CODE                     | RATE                                                                              | <p><br></p>                |
+| EGOV\_USR\_EVENTS\_REOPEN\_CODE                   | REOPEN                                                                            | <p><br></p>                |
+| ENABLE\_STATE\_LEVEL\_SEARCH                      | true                                                                              | <p><br></p>                |
+| PGR\_STATELEVEL\_TENANTID                         | default                                                                           | <p><br></p>                |
+| TRACER\_OPENTRACING\_ENABLED                      | true                                                                              | <p><br></p>                |
+| PGR\_COMPLAIN\_IDLE\_TIME                         | <p><br></p>                                                                       | <p><br></p>                |
+
+**User Management - HRMS: Click** [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/business-services/egov-hrms/values.yaml) **to know more.**
+
+| Environment Variables                          | Value                                                       | Comments    |
+| ---------------------------------------------- | ----------------------------------------------------------- | ----------- |
+| EGOV\_SERVICES\_DATA\_SYNC\_EMPLOYEE\_REQUIRED | false                                                       | <p><br></p> |
+| EGOV\_MDMS\_HOST                               | http://egov-mdms-service:8080/                              | <p><br></p> |
+| EGOV\_MDMS\_SEARCH\_ENDPOINT                   | /egov-mdms-service/v1/\_search                              | <p><br></p> |
+| EGOV\_FILESTORE\_HOST                          | http://egov-filestore:8080/                                 | <p><br></p> |
+| STATE\_LEVEL\_TENANT\_ID                       | default                                                     | <p><br></p> |
+| EGOV\_FILESTORE\_URL\_ENDPOINT                 | /filestore/v1/files/url                                     | <p><br></p> |
+| EGOV\_LOCALIZATION\_HOST                       | http://egov-localization:8080/                              | <p><br></p> |
+| EGOV\_LOCALIZATION\_SEARCH\_ENDPOINT           | /localization/messages/v1/\_search                          | <p><br></p> |
+| EGOV\_IDGEN\_HOST                              | http://egov-idgen:8080/                                     | <p><br></p> |
+| EGOV\_SERVICES\_EGOV\_IDGEN\_CREATEPATH        | /egov-idgen/id/\_generate                                   | <p><br></p> |
+| EGOV\_SERVICES\_EGOV\_IDGEN\_EMP\_CODE\_NAME   | employee.code                                               | <p><br></p> |
+| EGOV\_SERVICES\_EGOV\_IDGEN\_EMP\_CODE\_FORMAT | EMP\_\[SEQ\_EMPLOYEE\_CODE]                                 | <p><br></p> |
+| EGOV\_USER\_HOST                               | http://egov-user:8080/                                      | <p><br></p> |
+| EGOV\_OTP\_HOST                                | http://egov-otp:8080/                                       | <p><br></p> |
+| EGOV\_ENVIRONMENT\_DOMAIN                      | https://health-qa.digit.org/                                | <p><br></p> |
+| EGOV\_USER\_SEARCH\_ENDPOINT                   | /user/v1/\_search                                           | <p><br></p> |
+| EGOV\_USER\_CREATE\_ENDPOINT                   | /user/users/\_createnovalidate                              | <p><br></p> |
+| EGOV\_USER\_UPDATE\_ENDPOINT                   | /user/users/\_updatenovalidate                              | <p><br></p> |
+| EGOV\_HRMS\_EMPLOYEE\_APP\_LINK                | <p><br></p>                                                 | <p><br></p> |
+| SPRING\_KAFKA\_CONSUMER\_GROUP\_ID             | employee-group1                                             | <p><br></p> |
+| SPRING\_KAFKA\_PRODUCER\_KEY\_SERIALIZER       | org.apache.kafka.common.serialization.StringSerializer      | <p><br></p> |
+| SPRING\_KAFKA\_PRODUCER\_VALUE\_SERIALIZER     | org.springframework.kafka.support.serializer.JsonSerializer | <p><br></p> |
+| KAFKA\_TOPICS\_SAVE\_SERVICE                   | save-hrms-employee                                          | <p><br></p> |
+| KAFKA\_TOPICS\_UPDATE\_SERVICE                 | update-hrms-employee                                        | <p><br></p> |
+| KAFKA\_TOPICS\_NOTIFICATION\_SMS               | egov.core.notification.sms                                  | <p><br></p> |
+| JAVA\_OPTS                                     | <p><br></p>                                                 | <p><br></p> |
+| SERVER\_PORT                                   | 8080                                                        | <p><br></p> |
+| JAVA\_ARGS                                     | <p><br></p>                                                 | <p><br></p> |
+| SECURITY\_BASIC\_ENABLED                       | false                                                       | <p><br></p> |
+| MANAGEMENT\_SECURITY\_ENABLED                  | false                                                       | <p><br></p> |
+| EGOV\_HRMS\_AUTO\_GENERATE\_PASSWORD           | false                                                       | <p><br></p> |
+
 ## Promotion guide
 
 This section will detail out the promotion guide steps for HCM Product
@@ -416,7 +523,20 @@ curl --location --request POST 'https://health-dev.digit.org/localization/messag
 4. Create [project-task-configuration.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/project-task-configuration.json)
 5. Create [project-types.json ](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/project-types.json)which will be used as Health campaign configuration
 6. Create [service-registry.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/service-registry.json) which has a list of APIs that HCM app will call.
-7. Create configs for [Access Control Sevices](https://core.digit.org/platform/core-services/access-control-services)
+7. Create PGR/Complaints configs &#x20;
+   * [UIConstants.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/RAINMAKER-PGR/UIConstants.json)
+   * [ServiceDefs.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/RAINMAKER-PGR/ServiceDefs.json)
+   * [RejectionReasons.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/RAINMAKER-PGR/RejectionReasons.json)
+   * [ComplainClosingTime.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/RAINMAKER-PGR/ComplainClosingTime.json)
+8. Create UserManagemet/HRMS configs
+   * [CampaignAssignmentFieldsConfig.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/egov-hrms/CampaignAssignmentFieldsConfig.json)
+   * [CommonFieldsConfig.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/egov-hrms/CommonFieldsConfig.json)
+   * [DeactivationReason.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/egov-hrms/DeactivationReason.json)
+   * [Degree.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/egov-hrms/Degree.json)
+   * [EmployeeDepartment.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/egov-hrms/EmployeeDepartment.json)
+   * [EmployeeStatus.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/egov-hrms/EmployeeStatus.json)
+   * [EmployeeType.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/egov-hrms/EmployeeType.json)
+9. Create configs for [Access Control Sevices](https://core.digit.org/platform/core-services/access-control-services)
 
 * [actions-test.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)
 * [roleactions.json ](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/ACCESSCONTROL-ROLEACTIONS/roleactions.json)
