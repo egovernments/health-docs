@@ -55,4 +55,4 @@ View the credentials used for testing QA and UAT below:
 
 ## Test cases executed
 
-Click here for details.\
+Click [here](test-cases.md) for details.\
