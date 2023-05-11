@@ -24,7 +24,6 @@
   * [Installation](platform/installation/README.md)
   * [Configuration](platform/configuration/README.md)
     * [Localisation Keys](platform/configuration/localisation-keys.md)
-    * [UAT User Credentials](platform/configuration/uat-user-credentials.md)
   * [Operations Guide](platform/operations-guide.md)
   * [Development Guide](platform/development-guide.md)
   * [Source Code](https://github.com/egovernments/health-campaign-services/)
