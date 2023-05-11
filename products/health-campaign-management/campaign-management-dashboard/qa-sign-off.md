@@ -1,3 +1,0 @@
-# QA Sign-Off
-
-Coming soon...
