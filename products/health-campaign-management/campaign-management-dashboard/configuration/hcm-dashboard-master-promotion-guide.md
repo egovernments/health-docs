@@ -4,11 +4,11 @@
 
 This document is a step-by-step promotion guide to setup/promote the Health Campaign Management (HCM) Dashboard to higher environments. The guide can be used by implementation teams and other external teams to set up the product.
 
-## Release Notes for 1.1
+## Release Notes
 
 | Version | Date       | Description                                            |
 | ------- | ---------- | ------------------------------------------------------ |
-| 1.1     | 10/05/2023 | This version covers the HCM Dashboard promotion guide. |
+| 1.0     | 10/05/2023 | This version covers the HCM Dashboard promotion guide. |
 
 ## Release Features
 
