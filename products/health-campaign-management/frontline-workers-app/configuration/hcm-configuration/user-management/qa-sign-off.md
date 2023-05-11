@@ -28,7 +28,7 @@ Information regarding sign-off modules and features for HRMS and Offline reports
 
 ## Test cases executed:&#x20;
 
-UI Test cases executed: Click here for details.&#x20;
+UI Test cases executed: Click [here](../complaints/qa-sign-off/test-cases.md) for details.&#x20;
 
 ## Test cases counts
 
