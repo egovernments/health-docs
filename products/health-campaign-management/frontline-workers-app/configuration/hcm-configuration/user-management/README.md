@@ -10,6 +10,10 @@ Before you proceed with the documentation, make sure the following pre-requisite
 * Kafka server is up and running
 * egov-persister service is running and has Hrms service persister config path added in it
 * PSQL server is running and a database is created to store employee data.
+* Dependency services should be up and running:
+  * egov-user - [Source code](https://github.com/egovernments/Core-Platform/tree/health-digit-master/core-services/egov-user)
+  * egov-notification-mail - [Source code](https://github.com/egovernments/DIGIT-Dev/tree/health-digit-master/core-services/egov-notification-mail)&#x20;
+  * user-otp - [Source code](https://github.com/egovernments/DIGIT-Dev/tree/health-digit-master/core-services/user-otp)
 
 ### Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
 
@@ -17,6 +21,12 @@ Before you proceed with the documentation, make sure the following pre-requisite
 * It provides a feature to add a various role to an employee under multiple jurisdictions.
 * It provides a feature to deactivate and reactivate an employee.
 * It records the employee details like assignment details, jurisdiction details, and personal details.
+
+**Setup Details**
+
+The source code for an [User Management](http://localhost:5000/s/ujRjzdG1LUqcmmuo2t2T/platform/installation/installation/ci-cd)(egov-hrms) is present in the digit-dev Git repo. The spring boot application needs the **Lombok\*** extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.&#x20;
+
+* In the case of IntelliJ, the plugin can be installed directly. For eclipse, the Lombok jar location has to be added in the eclipse.ini file in this format javaagent:lombok.jar.
 
 Following are the properties in the application.properties file in hrms service which is configurable.
 
