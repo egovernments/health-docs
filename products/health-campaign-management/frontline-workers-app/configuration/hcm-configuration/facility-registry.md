@@ -20,13 +20,13 @@ The facility service helps and provides APIs to create facilities for the HCM. T
 
 ### Setup details
 
-The source code for [Facility](https://github.com/egovernments/health-campaign-services/tree/demo/health-services/facility) is present in the health-campaign-services Git repo. The spring boot application needs the Lombok\* extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.
+The source code for [Facility](https://github.com/egovernments/health-campaign-services/blob/v1.1.0/docs/health-api-specs/contracts/registries/facility.yml) is present in the health-campaign-services Git repo. The spring boot application needs the Lombok\* extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.
 
 **\***In the case of IntelliJ, the plugin can be installed directly. For eclipse, the Lombok jar location has to be added in the eclipse.ini file in this format javaagent:lombok.jar.
 
 ## API details
 
-Refer to the Swagger API for YAML file details: [Facility.yaml](https://github.com/egovernments/health-campaign-services/blob/master/docs/health-api-specs/contracts/registries/facility.yml)
+Refer to the Swagger API for YAML file details: [Facility.yaml](https://github.com/egovernments/health-campaign-services/blob/v1.1.0/docs/health-api-specs/contracts/registries/facility.yml)
 
 **Application.properties file information**_**:**_
 
@@ -54,7 +54,7 @@ facility.kafka.delete.topic=delete-facility-topic
 
 **Action test: URL actions adding**
 
-[**Action-test.json**](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)
+[**Action-test.json**](https://github.com/egovernments/health-campaign-mdms/blob/v1.1.0/data/default/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)
 
 ```
 {
@@ -147,7 +147,7 @@ facility.kafka.delete.topic=delete-facility-topic
 
 **Access to role-based actions**
 
-[**Roleaction.json**](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ROLEACTIONS/roleactions.json)
+[**Roleaction.json**](https://github.com/egovernments/health-campaign-mdms/blob/v1.1.0/data/default/ACCESSCONTROL-ROLEACTIONS/roleactions.json)
 
 ```
 {
@@ -245,11 +245,11 @@ facility.kafka.delete.topic=delete-facility-topic
 
 **Persister configuration**
 
-[Facility Persister Yaml](https://github.com/egovernments/health-campaign-config/blob/DEMO/egov-persister/facility-persister.yml)
+[Facility Persister Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-persister/facility-persister.yml)
 
 **Indexer configuration**
 
-[Facility Indexer Yaml](https://github.com/egovernments/health-campaign-config/blob/DEMO/egov-indexer/facility-indexer.yml)
+[Facility Indexer Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-indexer/facility-indexer.yml)
 
 #### Database schema
 
@@ -258,8 +258,6 @@ facility.kafka.delete.topic=delete-facility-topic
 **Postman collection**
 
 [https://www.postman.com/lunar-resonance-126497/workspace/hcm/environment/24751924-61d3084a-c7bf-4591-8b7d-2ec5828d96b1](https://www.postman.com/lunar-resonance-126497/workspace/hcm/environment/24751924-61d3084a-c7bf-4591-8b7d-2ec5828d96b1)
-
-
 
 [\
 ](https://github.com/egovernments/health-campaign-services/blob/demo/health-services/individual/src/main/resources/individual-persister.yml)[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

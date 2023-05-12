@@ -22,13 +22,13 @@ The household service helps and provides APIs to create households and household
 
 ### Setup details
 
-The source code for a [Household](https://github.com/egovernments/health-campaign-services/tree/demo/health-services/household) is present in the health-campaign-services Git repo. The spring boot application needs the Lombok\* extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.
+The source code for a [Household](https://github.com/egovernments/health-campaign-services/tree/v1.1.0/health-services/household) is present in the health-campaign-services Git repo. The spring boot application needs the Lombok\* extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.
 
 **\***In the case of IntelliJ, the plugin can be installed directly. For eclipse, the Lombok jar location has to be added in the eclipse.ini file in this format javaagent:lombok.jar.
 
 ## API Details
 
-Refer to the Swagger API for YAML file details: [Household.yaml](https://github.com/egovernments/health-campaign-services/blob/master/docs/health-api-specs/contracts/registries/household.yml)
+Refer to the Swagger API for YAML file details: [Household.yaml](https://github.com/egovernments/health-campaign-services/blob/v1.1.0/docs/health-api-specs/contracts/registries/household.yml)
 
 **Application.properties file information**_**:**_
 
@@ -69,7 +69,7 @@ household.member.consumer.bulk.delete.topic=household-member-consumer-bulk-delet
 
 **Action test: URL actions adding**
 
-[**Action-test.json**](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)
+[**Action-test.json**](https://github.com/egovernments/health-campaign-mdms/blob/v1.1.0/data/default/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)
 
 ```
 {
@@ -245,7 +245,7 @@ household.member.consumer.bulk.delete.topic=household-member-consumer-bulk-delet
 
 **Access to role-based actions**
 
-[**Roleaction.json**](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ROLEACTIONS/roleactions.json)
+[**Roleaction.json**](https://github.com/egovernments/health-campaign-mdms/blob/v1.1.0/data/default/ACCESSCONTROL-ROLEACTIONS/roleactions.json)
 
 ```
 {
@@ -486,11 +486,11 @@ household.member.consumer.bulk.delete.topic=household-member-consumer-bulk-delet
 
 **Persister configuration**
 
-[Household Persister Yaml](https://github.com/egovernments/health-campaign-config/blob/DEMO/egov-persister/household-persister.yml)
+[Household Persister Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-persister/household-persister.yml)
 
 **Indexer configuration**
 
-[Household Indexer Yaml](https://github.com/egovernments/health-campaign-config/blob/DEMO/egov-indexer/household-indexer.yml)
+[Household Indexer Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-indexer/household-indexer.yml)
 
 #### Database schema
 

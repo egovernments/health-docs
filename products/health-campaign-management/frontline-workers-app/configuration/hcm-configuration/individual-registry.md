@@ -22,13 +22,13 @@ The individual registry helps and provides APIs to create citizens or users to t
 
 **Setup Details**
 
-The source code for an [Individual](https://github.com/egovernments/health-campaign-services/tree/demo/health-services/individual) is present in the health-campaign-services Git repo. The spring boot application needs the **Lombok\*** extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.&#x20;
+The source code for an [Individual](https://github.com/egovernments/health-campaign-services/tree/v1.1.0/health-services/individual) is present in the health-campaign-services Git repo. The spring boot application needs the **Lombok\*** extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.&#x20;
 
 * In the case of IntelliJ, the plugin can be installed directly. For eclipse, the Lombok jar location has to be added in the eclipse.ini file in this format javaagent:lombok.jar.
 
 ## **API Details** <a href="#api-information" id="api-information"></a>
 
-Refer to the Swagger API for YAML file details. Link -<img src="https://github.com/fluidicon.png" alt="" data-size="line">[individual.yaml](https://github.com/egovernments/health-campaign-services/blob/master/docs/health-api-specs/contracts/registries/individual.yml)
+Refer to the Swagger API for YAML file details. Link -<img src="https://github.com/fluidicon.png" alt="" data-size="line">[individual.yaml](https://github.com/egovernments/health-campaign-services/blob/v1.1.0/docs/health-api-specs/contracts/registries/individual.yml)
 
 **Application.properties file information**_**:**_
 
@@ -281,11 +281,11 @@ individual.producer.delete.topic=delete-individual-topic
 
 #### **Persister configuration**
 
-[Individual Persister Yaml](https://github.com/egovernments/health-campaign-config/blob/DEMO/egov-persister/individual-persister.yml)
+[Individual Persister Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-persister/individual-persister.yml)
 
 #### Indexer configuration
 
-[Individual Indexer Yaml](https://github.com/egovernments/health-campaign-config/blob/DEMO/egov-indexer/individual-indexer.yml)
+[Individual Indexer Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-indexer/individual-indexer.yml)
 
 #### Database schema
 

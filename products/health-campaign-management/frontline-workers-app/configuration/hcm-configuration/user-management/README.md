@@ -24,7 +24,7 @@ Before you proceed with the documentation, make sure the following pre-requisite
 
 **Setup Details**
 
-The source code for an [User Management](http://localhost:5000/s/ujRjzdG1LUqcmmuo2t2T/platform/installation/installation/ci-cd)(egov-hrms) is present in the digit-dev Git repo. The spring boot application needs the **Lombok\*** extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.&#x20;
+The source code for an [User Management](https://github.com/egovernments/DIGIT-Dev/tree/health-digit-master/business-services/egov-hrms)(egov-hrms) is present in the digit-dev Git repo. The spring boot application needs the **Lombok\*** extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.&#x20;
 
 * In the case of IntelliJ, the plugin can be installed directly. For eclipse, the Lombok jar location has to be added in the eclipse.ini file in this format javaagent:lombok.jar.
 
@@ -294,15 +294,15 @@ Following are the properties in the application.properties file in hrms service 
 
 ### API Details
 
-Refer to the Swagger API for YAML file details: [UserManagement.yaml](https://github.com/egovernments/DIGIT-Dev/blob/health-digit-dev/business-services/Docs/hrms-v1.0.0.yaml)
+Refer to the Swagger API for YAML file details: [UserManagement.yaml](https://github.com/egovernments/DIGIT-Dev/blob/health-digit-master/business-services/Docs/hrms-v1.0.0.yaml)
 
 #### persister configuration: <a href="#persister-configuration" id="persister-configuration"></a>
 
-{% embed url="https://github.com/egovernments/health-campaign-config/blob/master/egov-persister/hrms-employee-persister.yml" %}
+{% embed url="https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-persister/hrms-employee-persister.yml" %}
 
 **Postman collection**
 
-[Click here](https://github.com/egovernments/DIGIT-Dev/blob/health-digit-dev/business-services/Docs/Egov-HRMS.postman\_collection.json)
+[Click here](https://github.com/egovernments/DIGIT-Dev/blob/health-digit-master/business-services/Docs/Egov-HRMS.postman\_collection.json)
 
 
 

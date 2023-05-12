@@ -20,13 +20,13 @@ The product service helps and provides APIs to create products and product varia
 
 ### Setup details
 
-The source code for a [Product](https://github.com/egovernments/health-campaign-services/tree/demo/health-services/product) is present in the health-campaign-services Git repo. The spring boot application needs the Lombok\* extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.
+The source code for a [Product](https://github.com/egovernments/health-campaign-services/tree/v1.1.0/health-services/product) is present in the health-campaign-services Git repo. The spring boot application needs the Lombok\* extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.
 
 **\***In the case of IntelliJ, the plugin can be installed directly. For eclipse, the Lombok jar location has to be added in the eclipse.ini file in this format javaagent:lombok.jar.
 
 ## API details
 
-Refer to the Swagger API for YAML file details: [Product.yaml](https://github.com/egovernments/health-campaign-services/blob/master/docs/health-api-specs/contracts/registries/product.yml)
+Refer to the Swagger API for YAML file details: [Product.yaml](https://github.com/egovernments/health-campaign-services/blob/v1.1.0/docs/health-api-specs/contracts/registries/product.yml)
 
 **Application.properties file information**_**:**_
 
@@ -52,7 +52,7 @@ product.variant.kafka.update.topic=update-product-variant-topic
 
 **Action test: URL actions adding**
 
-[**Action-test.json**](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)
+[**Action-test.json**](https://github.com/egovernments/health-campaign-mdms/blob/v1.1.0/data/default/ACCESSCONTROL-ACTIONS-TEST/actions-test.json)
 
 ```
 {
@@ -132,7 +132,7 @@ product.variant.kafka.update.topic=update-product-variant-topic
 
 **Access to role-based actions**
 
-[**Roleaction.json**](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/ACCESSCONTROL-ROLEACTIONS/roleactions.json)
+[**Roleaction.json**](https://github.com/egovernments/health-campaign-mdms/blob/v1.1.0/data/default/ACCESSCONTROL-ROLEACTIONS/roleactions.json)
 
 ```
 {
@@ -175,11 +175,11 @@ product.variant.kafka.update.topic=update-product-variant-topic
 
 **Persister configuration**
 
-[Product Persister Yaml](https://github.com/egovernments/health-campaign-config/blob/DEMO/egov-persister/product-persister.yml)
+[Product Persister Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-persister/product-persister.yml)
 
 **Indexer configuration**
 
-[Product Indexer Yaml](https://github.com/egovernments/health-campaign-config/blob/DEMO/egov-indexer/product-indexer.yml)
+[Product Indexer Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-indexer/product-indexer.yml)
 
 #### Database schema
 
@@ -188,8 +188,6 @@ product.variant.kafka.update.topic=update-product-variant-topic
 **Postman collection**
 
 [https://www.postman.com/lunar-resonance-126497/workspace/hcm/environment/24751924-61d3084a-c7bf-4591-8b7d-2ec5828d96b1](https://www.postman.com/lunar-resonance-126497/workspace/hcm/environment/24751924-61d3084a-c7bf-4591-8b7d-2ec5828d96b1)
-
-
 
 [\
 ](https://github.com/egovernments/health-campaign-services/blob/demo/health-services/individual/src/main/resources/individual-persister.yml)[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
