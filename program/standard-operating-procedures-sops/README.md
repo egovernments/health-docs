@@ -1,6 +1,6 @@
 # Standard Operating Procedures (SOPs)
 
-Here are the articles in this section: (Coming soon)
+Here are the articles in this section:&#x20;
 
 [SOP for Helpdesk Support](sop-for-helpdesk-support.md)
 

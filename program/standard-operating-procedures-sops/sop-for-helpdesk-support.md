@@ -96,7 +96,7 @@ What do they need to be effective?
 * User manual on complaints portal & user management
 * Videos that they can share?
 
-## Help Desk Team Roles and Responsibilities
+## Helpdesk Team Roles and Responsibilities
 
 The helpdesk team will have following profiles
 
@@ -133,14 +133,14 @@ The helpdesk executive will:&#x20;
 | <p><br></p> | Tool for recording complaints                                                       | eGov       | CHAI         |
 | <p><br></p> | Helpline number provisioning                                                        | NMCP       | CHAI         |
 | <p><br></p> | Helpline email provisioning                                                         | NMCP       | CHAI         |
-| <p><br></p> | Office space and Infrastructure (call center) for the helpdesk team (in Mozambique) | NMCP       | CHAI         |
+| <p><br></p> | Office space and Infrastructure (call centre) for the helpdesk team (in Mozambique) | NMCP       | CHAI         |
 | <p><br></p> | Training of helpdesk staff on DIGIT and complaints portal                           | eGov       | CHAI / NMCP  |
 | <p><br></p> | Payment of helpdesk staff                                                           | CHAI       | <p><br></p>  |
 
 ## For discussion/Open questions
 
 1. Will the helpdesk staff be able to record the issues in the complaints tool in English?
-2. What would be the process for operational/non-tech issue resolution since the helpdesk will get all sorts of queries. Are there programmee people from NMCP as part of the helpdesk? There needs to be standard responses from the helpdesk personnel to redirect the callers to the right person. What would that response be?
+2. What would be the process for operational/non-tech issue resolution since the helpdesk will get all sorts of queries. Are there programme people from NMCP as part of the helpdesk? There needs to be standard responses from the helpdesk personnel to redirect the callers to the right person. What would that response be?
 3. It has been assumed that a helpline number for queries being reported over the calls to the helpdesk. Please confirm if this is correct?
 4. Can the help desk have a WhatsApp number or it would be a call centre number such as 100/101? We are assuming that email will not be a mode of communication between users and the  helpdesk team, i.e., complaints will neither be reported over mail nor the resolution informed over mail. Once an issue has been resolved, the helpdesk staff will call the reporter and inform them about the fix.
 5. It is assumed that help desk issues and calls from distribution teams will typically happen only when the teams return to their base locations and are under network coverage area.
@@ -150,7 +150,7 @@ The helpdesk executive will:&#x20;
 9. We are assuming the helpdesk will also coordinate the changes or updates in master data? Is this assumption correct?
 10. We are assuming that the helpdesk staff will also handle user provisioning (i.e., the creation of new users accounts). Is this assumption correct?
 11. Do we need a complaints report to be built in the complaints module to get the list of complaints assigned to eGov or other parties to do a daily triage?
-12. How long will the help deskteam remain operational? That is: &#x20;
+12. How long will the helpdesk team remain operational? That is: &#x20;
 
 &#x20;       \- For how many days ?
 
@@ -163,5 +163,3 @@ The helpdesk executive will:&#x20;
 14. Are the nodal officers from NMCP, who are going to address the operational queries, going to be part of the helpdesk. If yes, in what capacity ?
 15. Do we need to log the operational queries at all in the complaints tool? Because if we do so, we may need to also update the resolution which would be provided by NMCP staff.
 16. Will the helpdesk be common for Tete and other provinces? If yes , then how many of the helpdesk support staff would be allocated for Tete? Will one person receive the queries/issues for more than one province?\
-
-
