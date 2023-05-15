@@ -2,7 +2,7 @@
 
 ## QA Sign Off Report
 
-Information regarding sign-off modules and features for HCM V1.1 for Dashboard are as follows.
+Information regarding sign-off modules and features for Dashboard are as follows.
 
 ### Stories covered for testing:
 

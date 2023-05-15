@@ -2,7 +2,7 @@
 
 ## QA Sign Off Report
 
-Information regarding sign-off modules and features for PGR - flutter app, react component (desktop web and mobile web) for HCM is mentioned below:
+Information regarding sign-off modules and features for Complaints (PGR) - flutter app, react component (desktop web and mobile web) for HCM is mentioned below:
 
 ### Stories covered for testing
 

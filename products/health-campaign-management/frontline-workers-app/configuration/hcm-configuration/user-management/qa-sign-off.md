@@ -2,7 +2,7 @@
 
 ## QA Sign Off Report
 
-Information regarding sign-off modules and features for HRMS and Offline reports for HCM is mentioned below:
+Information regarding sign-off modules and features for User Management (HRMS) and Offline reports for HCM is mentioned below:
 
 ## Stories covered for testing
 

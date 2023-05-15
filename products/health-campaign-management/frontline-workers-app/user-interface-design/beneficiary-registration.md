@@ -8,8 +8,7 @@ After logging into the application, the user lands on this screen which displays
 
 The action buttons related to the beneficiary are present, which include:&#x20;
 
-* Beneficiaries&#x20;
-* View Reports&#x20;
+* Beneficiaries
 * Sync Data&#x20;
 * Call Supervisor&#x20;
 * File Complaint&#x20;
@@ -18,7 +17,7 @@ At the bottom, there is a card that shows how many records are unsynced for the 
 
 On the top right, the administrative area assigned to the user is displayed, which will be based on the level of hierarchy. The hamburger button on the top left corner covers some other actions mentioned further.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 2.17.26 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230512_232807 (2).jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Hamburger Menu
 
@@ -26,7 +25,7 @@ After clicking on the hamburger button, a list of actions appears on the user sc
 
 If the user clicks on the hamburger button again, it collapses the hamburger menu. The button is available on all screens of the application.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 2.18.31 PM (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230512_232739.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Edit Profile
 
@@ -42,7 +41,7 @@ When a user clicks on the projects option in the hamburger menu, it navigates th
 
 Though the automatic sync is triggered by the login action, after selecting another project, the system must now sync the data for the new project, and the same flow must be followed.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 2.29.18 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230512_232548.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
 ### Location
 
@@ -50,13 +49,13 @@ For a user assigned multiple boundaries, after logging in, the boundary selectio
 
 It has dropdown fields to select the boundary, which depends on the hierarchy level of the user. For example, in the case of an FLW, the boundary selection starts from the administrative post. The values in the dropdown are linked to the higher hierarchy and the user cannot select a boundary if the previous field is left blank.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 2.33.48 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000401.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
 The dropdown must only consist of the boundaries that are assigned to the user, not all the boundaries under a particular hierarchy. For example, if the user is assigned localities 1, 2, and 3, and there are 5 localities in all under admin post 1, then the dropdown must have only 1, 2, and 3 localities.&#x20;
 
 At least the highest boundary must be selected to enable the select button, which navigates the user to the home screen. For multiple projects, sync needs to download the data only for the selected project.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 2.34.57 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000418.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
 ### Help Button&#x20;
 
@@ -67,7 +66,7 @@ If the user clicks on the help button, it will give a walkthrough of the entire 
 
 The text box appears at the bottom of the button.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 2.40.48 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230512_232704.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Search Households
 
@@ -82,13 +81,13 @@ The search bar allows the user to search by the household head’s name and the 
 
 Both cases are discussed further. The ‘Back’ button on the top will navigate to the home screen.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 2.45.11 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Android - 518.png" alt="" width="180"><figcaption></figcaption></figure>
 
 ### Case 1: No match found&#x20;
 
 If a user is searching for a household and there are no households registered by that name, it will display: “Match not found! Register New Household button to add details”. The register button is enabled to proceed with the household registration. When the user clicks on the “Register New Household” button, it takes them to the “Household Location” screen.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 2.52.30 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Android - 521 (1).png" alt="" width="180"><figcaption></figcaption></figure>
 
 ### Case 2: Results do not match&#x20;
 
@@ -98,7 +97,7 @@ The open button at the right corner of each card is for the user’s understandi
 
 At the end of the search results, a query message is displayed stating “Match not found” and the register button is enabled. If the results do not match, the user can click on the register button for household registration. The back button will take them to the home screen.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 3.05.36 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Android - 519 (1).png" alt="" width="188"><figcaption></figcaption></figure>
 
 ### Household Dropdown (for household-level campaigns)&#x20;
 
@@ -108,13 +107,13 @@ The table must not display the household head icon ‘H’, as shown on the indi
 
 Since there are no separate fields for first name and last name, the cell will count 14 characters, counting space as 1 character. If it is the same household, the user can click on the ‘Open’ button on the card, which will open the household card. The ‘Back’ button will take the user to the home screen.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 3.15.10 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Android - 520.png" alt="" width="180"><figcaption></figcaption></figure>
 
 ### Household Dropdown (for individual-level campaigns)
 
 In this case, a column for delivery status is added to the table. The format for the delivery status must be the same for every screen wherever the status needs to be displayed. The format is check mark+status. The household-level delivery status is omitted in this case.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 3.21.14 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Android - 554.png" alt="" width="180"><figcaption></figcaption></figure>
 
 ### Location
 
@@ -124,7 +123,7 @@ The system must fetch the lat/long coordinates of the household. If it is unable
 
 The back button takes the user to the “List of Households”  screen. The ‘Next’ button at the bottom takes them to the “Household Details” screen.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 3.32.05 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000456.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Household Details
 
@@ -132,7 +131,7 @@ The “Date of Registration” is auto-populated by the system, and is non-edita
 
 After providing the numbers, the user clicks on the ‘Next’ button at the bottom of the screen, which will navigate them to the ‘Individual Details’ screen.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 3.43.13 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000508.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Individual Details&#x20;
 
@@ -142,7 +141,7 @@ The name, ID type, and ID number fields are kept mandatory for data collection. 
 
 If the individual does not hold any ID, an option for ‘System generated ID’ must be there, which will inform the system to generate an ID for that individual. In “ID Number”, the user needs to enter the individual’s ID number. If the user selects a system-generated ID, then this field must be disabled. The system must capture the ID number when the device is online and sync can take place.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-24 at 2.32.30 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/household edit (4).png" alt=""><figcaption></figcaption></figure>
 
 The “Date of birth” is a calendar input field, where the individual’s birth date is entered. If the individual does not know his/her date of birth, there is an option to enter the age. The system captures only the date of birth at the backend, which is described in the two cases below:
 
@@ -156,19 +155,19 @@ The date of birth field must be validated where the value cannot be in the futur
 
 At the bottom, there is a ‘Submit’ button, clicking on which the user can register the beneficiary into the system. For every submit action, the system validates the information entered. If the user enters incomplete or incorrect data, clicking on the submit button will show an error message above it, along with the validated message below the field (as shown in the adjacent screen).
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-24 at 2.39.11 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/household edit (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Confirmation Screen&#x20;
 
 When the user clicks on the ‘Submit’ button, a popup appears asking for confirmation. If the user wants to edit any detail, they can click on the ‘Cancel’ button, which will take the user back to the previous screen. If the user clicks on ‘Submit’, the household is registered and the household card is opened.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-24 at 2.52.13 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000537.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Acknowledgement Screen&#x20;
 
 Once the user clicks on the submit button, the acknowledgement screen appears providing the information that the data has been recorded successfully. When the user clicks on “Back to Search”, he/she must be navigated to the search household screen.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-24 at 3.02.16 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000550.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Household Card (for a household-level campaign)&#x20;
 
@@ -178,38 +177,38 @@ The service delivery status is present below the household’s name followed by 
 
 For adding new members to the household, there is the ‘Add Member’ button below the member cards, which navigates the user to the ‘Individual Details’ screen. At the bottom, the ‘Deliver Intervention’ button navigates the user to the update delivery screen.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-24 at 3.35.31 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000606.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 If the intervention is delivered to that household, the second screen will appear. The deliver intervention button must be replaced by the ‘Update Delivery Details’ button in case more interventions are needed to be delivered. The back button on top takes the user to the list of households screen.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-24 at 3.36.13 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_233658.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Household Card (for an individual-level campaign)&#x20;
 
 If the campaign is at an individual level, the household card appears in a similar format with some changes. The ‘Deliver Intervention’ button is present at the bottom of every member’s card. If the intervention is delivered to a member, it will display ‘Delivered’ below their details on the card and the button will be replaced with ‘Update Delivery Details’. If the intervention is not delivered, it will display “Not Delivered”. The ‘Deliver Intervention’ button in this case navigates the user to the update delivery screen. The back button navigates the user to the search households screen.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-24 at 3.42.32 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_233628.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 Household-Level Actions When the user clicks on the “Edit Household” button, the actions appear on the screen.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-24 at 3.46.24 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_233712.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
-* Edit Household: The user is navigated to the household location screen followed by household details. In this screen, the ‘Next’ button is now replaced by the ‘Submit’ button.&#x20;
+* Edit Household: The user is navigated to the household location screen followed by household details. In this screen, the ‘Next’ button is now replaced by the ‘Save’ button.&#x20;
 * Delete Household: If the user wants to delete the entire household.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-24 at 3.47.15 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000659.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Delete Household&#x20;
 
 After a user clicks on the “Delete Household”’ button, an overlay appears with a message asking whether he/she wants to delete that beneficiary. It has two buttons: Delete: This will delete the beneficiary from the system records. Cancel: if the user does not want to delete the beneficiary, clicking on this button will collapse the overlay.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-24 at 3.53.55 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000713.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
 ### Reason for Deletion (household)&#x20;
 
 If a user selects the delete option, it will bring them to this screen, where he/she must select the reason for deleting a particular household. The screen will be the same as that of individual deletion, only the reasons will vary. The reasons may include the household having relocated, the household does not exist, etc. The reasons must be configured in the MDMS.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-24 at 3.54.05 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000727.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Individual-Level Actions
 
@@ -219,7 +218,7 @@ When a user clicks on the ‘Edit’ button on an individual’s card, an overla
 * Edit individual details: If the user wants to edit the member’s details. It will navigate them to the individual details screen and the same flow is to be followed.
 * Delete individual: This option allows the user to delete a particular member. A user must not be able to delete the household head and hence the delete individual button must be disabled if the beneficiary is marked as the head of the household. If the user wants to delete the beneficiary marked as a household head,  the user must assign another member in the household as the head and then delete the beneficiary.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-27 at 4.23.34 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_233839.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Edit Individual Details&#x20;
 
@@ -227,7 +226,7 @@ When a user clicks on edit individual details, he/she navigates to the individua
 
 For the date of birth and age fields, the date of birth must always be given precedence over age. If the user has entered the date of birth while creating an individual, only that field must be editable, and the age field must be disabled. If the user has entered age, then the age entered must be visible, and the date of birth field must be blank, but editable. If the user wants to enter the exact date of birth, then he/she must be able to enter the value, in which case the age field is disabled (as in create flow).
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-27 at 4.28.43 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/household edit (5).png" alt="" width="180"><figcaption></figcaption></figure>
 
 ### Delete Individual&#x20;
 
@@ -235,36 +234,36 @@ Clicking on the delete button opens a popup that asks whether the user wants to 
 
 If the member is the household head, a popup should appear stating that deletion cannot happen unless some other member is assigned the household head. If there is only one member in a household, a popup should appear stating that there should be at least one member for creating a household. The user needs to either add another member or delete the entire household.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-27 at 4.31.28 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000744.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
 ### Reason for Deletion (Individual)&#x20;
 
 If the user selects the delete option, it will bring him/her to this screen, where he/she needs to select the reason for deleting a member. The reasons must be configured in the MDMS.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-27 at 4.32.56 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000752.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 ### Sync&#x20;
 
 Before going into the field, the user needs to log into the application every day, which will initiate an automatic sync process (mentioned in the user login PRD). For manual sync, there is a ‘Sync Data’ button on the home screen, which allows the user to sync data according to his/her convenience. At the bottom of the screen, there is a card that shows the message “Data unsynced” along with the number of records unsynced.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-27 at 4.38.06 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230512_232807.jpg" alt="" width="375"><figcaption></figcaption></figure>
 
 When the user clicks on the ‘Sync’ button, the sync action starts along with an overlay showing “Sync in Progress” over the home page. The user cannot perform any other action until the sync is complete or there is some error.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-27 at 4.38.17 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000434.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
 ### Sync Status&#x20;
 
 Once the data is synced, it will show a popup, stating “Data Synced” along with a ‘Close’ button at the bottom. When the user clicks on close, it navigates him/her to the home screen.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-27 at 4.42.24 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_000446.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
 If the data is not synced due to any error, it will show a popup stating “Sync Failed” with two buttons below it:&#x20;
 
 1. Retry: If the user wants to retry syncing the data.&#x20;
 2. Close: Clicking on this will navigate the user back to the home screen.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-27 at 4.42.33 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_233748.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
 ### Reports&#x20;
 
@@ -282,17 +281,6 @@ In the leaderboard section, the overall number of households registered will be 
 
 If the user is facing any challenge and requires an immediate solution, he/she can click on the call supervisor button on the home screen, which will redirect them to their phone’s dial pad with the supervisor’s number auto-filled. By clicking on the ‘Call’ button, the user can contact the supervisor for immediate assistance.
 
+<figure><img src="../../../../.gitbook/assets/IMG_20230513_233810.jpg" alt="" width="188"><figcaption></figcaption></figure>
+
 <figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-27 at 4.52.20 PM.png" alt=""><figcaption></figcaption></figure>
-
-## Success Criteria
-
-1. Various actors involved in the process will be able to collect, track, and analyse the data for beneficiaries registered using a bug-free platform.
-2. The supervisors, district officers, and program managers will be able to monitor team performance, which will help them understand the problems and challenges faced by the teams.
-3. Digital records will result in maximum coverage with fewer chances of households being missed during a certain campaign.
-
-## Metrics to Track
-
-The following metrics will be tracked:
-
-1. Households registered.
-2. Individuals registered in households.

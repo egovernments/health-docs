@@ -2,7 +2,7 @@
 
 ## QA Sign Off Report
 
-Information regarding sign-off modules and features for HCM V1.0 FLW app are mentioned below:
+Information regarding sign-off modules and features for HCM FLW app are mentioned below:
 
 ### Stories covered for testing
 
