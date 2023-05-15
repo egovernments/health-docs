@@ -159,7 +159,7 @@ At the bottom, there is a card that shows how many records are unsynced for the 
 
 On the top right, the administrative area assigned to the user is displayed, which will be based on the level of hierarchy. The hamburger button on the top left corner covers some other actions mentioned further.
 
-![](https://lh4.googleusercontent.com/qba1SMZr7clIqFQkM2jrCv-nA7muWXN5B43yxYNMS-iIKUCL8eJKsONmUJ8bhquxLhEPI7JWSE2kOnGuq8Xdd0gMP0SOL2SFSZ5Mt1QeOrxorAI47DNoRhxOuBsux9B0RUKlou\_14gCtwb3eSqbbrTxgwrtum4TAPHtq1y5vOTJcRTVOY9ag6shnbtPVkw)
+![](<../../../../.gitbook/assets/IMG\_20230512\_232807 (1).jpg>)
 
 ### Complaints
 
@@ -168,7 +168,7 @@ When the user clicks on the complaints, she is navigated to the “My Complaints
 * File a complaint (primary action): Clicking on this must open the complaint type screen.
 * View previously logged complaints.
 
-![](https://lh3.googleusercontent.com/jPFx80yQfJmuLhqGTQpaXbw4L2Av5B0jgZ7lLwgLWJh3hOLLCb7eN-YLHo2XOi9qsJedDWjrQEAJuRCD62\_cVk5hjdL1wiqKmNtGZKbdi2KmJ9pwYrkSu3QjRQR-LUrq5fDOxa\_2V2XyR2i42aOw-IkLoJfn-Yb9uLk2c\_B0yrMGR4NKvi2Ykv8p-1s6nQ)
+![](../../../../.gitbook/assets/IMG\_20230513\_234148.jpg)
 
 ## File Complaint Workflow
 
@@ -178,7 +178,7 @@ When the user clicks on file a complaint, the complaint type screen appears. The
 
 There is a ‘Next’ button at the bottom of the screen, clicking on which, the user is navigated to the complaint details screen.
 
-![](https://lh3.googleusercontent.com/R1bIO15j-Aar3yxPjYYnxYFn4Uz9r-GwzdgXHU-yOYE4U1GOBgXEW3puIypHa7Xh4u5E5wFXU2ETaAZttq\_olt6V7agP3rZRsvntW47DsksyGxDxAB60iRJGLVMG9-DtRscH5pKgywFTcOvtb8iXNCXV7KdYbmufOHGT1jvQib-Q04RkFASTR7TSEIFJpw)
+![](../../../../.gitbook/assets/IMG\_20230513\_233907.jpg)
 
 Complaint Details
 
@@ -200,17 +200,23 @@ If the complaint is raised on behalf of another user, then her details must be c
 
 After filling in all the details, the user needs to click on the ‘Submit’ button to file the complaint.
 
-![](https://lh3.googleusercontent.com/lzHyVio2kwsmMnqijOwFWMHOAcR25I-KDLaKDt-BNnyG\_K4pu5OnblpB3svi6uTOn4qfstYrdKq8U\_pmMx\_fJDAgTdxCaVC3jnvhOBKddn609Y053u6MmdqdZxv73bghnmeZX2-nwRNBMA8JhlV1PHPvBFzkmuIZRPRwr10zY5nDUU5nhtG0UdAYnHW6Xg)\
+![](../../../../.gitbook/assets/IMG\_20230513\_233934.jpg)\
 
+
+<div align="left">
+
+<figure><img src="../../../../.gitbook/assets/Android - 322 (1).png" alt="" width="180"><figcaption></figcaption></figure>
+
+</div>
 
 Confirmation Screen
 
 When the user clicks on the submit button after providing all the complaint details, the confirmation screen appears, which provides information on whether the complaint has been submitted or not.
 
-* If the complaint has been submitted, then there must be a back to home button below the message. When the user clicks on it, she must be navigated to the home screen.
+* If the complaint has been submitted, then it must show the message to sync the data for generating the complaint number. There must be a back to home button below the message. When the user clicks on it, she must be navigated to the home screen.
 * If the complaint has not been submitted, then there must be two buttons available; Retry and Back to Home.
 
-![](https://lh4.googleusercontent.com/UEcCOFO7O6xjJepgKWLGXKOH\_9om8ZPj-nXwOaZnzTJLIhW\_KUTvq15LZV4IcotlRbXG-y1bp14NAWdC9-RggC9lIoSFxDH-sePaIeAhJtUx3HRxgK6YH96ddim5pplSxUJUXvFACkwTm8f3yJsaqsehbWSqwmN9oEfsGmjMRp0chukqU3cQdq8NuKCm4Q)
+![](../../../../.gitbook/assets/IMG\_20230513\_234003.jpg)
 
 ### Resolving a complaint (Mobile App View)
 
@@ -234,7 +240,7 @@ The helpdesk user must be able to do the following :
 
 The inbox view for other workflow states must be similar and must be able to view complaints assigned to their respective inbox. The user must also have the option to assign the complaint back to the L1 support helpdesk by selecting the value in the “Assign To” field. The users must be able to view complaints that have been assigned to their role. For example, the L1 helpdesk user must not be able to view complaints assigned to the L2 helpdesk and vice versa.
 
-![](https://lh4.googleusercontent.com/LfJGfBINQK83IlDuUUDmQawdelnGoVM7h9\_FQWCR04EoWmJ72ZD6GoySkB1AC4sa3Y02LnDipyXbszMmm4aZyyaWjFqVWZUMz6fLcFe9sZuhkx2-Pitl7zoWRg5Sf2Xs--EXCZfD-JpCxsZ\_CqdurdLC0RLRX9zsPurb4ofFLgWte8mqtIqVskjwiKy77A)
+![](../../../../.gitbook/assets/Screenshot\_2023-05-15-10-20-50-55\_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
 
 Filters\
 The user can apply filters in multiple parameters as follows:
@@ -245,7 +251,7 @@ The user can apply filters in multiple parameters as follows:
 
 A button to clean all filters must be available at the bottom of the page. An “Apply Filter” button must be available to set the filters and route the user to the inbox and display the filtered complaints.
 
-![](https://lh6.googleusercontent.com/tNyBsVXFi1a\_SOe2d-8vU86VPYLbh9k6K1uZ\_ZN8WkQpxy\_wrBiBTnN74oyegsrB2l6HDICFV1BwEIx6pQQt--lAhWaNW39PU7xsUbvB66XD3nfOGC\_JsDuy13gPHoqx2qx8SFUXhmHAuw3QZ1YPzM9Mgusx2AZnHjGmGy2ua98g7z3lZ1R7K9WDbxr9Nw)
+![](../../../../.gitbook/assets/Screenshot\_2023-05-15-10-20-58-77\_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
 
 Search By
 
@@ -257,14 +263,14 @@ A user must be able to search for one or more complaints by using the following 
 
 After providing the appropriate search parameters, the user must click on the “Search” button located at the bottom of the screen and must be routed to the inbox which displays the search-appropriate search results.
 
-![](https://lh3.googleusercontent.com/hHDLcxEOfRSfkT7AmU8ccOdkHwniBuK5A2SObxP9hHsou-qRTPoE9vCMv-0y8SuoLQIV4jToqvwCtea3zLG6\_SL6nfE1rwmQAdr8\_fOEAv6cCwGspQ2--aAybgDcyKeuErlJVRY7o1ZugiAjtaxBuY-m6VataHgGWggAsApiHjP7gIOnsiZhwqRnsQAxSA)\
+![](../../../../.gitbook/assets/Screenshot\_2023-05-15-10-20-53-65\_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)\
 
 
 Complaint Summary
 
 A summary screen must be displayed when the user clicks on the ‘Open’ button located on the complaints card.
 
-![](https://lh3.googleusercontent.com/C7ix80lv5XPkrmalCP\_IfdpDeyQQ2eNmcHMqFKzWa-y9HF8GoVDMwdKKW5YDc3akEOibyK9J5fJCz04QDUj1OMnbsZ5L1gsV2rtWvTeAX-mf8IOvvwgBR4yn37xmj8mUQx6Jym0rmHefXdHQrm02wLg1u4UPBsWjGIUkfRstCU5JCB25xgE\_C1aj2mhx8A)
+![](../../../../.gitbook/assets/Screenshot\_2023-05-15-10-20-40-87\_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
 
 Actions
 
@@ -277,7 +283,7 @@ The “Take Action” button at the bottom of the screen must open a pop-up disp
 
 The close button collapses the overlay and takes the user back to the complaints summary screen.
 
-![](https://lh6.googleusercontent.com/VzYV1yo1h\_miOzuK3W23xCyoNbejsfku3Mev5ELwVOO9Fnm8l7iJEPomcS\_CLxqrA9jqt8Y585PQm3h9TfJ\_LmX-ptBhb\_csIAe7bMwVAKlw\_\_FRPVZJQKIblOzOHqIzTzaIdJXpA-9SBsKSq-ObWwsJ5Qxu4veCpw6WSjjrpGOKB08Ba8LeyeQ8fp0tzw)\
+![](../../../../.gitbook/assets/Screenshot\_2023-05-15-10-21-15-51\_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)\
 
 
 Assign Complaint
@@ -288,19 +294,17 @@ In the "assigned to" field, the user needs to select the person to whom she want
 
 At the bottom, there is a cancel button which takes the user back to the complaint summary screen, and an assign button which assigns the complaint to the selected person.
 
-![](https://lh5.googleusercontent.com/p-zkbQ76ivQ1c8SQEq0fleUlE-OMJrc7AoxeJcAC3bVumQxztCb\_NbB9RcgoKgSxADzWwMe5XTTpFVetQLIFZBhXnK0XpEs1i-YbbAifFeHaveFm0VeVXNel3zaC\_DImP--RJpuQZwlLR35ER3rMpkhzDGiOT4RgsUZF0h-aKryhFxySqEL5oWt5OOIWdQ)
+![](../../../../.gitbook/assets/Screenshot\_2023-05-15-10-21-18-54\_40deb401b9ffe8e1df2f1cc5ba480b12.jpg)
 
 Confirmation Screen
 
-If the complaint has been assigned successfully, then the first screen must appear. If the complaint could not be assigned, then the second screen must appear. There is a "Back to Complaints" button on both screens which navigates the user to the complaints screen.
-
-![](https://lh6.googleusercontent.com/Lixo5ZC-BgUxcUBk9sQ-e4IYULbCdEgfiIed6OsQsPmvzthBueWe9Vx5FV1mDXU74hVmC5vWVg6tGxzSb0xtq7upT6UX4gIttpboc2aGVXWK28BYuxfpkmMWy-FwraQkuPSr-F\_Yp8pHzWu-YWfdyvwgRO6tBM6Gl4UFHG4Pomg98UTaadoJzJIjPlQbIQ)
+If the complaint has been assigned successfully, then the following screen must appear.![](../../../../.gitbook/assets/IMG\_20230515\_103533.jpg)
 
 Landing Page (Common page)
 
 A landing page must be available to the user to access all available modules.\
 \
-![](https://lh5.googleusercontent.com/ADi\_OBX6mxS-EfsjqxkegiWnu7s85pg5LknFq0j1wHgvk2mpLmSelwu\_lDUQwX7q0Xa4TjPjVZw8JCw5QxZNOKES1EnO2P4w-bbHmeY1SfNSgyicrzuTww-0Z217kl2kcd0Z7Jx238jOK4w9tymJoP1IhqHwsUleX5PQfDdh8mUi2Rx33ZZTsUnUlTQOqg)
+![](<../../../../.gitbook/assets/Screenshot (279) (1).png>)
 
 Helpdesk (Desktop View)
 
@@ -312,7 +316,7 @@ The complaints are displayed in a horizontal format with the same values for mob
 
 At the bottom, there are forward, backward, first page, and last page arrow buttons along with the page number information as displayed on the screen.
 
-![](https://lh3.googleusercontent.com/9vRIqJxlB1WJnhfjfG\_aNskp5mSJ\_2nZ\_PtXy-ecGI7iwy59GQNjhaMc6FodsF7VZbVOBHjzrmGbBxYylrANrE31wVGj6gW8HXxBzn74IVQcJqK-9Tt6S6OfTTc-TQ8zBAKNlF7mTjjjZ8GELFSu30x3lmVKmxRmSrZecztdwHdvaHdDKo-Y2UewcH-oZQ)\
+![](<../../../../.gitbook/assets/Desktop - 123 (1).png>)\
 
 
 Complaint Details
@@ -321,22 +325,22 @@ When the user clicks on a complaint, the details screen appears which provides t
 
 There is a "Take Action" button at the bottom. When the user clicks on it, the actions appear above the button as displayed on the screen. The actions include resolve complaint, assign to P2, and reject complaint. If the user clicks on any blank area on the screen, the actions collapse.
 
-![](https://lh6.googleusercontent.com/mjN6ctLMI3EepxMKVpcGAnaz3ukkBA994Y1GFDRaxynpgZW6UrJwTD5ncdaNeMx9E49KiQPdkdpC2IwM8uTUKu09E4nJJEa0UkCaYUOwwovXAwH4bcXwgP03LzMfRrRJm0riRgwAJkMYxPsplKklExtOIDdB7p1HcF4JR2OhC8\_Y\_M542PY1zap\_QLrQIw)
+![](<../../../../.gitbook/assets/Frame 1054.png>)
 
 \
-![](https://lh5.googleusercontent.com/uSwuZbrNY7zao28OaIGBiMeTt0IXmWZktnutsdOHIQCG0qJhomBocQ2hqf9l\_Z7ejoh9M7jt1jumXh40GmGd\_iCXvKivGJDVHIlejRLlhs83lLN34AQFZWv9MWNru0NEIm7rk45tCt\_JBJO2SGjAYy9wVoF3WwSBmSuavgsJxQL9u4izGfB1gOUYiAeffQ)
+![](<../../../../.gitbook/assets/Frame 1053.png>)
 
 Resolve Complaint
 
 If the complaint has been resolved, then the user must click on the "Resolve Complaint" button which opens this screen. There is an "Additional Comments" field in which the user can provide any remarks if he wants. At the bottom, there is a submit button that updates the complaint status as resolved.
 
-![](https://lh3.googleusercontent.com/63lOU1UE5ygWt5cVqnyzWwsa6NjrbWe3Hbd3O0a2bfvzCiQXqvrqQreE4dkJ1h6F8Bx2l57RRuMdc8tgbPPmwrjObiF9bcXIJ0qZ0eYAJ8NwwqoDoHUxwTwBZbD6ebWdk5vO5azrQRW3XxwIqpv\_8KBNUDlZ9-uz6t9W4ayJ\_7TGcSnQ2NFZGJwwBTDwuw)
+![](<../../../../.gitbook/assets/Screenshot (289).png>)
 
 Reject Complaint
 
 If the user has rejected any complaint, then she needs to select the reason for rejection from the dropdown. There is an additional comments field in which the user can provide any remarks if he wants. At the bottom, there is a submit button that updates the complaint status as rejected.
 
-![](https://lh4.googleusercontent.com/eTO3DZD21y9R36PzVCKhcPEMgnbYxKD2I3MRZXmkKJ8zsHAhheJAQGRPCMP\_jDBcFuGwkcjI\_q8ARyz-4RQdUVPefYYyzs9K\_40Um9g6xPBNOlnrYWhpqa32OWnndE7z3w\_bOocXDcOHyGlWrTfNscXbGiLf65ldSE0Tpt1eUxeAUiXWPhUzGGdWUpoghA)
+![](<../../../../.gitbook/assets/Screenshot (293).png>)
 
 Assign to P2
 
@@ -348,29 +352,27 @@ There is an additional comments field in which the user can provide any remarks 
 
 At the bottom, there is a cancel button which takes the user back to the complaints screen, and an assign button which assigns the complaint to the selected person.
 
-![](https://lh4.googleusercontent.com/6PpBGC808uwstKS5dMxbBvRLkgZ6O2g5PlZqDHGE0cTBu8DQdFVKVdsRpLMSX14nj8kJ0vWTu5262fJBtaZ1v6A5OPushhGlw1geggsBQjQ7EEc2qcH4UYG5Rt5aK800F6QOFehN-nYpvm47uvnvv4kI6jfYsJimjzvZFClo8CeTwl-Q3QYIvVlz2kOBhg)\
+![](<../../../../.gitbook/assets/Screenshot (290) (1).png>)\
 \
 Confirmation Screen
 
-If the complaint has been assigned successfully, then the first screen must appear. If the complaint could not be assigned, then the text must say, “Complaint Not Assigned.” There is a back to complaints button on both screens which navigates the user to the complaints screen.
-
-![](https://lh5.googleusercontent.com/Pfjeh5HGBODqcgV5f7Lbi-n3lDnh0aKSeViZuPM-kLnPKDhA\_nt19iqxqVVBrsMDBj7tjCWgoy-KoINqS3E4EEDTYdR8UwQlYW3MM84JnwOzVfjP645M2q1\_FeNv00IiX9T99FeU4CKVXgDa1C2xFMI0uU7npgJ7AKMoGuseTNMvinx64nhRY-QIx1Quow)\
+If the complaint has been assigned successfully, then the following screen must appear. If the complaint could not be assigned, then the text must say, “Complaint Not Assigned.”![](<../../../../.gitbook/assets/Screenshot (291) (1).png>)\
 
 
 New Complaint
 
 When the user clicks on the “New Complaint” button on the complaints screen, then this screen appears. The details captured are the same as that entered by the complainant. When the details are entered, the user needs to click on the submit button which opens the confirmation window over the same screen. If the user clicks on the cancel button, then she is navigated back to the complaints screen
 
-![](https://lh5.googleusercontent.com/RurBQArJceJzb4YsplA7RU47QcA-HRyLgeZbsXN1oQW-Tm-th1cdZtQ3ceRaWRP8lrmi6pgenNlEoHBznVQOsvpuBf7EBqfPJNb1wQEtZbrAKpSIQapGx6F6xwNMQgK8dbmYYwHrU6brWLbr6VCuqys3Ag6JRnBQk-hguo2n7lvj7K9rxoIr6-AonLr0Ew)\
+![](<../../../../.gitbook/assets/Desktop - 41 (1).png>)\
 
 
 Confirmation Screen
 
 When the user clicks on the submit button, the system confirms whether the complaint has been submitted successfully or not. There is a back to home button placed on both screens, clicking on which will navigate the user to the home screen of the helpdesk.
 
-![](https://lh4.googleusercontent.com/Mq44hartNKb5FGraapEHnHtf3nozeB\_PNDUQHMlcTbubOIkxDfb8wLuI8DvaNGvtbJ6cfIKPyhXA6UgoX7xcoBWsqAAhpdSmcoqo3t2s9FZHHsFomw671LoKOkLCCKq7DuKsekNzj6phk3FYMaDti0z6dZeqMauOms2oiKLhF-X47gFi-HvMpX-YA-NMVg)
+![](<../../../../.gitbook/assets/Desktop - 30.png>)
 
-![](https://lh6.googleusercontent.com/FONMRZDFCmkHIOL56kV7wKx858LxPo8BJWo7z6GOZgx29H\_OMECqpRlWx9KT8vq-UCraV9pruCuu38qUbxWj2HSZdbpacuiCwzjMgGzw5TmiWIMlg2z--CnS1UiaOecX6IgK4N96o-Ko1B3zXS4yr9EDt-ND1h6Iyy8rFurw46ZLp8eiSV1UI1l9LN8bpA)
+![](<../../../../.gitbook/assets/Desktop - 114.png>)
 
 ## Metrics to track: (WIP)
 

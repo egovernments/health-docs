@@ -94,11 +94,11 @@ When the user opens the application, it asks them to first select the language. 
 
 The user will be provided a unique system-generated ID and password manually for first-time login. After logging in, the user is taken to the password reset page where they need to enter a new password of their choice. The password reset is not in scope for V1.0. If a user enters an incorrect username, it should show an error message below the field saying “username does not match”. For an incorrect password, it should show the message “incorrect password” below the password field.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-20 at 1.53.16 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230512_232639.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
 If an existing user does not remember his/her password, they must click on “Forgot Password”. This will open a popup asking the user to contact the administrator. The ‘OK’ button will collapse the popup.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-20 at 1.53.24 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230512_232625.jpg" alt="" width="188"><figcaption></figcaption></figure>
 
 ### Reset Password (Not in V1.0)
 
@@ -118,7 +118,7 @@ If the user is assigned to multiple projects, they need to select a particular p
 * If the user is assigned multiple projects as mentioned above.
 * If the user has been assigned a project but later the project has been unassigned. In this case, if the user logs in and selects that project, an error message must appear stating “the project is not assigned to you, please select another project”. When the user clicks on the ‘OK’ button, he/she must be navigated to the updated project selection screen which must not display the unassigned project.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-20 at 1.56.50 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/IMG_20230512_232548 (2).jpg" alt="" width="188"><figcaption></figcaption></figure>
 
 ### Sync
 
