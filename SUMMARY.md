@@ -87,6 +87,7 @@
         * [User Login](products/health-campaign-management/frontline-workers-app/products-requirement-documents-prds/user-login.md)
     * [Campaign Management Dashboard](products/health-campaign-management/campaign-management-dashboard/README.md)
       * [Features](products/health-campaign-management/campaign-management-dashboard/features.md)
+      * [User Stories](products/health-campaign-management/campaign-management-dashboard/user-stories.md)
       * [User Interface Design](products/health-campaign-management/campaign-management-dashboard/user-interface-design.md)
       * [Dashboard User Manual](products/health-campaign-management/campaign-management-dashboard/dashboard-user-manual.md)
       * [Test Cases](products/health-campaign-management/campaign-management-dashboard/test-cases.md)
