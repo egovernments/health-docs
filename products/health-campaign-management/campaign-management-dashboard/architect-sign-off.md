@@ -32,8 +32,8 @@ Health Dashboard
 
 ### All Known Issues
 
-[HLM-2824](https://digit-discuss.atlassian.net/browse/HLM-2824) - Able to fill the checklist & sync, but the data is not reflecting in Kibana.\
+[HLM-2824](https://digit-discuss.atlassian.net/browse/HLM-2824) - Able to fill the checklist & sync, but the data is not reflecting in Kibana.
 
+### GO/No-Go:&#x20;
 
-### GO/No-Go: Go
-
+Go
