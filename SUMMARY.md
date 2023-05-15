@@ -103,7 +103,6 @@
       * [QA Sign-Off](products/health-campaign-management/campaign-management-dashboard/qa-sign-off.md)
       * [Product Requirement Document (PRD)](products/health-campaign-management/campaign-management-dashboard/product-requirement-document-prd.md)
 * [Program](program/README.md)
-  * [Customisation](program/customisation.md)
   * [Standard Operating Procedures (SOPs)](program/standard-operating-procedures-sops/README.md)
     * [SOP for Helpdesk Support](program/standard-operating-procedures-sops/sop-for-helpdesk-support.md)
     * [Training SOP](program/standard-operating-procedures-sops/training-sop.md)
