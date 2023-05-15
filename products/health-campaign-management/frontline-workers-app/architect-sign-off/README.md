@@ -57,6 +57,3 @@ Go
 ### Comments
 
 The modules are released with very few bugs. Performance testing was also performed on the bulk create APIs. Performance tests are not done on bulk update and delete APIs as they are designed the same as create APIs, and they are less used. The HCM v1.0 is released as per the architecture design.
-
-\
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

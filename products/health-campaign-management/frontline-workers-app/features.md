@@ -22,6 +22,4 @@ Following are the features for HCM Product:
 * Web portal for user management.
 * SOS: One-click call to the helpdesk.
 * Auto-sync capability to sync all data collected while offline.
-* In-app notification to prompt users to perform actions that are due.
-
-\
+* In-app notification to prompt users to perform actions that are due.\

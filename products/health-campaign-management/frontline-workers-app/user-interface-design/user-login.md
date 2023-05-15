@@ -56,6 +56,3 @@ If the data is not synced due to an error, it will show a popup stating “Sync 
 2. Close: Clicking on this will navigate the user back to the login page and he/she is required to log in again.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2023-03-20 at 2.01.17 PM.png" alt=""><figcaption></figcaption></figure>
-
-\
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

@@ -295,6 +295,3 @@ individual.producer.delete.topic=delete-individual-topic
 
 [https://www.postman.com/lunar-resonance-126497/workspace/hcm/collection/24751924-8dbf724a-ae3b-4bff-a07c-c314101594ce](https://www.postman.com/lunar-resonance-126497/workspace/hcm/collection/24751924-8dbf724a-ae3b-4bff-a07c-c314101594ce?ctx=documentation)
 
-
-
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

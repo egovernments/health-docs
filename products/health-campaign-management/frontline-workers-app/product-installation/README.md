@@ -123,7 +123,3 @@ Access needed to the following:&#x20;
 <figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-16 at 2.30.22 PM.png" alt=""><figcaption></figcaption></figure>
 
 * Check the status of Kubernetes to verify if the new pod is running or not.
-
-
-
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

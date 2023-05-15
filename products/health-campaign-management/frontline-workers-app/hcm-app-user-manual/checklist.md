@@ -71,4 +71,3 @@ File Path : [https://github.com/egovernments/health-campaign-field-worker-app/tr
 }
 </code></pre>                                                                                                                         |
 
-\

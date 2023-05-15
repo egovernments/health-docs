@@ -42,6 +42,3 @@ On the top right, the administrative area assigned to the user is displayed whic
 
 ![](https://lh5.googleusercontent.com/udAK7fXjKYNbp7wluN0jPezuHAOi9v7q\_8CKH9P1YqeGicnZFPFGIrEQ2e1TqTsTl0qOK113IIPFzqwzHwq0sk8v4BjsJ6hmOVbxdjLSaHcj\_t64WhwhcQ-pR6iDa0svc2FwJIU4AmxZk6KEmRyrdcY)
 
-
-
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._

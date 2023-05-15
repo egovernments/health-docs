@@ -11,5 +11,3 @@
 | Number of technical complaints raised           | Once per campaign | The number of issues logged using the app and on other means.                                                                                      | Direct querying / user interviews | Province |
 | Number of P1 bugs raised in production          | Once per campaign | <p><br></p>                                                                                                                                        | Direct querying                   | Province |
 
-\
-\

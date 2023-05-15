@@ -68,7 +68,6 @@
           * [User Management](products/health-campaign-management/frontline-workers-app/configuration/hcm-configuration/user-management/README.md)
             * [QA Sign-Off](products/health-campaign-management/frontline-workers-app/configuration/hcm-configuration/user-management/qa-sign-off.md)
         * [HCM Master Promotion Guide](products/health-campaign-management/frontline-workers-app/configuration/hcm-master-promotion-guide.md)
-      * [HCM Login Credentials](products/health-campaign-management/frontline-workers-app/hcm-login-credentials.md)
       * [Release Notes](products/health-campaign-management/frontline-workers-app/release-notes/README.md)
         * [Success Metrics](products/health-campaign-management/frontline-workers-app/release-notes/success-metrics.md)
       * [Product Sign-off](products/health-campaign-management/frontline-workers-app/product-sign-off.md)

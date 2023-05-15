@@ -88,7 +88,3 @@ The network manager component in the app acts as an interface between the rest o
 
 ![](https://lh6.googleusercontent.com/jJVEwSinPsrP8c30WrxkwmXFBTt5IolePEh1IxtOSwaO53VrehOdCmkCFU-q-DO0\_mBe9F0pemp0L5C8\_dmv-jfevQMxYlXeG5MPySWewi6JuLeXeAxE\_beOUDxkVemJMoiOOzjDXv55gD\_EinFQm59N1yZJlhAPtuIweGD4gp9tE6YB81\_dNYmc2uStKg)
 
-\
-
-
-[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/80x15.png)_​_](http://creativecommons.org/licenses/by/4.0/)_All content on this page by_ [_eGov Foundation_](https://egov.org.in/) _is licensed under a_ [_Creative Commons Attribution 4.0 International License_](http://creativecommons.org/licenses/by/4.0/)_._
