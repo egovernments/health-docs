@@ -55,7 +55,7 @@ The APIs will allow data and functionality to be reused across multiple departme
 ## Products
 
 * [Frontline Worker's App](products/health-campaign-management/frontline-workers-app/)
-* [HCM Dashboard](products/health-campaign-management/campaign-management-dashboard/configuration/hcm-dashboard-master-promotion-guide.md)
+* [HCM Dashboard](products/health-campaign-management/campaign-management-dashboard/)
 
 ## Program
 
