@@ -1,3 +1,0 @@
-# Operations Guide
-
-Coming soon

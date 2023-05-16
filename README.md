@@ -14,7 +14,7 @@ As platform adoption increases over time, it will continue to generate more real
 
 ### Need for DIGIT Health Platform
 
-Public health challenges are massive and complex. While many countries have limited capacity and resources to address such issues, the current approach to these challenges tends to strictly focus on delivering one specific outcome, driven by specific nodal agencies. Each program ends up replicating the same set of efforts and outputs. For example, health campaigns are typically categorized as per the diseases they aim to address - malaria, polio, etc. Each program involves a similar set of activities: planning, delivery and logistics, human resource management, monitoring and reporting. They suffer from low effectiveness due to the siloed and uncoordinated way in which they are funded, planned, executed, and monitored.&#x20;
+Public health challenges are massive and complex. While many countries have limited capacity and resources to address such issues, the current approach to these challenges tends to strictly focus on delivering one specific outcome, driven by specific nodal agencies. Each programme ends up replicating the same set of efforts and outputs. For example, health campaigns are typically categorised as per the diseases they aim to address - malaria, polio, etc. Each programme involves a similar set of activities: planning, delivery and logistics, human resource management, monitoring and reporting. They suffer from low effectiveness due to the siloed and uncoordinated way in which they are funded, planned, executed, and monitored.&#x20;
 
 Current digital efforts do not take a “whole of system view” and do not solve the cost of coordination and duplication issues. Each program also develops its own systems (MIS, apps, dashboards). Such siloed, solution-centric approaches and tools create a new set of problems and inefficiencies for countries:
 
@@ -57,7 +57,7 @@ The APIs will allow data and functionality to be reused across multiple departme
 * [Frontline Worker's App](products/health-campaign-management/frontline-workers-app/)
 * [HCM Dashboard](products/health-campaign-management/campaign-management-dashboard/)
 
-## Program
+## Programme
 
 The platform is designed to facilitate stakeholders with a digital system to manage and implement health campaign activities in Mozambique. Click [here](program/) to know more.&#x20;
 
