@@ -108,3 +108,4 @@
     * [Training SOP](program/standard-operating-procedures-sops/training-sop.md)
     * [SOP on Dry Run of HCM Mobile App on Ground](program/standard-operating-procedures-sops/sop-on-dry-run-of-hcm-mobile-app-on-ground.md)
   * [Program Roll-Out Plan](program/program-roll-out-plan.md)
+  * [UAT Plan](program/uat-plan.md)
