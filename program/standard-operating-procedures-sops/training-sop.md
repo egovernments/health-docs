@@ -20,6 +20,8 @@ The training SOP has been created to address the need of training the teams on t
 
 &#x20; b. Dashboard users
 
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 5.34.44 PM.png" alt=""><figcaption></figcaption></figure>
+
 #### Key stakeholders
 
 The following are the key participants/stakeholders for various levels of trainings:&#x20;
