@@ -15,3 +15,7 @@ The inventory management module of the HCM platform makes it easier to keep trac
 ## 7 Phases of Implementation
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-05-16 at 2.06.44 PM.png" alt=""><figcaption></figcaption></figure>
+
+## Programme Milestone
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-05-16 at 3.26.39 PM.png" alt=""><figcaption></figcaption></figure>
