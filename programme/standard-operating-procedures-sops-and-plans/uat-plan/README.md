@@ -8,7 +8,7 @@ It will ensure that the system satisfies the needs of the business as specified 
 
 ## UAT Methodology
 
-During the testing process, a pre-approved list of test cases/scripts will be executed to verify the behaviour and performance of various functionalities. The observations from the testing will be noted and classified as defects or enhancements. Some of the enhancements may be doable using configuration changes while others( Change Requests) may have to go through a change management process.
+During the testing process, a pre-approved list of test cases/scripts will be executed to verify the behaviour and performance of various functionalities. The observations from the testing will be noted and classified as defects or enhancements. Some of the enhancements may be doable using configuration changes while others( Change Requests) may have to go through a change management process. The UAT presentation deck was utilised for this purpose: [https://docs.google.com/presentation/d/1Z3KKXuEy41vw9YtJWrjqYDfjil89F6kIiCC\_2DLnorY/edit#slide=id.g238f467a117\_0\_0](https://docs.google.com/presentation/d/1Z3KKXuEy41vw9YtJWrjqYDfjil89F6kIiCC\_2DLnorY/edit#slide=id.g238f467a117\_0\_0)
 
 UAT observation classification:
 
@@ -26,7 +26,7 @@ Users will report feedback to the eGov team for documentation and escalation usi
 
 The various phases of UAT are shown in the below diagram:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 12.01.09 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-16 at 12.01.09 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Scope for UAT
 
@@ -171,7 +171,7 @@ Test team will be provided with instruction on how to effectively execute test s
 
 Defects must be clearly captured and escalated to ensure prompt resolution by development.  Each defect submitted by UAT will be assigned a priority, worked by development, resolved, and re-tested by UAT prior to closure.  The following is a snapshot of the standard defect lifecycle:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 12.21.14 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-16 at 12.21.14 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Prioritisation
 
@@ -193,7 +193,7 @@ Response (acknowledgement of the issue) Commitments for Defects
 
 CR must be clearly captured and reported for analysis to identify effort and Impact to the eGov team. Each CR submitted will be validated and categorised for acceptance and then assigned with a priority. The development team will work on it and will be made available for testing. Following is a snapshot of the standard CR lifecycle:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 12.23.25 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-16 at 12.23.25 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Categorisation&#x20;
 

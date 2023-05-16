@@ -87,29 +87,29 @@ The participants provided highly positive feedback, which was gathered through f
 
 ## SUS Questionnaire Responses
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.17.06 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.17.06 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.17.42 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.17.42 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.18.08 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.18.08 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.18.30 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.18.30 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.19.09 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.19.09 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.21.17 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.21.17 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.23.04 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.23.04 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.24.03 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.24.03 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.24.26 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.24.26 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.24.49 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.24.49 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### SUS Questionnaire Responses Interpretation
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.25.46 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.25.46 PM.png" alt=""><figcaption></figcaption></figure>
 
 The average SUS score for all participants was 81.25, which exceeded the standard acceptable range:&#x20;
 
@@ -125,15 +125,15 @@ The average SUS score for all participants was 81.25, which exceeded the standar
 
 ## UAT Process Feedback
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.29.26 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.29.26 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.29.33 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.29.33 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.30.22 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.30.22 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.30.33 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.30.33 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.31.09 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot 2023-05-16 at 1.31.09 PM.png" alt=""><figcaption></figcaption></figure>
 
 Open Suggestions
 

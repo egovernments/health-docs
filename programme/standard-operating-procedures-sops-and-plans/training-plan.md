@@ -1,4 +1,4 @@
-# Training SOP
+# Training Plan
 
 ## Overview
 

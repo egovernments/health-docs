@@ -1,4 +1,4 @@
-# Program
+# Programme
 
 ## Mozambique&#x20;
 
@@ -11,3 +11,7 @@ The HCM application is made up of various modules that serve different purposes,
 The registration and delivery management module is intended to assist distribution teams in their work by enabling them to register new households and maintain a record of the bed nets distributed to beneficiaries. Meanwhile, the supervision management module allows users to conduct periodic checks at different levels and update checklists for more effective monitoring of the campaign's goals.
 
 The inventory management module of the HCM platform makes it easier to keep track of bed net stocks by allowing inventory managers to record stock movements, including stock entering the warehouse, being sent to the field and returned after each campaign. The platform also provides an interactive, real-time dashboard with the capability to drill-down to the province and district level details, enabling administrators at all levels to monitor the progress and effectiveness of the campaign and visualise the distribution of bed nets.
+
+## 7 Phases of Implementation
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-05-16 at 2.06.44 PM.png" alt=""><figcaption></figcaption></figure>
