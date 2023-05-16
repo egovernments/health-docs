@@ -45,8 +45,8 @@ Health campaigns are categorised based on the following characteristics:&#x20;
 
 Click on the links below to learn more about the products:
 
-* [Frontline worker's app](frontline-workers-app/)
-* Dashboard (Coming soon)
+* [Frontline Worker's App](frontline-workers-app/)
+* [Campaign Management Dashboard ](campaign-management-dashboard/)
 
 
 

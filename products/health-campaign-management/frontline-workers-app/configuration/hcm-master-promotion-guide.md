@@ -6,7 +6,7 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 
 ## Table of Contents
 
-### 1. Release Notes for – HCM 1.1&#x20;
+### 1. Release Notes for HCM&#x20;
 
 * Release features&#x20;
 * List of Core DIGIT services used
@@ -41,13 +41,13 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 * Deploy HCM services&#x20;
 * UI/APK promotion guide&#x20;
 
-## 1. Release Notes: HCM 1.1
+## 1. Release Notes: HCM&#x20;
 
 | Version     | Date       | Description                                  |
 | ----------- | ---------- | -------------------------------------------- |
 | Version 1.1 | 11/05/2023 | This version covers the HCM promotion guide. |
 
-### Release Features: List of core digit services used
+### Release Features: List of Core DIGIT services used
 
 | Service            | Image                                                          |
 | ------------------ | -------------------------------------------------------------- |

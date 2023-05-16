@@ -10,7 +10,7 @@ Apart from performance tracking, the dashboard provides campaign supervisors wit
 
 The HCM Dashboard is purposefully designed to be user-friendly, with an intuitive and easy-to-navigate interface that requires minimal training to get started. Its robust features and user-centric design empower campaign supervisors to efficiently monitor, evaluate, and troubleshoot campaign performance. With this powerful tool, supervisors can effectively drive the success of their health campaigns, making informed decisions and taking corrective actions as needed. The HCM Dashboard is a valuable asset for campaign supervisors, ensuring a seamless and effective management of health campaigns.
 
-## Section Overview (Coming soon)
+## Section Overview&#x20;
 
 [Release Notes](release-notes.md)
 
