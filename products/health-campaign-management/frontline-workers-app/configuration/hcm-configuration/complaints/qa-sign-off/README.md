@@ -13,38 +13,6 @@ Information regarding sign-off modules and features for Complaints (PGR) - flutt
 [https://digit-discuss.atlassian.net/browse/HLM-2468](https://digit-discuss.atlassian.net/browse/HLM-2468) - Complaint Actions: Resolve, Reject, Assign (For Web view)\
 [https://digit-discuss.atlassian.net/browse/HLM-2677](https://digit-discuss.atlassian.net/browse/HLM-2677) - Logging Complaints through web app
 
-## Credentials
-
-### QA
-
-| URL: [https://health-qa.digit.org/digit-ui/employee](https://health-qa.digit.org/digit-ui/employee) |                 |           |         |
-| --------------------------------------------------------------------------------------------------- | --------------- | --------- | ------- |
-|                                                                                                     |                 |           |         |
-| Users                                                                                               |                 |           |         |
-| Role                                                                                                | Username        | Password  | City    |
-| System Admin                                                                                        | sysadmin        | eGov@4321 | Default |
-| Helpdesk User Tech                                                                                  | EMP-defa-000004 | eGov@4321 | Default |
-| L2 Support User Tech                                                                                | EMP-defa-000005 | eGov@4321 | Default |
-| Helpdesk User Warehouse                                                                             | EMP-defa-000006 | eGov@4321 | Default |
-| L2 Support User Warehouse                                                                           | EMP-defa-000007 | eGov@4321 | Default |
-| Helpdesk User Admin                                                                                 | EMP-defa-000008 | eGov@4321 | Default |
-| L2 Support User Admin                                                                               | EMP-defa-000009 | eGov@4321 | Default |
-
-### UAT
-
-| URL: [https://health-demo.digit.org/digit-ui/employee/user/login](https://health-demo.digit.org/digit-ui/employee) |                 |           |         |
-| ------------------------------------------------------------------------------------------------------------------ | --------------- | --------- | ------- |
-|                                                                                                                    |                 |           |         |
-| Users                                                                                                              |                 |           |         |
-| Role                                                                                                               | Username        | Password  | City    |
-| System Admin                                                                                                       | 3989999996      | eGov@4321 | Default |
-| Helpdesk User Tech                                                                                                 | EMP-defa-000002 | eGov@4321 | Default |
-| L2 Support User Tech                                                                                               | EMP-defa-000001 | eGov@4321 | Default |
-| Helpdesk User Warehouse                                                                                            | EMP-defa-000003 | eGov@4321 | Default |
-| L2 Support User Warehouse                                                                                          | EMP-defa-000004 | eGov@4321 | Default |
-| Helpdesk User Admin                                                                                                | EMP-defa-000005 | eGov@4321 | Default |
-| L2 Support User Admin                                                                                              | EMP-defa-000006 | eGov@4321 | Default |
-
 ## Test cases executed&#x20;
 
 UI Test cases executed: Click [here](test-cases.md) for details.
