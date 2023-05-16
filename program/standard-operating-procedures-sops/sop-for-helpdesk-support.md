@@ -123,20 +123,6 @@ The helpdesk executive will:&#x20;
 * In case they need eGov’s support, they will assign the tickets to eGov.
 * Once resolved or closed, they will inform the local supervisor or user as appropriate.
 
-## Roles and Responsibilities Between NMCP, CHAI and eGov
-
-| <p><br></p> | <p><br></p>                                                                         | Owned by   | Supported by |
-| ----------- | ----------------------------------------------------------------------------------- | ---------- | ------------ |
-| <p><br></p> | Central Helpdesk team in Maputo                                                     | CHAI, NMCP | eGov         |
-| <p><br></p> | Remote DIGIT support                                                                | eGov       | CHAI         |
-| <p><br></p> | Staffing of operational support team                                                | NMCP       | CHAI         |
-| <p><br></p> | Tool for recording complaints                                                       | eGov       | CHAI         |
-| <p><br></p> | Helpline number provisioning                                                        | NMCP       | CHAI         |
-| <p><br></p> | Helpline email provisioning                                                         | NMCP       | CHAI         |
-| <p><br></p> | Office space and Infrastructure (call centre) for the helpdesk team (in Mozambique) | NMCP       | CHAI         |
-| <p><br></p> | Training of helpdesk staff on DIGIT and complaints portal                           | eGov       | CHAI / NMCP  |
-| <p><br></p> | Payment of helpdesk staff                                                           | CHAI       | <p><br></p>  |
-
 ## For discussion/Open questions
 
 1. Will the helpdesk staff be able to record the issues in the complaints tool in English?
