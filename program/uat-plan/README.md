@@ -26,7 +26,7 @@ Users will report feedback to the eGov team for documentation and escalation usi
 
 The various phases of UAT are shown in the below diagram:
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-05-16 at 12.01.09 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 12.01.09 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### Scope for UAT
 
@@ -143,3 +143,64 @@ All core UAT activities along with the deliverable dates are described in the be
 | Incorporating any minor suggestions arising out of second round of UAT                                                                                                                                                                      | eGov                         | 14-June-23  | 20-June-23            |
 | <p>Reviewing the test results and providing final sign-off* in the second round of UAT .</p><p>Final sign-off : This would indicate that application is fit to be used during the Group4 distribution and no more changes are required.</p> | eGov                         | <p><br></p> | 21-June-23            |
 
+### UAT Sign-off&#x20;
+
+* The mutually agreed defects/CR from UAT 1 will be re-tested in UAT 2.&#x20;
+* The sign-off shall be provided at the end of UAT 2 by NMCP via an email communication or official orders/memo to the eGov.
+* Post sign-off the application will be ready for the deployment in the production environment.
+
+## UA Test  Cases
+
+Test cases provide a high-level description of the functionality to be tested.  All regression and new functionality test cases are contained in the Excel spreadsheet “UA Test Cases” available at: \[insert hyperlink to UAT folder in Project Directory here]. &#x20;
+
+The team will leverage relevant QA test cases for project specific functionality.  Each test case based on new functionality will reference a specific functional requirement.
+
+Each script contains: test case number, test description, requirement number, action to be performed, test data to be utilized, expected results, error descriptions (if applicable), pass/fail results, date tested, and any additional comments from the UA tester.
+
+The UA test scripts are contained within the UAT test case spreadsheet and can be accessed via hyperlink from each individual test case.
+
+## UAT Feedback&#x20;
+
+Defects and Change Requests will be entered and tracked in JIRA by the eGov team during the UAT process.  Each entry will include detailed information about each defect/CR.
+
+### UAT Defect/CR Tracking
+
+Test team will be provided with instruction on how to effectively execute test scripts, as well identify, capture, and report defects/observations by the eGov team at the beginning of the UAT session. Test team will present their findings during the UAT session.&#x20;
+
+### UAT Defect Life Cycle&#x20;
+
+Defects must be clearly captured and escalated to ensure prompt resolution by development.  Each defect submitted by UAT will be assigned a priority, worked by development, resolved, and re-tested by UAT prior to closure.  The following is a snapshot of the standard defect lifecycle:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 12.21.14 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Prioritisation
+
+eGov and NMCP together will prioritise and classify defects.  Defects found in UAT can be assigned one of three (3) levels of severity:
+
+* P1, Work Halted – Testing defects that due to the complexity of the function or the scheduled dates are putting the implementation date at risk.  No workaround exists.
+* P2, Work Slowed – Testing defects occurring in a less complex function of the application with sufficient time to resolve before the implementation date – but must be implemented as scheduled.  A workaround has been identified and is listed in the defect.
+* P3 and lower, Work Unaffected – Testing defects occurring in a function that are simple to fix or could be excluded if not resolved by the scheduled implementation date.
+
+Response (acknowledgement of the issue) Commitments for Defects
+
+| Severity                      | Description                                                                                                      | Response SLA |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------ |
+| P1, Work Halted               | Critical application outage impacting service for which the cause is unknown. No bypass or workaround available. | 4 hours      |
+| P2, Work Slowed               | A key component of the application is degraded, unusable or unavailable, some users affected.                    | 1 day        |
+| P3 and lower, Work Unaffected | A component of the application is degraded, which causes a minor inconvenience, but a workaround is available.   | 2 days       |
+
+### UAT Change Request Life Cycle&#x20;
+
+CR must be clearly captured and reported for analysis to identify effort and Impact to the eGov team. Each CR submitted will be validated and categorised for acceptance and then assigned with a priority. The development team will work on it and will be made available for testing. Following is a snapshot of the standard CR lifecycle:
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 12.23.25 PM.png" alt=""><figcaption></figcaption></figure>
+
+### Categorisation&#x20;
+
+eGov in consultation with NMCP will decide acceptance and categorisation of change requests. Change requests found in UAT can be assigned one of three (3) levels of category:
+
+* Must Have – Change requests that are needed for the success of a campaign. No workaround exists.
+* Should Have – Change requests that are required for better tracking and monitoring and will increase the ease of use of the system for users. A workaround has been identified and is listed in the CR.
+* Good to Have – Change requests that are simply for better visualisation and reporting. It could be excluded if not resolved by the scheduled implementation date.
+
+eGov to endeavour to cover Must Have changes before distribution. Lower priority changes will be taken through the eGov Gating process for planning subsequent releases
