@@ -113,6 +113,7 @@
         * [System User Setup](programme/standard-operating-procedures-sops-and-plans/user-management-sop/master-data-collection-template/system-user-setup.md)
         * [Facility](programme/standard-operating-procedures-sops-and-plans/user-management-sop/master-data-collection-template/facility.md)
         * [Product](programme/standard-operating-procedures-sops-and-plans/user-management-sop/master-data-collection-template/product.md)
+    * [Master Data Management SOP](programme/standard-operating-procedures-sops-and-plans/master-data-management-sop.md)
     * [Training Plan](program/standard-operating-procedures-sops/training-sop.md)
     * [Field Test Plan](program/standard-operating-procedures-sops/sop-on-dry-run-of-hcm-mobile-app-on-ground.md)
     * [Programme Roll-Out Plan](programme/standard-operating-procedures-sops-and-plans/programme-roll-out-plan.md)
