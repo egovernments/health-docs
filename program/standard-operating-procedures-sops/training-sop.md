@@ -42,7 +42,7 @@ Training approaches for the master training:
 Training approaches for the central and provincial level ToT:
 
 * MISAU staff leading with CHAI and eGov support.
-* Training will be held in Portuguese.s
+* Training will be held in Portuguese.
 
 ## Training Assets
 
