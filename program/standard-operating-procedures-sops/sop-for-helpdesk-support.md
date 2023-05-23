@@ -80,7 +80,7 @@ India: 10:00AM – 02:30 AM IST (Post midnight)
 
 ## Resolution Time
 
-The primary goal of the helpdesk is to restore normal operations at the earliest possible, and with a minimum impact.&#x20;
+The primary goal of the helpdesk is to restore normal operations at the earliest possible, and with minimum impact.&#x20;
 
 Critical app-related issues that cannot be resolved within the campaign duration will be shared with eGov, which will be picked up immediately after the campaign for the second round of pilot in Group V.&#x20;
 
@@ -107,7 +107,7 @@ The helpdesk team will have following profiles
 
 The helpdesk operations manager will:&#x20;
 
-\- Have access to all open tickets and maintain operational control over the helpdesk. He/she shall ensure that the helpdesk functions as per the defined rules. In addition to this, the helpdesk operations manager will also be responsible for the management of the ticketing software. He/she will be able to perform the following functions on the tickets:
+\- Have access to all open tickets, and maintain operational control over the helpdesk. He/she will ensure that the helpdesk functions as per the defined rules. Additionally, the helpdesk operations manager will be responsible for the management of the ticketing software. He/she will be able to perform the following functions on the tickets:
 
 * Log a new ticket.
 * Provide any comments/updates on a ticket.
@@ -128,8 +128,8 @@ The helpdesk executive will:&#x20;
 1. Will the helpdesk staff be able to record the issues in the complaints tool in English?
 2. What would be the process for operational/non-tech issue resolution since the helpdesk will get all sorts of queries. Are there programme people from NMCP as part of the helpdesk? There needs to be standard responses from the helpdesk personnel to redirect the callers to the right person. What would that response be?
 3. It has been assumed that a helpline number for queries being reported over the calls to the helpdesk. Please confirm if this is correct?
-4. Can the help desk have a WhatsApp number or it would be a call centre number such as 100/101? We are assuming that email will not be a mode of communication between users and the  helpdesk team, i.e., complaints will neither be reported over mail nor the resolution informed over mail. Once an issue has been resolved, the helpdesk staff will call the reporter and inform them about the fix.
-5. It is assumed that help desk issues and calls from distribution teams will typically happen only when the teams return to their base locations and are under network coverage area.
+4. Can the helpdesk have a WhatsApp number or would itbe a call centre number such as 100/101? We are assuming that email will not be a mode of communication between users and the  helpdesk team, that is, complaints will neither be reported over mail nor the resolution informed over mail. Once an issue has been resolved, the helpdesk staff will call the reporter and inform them about the fix.
+5. It is assumed that helpdesk issues and calls from distribution teams will typically happen only when the teams return to their base locations and are under network coverage area.
 6. The tickets that get assigned to the L3 support team staffed by eGov , will be recorded in the complaints module, and the eGov team will update status in this same tool.&#x20;
 7. CHAI will have to share the details of the helpdesk support staff with eGov for creating their logins.
 8. What would happen if the issue is not possible to resolve within the campaign period, assuming no software upgrades will be possible during this period?

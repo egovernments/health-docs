@@ -2,7 +2,7 @@
 
 ### Sources of master data&#x20;
 
-1. Master data for Tete for the group 4 campaign. Note : Master data would be campaign specific as village boundaries and user lists will change from campaign to campaign.
+1. Master data for Tete for the group 4 campaign. Note: Master data would be campaign-specific as village boundaries and user lists will change from campaign to campaign.
 2. Master data imported from DHIS2. This would be for other two provinces and be used for dashboard visualisation.
 
 ### &#x20;Types of Master Data&#x20;
@@ -17,7 +17,7 @@
 | Complaints/ Type                                                                                                                                                                                | <p><br></p>                                                                                                                                                       | <p><br></p>              | <p><br></p>                     | <p><br></p>                                |
 | Role - action mapping                                                                                                                                                                           | <p><br></p>                                                                                                                                                       | <p><br></p>              | <p><br></p>                     | <p><br></p>                                |
 | Campaign setup                                                                                                                                                                                  | <p><br></p>                                                                                                                                                       | <p><br></p>              | <p><br></p>                     | <p><br></p>                                |
-| Delivery procedure-1 bednet for 2 individuals to a maximum of 3 bednets per household                                                                                                           | Fixed for a campaign                                                                                                                                              | <p><br></p>              | <p><br></p>                     | <p><br></p>                                |
+| Delivery procedure-1 bed net for 2 individuals to a maximum of 3 bed nets per household                                                                                                         | Fixed for a campaign                                                                                                                                              | <p><br></p>              | <p><br></p>                     | <p><br></p>                                |
 | <p>Registration procedure-</p><p>Do we want to limit the numbers of households in a household.</p>                                                                                              | Fixed for a campaign                                                                                                                                              | <p><br></p>              | <p><br></p>                     | <p><br></p>                                |
 
 ## Master Data Collection template
@@ -26,25 +26,25 @@ Click [here](master-data-management-sop.md#master-data-collection-template) to v
 
 ## Master Data review process and Upload process&#x20;
 
-1\. Finalise the data gathering template
+1\. Finalise the data gathering template.
 
-2\. Sharing templates to CHAI and having a run through
+2\. Sharing templates to CHAI and having a run through.
 
-3\. Have an agreement with CHAI on the lead time for sharing the data
+3\. Have an agreement with CHAI on the lead time for sharing the data.
 
 4\. CHAI to review the data internally before sharing it back with eGov. I am expecting these data to be in Portuguese.
 
-5\. Store all the data in appropriate shared folders
+5\. Store all the data in appropriate shared folders.
 
-6\. Abhishek or Naved to review the data shared and approve if all required values are present
+6\. Abhishek or Naved to review the data shared and approve if all required values are present.
 
-7\. If there are mistakes, duplicates, missing fields etc. mark them and share it back with CHAI
+7\. If there are mistakes, duplicates, missing fields, etc., mark them and share it back with CHAI.
 
-8\. Once the approved data is ready, this has to be shared with the implementation engineers for loading to Dev
+8\. Once the approved data is ready, this has to be shared with the implementation engineers for loading to dev.
 
 9\. Use the data load utility (if ready) or load manually.
 
-10\. Verify the application using the new data
+10\. Verify the application using the new data.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 6.17.45 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -53,8 +53,8 @@ Click [here](master-data-management-sop.md#master-data-collection-template) to v
 Handling DHIS2 master data updation:
 
 1. How is master data updation handled in DHIS2 application?
-2. How does CHAI get to know that a certain master data has been changed/updated and typically how much time will be available to update it in the HCM application.
-3. Master data received from CHAI would be in Portuguese? It is understood that eGov won't be able to do any validation on accuracy of this.
+2. How does CHAI get to know that a certain master data has been changed/updated, and typically how much time will be available to update it in the HCM application?
+3. Master data received from CHAI would be in Portuguese? It is understood that eGov will not be able to do any validation on accuracy of this.
 4. Will helpdesk play any role in master data updation or communicating the changes to eGov.
-5. When the Master Data update/change happens how do the devices get re-provisioned with the latest set of master data( in case of DHIS2). eGov-CHAI will need to draft a strategy around this.&#x20;
-6. Can we arrive at default values for missing master data in agreement with CHAI.
+5. When the master data update/change happens, how do the devices get re-provisioned with the latest set of master data( in case of DHIS2). eGov-CHAI will need to draft a strategy around this?&#x20;
+6. Can we arrive at default values for missing master data in agreement with CHAI?
