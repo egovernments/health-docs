@@ -4,6 +4,14 @@ Here are the articles in this section:&#x20;
 
 [SOP for Helpdesk Support](sop-for-helpdesk-support.md)
 
-[Training SOP](training-sop.md)
+[User Management SOP](../../programme/standard-operating-procedures-sops-and-plans/user-management-sop/)
 
-[SOP on Dry Run of HCM Mobile App on Ground](sop-on-dry-run-of-hcm-mobile-app-on-ground.md)
+[Master Data Management SOP](../../programme/standard-operating-procedures-sops-and-plans/master-data-management-sop.md)
+
+[Training Plan](training-sop.md)
+
+[Field Test Plan](sop-on-dry-run-of-hcm-mobile-app-on-ground.md)
+
+[Programme Roll-Out Plan](../../programme/standard-operating-procedures-sops-and-plans/programme-roll-out-plan.md)
+
+[UAT Plan](../../programme/standard-operating-procedures-sops-and-plans/uat-plan/)

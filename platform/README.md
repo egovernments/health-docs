@@ -30,10 +30,6 @@ The articles in this section includes:
 [configuration](configuration/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 {% content-ref url="development-guide.md" %}
 [development-guide.md](development-guide.md)
 {% endcontent-ref %}
