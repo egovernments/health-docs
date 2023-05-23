@@ -4,7 +4,7 @@
   * [Roadmap](introducing-digit-health-platform/roadmap.md)
 * [Platform](platform/README.md)
   * [Release Notes](platform/release-notes.md)
-    * [Gate 2 Release Checklist: For Frontline Worker's App](platform/release-notes/gate-2-release-checklist.md)
+    * [Gate 2 Release Checklist: For Frontline Worker's App](platform/release-notes/gate-2-release-checklist-for-frontline-workers-app.md)
     * [Implementation Checklist](platform/release-notes/implementation-checklist.md)
     * [Gate 2 Release Checklist: For Complaints, User Management & Dashboard](platform/release-notes/gate-2-checklist-complaints-user-management-and-dashboard.md)
   * [Platform Features](platform/platform-features.md)
