@@ -2,9 +2,9 @@
 
 ## Objective
 
-The purpose of this document is to outline the User Acceptance Testing (UAT) process for the DIGIT-HCM platform rollout in Mozambique as part of the Group IV distribution in the Tete province. This will enable the NMCP users to validate that the HCM software meets the agreed upon acceptance criteria for various functionalities.
+The purpose of this document is to outline the User Acceptance Testing (UAT) process for the DIGIT-HCM platform rollout in Mozambique as part of the Group IV distribution in Tete province. This will enable NMCP users to validate that the HCM software meets the agreed upon acceptance criteria for various functionalities.
 
-It will ensure that the system satisfies the needs of the business as specified in the functional requirements(PRD) and provides confidence in its use. It will also help to identify defects with associated risks and suggest enhancements(change requests), communicate all known defects/enhancements to the project team, and ensure that all issues are addressed in an appropriate manner prior to go-live.
+It will ensure that the system satisfies the needs of the business as specified in the functional requirements (product requirement document or PRD) and provides confidence in its use. It will also help to identify defects with associated risks, and suggest enhancements (change requests), communicate all known defects/enhancements to the project team, and ensure that all issues are addressed in an appropriate manner before go-live.
 
 ## UAT Methodology
 
@@ -15,12 +15,12 @@ UAT observation classification:
 | # | Observation Type     | Description                                                                                                                                         | Addressing Mechanism                                                                                                                                                                                                                                                                                            |
 | - | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1 | Defects              | Any observation pertaining to a feature or functionality not working as expected or agreed at the time of scope review, will be classified as issue | The observations classified as defects will be taken up by the eGov program team for further validation, prioritisation and fixing. Minor issues originating due to incorrect configurations or erroneous labels, or translations will be fixed and be made available for re-testing during the next UAT cycle. |
-| 2 | Change Requests (CR) | Any recommendations to enable or disable a functionality from the initial requirements or a new functionality to be added                           | These will be handled via Change control Process as per the SoP defined and will be evaluated based on their impact and effort.                                                                                                                                                                                 |
+| 2 | Change Requests (CR) | Any recommendations to enable or disable a functionality from the initial requirements or a new functionality to be added                           | These will be handled via the change control process as per the SoP defined, and will be evaluated based on their impact and effort.                                                                                                                                                                            |
 
 \
-The UAT team will execute all the test scripts referenced in section 6.0.  Users may also perform additional tests not detailed in the plan but remain relevant and within the scope of the project. &#x20;
+The UAT team will execute all the test scripts.  Users may also perform additional tests not detailed in the plan, but remain relevant and within the scope of the project. &#x20;
 
-Users will report feedback to the eGov team for documentation and escalation using a google sheet. These defects will be described, prioritised, and tracked by using screen captures, verbiage, and steps necessary for the development team to reproduce the defect. For change requests the requirements will be described, analysed, prioritised and tracked.  Information on defect  and CR processing can be found in section 7.0.
+Users will report feedback to the eGov team for documentation and escalation using a Google sheet. These defects will be described, prioritised, and tracked by using screen captures, verbiage, and steps necessary for the development team to reproduce the defect. For change requests the requirements will be described, analysed, prioritised and tracked. &#x20;
 
 ## Test Phases
 
@@ -30,7 +30,7 @@ The various phases of UAT are shown in the below diagram:
 
 ### Scope for UAT
 
-UAT will be conducted in 2 phases with the below mentioned scope
+UAT will be conducted in 2 phases with the below mentioned scope:
 
 | Test Phases | Tracks                                   | Scope                                                                                             |
 | ----------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -84,21 +84,21 @@ Following is the list of prerequisites for conducting the UAT:
 
 ### UAT Environment
 
-The UAT environment will be similar to the production environment in terms of specifications,  and will be provided by eGov, so that accurate assumptions can be drawn regarding the application’s performance. Applicable IP addresses and URLs will be provided by eGov team to the UAT Team and all the mobiles will be configured for access to the test environment.
+The UAT environment will be similar to the production environment in terms of specifications, and will be provided by eGov, so that accurate assumptions can be drawn regarding the application’s performance. Applicable IP addresses and URLs will be provided by eGov team to the UAT Team and all the mobiles will be configured for access to the test environment.
 
 ### UAT Process
 
-Each test participant will be provided with a checklist to verify access to the applications within the defined scope of testing.  The tester will then login, perform the prescribed steps and generate the expected results for each activity.  Any feature identified as missing or bug during testing from the UAT environment should be reported back to eGov.
+Each test participant will be provided with a checklist to verify access to the applications within the defined scope of testing. The tester will then login, perform the prescribed steps, and generate the expected results for each activity.  Any feature identified as missing or bug during testing from the UAT environment should be reported back to eGov.
 
 ### UAT Data
 
-Access to test data is a vital component in conducting a comprehensive test of the system.  All UAT participants will require usage of test accounts and other pertinent test data which should be provided by NMCP upon request.  All user roles should fully emulate production in the UAT path. The test accounts and role mapping shall be done for the users identified by eGov. Following are sample test data for UA testing:
+Access to test data is a vital component in conducting a comprehensive test of the system.  All UAT participants will require usage of test accounts and other pertinent test data which should be provided by NMCP upon request. All user roles should fully emulate production in the UAT path. The test accounts and role mapping shall be done for the users identified by eGov. Following are sample test data for UA testing:
 
-* Sample Master Data
+* Sample master data
 
 &#x20;      \- Users data for test login creation
 
-&#x20;      \- Location master (AP/Locality/Village )
+&#x20;      \- Location master (AP/locality/village)
 
 &#x20;      \- Inventory module master (warehouse+product)
 
@@ -106,10 +106,10 @@ Access to test data is a vital component in conducting a comprehensive test of t
 
 The test team is composed of members who possess a knowledge of the operations and processes on the ground. &#x20;
 
-1. These team members will be able to initiate test input, review the results,&#x20;
-2. Have prior experience/learnings from campaign digitisation in Mozambique&#x20;
+1. These team members will be able to initiate test input, review the results.
+2. Have prior experience/learnings from campaign digitisation in Mozambique.&#x20;
 
-All team members will be presented by the eGov team with an overview of the test process and what their specific role in UAT will be.  The eGov team will oversee testing by assigning scripts to testers, providing general support, and serving as the primary UAT contact point throughout the test cycle.
+All team members will be presented by the eGov team with an overview of the test process and what their specific role in UAT will be. The eGov team will oversee testing by assigning scripts to testers, providing general support, and serving as the primary UAT contact point throughout the test cycle.
 
 ### UAT Deliverables&#x20;
 
@@ -137,7 +137,7 @@ All core UAT activities along with the deliverable dates are described in the be
 | Nomination of UAT participants so that user accounts can be created                                                                                                                                                                         | NMCP/DIS/DTIC                | 5-June-23   | 7-June-23             |
 | Arrangement of venue and other logistics for UAT session                                                                                                                                                                                    | NMCP                         | 5-June-23   | 7-June-23             |
 | Readiness of the UAT server instance                                                                                                                                                                                                        | eGov                         | 5-June-23   | 7-June-23             |
-| Installing test version of the HCM application in test phones                                                                                                                                                                               | CHAI                         | 8-June-23   | 9-June-23             |
+| Installing the test version of the HCM application in test phones                                                                                                                                                                           | CHAI                         | 8-June-23   | 9-June-23             |
 | Conducting the second round of UAT testing along with NMCP stakeholders                                                                                                                                                                     | eGov, NMCP, DIS , DTIC, CHAI | 12-Jun-23   | 13-Jun-23             |
 | Collation and triaging of UAT feedback and communication to NMCP                                                                                                                                                                            | eGov                         | 14-June-23  | 16-June-23            |
 | Incorporating any minor suggestions arising out of second round of UAT                                                                                                                                                                      | eGov                         | 14-June-23  | 20-June-23            |
@@ -161,11 +161,11 @@ The UA test scripts are contained within the UAT test case spreadsheet and can b
 
 ## UAT Feedback&#x20;
 
-Defects and Change Requests will be entered and tracked in JIRA by the eGov team during the UAT process.  Each entry will include detailed information about each defect/CR.
+Defects and change requests will be entered and tracked in JIRA by the eGov team during the UAT process. Each entry will include detailed information about each defect/CR.
 
 ### UAT Defect/CR Tracking
 
-Test team will be provided with instruction on how to effectively execute test scripts, as well identify, capture, and report defects/observations by the eGov team at the beginning of the UAT session. Test team will present their findings during the UAT session.&#x20;
+The test team will be provided with instructions on how to effectively execute test scripts, as well identify, capture, and report defects/observations by the eGov team at the beginning of the UAT session. The test team will present their findings during the UAT session.&#x20;
 
 ### UAT Defect Life Cycle&#x20;
 
@@ -197,10 +197,10 @@ CR must be clearly captured and reported for analysis to identify effort and Imp
 
 ### Categorisation&#x20;
 
-eGov in consultation with NMCP will decide acceptance and categorisation of change requests. Change requests found in UAT can be assigned one of three (3) levels of category:
+eGov in consultation with NMCP will decide the acceptance and categorisation of change requests. Change requests found in UAT can be assigned one of three (3) levels of category:
 
 * Must Have – Change requests that are needed for the success of a campaign. No workaround exists.
 * Should Have – Change requests that are required for better tracking and monitoring and will increase the ease of use of the system for users. A workaround has been identified and is listed in the CR.
 * Good to Have – Change requests that are simply for better visualisation and reporting. It could be excluded if not resolved by the scheduled implementation date.
 
-eGov to endeavour to cover Must Have changes before distribution. Lower priority changes will be taken through the eGov Gating process for planning subsequent releases
+eGov to endeavour to cover "Must Have" changes before distribution. Lower priority changes will be taken through the eGov Gating process for planning subsequent releases

@@ -19,11 +19,11 @@ Test cases provide a high-level description of the functionality to be tested. T
 
 #### Functionality
 
-Every new function or functionality must be tested before release, and most need to be continuously tested.
+Every new function or functionality must be tested before the release, and most need to be continuously tested.
 
 Steps:
 
-* Identify name of the function or feature.
+* Identify the name of the function or feature.
 * Pre-conditions for being able to test it (such as being logged in as a user with a certain access level or paid subscription plan).
 * The steps required to test it.
 * The expected result.
@@ -40,13 +40,13 @@ Steps:
 
 #### Synch capability&#x20;
 
-Synch capability refers to syncing data from a remote server to a mobile device and stores the data locally.
+This refers to syncing data from a remote server to a mobile device and stores the data locally.
 
 Steps:
 
-* Identify how the data is synchronisation in offline and Online mode.
+* Identify how the data is synchronised in the offline and online modes.
 * Understand the time period which is required for synchronising data.
-* Identify the steps required to test it and expected results.
+* Identify the steps required to test it, and the expected results.
 
 ## Infrastructure
 
@@ -87,7 +87,7 @@ The test environment (sometimes referred to as a test bed) must be configured ac
 
 #### Operational
 
-Operational testing refers to the evaluation of a software application prior to the production phase.
+Operational testing refers to the evaluation of a software application before the production phase.
 
 Steps:
 
