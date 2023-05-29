@@ -129,4 +129,5 @@
           * [Plan Dates](programme/standard-operating-procedures-sops-and-plans/uat-plan/uat-1/user-acceptance-test-report/plan-dates.md)
       * [UAT 2](programme/standard-operating-procedures-sops-and-plans/uat-plan/uat-2.md)
   * [Monitoring and Evaluation (M\&E) Tools](programme/monitoring-and-evaluation-m-and-e-tools.md)
+  * [Implementation Checklist](programme/implementation-checklist.md)
   * [DIGIT Pre-Training Tutorials](programme/digit-pre-training-tutorials.md)
