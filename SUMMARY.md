@@ -10,6 +10,7 @@
   * [Platform Features](platform/platform-features.md)
   * [Architecture](platform/architecture.md)
     * [Master Data Management Service (MDMS)](platform/architecture/master-data-management-service-mdms.md)
+  * [Technical Skillset and Prerequisites](platform/technical-skillset-and-prerequisites.md)
   * [High Level Design](platform/high-level-design/README.md)
     * [Health Campaign System High Level Design](platform/high-level-design/health-campaign-system-high-level-design.md)
     * [Design Decision Log](platform/high-level-design/design-decision-log.md)
