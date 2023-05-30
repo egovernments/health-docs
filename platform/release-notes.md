@@ -9,11 +9,7 @@ HCM 1.0 is a base version release that has functional and non-functional require
 
 ## Features
 
-| Feature                               | Description                                                                                                                                                                                                            |
-| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Registries & services                 | <ul><li>Individual, household, facility and product registries, as well as product, and stock services through standard specifications like OpenAPI 3.0. They have been integrated with the DIGIT platform.</li></ul>  |
-| HCM app                               | <ul><li>The health campaign Android mobile app built on Flutter.</li></ul>                                                                                                                                             |
-| Infra/ops simplification & enablement | <ul><li>HCM, DIGIT service monitoring.</li><li>All Java-based services with SpringBoot version 2.2.6 for better security, performance, and metrics.</li><li>Helm templates to ease deployment on Kubernetes.</li></ul> |
+<table><thead><tr><th width="183">Feature</th><th width="351">Description</th></tr></thead><tbody><tr><td>Registries &#x26; services</td><td><ul><li>Individual, household, facility and product registries, as well as product, and stock services through standard specifications like OpenAPI 3.0. They have been integrated with the DIGIT platform.</li></ul></td></tr><tr><td>HCM app</td><td><ul><li>The health campaign Android mobile app built on Flutter.</li></ul></td></tr><tr><td>Infra/ops simplification &#x26; enablement</td><td><ul><li>HCM, DIGIT service monitoring.</li><li>All Java-based services with SpringBoot version 2.2.6 for better security, performance, and metrics.</li><li>Helm templates to ease deployment on Kubernetes.</li></ul></td></tr></tbody></table>
 
 ## Document Resources and Links
 

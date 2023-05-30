@@ -57,9 +57,7 @@ File Path : [https://github.com/egovernments/health-campaign-field-worker-app/bl
 
 ## API details
 
-| End Point                             | Request Method | Request Info                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| ------------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| /individual/v1/bulk/\_create          | `POST`         | <pre class="language-json"><code class="lang-json">{
+<table><thead><tr><th width="206.33333333333334">End Point</th><th width="149">Request Method</th><th>Request Info</th></tr></thead><tbody><tr><td>/individual/v1/bulk/_create</td><td><code>POST</code></td><td><pre class="language-json"><code class="lang-json">{
   "RequestInfo": {
     "authToken": "string"
   },
@@ -85,8 +83,7 @@ File Path : [https://github.com/egovernments/health-campaign-field-worker-app/bl
   ]
 }
 Parameter content type
-</code></pre> |
-| /individual/v1/bulk/\_update          | POST           | <pre class="language-json"><code class="lang-json">{
+</code></pre></td></tr><tr><td>/individual/v1/bulk/_update</td><td>POST</td><td><pre class="language-json"><code class="lang-json">{
   "RequestInfo": {
     "authToken": "string"
   },
@@ -112,8 +109,7 @@ Parameter content type
   ]
 }
 Parameter content type
-</code></pre> |
-| /individual/v1/\_search               | POST           | <pre><code>{
+</code></pre></td></tr><tr><td>/individual/v1/_search</td><td>POST</td><td><pre><code>{
   "RequestInfo": {
     "authToken": "string"
   },
@@ -126,8 +122,7 @@ Parameter content type
     ],
   }
 }
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| /household/v1/bulk/\_create           | POST           | <pre><code>{
+</code></pre></td></tr><tr><td>/household/v1/bulk/_create</td><td>POST</td><td><pre><code>{
   "RequestInfo": {
     "authToken": "string"
   },
@@ -145,8 +140,7 @@ Parameter content type
     }
   ]
 }
-</code></pre>                                                                                                                                                                                                                                                                                                                   |
-| /household/v1/bulk/\_update           | POST           | <pre><code>{
+</code></pre></td></tr><tr><td>/household/v1/bulk/_update</td><td>POST</td><td><pre><code>{
   "RequestInfo": {
     "authToken": "string"
   },
@@ -165,8 +159,7 @@ Parameter content type
     }
   ]
 }
-</code></pre>                                                                                                                                                                                                                                                                                              |
-| /household/v1/\_search                | POST           | <pre><code>{
+</code></pre></td></tr><tr><td>/household/v1/_search</td><td>POST</td><td><pre><code>{
   "RequestInfo": {
     "authToken": "string"
   },
@@ -180,8 +173,7 @@ Parameter content type
     "boundaryCode": "string"
   }
 }
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                           |
-| /household/member/v1/bulk/\_create    | POST           | <pre><code>
+</code></pre></td></tr><tr><td>/household/member/v1/bulk/_create</td><td>POST</td><td><pre><code>
   "RequestInfo": {
     "authToken": "string"
   },
@@ -197,8 +189,7 @@ Parameter content type
     }
   ]
 }
-</code></pre>                                                                                                                                                                                                                                                                                  |
-| /project/beneficiary/v1/bulk/\_create | POST           | <pre><code>{
+</code></pre></td></tr><tr><td>/project/beneficiary/v1/bulk/_create</td><td>POST</td><td><pre><code>{
   "RequestInfo": {
     "authToken": "string"
   },
@@ -216,5 +207,5 @@ Parameter content type
     }
   ]
 }
-</code></pre>                                                                                                                                                                                                                 |
+</code></pre></td></tr></tbody></table>
 

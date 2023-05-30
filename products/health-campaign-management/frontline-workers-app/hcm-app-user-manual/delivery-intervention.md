@@ -24,9 +24,7 @@ On this page, the following actions can be performed:
 
 ## API details
 
-| End Point                      | Request Method | Request Info                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| ------------------------------ | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| /project/task/v1/bulk/\_create | `POST`         | <pre class="language-json"><code class="lang-json">{
+<table><thead><tr><th width="206.33333333333334">End Point</th><th width="149">Request Method</th><th>Request Info</th></tr></thead><tbody><tr><td>/project/task/v1/bulk/_create</td><td><code>POST</code></td><td><pre class="language-json"><code class="lang-json">{
   "RequestInfo": {
     "apiId": "string",
     "ver": "string",
@@ -70,8 +68,7 @@ On this page, the following actions can be performed:
     }
   ]
 }
-</code></pre> |
-| /project/task/v1/\_search      | POST           | <pre class="language-json"><code class="lang-json">{
+</code></pre></td></tr><tr><td>/project/task/v1/_search</td><td>POST</td><td><pre class="language-json"><code class="lang-json">{
   "RequestInfo": {
     "authToken": "string"
   },
@@ -94,5 +91,5 @@ On this page, the following actions can be performed:
   }
 }
 
-</code></pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+</code></pre></td></tr></tbody></table>
 

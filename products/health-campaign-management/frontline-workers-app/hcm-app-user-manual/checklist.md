@@ -34,9 +34,7 @@ File Path : [https://github.com/egovernments/health-campaign-field-worker-app/tr
 
 ## **API details**
 
-| End Point            | Request Method | Request Info                                                                                                                                                                                                                                                                                                                                                                                       |
-| -------------------- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| /service/v1/\_create | `POST`         | <pre class="language-json"><code class="lang-json">{
+<table><thead><tr><th width="206.33333333333334">End Point</th><th width="149">Request Method</th><th>Request Info</th></tr></thead><tbody><tr><td>/service/v1/_create</td><td><code>POST</code></td><td><pre class="language-json"><code class="lang-json">{
   "requestInfo": {
     "authToken": "string"
   },
@@ -54,8 +52,7 @@ File Path : [https://github.com/egovernments/health-campaign-field-worker-app/tr
     "additionalDetails": {}
   }
 }
-</code></pre> |
-| /service/v1/\_search | POST           | <pre class="language-json"><code class="lang-json">{
+</code></pre></td></tr><tr><td>/service/v1/_search</td><td>POST</td><td><pre class="language-json"><code class="lang-json">{
   "requestInfo": {
     "authToken": "string"
   },
@@ -69,5 +66,5 @@ File Path : [https://github.com/egovernments/health-campaign-field-worker-app/tr
     ]
   }
 }
-</code></pre>                                                                                                                         |
+</code></pre></td></tr></tbody></table>
 

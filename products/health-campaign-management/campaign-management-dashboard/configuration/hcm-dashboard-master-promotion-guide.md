@@ -6,9 +6,7 @@ This document is a step-by-step promotion guide to setup/promote the Health Camp
 
 ## Release Notes
 
-| Version | Date       | Description                                            |
-| ------- | ---------- | ------------------------------------------------------ |
-| 1.0     | 10/05/2023 | This version covers the HCM Dashboard promotion guide. |
+<table><thead><tr><th width="183.33333333333331">Version</th><th>Date</th><th>Description</th></tr></thead><tbody><tr><td>1.0</td><td>10/05/2023</td><td>This version covers the HCM Dashboard promotion guide.</td></tr></tbody></table>
 
 ## Release Features
 
@@ -44,9 +42,7 @@ Refer to this [document](https://health.digit.org/platform/configuration/hcm-mas
 
 ### UI promotion guide
 
-| Artefact | Image                                  | Description                                                         |
-| -------- | -------------------------------------- | ------------------------------------------------------------------- |
-| DIGIT UI | digit-ui:health\_v1.1.0-91a6f61fc1-375 | DIGIT micro UI with enhancements specific for the health Dashboard. |
+<table><thead><tr><th width="184.33333333333331">Artefact</th><th>Image</th><th>Description</th></tr></thead><tbody><tr><td>DIGIT UI</td><td>digit-ui:health_v1.1.0-91a6f61fc1-375</td><td>DIGIT micro UI with enhancements specific for the health Dashboard.</td></tr></tbody></table>
 
 * The HCM Dashboard includes UI enhancements that are part of the image mentioned above. The stylesheet and the global config used by the UI are as follows:
 * Stylesheet: [https://unpkg.com/@egovernments/digit-ui-css@0.1.0/dist/index.css](https://unpkg.com/@egovernments/digit-ui-css@0.1.0/dist/index.css)

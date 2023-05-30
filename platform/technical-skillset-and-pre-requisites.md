@@ -4,7 +4,7 @@ description: >-
   application
 ---
 
-# Technical Skillset and Prerequisites
+# Technical Skillset & Pre-requisites
 
 ## Introduction <a href="#introduction" id="introduction"></a>
 

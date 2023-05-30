@@ -91,9 +91,7 @@ Clicking on the submit button will take the user to the success page.
 
 ## API details
 
-| End Point                              | Request Method | Request Info                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| -------------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| /stock/v1/bulk/\_create                | `POST`         | <pre class="language-json"><code class="lang-json">{
+<table><thead><tr><th width="206.33333333333334">End Point</th><th width="149">Request Method</th><th>Request Info</th></tr></thead><tbody><tr><td>/stock/v1/bulk/_create</td><td><code>POST</code></td><td><pre class="language-json"><code class="lang-json">{
   "RequestInfo": {
     "authToken": "string"
   },
@@ -114,8 +112,7 @@ Clicking on the submit button will take the user to the success page.
     }
   ]
 }
-</code></pre>                         |
-| /stock/v1/bulk/\_update                | POST           | <pre class="language-json"><code class="lang-json">{
+</code></pre></td></tr><tr><td>/stock/v1/bulk/_update</td><td>POST</td><td><pre class="language-json"><code class="lang-json">{
   "RequestInfo": {
     "authToken": "string"
   },
@@ -137,8 +134,7 @@ Clicking on the submit button will take the user to the success page.
     }
   ]
 }      
-</code></pre> |
-| /stock/v1/bulk/\_search                | POST           | <pre><code>{
+</code></pre></td></tr><tr><td>/stock/v1/bulk/_search</td><td>POST</td><td><pre><code>{
   "RequestInfo": {
     "authToken": "string"
   },
@@ -154,8 +150,7 @@ Clicking on the submit button will take the user to the success page.
     "referenceId": "C-1",
   }
 }
-</code></pre>                                                                                                                                                                                                                                                                                                                         |
-| /stock/reconciliation/v1/bulk/\_create | POST           | <pre><code>{
+</code></pre></td></tr><tr><td>/stock/reconciliation/v1/bulk/_create</td><td>POST</td><td><pre><code>{
   "RequestInfo": {
     "authToken": "string"
   },
@@ -175,8 +170,7 @@ Clicking on the submit button will take the user to the success page.
     }
   ]
 }
-</code></pre>                                                                                                    |
-| /stock/reconciliation/v1/\_search      | POST           | <pre><code>{
+</code></pre></td></tr><tr><td>/stock/reconciliation/v1/_search</td><td>POST</td><td><pre><code>{
   "RequestInfo": {
     "authToken": "string"
   },
@@ -191,6 +185,6 @@ Clicking on the submit button will take the user to the success page.
     "productVariantId": "string"
   }
 }
-</code></pre>                                                                                                                                                                                                                                                                                                                                      |
+</code></pre></td></tr></tbody></table>
 
 File Path : [https://github.com/egovernments/health-campaign-field-worker-app/tree/master/apps/health\_campaign\_field\_worker\_app/lib/pages/inventory](https://github.com/egovernments/health-campaign-field-worker-app/tree/master/apps/health\_campaign\_field\_worker\_app/lib/pages/inventory)\

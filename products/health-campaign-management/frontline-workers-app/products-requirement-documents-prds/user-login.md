@@ -48,12 +48,7 @@ b. Provide scope for future changes and improvements in the application.
 
 ## Assumptions and Validations
 
-| Theme               | Assumption                                                                                                                                                                                                                                                                                                                                   |
-| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Customer persona    | <ul><li>The actors using the application are not digitally literate and need training before being able to use the application independently.</li></ul>                                                                                                                                                                                      |
-| Device and services | <ul><li>The actors have a smartphone and there should be internet connectivity to enable syncing of data from the mobile. application to the server for populating the dashboards.</li><li>The actors using the mobile application must sync at least once daily.</li><li>Logging into the application needs internet connectivity</li></ul> |
-| Peer-to-peer sync   | For v1.0, the product will not support peer-to-peer sync, either by directly syncing phones or routing traffic through the server.                                                                                                                                                                                                           |
-| User login          | <ul><li>The system-generated user ID and password must be provided to the user for login.</li><li>The user needs to login daily before going to the field and log out after coming back from the field.</li></ul>                                                                                                                            |
+<table><thead><tr><th width="264">Theme </th><th width="362">Assumption</th></tr></thead><tbody><tr><td>Customer persona</td><td><ul><li>The actors using the application are not digitally literate and need training before being able to use the application independently.</li></ul></td></tr><tr><td>Device and services</td><td><ul><li>The actors have a smartphone and there should be internet connectivity to enable syncing of data from the mobile. application to the server for populating the dashboards.</li><li>The actors using the mobile application must sync at least once daily.</li><li>Logging into the application needs internet connectivity</li></ul></td></tr><tr><td>Peer-to-peer sync</td><td>For v1.0, the product will not support peer-to-peer sync, either by directly syncing phones or routing traffic through the server.</td></tr><tr><td>User login</td><td><ul><li>The system-generated user ID and password must be provided to the user for login.</li><li>The user needs to login daily before going to the field and log out after coming back from the field.</li></ul></td></tr></tbody></table>
 
 ## Process flow
 
@@ -71,14 +66,7 @@ Addressed in the out of scope section.
 
 Specifications
 
-| Field            | Data type                     | Data validation             | Required (Y/N) | Comments                                                                 |
-| ---------------- | ----------------------------- | --------------------------- | -------------- | ------------------------------------------------------------------------ |
-| Language         | Choose from the given options | Need to select one language | Y              | Select the language for the application.                                 |
-| User ID          | String                        | NA                          | Y              | The unique system-generated ID.                                          |
-| Password         | Alphanumeric                  | NA                          | Y              | The unique system-generated password                                     |
-| New password     | Alphanumeric                  | NA                          | Y              | After the first login, a user needs to create a new password (V1.1).     |
-| Confirm password | Alphanumeric                  | NA                          | Y              | Confirm the new password (V1.1).                                         |
-| Project          | Choose from the given options | Need to select one language | Y              | This is the project selection page for users assigned multiple projects. |
+<table><thead><tr><th width="195">Field</th><th width="183">Data type</th><th width="234">Data validation</th><th width="149">Required (Y/N)</th><th width="290">Comments</th></tr></thead><tbody><tr><td>Language</td><td>Choose from the given options</td><td>Need to select one language</td><td>Y</td><td>Select the language for the application.</td></tr><tr><td>User ID</td><td>String</td><td>NA</td><td>Y</td><td>The unique system-generated ID.</td></tr><tr><td>Password</td><td>Alphanumeric</td><td>NA</td><td>Y</td><td>The unique system-generated password</td></tr><tr><td>New password</td><td>Alphanumeric</td><td>NA</td><td>Y</td><td>After the first login, a user needs to create a new password (V1.1).</td></tr><tr><td>Confirm password</td><td>Alphanumeric</td><td>NA</td><td>Y</td><td>Confirm the new password (V1.1).</td></tr><tr><td>Project</td><td>Choose from the given options</td><td>Need to select one language</td><td>Y</td><td>This is the project selection page for users assigned multiple projects.</td></tr></tbody></table>
 
 ## Design
 
