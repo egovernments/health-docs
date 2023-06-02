@@ -28,6 +28,10 @@ The goals include:
 * Improved efficiency (lower costs)&#x20;
 * Increased transparency and accountability
 
+Watch the video below to find out how DIGIT Health Campaign Management meets these goals and more.
+
+{% embed url="https://www.youtube.com/watch?v=_yxD9Wjqkfw" %}
+
 ### Approach
 
 Countries require innovative solutions to ensure that campaign delivery and coverage are achieved effectively, efficiently, and rapidly. Digitisation of campaigns is a way forward.
@@ -40,12 +44,6 @@ Health campaigns are categorised based on the following characteristics:&#x20;
 * Type of Intervention delivered (product/service/information)
 
 <figure><img src="../../.gitbook/assets/Health Campaign Management Platform - Gate 1.png" alt=""><figcaption></figcaption></figure>
-
-Watch the video below to learn more about DIGIT Health Campaign Management.
-
-{% embed url="https://www.youtube.com/watch?v=_yxD9Wjqkfw" %}
-
-
 
 ## Products
 
