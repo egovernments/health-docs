@@ -41,6 +41,12 @@ Health campaigns are categorised based on the following characteristics:&#x20;
 
 <figure><img src="../../.gitbook/assets/Health Campaign Management Platform - Gate 1.png" alt=""><figcaption></figcaption></figure>
 
+Watch the video below to learn more about DIGIT Health Campaign Management.
+
+{% embed url="https://www.youtube.com/watch?v=_yxD9Wjqkfw" %}
+
+
+
 ## Products
 
 Click on the links below to learn more about the products:
