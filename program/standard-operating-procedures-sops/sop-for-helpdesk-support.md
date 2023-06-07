@@ -6,146 +6,123 @@ description: DIGIT-HCM Pilot in Mozambique (Tete Province)
 
 ## Overview
 
-The NMCP is implementing the Health Campaign Management (DIGIT-HCM) platform in Mozambique with support from eGov and CHAI. A helpdesk has been proposed to receive, log, prioritise, assign, track, escalate, resolve hardware and software-related issues raised during the campaign which impede campaign operations. &#x20;
+The Ministry of Health is implementing the Health Campaign Management (DIGIT-HCM) platform in Mozambique with support from eGov and CHAI. A helpdesk has been proposed to receive, log, prioritise, assign, track, escalate and resolve hardware and software-related issues raised during the campaign which impede campaign operations. &#x20;
 
-The helpdesk team will be based in Maputo, Mozambique. For resolving technical issues or queries in the DIGIT-HCM app, there will be 1-2 members from eGov based in Mozambique to support the helpdesk. eGov will also set up a remote support team to resolve issues that the local helpdesk is unable to resolve.&#x20;
+The helpdesk team will be based either in Maputo or Tete to ensure easier coordination with the provincial teams who are responsible for distribution. For resolving technical issues or queries in the DIGIT-HCM app, there will be 1-2 members from eGov based in Mozambique to support the helpdesk staff. eGov will also set up a remote support team( also called as L3 support), located in Bangalore to resolve issues that the local helpdesk is unable to resolve.&#x20;
 
-As it will be a limited duration (i.e. 3-4 days) campaign, the helpdesk will become operational from the registrar training until the end of the campaign, during the business hours of Mozambique.
+As it will be a limited duration (i.e. 3-5 days) campaign, the helpdesk will become operational 1-2 days before the start of the actual bednet distribution activities and will remain operational for 1-2 after the distribution. The help desk will operate between 6.00 am till midnight( 12.00 am) Mozambique time(CAT) and a roster needs to be maintained for the entire duration both for the local team( Layer 2 support in Mozambique) as well as remote support team( Layer 3 team based in Bangalore).
 
 #### Scope of the helpdesk
 
-* User management
-* Master data management
-* Technical support on hardware and software (DIGIT)
+* Technical support on hardware and software (for Salama- DIGIT HCM app only).
+* Resolution of general how-to queries relating to the HCM app with the help of a FAQ document that may arise from the field.
+* User management : Creation of the users and helping them with passwords&#x20;
+* Master data management : Updates to Master data if the list of villages                changes during the campaign.
+
+Examples of the queries to be handled by the Helpdesk :&#x20;
+
+1. Issues with the application or the dashboard functioning
+2. Login or password not working or forgotten
+3. Creating new users, if any due to field staff getting changed during the campaign.
+4. Updating new localities or villages in the system during the campaign.
 
 #### Out of scope of helpdesk
 
-* Resolving programmatic issues related to bed net distribution. The operational/programmatic queries received by the helpdesk will be redirected to NMCP officials.
+Resolving operational or programmatic issues related to bed net distribution. The operational/programmatic queries received by the helpdesk will be redirected to NMCP officials (Ines).
 
-#### Helpdesk Workflow
+Examples of Operational or programmatic queries (to be routed to NMCP):
 
-The typical lifecycle of a helpdesk ticket starts when an issue is received and ends when a ticket gets closed. The below representation shows how the helpdesk ticketing management system will work:
+1. Not having sufficient stock of bednets
+2. Not receiving the device or any loss of device in the field
+3. Bed net quality issues
+4. Logistic issues related to the distribution of bednets
+5. Any issues relating to the bednet distribution process as outlined by the NMCP
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-05-12 at 9.53.32 AM.png" alt=""><figcaption></figcaption></figure>
+## Helpdesk Workflow
 
-For the issues which are not related to the scope of the helpdesk, the helpdesk team will redirect the issue (over call/WhatsApp) to concerned NMCP officials for further communication and resolution.
+The typical lifecycle of a helpdesk ticket starts when an issue is received and ends when a ticket gets closed. The below representation shows how the helpdesk ticketing management system will work. In this representation :&#x20;
+
+The Whatsapp groups of registrars, LMs and District supervisors will play the role of L1.
+
+Central helpdesk will play the role of L2
+
+eGov tech team (India) will play the role of L3&#x20;
+
+<figure><img src="../../.gitbook/assets/Screenshot 2023-06-07 at 6.10.10 PM.png" alt=""><figcaption></figcaption></figure>
+
+For the issues which are not related to scope of the helpdesk, Help desk team will redirect the issue (over call/ WhatsApp) to concerned NMCP officials(Ines) for further communication and resolution.&#x20;
 
 #### Raising Tickets
 
-The helpdesk staff will use the grievance portal (Complaints Module) to record every incident or grievance. The helpdesk staff would be able to login with a dedicated User ID and password and log a complaint by raising a ticket against it. The login credentials will be generated from the backend and provided to the identified users.
+The helpdesk staff will use the Grievance portal (Complaints Module) to record every incident or grievance that is reported to them. The help desk staff would be able to login with dedicated User ID and Password and log a complaint by raising a ticket against it. The login credentials will be generated from the backend and provided to the identified users.
 
-## Modes Of Communication&#x20;
+## Support levels
 
-A user can communicate with the helpdesk in multiple ways as described below:
+| S.No. | Levels                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Who will respond to queries                                            |
+| ----- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| 1     | <p>Level 1 </p><p>(L1 - Local support)</p> | <ul><li>Support provided by a local monitor, District supervisor or any member of the field staff for the general queries</li><li>In this level of support, the user can opt to do phone calls/WhatsApp. </li><li>All the requests may not be logged into the helpdesk portal as some queries may get directly answered by local monitors over phone or whatsapp.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | <p>Local Monitors or</p><p>District supervisors</p>                    |
+| 2     | Level 2 (L2 - Helpdesk team)               | <ul><li>Scope of the helpdesk formally starts at this level.</li><li>The issues that are not resolved by local monitors or District supervisors will be escalated to the helpdesk team via call or whatsapp messaging or by logging into the complaints tool.</li><li>At this level, issues will be triaged.  All technical queries will be assigned to the technical team (CHAI supported by eGov team). For all programmatic/process-related queries, the respective nodal officers part of the helpdesk team from NMCP/DIS/DTIC shall be contacted.</li><li>This will be staffed by 4 helpdesk executives positioned at the helpdesk. These executives will be from CHAI and supported by eGOv</li><li>This team will also be responsible for User provisioning (i.e. the creation of users) using the DIGIT-HCM’s user Management module during the campaign window.</li><li>In case of any master data changes during the campaign this team will create a request in the complaints module and share it with the L3 support team.</li></ul> | <p>CHAI(3-4 persons</p><p>lead by Frank) and</p><p>eGov( 1 person)</p> |
+| 3     | Level 3 (L3 - India based eGov team)       | <ul><li>eGov team for resolving technical issues/queries that the L2 helpdesk team is not able to resolve.</li><li>Master data update requests(if any) during the campaign</li><li>Bulk user creation requests through backend APIs for the coded users( who will be identified using a code or a serial number i.e. the registrars)</li><li>User creation requests before the campaign starts  for the named users( who will have their own ID and password)</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | eGov                                                                   |
 
-1\. Phone Number:
+## Modes Of Communication
 
-The helpdesk executives will manage dedicated landline/phone numbers, wherein a user can call and log issues. Any call made at the helpdesk will be logged in the ticketing system along with the action taken and solution provided. Helpdesk Dial-in: xxxxxxxxxx. Provisioning of the helpdesk number will be managed by CHAI.
+#### Phone calls & Whatsapp messaging
 
-2\. WhatsApp
+It has been observed from the previous campaigns that users in the field (i.e. distribution teams) often reach out to Local Monitors (LMs) and District supervisors for simpler queries over a phone call or whatsapp communication for quick resolution of their queries. This is deemed as the L1 support in this document. The district supervisors escalate more complex issues to the Helpdesk team again, over phone calls or whatsapp group communication. Usually the provincial Focal Points create a whatsapp group during provincial ToTs and add the relevant members. The same approach would be followed for the Group4 campaign in Tete. When the issue gets escalated from District supervisors over a phone call or Whatsapp message, the Helpdesk team (L2 team) will record them in the Complaints Management tool.
 
-A WhatsApp group can also get created for the users by the local monitors for the distributors mapped under them. For initial support, the distributor can use the WhatApp group to report the issue or support request. The local monitor can resolve the query or escalate it to get reported in the feedback/grievance portal.&#x20;
+| Reporter                              | Resolver                              | Communication channel                                                                                    |
+| ------------------------------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Field workers/distribution teams      | Local Monitor or District Supervisor  | Phone calls/whatsapp                                                                                     |
+| Local Monitor or District Supervisor  | Helpdesk(Layer 2) support             | <p>Phone call</p><p>or</p><p>Whatsapp group message</p><p>or </p><p>Logging in the Complaints Module</p> |
+| Helpdesk(Layer 2) support             | Helpdesk(Layer 3) support             | Complaints Module/Emails                                                                                 |
 
-3\. Logging an issue in the DIGIT app: If the field team raises an issue in the offline app, they will be visible in the helpdesk portal when the user has internet connection.
-
-## Support Levels
-
-Three levels of support will be set up at the helpdesk for query resolution. A hierarchy will be set for resolving the queries with a provision to escalate to the next higher level as per the nature of the query and intervention required. The helpdesk support levels are described as below:
-
-| S.No. | Levels                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| ----- | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1     | <p>Level 1 </p><p>(L1 - Local support)</p> | <ul><li>Support provided by a local monitor or any member of the field staff.</li><li>In this level of support, the user can opt to do phone calls/WhatsApp. </li><li>All the requests may not be logged into the helpdesk portal as some queries may get directly answered by local monitors over phone or Whatsapp.</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| 2     | Level 2 (L2 - Helpdesk team)               | <ul><li>Support provided by the helpdesk team.</li><li>The issues that are not resolved by local monitors will be escalated to the helpdesk team via call/Whatsapp/ complaints module in DIGIT.</li><li>At this level, issues will be triaged.  All technical queries will be assigned to the technical team (CHAI supported by eGov team). For all departmental/process-related queries, the respective nodal officers part of the helpdesk team from NMCP shall be the level 2 contacts..</li><li>This will be manned by 4-5 helpdesk executives positioned at the helpdesk. These executives will be hired by CHAI.</li><li>This team will also be responsible for User provisioning (i.e. the creation of users) using the DIGIT-HCM’s complaints module.</li></ul> |
-| 3     | Level 3 (L3 - India based eGov team)       | <ul><li>eGov team for resolving technical issues/queries that the CHAI helpdesk team is not able to resolve. </li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-
-## Types of Incidents
+## Tickets categories&#x20;
 
 Following categories of incidents are envisaged to be logged at the helpdesk. Each incident category will have its independent process of resolution as defined in the SOP section of this document.
 
-| S.No. | Incident Category   | Description                                                                                                                                                                                                   |
-| ----- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1     | General Enquiry     | An enquiry pertaining to the services offered by NMCP.                                                                                                                                                        |
-| 2     | Technical           | Problems of technical nature pertaining to the HCM application, such as application not loading, issue in form submission, not able to capture data, access/login, not able to sync, device not working, etc. |
-| 3     | Process-related     | Queries related to flow of application.                                                                                                                                                                       |
-| 4     | Grievances          | Call pertaining to grievances/complaints/governance and other matters.                                                                                                                                        |
-| 5     | Feedback/Suggestion | Any suggestions or feedback received regarding the services provided by NMCP.                                                                                                                                 |
+| # | Category            | Description                                                                                                                                             | Examples                                                                                                       |
+| - | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| 1 | Technical query     | Any issues with the functioning of the Salama(DIGIT HCM) app or the hardware( device)                                                                   | <ul><li>App malfunction</li><li>Broken device</li><li>Sync errors</li><li>Battery issues</li></ul>             |
+| 2 | User Account        | Any user management related issues because of which the users are not able to access the application or play the designated role mapped to their logins | <ul><li>login errors</li><li>Forgot username or password requests</li><li>Change of user categories </li></ul> |
+| 3 | Data/content issues | Any issues pertaining to the master data that is loaded in the platform                                                                                 | <ul><li>Problem with form</li><li>Viewing other users' profiles</li><li>Viewing other users' records</li></ul> |
+| 4 | Security Issue      | <p><br></p>                                                                                                                                             | <ul><li>Device stolen or lost</li></ul>                                                                        |
+| 5 | Performance issue   | <p><br></p>                                                                                                                                             | <ul><li>Lack of network coverage in the region.</li></ul>                                                      |
 
-## Helpdesk Operating Hours
+Helpdesk Operating dates and timings
 
-The normal business hours for the helpdesk will be:
+The helpdesk will be operational for the below mentioned duration.
 
-Mozambique: 8:00 AM – 11.00 PM CAT
+Dates : 7-Aug-23 till 14-Aug-23
 
-India: 10:00AM – 02:30 AM IST (Post midnight)
+Mozambique: 6:00 AM – 12.00 AM CAT(Midnight)
 
-## Resolution Time
+India: 9:30AM – 03:30 AM IST
 
-The primary goal of the helpdesk is to restore normal operations at the earliest possible, and with minimum impact.&#x20;
+## Ticket Tracking and Response Times
 
-Critical app-related issues that cannot be resolved within the campaign duration will be shared with eGov, which will be picked up immediately after the campaign for the second round of pilot in Group V.&#x20;
+The primary goal of the helpdesk is to restore normal operations at the earliest possible, and with a minimum impact.&#x20;
 
-Enhancements (major and minor) will go through a change request process. Due to the nature of the project, there will be no feature updates to the DIGIT system during the campaign period.&#x20;
+Critical app-related issues that cannot be resolved within the campaign duration will be shared with eGov which will be picked up immediately after the campaign for the second round of pilot in Group V.&#x20;
 
-#### Tools for the helpdesk team
+Enhancements (major and minor) will go through a change request process. Due to the nature of the project, there will be no feature updates to the DIGIT system during the campaign period. Also any updates to the HCM application during the campaign window  will be avoided as far as possible because it may be difficult to push the updates to all the devices and there may be data loss due to the same.&#x20;
+
+#### Updation in Jira
+
+Since the Jira tickets are getting created automatically from the complaints module, the L3 staff at the eGov end should triage the ticket and update the severity appropriately.
+
+### Tools for the helpdesk team
 
 What do they need to be effective?
 
 * FAQ on issues commonly-faced
-* Training on user management and complaints portal
-* User manual on DIGIT app
+* User manual on the Salama (DIGIT HCM) app.&#x20;
 * User manual on complaints portal & user management
-* Videos that they can share?
 
-## Helpdesk Team Roles and Responsibilities
+## Help Desk Team Composition&#x20;
 
-The helpdesk team will have following profiles
+The helpdesk team will have following composition:
 
-1. Helpdesk operations manager
-2. Helpdesk executives
-3. eGov onsite support team
-4. Programme nodal officers (for programmatic queries) from NMCP
-
-The helpdesk operations manager will:&#x20;
-
-\- Have access to all open tickets, and maintain operational control over the helpdesk. He/she will ensure that the helpdesk functions as per the defined rules. Additionally, the helpdesk operations manager will be responsible for the management of the ticketing software. He/she will be able to perform the following functions on the tickets:
-
-* Log a new ticket.
-* Provide any comments/updates on a ticket.
-* Upload any supporting document related to the ticket.
-* Forward the ticket to the relevant categories/levels.
-* Close the ticket .
-* This user will also have the rights to create, modify and delete users in the helpdesk system.
-* Update and maintain the knowledge management system of the helpdesk.&#x20;
-
-The helpdesk executive will:&#x20;
-
-* Log in and resolve complaints.&#x20;
-* In case they need eGov’s support, they will assign the tickets to eGov.
-* Once resolved or closed, they will inform the local supervisor or user as appropriate.
-
-## For discussion/Open questions
-
-1. Will the helpdesk staff be able to record the issues in the complaints tool in English?
-2. What would be the process for operational/non-tech issue resolution since the helpdesk will get all sorts of queries. Are there programme people from NMCP as part of the helpdesk? There needs to be standard responses from the helpdesk personnel to redirect the callers to the right person. What would that response be?
-3. It has been assumed that a helpline number for queries being reported over the calls to the helpdesk. Please confirm if this is correct?
-4. Can the helpdesk have a WhatsApp number or would itbe a call centre number such as 100/101? We are assuming that email will not be a mode of communication between users and the  helpdesk team, that is, complaints will neither be reported over mail nor the resolution informed over mail. Once an issue has been resolved, the helpdesk staff will call the reporter and inform them about the fix.
-5. It is assumed that helpdesk issues and calls from distribution teams will typically happen only when the teams return to their base locations and are under network coverage area.
-6. The tickets that get assigned to the L3 support team staffed by eGov , will be recorded in the complaints module, and the eGov team will update status in this same tool.&#x20;
-7. CHAI will have to share the details of the helpdesk support staff with eGov for creating their logins.
-8. What would happen if the issue is not possible to resolve within the campaign period, assuming no software upgrades will be possible during this period?
-9. We are assuming the helpdesk will also coordinate the changes or updates in master data? Is this assumption correct?
-10. We are assuming that the helpdesk staff will also handle user provisioning (i.e., the creation of new users accounts). Is this assumption correct?
-11. Do we need a complaints report to be built in the complaints module to get the list of complaints assigned to eGov or other parties to do a daily triage?
-12. How long will the helpdesk team remain operational? That is: &#x20;
-
-&#x20;       \- For how many days ?
-
-&#x20;       \- Does it become active before actual campaign distribution?
-
-&#x20;       \- Does it remain active after the distribution is over?
-
-&#x20;       \- How many hours each day?
-
-14. Are the nodal officers from NMCP, who are going to address the operational queries, going to be part of the helpdesk. If yes, in what capacity ?
-15. Do we need to log the operational queries at all in the complaints tool? Because if we do so, we may need to also update the resolution which would be provided by NMCP staff.
-16. Will the helpdesk be common for Tete and other provinces? If yes , then how many of the helpdesk support staff would be allocated for Tete? Will one person receive the queries/issues for more than one province?\
+| Support level | Name of support lead | Name of other members from CHAI | eGov team members                       |
+| ------------- | -------------------- | ------------------------------- | --------------------------------------- |
+| L2            | Frank                | <p><br></p>                     | Velkur Saiprakash                       |
+| L3            | Prasanna             | <ul><li>NA -</li></ul>          | Vishal, Saiprakash, Ajay, Tumul, Swathi |
