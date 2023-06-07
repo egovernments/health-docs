@@ -18,4 +18,4 @@ The inventory management module of the HCM platform makes it easier to keep trac
 
 ## Programme Milestone
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-05-16 at 3.26.39 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2023-06-07 at 6.44.52 PM.png" alt=""><figcaption></figcaption></figure>
