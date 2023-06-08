@@ -236,8 +236,8 @@ eGov to endeavour to cover Must Have changes before distribution. Lower priority
 The following are reference documents which have been leveraged for project specific information in the design of the UAT plan:
 
 * [UAT 2 test scenarios for Salama](uat-2-test-scenarios.md)
-* Observations Reporting Template
-* UAT Feedback Form - SUS
+* [Observations refeReporting Template](uat-observations/)
+* [UAT Feedback Form - SUS](uat-feedback-form.md)
 * UAT Feedback Form - Process
 * UAT Test Scenarios
 * SUS Questionnaire
