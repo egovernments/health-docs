@@ -12,7 +12,7 @@ April 27th, 2023, April 28th, 2023&#x20;
 
 Maputo
 
-## List of Scenarios
+## Scenarios
 
 ### Registration:
 

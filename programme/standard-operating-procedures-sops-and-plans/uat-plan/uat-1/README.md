@@ -1,6 +1,6 @@
 # UAT 1
 
-## Session structure
+## Session Plan
 
 The UAT session will be conducted physically in Maputo at the MOH office. The detailed plan for the UAT session is as follows:&#x20;
 

@@ -229,7 +229,7 @@ eGov to endeavour to cover Must Have changes before distribution. Lower priority
 3. Compatibility tested: Verified that the application has been tested on the specified device which is used for the distribution (Samsung A09) and Operating System (Android) and any compatibility issues have been addressed
 4. All feedback have been identified and documented. Agreed on the priority.&#x20;
 5. Documentation updated: Ensured that all relevant documentation, including user manuals, has been updated to reflect any changes made during UAT
-6. UAT summary report repared: Prepared a UAT summary report that includes the UAT results, findings, and any outstanding issues or risks identified during UAT
+6. UAT summary report prepared: Prepared a UAT summary report that includes the UAT results, findings, and any outstanding issues or risks identified during UAT
 
 ## References
 
@@ -237,9 +237,9 @@ The following are reference documents which have been leveraged for project spec
 
 * [UAT 2 test scenarios for Salama](uat-2-test-scenarios.md)
 * [Observations refeReporting Template](uat-observations/)
-* [UAT Feedback Form - SUS](uat-feedback-form.md)
-* UAT Feedback Form - Process
-* UAT Test Scenarios
+* [UAT Feedback Form - SUS](uat-feedback-form-sus.md)
+* [UAT Feedback Form - Process](uat-feedform-form-process.md)
+* [UAT Test Scenarios](../uat-1/uat-1-test-scenarios.md)
 * SUS Questionnaire
 
 ## Annexure

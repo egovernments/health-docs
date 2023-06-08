@@ -4,9 +4,13 @@ description: For Salama
 
 # UAT 2 Test Scenarios
 
-Location: MISAU, Maputo
+## Date
 
-Day: 16th June 2023
+16th June 2023
+
+## Location&#x20;
+
+MISAU, Maputo
 
 ## Scenarios
 
@@ -29,7 +33,7 @@ Day: 16th June 2023
 
 ### Supervision:&#x20;
 
-1. You are the supervisor for the team working in a Village A in Zambezia, and your team members are in the field distributing nets. As per protocol, you are expected to go and observe them work and record your observations in the Registration and Distribution checklist. Please fill out the checklist and submit your observations for the following checklists. Mark ‘No’ as a response for atleast 2 questions in each checklist and provide the reasons.
+1. You are the supervisor for the team working in a Village A in Zambezia, and your team members are in the field distributing nets. As per protocol, you are expected to go and observe them work and record your observations in the Registration and Distribution checklist. Please fill out the checklist and submit your observations for the following checklists. Mark ‘No’ as a response for at least 2 questions in each checklist and provide the reasons.
 
 &#x20;     a. Registration & Distribution monitoring&#x20;
 
