@@ -231,6 +231,17 @@ eGov to endeavour to cover Must Have changes before distribution. Lower priority
 5. Documentation updated: Ensured that all relevant documentation, including user manuals, has been updated to reflect any changes made during UAT
 6. UAT summary report repared: Prepared a UAT summary report that includes the UAT results, findings, and any outstanding issues or risks identified during UAT
 
+## References
+
+The following are reference documents which have been leveraged for project specific information in the design of the UAT plan:
+
+* [UAT 2 test scenarios for Salama](uat-2-test-scenarios.md)
+* Observations Reporting Template
+* UAT Feedback Form - SUS
+* UAT Feedback Form - Process
+* UAT Test Scenarios
+* SUS Questionnaire
+
 ## Annexure
 
 ## UAT-2 Test Scenarios for Salama&#x20;
