@@ -6,7 +6,7 @@
   * [Release Notes](platform/release-notes.md)
     * [Release Checklist: For Frontline Worker's App](platform/release-notes/release-checklist-for-frontline-workers-app.md)
     * [Implementation Checklist](platform/release-notes/implementation-checklist.md)
-    * [Release Checklist: For Complaints, User Management & Dashboard](platform/release-notes/release-checklist-for-complaints-user-management-and-dashboard.md)
+    * [Release Checklist](platform/release-notes/release-checklist.md)
   * [Platform Features](platform/platform-features.md)
   * [Architecture](platform/architecture.md)
     * [Master Data Management Service (MDMS)](platform/architecture/master-data-management-service-mdms.md)
