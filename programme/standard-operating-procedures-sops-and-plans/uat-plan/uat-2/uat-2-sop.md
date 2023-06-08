@@ -2,7 +2,7 @@
 
 ## Objective
 
-The purpose of this document is to outline the User Acceptance Testing (UAT) process for the final round of testing of the Salama (DIGIT-HCM) platform rollout in Mozambique as part of the Group IV distribution in the Tete province. The first round of testing was conducted between 27th and 28th April-23 and the platform was found to be satisfying most of the requirements for the campaign. Key learnings and the feedback from the first round of testing have been incorporated in the platform and the app is now being presented for the final round of testing.
+The purpose of this document is to outline the User Acceptance Testing (UAT) process for the final round of testing of the Salama (DIGIT-HCM) platform rollout in Mozambique as part of the Group IV distribution in the Tete province. The first round of testing was conducted between April 27th and 28th, 2023, and the platform was found to be satisfying most of the requirements for the campaign. Key learnings and the feedback from the first round of testing have been incorporated in the platform and the app is now being presented for the final round of testing.
 
 ## UAT Methodology
 
@@ -15,9 +15,9 @@ During the testing process, a pre-approved list of test cases/scripts will be ex
 | 1 | Defects              | Any observation pertaining to a feature or functionality not working as expected or agreed at the time of scope review, will be classified as issue | The observations classified as defects will be taken up by the eGov program team for further validation, prioritisation and fixing. Minor issues originating due to incorrect configurations or erroneous labels, or translations will be fixed and be made available for re-testing during the next UAT cycle. |
 | 2 | Change Requests (CR) | Any recommendations to enable or disable a functionality from the initial requirements or a new functionality to be added                           | These will be handled via Change control Process as per the SoP defined and will be evaluated based on their impact and effort.                                                                                                                                                                                 |
 
-The UAT team will execute all the test scripts referenced in section 6.0.  Users may also perform additional tests not detailed in the plan but remain relevant and within the scope of the project. &#x20;
+The UAT team will execute all the test scripts. Users may also perform additional tests not detailed in the plan but remain relevant and within the scope of the project. &#x20;
 
-Users will report feedback to the eGov team for documentation and escalation using a google sheet. These defects will be described, prioritized, and tracked by using screen captures, verbiage, and steps necessary for the development team to reproduce the defect. For change requests the requirements will be described, analysed, prioritised and tracked.  Information on defect  and CR processing can be found in section 7.0.
+Users will report feedback to the eGov team for documentation and escalation using a google sheet. These defects will be described, prioritised, and tracked by using screen captures, verbiage, and steps necessary for the development team to reproduce the defect. For change requests the requirements will be described, analysed, prioritised and tracked.  Information on defect  and CR processing can be found later.
 
 #### Test Phases
 
@@ -75,17 +75,17 @@ Following is the list of prerequisites for conducting the UAT
 
 ## UAT Environment
 
-The UAT environment will be similar to the production environment in terms of specifications,  and will be provided by eGov, so that accurate assumptions can be drawn regarding the application’s performance.
+The UAT environment will be similar to the production environment in terms of specifications, and will be provided by eGov, so that accurate assumptions can be drawn regarding the application’s performance.
 
-Applicable IP addresses and URLs will be provided by eGov team to the UAT Team and all the mobiles will be configured for access to the test environment.
+Applicable IP addresses and URLs will be provided by eGov team to the UAT team and all the mobiles will be configured for access to the test environment.
 
 #### UAT Process
 
-Each test participant will be provided with a checklist to verify access to the applications within the defined scope of testing.  The tester will then login, perform the prescribed steps and generate the expected results for each activity.  Any feature identified as missing or bug during testing from the UAT environment should be reported back to eGov.
+Each test participant will be provided with a checklist to verify access to the applications within the defined scope of testing. The tester will then login, perform the prescribed steps and generate the expected results for each activity. Any feature identified as missing or bug during testing from the UAT environment should be reported back to eGov.
 
 #### UAT Data
 
-Access to test data is a vital component in conducting a comprehensive test of the system.  All UAT participants will require usage of test accounts and other pertinent test data which should be provided by NMCP upon request.  All user roles should fully emulate production in the UAT path. The test accounts and role mapping shall be done for the users identified by eGov. Following are sample test data for UA testing:
+Access to test data is a vital component in conducting a comprehensive test of the system. All UAT participants will require usage of test accounts and other pertinent test data which should be provided by NMCP upon request. All user roles should fully emulate production in the UAT path. The test accounts and role mapping shall be done for the users identified by eGov. Following are sample test data for UA testing:
 
 * Sample Master Data
 
@@ -102,7 +102,7 @@ The test team is composed of members who possess a knowledge of the operations a
 1. These team members will be able to initiate test input, review the results,&#x20;
 2. Have prior experience/learnings from campaign digitisation in Mozambique&#x20;
 
-All team members will be presented by the eGov team with an overview of the test process and what their specific role in UAT will be.  The eGov team will oversee testing by assigning scripts to testers, providing general support, and serving as the primary UAT contact point throughout the test cycle.
+All team members will be presented by the eGov team with an overview of the test process and what their specific role in UAT will be. The eGov team will oversee testing by assigning scripts to testers, providing general support, and serving as the primary UAT contact point throughout the test cycle.
 
 | Name of participant | Project Role/Designation | Phone Extension | E-mail      | <p>Entity </p><p>(NMCP/DIS/DTIC/partners)</p> |
 | ------------------- | ------------------------ | --------------- | ----------- | --------------------------------------------- |
@@ -110,11 +110,11 @@ All team members will be presented by the eGov team with an overview of the test
 |                     |                          |                 |             |                                               |
 | <p><br></p>         | <p><br></p>              | <p><br></p>     | <p><br></p> | <p><br></p>                                   |
 
-Note : The above table needs to be filled by NMCP/DIS/DTIC with the details of the  nominated participants of the UAT session.
+Note: The above table needs to be filled by NMCP/DIS/DTIC with the details of the  nominated participants of the UAT session.
 
 ## UAT Deliverables
 
-The following sections detail milestones crucial to the completion of the UAT phase of the project.  Once all dependent milestones have been completed, NMCP/DIS/DTIC will formally sign-off on the system’s functionality and distribute an email to all project stakeholders.
+The following sections detail milestones crucial to the completion of the UAT phase of the project. Once all dependent milestones have been completed, NMCP/DIS/DTIC will formally sign-off on the system’s functionality and distribute an email to all project stakeholders.
 
 #### UAT Activities and Schedule&#x20;
 
@@ -136,21 +136,21 @@ All core UAT activities along with the deliverable dates are described in the be
 
 #### UAT - 2 Session Plan & Structure
 
-The UAT session will be conducted physically in Maputo. The agenda for the UAT session will be as follows. However this may undergo change based on the scope for UAT-2.&#x20;
+The UAT session will be conducted physically in Maputo. The agenda for the UAT session will be as follows. However, this may undergo change based on the scope for UAT-2.&#x20;
 
 | #                   | Activity                                                                                                                                                                                                                                                                                                                                               | Approximate Duration | Time              |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- | ----------------- |
 | Day 1(16th June-23) | <p><br></p>                                                                                                                                                                                                                                                                                                                                            |                      |                   |
 | 1                   | <ul><li>Introduction to the UAT-2 Session</li></ul>                                                                                                                                                                                                                                                                                                    | 15 minutes           | 8.00am -8.15 am   |
 | 2                   | <ul><li>Walkthrough of Mobile app</li><li>Walkthrough of the feedback from the previous(UAT-1) session</li><li>Walkthrough of test scenarios to be executed</li><li>Walkthrough of Defect/CR reporting templates</li><li>Distribution of printed templates for capturing Defects / CR </li><li>Distribution of test cases and mobile devices</li></ul> | 60 Minutes           | 8.15am-9.15 am    |
-| <p><br></p>         | <ul><li>Testing of the Salama(DIGIT HCM app)-Session1</li></ul>                                                                                                                                                                                                                                                                                        | 45 minutes           | 9.15 am-10.00 am  |
+| <p><br></p>         | <ul><li>Testing of the Salama (DIGIT HCM app)-Session 1</li></ul>                                                                                                                                                                                                                                                                                      | 45 minutes           | 9.15 am-10.00 am  |
 | <p><br></p>         | Tea Break-1                                                                                                                                                                                                                                                                                                                                            | 30 minutes           | 10.00 am-10.15 am |
-| 3                   | <ul><li>Testing of the Salama(DIGIT HCM app)-Session2</li></ul>                                                                                                                                                                                                                                                                                        | 150 Minutes          | 10.15 am-12.45 am |
+| 3                   | <ul><li>Testing of the Salama (DIGIT HCM app)-Session 2</li></ul>                                                                                                                                                                                                                                                                                      | 150 Minutes          | 10.15 am-12.45 am |
 | 4                   | <ul><li>Review of the testing performed</li></ul>                                                                                                                                                                                                                                                                                                      | 15 minutes           | 12.45 am-1.00 pm  |
 | <p><br></p>         | Lunch Break                                                                                                                                                                                                                                                                                                                                            | 60  minutes          | 1.00pm-2.00 pm    |
-| 5                   | <ul><li>Testing of the Salama(DIGIT HCM app)-Session 3</li></ul>                                                                                                                                                                                                                                                                                       | <p><br></p>          | 2.00 pm-3.00 pm   |
+| 5                   | <ul><li>Testing of the Salama (DIGIT HCM app)-Session 3</li></ul>                                                                                                                                                                                                                                                                                      | <p><br></p>          | 2.00 pm-3.00 pm   |
 | <p><br></p>         | Tea Break-2                                                                                                                                                                                                                                                                                                                                            | 15 minutes           | 3.00 pm-3.15 pm   |
-| 1                   | Defect review: Clarifying Q\&A on defects raised( if any)                                                                                                                                                                                                                                                                                              | 45 Minutes           | 3.00 pm-3.45 pm   |
+| 1                   | Defect review: Clarifying Q\&A on defects raised (if any)                                                                                                                                                                                                                                                                                              | 45 Minutes           | 3.00 pm-3.45 pm   |
 | 4                   | Session closure                                                                                                                                                                                                                                                                                                                                        | 15 minutes           | 3.45 pm-4.00 pm   |
 
 #### UAT Sign off&#x20;
@@ -164,7 +164,7 @@ Any minor feedback arising out of the UAT-2 testing that requires minimal change
 
 #### UAT Defect Life Cycle&#x20;
 
-Defects must be clearly captured and escalated to ensure prompt resolution by development.  Each defect submitted by UAT will be assigned a priority, worked by development, resolved, and re-tested by UAT prior to closure.  The following is a snapshot of the standard defect lifecycle:
+Defects must be clearly captured and escalated to ensure prompt resolution by development. Each defect submitted by UAT will be assigned a priority, worked by development, resolved, and re-tested by UAT prior to closure. The following is a snapshot of the standard defect lifecycle:
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2023-06-07 at 6.25.44 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -172,9 +172,9 @@ Defects must be clearly captured and escalated to ensure prompt resolution by de
 
 eGov and NMCP together will prioritise and classify defects.  Defects found in UAT can be assigned one of three (3) levels of severity:
 
-* Critical defects : These are the defects found during the testing that render the application useless and prevent it from being used during the campaign. These will be resolved on priority.
-* Major defects : These defects make a part of the application functionality unavailable to the user but the user should still be able to use the application with limited functionality or a workaround exists. These will be taken up and fixed before the campaign starts.
-* Minor : These are the defects that reflect a deviation from the agreed scope but do not hamper the use of the application in any way. These will be considered for fixing only if the time permits.
+* Critical defects: These are the defects found during the testing that render the application useless and prevent it from being used during the campaign. These will be resolved on priority.
+* Major defects: These defects make a part of the application functionality unavailable to the user but the user should still be able to use the application with limited functionality or a workaround exists. These will be taken up and fixed before the campaign starts.
+* Minor: These are the defects that reflect a deviation from the agreed scope but do not hamper the use of the application in any way. These will be considered for fixing only if the time permits.
 
 #### UAT Change Request Life Cycle&#x20;
 
@@ -190,7 +190,7 @@ eGov in consultation with NMCP will decide acceptance and categorisation of chan
 * Should Have – Change requests that are required for better tracking and monitoring and will increase the ease of use of the system for users. A workaround has been identified and is listed in the CR.
 * Good to Have – Change requests that are simply for better visualisation and reporting. It could be excluded if not resolved by the scheduled implementation date.
 
-eGov to endeavour to cover Must Have changes before distribution. Lower priority changes will be taken through the eGov Gating process for planning subsequent releases.
+eGov to endeavour to cover Must Have changes before distribution. Lower priority changes will be taken through the eGov gating process for planning subsequent releases.
 
 ## Success criterion
 
@@ -243,7 +243,7 @@ Day: 16th June 2023
 
 #### Registration & Distribution:
 
-1. Register 5 households residing in a village in Zambezia. Capture how many numbers are living in the household, and fill in details (age, gender,mobile number) for the head of the household. Then you proceed to deliver bed nets:-
+1. Register 5 households residing in a village in Zambezia. Capture how many numbers are living in the household, and fill in details (age, gender, mobile number) for the head of the household. Then, you proceed to deliver bed nets:
 
 &#x20;      a. Which is less than the number of bed nets suggested by the App for 2 households
 
@@ -256,13 +256,13 @@ Day: 16th June 2023
 4. You are a registador and you forgot your password. What will you do?
 5. You are not able to see your assigned village in the list of villages. What action would you take?
 6. Sync all the records pending to be synced in the application.
-7. You are a registador and you realize, one of the members you registered has already been registered by your colleague and is a duplicate entry. What will you do to remove the duplicate entry from your records?
+7. You are a registador and you realise, one of the members you registered has already been registered by your colleague and is a duplicate entry. What will you do to remove the duplicate entry from your records?
 
 #### Supervision:
 
 1. You are the supervisor for the team working in a Village A in Zambezia, and your team members are in the field distributing nets. As per protocol, you are expected to go and observe them work and record your observations in the Registration and Distribution checklist. Please fill out the checklist and submit your observations for the following checklists. Mark ‘No’ as response for atleast 2 questions in each checklist and provide the reasons.
 
-&#x20;     a. Registration & Distribution monitoring&#x20;
+&#x20;     a. Registration & distribution monitoring&#x20;
 
 &#x20;     b. District warehouse monitoring&#x20;
 
@@ -270,7 +270,7 @@ Day: 16th June 2023
 
 &#x20;     d. Local monitors training monitoring&#x20;
 
-&#x20;     e. Registration & Distribution training monitoring
+&#x20;     e. Registration & distribution training monitoring
 
 2. You are the supervisor for the team working in a village in Zambezia, and you have made 4 checklist entries so far. You are supposed to make 5 entries for the checklist ‘Registration & Distribution monitoring’ daily. How will you check how many entries you have made so far for today and for which boundaries?
 3. Sync all the records pending to be synced in the application.
