@@ -2,7 +2,7 @@
 
 ## Mission
 
-Help countries achieve Health SDGs by building digital public goods that strengthen public health.
+Help countries achieve **Health SDGs** by building digital public goods that strengthen public health.
 
 ## Overview
 
