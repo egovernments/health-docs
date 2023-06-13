@@ -6,7 +6,7 @@ This training plan provides a systematic and consistent approach to train the tr
 
 Various trainings leading up to the campaign happen at the following levels:&#x20;
 
-* Master Trainer Training
+* Master trainer training
 * Central ToT
 * Provincial ToT
 * Local monitor-level training
