@@ -5,7 +5,6 @@
 * [Platform](platform/README.md)
   * [Release Notes](platform/release-notes.md)
     * [Release Checklist](platform/release-notes/release-checklist.md)
-    * [Implementation Checklist](platform/release-notes/implementation-checklist.md)
   * [Platform Features](platform/platform-features.md)
   * [Architecture](platform/architecture.md)
     * [Master Data Management Service (MDMS)](platform/architecture/master-data-management-service-mdms.md)
