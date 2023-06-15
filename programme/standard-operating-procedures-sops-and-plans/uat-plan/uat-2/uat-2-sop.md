@@ -31,8 +31,8 @@ UAT will be conducted in  2 phases with the below mentioned scope. This document
 
 | Test Phases | Tracks                                   | Scope                                                                                             |
 | ----------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| UAT 1       | HCM Mobile App                           | Registration and Service Delivery, Supervision, Inventory, raising complaints from the mobile app |
-| UAT 2       | Retest Issues/ Observations from UAT 1.  | Retesting observations and accepted CRs/bug fixes and signoff                                     |
+| UAT 1       | HCM mobile app                           | Registration and Service Delivery, Supervision, Inventory, raising complaints from the mobile app |
+| UAT 2       | Retest Issues/ observations from UAT 1.  | Retesting observations and accepted CRs/bug fixes and sign-off                                    |
 
 #### Out of scope of UAT
 
