@@ -8,6 +8,6 @@ Here are the articles in this section:
 
 [System User Setup](system-user-setup.md)
 
-[Facility](../../../../platform/low-level-design/registries/facility.md)
+[Facility](../../../../platform/architecture/low-level-design/registries/facility.md)
 
 [Product](product.md)
