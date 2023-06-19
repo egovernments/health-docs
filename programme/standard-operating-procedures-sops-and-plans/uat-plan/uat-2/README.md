@@ -4,7 +4,7 @@
 
 The UAT session will be conducted physically in Maputo. The agenda for the UAT session will be as follows. However this may undergo change based on the scope for UAT-2.&#x20;
 
-| #                    | Activity                                                                                                                                                                                                                                   | Approximate Duration | Time              |
+| #                    | Activity                                                                                                                                                                                                                                   | Approximate duration | Time              |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- | ----------------- |
 | Day 1-12th June 2023 | <p><br></p>                                                                                                                                                                                                                                |                      |                   |
 | 1                    | <ul><li>Introduction to the UAT plan and the session plan</li></ul>                                                                                                                                                                        | 15 minutes           | 8.00am -8.15 am   |
