@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The purpose of the User Acceptance Test (UAT) is to verify that the system meets the business needs as defined in the functional requirements (PRD) and instills confidence in its usage. Additionally, the UAT helps to identify any defects with associated risks, suggest potential enhancements (via change requests), communicate any known defects or enhancements to the project team, and ensure that all issues are resolved before go-live in an appropriate manner.
+The purpose of the User Acceptance Test (UAT) is to verify that the system meets the business needs as defined in the functional requirements (product requirement document or PRD) and instills confidence in its usage. Additionally, the UAT helps to identify any defects with associated risks, suggest potential enhancements (via change requests), communicate any known defects or enhancements to the project team, and ensure that all issues are resolved before go-live in an appropriate manner.
 
 ## Scope
 
