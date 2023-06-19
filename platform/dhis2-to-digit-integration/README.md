@@ -95,7 +95,7 @@ The model is based on the notion of a DataValue.
 * Period (which represents the time dimension), and&#x20;
 * Source (which represents the space dimension, i.e. an organisational unit in a hierarchy).
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-16 at 2.22.39 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 2.22.39 PM.png" alt=""><figcaption></figcaption></figure>
 
 | Meta Data          | Understanding on this                                                                                                                                                                                                                         | Remarks                                                                                                                                           |
 | ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -109,15 +109,15 @@ The model is based on the notion of a DataValue.
 
 METADATA Diagram taken from the DHIS2 technical documentation
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-16 at 2.23.39 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 2.23.39 PM.png" alt=""><figcaption></figcaption></figure>
 
 The diagram is taken from the core technical documentation for understanding the relationships between the DHIS2:
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-16 at 2.24.29 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 2.24.29 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-16 at 2.25.41 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 2.25.41 PM.png" alt=""><figcaption></figcaption></figure>
 
 While adding dhis2 client [https://github.com/dhis2/dhis2-java-client](https://github.com/dhis2/dhis2-java-client)\
 
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2023-05-16 at 2.26.36 PM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-05-16 at 2.26.36 PM.png" alt=""><figcaption></figcaption></figure>
