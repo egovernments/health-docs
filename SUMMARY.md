@@ -74,7 +74,6 @@
         * [Test Cases](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/test-cases.md)
       * [Functional Specifications](products/health-campaign-management/frontline-workers-app/functional-specifications.md)
       * [Field App Architecture](products/health-campaign-management/frontline-workers-app/field-app-architecture.md)
-      * [Field App Architecture](products/health-campaign-management/frontline-workers-app/field-app-architecture-1.md)
       * [Installation](products/health-campaign-management/frontline-workers-app/installation/README.md)
         * [APK Installation](products/health-campaign-management/frontline-workers-app/installation/apk-installation.md)
       * [Configuration](products/health-campaign-management/frontline-workers-app/configuration/README.md)
