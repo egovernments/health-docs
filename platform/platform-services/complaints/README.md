@@ -1,10 +1,10 @@
 # Complaints
 
-### Overview <a href="#overview" id="overview"></a>
+## Overview <a href="#overview" id="overview"></a>
 
 Complaint Management is a system that enables employees to raise complaints related to health campaigns. An employee can track the complaint, upload image related to the complaint, and re-open the complaint if he/she is not satisfied and rate the service. This document contains the details about how to set up the complaints module (pgr-service), and describes the functionalities it provides.
 
-### Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
+Pre-requisites
 
 Before you proceed with the configuration, make sure the following pre-requisites are met:&#x20;
 
@@ -25,7 +25,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
   * egov-url-shortening
   * egov-hrms
 
-### Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
+## Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
 
 * Citizen/employee can file, track and rate the complaint.
 * Citizen/employee can add image and comments related to the complaint.
@@ -34,7 +34,7 @@ Before you proceed with the configuration, make sure the following pre-requisite
 * Can track the SLA for resolving each complaint and can use it as a metric to streamline the process for resolving complaints.
 * Department-wise assignment of the complaint to the LME.
 
-**Setup Details**
+## **Setup Details**
 
 The source code for an [Complaints](https://github.com/egovernments/health-campaign-services/tree/v1.1.0/core-services/pgr-services) (pgr-service) is present in the health-campaign-services Git repo. The spring boot application needs the **Lombok\*** extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.&#x20;
 
@@ -53,7 +53,7 @@ pgr.kafka.create.topic=save-pgr-request
 pgr.kafka.update.topic=update-pgr-request
 ```
 
-### Configuration Details <a href="#configuration-details" id="configuration-details"></a>
+## Configuration Details <a href="#configuration-details" id="configuration-details"></a>
 
 1. Add the master data in MDMS service with module name as `RAINMAKER-PGR`. Following is a sample master data for the service:
 
@@ -219,7 +219,7 @@ pgr.kafka.update.topic=update-pgr-request
 }
 ```
 
-## Configuration details
+## Configuration Details
 
 **Action test: URL actions adding**
 
@@ -277,15 +277,15 @@ pgr.kafka.update.topic=update-pgr-request
     }
 ```
 
-**Persister configuration**
+## **Persister Configuration**
 
 [Complaints Persister Config](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-persister/pg-service-persister.yml)
 
-**Indexer configuration**
+## **Indexer Configuration**
 
 [Complaints Indexer Config](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-indexer/pgr-services.yml)
 
-**Postman collection**
+## **Postman Collection**
 
 [Click here](https://github.com/egovernments/health-campaign-services/blob/v1.1.0/core-services/pgr-services/src/test/resources/postman/pgr-services.postman\_collection.json)
 

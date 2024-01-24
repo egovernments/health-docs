@@ -20,7 +20,7 @@ The individual registry provides APIs to create citizens or users to the DIGIT p
 3. Inactivates the status of individuals post deletion.
 4. Provides search API for individuals on name, individual ID, unique ID, and date of birth.&#x20;
 
-### **Setup Details**
+## **Setup Details**
 
 The source code for an [Individual](https://github.com/egovernments/health-campaign-services/tree/v1.1.0/health-services/individual) is present in the health-campaign-services Git repo. The spring boot application needs the **Lombok\*** extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.&#x20;
 
@@ -279,18 +279,18 @@ individual.producer.delete.topic=delete-individual-topic
 },
 ```
 
-#### **Persister configuration**
+## **Persister Configuration**
 
 [Individual Persister Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-persister/individual-persister.yml)
 
-#### Indexer configuration
+## Indexer Configuration
 
 [Individual Indexer Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-indexer/individual-indexer.yml)
 
-#### Database schema
+## Database Schema
 
 <figure><img src="../../.gitbook/assets/Individual.png" alt=""><figcaption></figcaption></figure>
 
-#### Postman collection
+## Postman Collection
 
 [https://www.postman.com/lunar-resonance-126497/workspace/hcm/collection/24751924-8dbf724a-ae3b-4bff-a07c-c314101594ce](https://www.postman.com/lunar-resonance-126497/workspace/hcm/collection/24751924-8dbf724a-ae3b-4bff-a07c-c314101594ce?ctx=documentation)

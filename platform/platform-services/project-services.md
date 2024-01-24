@@ -1063,18 +1063,18 @@ project.task.consumer.bulk.delete.topic=delete-project-task-bulk-topic
 
 ```
 
-**Persister configuration**
+## **Persister Configuration**
 
 [Project Persister Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-persister/project-persister.yml)
 
-**Indexer configuration**
+## **Indexer Configuration**
 
 [Project Indexer Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-indexer/project-indexer.yml)
 
-#### Database schema
+## Database Schema
 
 <figure><img src="https://lh5.googleusercontent.com/9fy2MSfDZccFOtOC5tegd6e-ObmjtEUQmOviJHCJv7NgiLvxscWm1_dsFNvM24a9hJ9CZYA1QdQnT1GIPIhCJkNSpFdIs1LX9jKZ-xe-VbXR4FKVFOyfKZhQSJ07r2U-ZxiciBp2LNbHDtof3oekBiU" alt=""><figcaption></figcaption></figure>
 
-**Postman collection**
+## **Postman Collection**
 
 [https://www.postman.com/lunar-resonance-126497/workspace/hcm/environment/24751924-61d3084a-c7bf-4591-8b7d-2ec5828d96b1](https://www.postman.com/lunar-resonance-126497/workspace/hcm/environment/24751924-61d3084a-c7bf-4591-8b7d-2ec5828d96b1)

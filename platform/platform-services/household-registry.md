@@ -20,7 +20,7 @@ The household service provides APIs to create households and household members f
 3. Provides APIs to create, update, delete, and search household members.
 4. Provides APIs to bulk create, bulk update, and bulk delete household members.
 
-### Setup details
+## Setup Details
 
 The source code for a [Household](https://github.com/egovernments/health-campaign-services/tree/v1.1.0/health-services/household) is present in the health-campaign-services Git repo. The spring boot application needs the **Lombok\*** extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.
 
@@ -63,7 +63,7 @@ household.member.consumer.bulk.delete.topic=household-member-consumer-bulk-delet
 * eGov -idGen -> egov.idgen.host =[ ](https://health-dev.digit.org)[https://health-dev.digit.org/](https://health-dev.digit.org/)
 * eGov-User Service -> egov.user.host =[ ](https://health-dev.digit.org)[https://health-dev.digit.org/](https://health-dev.digit.org/)
 
-## Configuration details
+## Configuration Details
 
 #### Access MDMS configurations
 
@@ -484,18 +484,18 @@ household.member.consumer.bulk.delete.topic=household-member-consumer-bulk-delet
 }
 ```
 
-**Persister configuration**
+## **Persister Configuration**
 
 [Household Persister Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-persister/household-persister.yml)
 
-**Indexer configuration**
+## **Indexer Configuration**
 
 [Household Indexer Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-indexer/household-indexer.yml)
 
-#### Database schema
+## Database Schema
 
 <figure><img src="https://lh5.googleusercontent.com/OwISCIjoHvJKrm3GFVnfHgcXEfQE0rWc2w4v_TsDA2eS3mcaLjA0eXVwOm5qOESly-xGnOzhW-HMUdASnhoFKbRv3JcQruYZ-voZNI75MqKbmwmG_8GUPlFLgRpVOyzan4bxKAFweUbLXLvGLoizYc8" alt=""><figcaption></figcaption></figure>
 
-**Postman collection**
+## **Postman Collection**
 
 [https://www.postman.com/lunar-resonance-126497/workspace/hcm/environment/24751924-61d3084a-c7bf-4591-8b7d-2ec5828d96b1](https://www.postman.com/lunar-resonance-126497/workspace/hcm/environment/24751924-61d3084a-c7bf-4591-8b7d-2ec5828d96b1)

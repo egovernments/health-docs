@@ -18,7 +18,7 @@ The facility service provides APIs to create facilities for the HCM. This docume
 1. Provides APIs to create, update, delete, and search facilities.
 2. Provides APIs to bulk create, bulk update, and bulk delete facilities.
 
-### Setup details
+## Setup Details
 
 The source code for [Facility](https://github.com/egovernments/health-campaign-services/blob/v1.1.0/docs/health-api-specs/contracts/registries/facility.yml) is present in the health-campaign-services Git repo. The spring boot application needs the **Lombok\*** extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.
 
@@ -48,7 +48,7 @@ facility.kafka.delete.topic=delete-facility-topic
 * eGov -idGen :-> egov.idgen.host =[ ](https://health-dev.digit.org)[https://health-dev.digit.org/](https://health-dev.digit.org/)
 * eGov-User Service -> egov.user.host =[ ](https://health-dev.digit.org)[https://health-dev.digit.org/](https://health-dev.digit.org/)
 
-## Configuration details
+## Configuration Details
 
 #### Access MDMS configurations
 
@@ -243,18 +243,18 @@ facility.kafka.delete.topic=delete-facility-topic
 
 ```
 
-**Persister configuration**
+## **Persister Configuration**
 
 [Facility Persister Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-persister/facility-persister.yml)
 
-**Indexer configuration**
+## **Indexer Configuration**
 
 [Facility Indexer Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-indexer/facility-indexer.yml)
 
-#### Database schema
+## Database Schema
 
 <figure><img src="https://lh5.googleusercontent.com/wscPUUhRgY_A_1pmJLQ0qz3O_uklMHOatlXjnuifIwkzTHWf-ElEuLHkxtZ5VKooXpUmWbUHvRFLX33s18hzTjaqxdM_7UHjABgQYcfsod6ejqHGdoUIrbDEpZXTCEZGVAccNtHl5KOyLOSG6gckcJY" alt=""><figcaption></figcaption></figure>
 
-**Postman collection**
+## **Postman Collection**
 
 [https://www.postman.com/lunar-resonance-126497/workspace/hcm/environment/24751924-61d3084a-c7bf-4591-8b7d-2ec5828d96b1](https://www.postman.com/lunar-resonance-126497/workspace/hcm/environment/24751924-61d3084a-c7bf-4591-8b7d-2ec5828d96b1)

@@ -1,28 +1,30 @@
 # User Management
 
+## Overview
+
 The objective of User Management in DIGIT HRMS service is to provide a service that manages all the employees enrolled in the system. HRMS provides extensive APIs to create, update, and search employees with attributes like assignments, service history, jurisdiction, etc. HRMS can be treated as a sub-set of the egov-user service, Every employee created through HRMS will also be created as a user in egov-user.
 
-### Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
+## Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
 
 Before you proceed with the documentation, make sure the following pre-requisites are met:&#x20;
 
 * _Java 8._
 * Kafka server is up and running.
-* egov-persister service is running and has Hrms service persister config path added in it.
+* egov-persister service is running and has HRMS service persister config path added in it.
 * PSQL server is running and a database is created to store employee data.
 * Dependency services should be up and running:
   * egov-user - [Source code](https://github.com/egovernments/Core-Platform/tree/health-digit-master/core-services/egov-user)
   * egov-notification-mail - [Source code](https://github.com/egovernments/DIGIT-Dev/tree/health-digit-master/core-services/egov-notification-mail)&#x20;
   * user-otp - [Source code](https://github.com/egovernments/DIGIT-Dev/tree/health-digit-master/core-services/user-otp)
 
-### Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
+## Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
 
 * This service provides a feature to create, update, and search the employee in the system.
 * It provides a feature to add various roles to an employee under multiple jurisdictions.
 * It provides a feature to deactivate and reactivate an employee.
 * It records the employee details such as assignment details, jurisdiction details, and personal details.
 
-**Setup Details**
+## **Setup Details**
 
 The source code for an [User Management](https://github.com/egovernments/DIGIT-Dev/tree/health-digit-master/business-services/egov-hrms) (egov-hrms) is present in the digit-dev Git repo. The spring boot application needs the **Lombok\*** extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.&#x20;
 
@@ -43,7 +45,7 @@ Following are the properties in the application.properties file in the HRMS serv
 | <p>egov.idgen.ack.name</p><p> </p>                | <p>hrms.employeecode</p><p> </p>                 | Key to be configured in Idgen alongwith the ID format to generate employee code.                                                                       |
 | egov.idgen.ack.format                             | <p>EMP-[city]-[SEQ_EG_HRMS_EMP_CODE]</p><p> </p> | Format to be configured in ID gen to generate employee code.                                                                                           |
 
-### Configuration Details
+## Configuration Details
 
 * EmployeeDepartment.json&#x20;
 
@@ -292,7 +294,7 @@ Following are the properties in the application.properties file in the HRMS serv
 
 {% embed url="https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/egov-location/boundary-data.json" %}
 
-### API Details
+## API Details
 
 Refer to the Swagger API for YAML file details: [UserManagement.yaml](https://github.com/egovernments/DIGIT-Dev/blob/health-digit-master/business-services/Docs/hrms-v1.0.0.yaml)
 

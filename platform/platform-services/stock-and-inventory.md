@@ -20,13 +20,13 @@ The stock service provides APIs to manage stocks and reconciliation of stocks fo
 3. Provides APIs to create, update, delete, and search reconciliation for the stocks.
 4. Provides APIs to bulk create, bulk update, and bulk delete reconciliation for the stocks.
 
-### Setup details
+## Setup Details
 
 The source code for the [Stock](https://github.com/egovernments/health-campaign-services/tree/v1.1.0/health-services/stock) is present in the health-campaign-services Git repo. The spring boot application needs the **Lombok\*** extension added to the IDE to load it. Once the application is up and running, the API requests can be posted to the URL and the IDs can be generated.
 
 **\***In the case of IntelliJ, the plugin can be installed directly. For eclipse, the Lombok jar location has to be added in the eclipse.ini file in this format javaagent:lombok.jar.
 
-## API details
+## API Details
 
 Refer to the Swagger API for YAML file details: [Stock.yaml](https://github.com/egovernments/health-campaign-services/blob/v1.1.0/docs/health-api-specs/contracts/stock.yml)
 
@@ -59,7 +59,7 @@ stock.reconciliation.kafka.delete.topic=delete-stock-reconciliation-topic
 * eGov -project service :-> egov.project.facility.host =[ ](https://health-dev.digit.org)[https://health-dev.digit.org/](https://health-dev.digit.org/)
 * eGov -product service :-> egov.product.host =[ ](https://health-dev.digit.org)[https://health-dev.digit.org/](https://health-dev.digit.org/)
 
-## Configuration details
+## Configuration Details
 
 #### Access MDMS configurations
 
@@ -415,18 +415,18 @@ stock.reconciliation.kafka.delete.topic=delete-stock-reconciliation-topic
 },
 ```
 
-**Persister configuration**
+## **Persister Configuration**
 
 [Stock Persister Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-persister/stock-persister.yml)
 
-**Indexer configuration**
+## **Indexer Configuration**
 
 [Stock Indexer Yaml](https://github.com/egovernments/health-campaign-config/blob/v1.1.0/egov-indexer/stock-indexer.yml)
 
-#### Database schema
+## Database Schema
 
 <figure><img src="https://lh5.googleusercontent.com/o-BpHdAHLfWfbx4Ubf1t6LFRgRFqoL3ZgjNOTVcxFchpFN6vayKx6wiPCbFvRNTh2PoWb0ec58NKz9p6qrwzpdHgLz-3KM7vhnm2tuxoOplXdYx574kIeLbsa8NkUKnxFuIYbykW5iWZZI3fqV7Us0s" alt=""><figcaption></figcaption></figure>
 
-**Postman collection**
+## **Postman Collection**
 
 [https://www.postman.com/lunar-resonance-126497/workspace/hcm/environment/24751924-61d3084a-c7bf-4591-8b7d-2ec5828d96b1](https://www.postman.com/lunar-resonance-126497/workspace/hcm/environment/24751924-61d3084a-c7bf-4591-8b7d-2ec5828d96b1)

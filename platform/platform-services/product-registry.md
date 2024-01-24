@@ -24,7 +24,7 @@ The source code for a [Product](https://github.com/egovernments/health-campaign-
 
 **\***In the case of IntelliJ, the plugin can be installed directly. For eclipse, the Lombok jar location has to be added in the eclipse.ini file in this format javaagent:lombok.jar.
 
-## API details
+## API Details
 
 Refer to the Swagger API for YAML file details: [Product.yaml](https://github.com/egovernments/health-campaign-services/blob/v1.1.0/docs/health-api-specs/contracts/registries/product.yml)
 
@@ -46,7 +46,7 @@ product.variant.kafka.update.topic=update-product-variant-topic
 * eGov -idGen :-> egov.idgen.host =[ ](https://health-dev.digit.org)[https://health-dev.digit.org/](https://health-dev.digit.org/)
 * eGov-User Service -> egov.user.host =[ ](https://health-dev.digit.org)[https://health-dev.digit.org/](https://health-dev.digit.org/)
 
-## Configuration details
+## Configuration Details
 
 #### Access MDMS configurations
 
