@@ -35,6 +35,7 @@
     * [Facility Registry](platform/platform-services/facility-registry.md)
     * [Stock & Inventory](platform/platform-services/stock-and-inventory.md)
     * [Project Services](platform/platform-services/project-services.md)
+    * [Referral Registry](platform/platform-services/referral-registry.md)
     * [Complaints](platform/platform-services/complaints/README.md)
       * [QA Sign-Off](platform/platform-services/complaints/qa-sign-off/README.md)
         * [Test Cases](platform/platform-services/complaints/qa-sign-off/test-cases.md)
