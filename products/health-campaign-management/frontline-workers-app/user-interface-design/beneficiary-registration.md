@@ -25,7 +25,7 @@ After clicking on the hamburger button, a list of actions appears on the user sc
 
 If the user clicks on the hamburger button again, it collapses the hamburger menu. The button is available on all screens of the application.
 
-<figure><img src="../../../../.gitbook/assets/IMG_20230512_232739.jpg" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2024-02-14 at 11.44.49 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Edit Profile
 
