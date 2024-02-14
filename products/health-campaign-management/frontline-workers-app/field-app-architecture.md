@@ -115,24 +115,23 @@ Beneficiary Refused, Beneficiary Referred, and Not Eligible status except the ag
 
 ## Diagrams
 
-**Class Diagram**
+### **Class Diagram**
 
-![](https://lh6.googleusercontent.com/6u\_Ks1nhqzaTHk2a6O4ih16JCXevaFt0QK-jsDqnKofRhOf98nO4647finh9tpBm2pcSlgcbb5YR2nze-qAhmM\_rzeL1rsq\_NlDXdQiFs9Ex0quqYIdcY\_fSlUBTD6DsnZ2Ak\_Wccn2H0cxyBMwz-2ZG\_10ZxQKRrikX60aeVoow7l7niQOaCacFQ2sG0g)
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-02-14 at 10.41.47 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### **Sequence Diagrams**
 
 **Init App**
 
-![](https://lh4.googleusercontent.com/SofQeWPwHkSXtAm0dEIhT-KYnMzXbZadeFn7IewejBrvjigMEN6vyxXRNA5jS7xv8EOIxGgKDItFDmHA3BYndPtFpT8j2H5VbmfshVSfe1VZBcBCXTfUtWUe7EJUwx3KPoyuStfMNUflt-m-HeOJ6h1Hje81YT2Mi7RChprs\_txKD6v4ooTQXB\_ylCtMhA)\
-
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-02-14 at 10.43.37 AM.png" alt=""><figcaption></figcaption></figure>
 
 **Login**
 
-![](https://lh5.googleusercontent.com/WE0SXWklUGeV9Wk3Zlkw-Kk9kVlNpCsx\_DK-39eGf\_\_N1T0IXja\_QylXhQ30muX04dHDsrRxoC85Gi0V6RikgL84vIdbBv31bnagGSDSyMyT-mYH-xCp3D\_72PEBfO-FemwEA-ZqW-ILYtdCBlyiIyk-50f\_mb-Kq-m9GJ1x1EMV6Th1HSsuwfCscXSltg)
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-02-14 at 10.44.47 AM.png" alt=""><figcaption></figcaption></figure>
 
 **Sync Down**
 
-![](https://lh6.googleusercontent.com/jJVEwSinPsrP8c30WrxkwmXFBTt5IolePEh1IxtOSwaO53VrehOdCmkCFU-q-DO0\_mBe9F0pemp0L5C8\_dmv-jfevQMxYlXeG5MPySWewi6JuLeXeAxE\_beOUDxkVemJMoiOOzjDXv55gD\_EinFQm59N1yZJlhAPtuIweGD4gp9tE6YB81\_dNYmc2uStKg)
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-02-14 at 10.46.07 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Delivery Resource
 
