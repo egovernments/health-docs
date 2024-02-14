@@ -22,6 +22,8 @@
         * [Stock](platform/architecture/low-level-design/services/stock.md)
   * [Technical Skillset & Pre-requisites](platform/technical-skillset-and-pre-requisites.md)
   * [Installation](platform/installation/README.md)
+    * [Setup Requirements](platform/installation/setup-requirements.md)
+    * [Supported Clouds](platform/installation/supported-clouds.md)
   * [Configuration](platform/configuration/README.md)
     * [Localisation Keys](platform/configuration/localisation-keys.md)
   * [Development Guide](platform/development-guide.md)
