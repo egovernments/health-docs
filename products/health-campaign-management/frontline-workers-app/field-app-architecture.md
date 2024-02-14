@@ -123,15 +123,15 @@ Beneficiary Refused, Beneficiary Referred, and Not Eligible status except the ag
 
 **Init App**
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-02-14 at 10.43.37 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-02-14 at 10.52.54 AM (2).png" alt=""><figcaption></figcaption></figure>
 
 **Login**
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-02-14 at 10.44.47 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-02-14 at 10.54.36 AM.png" alt=""><figcaption></figcaption></figure>
 
 **Sync Down**
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-02-14 at 10.46.07 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-02-14 at 10.56.09 AM.png" alt=""><figcaption></figcaption></figure>
 
 ### Delivery Resource
 
