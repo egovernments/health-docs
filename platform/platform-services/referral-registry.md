@@ -450,7 +450,7 @@ referralmanagement.referral.consumer.bulk.delete.topic=delete-referral-bulk-topi
 
 ## Database Schema
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 ## Postman Collections
 

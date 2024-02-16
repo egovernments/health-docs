@@ -2,7 +2,7 @@
 
 Find the mock-ups below:
 
-HCM Homescreen
+### HCM Homescreen
 
 After logging into the application, the user lands on this screen which displays daily performance (number of households registered). The progress bar must reset daily at 00:00 hours and start from 0 registrations. The action buttons related to the beneficiary are present  which include:
 
@@ -18,12 +18,15 @@ The help button is on every screen of the application, and by clicking on it a u
 
 On the top right, the administrative area assigned to the user is displayed which will be based on the level of hierarchy. The hamburger button on the top left corner covers some other actions mentioned further.
 
-![](<../../../../.gitbook/assets/Android - 484 (2).png>)
+<div align="left">
+
+<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ### View My Checklists
 
 ![](../../../../.gitbook/assets/IMG\_20230513\_234352.jpg)\
-\
 
 
 <div align="left">
@@ -36,9 +39,7 @@ On the top right, the administrative area assigned to the user is displayed whic
 
 &#x20;![](../../../../.gitbook/assets/IMG\_20230513\_234434.jpg)
 
-![](../../../../.gitbook/assets/IMG\_20230513\_234539.jpg)\
-\
-
+![](../../../../.gitbook/assets/IMG\_20230513\_234539.jpg)
 
 ### Confirmation Screen
 

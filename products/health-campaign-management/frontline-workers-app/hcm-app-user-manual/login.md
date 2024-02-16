@@ -4,7 +4,7 @@
 
 Users are redirected to this screen once they select the preferred language in the previous screen.
 
-![](https://lh3.googleusercontent.com/wynNtgXaPeLByfSdH-rSyDYdXiqsxMlh1GCFP\_fN100VULU\_qk15nNbt0G9gxbrSO0U\_6-RfYdCdqlm6UAEgwXRySuXYH17S\_01FAbnz7HdcX735XjCOhkDrMk482iL\_\_wSRa5XbogGq2lcCGNtg4C8)
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## User actions
 

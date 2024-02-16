@@ -23,7 +23,7 @@ This enables distributors to deliver multiple doses for multiple cycles, and rec
 
 Once the distributor is on the household details page, he/she can see which beneficiary is eligible for drug delivery in the current cycle. Click on "Record Delivery" or "Unable to Deliver":
 
-<figure><img src="../../../../.gitbook/assets/image (29).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29) (1).png" alt="" width="185"><figcaption></figcaption></figure>
 
 **Step 2**
 

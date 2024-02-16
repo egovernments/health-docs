@@ -161,7 +161,9 @@ Landing Page (Common page)
 
 A landing page must be available to the user to access all available modules.\
 \
-![](<../../../../.gitbook/assets/Screenshot (279) (1).png>)
+
+
+<figure><img src="../../../../.gitbook/assets/Screenshot (279) (1).png" alt=""><figcaption></figcaption></figure>
 
 Helpdesk (Desktop View)
 
@@ -171,10 +173,14 @@ Below the new complaint and reports buttons, there are filters available to appl
 
 The complaints are displayed in a horizontal format with the same values for mobile view. The user can click on the entire area of a particular complaint.
 
-At the bottom, there are forward, backward, first page, and last page arrow buttons along with the page number information as displayed on the screen.
+At the bottom, there are forward, backward, first page, and last page arrow buttons along with the page number information as displayed on the screen.\
 
-![](<../../../../.gitbook/assets/Desktop - 123 (1).png>)\
 
+<div align="left">
+
+<figure><img src="../../../../.gitbook/assets/Desktop - 123 (1).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Complaint Details
 
@@ -182,22 +188,24 @@ When the user clicks on a complaint, the details screen appears which provides t
 
 There is a "Take Action" button at the bottom. When the user clicks on it, the actions appear above the button as displayed on the screen. The actions include resolve complaint, assign to P2, and reject complaint. If the user clicks on any blank area on the screen, the actions collapse.
 
-![](<../../../../.gitbook/assets/Frame 1054.png>)
+<figure><img src="../../../../.gitbook/assets/Frame 1054.png" alt=""><figcaption></figcaption></figure>
 
 \
-![](<../../../../.gitbook/assets/Frame 1053.png>)
+
+
+<figure><img src="../../../../.gitbook/assets/Frame 1053.png" alt=""><figcaption></figcaption></figure>
 
 Resolve Complaint
 
 If the complaint has been resolved, then the user must click on the "Resolve Complaint" button which opens this screen. There is an "Additional Comments" field in which the user can provide any remarks if he wants. At the bottom, there is a submit button that updates the complaint status as resolved.
 
-![](<../../../../.gitbook/assets/Screenshot (289).png>)
+<figure><img src="../../../../.gitbook/assets/Screenshot (289).png" alt=""><figcaption></figcaption></figure>
 
 Reject Complaint
 
 If the user has rejected any complaint, then she needs to select the reason for rejection from the dropdown. There is an additional comments field in which the user can provide any remarks if he wants. At the bottom, there is a submit button that updates the complaint status as rejected.
 
-![](<../../../../.gitbook/assets/Screenshot (293).png>)
+<figure><img src="../../../../.gitbook/assets/Screenshot (293).png" alt=""><figcaption></figcaption></figure>
 
 Assign to P2
 
@@ -209,25 +217,32 @@ There is an additional comments field in which the user can provide any remarks 
 
 At the bottom, there is a cancel button which takes the user back to the complaints screen, and an assign button which assigns the complaint to the selected person.
 
-![](<../../../../.gitbook/assets/Screenshot (290).png>)\
+\
 \
 Confirmation Screen
 
-If the complaint has been assigned successfully, then the following screen must appear. If the complaint could not be assigned, then the text must say, “Complaint Not Assigned.”![](<../../../../.gitbook/assets/Screenshot (291).png>)\
+<figure><img src="../../../../.gitbook/assets/Screenshot (290).png" alt=""><figcaption></figcaption></figure>
 
+If the complaint has been assigned successfully, then the following screen must appear. If the complaint could not be assigned, then the text must say, “Complaint Not Assigned.”\
+
+
+<figure><img src="../../../../.gitbook/assets/Screenshot (291).png" alt=""><figcaption></figcaption></figure>
 
 New Complaint
 
 When the user clicks on the “New Complaint” button on the complaints screen, then this screen appears. The details captured are the same as that entered by the complainant. When the details are entered, the user needs to click on the submit button which opens the confirmation window over the same screen. If the user clicks on the cancel button, then she is navigated back to the complaints screen
 
-![](<../../../../.gitbook/assets/Desktop - 41 (1).png>)\
+<div align="left">
 
+<figure><img src="../../../../.gitbook/assets/Desktop - 41 (1).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 Confirmation Screen
 
 When the user clicks on the submit button, the system confirms whether the complaint has been submitted successfully or not. There is a back to home button placed on both screens, clicking on which will navigate the user to the home screen of the helpdesk.
 
-![](<../../../../.gitbook/assets/Desktop - 30.png>)
+<figure><img src="../../../../.gitbook/assets/Desktop - 30.png" alt=""><figcaption></figcaption></figure>
 
-![](<../../../../.gitbook/assets/Desktop - 114.png>)
+<figure><img src="../../../../.gitbook/assets/Desktop - 114.png" alt=""><figcaption></figcaption></figure>
 

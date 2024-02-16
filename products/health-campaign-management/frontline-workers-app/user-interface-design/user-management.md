@@ -6,7 +6,7 @@ Find the mock-ups below:
 
 A landing page must be available to the user to access all available modules.
 
-<figure><img src="../../../../.gitbook/assets/Screenshot (279).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 ### User Management Module
 
@@ -26,7 +26,11 @@ Users must be able to create new users by providing the following details. Refer
 
 #### Assign Campaigns
 
-<figure><img src="../../../../.gitbook/assets/Screenshot (283).png" alt=""><figcaption></figcaption></figure>
+<div align="center">
+
+<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 <figure><img src="../../../../.gitbook/assets/Screenshot (284).png" alt=""><figcaption></figcaption></figure>
 

@@ -10,7 +10,7 @@ On this page, the following actions can be performed:
 
 * The "Deliver Intervention" button navigates the user to the following screen:
 
-![](<../../../../.gitbook/assets/image (15).png>)![](<../../../../.gitbook/assets/image (27).png>)
+![](<../../../../.gitbook/assets/image (15) (1).png>)![](<../../../../.gitbook/assets/image (27) (1).png>)
 
 * The “Number Of Resources For Delivery” must be automatically calculated by the system based on the value entered in the number of household members registered, including the household head.&#x20;
 * The ‘Resource Delivered’ field consists of all the possible resources that can be delivered in a particular project.&#x20;
@@ -20,7 +20,7 @@ On this page, the following actions can be performed:
 * After reviewing the details, the user can click on the submit button which will save the details of the household in the system. After validating the details, the confirmation screen appears.
 * File Path: [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/acknowledgement.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/acknowledgement.dart)
 
-![](<../../../../.gitbook/assets/image (6).png>)
+![](<../../../../.gitbook/assets/image (6) (1).png>)
 
 ## API details
 

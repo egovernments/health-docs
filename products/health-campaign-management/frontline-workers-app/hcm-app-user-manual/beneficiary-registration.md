@@ -4,7 +4,7 @@
 
 Beneficiary registration involves the registration of households and individuals using the HCM application. When field, and district supervisors  navigate to the home screen, the beneficiaries button is visible to them.
 
-![](<../../../../.gitbook/assets/image (17).png>)
+![](<../../../../.gitbook/assets/image (17) (1).png>)
 
 File Path : [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/home.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/home.dart)
 
@@ -16,7 +16,7 @@ On this page, the following actions can be performed:
 * A user has to click on the "Register New Household" button to register a household.
 * File Path : [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/search\_beneficiary.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/search\_beneficiary.dart)
 
-![](<../../../../.gitbook/assets/image (10).png>)![](<../../../../.gitbook/assets/image (28).png>)
+![](<../../../../.gitbook/assets/image (10) (1).png>)![](<../../../../.gitbook/assets/image (28) (1).png>)
 
 * After the user clicks on "Register New Household", the page navigates to the "Household Location" page.&#x20;
 * File Path : [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/beneficiary\_registration\_wrapper.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/beneficiary\_registration\_wrapper.dart)
@@ -25,25 +25,25 @@ On this page, the following actions can be performed:
 * Clicking on the 'Next' button will take the user to the "Household Details" page where the number of members living in the household can be registered.
 * File Path :  [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/household\_details.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/household\_details.dart)
 
-![](<../../../../.gitbook/assets/image (3).png>) ![](<../../../../.gitbook/assets/image (14).png>)
+![](<../../../../.gitbook/assets/image (3) (1).png>) ![](<../../../../.gitbook/assets/image (14) (1).png>)
 
 * Clicking the 'Next' button will take the user the "Individual details" screen.&#x20;
 * The first individual added will be the "Head of Household" by default.
 * File Path : [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/individual\_details.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary\_registration/individual\_details.dart)
 
-![](<../../../../.gitbook/assets/image (25).png>)
+![](<../../../../.gitbook/assets/image (25) (1).png>)
 
 * The name, ID type, and ID number fields are mandatory. Users can enter the date of birth or their age. The date birth will take precedence over age.&#x20;
 * When the user clicks on the submit button, a popup appears asking for confirmation.
 * If the user clicks on ‘Submit’, the household is registered and a confirmation screen is displayed.
 
-![](<../../../../.gitbook/assets/image (6).png>)\
+![](<../../../../.gitbook/assets/image (6) (1).png>)\
 
 
 * The user can click on the "Back to Search" button for editing the household or register new household fields.
 * File Path : [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/acknowledgement.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/acknowledgement.dart)
 
-![](<../../../../.gitbook/assets/image (8).png>)
+![](<../../../../.gitbook/assets/image (8) (1).png>)
 
 * Click on the open card to navigate to the detailed page of the household.&#x20;
 * There is an "Edit Household" button for editing household details, which navigates the user to the household location screen. The service delivery status is present below the household’s name followed by the administrative area and the number of members.&#x20;
@@ -51,7 +51,7 @@ On this page, the following actions can be performed:
 * For adding new members to the household, there is the "Add Member" button below the member cards, which navigates the user to the "Individual Details" screen.&#x20;
 * At the bottom, the "Deliver Intervention" button is present which navigates the user to the update delivery screen.
 
-![](<../../../../.gitbook/assets/image (26).png>)
+![](<../../../../.gitbook/assets/image (26) (1).png>)
 
 File Path : [https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary/household\_overview.dart](https://github.com/egovernments/health-campaign-field-worker-app/blob/master/apps/health\_campaign\_field\_worker\_app/lib/pages/beneficiary/household\_overview.dart)
 

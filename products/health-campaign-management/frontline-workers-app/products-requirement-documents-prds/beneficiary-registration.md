@@ -92,7 +92,7 @@ If the user clicks on the hamburger button again, it collapses the hamburger men
 
 The user can edit his/her name, and phone number, and select the gender. After updating the details, the user needs to click on the save button which opens a prompt stating “saved successfully”.&#x20;
 
-If the user does not want to make any changes, he/she can click on the back button, which will take them back to the hamburger menu. Not in scope for V1.0, needs to be taken in V1.1.
+If the user does not want to make any changes, he/she can click on the back button, which will take them back to the hamburger menu.
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2023-02-22 at 2.27.44 PM.png" alt=""><figcaption></figcaption></figure>
 

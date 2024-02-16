@@ -11,9 +11,12 @@ After a user logs into the HCM app, the project selection screen displays all th
 On this page, the following actions can be performed:
 
 * A user has to select one project.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
 * After selecting a project, the system downloads the data for the selected project only.
 
-![](<../../../../.gitbook/assets/image (16).png>)
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 * After every login action, the system will automatically syncs the data with the system.&#x20;
 * Since the user will log in only at the start of the day and before going into the field, there must be stable internet connectivity for the device to perform this process.
