@@ -87,7 +87,7 @@ High-level scope:
 
 &#x20;     \- Bulk user creation will be done at the beginning of the campaign.
 
-&#x20;     \- Individual user create/updates/deletes will most likely be done before and during the campaign.
+&#x20;     \- Individual user creates/updates/deletes will most likely be done before and during the campaign.
 
 &#x20;     \- Bulk user deactivation will be done after the campaign.
 
@@ -103,20 +103,20 @@ A campaign can be any collection where:
 
 &#x20;     a. Either the campaigns can be set up as a parent-child relationship (tree structure), that is, national (only reporting)-province(s) (only reporting)-district(s)-only reporting–villages (service delivery and reporting). (Must be of the same campaign type);
 
-&#x20;     b. Or it can be set up only at the village level: where village A, village B are two separate campaigns (can be of the same campaign type or different).
+&#x20;     b. Or it can be set up only at the village level: where village A, and village B are two separate campaigns (can be of the same campaign type or different).
 
 ### User Accounts
 
-There are two types of user accounts that need to be created during a health campaign:
+Two types of user accounts need to be created during a health campaign:
 
-1. Mobile app users’ accounts: Frontline workers (mostly contractual) who will log in on the phones and submit data into their assigned project. These users must also be able to view mobile reports to track their progress or the progress of their teams.
+1. Mobile app users’ accounts: Frontline workers (mostly contractual) who will log in on the phones and submit data to their assigned project. These users must also be able to view mobile reports to track their progress or the progress of their teams.
 2. Web app user accounts: Supervisors, system administrators, helpdesk users (most likely permanent employees of the health system, but some can also be contractual), who are mostly responsible for viewing online dashboards and reports to monitor campaign progress and view data submitted by the frontline workers (mobile app users).
 
 &#x20;      a. However, some supervisors may also be responsible for data collection and may act as both data collection agents as well as data reviewers.
 
 3. The system administration must be able to create all user roles and assign actions to each role as mentioned in the role-action mapping section.
-4. The system administrator must have the ability to provide user management permissions to other roles as required (example, supervisors, managers).
-5. Any user, who has the permission to manage/create users in the system, must also be able to perform the following actions:
+4. The system administrator must be able to provide user management permissions to other roles as required (for example, supervisors, and managers).
+5. Any user, who has permission to manage/create users in the system, must also be able to perform the following actions:
 
 &#x20;      a. Create users (except the system admin).
 
@@ -128,11 +128,11 @@ There are two types of user accounts that need to be created during a health cam
 
 &#x20;      e. Edit campaign assignment.
 
-6. The system administrator must be able to create a new user by only specifying the username (credential used to login to the system) and setting the password with an ability to add other demographic information later.
+6. The system administrator must be able to create a new user by only specifying the username (credential used to log in to the system) and setting the password with the ability to add other demographic information later.
 
 &#x20;      a. The system user must be able to share the list of usernames and passwords with the programme, once created.
 
-7. Once created during user creation, the username must not be changed. Users creating user accounts must NOT be able to change usernames once created. Product recommendations on choosing a username (these are only recommendations and the program can decide to create their own username format):&#x20;
+7. Once created during user creation, the username must not be changed. Users creating user accounts must NOT be able to change usernames once created. Product recommendations on choosing a username (these are only recommendations and the programme can decide to create its own username format):&#x20;
 
 &#x20;      a. First name: This is for people to remember. But if there are multiple users with the same name, then use serials (user, user2) or add a second initial.&#x20;
 
@@ -140,9 +140,9 @@ There are two types of user accounts that need to be created during a health cam
 
 &#x20;      c. First-last name: This may be longer and more complex but more likely to be unique for each user.
 
-&#x20;      d. Administrative area name: This approach may be adopted if there is a high turnover as multiple users may use the same username. However, the system will not be able to tell which individual person has submitted the data during analysis (current approach following the LLIN campaign in Mozambique).
+&#x20;      d. Administrative area name: This approach may be adopted if there is a high turnover as multiple users may use the same username. However, the system will not be able to tell which person has submitted the data during analysis (current approach following the LLIN campaign in Mozambique).
 
-&#x20;         1\. If the programme wants to track the performance of each frontline worker individually, then the product SOP recommends that each mobile app user should have their own username even if they are sharing a device. Since the system will provide reports on the performance/productivity of your mobile app users, if there are multiple mobile users sharing a username, then the performance reports will reflect the team performance and not necessarily individual performance, provided the username to individual mapping is maintained outside the system.
+&#x20;         1\. If the programme wants to track the performance of each frontline worker individually, then the product SOP recommends that each mobile app user should have their username even if they are sharing a device. Since the system will provide reports on the performance/productivity of your mobile app users, if multiple mobile users are sharing a username, then the performance reports will reflect the team performance and not necessarily individual performance, provided the username to individual mapping is maintained outside the system.
 
 &#x20;     e. Regarding the use of special characters: It is recommended that only commonly-known special characters like period (.) be used in the username to make it easy to remember.
 
