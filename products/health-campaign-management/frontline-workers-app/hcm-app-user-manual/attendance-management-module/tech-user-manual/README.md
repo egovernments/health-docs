@@ -34,7 +34,7 @@ Once the supervisor clicks on the “Manage Attendance” button, the supervisor
 
 . <img src="https://lh7-us.googleusercontent.com/49dwF5hNZfYutpxfQqoaSwywfEpNSr_6d7tCThE5UerWeVMe-xxwikoVQRzXA0bXUo1FAXNuPt0-360naANEVkWOAmnDfVkwQWRRFKN0txG8fI3CSEtjQ8fJ9pdMZwNBhh9LDUuCrqEM2V5z_4lclU0" alt="" data-size="original">
 
-### Data Field to Manage Attendance Screen:
+#### Data Field to Manage Attendance Screen:
 
 | **Field**             | **Description**                                                                                                                                              |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -46,11 +46,11 @@ Once the supervisor clicks on the “Manage Attendance” button, the supervisor
 | Staff count           | Number of attendees in the register.                                                                                                                         |
 | Attendance Completion | Shows the number of days for which attendance has been submitted submitted to the server.                                                                    |
 
-### Attendance Completion Days Logic:
+#### Attendance Completion Days Logic:
 
 1. Fetch all attendance logs for the register.
 2. Based on the sessions configured for the register, check for the logs where the entry time and the exit time are equal to the start and the end time of the session.
-3. For individuals who do not have logs are the same as the start and the end time will be by default marked as absent if any of the individuals' log is present for the register.
+3. For individuals who do not have logs are the same as the start and the end time will be by default marked as absent if any of the individuals' logs is present for the register.
 
 /`/generateDateList will return the map of completed attendance Dates.`
 
@@ -82,7 +82,7 @@ The date selection range commences from the start date of the attendance registe
 
 <img src="https://lh7-us.googleusercontent.com/eolzJ0PTKblHOu8S6FoSv1_GaNGudzQiNqPb3Vkh9wrNJ0F7dcWDtqMprNKGMIdvHwoi4Uelqy14Y0gk1Ock0iUo2yJDBTg7M9TWtueBMfwDIVpQOEQoQFnROG9Ctb1Di-5B2CEKeEdwXfATBLYf3m0" alt="" data-size="original">
 
-### Missed Attendance Logic:&#x20;
+#### Missed Attendance Logic:&#x20;
 
 Upon selecting the attendance register, a list of completed dates is generated. We iterate over the dates from the start date to the current date, checking for any missing dates in the list to identify missed attendance dates
 
@@ -98,29 +98,13 @@ The trainees or supervisors should be able to mark the attendance daily twice (o
 2. Save and Mark Later: If the user marks attendance for 10 out of 50 people, and presses save and mark later, the supervisor should be able to reopen the given attendance register while it is active and see the status of the attendance marked as per the last time they updated the screen.
 3. Submit: If the user marks attendance for 10 out of 50 people, and presses submit, an error message is shown to mark attendance for all staff. After marking attendance for all staff, and clicking on submit supervisor navigates to the attendance recorded acknowledgement screen.
 
-<div align="left" data-full-width="false">
+<figure><img src="../../../../../../.gitbook/assets/Screenshot 2024-02-27 at 2.34.54 PM.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/Full Half.png" alt="" width="180"><figcaption><p>\</p></figcaption></figure>
-
-</div>
-
-
-
-
-
-
-
-<div align="right">
-
-<figure><img src="../../../../../../.gitbook/assets/Mark attendance (2) (1).png" alt="" width="180"><figcaption></figcaption></figure>
-
-</div>
-
-### **Marking attendance and sending to oplog logic implementation:**&#x20;
+#### **Marking attendance and sending to oplog logic implementation:**&#x20;
 
 For the registers, for which attendance is submitted, we have a flag upload\_to\_server for each log. If this is true, then the attendance for the register is submitted.
 
-As we cannot send absent logs to the server, we filter the present and half-day logs , and create the oplog for those.
+As we cannot send absent logs to the server, we filter the present and half-day logs, and create the oplog for those.
 
 For each marking, two log objects are created for sending to the server: ENTRY and EXIT as shown below:&#x20;
 
@@ -160,7 +144,9 @@ For each marking, two log objects are created for sending to the server: ENTRY a
 
 `}]`
 
-### API Details: 
+API Details\
+
+
 
 <table><thead><tr><th width="155.33333333333334">End Point</th><th width="169">Request Method</th><th>Request Info</th></tr></thead><tbody><tr><td><strong>/health-attendance/v1/_search</strong></td><td><code>POST</code></td><td><pre class="language-json"><code class="lang-json">curl --location --globoff '{{base_url}}/attendance/v1/_search?tenantId=mz&#x26;staffId={{individualId}}&#x26;referenceId={{projectId}}' \
 --header 'Content-Type: application/json' \
