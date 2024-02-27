@@ -16,11 +16,9 @@ layout:
 
 ## How the HCM App Interacts with the Attendance Package
 
-Below is the BLOC diagram of the components that are there in the HCM App and attendance package, and how the interaction happens:\
-\
+Below is the diagram of the components that are there in the HCM App and attendance package, and how the interaction happens:
 
-
-<figure><img src="https://lh7-us.googleusercontent.com/fQZ8dmYqjDnHwCf5-YNUb_AUzE1JkYVF-FAXyM5SubKPh0ENk99pHHJposypB1Q6iOflD7I2lrN6U2ltI16N5u1ByOG0Q1vl6uMyFfIQW6c-1FdP7lDyX__BAICWtnUd_uZ5QJ1C9Gz_RNbAmWcO32g" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Screenshot 2024-02-27 at 3.11.54 PM.png" alt=""><figcaption></figcaption></figure>
 
 ### New files or changes needed in the HCM App:
 
