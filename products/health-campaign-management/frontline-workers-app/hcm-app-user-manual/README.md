@@ -34,3 +34,30 @@ The articles in this section include the following:
 [checklist.md](checklist.md)
 {% endcontent-ref %}
 
+{% content-ref url="multi-round-campaigns.md" %}
+[multi-round-campaigns.md](multi-round-campaigns.md)
+{% endcontent-ref %}
+
+{% content-ref url="tracking-side-effects-for-beneficiaries.md" %}
+[tracking-side-effects-for-beneficiaries.md](tracking-side-effects-for-beneficiaries.md)
+{% endcontent-ref %}
+
+{% content-ref url="tracking-beneficiary-referrals.md" %}
+[tracking-beneficiary-referrals.md](tracking-beneficiary-referrals.md)
+{% endcontent-ref %}
+
+{% content-ref url="voucher-based-registration-and-distribution.md" %}
+[voucher-based-registration-and-distribution.md](voucher-based-registration-and-distribution.md)
+{% endcontent-ref %}
+
+{% content-ref url="proximity-based-search.md" %}
+[proximity-based-search.md](proximity-based-search.md)
+{% endcontent-ref %}
+
+{% content-ref url="attendance-management-module/" %}
+[attendance-management-module](attendance-management-module/)
+{% endcontent-ref %}
+
+{% content-ref url="downloading-beneficiary-data-for-longitudinal-tracking.md" %}
+[downloading-beneficiary-data-for-longitudinal-tracking.md](downloading-beneficiary-data-for-longitudinal-tracking.md)
+{% endcontent-ref %}

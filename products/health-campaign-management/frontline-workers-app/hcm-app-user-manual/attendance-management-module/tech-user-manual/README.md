@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# Attendance Management
+# Tech User Manual
 
 ## **Overview**
 
@@ -100,7 +100,7 @@ The trainees or supervisors should be able to mark the attendance daily twice (o
 
 <div align="left" data-full-width="false">
 
-<figure><img src="../../../../../.gitbook/assets/Full Half.png" alt="" width="180"><figcaption><p>\</p></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Full Half.png" alt="" width="180"><figcaption><p>\</p></figcaption></figure>
 
 </div>
 
@@ -112,7 +112,7 @@ The trainees or supervisors should be able to mark the attendance daily twice (o
 
 <div align="right">
 
-<figure><img src="../../../../../.gitbook/assets/Mark attendance (2) (1).png" alt="" width="180"><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/Mark attendance (2) (1).png" alt="" width="180"><figcaption></figcaption></figure>
 
 </div>
 
