@@ -57,6 +57,10 @@ SEND_TIMEOUT="120000"
 dependency_overrides:
  digit_components:
    path: ..\\..\\packages\\digit_components
+ attendance_management:
+   path: ../../packages/attendance_management
+ dart_mappable_builder:
+   path: ..\\..\\packages\\dart_mappable_builder
  digit_firebase_services:
    path: ..\\..\\packages\\digit_firebase_services
  digit_showcase:
@@ -89,15 +93,15 @@ Note: All the folder names should be present in the packages folder, before over
 &#x20;      Sample .env file:
 
 ```
-BASE_URL="https://health-demo.digit.org/"
+BASE_URL="https://unified-qa.digit.org/"
 MDMS_API_PATH="egov-mdms-service/v1/_search"
-TENANT_ID="default"
+TENANT_ID="mz"
 SYNC_DOWN_RETRY_COUNT="3"
 RETRY_TIME_INTERVAL="5"
 CONNECT_TIMEOUT="120000"
 RECEIVE_TIMEOUT="120000"
 SEND_TIMEOUT="120000"
-ENV_NAME="UAT"
+ENV_NAME="QAT"
 ```
 
 *   Navigate to the root folder of the project in the terminal and run the following command:

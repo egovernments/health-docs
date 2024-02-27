@@ -46,7 +46,7 @@ This screen consists of the following types of transactions that take place for 
 * The optional fields include waybill number, quantity indicated on waybill, transport type, vehicle number and comments. &#x20;
 * Clicking on the submit button will go to the success page.
 
-![](<../../../../.gitbook/assets/image (2) (1).png>)\
+![](<../../../../.gitbook/assets/image (2) (1) (1).png>)\
 
 
 #### Returned Stock Details

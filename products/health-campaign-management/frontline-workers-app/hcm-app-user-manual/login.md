@@ -4,7 +4,7 @@
 
 Users are redirected to this screen once they select the preferred language in the previous screen.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## User actions
 

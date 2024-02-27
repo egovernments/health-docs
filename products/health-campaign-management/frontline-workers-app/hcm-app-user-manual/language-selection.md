@@ -4,7 +4,7 @@
 
 When the user opens the application, it asks them to first select the language. The selected language is highlighted in orange colour.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ## User actions
 
