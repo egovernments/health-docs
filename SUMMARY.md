@@ -73,6 +73,7 @@
         * [Tracking Beneficiary Referrals](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/tracking-beneficiary-referrals.md)
         * [Voucher-Based Registration and Distribution](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/voucher-based-registration-and-distribution.md)
         * [Proximity-Based Search](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/proximity-based-search.md)
+        * [Attendance Management Module](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/attendance-management-module.md)
         * [Downloading Beneficiary Data for Longitudinal Tracking](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/downloading-beneficiary-data-for-longitudinal-tracking.md)
         * [Attendance Management](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/attendance-management/README.md)
           * [Attendance Package Extraction and Interaction with HCM Application](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/attendance-management/attendance-package-extraction-and-interaction-with-hcm-application.md)
