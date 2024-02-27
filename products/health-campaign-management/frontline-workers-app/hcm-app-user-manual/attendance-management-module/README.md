@@ -15,15 +15,19 @@ Enables supervisors to mark attendance for their attendees in an offline-first m
 | ---------- | --------------- | ------------------------------------------------------------------------------------------------- |
 | Supervisor |                 | The user will be able to access their attendance register to mark attendance for their attendees. |
 
-## Using Attendance Management Module:
+## Using Attendance Management Module
 
-**User role: Supervisor**
+#### **User role: Supervisor**
 
-Step 1: The user will see the "Mark Attendance" option in the home screen of the app as follows:
+#### Step 1:&#x20;
+
+The user will see the "Mark Attendance" option in the home screen of the app as follows:
 
 ![](https://lh7-us.googleusercontent.com/Fo0E4byMCRBOtprMhCJPwBcoUwuiIbceEMkIMEJUJ2cLrX1TL\_JZGMXiFR0RqcOPEy-Ca4RlvN4X996Bsbr-JBhIwRTkJ0CwyGkMKwmiTYYpUcRhLib-4YUCSYrs7NQYQu3h8d\_psDl7lx1qFo3jWMM)
 
-Step 2: When the user clicks on "Manage Attendance", they will see the attendance registers created under the specific user name having the following details:
+#### Step 2:&#x20;
+
+When the user clicks on "Manage Attendance", they will see the attendance registers created under the specific user name having the following details:
 
 1. Campaign Name
 2. Event Type
@@ -35,15 +39,21 @@ Step 2: When the user clicks on "Manage Attendance", they will see the attendanc
 
 ![](https://lh7-us.googleusercontent.com/FMKm6pHH10R4MbLyhbroc2YH6pJZcfzBBzMB-ZkYKQwYjahASrY3rmGadqtgYmiXY8\_zs258SOWSvEAZLim\_-Fa4eTBUqtIlUYQdGYN3albskCe6rEhyorNGx7axxcVp78wXcycEH4oDgg5El84ZLF0)
 
-Step 3: Once the user clicks on "Open Register" for one of the available registers, the user will be taken to "Select Session" screen where the sessions available to be marked in the given attendance register will be seen.
+#### Step 3:&#x20;
+
+Once the user clicks on "Open Register" for one of the available registers, the user will be taken to "Select Session" screen where the sessions available to be marked in the given attendance register will be seen.
 
 ![](https://lh7-us.googleusercontent.com/51IngkzkDLy10Pb4oJTx8fFDy26MlbzxShxl1hh-cC7vVuKSzmVYlGYpohxO0LGgCMeLASAZnePYyFQbDDqqWzuRd6s\_R7lAZe2L5wls5w9ihxew81rAcy9SALhZxTfzDWYa1Sh4VB57ruhNlmErOdU)
 
-Step 4: Once the user has selected the desired session and clicks on the "Mark Attendance" button, the user will be taken to the "Mark Attendance" screen where the list of attendees for a given project and a given session will be available.
+#### Step 4:&#x20;
+
+Once the user has selected the desired session and clicks on the "Mark Attendance" button, the user will be taken to the "Mark Attendance" screen where the list of attendees for a given project and a given session will be available.
 
 ![](https://lh7-us.googleusercontent.com/fwwj-KW1STFLX57xssqAkb-iOEPeiC7-o2mSeF27GDC2h9zulSow9IT0F\_IXKQcMdD9xb5NMzp1nOIsMJuwCFVR2mawYkZ4yPR38KCCIxZA8XOUSoj20A6PqLPAdxqASSnZIOQJO144TBae79VIPR5w)
 
-Step 5: The user can click on the empty circles in front of every attendee and move the state of the attendance from "Not Marked" to 'Present' to 'Absent' on each click of the circle.&#x20;
+#### Step 5:&#x20;
+
+The user can click on the empty circles in front of every attendee and move the state of the attendance from "Not Marked" to 'Present' to 'Absent' on each click of the circle.&#x20;
 
 Once all the attendees have their attendance marked in the register, only then the user can click on submit.&#x20;
 
