@@ -34,4 +34,18 @@
 
 <figure><img src="../../../../.gitbook/assets/image (82).png" alt=""><figcaption><p>Referral Bulk Delete</p></figcaption></figure>
 {% endtab %}
+
+{% tab title="HFReferral" %}
+<figure><img src="../../../../.gitbook/assets/image (83).png" alt=""><figcaption><p>HFReferral Create</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (84).png" alt=""><figcaption><p>HFReferral Bulk Create</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (85).png" alt=""><figcaption><p>HFReferral Update</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (86).png" alt=""><figcaption><p>HFReferral Bulk Update</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (87).png" alt=""><figcaption><p>HFReferral Delete</p></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/image (88).png" alt=""><figcaption><p>HFReferral Bulk Delete</p></figcaption></figure>
+{% endtab %}
 {% endtabs %}
