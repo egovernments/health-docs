@@ -31,7 +31,7 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 
 &#x20;      \- User Management     &#x20;
 
-### 2. Promotion guide&#x20;
+### 2. Promotion Guide&#x20;
 
 * DIGIT environment production setup & deployments
 * HCM promotion&#x20;
@@ -47,7 +47,7 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 | ----------- | ---------- | -------------------------------------------- |
 | Version 1.1 | 11/05/2023 | This version covers the HCM promotion guide. |
 
-### Release Features: List of Core DIGIT services used
+### Release Features: List of Core DIGIT Services Used
 
 | Service            | Image                                                          |
 | ------------------ | -------------------------------------------------------------- |
@@ -74,20 +74,20 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 
 ### Services built for HCM
 
-| Service         | Tag                                                | Description                                                                                                                              |
-| --------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| Individual      | egovio/individual:v1.1.0-73167482a2-82             | Individual service built in to digit platform, all the CRUD operations are allowed using api                                             |
-| Household       | egovio/household:v1.1.0-73167482a2-50              | Household service provide to create household and add members to a household                                                             |
-| Facility        | egovio/facility:v1.1.0-73167482a2-28               | Facility services provide the apis to create, update, delete and read facilities                                                         |
-| Product         | egovio/product:v1.1.0-73167482a2-12                | Product services provide the apis for CRUD operations for products and product variants                                                  |
-| Project         | egovio/project:v1.1.0-73167482a2-80                | Project services provide the apis for CRUD operations for project, project task, project staff, project resource and project beneficiary |
-| Stock           | egovio/stock:v1.1.0-73167482a2-36                  | Stock services provide the apis for creating, updating, deleting of stock receipts and stock reconciliations                             |
-| Service Request | egovio/service-request:v1.0.0-a51bee1435-7         | Service Requests provide the create and submission apis for checklists.                                                                  |
-| Transformer     | egovio/transformer:v1.1.0-73167482a2-38            | Library that transforms the data according to the analytics dashboard requirements                                                       |
-| Complaints      | egovio/pgr-services:v1.1.7-f58e5abb0d-8            | Complaints services provide features like add complaints, resolve complaints etc                                                         |
-| User Management | egovio/egov-hrms:health-digit-master-5bc2341e92-14 | Create and manage users and team assignments for their respective boundaries                                                             |
+| Service         | Tag                                                | Description                                                                                                                                |
+| --------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Individual      | egovio/individual:v1.1.0-73167482a2-82             | Individual service built in to the DIGIT platform, all the CRUD operations are allowed using API.                                          |
+| Household       | egovio/household:v1.1.0-73167482a2-50              | Household service provided to create household and add members to a household.                                                             |
+| Facility        | egovio/facility:v1.1.0-73167482a2-28               | Facility services provide the APIs to create, update, delete and read facilities.                                                          |
+| Product         | egovio/product:v1.1.0-73167482a2-12                | Product services provide the APIs for CRUD operations for products and product variants.                                                   |
+| Project         | egovio/project:v1.1.0-73167482a2-80                | Project services provide the apis for CRUD operations for project, project task, project staff, project resource, and project beneficiary. |
+| Stock           | egovio/stock:v1.1.0-73167482a2-36                  | Stock services provide the APIs for creating, updating, deleting of stock receipts and stock reconciliations.                              |
+| Service Request | egovio/service-request:v1.0.0-a51bee1435-7         | Service requests provide the create and submission APIs for checklists.                                                                    |
+| Transformer     | egovio/transformer:v1.1.0-73167482a2-38            | Library that transforms the data according to the analytics dashboard requirements.                                                        |
+| Complaints      | egovio/pgr-services:v1.1.7-f58e5abb0d-8            | Complaints services provide features like add complaints, resolve complaints, etc.                                                         |
+| User Management | egovio/egov-hrms:health-digit-master-5bc2341e92-14 | Create and manage users and team assignments for their respective boundaries.                                                              |
 
-### Environment Variables for HCM services
+### Environment Variables for HCM Services
 
 **Individual: Click** [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/health-services/individual/values.yaml) **to know more.**&#x20;
 
@@ -462,7 +462,7 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 
 ## Promotion guide
 
-This section will detail out the promotion guide steps for HCM Product
+This section will detail the promotion guide steps for the HCM product.
 
 ### Digit Environment Production Setup & deployments
 
@@ -470,11 +470,11 @@ Digit Environment setup refer documentation [here](https://core.digit.org/guides
 
 ### HCM Promotion
 
-#### Steps to Create a tenant for HCM
+#### Steps to Create a Tenant for HCM
 
 Refer to the [document](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages/638713938/Configuring+Tenants) for creating a tenant in DIGIT.
 
-#### Steps to add localisation using Rest API
+#### Steps to Add Localisation Using Rest API
 
 Refer to this [document](https://core.digit.org/platform/core-services/localization-service) for more details
 
@@ -510,7 +510,7 @@ curl --location --request POST 'https://health-dev.digit.org/localization/messag
 
 ```
 
-### Steps to configure MDMS configs
+### Steps to Configure the MDMS configs
 
 1. Create Common Masters
 
@@ -518,11 +518,11 @@ curl --location --request POST 'https://health-dev.digit.org/localization/messag
 
 &#x20;      b. Create [StateInfo.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/common-masters/StateInfo.json) which will configure eligible languages for tenant
 
-2. Create sample [boundary data](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/egov-location/boundary-data.json). Refer for to this [document](https://core.digit.org/guides/data-setup-guide/location-module) for more details&#x20;
+2. Create sample [boundary data](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/egov-location/boundary-data.json). Refer to this [document](https://core.digit.org/guides/data-setup-guide/location-module) for more details&#x20;
 3. Create [field-app-configuration.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/egov-location/boundary-data.json) which will be used for drop-down values or select options to be presented in the HCM app&#x20;
 4. Create [project-task-configuration.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/project-task-configuration.json)
-5. Create [project-types.json ](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/project-types.json)which will be used as Health campaign configuration
-6. Create [service-registry.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/service-registry.json) which has a list of APIs that HCM app will call.
+5. Create [project-types.json ](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/project-types.json)which will be used as a health campaign configuration
+6. Create [service-registry.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/service-registry.json) which has a list of APIs that the HCM app will call.
 7. Create PGR/Complaints configs &#x20;
    * [UIConstants.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/RAINMAKER-PGR/UIConstants.json)
    * [ServiceDefs.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/RAINMAKER-PGR/ServiceDefs.json)
@@ -543,27 +543,26 @@ curl --location --request POST 'https://health-dev.digit.org/localization/messag
 
 8. Configure map-config for the [tenant](https://github.com/egovernments/health-campaign-mdms/tree/v1.0.0/data/default/map-config)
 
-&#x20;Restart MDMS server and restart Zuul api gateway.&#x20;
+&#x20;Restart the MDMS server and restart the Zuul API gateway.&#x20;
 
-Note: Any modifications in the above configuration, needs to restart the MDMS server. Any modifications to action-test.json and roleactions.json requires restart of Zuul api gateway
+Note: Any modifications in the above configuration, need to restart the MDMS server. Any modifications to action-test.json and roleactions.json require a restart of the Zuul API gateway.
 
-### Steps to configure health campaign configs
+### Steps to Configure Health Campaign Configs
 
-Step 1: Create [persister config](https://github.com/egovernments/health-campaign-config/tree/v1.0.0/egov-persister) for each backend service which will be picked by the [persister service](https://core.digit.org/platform/core-services/persister-service)
+Step 1: Create a [persister config](https://github.com/egovernments/health-campaign-config/tree/v1.0.0/egov-persister) for each backend service that will be picked by the [persister service](https://core.digit.org/platform/core-services/persister-service).
 
-Step 2: Create [indexer config](https://github.com/egovernments/health-campaign-config/tree/v1.0.0/egov-indexer) for each backend service which will be picked by the [indexer service](https://core.digit.org/platform/core-services/indexer-service)
+Step 2: Create an [indexer config](https://github.com/egovernments/health-campaign-config/tree/v1.0.0/egov-indexer) for each backend service which will be picked by the [indexer service](https://core.digit.org/platform/core-services/indexer-service).
 
-Note: Any changes to indexer and persister configs, requires restart of indexer and persister.
+Note: Any changes to the indexer and persister configs require the restart of the indexer and the persister.
 
-### Deploy Digit Core Services
+### Deploy DIGIT Core Services
 
-Refer to [section](https://health.digit.org/platform/configuration/hcm-master-promotion-guide#release-features-list-of-core-digit-services-used) for list of core services to be deployed
+Refer to this [section](https://health.digit.org/platform/configuration/hcm-master-promotion-guide#release-features-list-of-core-digit-services-used) for a list of core services to be deployed.
 
-### Deploy HCM services
+### Deploy HCM Services
 
-Refer to [section](https://health.digit.org/platform/configuration/hcm-master-promotion-guide#services-built-for-hcm) for list of HCM services to be deployed
+Refer to this [section](https://health.digit.org/platform/configuration/hcm-master-promotion-guide#services-built-for-hcm) for a list of HCM services to be deployed.
 
-### UI/APK promotion guide
+### UI/APK Promotion Guide
 
 [https://health.digit.org/product/setup/apk-installation](https://health.digit.org/product/setup/apk-installation)
-
