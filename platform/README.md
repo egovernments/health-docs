@@ -14,8 +14,8 @@ The articles in this section includes:
 [architecture](architecture/)
 {% endcontent-ref %}
 
-{% content-ref url="release-notes/high-level-design/" %}
-[high-level-design](release-notes/high-level-design/)
+{% content-ref url="architecture/high-level-design/" %}
+[high-level-design](architecture/high-level-design/)
 {% endcontent-ref %}
 
 {% content-ref url="architecture/low-level-design/" %}
