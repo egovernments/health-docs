@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document is a step-by-step promotion guide to setup/promote  Health Campaign Manegement (HCM) to higher environments. The guide can be used by implementation teams or other external teams to set up the product.
+This document is a step-by-step promotion guide to set up/promote Health Campaign Management (HCM) in higher environments. This guide can be used by implementation teams or other external teams to set up the product.
 
 ## Table of Contents
 
@@ -47,14 +47,14 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 | ----------- | ---------- | -------------------------------------------- |
 | Version 1.1 | 11/05/2023 | This version covers the HCM promotion guide. |
 
-### Release Features: List of Core DIGIT services used
+### Release Features: List of Core DIGIT Services Used
 
 | Service            | Image                                                          |
 | ------------------ | -------------------------------------------------------------- |
 | Access control     | egovio/egov-accesscontrol:v1.1.3-72f8a8f87b-24                 |
 | Encryption Service | egovio/egov-enc-service:v1.1.2-72f8a8f87b-9                    |
 | File Store         | egovio/egov-filestore:v1.2.4-72f8a8f87b-10                     |
-| Localization       | egovio/egov-localization:v1.1.3-72f8a8f87b-6                   |
+| Localisation       | egovio/egov-localization:v1.1.3-72f8a8f87b-6                   |
 | ID Gen             | egovio/egov-idgen:v1.2.3-72f8a8f87b-7                          |
 | Indexer            | egovio/egov-indexer:v1.1.7-f52184e6ba-25                       |
 | Location           | egovio/egov-location:v1.1.5-f9271c8-7                          |
@@ -72,7 +72,7 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 | Document Uploader  | egovio/egov-document-uploader:v1.1.0-75d461a4d2-4              |
 | Playground         | egovio/playground:1.0                                          |
 
-### Services built for HCM
+### Services Built for HCM
 
 | Service         | Tag                                                | Description                                                                                                                                |
 | --------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -87,7 +87,7 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 | Complaints      | egovio/pgr-services:v1.1.7-f58e5abb0d-8            | Complaints services provide features like add complaints, resolve complaints, etc.                                                         |
 | User Management | egovio/egov-hrms:health-digit-master-5bc2341e92-14 | Create and manage users and team assignments for their respective boundaries.                                                              |
 
-### Environment Variables for HCM services
+### Environment Variables for HCM Services
 
 **Individual: Click** [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/health-services/individual/values.yaml) **to know more.**&#x20;
 
@@ -237,12 +237,12 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 | EGOV\_IDGEN\_HOST                              | <p><br></p>                                            | Value of IDGEN host server                       |
 | EGOV\_IDGEN\_PATH                              | egov-idgen/id/\_generate                               | <p><br></p>                                      |
 | EGOV\_IDGEN\_INTEGRATION\_ENABLED              | true/false                                             | <p><br></p>                                      |
-| PROJECT.STAFF.IDGEN.ID.FORMAT                  | project.staff.id                                       | Project staff id generated format                |
-| PROJECT.FACILITY.IDGEN.ID.FORMAT               | project.facility.id                                    | Project facility id generated format             |
-| PROJECT.TASK.IDGEN.ID.FORMAT                   | project.task.id                                        | Project task id generated format                 |
-| IDGEN.PROJECT.BENEFICIARY.ID.FORMAT            | project.beneficiary.id                                 | Project beneficiary id generated format          |
+| PROJECT.STAFF.IDGEN.ID.FORMAT                  | project.staff.id                                       | Project staff ID generated format                |
+| PROJECT.FACILITY.IDGEN.ID.FORMAT               | project.facility.id                                    | Project facility ID generated format             |
+| PROJECT.TASK.IDGEN.ID.FORMAT                   | project.task.id                                        | Project task ID generated format                 |
+| IDGEN.PROJECT.BENEFICIARY.ID.FORMAT            | project.beneficiary.id                                 | Project beneficiary ID generated format          |
 | EGOV\_USER\_CONTEXT\_PATH                      | /user/users                                            | User service context path                        |
-| EGOV\_SEARCH\_USER\_URL                        | /user/\_search                                         | User service search url                          |
+| EGOV\_SEARCH\_USER\_URL                        | /user/\_search                                         | User service search URL                          |
 | EGOV\_USER\_INTEGRATION\_ENABLED               | true/false                                             | User service integration enabled if it is true   |
 | SPRING\_REDIS\_HOST                            | redis.backbone                                         | <p><br></p>                                      |
 | SPRING\_REDIS\_PORT                            | 6379                                                   | <p><br></p>                                      |
@@ -257,10 +257,10 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 | MANAGEMENT\_SECURITY\_ENABLED                  | false                                                  | <p><br></p>                                      |
 | TRACER\_OPENTRACING\_ENABLED                   | true/false                                             | <p><br></p>                                      |
 | EGOV\_LOCATION\_CONTEXT\_PATH                  | /egov-location/location/v11                            | <p><br></p>                                      |
-| EGOV\_LOCATION\_ENDPOINT                       | /boundarys/\_search                                    | Egov Location end point                          |
+| EGOV\_LOCATION\_ENDPOINT                       | /boundarys/\_search                                    | Egov location end point                          |
 | EGOV\_MDMS\_INTEGRATION\_ENABLED               | true/false                                             | <p><br></p>                                      |
 | EGOV\_MDMS\_MASTER\_NAME                       | project\_master                                        | Creating a mdms service bean                     |
-| EGOV\_MDMS\_MODULE\_NAME                       | project                                                | Nor required.                                    |
+| EGOV\_MDMS\_MODULE\_NAME                       | project                                                | Nor required                                     |
 | EGOV\_HOUSEHOLD\_HOST                          | <p><br></p>                                            | Host of the household service                    |
 | EGOV\_INDIVIDUAL\_HOST                         | <p><br></p>                                            | Host of the individual service                   |
 | EGOV\_SEARCH\_INDIVIDUAL\_URL                  | /individual/v1/\_search                                | Search URL of the individual                     |

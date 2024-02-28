@@ -6,17 +6,17 @@ An Urban Local Body (ULB) is defined as a tenant. Tenant configuration is done i
 
 ## Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
 
-Before proceeding with the configuration, the following pre-requisites are met -
+Before proceeding with the configuration, the following pre-requisites are met:
 
-* Knowledge of json and how to write a json is required.
+* Knowledge of JSON and how to write a JSON is required.
 * Knowledge of MDMS is required.
-* User with permissions to edit the git repository where MDMS data is configured.
+* User with permission to edit the git repository where MDMS data is configured.
 
 ## Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
 
-* For login page city name selection is required. Tenant added in MDMS shows in city drop-down of login page.
-* In reports or in the employee inbox page the details related to ULB is displayed from the fetched ulb data which is added in MDMS.
-* Modules i.e., TL,PT,MCS can be enabled based on the requirement for tenant.
+* For the login page, city name selection is required. Tenant added in MDMS shows in city drop-down of the login page.
+* In reports or the employee inbox page, the details related to ULB are displayed from the fetched ULB data which is added in MDMS.
+* Modules, that is, TL, PT, and MCS can be enabled based on the requirement for the tenant.
 
 ## Deployment Details
 
@@ -25,7 +25,7 @@ Before proceeding with the configuration, the following pre-requisites are met -
 ## Configuration Details <a href="#configuration-details" id="configuration-details"></a>
 
 1. Tenant is added in tenant.json.\
-   In MDMS, file **tenant.json**, under **tenant** folder holds the details of state and ULBs  to be added in that state.&#x20;
+   In MDMS, file **tenant.json**, under the **tenant** folder holds the details of the state and ULBs to be added in that state.&#x20;
 
 ```
 {
@@ -65,14 +65,14 @@ Before proceeding with the configuration, the following pre-requisites are met -
 
 Note:&#x20;
 
-* To enable tenant the above data should be pushed in tenant.json file. Here "ULB Grade" and City  "Code" are important fields. **ULB Grade** can have a set of allowed values that determines the ULB type, ([Municipal corporation (Nagar Nigam)](https://en.wikipedia.org/wiki/Municipal\_Corporations\_in\_India), Municipality (municipal council, municipal board, municipal committee) (Nagar Parishad), etc). City "**Code**" has to be unique to each tenant.  This city-specific code is used in all transactions. Not permissible to change the code. If changed we will lose the data of the previous transactions done.
+* To enable the tenant the above data should be pushed in the tenant.json file. Here "ULB Grade" and City  "Code" are important fields. **ULB Grade** can have a set of allowed values that determines the ULB type, ([Municipal corporation (Nagar Nigam)](https://en.wikipedia.org/wiki/Municipal\_Corporations\_in\_India), Municipality (municipal council, municipal board, municipal committee) (Nagar Parishad), etc). City "**Code**" has to be unique to each tenant.  This city-specific code is used in all transactions. Not permissible to change the code. If changed we will lose the data of the previous transactions done.
 * Naming Convention for **Tenants Code**
 
 &#x20;      **“Code”:“uk.citya”** is **StateTenantId.ULBTenantName"**
 
-* **"logoId": "**[**https://s3.ap-south-1.amazonaws.com/uk-egov-assets/uk.citya/logo.png**](https://s3.ap-south-1.amazonaws.com/pb-egov-assets/pb.citya/logo.png)**",**  Here the last section of the path should be "/\<tenantId>/logo.png". If we use anything else, logo will not be displayed on the UI. **\<tenantId>** is the tenant code ie **“uk.citya”.**
+* **"logoId": "**[**https://s3.ap-south-1.amazonaws.com/uk-egov-assets/uk.citya/logo.png**](https://s3.ap-south-1.amazonaws.com/pb-egov-assets/pb.citya/logo.png)**",**  Here the last section of the path should be "/\<tenantId>/logo.png". If we use anything else, the logo will not be displayed on the UI. **\<tenantId>** is the tenant code ie **“uk.citya”.**
 
-2\. Localisation should be pushed for ulb grade and ulb name.  Format is given below.\
+2\. Localisation should be pushed for ULB grade and ULB name.  The format is given below.\
 &#x20;   **Localisation for ULB Grade:**
 
 ```

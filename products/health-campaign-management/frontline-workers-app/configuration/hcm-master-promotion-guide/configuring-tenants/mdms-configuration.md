@@ -1,10 +1,10 @@
 # MDMS Configuration
 
-## Steps to setup state/urban local body (ULB):
+## Steps to Setup State/Urban Local Body (ULB):
 
 ### Adding a Tenant:
 
-In MDMS, file tenant.json under tenant folder, holds the details of state and ULBs to be enabled in that state.
+In MDMS, the file tenant.json under the tenant folder holds the details of the state and ULBs to be enabled in that state.
 
 ```
 {
@@ -76,7 +76,7 @@ In MDMS, file tenant.json under tenant folder, holds the details of state and UL
 
 Note:
 
-To enable state and a ULB, the above data should be pushed in tenant.json file. Here "ULB Grade" and City 'Code' are important fields. ULB Grade can have a set of allowed values that determines the ULB type, (Municipal corporation (Nagar Nigam), Municipality (municipal council, municipal board, municipal committee) (Nagar Parishad), etc). City 'Code' has to be unique to each tenant. This city-specific code is used in all transactions. It is not permissible to change the code. If changed, we will lose the data of the previous transactions done.
+To enable a state and a ULB, the above data should be pushed in tenant.json file. Here "ULB Grade" and City 'Code' are important fields. ULB Grade can have a set of allowed values that determines the ULB type, (Municipal corporation (Nagar Nigam), Municipality (municipal council, municipal board, municipal committee) (Nagar Parishad), etc). City 'Code' has to be unique to each tenant. This city-specific code is used in all transactions. It is not permissible to change the code. If changed, we will lose the data of the previous transactions done.
 
 Localisation should be pushed for ULB grade and ULB name. The formats are given below:
 
@@ -121,9 +121,9 @@ Format of localization code for tenant name:
     * \>
 
     **“Code”:“pb.citya”** is **StateTenantId.ULBTenantName"**
-2. **"logoId": "**[**https://s3.ap-south-1.amazonaws.com/pb-egov-assets/pb.citya/logo.png**](https://s3.ap-south-1.amazonaws.com/pb-egov-assets/pb.citya/logo.png)**",**  Here the last section of the path should be "/\<tenantId>/logo.png". If we use anything else, logo will not be displayed on the UI. **\<tenantId>** is the tenant code ie **“pb.citya”.**
+2. **"logoId": "**[**https://s3.ap-south-1.amazonaws.com/pb-egov-assets/pb.citya/logo.png**](https://s3.ap-south-1.amazonaws.com/pb-egov-assets/pb.citya/logo.png)**",**  Here the last section of the path should be "/\<tenantId>/logo.png". If we use anything else, the logo will not be displayed on the UI. **\<tenantId>** is the tenant code ie **“pb.citya”.**
 
-* **citymodule.json** file under **tenant** folder used to activate modules in specific ulb. Example:
+* **citymodule.json** file under the **tenant** folder used to activate modules in specific ulb. Example:
 
 ```
 {
@@ -141,11 +141,11 @@ Format of localization code for tenant name:
 
 ```
 
-Module **TL** are enabled in ULB **city a** and **city b. Modules** mentioned in this file appears in the menu tree of the application.  A ULB level module enable or disable are handled here.
+Module **TL** is enabled in ULB **City A** and **City B. Modules** mentioned in this file appear in the menu tree of the application.  A ULB-level module enable or disable is handled here.
 
 ### Adding a State
 
-In MDMS, file **StateInfo.json**, under **common-masters** folder holds the state data.&#x20;
+In MDMS, the file **StateInfo.json**, under the **common-masters** folder holds the state data.&#x20;
 
 ```
 { 
@@ -191,7 +191,7 @@ In MDMS, file **StateInfo.json**, under **common-masters** folder holds the stat
 
 **Boundary Data Load:**
 
-* Boundary is ULB-specific  master data. For revenue modules, we use the revenue boundary.  It is pushed under each ULB.
+* Boundary is ULB-specific master data. For revenue modules, we use the revenue boundary.  It is pushed under each ULB.
 
 The file path would be: [https://github.com/egovernments/state-mdms-data/tree/master/data/tenant/ulb/egov-location/boundary-data.json](https://github.com/egovernments/state-mdms-data/tree/master/data/tenant/sonpur/egov-location)
 
@@ -203,7 +203,7 @@ Boundary data json is generated using the implementation kit.&#x20;
 
 **Trade Type Master:**
 
-* Trade Types of  all ULB’s are pushed under “Trade License” folder of MDMS repo.
+* Trade Types of all ULBs are pushed under the “Trade License” folder of the MDMS repo.
 
 The file path would be:
 
@@ -251,17 +251,17 @@ For each trade type, sub-types are defined. Each sub-type has mandatory document
 
 **TRADE is category**&#x20;
 
-**INDUSTRY is Trade Type**
+**INDUSTRY is a Trade Type**
 
-**FM is Trade Subtype(Floor Mill)**
+**FM is a Trade Subtype (Floor Mill)**
 
-**Note:** Code defines the levels of hierarchy. Dots define the number of hierarchy levels.  TRADE.INDUSTRY specifies two levels, which means TradeType INDUSTRY falls under TRADE category. [TRADE.INDUSTRY.FM](http://trade.industry.fm/) specifies three levels, which means FM is a sub-type under INDUSTRY.
+**Note:** Code defines the levels of hierarchy. Dots define the number of hierarchy levels.  TRADE.INDUSTRY specifies two levels, which means TradeType INDUSTRY falls under the TRADE category. [TRADE.INDUSTRY.FM](http://trade.industry.fm/) specifies three levels, which means FM is a sub-type under INDUSTRY.
 
-For all the master data, we are pushing localisation messages. Explanation on inserting localisation for master data is given in the localisation section below:
+For all the master data, we are pushing localisation messages. An explanation on inserting localisation for master data is given in the localisation section below:
 
 **Trade Rates:**
 
-* Trade Rates for each trade subtype are stored in database. Rest endpoints are available to create trade rates and search existing trade rates. Can use below curl command for create and search trade rates.
+* Trade Rates for each trade subtype are stored in the database. Rest endpoints are available to create trade rates and search existing trade rates. Can use the below curl command for create and search trade rates.
 * \-------------------------- Search Trade Rates ------------------------------------
 
 curl -X POST \  '[https://APPLICATION-URL/tl-calculator/billingslab/\_search?tenantId=state.ulbname](https://application-url/tl-calculator/billingslab/\_search?tenantId=state.ulbname)' \\
@@ -318,13 +318,13 @@ curl -X POST \  '[https://APPLICATION-URL/tl-calculator/billingslab/\_create?ten
 
 ]&#x20;
 
-}’  //\<Replacewith proper application url and the tenantid>
+}’  //\<Replacewith proper application URL and the tenantid>
 
-Note: Currently, delete rate is not supported. To delete any specific rate, updating 'rate' to null using update endpoint will inactivate the rate for a specific sub-type.
+Note: Currently, the delete rate is not supported. To delete any specific rate, updating 'rate' to null using the update endpoint will inactivate the rate for a specific sub-type.
 
-### **Adding role, actions to MDMS**
+### **Adding role, and actions to MDMS**
 
-* **Actions** are the features like “Create”, ”Update”, “Search” and so on. Action json file maps all the actions i.e, urls. [**https://github.com/egovernments/state-mdms-data/tree/master/data/tenant/ACCESSCONTROL-ACTIONS-TEST**](https://github.com/egovernments/state-mdms-data/tree/master/data/tenant/ACCESSCONTROL-ACTIONS-TEST)
+* **Actions** are the features like “Create”, ”Update”, “Search” and so on. Action JSON file maps all the actions, that is, URLs. [**https://github.com/egovernments/state-mdms-data/tree/master/data/tenant/ACCESSCONTROL-ACTIONS-TEST**](https://github.com/egovernments/state-mdms-data/tree/master/data/tenant/ACCESSCONTROL-ACTIONS-TEST)
 
 **Actions-test.json:**&#x20;
 
@@ -354,7 +354,7 @@ Note: Currently, delete rate is not supported. To delete any specific rate, upda
 }
 ```
 
-* **Role based actions** will have mappings between action and roles. It specifies which role can perform what actions. Example: A user with TLCreator role mapped to **“Create Trade License”** action/feature, can only perform create TL application.  A user can have multiple roles and multiple actions mapped.
+* **Role-based actions** will have mappings between actions and roles. It specifies which role can perform what actions. Example: A user with a TLCreator role mapped to the **“Create Trade License”** action/feature, can only perform the create TL application.  A user can have multiple roles and multiple actions mapped.
 
 **Roleactions.json:**
 
@@ -418,7 +418,7 @@ Trade Sub-Type:
 
 Use the below rest endpoints to push these data:
 
-* Only boundary localization messages are pushed at ULB level. Rest all are pushed at State Level.
+* Only boundary localization messages are pushed at the ULB level. Rest all are pushed at the state level.
 * \-----------------------
 
 **Upsert: Update and Insert Localization**
@@ -426,7 +426,7 @@ Use the below rest endpoints to push these data:
 * \-------------------------
 * \--------
 
-**This api, updates if code already exists or else inserts newly**
+**This API, updates if code already exists or else inserts newly**
 
 * \----------------
 
@@ -782,10 +782,10 @@ sms.sender.requestType=POST
 
 ### **Implementation Kit Usage Steps**
 
-**Prerequisites:**
+**Pre-requisites:**
 
-* Install python 3.7.0 version using this link (cannot be installed in Windows version older than Windows Xp):[ https://www.python.org/downloads/](https://www.python.org/downloads/)\
-  Set python environment variables and Path using this  help doc:[ https://docs.python.org/3/using/windows.html](https://docs.python.org/3/using/windows.html)
-* Clone the Implementation Kit Repo using the following link:
+* Install the Python 3.7.0 version using the following link (cannot be installed in Windows version older than Windows XP):[ https://www.python.org/downloads/](https://www.python.org/downloads/)\
+  Set Python environment variables and Path using the following help doc:[ https://docs.python.org/3/using/windows.html](https://docs.python.org/3/using/windows.html)
+* Clone the implementation kit repo using the following link:
 
 {% embed url="https://github.com/egovernments/digit-implementation-kit" %}
