@@ -130,6 +130,7 @@
         * [QA Sign-Off](products/health-campaign-management/campaign-management-dashboard/release-notes/qa-sign-off.md)
       * [Product Requirement Document (PRD)](products/health-campaign-management/campaign-management-dashboard/product-requirement-document-prd.md)
     * [Microplanning](products/health-campaign-management/microplanning.md)
+    * [HCM Workbench](products/health-campaign-management/hcm-workbench.md)
 * [Programme](programme/README.md)
   * [Specifications](programme/specifications.md)
   * [Deployment](programme/deployment.md)
