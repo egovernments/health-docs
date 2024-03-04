@@ -184,6 +184,7 @@
     * [UAT Plan](programme/smc-implementation/uat-plan/README.md)
       * [Change Management Strategy](programme/smc-implementation/uat-plan/change-management-strategy.md)
     * [Master Data Template](programme/smc-implementation/master-data-template.md)
+  * [Adoption Metrics](programme/adoption-metrics.md)
 
 ## Community
 
