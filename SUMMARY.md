@@ -80,6 +80,7 @@
         * [Attendance Management Module](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/attendance-management-module/README.md)
           * [Tech User Manual](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/attendance-management-module/tech-user-manual/README.md)
             * [Attendance Package Extraction and Interaction with HCM Application](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/attendance-management-module/tech-user-manual/attendance-package-extraction-and-interaction-with-hcm-application.md)
+          * [Bug Bash Report](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/attendance-management-module/bug-bash-report.md)
         * [Health Facility Referral Module](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/health-facility-referral-module.md)
         * [Downloading Beneficiary Data for Longitudinal Tracking](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/downloading-beneficiary-data-for-longitudinal-tracking.md)
         * [Test Cases](products/health-campaign-management/frontline-workers-app/hcm-app-user-manual/test-cases.md)
