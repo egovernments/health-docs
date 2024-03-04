@@ -4,7 +4,7 @@
 
 This document describes various users of the HCM system and lays out the processes to manage the access and provisioning-related aspects. Broadly, the users can be categorised as permanent users of the HCM system who will be identified by their individual usernames and passwords, and the users who will be provisioned in the system for temporary durations and identified by the codes assigned (henceforth referred to as coded users). The user management module of the HCM platform will provide the interface to create and manage all types of users.&#x20;
 
-## Types of users
+## Types of Users
 
 | User type                                                                                | <p>Role-mapping in DIGIT</p><p><br></p>                                              | What they will do                                                              | Organisation       | Type of access              |
 | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | ------------------ | --------------------------- |
@@ -22,9 +22,9 @@ This document describes various users of the HCM system and lays out the process
 | Temporary users provisioned for UAT with different role action mappings                  | <p><br></p>                                                                          | <p><br></p>                                                                    | NMCP               | Access based on their roles |
 | Temporary users provisioned for trainings with different role action mappings            | <p><br></p>                                                                          | <p><br></p>                                                                    | NMCP               | Access based on their roles |
 
-### Provisioning process for each user type
+### Provisioning Process for Each User Type
 
-1. Supervisors at Central, Provincial and District levels
+1. Supervisors at Central, Provincial, and District levels
 
 * Information is sent from NMCP to CHAI for provisioning via email.
 * CHAI provisions the users and sends the list of created users back to NMCP.
@@ -36,7 +36,7 @@ This document describes various users of the HCM system and lays out the process
 * During the campaign, the CHAI help desk will provision the new local monitor or LM, (if any), using the DIGITs user management UI.
 * These will be deactivated from the system once the campaign ends based on inputs from CHAI team.
 
-Note : All the communication to be on emails.
+Note: All communication is to be via email.
 
 3. Registrars
 
@@ -62,18 +62,18 @@ Note : All the communication to be on emails.
 * eGov will send the list to CHAI after provisioning with usernames and passwords.
 * These will be deleted once the UAT/training is over.
 
-### Password reset mechanism&#x20;
+### Password Reset Mechanism&#x20;
 
-* For all kinds of users , the password reset would be managed by the system admin, who will be a part of the help desk.
-* Users who have forgotten their passwords can reach out to the help desk on the designated helpline number and request for a new password.
+* For all kinds of users, the password reset would be managed by the system admin, who will be a part of the help desk.
+* Users who have forgotten their passwords can reach out to the help desk on the designated helpline number and request a new password.
 * System admin would reset their passwords using a two-factor authentication. The email ID for retrieving the passwords would be the same for all users and would be managed by the system administrator.
 * The system administrator would regenerate the password and communicate to the users over a phone call or in a WhatsApp group.
 
-### Template for user creation&#x20;
+### Template for User Creation&#x20;
 
 This would be as per the [Master Data template](master-data-collection-template/).
 
-### Recommendations around managing usernames
+### Recommendations Around Managing Usernames
 
 1. A username, once created during user creation, must not be changed.
 
@@ -81,6 +81,6 @@ This would be as per the [Master Data template](master-data-collection-template/
 
 &#x20;      \- Regarding the use of the capital case: It is recommended to use either all lowercase or all uppercase characters to make it easy for users to remember and enter the login credentials (lowercase preferred).
 
-&#x20;      \- It is recommended to keep passwords simple (and defaulted to a single value/string) so that mobile app users do not forget the password, and hence, do not face a barrier in using the app.
+&#x20;      \- It is recommended to keep passwords simple (and default to a single value/string) so that mobile app users do not forget the password, and hence, do not face a barrier in using the app.
 
 It has been assumed that user creation for temporary users, who keep changing during the campaign, would be taken care of by the help desk team.\
