@@ -1,3 +1,0 @@
-# Specifications
-
-Coming soon

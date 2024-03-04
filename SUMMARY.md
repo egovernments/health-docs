@@ -136,8 +136,6 @@
     * [Microplanning](products/health-campaign-management/microplanning.md)
     * [HCM Workbench](products/health-campaign-management/hcm-workbench.md)
 * [Programme](programme/README.md)
-  * [Specifications](programme/specifications.md)
-  * [Deployment](programme/deployment.md)
   * [LLIN Implementation](programme/llin-implementation/README.md)
     * [Standard Operating Procedures (SOPs) and Plans](programme/llin-implementation/standard-operating-procedures-sops-and-plans/README.md)
       * [SOP for Help desk Support](programme/llin-implementation/standard-operating-procedures-sops-and-plans/sop-for-help-desk-support.md)
