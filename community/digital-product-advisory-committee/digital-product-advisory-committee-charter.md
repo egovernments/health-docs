@@ -6,23 +6,23 @@ The purpose of this document is to establish the Digital Product Advisory Commit
 
 ## Background & Context
 
-Digital technologies generally, and digital public goods (DPGs) in particular, provide an opportunity for governments, private sector organisations and civil society organisations to collaborate to address public health outcomes by creating a country’s digital public health infrastructure. These digital technologies manifest as digital products or solutions that are used as part of programs by governments and civil society organisations aimed at specific interventions. Public health is one such area where digital public infrastructure (DPI) using DPGs is being built across countries. Within the larger public health space, public health campaigns are one such intervention, that are aimed towards the control, prevention and eradication of disease at population scale by setting up digital public infrastructure.
+Digital technologies generally, and digital public goods (DPGs) in particular, provide an opportunity for governments, private sector organisations and civil society organisations to collaborate to address public health outcomes by creating a country’s digital public health infrastructure. These digital technologies manifest as digital products or solutions that are used as part of programs by governments and civil society organisations aimed at specific interventions. Public health is one such area where digital public infrastructure (DPI) using DPGs is being built across countries. Within the larger public health space, public health campaigns are one such intervention, that are aimed towards the control, prevention, and eradication of disease at the population scale by setting up digital public infrastructure.
 
-Working with partners and supported by our donors, Bill & Melinda Gates Foundation (BMGF), Nandan Nilekani Philanthropies, and the Global Fund (Supply Chain team), eGov Foundation, is designing and developing a digital health campaign management product on the DIGIT Health platform. For the first implementation of this product, eGov Foundation has partnered with the National Malaria Control Programme (NMCP) under the Ministry of Health of the Government of Mozambique. The first exemplar using DIGIT HCM was done for a bednet campaign in Mozambique in August 2023 in Tété province. Following this, DIGIT HCM will be used for managing and operationalising an SMC campaign in the Nampula province of Mozambique, starting January 2024. The next country adopting DIGIT HCM for their health campaigns, is Liberia, where DIGIT HCM will be used for a bed campaign in March 2024. The same product is intended to be used for campaigns across multiple diseases and we hope to work with other partners to help us evolve the roadmap for this product.
+Working with partners and supported by our donors, Bill & Melinda Gates Foundation (BMGF), Nandan Nilekani Philanthropies, and the Global Fund (Supply Chain team), eGov Foundation, is designing and developing a digital health campaign management product on the DIGIT Health platform. For the first implementation of this product, eGov Foundation has partnered with the National Malaria Control Programme (NMCP) under the Ministry of Health of the Government of Mozambique. The first exemplar using DIGIT HCM was done for a bednet campaign in Mozambique in August 2023 in Tété province. Following this, DIGIT HCM will be used for managing and operationalising an SMC campaign in the Nampula province of Mozambique, starting January 2024. The next country adopting DIGIT HCM for their health campaigns is Liberia, where DIGIT HCM will be used for a bednet campaign in March 2024. The same product is intended to be used for campaigns across multiple diseases and we hope to work with other partners to help us evolve the roadmap for this product.
 
-As in many other spaces, the health campaign management space is fragmented with multiple products and solutions. Oftentimes, these products and solutions have overlapping capabilities, are not interoperable or are difficult to deploy in a changed context. This adds a burden of creating a new solution for each campaign, straining the already limited resources which can be put to better use. Designing and developing DIGIT HCM as a global DPG that forms a part of the digital public health infrastructure of a country can help mitigate many of these issues. DIGIT HCM is being designed and developed as a DPG and made freely available to all as an open-source software under the MIT licence ([https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)).
+As in many other spaces, the health campaign management space is fragmented with multiple products and solutions. Oftentimes, these products and solutions have overlapping capabilities, are not interoperable or are difficult to deploy in a changed context. This adds the burden of creating a new solution for each campaign, straining the already limited resources which can be put to better use. Designing and developing DIGIT HCM as a global DPG that forms a part of the digital public health infrastructure of a country can help mitigate many of these issues. DIGIT HCM is being designed and developed as a DPG and made freely available to all as open-source software under the MIT license. ([https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)).
 
 ## What are the objectives of the Digital Product Advisory Committee?&#x20;
 
-There are many organisations and individuals with deep knowledge and expertise in the public health space in general, and in public health campaign management, in particular. Our endeavour is to leverage this collective knowledge and expertise as we evolve the product. We do this by arriving at a shared understanding of the challenges faced by various actors in delivering public health campaigns, prioritising the most pressing issues keeping an eye on what’s going to be used first, building into the product the capabilities that are needed by most and enabling interoperability with other products and solutions catering to very specific use cases.&#x20;
+There are many organisations and individuals with deep knowledge and expertise in the public health space in general, and in public health campaign management, in particular. We endeavor to leverage this collective knowledge and expertise as we evolve the product. We do this by arriving at a shared understanding of the challenges faced by various actors in delivering public health campaigns, prioritising the most pressing issues keeping an eye on what’s going to be used first, building into the product the capabilities that are needed by most and enabling interoperability with other products and solutions catering to very specific use cases.&#x20;
 
 The objectives of the Digital Product Advisory Committee then, are to:
 
 1. Get strategic alignment on the most pressing problems in health campaign management across the different types of campaigns.
 2. Provide inputs that will inform the product roadmap.
 3. Provide domain knowledge.
-4. Share experience on the variations in campaigns in different countries and how the product can factor for those variations.
-5. Share best practices, learnings and failures and the root causes of these problems.
+4. Share experience on the variations in campaigns in different countries and how the product can factor in those variations.
+5. Share best practices, learnings and failures, and the root causes of these problems.
 
 ## What does the Digital Product Advisory Committee do?
 
@@ -34,7 +34,7 @@ Here’s a view of what the Digital Product Advisory Committee (DPAC) is expecte
 The following are a few of the things the Digital Product Advisory Committee will not do:\
 
 
-As the name suggests, the Digital Product Advisory Committee is an advisory body and as such, it is not a decision making body. Its role is to share relevant experience from different geographies, share learnings from other campaigns and countries, help understand the problems in campaigns and challenges faced by different actors, etc. It will provide inputs and strategic direction that can be taken up for consideration on the roadmap, but is not responsible for the roadmap itself.&#x20;
+As the name suggests, the Digital Product Advisory Committee is an advisory body and as such, it is not a decision-making body. Its role is to share relevant experience from different geographies, share learnings from other campaigns and countries, help understand the problems in campaigns and challenges faced by different actors, etc. It will provide inputs and strategic direction that can be taken up for consideration on the roadmap but is not responsible for the roadmap itself.&#x20;
 
 ## Members of the Digital Product Advisory Committee&#x20;
 
@@ -54,15 +54,15 @@ The advisory committee will meet once a quarter.\
 
 1. Understand the problem and reimagine futures with the ecosystem:
 
-* Understand problems of different actors, their problems.
-* Refer to existing research, consult experts, involve stakeholders, engage with end-users to develop an understanding of the problem space.
+* Understand the problems of different actors, and their problems.
+* Refer to existing research, consult experts, involve stakeholders, and engage with end-users to develop an understanding of the problem space.
 * Develop and articulate a point of view.
 * Validate and refine this understanding through dialogue and discussion.
 * Reimagine futures.
 
 2. &#x20;Prioritise solving pivotal problems:
 
-* Keep the focus on pivotal problems, enabling services and not point solutions
+* Keep the focus on pivotal problems, enabling services and not pointing solutions
 
 3. &#x20;Prioritise design and development of what will be used:
 
@@ -74,14 +74,14 @@ The advisory committee will meet once a quarter.\
 
 5. Design and plan for scale from the beginning:
 
-* Build in flexibility, modularity and simplicity from the start.
+* Build in flexibility, modularity, and simplicity from the start.
 * Identify and design for scale levers.
 
 6. Follow a holistic design approach:
 
-* Holistic design incorporates functional, visual, process, tech, business model. and policy considerations.
-* Design for people and needs of different types of people.
-* Think in terms of affordances (UI/UX, channels, language etc)  and not just technical capabilities of the system.
+* Holistic design incorporates functional, visual, process, tech, and business models. and policy considerations.
+* Design for people and the needs of different types of people.
+* Think in terms of affordances (UI/UX, channels, language, etc.)  and not just the technical capabilities of the system.
 * Design for change.
 
 7. Reuse and evolve:
@@ -99,4 +99,4 @@ The advisory committee will meet once a quarter.\
 
 * Define what success looks like from the perspective of those who we are solving for.&#x20;
 * Solve for beneficiaries, with citizens being the first among them.
-* Plan to track, measure and iterate from the beginning.
+* Plan to track, measure, and iterate from the beginning.
