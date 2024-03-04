@@ -8,7 +8,7 @@
     * [Test Cases](platform/release-notes/test-cases.md)
     * [Data Migration](platform/release-notes/data-migration.md)
     * [Service Build Updates](platform/release-notes/service-build-updates.md)
-    * [Gate 2 Release Checklist](platform/release-notes/gate-2-release-checklist/README.md)
+    * [Gate 2 Release Checklist](platform/release-notes/gate-2-release-checklist.md)
       * [SMC Work Plan](platform/release-notes/gate-2-release-checklist/smc-work-plan.md)
       * [Regression Test Cases](platform/release-notes/gate-2-release-checklist/regression-test-cases.md)
   * [Platform Capabilities](platform/platform-capabilities/README.md)
