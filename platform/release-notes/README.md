@@ -2,7 +2,15 @@
 
 ## Release Summary
 
+HCM V1.3 is an incremental release of the base version that has functional and non-functional requirements:
 
+* Functional:
+
+&#x20;      \- Attendance Module: The ability to record offline first attendance for Field Workers during Registration/Delivery as well as during training.
+
+&#x20;     \- Health Facility Referral Management: Offline first process to record referrals made for Beneficiaries to Health Facilities by Health Facility Supervisors.
+
+* Non-functional: The services support bulk and non-bulk APIs which can be used in online and offline modes for the HCM app.
 
 ### **Functional Changes**
 
