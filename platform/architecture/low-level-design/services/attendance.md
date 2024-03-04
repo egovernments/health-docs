@@ -24,5 +24,5 @@ Attendance service allows users to maintain attendance registers, enrol individu
 
 ## Web Sequence Diagram
 
-#### Attendance Register
+###
 

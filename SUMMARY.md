@@ -10,6 +10,7 @@
     * [Service Build Updates](platform/release-notes/service-build-updates.md)
     * [Gate 2 Release Checklist](platform/release-notes/gate-2-release-checklist/README.md)
       * [SMC Work Plan](platform/release-notes/gate-2-release-checklist/smc-work-plan.md)
+      * [Regression Test Cases](platform/release-notes/gate-2-release-checklist/regression-test-cases.md)
   * [Platform Capabilities](platform/platform-capabilities/README.md)
     * [Technical Skillset & Pre-requisites](platform/platform-capabilities/technical-skillset-and-pre-requisites.md)
   * [Architecture](platform/architecture/README.md)
