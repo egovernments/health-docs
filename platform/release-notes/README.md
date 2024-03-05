@@ -30,4 +30,3 @@ NA
 | ------------------------------- | ------------------------------------------------------------------------------------- |
 | HF-Referral                     | Capture referral handled by the health facility.                                      |
 | Offline Enabled Attendance Logs | Attendance logs can be created in an offline environment using the health worker app. |
-|                                 |                                                                                       |
