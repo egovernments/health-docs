@@ -9,7 +9,6 @@
     * [Test Cases](platform/release-notes/test-cases.md)
     * [Service Build Updates](platform/release-notes/service-build-updates.md)
     * [Gate 2 Release Checklist](platform/release-notes/gate-2-release-checklist.md)
-      * [SMC Work Plan](platform/release-notes/gate-2-release-checklist/smc-work-plan.md)
       * [Regression Test Cases](platform/release-notes/gate-2-release-checklist/regression-test-cases.md)
       * [Liberia Implementation Checklist](platform/release-notes/gate-2-release-checklist/liberia-implementation-checklist.md)
       * [SMC Implementation Checklist](platform/release-notes/gate-2-release-checklist/smc-implementation-checklist.md)
