@@ -120,6 +120,35 @@ The user must provide the details for the stock loss.
 
 <figure><img src="../../../../.gitbook/assets/Android - 583.png" alt="" width="180"><figcaption></figcaption></figure>
 
+### **Bale Scanning:**
+
+**Overview:**&#x20;
+
+Scan the resource code to track the resources delivered
+
+1. Package utilised to parse the barcode : [https://pub.dev/packages/gs1\_barcode\_parser](https://pub.dev/packages/gs1\_barcode\_parser).&#x20;
+2. Package utilised  to QR code scanner:   [https://pub.dev/packages/qr\_code\_scanner](https://pub.dev/packages/qr\_code\_scanner)
+3. GS1 - standards :   [https://www.gs1.org/docs/barcodes/GS1\_DataMatrix\_Guideline.pdf](https://www.gs1.org/docs/barcodes/GS1\_DataMatrix\_Guideline.pdf)&#x20;
+4. Package utilised for barcode scanning
+
+[https://pub.dev/packages/google\_mlkit\_barcode\_scanning](https://pub.dev/packages/google\_mlkit\_barcode\_scanning)
+
+```
+google_mlkit_barcode_scanning
+```
+
+Given a field value formatted with the GS1 data matrix standard and a string key from the GS1 application identifiers. The function should look and return the value linked to the provided key.
+
+A well-formatted value would look like:
+
+]d20108470006991541211008199619525610DXB200517220228
+
+<div align="left">
+
+<figure><img src="../../../../.gitbook/assets/Screenshot_20231008-132327.png" alt="" width="188"><figcaption></figcaption></figure>
+
+</div>
+
 Stock Reconciliation
 
 When the user clicks on the stock reconciliation button on the home screen, they are navigated to this screen where they need to verify whether the physical count and calculated stock values are the same or not. In the select product field, the user needs to select a product from the dropdown. There are warehouse name and administrative area fields as well, all of which are mandatory. The following details are there:
