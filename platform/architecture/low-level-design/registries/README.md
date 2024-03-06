@@ -18,7 +18,7 @@ Here are the articles in this section:
 [facility.md](facility.md)
 {% endcontent-ref %}
 
-{% content-ref url="referral.md" %}
-[referral.md](referral.md)
+{% content-ref url="../services/referral.md" %}
+[referral.md](../services/referral.md)
 {% endcontent-ref %}
 

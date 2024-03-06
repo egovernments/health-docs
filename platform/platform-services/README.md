@@ -26,8 +26,8 @@ Here are the articles in this section:
 [project-services.md](project-services.md)
 {% endcontent-ref %}
 
-{% content-ref url="referral-registry.md" %}
-[referral-registry.md](referral-registry.md)
+{% content-ref url="referral-management.md" %}
+[referral-management.md](referral-management.md)
 {% endcontent-ref %}
 
 {% content-ref url="complaints/" %}

@@ -2,8 +2,8 @@
 
 Here are the articles in this section:
 
-{% content-ref url="attendance.md" %}
-[attendance.md](attendance.md)
+{% content-ref url="../registries/attendance.md" %}
+[attendance.md](../registries/attendance.md)
 {% endcontent-ref %}
 
 {% content-ref url="project.md" %}
