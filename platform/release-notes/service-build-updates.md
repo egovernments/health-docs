@@ -41,7 +41,7 @@
 |                                                                                           | Transformer         | egovio/transformer:v1.1.0-73167482a2-38                 | Not changed |
 |                                                                                           | Complaints          | pgr-services:v1.1.7-f58e5abb0d-8                        | Not changed |
 |                                                                                           | User management     | egov-hrms:v1.2.6-ac8c591238-4                           | Changed     |
-| Works [HCM-v1.3](https://github.com/egovernments/DIGIT-Works/releases/tag/HCM-v1.3)       | Attendance          | attendance:v1.0.0-2c51c532-54                           | Changed     |
+| [HCM-v1.3](https://github.com/egovernments/DIGIT-Works/tree/HCM-v1.3/backend/attendance)  | Attendance          | attendance:v1.0.0-2c51c532-54                           | Changed     |
 | MDMS [HCM-v1.3](https://github.com/egovernments/egov-mdms-data/releases/tag/HCM-v1.3)     |                     |                                                         |             |
 | Config [HCM-v1.3](https://github.com/egovernments/configs/releases/tag/HCM-v1.3)          |                     |                                                         |             |
 | Devops [HCM-v1.3](https://github.com/egovernments/DIGIT-DevOps/releases/tag/HCM-v1.3)     |                     |                                                         |             |
