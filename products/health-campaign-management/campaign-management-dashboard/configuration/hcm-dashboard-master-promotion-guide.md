@@ -13,7 +13,7 @@ This document is a step-by-step promotion guide to setup/promote the Health Camp
 List of core digit services used:
 
 * The HCM Dashboard consumes the same core services that are used by HCM Platform services.
-* Refer to this [document](https://health.digit.org/platform/configuration/hcm-master-promotion-guide#release-features-list-of-core-digit-services-used) for the list of core services to be deployed for the HCM dashboard.
+* Refer to this [document](https://health.digit.org/products/health-campaign-management/frontline-workers-app/configuration/hcm-master-promotion-guide#release-features-list-of-core-digit-services-used) for the list of core services to be deployed for the HCM dashboard.
 
 ## Service enhancements for HCM Dashboard
 
