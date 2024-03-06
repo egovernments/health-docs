@@ -4,6 +4,7 @@
   * [Roadmap](introducing-digit-health-platform/roadmap.md)
 * [Platform](platform/README.md)
   * [Release Notes](platform/release-notes/README.md)
+    * [Technical Release Summary](platform/release-notes/technical-release-summary.md)
     * [Master Data Management Service (MDMS) & Configuration Updates](platform/release-notes/master-data-management-service-mdms-and-configuration-updates.md)
     * [Test Cases](platform/release-notes/test-cases.md)
     * [Service Build Updates](platform/release-notes/service-build-updates.md)
