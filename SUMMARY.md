@@ -6,7 +6,6 @@
   * [Release Notes](platform/release-notes/README.md)
     * [Master Data Management Service (MDMS) & Configuration Updates](platform/release-notes/master-data-management-service-mdms-and-configuration-updates.md)
     * [Test Cases](platform/release-notes/test-cases.md)
-    * [Data Migration](platform/release-notes/data-migration.md)
     * [Service Build Updates](platform/release-notes/service-build-updates.md)
     * [Gate 2 Release Checklist](platform/release-notes/gate-2-release-checklist.md)
       * [SMC Work Plan](platform/release-notes/gate-2-release-checklist/smc-work-plan.md)
