@@ -135,7 +135,7 @@
         * [QA Sign-Off](products/health-campaign-management/campaign-management-dashboard/release-notes/qa-sign-off.md)
       * [Product Requirement Document (PRD)](products/health-campaign-management/campaign-management-dashboard/product-requirement-document-prd.md)
     * [Microplanning](products/health-campaign-management/microplanning.md)
-    * [HCM Workbench](products/health-campaign-management/hcm-workbench.md)
+    * [HCM Admin Console](products/health-campaign-management/hcm-admin-console.md)
 * [Programme](programme/README.md)
   * [LLIN Implementation](programme/llin-implementation/README.md)
     * [Standard Operating Procedures (SOPs) and Plans](programme/llin-implementation/standard-operating-procedures-sops-and-plans/README.md)

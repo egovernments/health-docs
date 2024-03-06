@@ -1,3 +1,0 @@
-# HCM Workbench
-
-Coming soon...
