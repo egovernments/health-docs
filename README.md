@@ -56,6 +56,8 @@ The APIs will allow data and functionality to be reused across multiple departme
 
 * [Frontline Worker's App](products/health-campaign-management/frontline-workers-app/)
 * [HCM Dashboard](products/health-campaign-management/campaign-management-dashboard/)
+* [Microplanning](https://egov-digit.gitbook.io/1.0/)
+* [HCM Admin Console](https://egov-digit.gitbook.io/0.1/)
 
 ## Programme
 
