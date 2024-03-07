@@ -43,6 +43,7 @@
     * [Stock & Inventory](platform/platform-services/stock-and-inventory.md)
     * [Project Services](platform/platform-services/project-services.md)
     * [Referral Management](platform/platform-services/referral-management.md)
+    * [Attendance](platform/platform-services/attendance.md)
     * [Complaints](platform/platform-services/complaints/README.md)
       * [QA Sign-Off](platform/platform-services/complaints/qa-sign-off/README.md)
         * [Test Cases](platform/platform-services/complaints/qa-sign-off/test-cases.md)

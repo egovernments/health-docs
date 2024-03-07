@@ -20,7 +20,7 @@ Attendance service allows users to maintain attendance registers, enrol individu
 
 ### DB Schema Diagram
 
-<figure><img src="../../../../.gitbook/assets/attendance.png" alt=""><figcaption><p>Attendance with Offline Enablement of Logs</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/attendance (1).png" alt=""><figcaption><p>Attendance with Offline Enablement of Logs</p></figcaption></figure>
 
 ## Web Sequence Diagrams
 

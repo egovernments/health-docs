@@ -1,4 +1,4 @@
-# Referral Registry
+# Referral Management
 
 ## Overview
 
@@ -30,9 +30,7 @@ The source code for an[ ](https://github.com/egovernments/health-campaign-servic
 
 ## API Details
 
-Refer to the Swagger API for YAML file details.&#x20;
-
-Link: [https://github.com/egovernments/health-campaign-services/blob/master/docs/health-api-specs/contracts/referral-management.yml](https://github.com/egovernments/health-campaign-services/blob/master/docs/health-api-specs/contracts/referral-management.yml)
+Refer to the [Swagger API](https://github.com/egovernments/health-campaign-services/blob/master/docs/health-api-specs/contracts/referral-management.yml) for YAML file details.&#x20;
 
 Application.properties file information:
 
@@ -54,6 +52,14 @@ referralmanagement.referral.kafka.delete.topic=delete-referral-topic
 referralmanagement.referral.consumer.bulk.create.topic=save-referral-bulk-topic
 referralmanagement.referral.consumer.bulk.update.topic=update-referral-bulk-topic
 referralmanagement.referral.consumer.bulk.delete.topic=delete-referral-bulk-topic
+
+referralmanagement.hfreferral.kafka.create.topic=save-hfreferral-topic
+referralmanagement.hfreferral.kafka.update.topic=update-hfreferral-topic
+referralmanagement.hfreferral.kafka.delete.topic=delete-hfreferral-topic
+
+referralmanagement.hfreferral.consumer.bulk.create.topic=save-hfreferral-bulk-topic
+referralmanagement.hfreferral.consumer.bulk.update.topic=update-hfreferral-bulk-topic
+referralmanagement.hfreferral.consumer.bulk.delete.topic=delete-hfreferral-bulk-topic
 ```
 
 #### URLs for the external API references:
@@ -250,7 +256,92 @@ referralmanagement.referral.consumer.bulk.delete.topic=delete-referral-bulk-topi
   "serviceCode": "referralmanagement",
   "code": "null",
   "path": ""
+},
+{
+  "id": 1689,
+  "name": "HFReferral Create",
+  "url": "/referralmanagement/hf-referral/v1/_create",
+  "displayName": "HFReferral Create",
+  "orderNumber": 0,
+  "parentModule": "",
+  "enabled": false,
+  "serviceCode": "referralmanagement",
+  "code": "null",
+  "path": ""
+},
+{
+  "id": 1690,
+  "name": "HFReferral Update",
+  "url": "/referralmanagement/hf-referral/v1/_update",
+  "displayName": "HFReferral Update",
+  "orderNumber": 0,
+  "parentModule": "",
+  "enabled": false,
+  "serviceCode": "referralmanagement",
+  "code": "null",
+  "path": ""
+},
+{
+  "id": 1691,
+  "name": "HFReferral Delete",
+  "url": "/referralmanagement/hf-referral/v1/_delete",
+  "displayName": "HFReferral Delete",
+  "orderNumber": 0,
+  "parentModule": "",
+  "enabled": false,
+  "serviceCode": "referralmanagement",
+  "code": "null",
+  "path": ""
+},
+{
+  "id": 1692,
+  "name": "HFReferral Search",
+  "url": "/referralmanagement/hf-referral/v1/_search",
+  "displayName": "HFReferral Search",
+  "orderNumber": 0,
+  "parentModule": "",
+  "enabled": false,
+  "serviceCode": "referralmanagement",
+  "code": "null",
+  "path": ""
+},
+{
+  "id": 1693,
+  "name": "HFReferral Bulk Create",
+  "url": "/referralmanagement/hf-referral/v1/bulk/_create",
+  "displayName": "HFReferral Bulk Create",
+  "orderNumber": 0,
+  "parentModule": "",
+  "enabled": false,
+  "serviceCode": "referralmanagement",
+  "code": "null",
+  "path": ""
+},
+{
+  "id": 1694,
+  "name": "HFReferral Bulk Update",
+  "url": "/referralmanagement/hf-referral/v1/bulk/_update",
+  "displayName": "HFReferral Bulk Update",
+  "orderNumber": 0,
+  "parentModule": "",
+  "enabled": false,
+  "serviceCode": "referralmanagement",
+  "code": "null",
+  "path": ""
+},
+{
+  "id": 1695,
+  "name": "HFReferral Bulk Delete",
+  "url": "/referralmanagement/hf-referral/v1/bulk/_delete",
+  "displayName": "HFReferral Bulk Delete",
+  "orderNumber": 0,
+  "parentModule": "",
+  "enabled": false,
+  "serviceCode": "referralmanagement",
+  "code": "null",
+  "path": ""
 }
+
 ```
 
 #### Access to role-based actions
@@ -437,6 +528,90 @@ referralmanagement.referral.consumer.bulk.delete.topic=delete-referral-bulk-topi
   "actionid": 1673,
   "actioncode": "",
   "tenantId": "mz"
+},
+{
+  "rolecode": "SUPERUSER",
+  "actionid": 1689,
+  "actioncode": "",
+  "tenantId": "mz"
+},
+{
+  "rolecode": "HEALTH_FACILITY_WORKER",
+  "actionid": 1689,
+  "actioncode": "",
+  "tenantId": "mz"
+},
+{
+  "rolecode": "SUPERUSER",
+  "actionid": 1690,
+  "actioncode": "",
+  "tenantId": "mz"
+},
+{
+  "rolecode": "HEALTH_FACILITY_WORKER",
+  "actionid": 1690,
+  "actioncode": "",
+  "tenantId": "mz"
+},
+{
+  "rolecode": "SUPERUSER",
+  "actionid": 1691,
+  "actioncode": "",
+  "tenantId": "mz"
+},
+{
+  "rolecode": "HEALTH_FACILITY_WORKER",
+  "actionid": 1691,
+  "actioncode": "",
+  "tenantId": "mz"
+},
+{
+  "rolecode": "SUPERUSER",
+  "actionid": 1692,
+  "actioncode": "",
+  "tenantId": "mz"
+},
+{
+  "rolecode": "HEALTH_FACILITY_WORKER",
+  "actionid": 1692,
+  "actioncode": "",
+  "tenantId": "mz"
+},
+{
+  "rolecode": "SUPERUSER",
+  "actionid": 1693,
+  "actioncode": "",
+  "tenantId": "mz"
+},
+{
+  "rolecode": "HEALTH_FACILITY_WORKER",
+  "actionid": 1693,
+  "actioncode": "",
+  "tenantId": "mz"
+},
+{
+  "rolecode": "SUPERUSER",
+  "actionid": 1694,
+  "actioncode": "",
+  "tenantId": "mz"
+},
+{
+  "rolecode": "HEALTH_FACILITY_WORKER",
+  "actionid": 1694,
+  "actioncode": "",
+  "tenantId": "mz"
+},
+{
+  "rolecode": "SUPERUSER",
+  "actionid": 1695,
+  "actioncode": "",
+  "tenantId": "mz"
+},
+{
+  "rolecode": "HEALTH_FACILITY_WORKER",
+  "actionid": 1695,
+  "actioncode": "",
+  "tenantId": "mz"
 }
 ```
 
@@ -450,8 +625,8 @@ referralmanagement.referral.consumer.bulk.delete.topic=delete-referral-bulk-topi
 
 ## Database Schema
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/smc referral.png" alt=""><figcaption></figcaption></figure>
 
 ## Postman Collections
 
-[https://api.postman.com/collections/28428162-ddba3ccc-6bfd-493d-b08b-43d1363aee82?access\_key=PMAT-01HCW9Z23Y6217QQ5SGASKZN5D](https://api.postman.com/collections/28428162-ddba3ccc-6bfd-493d-b08b-43d1363aee82?access\_key=PMAT-01HCW9Z23Y6217QQ5SGASKZN5D)
+[Link](https://api.postman.com/collections/28428162-829fd5ae-a3ae-4d62-8da0-f984e9ed8aaa?access\_key=PMAT-01HJNFM9ZXR7ZDBPCFF2QDV5T6)
