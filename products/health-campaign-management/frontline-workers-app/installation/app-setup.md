@@ -10,7 +10,7 @@ Database (DB) Restore (Providing a DB backup to avoid hassle since the automatio
 
 To restore the database, we are providing the DB dump file. Use the following link to download the SQL file. [https://drive.google.com/file/d/1u2eljinnCCJAxUGCHRHHfnDQ5-WMZWIo/view?usp=sharing](https://drive.google.com/file/d/1u2eljinnCCJAxUGCHRHHfnDQ5-WMZWIo/view?usp=sharing)
 
-#### Steps to Restore Database Data:
+### Steps to Restore Database Data
 
 * Run Kubectl, and copy cmd to copy the file to the server (playground pod where DB runs).
 * Execute the restore command inside the playground pod.
@@ -41,7 +41,7 @@ Before you begin, ensure that you have the following installed on your PC:
 * Android device or emulator for testing.
 * Run the flutter doctor command to ensure all the required checklists are marked.&#x20;
 
-### Run the Application
+### Steps to Run the Application
 
 1. Open a terminal and run the following commands:
 
@@ -109,7 +109,7 @@ Note: Check all the folder names should be present in the packages folder before
     \
     This command will build the app and install it on the connected device or emulator.
 
-## Steps to Generate APK
+### Steps to Generate APK
 
 * Create a .env file inside the apps/health\_campaign\_field\_worker\_app folder.&#x20;
 
@@ -184,7 +184,7 @@ Sample message to upsert:
       }
 ```
 
-API curl:
+#### API curl:
 
 ```
 curl --location '{URL}/localization/messages/v1/_upsert' \
