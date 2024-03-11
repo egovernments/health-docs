@@ -220,9 +220,9 @@ curl --location '{URL}/localization/messages/v1/_upsert' \
 
 Link for Localisation:&#x20;
 
-[https://docs.google.com/spreadsheets/d/12Fqe2\_g5as8VidxoVsB-DJsAyGY51Ft89-AIR3inBSk/edit#gid=1621214620\
-\
-](https://docs.google.com/spreadsheets/d/12Fqe2\_g5as8VidxoVsB-DJsAyGY51Ft89-AIR3inBSk/edit#gid=1621214620)Consolidated: [https://github.com/egovernments/releasekit/blob/master/localisation/HCM/consolidated/en\_MZ/consolidated.json\
+{% embed url="https://docs.google.com/spreadsheets/d/e/2PACX-1vSb3QDXs7kK_6Oqurakr_AJf-XyOXWBOW9w-2iiwlmgvh-iXzOvFGYKdzuH5inV2xQGmTxwAQ57pcZB/pubhtml" %}
+
+Consolidated: [https://github.com/egovernments/releasekit/blob/master/localisation/HCM/consolidated/en\_MZ/consolidated.json\
 \
 ](https://github.com/egovernments/releasekit/blob/master/localisation/HCM/consolidated/en\_MZ/consolidated.json)Module’s Localisation:\
 [https://github.com/egovernments/releasekit/tree/master/localisation/HCM/V1.2](https://github.com/egovernments/releasekit/tree/master/localisation/HCM/V1.2)
