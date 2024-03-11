@@ -4,7 +4,7 @@
 
 [DIGIT Health Campaign Management Demo | DIGIT HCM](https://youtu.be/NB54Ve\_smv0?si=4sjmLWk5YZgCJRdF)
 
-## Setup Guides
+## Setup Guide
 
 Database (DB) Restore (Providing a DB backup to avoid hassle since the automation of the seed data creation is a work in progress):
 
