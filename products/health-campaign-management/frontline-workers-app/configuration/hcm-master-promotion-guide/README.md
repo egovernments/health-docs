@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document is a step-by-step promotion guide to set up/promote Health Campaign Management (HCM) in higher environments. This guide can be used by implementation teams or other external teams to set up the product.
+This document is a step-by-step promotion guide to set up/promote Health Campaign Manegement (HCM) to higher environments. The guide can be used by implementation teams or other external teams to set up the product.
 
 ## Table of Contents
 
@@ -31,7 +31,7 @@ This document is a step-by-step promotion guide to set up/promote Health Campaig
 
 &#x20;      \- User Management     &#x20;
 
-### 2. Promotion guide&#x20;
+### 2. Promotion Guide&#x20;
 
 * DIGIT environment production setup & deployments
 * HCM promotion&#x20;
@@ -60,7 +60,7 @@ This document is a step-by-step promotion guide to set up/promote Health Campaig
 | Location           | egovio/egov-location:v1.1.5-f9271c8-7                          |
 | MDMS               | egovio/egov-mdms-service:v1.3.2-72f8a8f87b-12                  |
 | Notification Mail  | egovio/egov-notification-mail:health-digit-master-6865af2823-2 |
-| Notification sms   | egovio/egov-notification-sms:v1.1.3-48a03ad7bb-10              |
+| Notification SMS   | egovio/egov-notification-sms:v1.1.3-48a03ad7bb-10              |
 | OTP                | egovio/egov-otp:v1.2.2-72f8a8f87b-12                           |
 | Persister          | egovio/egov-persister:v1.1.4-72f8a8f87b-6                      |
 | Searcher           | egovio/egov-searcher:v1.1.5-72f8a8f87b-16                      |
@@ -78,10 +78,10 @@ This document is a step-by-step promotion guide to set up/promote Health Campaig
 | --------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | Individual      | egovio/individual:v1.1.0-73167482a2-82             | Individual service built in to the DIGIT platform, all the CRUD operations are allowed using API.                                          |
 | Household       | egovio/household:v1.1.0-73167482a2-50              | Household service provided to create household and add members to a household.                                                             |
-| Facility        | egovio/facility:v1.1.0-73167482a2-28               | Facility services provide the APIs to create, update, delete, and read facilities.                                                         |
+| Facility        | egovio/facility:v1.1.0-73167482a2-28               | Facility services provide the APIs to create, update, delete and read facilities.                                                          |
 | Product         | egovio/product:v1.1.0-73167482a2-12                | Product services provide the APIs for CRUD operations for products and product variants.                                                   |
-| Project         | egovio/project:v1.1.0-73167482a2-80                | Project services provide the APIs for CRUD operations for project, project task, project staff, project resource, and project beneficiary. |
-| Stock           | egovio/stock:v1.1.0-73167482a2-36                  | Stock services provide the apis for creating, updating, deleting of stock receipts and stock reconciliations.                              |
+| Project         | egovio/project:v1.1.0-73167482a2-80                | Project services provide the apis for CRUD operations for project, project task, project staff, project resource, and project beneficiary. |
+| Stock           | egovio/stock:v1.1.0-73167482a2-36                  | Stock services provide the APIs for creating, updating, deleting of stock receipts and stock reconciliations.                              |
 | Service Request | egovio/service-request:v1.0.0-a51bee1435-7         | Service requests provide the create and submission APIs for checklists.                                                                    |
 | Transformer     | egovio/transformer:v1.1.0-73167482a2-38            | Library that transforms the data according to the analytics dashboard requirements.                                                        |
 | Complaints      | egovio/pgr-services:v1.1.7-f58e5abb0d-8            | Complaints services provide features like add complaints, resolve complaints, etc.                                                         |
@@ -237,12 +237,12 @@ This document is a step-by-step promotion guide to set up/promote Health Campaig
 | EGOV\_IDGEN\_HOST                              | <p><br></p>                                            | Value of IDGEN host server                       |
 | EGOV\_IDGEN\_PATH                              | egov-idgen/id/\_generate                               | <p><br></p>                                      |
 | EGOV\_IDGEN\_INTEGRATION\_ENABLED              | true/false                                             | <p><br></p>                                      |
-| PROJECT.STAFF.IDGEN.ID.FORMAT                  | project.staff.id                                       | Project staff ID generated format                |
-| PROJECT.FACILITY.IDGEN.ID.FORMAT               | project.facility.id                                    | Project facility ID generated format             |
-| PROJECT.TASK.IDGEN.ID.FORMAT                   | project.task.id                                        | Project task ID generated format                 |
-| IDGEN.PROJECT.BENEFICIARY.ID.FORMAT            | project.beneficiary.id                                 | Project beneficiary ID generated format          |
+| PROJECT.STAFF.IDGEN.ID.FORMAT                  | project.staff.id                                       | Project staff id generated format                |
+| PROJECT.FACILITY.IDGEN.ID.FORMAT               | project.facility.id                                    | Project facility id generated format             |
+| PROJECT.TASK.IDGEN.ID.FORMAT                   | project.task.id                                        | Project task id generated format                 |
+| IDGEN.PROJECT.BENEFICIARY.ID.FORMAT            | project.beneficiary.id                                 | Project beneficiary id generated format          |
 | EGOV\_USER\_CONTEXT\_PATH                      | /user/users                                            | User service context path                        |
-| EGOV\_SEARCH\_USER\_URL                        | /user/\_search                                         | User service search URL                          |
+| EGOV\_SEARCH\_USER\_URL                        | /user/\_search                                         | User service search url                          |
 | EGOV\_USER\_INTEGRATION\_ENABLED               | true/false                                             | User service integration enabled if it is true   |
 | SPRING\_REDIS\_HOST                            | redis.backbone                                         | <p><br></p>                                      |
 | SPRING\_REDIS\_PORT                            | 6379                                                   | <p><br></p>                                      |
@@ -257,14 +257,14 @@ This document is a step-by-step promotion guide to set up/promote Health Campaig
 | MANAGEMENT\_SECURITY\_ENABLED                  | false                                                  | <p><br></p>                                      |
 | TRACER\_OPENTRACING\_ENABLED                   | true/false                                             | <p><br></p>                                      |
 | EGOV\_LOCATION\_CONTEXT\_PATH                  | /egov-location/location/v11                            | <p><br></p>                                      |
-| EGOV\_LOCATION\_ENDPOINT                       | /boundarys/\_search                                    | Egov location end point                          |
+| EGOV\_LOCATION\_ENDPOINT                       | /boundarys/\_search                                    | Egov Location end point                          |
 | EGOV\_MDMS\_INTEGRATION\_ENABLED               | true/false                                             | <p><br></p>                                      |
 | EGOV\_MDMS\_MASTER\_NAME                       | project\_master                                        | Creating a mdms service bean                     |
-| EGOV\_MDMS\_MODULE\_NAME                       | project                                                | Nor required                                     |
+| EGOV\_MDMS\_MODULE\_NAME                       | project                                                | Nor required.                                    |
 | EGOV\_HOUSEHOLD\_HOST                          | <p><br></p>                                            | Host of the household service                    |
-| EGOV\_INDIVIDUAL\_HOST                         | <p><br></p>                                            | Host of the individual service                   |
-| EGOV\_SEARCH\_INDIVIDUAL\_URL                  | /individual/v1/\_search                                | Search URL of the individual                     |
-| EGOV\_PRODUCT\_HOST                            | <p><br></p>                                            | Host of the product service                      |
+| EGOV\_INDIVIDUAL\_HOST                         | <p><br></p>                                            | Host of individual service                       |
+| EGOV\_SEARCH\_INDIVIDUAL\_URL                  | /individual/v1/\_search                                | Search url of the individual                     |
+| EGOV\_PRODUCT\_HOST                            | <p><br></p>                                            | Host of product service                          |
 | EGOV\_SEARCH\_PRODUCT\_VARIANT\_URL            | /product/variant/v1/\_search                           | URL of the product variant search                |
 | PROJECT.TASK.KAFKA.CREATE.TOPIC                | save-project-task-topic                                | Topic to save project task                       |
 | PROJECT.TASK.CONSUMER.BULK.CREATE.TOPIC        | save-project-task-bulk-topic                           | Topic to save bulk project tasks                 |
@@ -278,38 +278,38 @@ This document is a step-by-step promotion guide to set up/promote Health Campaig
 | PROJECT.BENEFICIARY.CONSUMER.BULK.CREATE.TOPIC | project-beneficiary-consumer-bulk-create-topic         | Topic to create bulk project beneficiaries       |
 | PROJECT.BENEFICIARY.CONSUMER.BULK.UPDATE.TOPIC | project-beneficiary-consumer-bulk-update-topic         | Topic to update bulk project beneficiaries       |
 | PROJECT.BENEFICIARY.CONSUMER.BULK.DELETE.TOPIC | project-beneficiary-consumer-bulk-delete-topic         | Topic to delete bulk project beneficiaries       |
-| PROJECT.STAFF.KAFKA.DELETE.TOPIC               | delete-project-staff-topic                             | Topic to delete the project staff                |
-| PROJECT.STAFF.KAFKA.CREATE.TOPIC               | save-project-staff-topic                               | Topic to create the project staff                |
-| PROJECT.STAFF.KAFKA.UPDATE.TOPIC               | update-project-staff-topic                             | Topic to update the project staff                |
+| PROJECT.STAFF.KAFKA.DELETE.TOPIC               | delete-project-staff-topic                             | Topic to delete project staff                    |
+| PROJECT.STAFF.KAFKA.CREATE.TOPIC               | save-project-staff-topic                               | Topic to create project staff                    |
+| PROJECT.STAFF.KAFKA.UPDATE.TOPIC               | update-project-staff-topic                             | Topic to update project staff                    |
 | PROJECT.STAFF.CONSUMER.BULK.DELETE.TOPIC       | delete-project-staff-bulk-topic                        | Topic to delete bulk project staff               |
 | PROJECT.STAFF.CONSUMER.BULK.CREATE.TOPIC       | create-project-staff-bulk-topic                        | Topic to create bulk project staff               |
 | PROJECT.STAFF.CONSUMER.BULK.UPDATE.TOPIC       | update-project-staff-bulk-topic                        | Topic to update bulk project staff               |
-| SEARCH\_API\_LIMIT                             | 1000                                                   | Search API limit                                 |
+| SEARCH\_API\_LIMIT                             | 1000                                                   | Search api limit                                 |
 | PROJECT.DOCUMENT.ID.VERIFICATION.REQUIRED      | false                                                  | Project ID verification is done if value is true |
-| PROJECT.MANAGEMENT.SYSTEM.KAFKA.CREATE.TOPIC   | save-project                                           | Topic to save the project                        |
-| PROJECT.MANAGEMENT.SYSTEM.KAFKA.UPDATE.TOPIC   | update-project                                         | Topic to update the project                      |
+| PROJECT.MANAGEMENT.SYSTEM.KAFKA.CREATE.TOPIC   | save-project                                           | Topic to save project                            |
+| PROJECT.MANAGEMENT.SYSTEM.KAFKA.UPDATE.TOPIC   | update-project                                         | Topic to update project                          |
 | PROJECT.DEFAULT.OFFSET                         | 0                                                      | <p><br></p>                                      |
 | PROJECT.DEFAULT.LIMIT                          | 100                                                    | <p><br></p>                                      |
 | PROJECT.SEARCH.MAX.LIMIT                       | 200                                                    | <p><br></p>                                      |
 | EGOV.IDGEN.PROJECT.NUMBER.NAME                 | project.number                                         | <p><br></p>                                      |
 | PROJECT.RESOURCE.IDGEN.ID.FORMAT               | project.resource.id                                    | <p><br></p>                                      |
-| PROJECT.RESOURCE.KAFKA.CREATE.TOPIC            | save-project-resource-topic                            | Topic to save the project resource               |
-| PROJECT.RESOURCE.KAFKA.UPDATE.TOPIC            | update-project-resource-topic                          | Topic to update the project resource             |
-| PROJECT.RESOURCE.KAFKA.DELETE.TOPIC            | delete-project-resource-topic                          | Topic to delete the project resource             |
+| PROJECT.RESOURCE.KAFKA.CREATE.TOPIC            | save-project-resource-topic                            | Topic to save project resource                   |
+| PROJECT.RESOURCE.KAFKA.UPDATE.TOPIC            | update-project-resource-topic                          | Topic to update project resource                 |
+| PROJECT.RESOURCE.KAFKA.DELETE.TOPIC            | delete-project-resource-topic                          | Topic to delete project resource                 |
 | PROJECT.RESOURCE.CONSUMER.BULK.CREATE.TOPIC    | save-project-resource-bulk-topic                       | Topic to create bulk project resources           |
 | PROJECT.RESOURCE.CONSUMER.BULK.UPDATE.TOPIC    | update-project-resource-bulk-topic                     | Topic to update bulk project resources           |
 | PROJECT.RESOURCE.CONSUMER.BULK.DELETE.TOPIC    | delete-project-resource-bulk-topic                     | Topic to delete bulk project resources           |
-| PROJECT.FACILITY.KAFKA.CREATE.TOPIC            | save-project-facility-topic                            | Topic to save the project facility               |
-| PROJECT.FACILITY.KAFKA.UPDATE.TOPIC            | update-project-facility-topic                          | Topic to update the project facility             |
-| PROJECT.FACILITY.KAFKA.DELETE.TOPIC            | delete-project-facility-topic                          | Topic to delete the project facility             |
+| PROJECT.FACILITY.KAFKA.CREATE.TOPIC            | save-project-facility-topic                            | Topic to save project facility                   |
+| PROJECT.FACILITY.KAFKA.UPDATE.TOPIC            | update-project-facility-topic                          | Topic to update project facility                 |
+| PROJECT.FACILITY.KAFKA.DELETE.TOPIC            | delete-project-facility-topic                          | Topic to delete project facility                 |
 | PROJECT.FACILITY.CONSUMER.BULK.CREATE.TOPIC    | create-project-facility-bulk-topic                     | Topic to create bulk project facilities          |
 | PROJECT.FACILITY.CONSUMER.BULK.UPDATE.TOPIC    | update-project-facility-bulk-topic                     | Topic to update bulk project facilities          |
 | PROJECT.FACILITY.CONSUMER.BULK.DELETE.TOPIC    | delete-project-facility-bulk-topic                     | Topic to delete bulk project facilities          |
 | EGOV\_FACILITY\_HOST                           | <p><br></p>                                            | Host of the facility service                     |
-| EGOV\_SEARCH\_FACILITY\_URL                    | /facility/v1/\_search                                  | URL of the search facility                       |
+| EGOV\_SEARCH\_FACILITY\_URL                    | /facility/v1/\_search                                  | Url of the search facility                       |
 | PROJECT\_MDMS\_MODULE                          | HCM-PROJECT-TYPES                                      | <p><br></p>                                      |
-| EGOV\_LOCATION\_HIERARCHY\_TYPE                | Admin                                                  | Hierarchy value used to get the boundary values  |
-| EGOV\_LOCATION\_CODES\_QUERY\_PARAM            | code                                                   | Query param used in egov location boundary API   |
+| EGOV\_LOCATION\_HIERARCHY\_TYPE                | Admin                                                  | Hierarchy value used to get boundary values      |
+| EGOV\_LOCATION\_CODES\_QUERY\_PARAM            | code                                                   | Query param used in egov location boundary api   |
 
 **Stock: Click** [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/health-services/stock/values.yaml) **to know more.**&#x20;
 
@@ -462,19 +462,19 @@ This document is a step-by-step promotion guide to set up/promote Health Campaig
 
 ## Promotion guide
 
-This section will detail out the promotion guide steps for the HCM product.
+This section will detail the promotion guide steps for the HCM product.
 
-### DIGIT Environment Production Setup & Deployments
+### Digit Environment Production Setup & deployments
 
-DIGIT environment setup refer documentation [here](https://core.digit.org/guides/installation-guide/production-setup).
+For the DIGIT environment setup, refer to the documentation [here](https://core.digit.org/guides/installation-guide/production-setup).
 
 ### HCM Promotion
 
-#### Steps to Create a tenant for HCM
+#### Steps to Create a Tenant for HCM
 
 Refer to this [document](configuring-tenants/) for creating a tenant in DIGIT.
 
-#### Steps to add localisation using Rest API
+#### Steps to Add Localisation Using Rest API
 
 Refer to this [document](https://core.digit.org/platform/core-services/localization-service) for more details
 
@@ -510,7 +510,7 @@ curl --location --request POST 'https://health-dev.digit.org/localization/messag
 
 ```
 
-### Steps to configure MDMS configs
+### Steps to Configure the MDMS configs
 
 1. Create Common Masters
 
@@ -518,11 +518,11 @@ curl --location --request POST 'https://health-dev.digit.org/localization/messag
 
 &#x20;      b. Create [StateInfo.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/common-masters/StateInfo.json) which will configure eligible languages for tenant
 
-2. Create sample [boundary data](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/egov-location/boundary-data.json). Refer for to this [document](https://core.digit.org/guides/data-setup-guide/location-module) for more details&#x20;
+2. Create sample [boundary data](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/egov-location/boundary-data.json). Refer to this [document](https://core.digit.org/guides/data-setup-guide/location-module) for more details&#x20;
 3. Create [field-app-configuration.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/egov-location/boundary-data.json) which will be used for drop-down values or select options to be presented in the HCM app&#x20;
 4. Create [project-task-configuration.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/project-task-configuration.json)
-5. Create [project-types.json ](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/project-types.json)which will be used as Health campaign configuration
-6. Create [service-registry.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/service-registry.json) which has a list of APIs that HCM app will call.
+5. Create [project-types.json ](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/project-types.json)which will be used as a health campaign configuration
+6. Create [service-registry.json](https://github.com/egovernments/health-campaign-mdms/blob/v1.0.0/data/default/health/service-registry.json) which has a list of APIs that the HCM app will call.
 7. Create PGR/Complaints configs &#x20;
    * [UIConstants.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/RAINMAKER-PGR/UIConstants.json)
    * [ServiceDefs.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/RAINMAKER-PGR/ServiceDefs.json)
@@ -543,27 +543,26 @@ curl --location --request POST 'https://health-dev.digit.org/localization/messag
 
 8. Configure map-config for the [tenant](https://github.com/egovernments/health-campaign-mdms/tree/v1.0.0/data/default/map-config)
 
-&#x20;Restart MDMS server and restart Zuul api gateway.&#x20;
+&#x20;Restart the MDMS server and restart the Zuul API gateway.&#x20;
 
-Note: Any modifications in the above configuration, needs to restart the MDMS server. Any modifications to action-test.json and roleactions.json requires restart of Zuul api gateway
+Note: Any modifications in the above configuration, need to restart the MDMS server. Any modifications to action-test.json and roleactions.json require a restart of the Zuul API gateway.
 
-### Steps to configure health campaign configs
+### Steps to Configure Health Campaign Configurations
 
-Step 1: Create [persister config](https://github.com/egovernments/health-campaign-config/tree/v1.0.0/egov-persister) for each backend service which will be picked by the [persister service](https://core.digit.org/platform/core-services/persister-service)
+Step 1: Create a [persister config](https://github.com/egovernments/health-campaign-config/tree/v1.0.0/egov-persister) for each backend service that will be picked by the [persister service](https://core.digit.org/platform/core-services/persister-service).
 
-Step 2: Create [indexer config](https://github.com/egovernments/health-campaign-config/tree/v1.0.0/egov-indexer) for each backend service which will be picked by the [indexer service](https://core.digit.org/platform/core-services/indexer-service)
+Step 2: Create an [indexer config](https://github.com/egovernments/health-campaign-config/tree/v1.0.0/egov-indexer) for each backend service which will be picked by the [indexer service](https://core.digit.org/platform/core-services/indexer-service).
 
-Note: Any changes to indexer and persister configs, requires restart of indexer and persister.
+Note: Any changes to the indexer and persister configs require the restart of the indexer and the persister.
 
-### Deploy Digit Core Services
+### Deploy DIGIT Core Services
 
-Refer to [section](https://health.digit.org/platform/configuration/hcm-master-promotion-guide#release-features-list-of-core-digit-services-used) for list of core services to be deployed
+Refer to this [section](./#release-features-list-of-core-digit-services-used) for a list of core services to be deployed.
 
-### Deploy HCM services
+### Deploy HCM Services
 
-Refer to [section](https://health.digit.org/platform/configuration/hcm-master-promotion-guide#services-built-for-hcm) for list of HCM services to be deployed
+Refer to this [section](https://health.digit.org/platform/platform-services) for a list of HCM services to be deployed.
 
-### UI/APK promotion guide
+### UI/APK Promotion Guide
 
-[https://health.digit.org/product/setup/apk-installation](https://health.digit.org/product/setup/apk-installation)
-
+[https://health.digit.org/product/setup/apk-installation](https://health.digit.org/products/health-campaign-management/frontline-workers-app/installation/app-setup#steps-to-generate-apk)
