@@ -112,7 +112,7 @@ Localisation should be pushed for ULB grade and ULB name. The formats are given 
         }
 ```
 
-Format of localization code for tenant name:
+Format of localisation code for the tenant name:
 
 <**MDMS\_State\_Tenant\_Folder\_Name**>\_<**Tenants\_Fille\_Name**>\_<**Tenant\_Code**>(replace dot with underscore)
 

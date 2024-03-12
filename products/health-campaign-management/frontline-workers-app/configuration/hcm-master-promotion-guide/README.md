@@ -33,7 +33,7 @@ This document is a step-by-step promotion guide to set up/promote Health Campaig
 
 ### 2. Promotion Guide&#x20;
 
-* DIGIT environment production setup & deployments
+* DIGIT environment production setup & deployment
 * HCM promotion&#x20;
 * Steps to create a tenant for HCM&#x20;
 * Steps to add localisation using Rest API&#x20;
@@ -424,7 +424,7 @@ This document is a step-by-step promotion guide to set up/promote Health Campaig
 | TRACER\_OPENTRACING\_ENABLED                      | true                                                                              | <p><br></p>                |
 | PGR\_COMPLAIN\_IDLE\_TIME                         | <p><br></p>                                                                       | <p><br></p>                |
 
-**User Management - HRMS: Click** [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/business-services/egov-hrms/values.yaml) **to know more.**
+**User Management - HRMS: Click** [**here**](https://github.com/egovernments/health-campaign-devops/blob/master/deploy-as-code/helm/charts/business-services/egov-hrms/values.yaml) **to learn more.**
 
 | Environment Variables                          | Value                                                       | Comments    |
 | ---------------------------------------------- | ----------------------------------------------------------- | ----------- |
@@ -460,11 +460,11 @@ This document is a step-by-step promotion guide to set up/promote Health Campaig
 | MANAGEMENT\_SECURITY\_ENABLED                  | false                                                       | <p><br></p> |
 | EGOV\_HRMS\_AUTO\_GENERATE\_PASSWORD           | false                                                       | <p><br></p> |
 
-## Promotion guide
+## Promotion Guide
 
 This section will detail the promotion guide steps for the HCM product.
 
-### Digit Environment Production Setup & deployments
+### Digit Environment Production Setup & Deployment
 
 For the DIGIT environment setup, refer to the documentation [here](https://core.digit.org/guides/installation-guide/production-setup).
 
@@ -553,7 +553,7 @@ Step 1: Create a [persister config](https://github.com/egovernments/health-campa
 
 Step 2: Create an [indexer config](https://github.com/egovernments/health-campaign-config/tree/v1.0.0/egov-indexer) for each backend service which will be picked by the [indexer service](https://core.digit.org/platform/core-services/indexer-service).
 
-Note: Any changes to the indexer and persister configs require the restart of the indexer and the persister.
+Note: Any changes to the indexer and persister configurartions require the restart of the indexer and the persister.
 
 ### Deploy DIGIT Core Services
 

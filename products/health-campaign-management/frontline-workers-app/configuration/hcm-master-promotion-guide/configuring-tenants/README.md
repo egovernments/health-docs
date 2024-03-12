@@ -2,7 +2,7 @@
 
 ## Overview <a href="#overview" id="overview"></a>
 
-An Urban Local Body (ULB) is defined as a tenant. Tenant configuration is done in mdms.
+An Urban Local Body (ULB) is defined as a tenant. Tenant configuration is done in MDMS.
 
 ## Pre-requisites <a href="#pre-requisites" id="pre-requisites"></a>
 
@@ -14,7 +14,7 @@ Before proceeding with the configuration, the following pre-requisites are met:
 
 ## Key Functionalities <a href="#key-functionalities" id="key-functionalities"></a>
 
-* For the login page, city name selection is required. Tenant added in MDMS shows in city drop-down of the login page.
+* For the login page, city name selection is required. Tenant added in MDMS shows in the city drop-down of the login page.
 * In reports or the employee inbox page, the details related to ULB are displayed from the fetched ULB data which is added in MDMS.
 * Modules, that is, TL, PT, and MCS can be enabled based on the requirement for the tenant.
 
@@ -63,7 +63,7 @@ Before proceeding with the configuration, the following pre-requisites are met:
 }]}
 ```
 
-Note:&#x20;
+#### Note:&#x20;
 
 * To enable the tenant the above data should be pushed in the tenant.json file. Here "ULB Grade" and City  "Code" are important fields. **ULB Grade** can have a set of allowed values that determines the ULB type, ([Municipal corporation (Nagar Nigam)](https://en.wikipedia.org/wiki/Municipal\_Corporations\_in\_India), Municipality (municipal council, municipal board, municipal committee) (Nagar Parishad), etc). City "**Code**" has to be unique to each tenant.  This city-specific code is used in all transactions. Not permissible to change the code. If changed we will lose the data of the previous transactions done.
 * Naming Convention for **Tenants Code**
