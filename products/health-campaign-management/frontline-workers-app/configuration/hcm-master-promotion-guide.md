@@ -72,7 +72,7 @@ This document is a step-by-step promotion guide to setup/promote  Health Campaig
 | Document Uploader  | egovio/egov-document-uploader:v1.1.0-75d461a4d2-4              |
 | Playground         | egovio/playground:1.0                                          |
 
-### Services built for HCM
+### Services uilt for HCM
 
 | Service         | Tag                                                | Description                                                                                                                                |
 | --------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -547,7 +547,7 @@ curl --location --request POST 'https://health-dev.digit.org/localization/messag
 
 Note: Any modifications in the above configuration, need to restart the MDMS server. Any modifications to action-test.json and roleactions.json require a restart of the Zuul API gateway.
 
-### Steps to Configure Health Campaign Configs
+### Steps to Configure Health Campaign Configurations
 
 Step 1: Create a [persister config](https://github.com/egovernments/health-campaign-config/tree/v1.0.0/egov-persister) for each backend service that will be picked by the [persister service](https://core.digit.org/platform/core-services/persister-service).
 
@@ -557,12 +557,12 @@ Note: Any changes to the indexer and persister configs require the restart of th
 
 ### Deploy DIGIT Core Services
 
-Refer to this [section](https://health.digit.org/platform/configuration/hcm-master-promotion-guide#release-features-list-of-core-digit-services-used) for a list of core services to be deployed.
+Refer to this [section](hcm-master-promotion-guide.md#release-features-list-of-core-digit-services-used) for a list of core services to be deployed.
 
 ### Deploy HCM Services
 
-Refer to this [section](https://health.digit.org/platform/configuration/hcm-master-promotion-guide#services-built-for-hcm) for a list of HCM services to be deployed.
+Refer to this [section](https://health.digit.org/platform/platform-services) for a list of HCM services to be deployed.
 
 ### UI/APK Promotion Guide
 
-[https://health.digit.org/product/setup/apk-installation](https://health.digit.org/product/setup/apk-installation)
+[https://health.digit.org/product/setup/apk-installation](https://health.digit.org/products/health-campaign-management/frontline-workers-app/installation/app-setup#steps-to-generate-apk)
