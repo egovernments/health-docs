@@ -8,7 +8,7 @@ description: Health Campaign Management Platform
 
 Our mission is to build a digital infrastructure that enables decision-makers and programme managers to streamline campaign planning, manage workflows and monitor service delivery in real-time to aid data-driven decision-making.&#x20;
 
-Health campaigns are a commonly-used strategy that helps the routine health system prevent or control diseases by delivering essential healthcare interventions in a time-bound manner.
+Health campaigns are a commonly used strategy that helps the routine health system prevent or control diseases by delivering essential healthcare interventions in a time-bound manner.
 
 Health campaign management faces several challenges, which include the inability to fetch accurate population targets or monitor the campaigns in real-time and tune the campaign to the defined population needs. Lack of timely and actionable data is often the primary cause of operational inefficiency. Additional concerns relate to siloed, redundant datasets adding to the implementation costs.&#x20;
 
@@ -28,7 +28,7 @@ The goals include:
 * Improved efficiency (lower costs)&#x20;
 * Increased transparency and accountability
 
-Watch the video below to find out how DIGIT Health Campaign Management meets these goals and more.
+Watch the video below to find out how DIGIT Health Campaign Management meets these goals and more:
 
 {% embed url="https://www.youtube.com/watch?v=_yxD9Wjqkfw" %}
 
@@ -52,3 +52,4 @@ Click on the links below to learn more about the products:
 * [Frontline Worker's App](frontline-workers-app/)
 * [Campaign Management Dashboard ](campaign-management-dashboard/)
 * [Microplanning](https://egov-digit.gitbook.io/1.0/)
+* [HCM Admin Console](https://egov-digit.gitbook.io/0.1/)
