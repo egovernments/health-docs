@@ -8,7 +8,7 @@
 
 Database (DB) Restore (Providing a DB backup to avoid hassle since the automation of the seed data creation is a work in progress):
 
-To restore the database, we are providing the DB dump file. Use the following link to download the SQL file. [https://drive.google.com/file/d/1u2eljinnCCJAxUGCHRHHfnDQ5-WMZWIo/view?usp=sharing](https://drive.google.com/file/d/1u2eljinnCCJAxUGCHRHHfnDQ5-WMZWIo/view?usp=sharing)
+To restore the database, you can access the DB dump file. Use the following link to download the SQL file. [https://drive.google.com/file/d/1u2eljinnCCJAxUGCHRHHfnDQ5-WMZWIo/view?usp=sharing](https://drive.google.com/file/d/1u2eljinnCCJAxUGCHRHHfnDQ5-WMZWIo/view?usp=sharing)
 
 ### Steps to Restore Database Data
 
@@ -28,9 +28,9 @@ psql -h {host} -U {username} -d {dbname} -f /path/in/pod/seed\_data.sql
 kubectl apply -f /path/to/your/pod-config.yaml
 {% endhint %}
 
-## Front Line Worker App Setup
+## Frontline Worker's App Setup
 
-This guide provides step-by-step instructions to clone and run the Health Campaign Field Worker App locally on your machine. The Field Worker App is a Flutter application developed for health campaigns.
+This guide provides step-by-step instructions to clone and run the Health Campaign Frontline Worker's App locally on your machine. The app is a Flutter application developed for health campaigns.
 
 ### Pre-requisites
 
@@ -57,9 +57,9 @@ Product Repo: [egovernments/health-campaign-field-worker-app](https://github.com
 
 &#x20;       melos bootstrap&#x20;
 
-&#x20;      (-or-)
+&#x20;       (-or-)
 
-&#x20;      melos bs
+&#x20;       melos bs
 
 This command fetches and links all the necessary dependencies for the project.
 
@@ -94,7 +94,7 @@ dependency_overrides:
  intl: ^0.18.0
 ```
 
-Note: Check all the folder names should be present in the packages folder before overriding the dependencies.
+Note: Check that all the folder names are present in the packages folder before overriding the dependencies.
 
 7.  Navigate to the app's folder from the terminal:
 
@@ -134,16 +134,16 @@ ENV_NAME="UAT"
     melos bs
 *   After successfully running melos bs, navigate to the apps/health\_campaign\_field\_worker\_app folder in the terminal and run the following command to generate the APK:
 
-    flutter build apk --release
+    flutter build APK --release
 
     \
-    How to Change the Master Data:\
-    All the Master data persist in MDMS under tenant folders.
+    How to change the master data:\
+    All the Master data persist in MDMS under the tenant folders.
 
     Sample:\
     [https://github.com/egovernments/health-campaign-mdms/tree/DEV/data/default](https://github.com/egovernments/health-campaign-mdms/tree/DEV/data/default).\
     \
-    App Master data persist in:&#x20;
+    App master data persist in:&#x20;
 
     [https://github.com/egovernments/health-campaign-mdms/tree/DEV/data/default/health](https://github.com/egovernments/health-campaign-mdms/tree/DEV/data/default/health)
 
@@ -152,7 +152,7 @@ ENV_NAME="UAT"
     [https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/service-registry.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/service-registry.json)
 
     \
-    App configuration:  Primary details required to run the app:&#x20;
+    App configuration: Primary details required to run the app:&#x20;
 
     [https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/field-app-configuration.json\
     \
