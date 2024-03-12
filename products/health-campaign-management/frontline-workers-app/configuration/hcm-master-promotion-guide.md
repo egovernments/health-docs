@@ -466,7 +466,7 @@ This section will detail the promotion guide steps for the HCM product.
 
 ### Digit Environment Production Setup & deployments
 
-Digit Environment setup refer documentation [here](https://core.digit.org/guides/installation-guide/production-setup).
+For the DIGIT environment setup, refer to the documentation [here](https://core.digit.org/guides/installation-guide/production-setup).
 
 ### HCM Promotion
 
@@ -476,7 +476,7 @@ Refer to the [document](https://digit-discuss.atlassian.net/wiki/spaces/DD/pages
 
 #### Steps to Add Localisation Using Rest API
 
-Refer to this [document](https://core.digit.org/platform/core-services/localization-service) for more details
+Refer to this [document](https://core.digit.org/platform/core-services/localization-service) for more details.
 
 ```
 curl --location --request POST 'https://health-dev.digit.org/localization/messages/v1/_upsert' \
