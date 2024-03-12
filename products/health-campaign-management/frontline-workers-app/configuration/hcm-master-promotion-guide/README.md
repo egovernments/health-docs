@@ -557,7 +557,7 @@ Note: Any changes to the indexer and persister configs require the restart of th
 
 ### Deploy DIGIT Core Services
 
-Refer to this [section](hcm-master-promotion-guide.md#release-features-list-of-core-digit-services-used) for a list of core services to be deployed.
+Refer to this [section](./#release-features-list-of-core-digit-services-used) for a list of core services to be deployed.
 
 ### Deploy HCM Services
 

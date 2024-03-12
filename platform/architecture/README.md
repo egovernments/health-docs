@@ -23,4 +23,4 @@ DIGIT Health follows a multi-layer or n-tiered distributed architecture pattern.
 * Layered architecture also makes it possible to configure different levels of security to different components.
 * Layered architecture also helps users test the components independently of each other.
 
-Note: Check the [master promotion guide](../../products/health-campaign-management/frontline-workers-app/configuration/hcm-master-promotion-guide.md) for more details.&#x20;
+Note: Check the [master promotion guide](../../products/health-campaign-management/frontline-workers-app/configuration/hcm-master-promotion-guide/) for more details.&#x20;
