@@ -75,19 +75,19 @@ ENV_NAME="DEMO"
 ```
 # melos_managed_dependency_overrides: digit_components,digit_firebase_services,forms_engine,intl, digit_showcase
 dependency_overrides:
- digit_components:
-   path: ..\\..\\packages\\digit_components
- attendance_management:
-   path: ../../packages/attendance_management
- dart_mappable_builder:
-   path: ..\\..\\packages\\dart_mappable_builder
- digit_firebase_services:
-   path: ..\\..\\packages\\digit_firebase_services
- digit_showcase:
-   path: ..\\..\\packages\\digit_showcase
- forms_engine:
-   path: ..\\..\\packages\\forms_engine
- intl: ^0.18.0
+  attendance_management:
+    path: ../../packages/attendance_management
+  dart_mappable_builder:
+    path: ../../packages/dart_mappable_builder
+  digit_components:
+    path: ../../packages/digit_components
+  digit_firebase_services:
+    path: ../../packages/digit_firebase_services
+  digit_showcase:
+    path: ../../packages/digit_showcase
+  forms_engine:
+    path: ../../packages/forms_engine
+  intl: ^0.18.0
 ```
 
 Note: Check that all the folder names are present in the packages folder before overriding the dependencies.
@@ -98,10 +98,10 @@ Note: Check that all the folder names are present in the packages folder before 
 # melos_managed_dependency_overrides: dart_mappable_builder
 # melos_managed_dependency_overrides: digit_components
 dependency_overrides:
-  dart_mappable_builder:
-    path: ../dart_mappable_builder
   digit_components:
-    path: ../digit_components
+    path: ../../packages/digit_components
+  dart_mappable_builder:
+    path: ../../packages/dart_mappable_builder
 ```
 
 6.  Create another file as pubspec\_overrides.yaml in **packages/forms\_engine/pubspec\_overrides.yaml**
@@ -110,7 +110,7 @@ dependency_overrides:
     # melos_managed_dependency_overrides: digit_components
     dependency_overrides:
       digit_components:
-        path: ..\\digit_components
+        path: ../digit_components
     ```
 7. Run install\_bricks.sh bash script which is located in the tools folder. This script fetches and links all the necessary dependencies for the project.
 8.  After successfully running the script and setting up the env file, navigate to the app's folder from the terminal:
@@ -151,19 +151,19 @@ ENV_NAME="DEMO"
 ```
 # melos_managed_dependency_overrides: digit_components,digit_firebase_services,forms_engine,intl, digit_showcase
 dependency_overrides:
- digit_components:
-   path: ..\\..\\packages\\digit_components
- attendance_management:
-   path: ../../packages/attendance_management
- dart_mappable_builder:
-   path: ..\\..\\packages\\dart_mappable_builder
- digit_firebase_services:
-   path: ..\\..\\packages\\digit_firebase_services
- digit_showcase:
-   path: ..\\..\\packages\\digit_showcase
- forms_engine:
-   path: ..\\..\\packages\\forms_engine
- intl: ^0.18.0
+  attendance_management:
+    path: ../../packages/attendance_management
+  dart_mappable_builder:
+    path: ../../packages/dart_mappable_builder
+  digit_components:
+    path: ../../packages/digit_components
+  digit_firebase_services:
+    path: ../../packages/digit_firebase_services
+  digit_showcase:
+    path: ../../packages/digit_showcase
+  forms_engine:
+    path: ../../packages/forms_engine
+  intl: ^0.18.0
 ```
 
 Note: All the folder names should be present in the packages folder, before overriding the dependencies.
@@ -185,7 +185,7 @@ Note: All the folder names should be present in the packages folder, before over
     # melos_managed_dependency_overrides: digit_components
     dependency_overrides:
       digit_components:
-        path: ..\\digit_components
+        path: ../digit_components
     ```
 * Run install\_bricks.sh bash script which is located in the tools folder. This script fetches and links all the necessary dependencies for the project.
 *   After successfully running the script and setting up the env file, navigate to: apps/health\_campaign\_field\_worker\_app folder in the terminal, and run the following command to generate the APK:&#x20;
