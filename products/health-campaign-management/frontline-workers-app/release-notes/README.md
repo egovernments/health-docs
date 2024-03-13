@@ -2,7 +2,7 @@
 
 ## Release Summary
 
-Health Campaign Management v1.3: The Frontline Worker’s App includes two new features that allow frontline teams to perform their tasks efficiently even when offline.
+Health Campaign Management v1.3: The Frontline Worker’s App includes two new features that enable frontline teams to perform their tasks efficiently even when offline.
 
 To learn more about the DIGIT Health Platform and the Health Campaign Management (HCM) product, click [here](../../).&#x20;
 
