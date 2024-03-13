@@ -36,7 +36,7 @@ This guide provides step-by-step instructions to clone and run the Health Campai
 
 Before you begin, ensure that you have the following installed on your PC:
 
-* Flutter 3.10.0 version - [Flutter SDK ](https://docs.flutter.dev/release/archive?tab=macos)
+* Flutter 3.16.5 version - [Flutter SDK ](https://docs.flutter.dev/release/archive?tab=macos)
 * Android Studio or VS Code, any preferred IDE for Flutter development.
 * Android device or emulator for testing.
 * Run the flutter doctor command to ensure all the required checklists are marked.&#x20;
