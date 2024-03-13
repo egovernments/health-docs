@@ -285,4 +285,6 @@ Link for Localisation:&#x20;
 
 Consolidated: [https://github.com/egovernments/releasekit/blob/master/localisation/HCM/consolidated/en\_MZ/consolidated.json\
 \
-](https://github.com/egovernments/releasekit/blob/master/localisation/HCM/consolidated/en\_MZ/consolidated.json)Module’s Localisation:[https://github.com/egovernments/releasekit/tree/master/localisation/HCM/V1.3](https://github.com/egovernments/releasekit/tree/master/localisation/HCM/V1.3)
+](https://github.com/egovernments/releasekit/blob/master/localisation/HCM/consolidated/en\_MZ/consolidated.json)Module’s Localisation:
+
+[https://github.com/egovernments/releasekit/tree/master/localisation/HCM/V1.3](https://github.com/egovernments/releasekit/tree/master/localisation/HCM/V1.3)
