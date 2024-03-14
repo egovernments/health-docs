@@ -22,8 +22,8 @@ The articles in this section includes:
 [low-level-design](architecture/low-level-design/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="installation.md" %}
+[installation.md](installation.md)
 {% endcontent-ref %}
 
 {% content-ref url="platform-services/" %}
