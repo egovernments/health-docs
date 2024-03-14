@@ -6,28 +6,6 @@
 
 ## Setup Guide
 
-Database (DB) Restore (Providing a DB backup to avoid hassle since the automation of the seed data creation is a work in progress):
-
-To restore the database, you can access the DB dump file. Use the following link to download the SQL file. [https://drive.google.com/file/d/1u2eljinnCCJAxUGCHRHHfnDQ5-WMZWIo/view?usp=sharing](https://drive.google.com/file/d/1u2eljinnCCJAxUGCHRHHfnDQ5-WMZWIo/view?usp=sharing)
-
-### Steps to Restore Database Data
-
-* Run Kubectl, and copy cmd to copy the file to the server (playground pod where DB runs).
-* Execute the restore command inside the playground pod.
-
-{% hint style="info" %}
-psql -h {host} -U {username} -d {dbname} -f /path/in/pod/seed\_data.sql
-{% endhint %}
-
-#### Note:&#x20;
-
-* Once the DB is restored, redeploy the MDMS service, persister, and indexer services using the config flag since we have updated a few links in the DevOps repository.&#x20;
-* The Postgres version should be 14.8 or later.
-
-{% hint style="info" %}
-kubectl apply -f /path/to/your/pod-config.yaml
-{% endhint %}
-
 ## Frontline Worker's App Setup
 
 This guide provides step-by-step instructions to clone and run the Health Campaign Frontline Worker's App locally on your machine. The app is a Flutter application developed for health campaigns.
