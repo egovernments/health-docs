@@ -80,7 +80,7 @@ All file examples in this document refer to the Default branches in the health c
 
 </div>
 
-**Localization scripts are** [**here**](https://api.postman.com/collections/1609763-24e5caf3-0367-47bc-bde5-ab70716f9153?access\_key=PMAT-01HRC8Y7ABSGEKGWYJGNH3DVBH)**, during local execution the script fails because of the Rate limit Exception but it will execute as expected on the server.**&#x20;
+**Localisation scripts are** [**here**](https://api.postman.com/collections/1609763-24e5caf3-0367-47bc-bde5-ab70716f9153?access\_key=PMAT-01HRC8Y7ABSGEKGWYJGNH3DVBH)**, during local execution the script fails because of the Rate limit Exception but it will execute as expected on the server.**&#x20;
 
 * Replace the **URL** variable in the Postman Environment to  your domain url
 *   While executing the localisation collection, please execute only five folders at a time by unchecking the box in the run screen to avoid inbuilt rate limiter errors.&#x20;
