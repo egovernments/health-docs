@@ -25,7 +25,7 @@ This module will enable the health facility supervisors to track referrals made 
 
 Login for a HF worker who will see the home screen options based on the role-action mapping and will see the option which says “Beneficiary Referral“. The options available on the home screen for HF workers apart from the Beneficiary Referral option will be defined based on the role-action mapping provided for them.
 
-<figure><img src="../../../../.gitbook/assets/image (90).png" alt="" width="322"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (122).png" alt="" width="322"><figcaption></figcaption></figure>
 
 **Step 2:**&#x20;
 
@@ -33,11 +33,11 @@ When the user clicks on the “Beneficiary Referral” button in the previous sc
 
 **Search Produces Result:** If the user searches for a given beneficiary name and finds a match, he/she can click on the 'Open' button in the card for that beneficiary and view their details.
 
-<figure><img src="../../../../.gitbook/assets/image (92).png" alt="" width="316"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (124).png" alt="" width="316"><figcaption></figcaption></figure>
 
 **Search Does Not Produce Result:** If the search does not provide any results, the user can click on the “Create New Referral" button to add a new entry under the Referral module.
 
-<figure><img src="../../../../.gitbook/assets/image (91).png" alt="" width="311"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (123).png" alt="" width="311"><figcaption></figcaption></figure>
 
 **Step 3:**&#x20;
 
@@ -51,7 +51,7 @@ Once the user creates a new referral or opens an existing one in the previous st
 
 Once the user has filled all the fields with the relevant information, he/she must click on the 'Next' button.
 
-<figure><img src="../../../../.gitbook/assets/image (94).png" alt="" width="364"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (126).png" alt="" width="364"><figcaption></figcaption></figure>
 
 **Step 4:**&#x20;
 
@@ -78,7 +78,7 @@ In this section, the user must capture the data as to why the beneficiary was re
 
 After selecting one of the reasons for referral, the user needs to press 'Next' which will navigate the user to 3 different screens based on what they select in the “Reason for Referral” section.
 
-<figure><img src="../../../../.gitbook/assets/image (95).png" alt="" width="252"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (127).png" alt="" width="252"><figcaption></figcaption></figure>
 
 **Step 5:**&#x20;
 
@@ -91,7 +91,7 @@ Based on what the user selects in the previous step in the “Reason for Referra
   * **Name and Dose of the Drug:** Provide an open text field that will be mandatory.
   * **“Was the child admitted / transferred to the hospital due to serious illness?**”: This question will have a Yes/No radio button selection for it. This is a mandatory field.
 
-<figure><img src="../../../../.gitbook/assets/image (96).png" alt="" width="254"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (128).png" alt="" width="254"><figcaption></figcaption></figure>
 
 * **If “Fever” was chosen as a reason:** If the user selects 'Fever' as the reason for referral in Step 4, the user will be taken to the “Referral Due to Fever” screen, where he/she will see the following list of questions:
   * **“Was the child tested for malaria?”:** This question will have a Yes/No radio button option. This will be a mandatory field.
@@ -104,14 +104,14 @@ Based on what the user selects in the previous step in the “Reason for Referra
 
 
 
-        <figure><img src="../../../../.gitbook/assets/image (97).png" alt="" width="252"><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (129).png" alt="" width="252"><figcaption></figcaption></figure>
     *   **If the user chooses “Negative” for “Result of Malaria Diagnostic Test?, then he/she will see the following questions as a nested fForm:**
 
         * “**Child with negative malaria test received SPAQ in this cycle**“: This will be a Yes/No Radio button question, and is a non-mandatory field.
 
 
 
-        <figure><img src="../../../../.gitbook/assets/image (98).png" alt="" width="256"><figcaption></figcaption></figure>
+        <figure><img src="../../../../.gitbook/assets/image (130).png" alt="" width="256"><figcaption></figcaption></figure>
 
 
 * **If “Drug side effect in current/previous cycle” was chosen as a reason:** If the user selects “Drug side effect in current/previous cycle” as the reason for referral in Step 4, he/she will be taken to  the“Referral due to adverse drug reaction” screen, where he/she will see the following list of questions:
@@ -121,10 +121,10 @@ Based on what the user selects in the previous step in the “Reason for Referra
 
 Once all the questions in one of these flows are answered, a pop-up frame asking for confirmation will be shown for submission as shown below:
 
-<figure><img src="../../../../.gitbook/assets/image (99).png" alt="" width="255"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (131).png" alt="" width="255"><figcaption></figcaption></figure>
 
 Once the user clicks on submit, he/she will see the ”Data Recorded Successfully” screen, and the option to navigate to the home screen.
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (100).png" alt="" width="254"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (132).png" alt="" width="254"><figcaption></figcaption></figure>

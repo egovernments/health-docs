@@ -21,13 +21,13 @@ On the Household Details screen, you can see the list of beneficiaries who are s
 
 Click on "Refer Beneficiary".&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (50).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (80).png" alt="" width="185"><figcaption></figcaption></figure>
 
 **Step 3**
 
 You will be directed to the "Referral Details" screen.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (51).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (81).png" alt="" width="185"><figcaption></figcaption></figure>
 
 In the screen above, you will see the following fields:&#x20;
 
@@ -36,7 +36,7 @@ In the screen above, you will see the following fields:&#x20;
 * **Referred By:** This field will contain the unique ID for the distributor who has referred the beneficiary and is an editable field.
 * **Referred To:** This field will have a search ability which can be used by clicking on the search lens icon on the field. The following screen will load where you can search for the ID of the facility where the beneficiary is being referred to.
 
-<figure><img src="../../../../.gitbook/assets/image (53).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (83).png" alt="" width="185"><figcaption></figcaption></figure>
 
 * **Reason For Referral:** This is a mandatory field which will have all the reasons for referral based on the configuration set for the specific household.&#x20;
 * **Referral Comment:** This is a non-mandatory field that allows you some custom comments regarding the referral being made for the beneficiary.
@@ -47,4 +47,4 @@ After you populate all the required fields, click on the 'Submit' button which w
 
 Once the beneficiary is referred successfully, he/she will be marked as "Beneficiary Referred" in the household details screen.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (55).png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (85).png" alt="" width="188"><figcaption></figcaption></figure>
