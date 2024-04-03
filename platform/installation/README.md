@@ -6,5 +6,5 @@ The DIGIT HCM installation comprises three steps to create a new production-read
 
 **Step 2:** [**Execute the Postman Collection for Minimum Setup Data**](execute-seed-data.md): Execute the minimum setup data required to run a campaign&#x20;
 
-**Step 3:** [**Generating the APK for the Server**:](app-setup.md) Generate the APK pointing to the above-mentioned server.
+**Step 3:** [**Generating the APK for the Server**:](../../products/health-campaign-management/frontline-workers-app/installation/app-setup.md) Generate the APK pointing to the above-mentioned server.
 

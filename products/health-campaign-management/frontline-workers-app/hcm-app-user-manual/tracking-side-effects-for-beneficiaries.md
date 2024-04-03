@@ -21,17 +21,17 @@ In Step 4 of recording the [Multi-Round Campaign](https://app.gitbook.com/o/-MEQ
 
 After you have completed the delivery for first dose, you will see the list of beneficiaries who are eligible for the next round of drug delivery. If the beneficiary experienced any side-effect, click on the "Unable to Deliver?" button, where you will get 3 options. Here, the last option will be "Record Side Effects".
 
-<figure><img src="../../../../.gitbook/assets/image (75).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (45).png" alt="" width="185"><figcaption></figcaption></figure>
 
 **Step 2**
 
 You will be taken to the next screen where you need to record the side-effect experienced by the beneficiary. Once you have selected the relevant side-effect, click on 'Next'.
 
-<figure><img src="../../../../.gitbook/assets/image (76).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (46).png" alt="" width="185"><figcaption></figcaption></figure>
 
 You will see a success screen that says, "Data recorded successfully". &#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (77).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (47).png" alt="" width="185"><figcaption></figcaption></figure>
 
 **If you replied 'Yes' (Recording side-effects when the the distributor does indirect delivery for subsequent deliveries):**&#x20;
 
@@ -39,22 +39,22 @@ You will see a success screen that says, "Data recorded successfully". &#x20;
 
 If you replied 'Yes' the next time you visit the beneficiary and click on "Record Delivery" against that beneficiary in the household details page, you will see the following screens:
 
-<figure><img src="../../../../.gitbook/assets/image (71).png" alt="" width="185"><figcaption><p>These Questions are specific to our SMC Campaign in Mozambique and can be Customised based on the needs and processes set for a specific campaign.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (41).png" alt="" width="185"><figcaption><p>These Questions are specific to our SMC Campaign in Mozambique and can be Customised based on the needs and processes set for a specific campaign.</p></figcaption></figure>
 
 **Step 2**
 
 Once you submit the answers, you can record the side-effects for the beneficiary. If no side-effects were reported, select 'No' to move on to the beneficiary details screen, and the delivery status for all cycles will show as 'Completed'.
 
-<figure><img src="../../../../.gitbook/assets/image (72).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (42).png" alt="" width="185"><figcaption></figcaption></figure>
 
 **Step 3**
 
 If you select 'Yes', you can record the side effect. Click on 'Next'.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (73).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (43).png" alt="" width="185"><figcaption></figcaption></figure>
 
 You will see a success screen that says, "Data recorded successfully'. If you select 'No' for side-effects, you will be taken directly to the "Data Recorded Successfully Screen".&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (74).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (44).png" alt="" width="185"><figcaption></figcaption></figure>
 
 **Note:** If the Distributor answered 'No' on the "Record Past Delivery" page, the delivery status will changed to 'Visited' on the household details page for that specific beneficiary.

@@ -4,7 +4,7 @@
 
 Users are redirected to this screen once they click on the "Forgot Password" button in the language selection screen.
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## User actions
 

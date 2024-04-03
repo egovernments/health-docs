@@ -18,22 +18,22 @@ This feature allows the distributors to download all the boundary data along wit
 
 When you login to the app, you will arrive on the "Boundary Selection" screen once the micro-planning data is synced. You will have to select all hierarchies of boundary till the last level of boundary hierarchy before you can click on 'Submit' and download any data onto your devices.
 
-<img src="../../../../.gitbook/assets/image (95).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (65).png" alt="" data-size="original">
 
 **Step 2**
 
 Once you click on 'Submit', the app checks with the server if the selected boundary has any new data associated with it which needs to be downloaded on to the device. If new data is found, the following screen will appear and you click the 'Download' button or click on "Proceed without downloading" the data.
 
-<figure><img src="../../../../.gitbook/assets/image (96).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (66).png" alt="" width="185"><figcaption></figcaption></figure>
 
 **Step 3**
 
 If you click on 'Download' the download will start if the internet is available on the device.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (97).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (67).png" alt="" width="185"><figcaption></figcaption></figure>
 
 **Step 4**
 
 Once the download is completed, a success screen with two buttons will be shown. The "Go To Home Screen" button will take you to the app home screen and you can continue with the deliveries. If you click on the "Download More Data" button, you will be taken to the hierarchy selection screen (shown in Step 1) again.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (98).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (68).png" alt="" width="185"><figcaption></figcaption></figure>

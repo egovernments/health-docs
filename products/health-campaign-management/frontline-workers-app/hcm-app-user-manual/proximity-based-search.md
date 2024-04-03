@@ -14,4 +14,4 @@ Enables distributors to search for beneficiaries within a 3-km radius from their
 
 On the "Search Individual" details page, you can flip toggle switch to populate all the registered beneficiaries, by distance, in an ascending order, available in a 3-km radius.
 
-<figure><img src="../../../../.gitbook/assets/image (94).png" alt="" width="185"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (64).png" alt="" width="185"><figcaption></figcaption></figure>

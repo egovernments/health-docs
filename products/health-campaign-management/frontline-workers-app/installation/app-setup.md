@@ -4,13 +4,11 @@
 
 [DIGIT Health Campaign Management Demo | DIGIT HCM](https://youtu.be/NB54Ve\_smv0?si=4sjmLWk5YZgCJRdF)
 
-## Setup Guide
-
-## Frontline Worker's App Setup
+## Overview
 
 This guide provides step-by-step instructions to clone and run the Health Campaign Frontline Worker's App locally on your machine. The app is a Flutter application developed for health campaigns.
 
-### Pre-requisites
+## Pre-requisites
 
 Before you begin, ensure that you have the following installed on your PC:
 
@@ -19,7 +17,7 @@ Before you begin, ensure that you have the following installed on your PC:
 * Android device or emulator for testing.
 * Run the flutter doctor command to ensure all the required checklists are marked.&#x20;
 
-### Steps to Run the Application
+## Steps
 
 1. Open a terminal and run the following commands:
 
@@ -68,7 +66,9 @@ dependency_overrides:
   intl: ^0.18.0
 ```
 
-Note: Check that all the folder names are present in the packages folder before overriding the dependencies.
+{% hint style="info" %}
+Note: Check that all the folder names are in the packages folder before overriding the dependencies.
+{% endhint %}
 
 5. Create another file as pubspec\_overrides.yaml in **packages/attendance\_management/pubspec\_overrides.yaml**
 
@@ -99,12 +99,11 @@ dependency_overrides:
     flutter devices.
 10. Now, run the following command to launch the app:
 
-    flutter run
+    flutter run.
 
-    \
-    This command will build the app and install it on the connected device or emulator.
+This command will build the app and install it on the connected device or emulator.
 
-### Steps to Generate APK
+### Generate APK - Steps
 
 * Create a .env file inside the apps/health\_campaign\_field\_worker\_app folder.&#x20;
 
@@ -144,7 +143,9 @@ dependency_overrides:
   intl: ^0.18.0
 ```
 
-Note: All the folder names should be present in the packages folder, before overriding the dependencies.
+{% hint style="info" %}
+Note: All the folder names should be in the packages folder, before overriding the dependencies.
+{% endhint %}
 
 *   Create another file as pubspec\_overrides.yaml in **packages/attendance\_management/pubspec\_overrides.yaml**
 
@@ -166,17 +167,18 @@ Note: All the folder names should be present in the packages folder, before over
         path: ../digit_components
     ```
 * Run install\_bricks.sh bash script which is located in the tools folder. This script fetches and links all the necessary dependencies for the project.
-*   After successfully running the script and setting up the env file, navigate to: apps/health\_campaign\_field\_worker\_app folder in the terminal, and run the following command to generate the APK:&#x20;
+*   After successfully running the script and setting up the env file, navigate to - apps/health\_campaign\_field\_worker\_app folder in the terminal, and run the following command to generate the APK:&#x20;
 
     `flutter build apk --release --no-tree-shake-icons`
 
 
-*   &#x20;After successfully running the above command , the apk will be generated in the path
+*   &#x20;After successfully running the above command, the apk will be generated in the path
 
     **apps/health\_campaign\_field\_worker\_app/build\app\outputs\flutter-apk\app-release.apk**
-* Install the generated APK in your preferred android device
+* Install the generated APK on your preferred Android device.
 
-How to change the master data:\
+### Change Master Data - Steps
+
 All the Master data persist in MDMS under the tenant folders.
 
 Sample:\
@@ -201,16 +203,18 @@ App configuration: Primary details required to run the app:&#x20;
 
 Additional static  configs: [https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/symptoms\_types.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/symptoms\_types.json)
 
-## Upserting Localisation
+## Upsert Localisation
 
 1. Import the following curl in Postman:
 
-#### Note: &#x20;
+{% hint style="info" %}
+**Note:** &#x20;
 
 * Replace the {URL} with the required environment.
 * Get the {authToken} of SUPER\_USER.
 * Replace the {tenantId} with the required tenant.
 * Each message object should have a unique code and module.
+{% endhint %}
 
 Sample message to upsert:
 
@@ -223,7 +227,7 @@ Sample message to upsert:
       }
 ```
 
-#### API curl:
+#### API curl
 
 ```
 curl --location '{URL}/localization/messages/v1/_upsert' \
@@ -257,12 +261,12 @@ curl --location '{URL}/localization/messages/v1/_upsert' \
 }'
 ```
 
-Link for Localisation:&#x20;
+#### Localisation Link&#x20;
 
-{% embed url="https://docs.google.com/spreadsheets/d/e/2PACX-1vSb3QDXs7kK_6Oqurakr_AJf-XyOXWBOW9w-2iiwlmgvh-iXzOvFGYKdzuH5inV2xQGmTxwAQ57pcZB/pubhtml" %}
+If the localisation is not executed prior then&#x20;
 
 Consolidated: [https://github.com/egovernments/releasekit/blob/master/localisation/HCM/consolidated/en\_MZ/consolidated.json\
 \
-](https://github.com/egovernments/releasekit/blob/master/localisation/HCM/consolidated/en\_MZ/consolidated.json)Module’s Localisation:
+](https://github.com/egovernments/releasekit/blob/master/localisation/HCM/consolidated/en\_MZ/consolidated.json)Module Localisation:
 
 [https://github.com/egovernments/releasekit/tree/master/localisation/HCM/V1.3](https://github.com/egovernments/releasekit/tree/master/localisation/HCM/V1.3)

@@ -10,6 +10,6 @@ A digital partner for the frontline workers, this is an easy-to-use app with off
 
 [User manual](hcm-app-user-manual/)
 
-[Installation](installation.md)
+[Installation](installation/)
 
 [PRDs](products-requirement-documents-prds/)

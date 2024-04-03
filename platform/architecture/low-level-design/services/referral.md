@@ -8,44 +8,44 @@
 
 {% tabs %}
 {% tab title="Side Effect" %}
-<figure><img src="../../../../.gitbook/assets/image (100).png" alt=""><figcaption><p>Side Effect Create</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (70).png" alt=""><figcaption><p>Side Effect Create</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (101).png" alt=""><figcaption><p>Side Effect Bulk Create<br></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (71).png" alt=""><figcaption><p>Side Effect Bulk Create<br></p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (102).png" alt=""><figcaption><p>Side Effect Update<br></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (72).png" alt=""><figcaption><p>Side Effect Update<br></p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (103).png" alt=""><figcaption><p>Side Effect Bulk Update</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (73).png" alt=""><figcaption><p>Side Effect Bulk Update</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (104).png" alt=""><figcaption><p>Side Effect Delete</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (74).png" alt=""><figcaption><p>Side Effect Delete</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (105).png" alt=""><figcaption><p>Side Effect Bulk Delete</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (75).png" alt=""><figcaption><p>Side Effect Bulk Delete</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Referral" %}
-<figure><img src="../../../../.gitbook/assets/image (107).png" alt=""><figcaption><p>Referral Create</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (77).png" alt=""><figcaption><p>Referral Create</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (108).png" alt=""><figcaption><p>Referral Bulk Create</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (78).png" alt=""><figcaption><p>Referral Bulk Create</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (109).png" alt=""><figcaption><p>Referral Update</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (79).png" alt=""><figcaption><p>Referral Update</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (110).png" alt=""><figcaption><p>Referral Bulk Update</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (80).png" alt=""><figcaption><p>Referral Bulk Update</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (111).png" alt=""><figcaption><p>Referral Delete</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (81).png" alt=""><figcaption><p>Referral Delete</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (112).png" alt=""><figcaption><p>Referral Bulk Delete</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (82).png" alt=""><figcaption><p>Referral Bulk Delete</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="HFReferral" %}
-<figure><img src="../../../../.gitbook/assets/image (115).png" alt=""><figcaption><p>HFReferral Create</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (83).png" alt=""><figcaption><p>HFReferral Create</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (116).png" alt=""><figcaption><p>HFReferral Bulk Create</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (84).png" alt=""><figcaption><p>HFReferral Bulk Create</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (117).png" alt=""><figcaption><p>HFReferral Update</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (85).png" alt=""><figcaption><p>HFReferral Update</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (118).png" alt=""><figcaption><p>HFReferral Bulk Update</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (86).png" alt=""><figcaption><p>HFReferral Bulk Update</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (119).png" alt=""><figcaption><p>HFReferral Delete</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (87).png" alt=""><figcaption><p>HFReferral Delete</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (120).png" alt=""><figcaption><p>HFReferral Bulk Delete</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (88).png" alt=""><figcaption><p>HFReferral Bulk Delete</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
