@@ -21,7 +21,7 @@ This guide provides step-by-step instructions for installing DIGIT using GitHub 
 * Prepare AWS IAM User
 * Create an IAM User in your AWS account - [official document](https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_users\_create.html)
 * Generate ACCESS\_KEY and SECRET\_KEY for the IAM user - [AWS document](https://docs.aws.amazon.com/IAM/latest/UserGuide/id\_credentials\_access-keys.html)
-* Assign Administrator Access to the IAM user for necessary permissions.
+* Assign administrator access to the IAM user for necessary permissions.
 * **Set up the AWS profile locally by running the following commands**
   * aws configure --profile {profilename}
   * fill in the key values as they are prompted&#x20;
@@ -30,7 +30,7 @@ This guide provides step-by-step instructions for installing DIGIT using GitHub 
     * AWS\_DEFAULT\_REGION: ap-south-1
   * export AWS\_PROFILE={profilename}
 
-### **Configure GitHub Repository**
+## **Configure GitHub Repository**
 
 * **Fork** the following Repositories with all the branches into your organisation account on GitHub - [official documentation](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo).
   * [Health-campaign-devops](https://github.com/egovernments/health-campaign-devops)
@@ -47,7 +47,7 @@ This guide provides step-by-step instructions for installing DIGIT using GitHub 
     * AWS\_DEFAULT\_REGION: ap-south-1
     * AWS\_REGION: ap-south-1
 
-### **Changes to be made in the Repository**
+### **Changes to be made in the repository**
 
 * Navigate to the Kubernetes-1.27 branch in the forked DevOps Repository
 * Enable GitHub Actions
@@ -105,11 +105,11 @@ This guide provides step-by-step instructions for installing DIGIT using GitHub 
 * Replace ssh\_private\_key (**note**: please make sure private key is intended as given)&#x20;
 * Add the public\_key to your GitHub account - [Git guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
-### **Finalize Installation**
+### **Finalise Installation**
 
 * Once all details are entered, push these changes to the remote GitHub repository. Open the Actions tab in your GitHub account to view the workflow. You should see that the workflow has started, and the pipelines are completed successfully.
 
-**Configuring the Domain name**
+**Configuring the domain name**
 
 * Once the deployment is done get the CNAME of the _nginx-ingress-controller_
 
