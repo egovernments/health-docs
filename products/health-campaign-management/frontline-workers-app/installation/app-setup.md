@@ -82,14 +82,15 @@ dependency_overrides:
     path: ../../packages/dart_mappable_builder
 ```
 
-6.  Create another file as pubspec\_overrides.yaml in **packages/forms\_engine/pubspec\_overrides.yaml**
+6. Create another file as pubspec\_overrides.yaml in **packages/forms\_engine/pubspec\_overrides.yaml**
 
-    ```
-    # melos_managed_dependency_overrides: digit_components
-    dependency_overrides:
-      digit_components:
-        path: ../digit_components
-    ```
+```
+# melos_managed_dependency_overrides: digit_components
+dependency_overrides:
+  digit_components:
+    path: ../digit_components
+```
+
 7. Run install\_bricks.sh bash script which is located in the tools folder. This script fetches and links all the necessary dependencies for the project.
 8.  After successfully running the script and setting up the env file, navigate to the app's folder from the terminal:
 
