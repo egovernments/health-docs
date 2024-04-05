@@ -28,7 +28,7 @@ cd health-campaign-field-worker-app
 Product Repo: [egovernments/health-campaign-field-worker-app](https://github.com/egovernments/health-campaign-field-worker-app)
 
 2. Open the project in your preferred IDE (Android Studio, Visual Studio Code). Make sure that your IDE is configured with the Flutter and Dart plugins.
-3. Now, create a .env file inside the apps/health\_campaign\_field\_worker\_app  folder.
+3. Create a .env file inside the apps/health\_campaign\_field\_worker\_app  folder.
 
 &#x20;      Sample .env file:&#x20;
 
@@ -103,7 +103,7 @@ dependency_overrides:
 
 This command will build the app and install it on the connected device or emulator.
 
-### Generate APK - Steps
+## Generate APK - Steps
 
 * Create a .env file inside the apps/health\_campaign\_field\_worker\_app folder.&#x20;
 
@@ -147,37 +147,39 @@ dependency_overrides:
 Note: All the folder names should be in the packages folder, before overriding the dependencies.
 {% endhint %}
 
-*   Create another file as pubspec\_overrides.yaml in **packages/attendance\_management/pubspec\_overrides.yaml**
+* Create another file as pubspec\_overrides.yaml in **packages/attendance\_management/pubspec\_overrides.yaml**
 
-    ```
-    # melos_managed_dependency_overrides: dart_mappable_builder
-    # melos_managed_dependency_overrides: digit_components
-    dependency_overrides:
-      dart_mappable_builder:
-        path: ../dart_mappable_builder
-      digit_components:
-        path: ../digit_components
-    ```
-*   Create another file as pubspec\_overrides.yaml in **packages/forms\_engine/pubspec\_overrides.yaml**
+```
+# melos_managed_dependency_overrides: dart_mappable_builder
+# melos_managed_dependency_overrides: digit_components
+dependency_overrides:
+  dart_mappable_builder:
+    path: ../dart_mappable_builder
+  digit_components:
+    path: ../digit_components
+```
 
-    ```
-    # melos_managed_dependency_overrides: digit_components
-    dependency_overrides:
-      digit_components:
-        path: ../digit_components
-    ```
+* Create another file as pubspec\_overrides.yaml in **packages/forms\_engine/pubspec\_overrides.yaml**
+
+```
+# melos_managed_dependency_overrides: digit_components
+dependency_overrides:
+  digit_components:
+    path: ../digit_components
+```
+
 * Run install\_bricks.sh bash script which is located in the tools folder. This script fetches and links all the necessary dependencies for the project.
 *   After successfully running the script and setting up the env file, navigate to - apps/health\_campaign\_field\_worker\_app folder in the terminal, and run the following command to generate the APK:&#x20;
 
     `flutter build apk --release --no-tree-shake-icons`
 
 
-*   &#x20;After successfully running the above command, the apk will be generated in the path
+*   &#x20;After successfully running the above command, the APK will be generated in the path
 
     **apps/health\_campaign\_field\_worker\_app/build\app\outputs\flutter-apk\app-release.apk**
 * Install the generated APK on your preferred Android device.
 
-### Change Master Data - Steps
+## Change Master Data - Steps
 
 All the Master data persist in MDMS under the tenant folders.
 
@@ -188,11 +190,9 @@ App master data persist in:&#x20;
 
 [https://github.com/egovernments/health-campaign-mdms/tree/DEV/data/default/health](https://github.com/egovernments/health-campaign-mdms/tree/DEV/data/default/health)
 
-\
 Consist of service register: All the APIs that the app utilises to call the server:\
 [https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/service-registry.json](https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/service-registry.json)
 
-\
 App configuration: Primary details required to run the app:&#x20;
 
 [https://github.com/egovernments/health-campaign-mdms/blob/DEV/data/default/health/field-app-configuration.json\
@@ -261,9 +261,9 @@ curl --location '{URL}/localization/messages/v1/_upsert' \
 }'
 ```
 
-#### Localisation Link&#x20;
+### Localisation Link&#x20;
 
-If the localisation is not executed prior then&#x20;
+If the localisation is not executed prior, then -
 
 Consolidated: [https://github.com/egovernments/releasekit/blob/master/localisation/HCM/consolidated/en\_MZ/consolidated.json\
 \
