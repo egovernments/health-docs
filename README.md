@@ -1,0 +1,23 @@
+---
+description: >-
+  Helping countries achieve Health SDGs by building digital public goods that
+  strengthen public health
+---
+
+# 👋 Introducing Public Health
+
+## About Public Health <a href="#mission" id="mission"></a>
+
+The DIGIT Public Health platform is an **open-source, modular, and configurable digital public infrastructure** that helps governments and partners improve **health service delivery, campaign execution, and data-driven governance**.&#x20;
+
+It enables governments and partners to efficiently plan, manage, and monitor health campaigns such as immunisation, Neglected Tropical Diseases (NTD) control, and nutrition drives.
+
+With household-level planning and equitable coverage tracking, it ensures no population is left behind. Program managers can quickly configure and launch customised campaigns using the Console, while real-time dashboards offer live insights into campaign coverage, stock availability, and workforce performance, supporting timely, data-driven decisions. The platform allows multiple campaigns to be run simultaneously on a single infrastructure, reducing duplication, lowering costs, and simplifying training.
+
+## Explore Public Health
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-type="content-ref"></th><th data-type="content-ref"></th><th data-type="content-ref"></th><th data-type="content-ref"></th><th data-type="content-ref"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Public Health Approach</strong></td><td></td><td>Explore the DIGIT Public Health design approach - why it is important, the scope and potentials along with the value proposition.</td><td><a href="approach/public-health-solution-design-approach.md">public-health-solution-design-approach.md</a></td><td><a href="approach/value-proposition.md">value-proposition.md</a></td><td></td><td></td><td></td><td><a href="approach/public-health-solution-design-approach.md">public-health-solution-design-approach.md</a></td></tr><tr><td><strong>Functional Specifications - Public Health</strong></td><td></td><td>Explore in detail the functional specifications of key public health modules/applications and the functional building blocks.</td><td><a href="access/public-health-product-suite/health-campaign-management-hcm/specifications/">specifications</a></td><td><a href="access/public-health-product-suite/health-campaign-management-hcm/features.md">features.md</a></td><td></td><td></td><td></td><td><a href="access/public-health-product-suite/health-campaign-management-hcm/specifications/functional-specifications/">functional-specifications</a></td></tr><tr><td><strong>Public Health Products</strong></td><td></td><td>Click on the below listed Public Health products to explore the details  </td><td><a href="access/public-health-product-suite/health-campaign-management-hcm/">health-campaign-management-hcm</a></td><td><a href="access/public-health-product-suite/campaign-management-dashboard/">campaign-management-dashboard</a></td><td><a href="access/public-health-product-suite/hcm-console.md">hcm-console.md</a></td><td><a href="access/public-health-product-suite/health-payments/">health-payments</a></td><td><a href="access/public-health-product-suite/campaign-management-dashboard/integrated-cross-campaign-dashboard-iccd/">integrated-cross-campaign-dashboard-iccd</a></td><td><a href="access/public-health-product-suite/">public-health-product-suite</a></td></tr><tr><td><strong>Reference Implementations</strong></td><td></td><td></td><td><a href="implementations/mozambique/">mozambique</a></td><td></td><td></td><td></td><td></td><td><a href="/broken/pages/2qsTwfgIVQm2W5R8FHOh">Broken link</a></td></tr><tr><td><strong>Get Started</strong></td><td></td><td></td><td><a href="deploy/installation/">installation</a></td><td><a href="deploy/configuration/">configuration</a></td><td></td><td></td><td></td><td></td></tr><tr><td><strong>FAQs</strong></td><td></td><td></td><td><a href="community/hcm-declarative-statements-and-faqs.md">hcm-declarative-statements-and-faqs.md</a></td><td></td><td></td><td></td><td></td><td><a href="community/hcm-declarative-statements-and-faqs.md">hcm-declarative-statements-and-faqs.md</a></td></tr></tbody></table>
+
+## Contact Us
+
+{% embed url="https://egov.org.in/contactegov" %}
