@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1144px" preserveAspectRatio="none" style="width:1243px;height:1144px;background:#FFFFFF;" version="1.1" viewBox="0 0 1243 1144" width="1243px" zoomAndPan="magnify"><defs/><g><rect fill="#FFFFFF" height="26.2969" id="_title" rx="3.5" ry="3.5" style="stroke:none;stroke-width:1.0;" width="165" x="540.75" y="10"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="155" x="545.75" y="27.9951">Household - Search</text><rect fill="#FFFFFF" height="912.7188" style="stroke:#696969;stroke-width:1.0;" width="10" x="655.5" y="135.7266"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1079.5" y="405.7891"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1079.5" y="588.5859"/><rect fill="#FFFFFF" height="30" style="stroke:#696969;stroke-width:1.0;" width="10" x="1079.5" y="705.1172"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1079.5" y="800.3828"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1175.5" y="464.0547"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1175.5" y="646.8516"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1175.5" y="889.7813"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1175.5" y="990.1797"/><rect fill="none" height="94.3984" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="838.5" x="9" y="192.8594"/><rect fill="none" height="494.125" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="1182.5" x="55" y="343.3906"/><rect fill="none" height="168.7969" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="1162.5" x="65" y="367.5234"/><rect fill="none" height="221.9297" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="943.5" x="284" y="550.3203"/><rect fill="none" height="110.5313" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="1162.5" x="65" y="851.5156"/><line style="stroke:#696969;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="321" x2="321" y1="104.5938" y2="1066.4453"/><line style="stroke:#696969;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="660.5" x2="660.5" y1="104.5938" y2="1066.4453"/><line style="stroke:#696969;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1084.5" x2="1084.5" y1="104.5938" y2="1066.4453"/><line style="stroke:#696969;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1180.5" x2="1180.5" y1="104.5938" y2="1066.4453"/><rect fill="#FF6347" height="30.2969" rx="3.5" ry="3.5" style="stroke:#454645;stroke-width:1.5;" width="55" x="294" y="73.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="301" y="93.292">Client</text><rect fill="#FF6347" height="30.2969" rx="3.5" ry="3.5" style="stroke:#454645;stroke-width:1.5;" width="55" x="294" y="1065.4453"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="301" y="1085.4404">Client</text><rect fill="#FF6347" height="30.2969" rx="3.5" ry="3.5" style="stroke:#454645;stroke-width:1.5;" width="148" x="586.5" y="73.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="593.5" y="93.292">HouseholdRegistry</text><rect fill="#FF6347" height="30.2969" rx="3.5" ry="3.5" style="stroke:#454645;stroke-width:1.5;" width="148" x="586.5" y="1065.4453"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="593.5" y="1085.4404">HouseholdRegistry</text><rect fill="#FF6347" height="30.2969" rx="3.5" ry="3.5" style="stroke:#454645;stroke-width:1.5;" width="98" x="1035.5" y="73.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="1042.5" y="93.292">RedisCache</text><rect fill="#FF6347" height="30.2969" rx="3.5" ry="3.5" style="stroke:#454645;stroke-width:1.5;" width="98" x="1035.5" y="1065.4453"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="1042.5" y="1085.4404">RedisCache</text><text fill="#454645" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="1143.5" y="101.292">Database</text><path d="M1162.5,52.2969 C1162.5,42.2969 1180.5,42.2969 1180.5,42.2969 C1180.5,42.2969 1198.5,42.2969 1198.5,52.2969 L1198.5,78.2969 C1198.5,88.2969 1180.5,88.2969 1180.5,88.2969 C1180.5,88.2969 1162.5,88.2969 1162.5,78.2969 L1162.5,52.2969 " fill="#00FFFF" style="stroke:#454645;stroke-width:1.5;"/><path d="M1162.5,52.2969 C1162.5,62.2969 1180.5,62.2969 1180.5,62.2969 C1180.5,62.2969 1198.5,62.2969 1198.5,52.2969 " fill="none" style="stroke:#454645;stroke-width:1.5;"/><text fill="#454645" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="1143.5" y="1078.4404">Database</text><path d="M1162.5,1091.7422 C1162.5,1081.7422 1180.5,1081.7422 1180.5,1081.7422 C1180.5,1081.7422 1198.5,1081.7422 1198.5,1091.7422 L1198.5,1117.7422 C1198.5,1127.7422 1180.5,1127.7422 1180.5,1127.7422 C1180.5,1127.7422 1162.5,1127.7422 1162.5,1117.7422 L1162.5,1091.7422 " fill="#00FFFF" style="stroke:#454645;stroke-width:1.5;"/><path d="M1162.5,1091.7422 C1162.5,1101.7422 1180.5,1101.7422 1180.5,1101.7422 C1180.5,1101.7422 1198.5,1101.7422 1198.5,1091.7422 " fill="none" style="stroke:#454645;stroke-width:1.5;"/><rect fill="#FFFFFF" height="912.7188" style="stroke:#696969;stroke-width:1.0;" width="10" x="655.5" y="135.7266"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1079.5" y="405.7891"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1079.5" y="588.5859"/><rect fill="#FFFFFF" height="30" style="stroke:#696969;stroke-width:1.0;" width="10" x="1079.5" y="705.1172"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1079.5" y="800.3828"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1175.5" y="464.0547"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1175.5" y="646.8516"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1175.5" y="889.7813"/><rect fill="#FFFFFF" height="29.1328" style="stroke:#696969;stroke-width:1.0;" width="10" x="1175.5" y="990.1797"/><polygon fill="#454645" points="643.5,131.7266,653.5,135.7266,643.5,139.7266,647.5,135.7266" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="321.5" x2="649.5" y1="135.7266" y2="135.7266"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="145" x="328.5" y="130.6606">/household/v1/_search</text><line style="stroke:#454645;stroke-width:1.0;" x1="665.5" x2="707.5" y1="164.8594" y2="164.8594"/><line style="stroke:#454645;stroke-width:1.0;" x1="707.5" x2="707.5" y1="164.8594" y2="177.8594"/><line style="stroke:#454645;stroke-width:1.0;" x1="666.5" x2="707.5" y1="177.8594" y2="177.8594"/><polygon fill="#454645" points="676.5,173.8594,666.5,177.8594,676.5,181.8594,672.5,177.8594" style="stroke:#454645;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="672.5" y="159.7935">Validate request body</text><path d="M12.5,192.8594 L73,192.8594 L73,199.9922 L63,209.9922 L9,209.9922 L9,196.3594 A3.5,3.5 0 0 1 12.5,192.8594 " fill="#EEEEEE" style="stroke:#696969;stroke-width:1.5;"/><rect fill="none" height="94.3984" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="838.5" x="9" y="192.8594"/><text fill="#454645" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19" x="24" y="205.9263">alt</text><text fill="#696969" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="154" x="88" y="205.0698">[request validation fails]</text><line style="stroke:#454645;stroke-width:1.0;" x1="665.5" x2="707.5" y1="231.125" y2="231.125"/><line style="stroke:#454645;stroke-width:1.0;" x1="707.5" x2="707.5" y1="231.125" y2="244.125"/><line style="stroke:#454645;stroke-width:1.0;" x1="666.5" x2="707.5" y1="244.125" y2="244.125"/><polygon fill="#454645" points="676.5,240.125,666.5,244.125,676.5,248.125,672.5,244.125" style="stroke:#454645;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="163" x="672.5" y="226.0591">Request validation failed</text><polygon fill="#454645" points="332.5,272.2578,322.5,276.2578,332.5,280.2578,328.5,276.2578" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="326.5" x2="654.5" y1="276.2578" y2="276.2578"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="282" x="338.5" y="271.1919">HttpStatus: 400 with appropriate error code</text><path d="M19,260.625 L19,278.625 A3.5,3.5 0 0 0 22.5,282.125 L312.5,282.125 A3.5,3.5 0 0 0 316,278.625 L316,267.125 L306,257.125 L22.5,257.125 A3.5,3.5 0 0 0 19,260.625 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M306,257.125 L306,265.375 A1.75,1.75 0 0 0 307.75,267.125 L316,267.125 L306,257.125 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="276" x="25" y="274.1919">Error Code: REQUEST_VALIDATION_FAILED</text><line style="stroke:#454645;stroke-width:1.0;" x1="665.5" x2="707.5" y1="315.3906" y2="315.3906"/><line style="stroke:#454645;stroke-width:1.0;" x1="707.5" x2="707.5" y1="315.3906" y2="328.3906"/><line style="stroke:#454645;stroke-width:1.0;" x1="666.5" x2="707.5" y1="328.3906" y2="328.3906"/><polygon fill="#454645" points="676.5,324.3906,666.5,328.3906,676.5,332.3906,672.5,328.3906" style="stroke:#454645;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="194" x="672.5" y="310.3247">Request validation successful</text><path d="M58.5,343.3906 L119,343.3906 L119,350.5234 L109,360.5234 L55,360.5234 L55,346.8906 A3.5,3.5 0 0 1 58.5,343.3906 " fill="#EEEEEE" style="stroke:#696969;stroke-width:1.5;"/><rect fill="none" height="494.125" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="1182.5" x="55" y="343.3906"/><text fill="#454645" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19" x="70" y="356.4575">alt</text><text fill="#696969" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="299" x="134" y="355.6011">[search by clientReferenceId/serverGeneratedId]</text><path d="M68.5,367.5234 L129,367.5234 L129,374.6563 L119,384.6563 L65,384.6563 L65,371.0234 A3.5,3.5 0 0 1 68.5,367.5234 " fill="#EEEEEE" style="stroke:#696969;stroke-width:1.5;"/><rect fill="none" height="168.7969" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="1162.5" x="65" y="367.5234"/><text fill="#454645" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19" x="80" y="380.5903">alt</text><text fill="#696969" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="134" x="144" y="379.7339">[record doesn't exist]</text><polygon fill="#454645" points="1067.5,401.7891,1077.5,405.7891,1067.5,409.7891,1071.5,405.7891" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="665.5" x2="1073.5" y1="405.7891" y2="405.7891"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="395" x="672.5" y="400.7231">Search record based on clientReferenceId/serverGeneratedId</text><polygon fill="#454645" points="676.5,430.9219,666.5,434.9219,676.5,438.9219,672.5,434.9219" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="670.5" x2="1083.5" y1="434.9219" y2="434.9219"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="682.5" y="429.856">0 rows</text><polygon fill="#454645" points="1163.5,460.0547,1173.5,464.0547,1163.5,468.0547,1167.5,464.0547" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="665.5" x2="1169.5" y1="464.0547" y2="464.0547"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="395" x="672.5" y="458.9888">Search record based on clientReferenceId/serverGeneratedId</text><polygon fill="#454645" points="676.5,489.1875,666.5,493.1875,676.5,497.1875,672.5,493.1875" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="670.5" x2="1179.5" y1="493.1875" y2="493.1875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="682.5" y="488.1216">0 rows</text><polygon fill="#454645" points="332.5,521.3203,322.5,525.3203,332.5,529.3203,328.5,525.3203" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="326.5" x2="654.5" y1="525.3203" y2="525.3203"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="282" x="338.5" y="520.2544">HttpStatus: 400 with appropriate error code</text><path d="M75,509.6875 L75,527.6875 A3.5,3.5 0 0 0 78.5,531.1875 L312.5,531.1875 A3.5,3.5 0 0 0 316,527.6875 L316,516.1875 L306,506.1875 L78.5,506.1875 A3.5,3.5 0 0 0 75,509.6875 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M306,506.1875 L306,514.4375 A1.75,1.75 0 0 0 307.75,516.1875 L316,516.1875 L306,506.1875 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="220" x="81" y="523.2544">Error Code: RECORD_NOT_FOUND</text><path d="M287.5,550.3203 L348,550.3203 L348,557.4531 L338,567.4531 L284,567.4531 L284,553.8203 A3.5,3.5 0 0 1 287.5,550.3203 " fill="#EEEEEE" style="stroke:#696969;stroke-width:1.5;"/><rect fill="none" height="221.9297" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="943.5" x="284" y="550.3203"/><text fill="#454645" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19" x="299" y="563.3872">alt</text><text fill="#696969" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="197" x="363" y="562.5308">[record doesn't exists in cache]</text><polygon fill="#454645" points="1067.5,584.5859,1077.5,588.5859,1067.5,592.5859,1071.5,588.5859" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="665.5" x2="1073.5" y1="588.5859" y2="588.5859"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="395" x="672.5" y="583.52">Search record based on clientReferenceId/serverGeneratedId</text><polygon fill="#454645" points="676.5,613.7188,666.5,617.7188,676.5,621.7188,672.5,617.7188" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="670.5" x2="1083.5" y1="617.7188" y2="617.7188"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="682.5" y="612.6528">0 rows</text><polygon fill="#454645" points="1163.5,642.8516,1173.5,646.8516,1163.5,650.8516,1167.5,646.8516" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="665.5" x2="1169.5" y1="646.8516" y2="646.8516"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="395" x="672.5" y="641.7856">Search record based on clientReferenceId/serverGeneratedId</text><polygon fill="#454645" points="676.5,671.9844,666.5,675.9844,676.5,679.9844,672.5,675.9844" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="670.5" x2="1179.5" y1="675.9844" y2="675.9844"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="36" x="682.5" y="670.9185">1 row</text><polygon fill="#454645" points="1067.5,701.1172,1077.5,705.1172,1067.5,709.1172,1071.5,705.1172" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="665.5" x2="1073.5" y1="705.1172" y2="705.1172"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="53" x="672.5" y="700.0513">1 record</text><polygon fill="#454645" points="332.5,760.25,322.5,764.25,332.5,768.25,328.5,764.25" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="326.5" x2="654.5" y1="764.25" y2="764.25"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="310" x="338.5" y="759.1841">HttpStatus: 200 with appropriate response code</text><polygon fill="#454645" points="1067.5,796.3828,1077.5,800.3828,1067.5,804.3828,1071.5,800.3828" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="665.5" x2="1073.5" y1="800.3828" y2="800.3828"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="395" x="672.5" y="795.3169">Search record based on clientReferenceId/serverGeneratedId</text><polygon fill="#454645" points="676.5,825.5156,666.5,829.5156,676.5,833.5156,672.5,829.5156" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="670.5" x2="1083.5" y1="829.5156" y2="829.5156"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="36" x="682.5" y="824.4497">1 row</text><path d="M68.5,851.5156 L129,851.5156 L129,858.6484 L119,868.6484 L65,868.6484 L65,855.0156 A3.5,3.5 0 0 1 68.5,851.5156 " fill="#EEEEEE" style="stroke:#696969;stroke-width:1.5;"/><rect fill="none" height="110.5313" rx="3.5" ry="3.5" style="stroke:#696969;stroke-width:1.0;" width="1162.5" x="65" y="851.5156"/><text fill="#454645" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19" x="80" y="864.5825">alt</text><text fill="#696969" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="204" x="144" y="863.7261">[record doesn't exist for criteria]</text><polygon fill="#454645" points="1163.5,885.7813,1173.5,889.7813,1163.5,893.7813,1167.5,889.7813" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="665.5" x2="1169.5" y1="889.7813" y2="889.7813"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="202" x="672.5" y="884.7153">Search record based on criteria</text><polygon fill="#454645" points="676.5,914.9141,666.5,918.9141,676.5,922.9141,672.5,918.9141" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="670.5" x2="1179.5" y1="918.9141" y2="918.9141"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="682.5" y="913.8481">0 rows</text><polygon fill="#454645" points="332.5,947.0469,322.5,951.0469,332.5,955.0469,328.5,951.0469" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="326.5" x2="654.5" y1="951.0469" y2="951.0469"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="282" x="338.5" y="945.981">HttpStatus: 400 with appropriate error code</text><path d="M75,935.4141 L75,953.4141 A3.5,3.5 0 0 0 78.5,956.9141 L312.5,956.9141 A3.5,3.5 0 0 0 316,953.4141 L316,941.9141 L306,931.9141 L78.5,931.9141 A3.5,3.5 0 0 0 75,935.4141 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><path d="M306,931.9141 L306,940.1641 A1.75,1.75 0 0 0 307.75,941.9141 L316,941.9141 L306,931.9141 " fill="#7FFFD4" style="stroke:#181818;stroke-width:1.5;"/><text fill="#454645" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="220" x="81" y="948.981">Error Code: RECORD_NOT_FOUND</text><polygon fill="#454645" points="1163.5,986.1797,1173.5,990.1797,1163.5,994.1797,1167.5,990.1797" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="665.5" x2="1169.5" y1="990.1797" y2="990.1797"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="202" x="672.5" y="985.1138">Search record based on criteria</text><polygon fill="#454645" points="676.5,1015.3125,666.5,1019.3125,676.5,1023.3125,672.5,1019.3125" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="670.5" x2="1179.5" y1="1019.3125" y2="1019.3125"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56" x="682.5" y="1014.2466">1-n rows</text><polygon fill="#454645" points="332.5,1044.4453,322.5,1048.4453,332.5,1052.4453,328.5,1048.4453" style="stroke:#454645;stroke-width:1.0;"/><line style="stroke:#454645;stroke-width:1.0;" x1="326.5" x2="659.5" y1="1048.4453" y2="1048.4453"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="259" x="338.5" y="1043.3794">HttpStatus: 200 OK with found record(s)</text><!--MD5=[cdc05733d44b223130365849d60e61b0]
+@startuml
+title Household - Search
+!theme vibrant
+participant Client as c
+participant HouseholdRegistry as s
+participant RedisCache as rc
+database Database as db
+c -> s : /household/v1/_search
+activate s
+s -> s: Validate request body
+alt request validation fails
+    s -> s: Request validation failed
+    s -> c: HttpStatus: 400 with appropriate error code
+    note left
+      Error Code: REQUEST_VALIDATION_FAILED
+    end note
+end
+s -> s: Request validation successful
+alt search by clientReferenceId/serverGeneratedId
+    alt record doesn't exist
+        s -> rc: Search record based on clientReferenceId/serverGeneratedId
+        activate rc
+        rc -> s: 0 rows
+        deactivate rc
+        s -> db: Search record based on clientReferenceId/serverGeneratedId
+        activate db
+        db -> s: 0 rows
+        deactivate db
+        s -> c: HttpStatus: 400 with appropriate error code
+        note left
+          Error Code: RECORD_NOT_FOUND
+        end note
+    end
+    alt record doesn't exists in cache
+        s -> rc: Search record based on clientReferenceId/serverGeneratedId
+        activate rc
+        rc -> s: 0 rows
+        deactivate rc
+        s -> db: Search record based on clientReferenceId/serverGeneratedId
+        activate db
+        db -> s: 1 row
+        deactivate db
+        s -> rc: 1 record
+        activate rc
+        deactivate rc
+        s -> c: HttpStatus: 200 with appropriate response code
+    end
+s -> rc: Search record based on clientReferenceId/serverGeneratedId
+activate rc
+rc -> s: 1 row
+deactivate rc
+end
+alt record doesn't exist for criteria
+    s -> db: Search record based on criteria
+    activate db
+    db -> s: 0 rows
+    deactivate db
+    s -> c: HttpStatus: 400 with appropriate error code
+    note left
+      Error Code: RECORD_NOT_FOUND
+    end note
+end
+s -> db: Search record based on criteria
+activate db
+db -> s: 1-n rows
+deactivate db
+s -> c: HttpStatus: 200 OK with found record(s)
+deactivate s
+@enduml
+
+@startuml
+title Household - Search
+skinparam BackgroundColor FFFFFF
+skinparam shadowing false
+skinparam RoundCorner 7
+skinparam ArrowColor 454645
+skinparam FontColor 454645
+skinparam SequenceLifeLineBorderColor 696969
+skinparam SequenceGroupHeaderFontColor 454645
+skinparam SequenceGroupFontColor 696969
+skinparam SequenceGroupBorderColor 696969
+skinparam SequenceGroupBorderThickness 1
+
+skinparam sequenceDivider {
+    BorderColor 454645
+    BorderThickness 1
+    FontColor 454645
+}
+
+skinparam participant {
+    BackgroundColor FF6347
+    BorderColor 454645
+    FontColor FFFFFF
+    BorderThickness 1.5
+}
+
+skinparam database {
+    BackgroundColor 00FFFF
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam entity {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam note {
+    BackgroundColor 7FFFD4
+    BorderColor 454645
+    FontColor 454645
+    BorderThickness 1.5
+}
+
+skinparam actor {
+    BackgroundColor 454645
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam boundary {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam control {
+    BackgroundColor FFE552
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam collections {
+    BackgroundColor FF5F42
+    BorderColor 454645
+    FontColor 454645
+}
+
+skinparam queue {
+    BackgroundColor FF6347
+    BorderColor 454645
+    FontColor FFF
+    BorderThickness 1.5
+}
+participant Client as c
+participant HouseholdRegistry as s
+participant RedisCache as rc
+database Database as db
+c -> s : /household/v1/_search
+activate s
+s -> s: Validate request body
+alt request validation fails
+    s -> s: Request validation failed
+    s -> c: HttpStatus: 400 with appropriate error code
+    note left
+      Error Code: REQUEST_VALIDATION_FAILED
+    end note
+end
+s -> s: Request validation successful
+alt search by clientReferenceId/serverGeneratedId
+    alt record doesn't exist
+        s -> rc: Search record based on clientReferenceId/serverGeneratedId
+        activate rc
+        rc -> s: 0 rows
+        deactivate rc
+        s -> db: Search record based on clientReferenceId/serverGeneratedId
+        activate db
+        db -> s: 0 rows
+        deactivate db
+        s -> c: HttpStatus: 400 with appropriate error code
+        note left
+          Error Code: RECORD_NOT_FOUND
+        end note
+    end
+    alt record doesn't exists in cache
+        s -> rc: Search record based on clientReferenceId/serverGeneratedId
+        activate rc
+        rc -> s: 0 rows
+        deactivate rc
+        s -> db: Search record based on clientReferenceId/serverGeneratedId
+        activate db
+        db -> s: 1 row
+        deactivate db
+        s -> rc: 1 record
+        activate rc
+        deactivate rc
+        s -> c: HttpStatus: 200 with appropriate response code
+    end
+s -> rc: Search record based on clientReferenceId/serverGeneratedId
+activate rc
+rc -> s: 1 row
+deactivate rc
+end
+alt record doesn't exist for criteria
+    s -> db: Search record based on criteria
+    activate db
+    db -> s: 0 rows
+    deactivate db
+    s -> c: HttpStatus: 400 with appropriate error code
+    note left
+      Error Code: RECORD_NOT_FOUND
+    end note
+end
+s -> db: Search record based on criteria
+activate db
+db -> s: 1-n rows
+deactivate db
+s -> c: HttpStatus: 200 OK with found record(s)
+deactivate s
+@enduml
+
+PlantUML version 1.2022.12(Sun Oct 23 23:42:26 IST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

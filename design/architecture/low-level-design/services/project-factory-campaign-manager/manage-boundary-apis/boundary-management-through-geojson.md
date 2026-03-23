@@ -1,0 +1,193 @@
+# Boundary Management Through GeoJson
+
+## **Overview**
+
+**Base URL:** project-factory/v1/
+
+**Endpoint:** /data/\_generate
+
+**Method:** POST
+
+## **Request Structure**
+
+**Body Parameters:**
+
+* **RequestInfo:** Object containing RequestInfo
+* **Query Parameters:**
+  * **tenantId:** Tenant
+  * **type:** Type of Resource (e.g., boundaryManagement)
+  * **forceUpdate:** Boolean type (either true or false)
+  * **hierarchyType:** Name of Boundary Hierarchy
+  * **campaignId: default (Mandatory)**
+
+## **Response Structure**
+
+**Success Response:**
+
+```json
+{
+   "ResponseInfo": {
+       "apiId": "egov-bff",
+       "ver": "0.0.1",
+       "ts": 1716878176955,
+       "status": "successful",
+       "desc": "new-response"
+   },
+   "GeneratedResource": [
+       {
+           "id": "5ef5547e-414f-4164-9c12-644716e4fa71",
+           "fileStoreid": null,
+           "type": "boundaryGeometryManagement",
+           "status": "inprogress",
+           "hierarchyType": "ADMIN",
+           "tenantId": "mz",
+           "auditDetails": {
+               "lastModifiedTime": 1716878176947,
+               "createdTime": 1716878176947,
+               "createdBy": "867ba408-1b82-4746-8274-eb916e625fea",
+               "lastModifiedBy": "867ba408-1b82-4746-8274-eb916e625fea"
+           },
+           "additionalDetails": {
+               "Filters": null
+           },
+           "count": null
+       }
+   ]
+}
+```
+
+**In this API the filestore ID will be the ID the geoJson file which will be:**&#x20;
+
+```
+{
+   "type":"FeatureCollection",
+   "name":"boundary_country_default",
+   "crs":{
+      "type":"name",
+      "properties":{
+         "name":"urn:ogc:def:crs:EPSG::3857"
+      }
+   },
+   "features":[
+      {
+         "type":"Feature",
+         "properties":{
+            "country_name":"India",
+            "country_code":"IND",
+            "global_id":"3c1b3b06-3958-424b-a160-3e25998cd027",
+            "source":"WFP, INE",
+            "source_date":"2007-01-01",
+            "properties":{
+               "ADM0_EN":"Mozambique",
+               "OBJECTID":1,
+               "ADM0_PCODE":"MZ",
+               "Shape_Area":67.04187953610,
+               "Shape_Leng":96.65781689320
+            },
+            "population_1":26876090.0
+         },
+         "geometry":{
+            "type":"",
+            "coordinates":[
+               100,
+               200
+            ]
+         }
+      }
+   ]
+}
+```
+
+## **Flow**
+
+1. **Client Initiates Request:**
+   * The client initiates a dataGenerate request to the Project Factory Service.
+2. **Validation of Request:**
+   * Schema Validation: Validate against generateRequestSchema.
+   * Tenant ID Validation: Ensure tenantId matches in query and RequestInfo.userInfo.
+   * Force Update: Default to "false" if missing.
+   * Hierarchy Type Validation: Validate hierarchyType for the tenantId.
+3. **Processing of Generate Request:**
+   * **Fetch Data from DB:**
+     * Retrieve data using getResponseFromDb(request).
+   * **Modify Response Data:**
+     * Modify the fetched data with getModifiedResponse(responseData).
+   * **Generate New Entry:**
+     * Create a new entry with getNewEntryResponse(request).
+   * **Expire Old Data:**
+     * Update the status of old data to expired using getOldEntryResponse(modifiedResponse, request).
+   * **Persist Data Changes:**
+     * Call updateAndPersistGenerateRequest(newEntryResponse, oldEntryResponse, responseData, request).
+       * **Purpose:**
+         * If forceUpdate is true and data exists: Mark existing data as expired and create new data.
+         * No data exists or force update is true: Generate new data.
+         * If forceUpdate is false and data exists: Return the old data.
+4. **Boundary Data Processing:**
+   * **Generate new Boundary Data:**
+     * Fetch Boundary Relationships.
+     * If no boundary is found, generate an empty boundary sheet.
+     * Fetch Filters from CampaignId and generate Boundary Data based on those filters.
+       * If the filter is null, it will generate the whole Boundary Data.
+   * After the Boundary Sheet has been generated, append the ReadMeSheet.
+   * Generate different tabs based on any boundary level configured (here District).
+5. **Generating  Different Boundary Templates  based on Campaign Type**
+
+* Fetch configurable columns from mdms present for each campaign type from schema - (_<mark style="color:blue;">HCM-ADMIN-CONSOLE.adminSchema)</mark>_.
+* Here is a sample data from the given schema having configurable columns for the SMC campaign:
+
+````json
+```postman_json
+ "Mdms": {
+        "tenantId": "mz",
+        "schemaCode": "HCM-ADMIN-CONSOLE.adminSchema",
+        "uniqueIdentifier": "boundaryGeometryManagement.all",
+        "data":{
+                "title": "boundaryGeometryManagement",
+                "$schema": "http://json-schema.org/draft-07/schema#",
+                "properties": {
+                    "numberProperties": [
+                        {
+                            "name": "HCM_ADMIN_CONSOLE_LAT",
+                            "type": "number",
+                            "isRequired": true,
+                            "description": "Latitude",
+                            "orderNumber": 2
+                        },
+                        {
+                            "name": "HCM_ADMIN_CONSOLE_LONG",
+                            "type": "number",
+                            "isRequired": true,
+                            "description": "Longitude",
+                            "orderNumber": 3
+                        }
+                    ],
+                    "stringProperties": [
+                        {
+                            "name": "HCM_ADMIN_CONSOLE_BOUNDARY_CODE",
+                            "type": "string",
+                            "isRequired": true,
+                            "description": "Boundary Code",
+                            "orderNumber": 1,
+                            "freezeColumn": true
+                        }
+                    ]
+                },
+                "campaignType": "all"
+            },
+        "isActive": true
+    }
+```
+````
+
+1. **Handle Error:**
+   * Update status to failed, add error details, log the error, and produce a message to the update topic.
+2. **Downloading the generated boundary template through /data/\_generate API:**
+   * One can get the filestoreId through the /data/\_download API which will fetch from db using the id from the response of /data/\_generate API.
+
+**After successful generation, the sheet you will get from filestoreId will be:**
+
+{% file src="../../../../../../.gitbook/assets/BoundaryGenerationData.xlsx" %}
+Boundary Generation Data
+{% endfile %}
+
+**Note:** The downloaded template will have one ReadMe sheet, one Boundary Data tab, and all other tabs on a number of unique districts (or whichever level is configured).

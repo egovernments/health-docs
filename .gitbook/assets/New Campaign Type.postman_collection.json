@@ -1,0 +1,1282 @@
+{
+	"info": {
+		"_postman_id": "d0fb0128-f8bc-45fc-a5f3-18e8307fb5e7",
+		"name": "New Campaign Type",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36266133"
+	},
+	"item": [
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "product create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"print and save Authtoken\", function () {",
+									"    var res = pm.response.json();",
+									"    var PrdductID = res.Product[0].id;",
+									"   // console.log('authToken:', AuthToken1);",
+									"    pm.collectionVariables.set('PrdductID', PrdductID);",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:3000"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:3000/workbench-ui/employee/campaign/add-product"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Linux\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Product\": [\n        {\n            \"tenantId\": \"mz\",\n            \"type\": \"TONIC\",\n            \"name\": \"tOPV\"\n        }\n    ],\n    \"apiOperation\": \"CREATE\",\n    \"RequestInfo\": {\n        \"apiId\": \"Rainmaker\",\n        \"authToken\": \"{{envAUTH}}\",\n        \"userInfo\": {\n            \"id\": 10476,\n            \"uuid\": \"f4e90853-80b7-47cc-91e7-f8cd5ec00e20\",\n            \"userName\": \"CONSOLE\",\n            \"name\": \"Jagankumar\",\n            \"mobileNumber\": \"9994100121\",\n            \"emailId\": \"raj@gmail.com\",\n            \"locale\": null,\n            \"type\": \"EMPLOYEE\",\n            \"roles\": [\n                {\n                    \"name\": \"Microplan Campaign integrator\",\n                    \"code\": \"MICROPLAN_CAMPAIGN_INTEGRATOR\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Campaign Managers\",\n                    \"code\": \"CAMPAIGN_MANAGER\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"System Administrator\",\n                    \"code\": \"SYSTEM_ADMINISTRATOR\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Boundary Manager\",\n                    \"code\": \"BOUNDARY_MANAGER\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Campaign Admin\",\n                    \"code\": \"CAMPAIGN_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Localisation admin\",\n                    \"code\": \"LOC_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Microplan Admin\",\n                    \"code\": \"MICROPLAN_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"HRMS Admin\",\n                    \"code\": \"HRMS_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"MDMS ADMIN\",\n                    \"code\": \"MDMS_ADMIN\",\n                    \"tenantId\": \"dev\"\n                }\n            ],\n            \"active\": true,\n            \"tenantId\": \"dev\",\n            \"permanentCity\": null\n        },\n        \"msgId\": \"1736400214727|en_IN\",\n        \"plainAccessRequest\": {}\n    }\n}"
+						},
+						"url": {
+							"raw": "{{productHost}}/product/v1/_create",
+							"host": [
+								"{{productHost}}"
+							],
+							"path": [
+								"product",
+								"v1",
+								"_create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "product-variant create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"print and save Authtoken\", function () {",
+									"    var res = pm.response.json();",
+									"    var ProductVariantid = res.ProductVariant[0].id;",
+									" //   console.log('authToken:', AuthToken1);",
+									"    pm.collectionVariables.set('ProductVariantid', ProductVariantid);",
+									"})"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:3000"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:3000/workbench-ui/employee/campaign/add-product"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"131\", \"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Linux\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ProductVariant\": [\n        {\n            \"tenantId\": \"mz\",\n            \"productId\": \"{{PrdductID}}\",\n            \"variation\": \"600mg\",\n            \"sku\": \"Praziquantel-demo - 600mg\",\n            \"additionalFields\": {\n                \"schema\": \"ProductVariant\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"value\": \"{{projectTypeCode}}\",\n                        \"key\": \"projectType\"\n                    }\n                ]\n            }\n        }\n    ],\n    \"apiOperation\": \"CREATE\",\n    \"RequestInfo\": {\n        \"apiId\": \"Rainmaker\",\n        \"authToken\": \"e8121069-fb83-4d53-bb26-4ab7469546b8\",\n        \"userInfo\": {\n            \"id\": 10476,\n            \"uuid\": \"f4e90853-80b7-47cc-91e7-f8cd5ec00e20\",\n            \"userName\": \"CONSOLE\",\n            \"name\": \"Jagankumar\",\n            \"mobileNumber\": \"9994100121\",\n            \"emailId\": \"raj@gmail.com\",\n            \"locale\": null,\n            \"type\": \"EMPLOYEE\",\n            \"roles\": [\n                {\n                    \"name\": \"Microplan Campaign integrator\",\n                    \"code\": \"MICROPLAN_CAMPAIGN_INTEGRATOR\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Campaign Managers\",\n                    \"code\": \"CAMPAIGN_MANAGER\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"System Administrator\",\n                    \"code\": \"SYSTEM_ADMINISTRATOR\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Boundary Manager\",\n                    \"code\": \"BOUNDARY_MANAGER\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Campaign Admin\",\n                    \"code\": \"CAMPAIGN_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Localisation admin\",\n                    \"code\": \"LOC_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Microplan Admin\",\n                    \"code\": \"MICROPLAN_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"HRMS Admin\",\n                    \"code\": \"HRMS_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"MDMS ADMIN\",\n                    \"code\": \"MDMS_ADMIN\",\n                    \"tenantId\": \"dev\"\n                }\n            ],\n            \"active\": true,\n            \"tenantId\": \"dev\",\n            \"permanentCity\": null\n        },\n        \"msgId\": \"1736400214893|en_IN\",\n        \"plainAccessRequest\": {}\n    }\n}"
+						},
+						"url": {
+							"raw": "{{productHost}}/product/variant/v1/_create",
+							"host": [
+								"{{productHost}}"
+							],
+							"path": [
+								"product",
+								"variant",
+								"v1",
+								"_create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "projectType NTD",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "Origin",
+								"value": "http://localhost:3000"
+							},
+							{
+								"key": "Referer",
+								"value": "http://localhost:3000/workbench-ui/employee/workbench/mdms-edit?moduleName=HCM-PROJECT-TYPES&masterName=projectTypes&uniqueIdentifier=ea1bb2e7-06d8-4fe4-ba1e-f4a6363a23re"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Linux\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Mdms\": {\n        \"id\": \"3316a402-288a-471d-b4d8-3d326fbfc0c4\",\n        \"tenantId\": \"mz\",\n        \"schemaCode\": \"HCM-PROJECT-TYPES.projectTypes\",\n        \"uniqueIdentifier\": \"2a1bb2e7-06d8-4fe4-ba1e-f4a6363a23r1\",\n        \"data\": {\n            \"id\": \"2a1bb2e7-06d8-4fe4-ba1e-f4a6363a2344\",\n            \"code\": \"{{projectTypeCode}}\",\n            \"name\": \"configuration for Campaign\",\n            \"type\": \"multiround\",\n            \"group\": \"POLIO\",\n            \"cycles\": [\n                {\n                    \"id\": 1,\n                    \"endDate\": 1715279400000,\n                    \"startDate\": 1714329000000,\n                    \"deliveries\": [\n                        {\n                            \"id\": 1,\n                            \"doseCriteria\": [\n                                {\n                                    \"condition\": \"age<=5andheight<=178\",\n                                    \"ProductVariants\": [\n                                        {\n                                            \"name\": \"Praziquantel 600mg\",\n                                            \"quantity\": 5,\n                                            \"productVariantId\": \"{{ProductVariantid}}\"\n                                        }\n                                    ]\n                                }\n                                // {\n                                //     \"condition\": \"age>=5and160<=height<177\",\n                                //     \"ProductVariants\": [\n                                //         {\n                                //             \"name\": \"Praziquantel 600mg\",\n                                //             \"quantity\": 4,\n                                //             \"productVariantId\": \"{{ProductVariantid}}\"\n                                //         }\n                                //     ]\n                                // },\n                                // {\n                                //     \"condition\": \"age>=5and150<=height<159\",\n                                //     \"ProductVariants\": [\n                                //         {\n                                //             \"name\": \"Praziquantel 600mg\",\n                                //             \"quantity\": 3,\n                                //             \"productVariantId\": \"{{ProductVariantid}}\"\n                                //         }\n                                //     ]\n                                // },\n                                // {\n                                //     \"condition\": \"age>=5and138<=height<149\",\n                                //     \"ProductVariants\": [\n                                //         {\n                                //             \"name\": \"Praziquantel 600mg\",\n                                //             \"quantity\": 2,\n                                //             \"productVariantId\": \"{{ProductVariantid}}\"\n                                //         }\n                                //     ]\n                                // },\n                                // {\n                                //     \"condition\": \"age>=5and125<=height<137\",\n                                //     \"ProductVariants\": [\n                                //         {\n                                //             \"name\": \"Praziquantel 600mg\",\n                                //             \"quantity\": 2,\n                                //             \"productVariantId\": \"{{ProductVariantid}}\"\n                                //         }\n                                //     ]\n                                // },\n                                // {\n                                //     \"condition\": \"age>=5and110<=height<124\",\n                                //     \"ProductVariants\": [\n                                //         {\n                                //             \"name\": \"Praziquantel 600mg\",\n                                //             \"quantity\": 1,\n                                //             \"productVariantId\": \"{{ProductVariantid}}\"\n                                //         }\n                                //     ]\n                                // },\n                                // {\n                                //     \"condition\": \"age>=5and94<=height<109\",\n                                //     \"ProductVariants\": [\n                                //         {\n                                //             \"name\": \"Praziquantel 600mg\",\n                                //             \"quantity\": 1,\n                                //             \"productVariantId\": \"{{ProductVariantid}}\"\n                                //         }\n                                //     ]\n                                // },\n                                // {\n                                //     \"condition\": \"age<5andheight<94\",\n                                //     \"ProductVariants\": [\n                                //         {\n                                //             \"name\": \"Praziquantel 600mg\",\n                                //             \"quantity\": 0,\n                                //             \"productVariantId\": \"{{ProductVariantid}}\"\n                                //         }\n                                //     ]\n                                // }\n                            ],\n                            \"deliveryStrategy\": \"DIRECT\"\n                            // \"mandatoryWaitSinceLastDeliveryInDays\": null\n                        }\n                        \n                    ]\n                    // \"mandatoryWaitSinceLastCycleInDays\": null\n\n                }\n            ],\n            \"resources\": [\n                {\n                    \"name\": \"Praziquantel - 600mg\",\n                    \"productVariantId\": \"{{ProductVariantid}}\",\n                    \"isBaseUnitVariant\": true\n                }\n            ],\n            \"dashboardUrls\": {\n                \"DISTRICT_SUPERVISOR\": \"2\",\n                \"NATIONAL_SUPERVISOR\": \"1\",\n                \"PROVINCIAL_SUPERVISOR\": \"1\"\n            },\n            \"beneficiaryType\": \"INDIVIDUAL\"\n        },\n        \"isActive\": true\n    },\n    \"RequestInfo\": {\n        \"apiId\": \"Rainmaker\",\n        \"authToken\": \"e8121069-fb83-4d53-bb26-4ab7469546b8\",\n        \"userInfo\": {\n            \"id\": 10476,\n            \"uuid\": \"f4e90853-80b7-47cc-91e7-f8cd5ec00e20\",\n            \"userName\": \"CONSOLE\",\n            \"name\": \"Jagankumar\",\n            \"mobileNumber\": \"9994100121\",\n            \"emailId\": \"raj@gmail.com\",\n            \"locale\": null,\n            \"type\": \"EMPLOYEE\",\n            \"roles\": [\n                {\n                    \"name\": \"Microplan Campaign integrator\",\n                    \"code\": \"MICROPLAN_CAMPAIGN_INTEGRATOR\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Campaign Managers\",\n                    \"code\": \"CAMPAIGN_MANAGER\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"System Administrator\",\n                    \"code\": \"SYSTEM_ADMINISTRATOR\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Boundary Manager\",\n                    \"code\": \"BOUNDARY_MANAGER\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Campaign Admin\",\n                    \"code\": \"CAMPAIGN_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Localisation admin\",\n                    \"code\": \"LOC_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Microplan Admin\",\n                    \"code\": \"MICROPLAN_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"HRMS Admin\",\n                    \"code\": \"HRMS_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"MDMS ADMIN\",\n                    \"code\": \"MDMS_ADMIN\",\n                    \"tenantId\": \"dev\"\n                }\n            ],\n            \"active\": true,\n            \"tenantId\": \"dev\",\n            \"permanentCity\": null\n        },\n        \"msgId\": \"1736315960889|en_IN\",\n        \"plainAccessRequest\": {}\n    }\n}"
+						},
+						"url": {
+							"raw": "{{URL}}/mdms-v2/v2/_create/HCM-PROJECT-TYPES.projectTypes",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"mdms-v2",
+								"v2",
+								"_create",
+								"HCM-PROJECT-TYPES.projectTypes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search allAttributes data",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"RequestInfo\": {\n    \"apiId\": \"asset-services\",\n    \"ver\": null,\n    \"ts\": null,\n    \"action\": null,\n    \"did\": null,\n    \"key\": null,\n    \"msgId\": \"search with from and to values\",\n    \"authToken\":  \"e8121069-fb83-4d53-bb26-4ab7469546b8\",\n    \"correlationId\": null,\n    \"userInfo\": {\n      \"id\": \"1\",\n      \"userName\": null,\n      \"name\": null,\n      \"type\": null,\n      \"mobileNumber\": null,\n      \"emailId\": null,\n      \"roles\": null\n    }\n  },\n  \"MdmsCriteria\": {\n    \"tenantId\": \"mz\",\n    \"schemaCode\": \"HCM-ADMIN-CONSOLE.allAttributes\"\n    \n    \n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{mdmsHost}}/mdms-v2/v2/_search",
+							"host": [
+								"{{mdmsHost}}"
+							],
+							"path": [
+								"mdms-v2",
+								"v2",
+								"_search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HCM-ADMIN-CONSOLE.allAttributes data height",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga_H9YC8FEN6F=GS1.1.1703060128.1.1.1703060157.31.0.0; _ga_2E44ZSYXS7=GS1.1.1706788467.6.0.1706788467.0.0.0; _ga_0JZG96DZSM=GS1.1.1707896872.4.1.1707896889.43.0.0; amp_fef1e8=be028001-abe2-4879-ad17-f2999e099b9fR...1hmj9c8kb.1hmj9go83.27.g.2n; __cuid=7cd138a8619b4572a249bbec4504612f; _ga_XBQP06FR8V=GS1.1.1709707277.6.0.1709707277.60.0.0; _ga=GA1.1.1275395426.1703060110; _ga_P1TZCPKF6S=GS1.1.1711451018.1.1.1711451049.29.0.0"
+							},
+							{
+								"key": "origin",
+								"value": "https://unified-dev.digit.org"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://unified-dev.digit.org/workbench-ui/employee/workbench/mdms-add-v2?moduleName=HCM&masterName=BACKEND_INTERFACE"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Linux\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Mdms\": {\n        \"id\": \"600f3003-fdaa-4c14-86dd-c5f79dc69baa\",\n        \"tenantId\": \"mz\",\n        \"schemaCode\": \"HCM-ADMIN-CONSOLE.allAttributes\",\n        \"uniqueIdentifier\": \"height\",\n        \"data\": {\n            \"key\": 4,\n            \"code\": \"height\",\n            \"i18nKey\": \"CAMPAIGN_ATTRIBUTE_HEIGHT\",\n            \"projectTypes\": [\n                \"DEFAULT\",\n                \"MR-DN\",\n                \"NTD\",\n                \"{{projectTypeCode}}\"\n            ]\n        },\n        \"isActive\": true,\n        \"auditDetails\": {\n            \"createdBy\": \"db842ca9-25c5-4419-a72f-459443d38feb\",\n            \"lastModifiedBy\": \"db842ca9-25c5-4419-a72f-459443d38feb\",\n            \"createdTime\": 1736411674830,\n            \"lastModifiedTime\": 1736411674830\n        }\n    },\n    \"RequestInfo\": {\n        \"apiId\": \"asset-services\",\n        \"ver\": null,\n        \"ts\": null,\n        \"action\": null,\n        \"did\": null,\n        \"key\": null,\n        \"msgId\": \"search with from and to values\",\n        \"authToken\": \"e8121069-fb83-4d53-bb26-4ab7469546b8\",\n        \"correlationId\": null,\n        \"userInfo\": {\n            \"id\": \"1\",\n            \"userName\": null,\n            \"name\": null,\n            \"type\": null,\n            \"mobileNumber\": null,\n            \"emailId\": null,\n            \"roles\": null,\n            \"uuid\": \"db842ca9-25c5-4419-a72f-459443d38feb\"\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{mdmsHost}}/mdms-v2/v2/_update/HCM-ADMIN-CONSOLE.allAttributes ",
+							"host": [
+								"{{mdmsHost}}"
+							],
+							"path": [
+								"mdms-v2",
+								"v2",
+								"_update",
+								"HCM-ADMIN-CONSOLE.allAttributes "
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HCM-ADMIN-CONSOLE.allAttributes data memberCount",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga_H9YC8FEN6F=GS1.1.1703060128.1.1.1703060157.31.0.0; _ga_2E44ZSYXS7=GS1.1.1706788467.6.0.1706788467.0.0.0; _ga_0JZG96DZSM=GS1.1.1707896872.4.1.1707896889.43.0.0; amp_fef1e8=be028001-abe2-4879-ad17-f2999e099b9fR...1hmj9c8kb.1hmj9go83.27.g.2n; __cuid=7cd138a8619b4572a249bbec4504612f; _ga_XBQP06FR8V=GS1.1.1709707277.6.0.1709707277.60.0.0; _ga=GA1.1.1275395426.1703060110; _ga_P1TZCPKF6S=GS1.1.1711451018.1.1.1711451049.29.0.0"
+							},
+							{
+								"key": "origin",
+								"value": "https://unified-dev.digit.org"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://unified-dev.digit.org/workbench-ui/employee/workbench/mdms-add-v2?moduleName=HCM&masterName=BACKEND_INTERFACE"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Linux\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Mdms\": {\n        \"id\": \"f0f1c893-3f93-43ac-a18d-6f52b757b29c\",\n        \"tenantId\": \"dev\",\n        \"schemaCode\": \"HCM-ADMIN-CONSOLE.allAttributes\",\n        \"uniqueIdentifier\": \"memberCount\",\n        \"data\": {\n                \"key\": 1,\n                \"code\": \"memberCount\",\n                \"i18nKey\": \"CAMPAIGN_BEDNET_INDIVIDUAL_LABEL\",\n                \"projectTypes\": [\n                    \"LLIN-mz\",\n                    \"CO-DEL\"\n                ]\n            },\n        \"isActive\": true,\n        \"auditDetails\": {\n            \"createdBy\": \"db842ca9-25c5-4419-a72f-459443d38feb\",\n            \"lastModifiedBy\": \"db842ca9-25c5-4419-a72f-459443d38feb\",\n            \"createdTime\": 1736411674830,\n            \"lastModifiedTime\": 1736411674830\n        }\n    },\n    \"RequestInfo\": {\n        \"apiId\": \"asset-services\",\n        \"ver\": null,\n        \"ts\": null,\n        \"action\": null,\n        \"did\": null,\n        \"key\": null,\n        \"msgId\": \"search with from and to values\",\n        \"authToken\": \"\",\n        \"correlationId\": null,\n        \"userInfo\": {\n            \"id\": \"1\",\n            \"userName\": null,\n            \"name\": null,\n            \"type\": null,\n            \"mobileNumber\": null,\n            \"emailId\": null,\n            \"roles\": null,\n            \"uuid\": \"db842ca9-25c5-4419-a72f-459443d38feb\"\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{mdmsHost}}/egov-mdms-service/v2/_update/HCM-ADMIN-CONSOLE.allAttributes",
+							"host": [
+								"{{mdmsHost}}"
+							],
+							"path": [
+								"egov-mdms-service",
+								"v2",
+								"_update",
+								"HCM-ADMIN-CONSOLE.allAttributes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HCM-ADMIN-CONSOLE.allAttributes data type_of_structure",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga_H9YC8FEN6F=GS1.1.1703060128.1.1.1703060157.31.0.0; _ga_2E44ZSYXS7=GS1.1.1706788467.6.0.1706788467.0.0.0; _ga_0JZG96DZSM=GS1.1.1707896872.4.1.1707896889.43.0.0; amp_fef1e8=be028001-abe2-4879-ad17-f2999e099b9fR...1hmj9c8kb.1hmj9go83.27.g.2n; __cuid=7cd138a8619b4572a249bbec4504612f; _ga_XBQP06FR8V=GS1.1.1709707277.6.0.1709707277.60.0.0; _ga=GA1.1.1275395426.1703060110; _ga_P1TZCPKF6S=GS1.1.1711451018.1.1.1711451049.29.0.0"
+							},
+							{
+								"key": "origin",
+								"value": "https://unified-dev.digit.org"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://unified-dev.digit.org/workbench-ui/employee/workbench/mdms-add-v2?moduleName=HCM&masterName=BACKEND_INTERFACE"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Linux\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Mdms\": {\n        \"id\": \"f0f1c893-3f93-43ac-a18d-6f52b757b29c\",\n        \"tenantId\": \"dev\",\n        \"schemaCode\": \"HCM-ADMIN-CONSOLE.allAttributes\",\n        \"uniqueIdentifier\": \"type_of_structure\",\n        \"data\": {\n                \"key\": 2,\n                \"code\": \"type_of_structure\",\n                \"i18nKey\": \"TYPE_OF_STRUCTURE\",\n                \"projectTypes\": [\n                    \"CO-DEL\",\n                    \"IRS-mz\"\n                ],\n                \"valuesSchema\": \"HCM.HOUSE_STRUCTURE_TYPES\",\n                \"allowedOperators\": [\n                    \"EQUAL_TO\"\n                ]\n            },\n        \"isActive\": true,\n        \"auditDetails\": {\n            \"createdBy\": \"db842ca9-25c5-4419-a72f-459443d38feb\",\n            \"lastModifiedBy\": \"db842ca9-25c5-4419-a72f-459443d38feb\",\n            \"createdTime\": 1736411674830,\n            \"lastModifiedTime\": 1736411674830\n        }\n    },\n    \"RequestInfo\": {\n        \"apiId\": \"asset-services\",\n        \"ver\": null,\n        \"ts\": null,\n        \"action\": null,\n        \"did\": null,\n        \"key\": null,\n        \"msgId\": \"search with from and to values\",\n        \"authToken\": \"\",\n        \"correlationId\": null,\n        \"userInfo\": {\n            \"id\": \"1\",\n            \"userName\": null,\n            \"name\": null,\n            \"type\": null,\n            \"mobileNumber\": null,\n            \"emailId\": null,\n            \"roles\": null,\n            \"uuid\": \"db842ca9-25c5-4419-a72f-459443d38feb\"\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{mdmsHost}}/egov-mdms-service/v2/_update/HCM-ADMIN-CONSOLE.allAttributes",
+							"host": [
+								"{{mdmsHost}}"
+							],
+							"path": [
+								"egov-mdms-service",
+								"v2",
+								"_update",
+								"HCM-ADMIN-CONSOLE.allAttributes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HCM-ADMIN-CONSOLE.allAttributes data age",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga_H9YC8FEN6F=GS1.1.1703060128.1.1.1703060157.31.0.0; _ga_2E44ZSYXS7=GS1.1.1706788467.6.0.1706788467.0.0.0; _ga_0JZG96DZSM=GS1.1.1707896872.4.1.1707896889.43.0.0; amp_fef1e8=be028001-abe2-4879-ad17-f2999e099b9fR...1hmj9c8kb.1hmj9go83.27.g.2n; __cuid=7cd138a8619b4572a249bbec4504612f; _ga_XBQP06FR8V=GS1.1.1709707277.6.0.1709707277.60.0.0; _ga=GA1.1.1275395426.1703060110; _ga_P1TZCPKF6S=GS1.1.1711451018.1.1.1711451049.29.0.0"
+							},
+							{
+								"key": "origin",
+								"value": "https://unified-dev.digit.org"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://unified-dev.digit.org/workbench-ui/employee/workbench/mdms-add-v2?moduleName=HCM&masterName=BACKEND_INTERFACE"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Linux\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Mdms\": {\n        \"id\": \"bb8ca065-e406-43b0-9a47-5a744a64386d\",\n        \"tenantId\": \"mz\",\n        \"schemaCode\": \"HCM-ADMIN-CONSOLE.allAttributes\",\n        \"uniqueIdentifier\": \"age\",\n        \"data\": {\n                \"key\": 3,\n                \"code\": \"age\",\n                \"i18nKey\": \"CAMPAIGN_ATTRIBUTE_AGE\",\n                \"projectTypes\": [\n                    \"CO-DEL\",\n                    \"MR-DN\",\n                    \"{{projectTypeCode}}\"\n                ]\n            },\n/////\n\n\n\n/////\n\n        \"isActive\": true,\n        \"auditDetails\": {\n            \"createdBy\": \"db842ca9-25c5-4419-a72f-459443d38feb\",\n            \"lastModifiedBy\": \"db842ca9-25c5-4419-a72f-459443d38feb\",\n            \"createdTime\": 1736411674830,\n            \"lastModifiedTime\": 1736411674830\n        }\n    },\n    \"RequestInfo\": {\n        \"apiId\": \"asset-services\",\n        \"ver\": null,\n        \"ts\": null,\n        \"action\": null,\n        \"did\": null,\n        \"key\": null,\n        \"msgId\": \"search with from and to values\",\n        \"authToken\": \"\",\n        \"correlationId\": null,\n        \"userInfo\": {\n            \"id\": \"1\",\n            \"userName\": null,\n            \"name\": null,\n            \"type\": null,\n            \"mobileNumber\": null,\n            \"emailId\": null,\n            \"roles\": null,\n            \"uuid\": \"db842ca9-25c5-4419-a72f-459443d38feb\"\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{mdmsHost}}/mdms-v2/v2/_update/HCM-ADMIN-CONSOLE.allAttributes",
+							"host": [
+								"{{mdmsHost}}"
+							],
+							"path": [
+								"mdms-v2",
+								"v2",
+								"_update",
+								"HCM-ADMIN-CONSOLE.allAttributes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HCM-ADMIN-CONSOLE.allAttributes data weight",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga_H9YC8FEN6F=GS1.1.1703060128.1.1.1703060157.31.0.0; _ga_2E44ZSYXS7=GS1.1.1706788467.6.0.1706788467.0.0.0; _ga_0JZG96DZSM=GS1.1.1707896872.4.1.1707896889.43.0.0; amp_fef1e8=be028001-abe2-4879-ad17-f2999e099b9fR...1hmj9c8kb.1hmj9go83.27.g.2n; __cuid=7cd138a8619b4572a249bbec4504612f; _ga_XBQP06FR8V=GS1.1.1709707277.6.0.1709707277.60.0.0; _ga=GA1.1.1275395426.1703060110; _ga_P1TZCPKF6S=GS1.1.1711451018.1.1.1711451049.29.0.0"
+							},
+							{
+								"key": "origin",
+								"value": "https://unified-dev.digit.org"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://unified-dev.digit.org/workbench-ui/employee/workbench/mdms-add-v2?moduleName=HCM&masterName=BACKEND_INTERFACE"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Linux\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Mdms\": {\n        \"id\": \"f0f1c893-3f93-43ac-a18d-6f52b757b29c\",\n        \"tenantId\": \"dev\",\n        \"schemaCode\": \"HCM-ADMIN-CONSOLE.allAttributes\",\n        \"uniqueIdentifier\": \"weight\",\n        \"data\": {\n                \"key\": 5,\n                \"code\": \"weight\",\n                \"i18nKey\": \"CAMPAIGN_ATTRIBUTE_WEIGHT\",\n                \"projectTypes\": [\n                    \"CO-DEL\",\n                    \"MR-DN\"\n                ]\n            },\n        \"isActive\": true,\n        \"auditDetails\": {\n            \"createdBy\": \"db842ca9-25c5-4419-a72f-459443d38feb\",\n            \"lastModifiedBy\": \"db842ca9-25c5-4419-a72f-459443d38feb\",\n            \"createdTime\": 1736411674830,\n            \"lastModifiedTime\": 1736411674830\n        }\n    },\n    \"RequestInfo\": {\n        \"apiId\": \"asset-services\",\n        \"ver\": null,\n        \"ts\": null,\n        \"action\": null,\n        \"did\": null,\n        \"key\": null,\n        \"msgId\": \"search with from and to values\",\n        \"authToken\": \"\",\n        \"correlationId\": null,\n        \"userInfo\": {\n            \"id\": \"1\",\n            \"userName\": null,\n            \"name\": null,\n            \"type\": null,\n            \"mobileNumber\": null,\n            \"emailId\": null,\n            \"roles\": null,\n            \"uuid\": \"db842ca9-25c5-4419-a72f-459443d38feb\"\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{mdmsHost}}/egov-mdms-service/v2/_update/HCM-ADMIN-CONSOLE.allAttributes",
+							"host": [
+								"{{mdmsHost}}"
+							],
+							"path": [
+								"egov-mdms-service",
+								"v2",
+								"_update",
+								"HCM-ADMIN-CONSOLE.allAttributes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "HCM-ADMIN-CONSOLE.allAttributes data gender",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-GB,en-US;q=0.9,en;q=0.8"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga_H9YC8FEN6F=GS1.1.1703060128.1.1.1703060157.31.0.0; _ga_2E44ZSYXS7=GS1.1.1706788467.6.0.1706788467.0.0.0; _ga_0JZG96DZSM=GS1.1.1707896872.4.1.1707896889.43.0.0; amp_fef1e8=be028001-abe2-4879-ad17-f2999e099b9fR...1hmj9c8kb.1hmj9go83.27.g.2n; __cuid=7cd138a8619b4572a249bbec4504612f; _ga_XBQP06FR8V=GS1.1.1709707277.6.0.1709707277.60.0.0; _ga=GA1.1.1275395426.1703060110; _ga_P1TZCPKF6S=GS1.1.1711451018.1.1.1711451049.29.0.0"
+							},
+							{
+								"key": "origin",
+								"value": "https://unified-dev.digit.org"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://unified-dev.digit.org/workbench-ui/employee/workbench/mdms-add-v2?moduleName=HCM&masterName=BACKEND_INTERFACE"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Linux\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Mdms\": {\n        \"id\": \"f0f1c893-3f93-43ac-a18d-6f52b757b29c\",\n        \"tenantId\": \"dev\",\n        \"schemaCode\": \"HCM-ADMIN-CONSOLE.allAttributes\",\n        \"uniqueIdentifier\": \"gender\",\n        \"data\": {\n                \"key\": 6,\n                \"code\": \"gender\",\n                \"i18nKey\": \"CAMPAIGN_ATTRIBUTE_GENDER\",\n                \"projectTypes\": [\n                    \"CO-DEL\",\n                    \"MR-DN\"\n                ],\n                \"valuesSchema\": \"common-masters.GenderType\",\n                \"allowedOperators\": [\n                    \"EQUAL_TO\"\n                ]\n            },\n        \"isActive\": true,\n        \"auditDetails\": {\n            \"createdBy\": \"db842ca9-25c5-4419-a72f-459443d38feb\",\n            \"lastModifiedBy\": \"db842ca9-25c5-4419-a72f-459443d38feb\",\n            \"createdTime\": 1736411674830,\n            \"lastModifiedTime\": 1736411674830\n        }\n    },\n    \"RequestInfo\": {\n        \"apiId\": \"asset-services\",\n        \"ver\": null,\n        \"ts\": null,\n        \"action\": null,\n        \"did\": null,\n        \"key\": null,\n        \"msgId\": \"search with from and to values\",\n        \"authToken\": \"\",\n        \"correlationId\": null,\n        \"userInfo\": {\n            \"id\": \"1\",\n            \"userName\": null,\n            \"name\": null,\n            \"type\": null,\n            \"mobileNumber\": null,\n            \"emailId\": null,\n            \"roles\": null,\n            \"uuid\": \"db842ca9-25c5-4419-a72f-459443d38feb\"\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{mdmsHost}}/egov-mdms-service/v2/_update/HCM-ADMIN-CONSOLE.allAttributes",
+							"host": [
+								"{{mdmsHost}}"
+							],
+							"path": [
+								"egov-mdms-service",
+								"v2",
+								"_update",
+								"HCM-ADMIN-CONSOLE.allAttributes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "adminSchema boundary.NTD",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga_V2CPZCVTXQ=GS1.1.1729149085.1.0.1729149086.0.0.0; _ga=GA1.1.1624723770.1722921569; _ga_H9YC8FEN6F=GS1.1.1736165727.14.1.1736165743.44.0.0; _ga_3LN58ZJ5KN=GS1.1.1736411836.155.1.1736415011.40.0.0; _ga_4FTREDCS0G=GS1.1.1736411836.155.1.1736415011.0.0.0; _ga_FS7DJ7SGKL=GS1.1.1736411836.155.1.1736415011.0.0.0; _ga_EHCDQF6VQ5=GS1.1.1736411836.155.1.1736415011.0.0.0"
+							},
+							{
+								"key": "origin",
+								"value": "https://unified-dev.digit.org"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://unified-dev.digit.org/workbench-ui/employee/workbench/mdms-edit?moduleName=HCM-ADMIN-CONSOLE&masterName=adminSchema&uniqueIdentifier=boundary.MR-DN"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Linux\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Mdms\": {\n        \"id\": \"925093c7-4f02-4baf-8af3-43b7f153ae7e\",\n            \"tenantId\": \"mz\",\n            \"schemaCode\": \"HCM-ADMIN-CONSOLE.adminSchema\",\n            \"uniqueIdentifier\": \"boundary.{{projectTypeCode}}\",\n        \"data\": {\n            \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n            \"properties\": {\n                \"numberProperties\": [\n                    {\n                        \"name\": \"HCM_ADMIN_CONSOLE_TARGET_{{projectTypeCode}}_COLUUM_1\",\n                        \"type\": \"number\",\n                        \"isRequired\": true,\n                        \"description\": \"Total Households\",\n                        \"orderNumber\": 2\n                    },\n                    {\n                        \"name\": \"HCM_ADMIN_CONSOLE_TARGET_{{projectTypeCode}}_COLUUM_2\",\n                        \"type\": \"number\",\n                        \"isRequired\": false,\n                        \"description\": \"Total Households\",\n                        \"orderNumber\": 3\n                    },\n                    {\n                        \"name\": \"HCM_ADMIN_CONSOLE_TARGET_{{projectTypeCode}}_COLUUM_3\",\n                        \"type\": \"number\",\n                        \"isRequired\": false,\n                        \"description\": \"Number of Tablets\",\n                        \"orderNumber\": 4\n                    }\n                ],\n                \"stringProperties\": [\n                    {\n                        \"name\": \"HCM_ADMIN_CONSOLE_BOUNDARY_CODE\",\n                        \"type\": \"string\",\n                        \"isRequired\": true,\n                        \"description\": \"Boundary Code\",\n                        \"orderNumber\": 1,\n                        \"freezeColumn\": true\n                    }\n                ]\n            },\n            \"title\": \"boundary\",\n            \"campaignType\": \"{{projectTypeCode}}\"\n        },\n        \"isActive\": true,\n        \"auditDetails\": {\n            \"createdBy\": \"8b110055-330f-4e7b-b4c0-f618f29b9d47\",\n            \"lastModifiedBy\": \"f4e90853-80b7-47cc-91e7-f8cd5ec00e20\",\n            \"createdTime\": 1717754601229,\n            \"lastModifiedTime\": 1735019015162\n        }\n    },\n    \"RequestInfo\": {\n        \"apiId\": \"Rainmaker\",\n        \"authToken\": \"70736ba6-03db-47ba-afd0-f76eec8c5e0c\",\n        \"userInfo\": {\n            \"id\": 10476,\n            \"uuid\": \"f4e90853-80b7-47cc-91e7-f8cd5ec00e20\",\n            \"userName\": \"CONSOLE\",\n            \"name\": \"Jagankumar\",\n            \"mobileNumber\": \"9994100121\",\n            \"emailId\": \"raj@gmail.com\",\n            \"locale\": null,\n            \"type\": \"EMPLOYEE\",\n            \"roles\": [\n                {\n                    \"name\": \"Microplan Campaign integrator\",\n                    \"code\": \"MICROPLAN_CAMPAIGN_INTEGRATOR\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Campaign Managers\",\n                    \"code\": \"CAMPAIGN_MANAGER\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"System Administrator\",\n                    \"code\": \"SYSTEM_ADMINISTRATOR\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Boundary Manager\",\n                    \"code\": \"BOUNDARY_MANAGER\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Campaign Admin\",\n                    \"code\": \"CAMPAIGN_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Localisation admin\",\n                    \"code\": \"LOC_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Microplan Admin\",\n                    \"code\": \"MICROPLAN_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"HRMS Admin\",\n                    \"code\": \"HRMS_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"MDMS ADMIN\",\n                    \"code\": \"MDMS_ADMIN\",\n                    \"tenantId\": \"dev\"\n                }\n            ],\n            \"active\": true,\n            \"tenantId\": \"dev\",\n            \"permanentCity\": null\n        },\n        \"msgId\": \"1736415012312|en_IN\",\n        \"plainAccessRequest\": {}\n    }\n}"
+						},
+						"url": {
+							"raw": "{{mdmsHost}}/mdms-v2/v2/_create/HCM-ADMIN-CONSOLE.adminSchema",
+							"host": [
+								"{{mdmsHost}}"
+							],
+							"path": [
+								"mdms-v2",
+								"v2",
+								"_create",
+								"HCM-ADMIN-CONSOLE.adminSchema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "adminSchema boundaryWithTarget.NTD",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga_V2CPZCVTXQ=GS1.1.1729149085.1.0.1729149086.0.0.0; _ga=GA1.1.1624723770.1722921569; _ga_H9YC8FEN6F=GS1.1.1736165727.14.1.1736165743.44.0.0; _ga_3LN58ZJ5KN=GS1.1.1736411836.155.1.1736416717.42.0.0; _ga_4FTREDCS0G=GS1.1.1736411836.155.1.1736416717.0.0.0; _ga_FS7DJ7SGKL=GS1.1.1736411836.155.1.1736416717.0.0.0; _ga_EHCDQF6VQ5=GS1.1.1736411836.155.1.1736416717.0.0.0"
+							},
+							{
+								"key": "origin",
+								"value": "https://unified-dev.digit.org"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://unified-dev.digit.org/workbench-ui/employee/workbench/mdms-edit?moduleName=HCM-ADMIN-CONSOLE&masterName=adminSchema&uniqueIdentifier=boundaryWithTarget.MR-DN"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Linux\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Mdms\": {\n        \"id\": \"18a34443-fd99-4ca0-a71d-a259b99e72ca\",\n            \"tenantId\": \"mz\",\n            \"schemaCode\": \"HCM-ADMIN-CONSOLE.adminSchema\",\n            \"uniqueIdentifier\": \"boundaryWithTarget.{{projectTypeCode}}\",\n        \"data\": {\n            \"$schema\": \"http://json-schema.org/draft-07/schema#\",\n            \"properties\": {\n                \"numberProperties\": [\n                    {\n                        \"name\": \"HCM_ADMIN_CONSOLE_TARGET_{{projectTypeCode}}_COLUUM_1\",\n                        \"type\": \"number\",\n                        \"maximum\": 100000000,\n                        \"minimum\": 0,\n                        \"isRequired\": true,\n                        \"multipleOf\": 1,\n                        \"description\": \"Total Households\",\n                        \"orderNumber\": 4\n                    },\n                    {\n                        \"name\": \"HCM_ADMIN_CONSOLE_TARGET_{{projectTypeCode}}_COLUUM_2\",\n                        \"type\": \"number\",\n                        \"maximum\": 100000000,\n                        \"minimum\": 0,\n                        \"isRequired\": false,\n                        \"multipleOf\": 1,\n                        \"description\": \"Total Households\",\n                        \"orderNumber\": 4\n                    },\n                    {\n                        \"name\": \"HCM_ADMIN_CONSOLE_TARGET_{{projectTypeCode}}_COLUUM_3\",\n                        \"type\": \"number\",\n                        \"maximum\": 100000000,\n                        \"minimum\": 0,\n                        \"isRequired\": false,\n                        \"multipleOf\": 1,\n                        \"description\": \"Number of Tablets\",\n                        \"orderNumber\": 5\n                    }\n                ],\n                \"stringProperties\": [\n                    {\n                        \"name\": \"HCM_ADMIN_CONSOLE_BOUNDARY_CODE\",\n                        \"type\": \"string\",\n                        \"isRequired\": true,\n                        \"description\": \"Boundary Code\",\n                        \"orderNumber\": 1,\n                        \"freezeColumn\": true\n                    }\n                ]\n            },\n            \"title\": \"boundaryWithTarget\",\n            \"campaignType\": \"{{projectTypeCode}}\"\n        },\n        \"isActive\": true,\n        \"auditDetails\": {\n            \"createdBy\": \"8b110055-330f-4e7b-b4c0-f618f29b9d47\",\n            \"lastModifiedBy\": \"f4e90853-80b7-47cc-91e7-f8cd5ec00e20\",\n            \"createdTime\": 1717754627229,\n            \"lastModifiedTime\": 1735019896762\n        }\n    },\n    \"RequestInfo\": {\n        \"apiId\": \"Rainmaker\",\n        \"authToken\": \"70736ba6-03db-47ba-afd0-f76eec8c5e0c\",\n        \"userInfo\": {\n            \"id\": 10476,\n            \"uuid\": \"f4e90853-80b7-47cc-91e7-f8cd5ec00e20\",\n            \"userName\": \"CONSOLE\",\n            \"name\": \"Jagankumar\",\n            \"mobileNumber\": \"9994100121\",\n            \"emailId\": \"raj@gmail.com\",\n            \"locale\": null,\n            \"type\": \"EMPLOYEE\",\n            \"roles\": [\n                {\n                    \"name\": \"Microplan Campaign integrator\",\n                    \"code\": \"MICROPLAN_CAMPAIGN_INTEGRATOR\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Campaign Managers\",\n                    \"code\": \"CAMPAIGN_MANAGER\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"System Administrator\",\n                    \"code\": \"SYSTEM_ADMINISTRATOR\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Boundary Manager\",\n                    \"code\": \"BOUNDARY_MANAGER\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Campaign Admin\",\n                    \"code\": \"CAMPAIGN_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Localisation admin\",\n                    \"code\": \"LOC_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Microplan Admin\",\n                    \"code\": \"MICROPLAN_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"HRMS Admin\",\n                    \"code\": \"HRMS_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"MDMS ADMIN\",\n                    \"code\": \"MDMS_ADMIN\",\n                    \"tenantId\": \"dev\"\n                }\n            ],\n            \"active\": true,\n            \"tenantId\": \"dev\",\n            \"permanentCity\": null\n        },\n        \"msgId\": \"1736416717437|en_IN\",\n        \"plainAccessRequest\": {}\n    }\n}"
+						},
+						"url": {
+							"raw": "{{mdmsHost}}/mdms-v2/v2/_create/HCM-ADMIN-CONSOLE.adminSchema",
+							"host": [
+								"{{mdmsHost}}"
+							],
+							"path": [
+								"mdms-v2",
+								"v2",
+								"_create",
+								"HCM-ADMIN-CONSOLE.adminSchema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "targetConfig",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga_V2CPZCVTXQ=GS1.1.1729149085.1.0.1729149086.0.0.0; _ga=GA1.1.1624723770.1722921569; _ga_H9YC8FEN6F=GS1.1.1736165727.14.1.1736165743.44.0.0; _ga_3LN58ZJ5KN=GS1.1.1736411836.155.1.1736416717.42.0.0; _ga_4FTREDCS0G=GS1.1.1736411836.155.1.1736416717.0.0.0; _ga_FS7DJ7SGKL=GS1.1.1736411836.155.1.1736416717.0.0.0; _ga_EHCDQF6VQ5=GS1.1.1736411836.155.1.1736416717.0.0.0"
+							},
+							{
+								"key": "origin",
+								"value": "https://unified-dev.digit.org"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://unified-dev.digit.org/workbench-ui/employee/workbench/mdms-edit?moduleName=HCM-ADMIN-CONSOLE&masterName=adminSchema&uniqueIdentifier=boundaryWithTarget.MR-DN"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Linux\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Mdms\": {\n        \"id\": \"18a34443-fd99-4ca0-a71d-a259b99e72ca\",\n        \"tenantId\": \"mz\",\n        \"schemaCode\": \"HCM-ADMIN-CONSOLE.targetConfigs\",\n        // \"uniqueIdentifier\": \"boundaryWithTarget.{{projectTypeCode}}\",\n        \"data\": {\n            \"campaignType\": \"{{projectTypeCode}}\",\n            \"beneficiaries\": [\n                {\n                    \"columns\": [\n                        \"HCM_ADMIN_CONSOLE_TARGET_{{projectTypeCode}}_COLUUM_1\",\n                        \"HCM_ADMIN_CONSOLE_TARGET_{{projectTypeCode}}_COLUUM_2\"\n                    ],\n                    \"beneficiaryType\": \"HOUSEHOLD\"\n                },\n                {\n                    \"columns\": [\n                        \"HCM_ADMIN_CONSOLE_TARGET_{{projectTypeCode}}_COLUUM_3\"\n                    ],\n                    \"beneficiaryType\": \"PRODUCT\"\n                }\n            ]\n        },\n        \"isActive\": true,\n        \"auditDetails\": {\n            \"createdBy\": \"8b110055-330f-4e7b-b4c0-f618f29b9d47\",\n            \"lastModifiedBy\": \"f4e90853-80b7-47cc-91e7-f8cd5ec00e20\",\n            \"createdTime\": 1717754627229,\n            \"lastModifiedTime\": 1735019896762\n        }\n    },\n    \"RequestInfo\": {\n        \"apiId\": \"Rainmaker\",\n        \"authToken\": \"70736ba6-03db-47ba-afd0-f76eec8c5e0c\",\n        \"userInfo\": {\n            \"id\": 10476,\n            \"uuid\": \"f4e90853-80b7-47cc-91e7-f8cd5ec00e20\",\n            \"userName\": \"CONSOLE\",\n            \"name\": \"Jagankumar\",\n            \"mobileNumber\": \"9994100121\",\n            \"emailId\": \"raj@gmail.com\",\n            \"locale\": null,\n            \"type\": \"EMPLOYEE\",\n            \"roles\": [\n                {\n                    \"name\": \"Microplan Campaign integrator\",\n                    \"code\": \"MICROPLAN_CAMPAIGN_INTEGRATOR\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Campaign Managers\",\n                    \"code\": \"CAMPAIGN_MANAGER\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"System Administrator\",\n                    \"code\": \"SYSTEM_ADMINISTRATOR\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Boundary Manager\",\n                    \"code\": \"BOUNDARY_MANAGER\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Campaign Admin\",\n                    \"code\": \"CAMPAIGN_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Localisation admin\",\n                    \"code\": \"LOC_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"Microplan Admin\",\n                    \"code\": \"MICROPLAN_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"HRMS Admin\",\n                    \"code\": \"HRMS_ADMIN\",\n                    \"tenantId\": \"dev\"\n                },\n                {\n                    \"name\": \"MDMS ADMIN\",\n                    \"code\": \"MDMS_ADMIN\",\n                    \"tenantId\": \"dev\"\n                }\n            ],\n            \"active\": true,\n            \"tenantId\": \"dev\",\n            \"permanentCity\": null\n        },\n        \"msgId\": \"1736416717437|en_IN\",\n        \"plainAccessRequest\": {}\n    }\n}"
+						},
+						"url": {
+							"raw": "{{mdmsHost}}/mdms-v2/v2/_create/HCM-ADMIN-CONSOLE.targetConfigs",
+							"host": [
+								"{{mdmsHost}}"
+							],
+							"path": [
+								"mdms-v2",
+								"v2",
+								"_create",
+								"HCM-ADMIN-CONSOLE.targetConfigs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Localization",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"tenantId\": \"mz\",\n    \"locale\": \"{{locale}}\",\n    \"module\": \"hcm-campaignmanager\",\n    \"messages\": [\n        {\n            \"code\": \"CAMPAIGN_CYCLE_CONFIGURE_HEADING_{{projectTypeCode}}\",\n            \"message\": \"Configuration for {{projectTypeCode1}} Campaign\",\n            \"module\": \"hcm-campaignmanager\",\n            \"locale\": \"{{locale}}\"\n        },\n        {\n            \"code\": \"CAMPAIGN_PROJECT_{{projectTypeCode}}\",\n            \"message\": \"{{projectTypeCode1}} Campaign\",\n            \"module\": \"hcm-campaignmanager\",\n            \"locale\": \"{{locale}}\"\n        },\n        {\n            \"code\": \"CAMPAIGN_DELIVERY_TAB_SUB_TEXT_{{projectTypeCode}}\",\n            \"message\": \"Configure delivery condition for {{projectTypeCode1}} Campaign\",\n            \"module\": \"hcm-campaignmanager\",\n            \"locale\": \"{{locale}}\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{localisationHost}}/localization/messages/v1/_upsert",
+							"host": [
+								"{{localisationHost}}"
+							],
+							"path": [
+								"localization",
+								"messages",
+								"v1",
+								"_upsert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Localization II",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"tenantId\": \"mz\",\n    \"locale\": \"{{locale}}\",\n    \"module\": \"hcm-campaignmanager\",\n    \"messages\": [\n        {\n            \"code\": \"HCM_ADMIN_CONSOLE_TARGET_{{projectTypeCode}}_COLUUM_1\",\n            \"message\": \"Column 1\",\n            \"module\": \"hcm-admin-schemas\",\n            \"locale\": \"{{locale}}\"\n        },\n        {\n            \"code\": \"HCM_ADMIN_CONSOLE_TARGET_{{projectTypeCode}}_COLUUM_2\",\n            \"message\": \"Column 2\",\n            \"module\": \"hcm-admin-schemas\",\n            \"locale\": \"{{locale}}\"\n        },\n        {\n            \"code\": \"HCM_ADMIN_CONSOLE_TARGET_{{projectTypeCode}}_COLUUM_3\",\n            \"message\": \"Column 3\",\n            \"module\": \"hcm-admin-schemas\",\n            \"locale\": \"{{locale}}\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{localisationHost}}/localization/messages/v1/_upsert",
+							"host": [
+								"{{localisationHost}}"
+							],
+							"path": [
+								"localization",
+								"messages",
+								"v1",
+								"_upsert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Localization III",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"tenantId\": \"mz\",\n    \"locale\": \"{{locale}}\",\n    \"module\": \"hcm-campaignmanager\",\n    \"messages\": [\n        {\n            \"code\": \"{{projectTypeCode}}_DELIVER_INTERVENTION_DELIVERY_DETAILS_LABEL_ADMINISTRATION_SUCCESS\",\n            \"message\": \"Delivery Details\",\n            \"module\": \"hcm-delivery\",\n            \"locale\": \"{{locale}}\"\n        },\n        {\n            \"code\": \"{{projectTypeCode}}_TYPE_OF_RESOURCE_USED\",\n            \"message\": \"Resources used : Quantity distributed\",\n            \"module\": \"hcm-delivery\",\n            \"locale\": \"{{locale}}\"\n        }\n    ]\n}"
+						},
+						"url": {
+							"raw": "{{localisationHost}}/localization/messages/v1/_upsert",
+							"host": [
+								"{{localisationHost}}"
+							],
+							"path": [
+								"localization",
+								"messages",
+								"v1",
+								"_upsert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DISTRIBUTOR/WAREHOUSE",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "accept-language",
+								"value": "en-GB,en;q=0.9"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=UTF-8"
+							},
+							{
+								"key": "cookie",
+								"value": "_ga=GA1.1.983638805.1732104613; _ga_3LN58ZJ5KN=GS1.1.1732104613.1.1.1732107169.17.0.0; _ga_4FTREDCS0G=GS1.1.1732104613.1.1.1732107169.0.0.0; _ga_FS7DJ7SGKL=GS1.1.1732104613.1.1.1732107169.0.0.0; _ga_EHCDQF6VQ5=GS1.1.1732104613.1.1.1732107169.0.0.0"
+							},
+							{
+								"key": "origin",
+								"value": "https://unified-qa.digit.org"
+							},
+							{
+								"key": "priority",
+								"value": "u=1, i"
+							},
+							{
+								"key": "referer",
+								"value": "https://unified-qa.digit.org/workbench-ui/employee/workbench/mdms-add-v2?moduleName=HCM-ADMIN-CONSOLE&masterName=baseTimeOut"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Chromium\";v=\"130\", \"Google Chrome\";v=\"130\", \"Not?A_Brand\";v=\"99\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Linux\""
+							},
+							{
+								"key": "sec-fetch-dest",
+								"value": "empty"
+							},
+							{
+								"key": "sec-fetch-mode",
+								"value": "cors"
+							},
+							{
+								"key": "sec-fetch-site",
+								"value": "same-origin"
+							},
+							{
+								"key": "user-agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Mdms\": {\n        \"tenantId\": \"mz\",\n        \"schemaCode\": \"HCM-ADMIN-CONSOLE.ChecklistTemplates\",\n        \"uniqueIdentifier\": null,\n        \"data\": {\n            \"data\": [\n                {\n                    \"id\": \"2d4a7b1e-1f2f-4a8a-9672-43396c6c9a1c\",\n                    \"key\": 1,\n                    \"type\": {\n                        \"code\": \"SingleValueList\"\n                    },\n                    \"level\": 1,\n                    \"title\": \"Is there a feedback system for health facilities to report any issues or requests related to bednet distribution?\",\n                    \"value\": null,\n                    \"options\": [\n                        {\n                            \"id\": \"0cff9846-03a2-4453-bf0e-200cdda5f390\",\n                            \"key\": 1,\n                            \"label\": \"Shortages\",\n                            \"optionComment\": true,\n                            \"optionDependency\": false,\n                            \"parentQuestionId\": \"2d4a7b1e-1f2f-4a8a-9672-43396c6c9a1c\"\n                        },\n                        {\n                            \"id\": \"2d4a7b1e-7c0d-48b1-9d53-8601c6264b90\",\n                            \"key\": 2,\n                            \"label\": \"Quality complaints\",\n                            \"optionDependency\": false,\n                            \"parentQuestionId\": \"2d4a7b1e-1f2f-4a8a-9672-43396c6c9a1c\"\n                        }\n                    ],\n                    \"isActive\": true,\n                    \"parentId\": null,\n                    \"isRequired\": false\n                },\n                {\n                    \"id\": \"4add5323-fc98-4e71-a783-27dbb922c99f\",\n                    \"key\": 2,\n                    \"type\": {\n                        \"code\": \"SingleValueList\"\n                    },\n                    \"level\": 1,\n                    \"title\": \"What types of health facilities do you distribute to?\",\n                    \"value\": null,\n                    \"options\": [\n                        {\n                            \"id\": \"34eac43a-e0b5-428f-9d11-12fc5b10b1ac1\",\n                            \"key\": 1,\n                            \"label\": \"Hospitals\",\n                            \"optionComment\": false,\n                            \"optionDependency\": false,\n                            \"parentQuestionId\": \"4add5323-fc98-4e71-a783-27dbb922c99f\"\n                        },\n                        {\n                            \"id\": \"23ace43b-e0b5-428f-9d11-12fc5b10b1ac1\",\n                            \"key\": 2,\n                            \"label\": \"Clinics\",\n                            \"optionComment\": false,\n                            \"optionDependency\": true,\n                            \"parentQuestionId\": \"4add5323-fc98-4e71-a783-27dbb922c99f\"\n                        },\n                        {\n                            \"id\": \"32bbca43-db87-469b-8be4-22012cc22284\",\n                            \"key\": 3,\n                            \"label\": \"Community health centers\",\n                            \"optionDependency\": false,\n                            \"parentQuestionId\": \"4add5323-fc98-4e71-a783-27dbb922c99f\"\n                        }\n                    ],\n                    \"isActive\": true,\n                    \"parentId\": null,\n                    \"isRequired\": false\n                },\n                {\n                    \"id\": \"23ca54be-038e-42df-a557-bb5fcd374dd5\",\n                    \"key\": 3,\n                    \"type\": {\n                        \"code\": \"SingleValueList\"\n                    },\n                    \"level\": 1,\n                    \"title\": \"What services or products do you distribute to health facilities?\",\n                    \"value\": null,\n                    \"options\": [\n                        {\n                            \"id\": \"ea32bc56-038e-42df-a557-bb5fcd374dd5\",\n                            \"key\": 1,\n                            \"label\": \"Medical equipment\",\n                            \"optionComment\": false,\n                            \"optionDependency\": false,\n                            \"parentQuestionId\": \"23ca54be-038e-42df-a557-bb5fcd374dd5\"\n                        },\n                        {\n                            \"id\": \"a34vc429-d13f-4340-ae5e-fe7f8aca4212\",\n                            \"key\": 2,\n                            \"label\": \"Pharmaceuticals\",\n                            \"optionDependency\": false,\n                            \"parentQuestionId\": \"23ca54be-038e-42df-a557-bb5fcd374dd5\"\n                        },\n                        {\n                            \"id\": \"6c43b57c-d13f-4340-ae5e-fe7f8aca4212\",\n                            \"key\": 3,\n                            \"label\": \"Personal protective equipment (PPE)\",\n                            \"optionDependency\": false,\n                            \"parentQuestionId\": \"23ca54be-038e-42df-a557-bb5fcd374dd5\"\n                        }\n                    ],\n                    \"isActive\": true,\n                    \"parentId\": null,\n                    \"isRequired\": false\n                },\n                {\n                    \"id\": \"c65ac34b-7cc0-4993-a8fe-37e854d2b189\",\n                    \"key\": 4,\n                    \"type\": {\n                        \"code\": \"SingleValueList\"\n                    },\n                    \"level\": 2,\n                    \"title\": \"Do you have enough products for distribution to health facilities?\",\n                    \"value\": null,\n                    \"options\": [\n                        {\n                            \"id\": \"cb45ca84-7cc0-4993-a8fe-37e854d2b189\",\n                            \"key\": 1,\n                            \"label\": \"Yes\",\n                            \"optionDependency\": false,\n                            \"parentQuestionId\": \"c65ac34b-7cc0-4993-a8fe-37e854d2b189\"\n                        },\n                        {\n                            \"id\": \"a54c73cb-60da-4c51-8501-cf4a4f473a66\",\n                            \"key\": 2,\n                            \"label\": \"No\",\n                            \"optionComment\": true,\n                            \"optionDependency\": false,\n                            \"parentQuestionId\": \"c65ac34b-7cc0-4993-a8fe-37e854d2b189\"\n                        }\n                    ],\n                    \"isActive\": true,\n                    \"parentId\": \"23ace43b-e0b5-428f-9d11-12fc5b10b1ac1\",\n                    \"isRequired\": false\n                }\n            ],\n            \"role\": \"DISTRIBUTOR\",\n            \"campaignType\": \"{{projectTypeCode}}\",\n            \"checklistType\": \"WAREHOUSE\"\n        },\n        \"isActive\": true\n    },\n    \"RequestInfo\": {\n        \"apiId\": \"Rainmaker\",\n        \"authToken\": \"fa61b458-73bb-43e8-9466-dd2408f6a62a\",\n        \"userInfo\": {\n            \"id\": 17187,\n            \"uuid\": \"6cb73e04-9dcb-4dd7-8ceb-e6f836c7c4e7\",\n            \"userName\": \"LN2\",\n            \"name\": \"Lata Naik\",\n            \"mobileNumber\": \"8887005247\",\n            \"emailId\": \"raj@gmail.com\",\n            \"locale\": null,\n            \"type\": \"EMPLOYEE\",\n            \"roles\": [\n                {\n                    \"name\": \"System Administrator\",\n                    \"code\": \"SYSTEM_ADMINISTRATOR\",\n                    \"tenantId\": \"mz\"\n                },\n                {\n                    \"name\": \"MDMS Admin\",\n                    \"code\": \"MDMS_ADMIN\",\n                    \"tenantId\": \"mz\"\n                },\n                {\n                    \"name\": \"HRMS Admin\",\n                    \"code\": \"HRMS_ADMIN\",\n                    \"tenantId\": \"mz\"\n                },\n                {\n                    \"name\": \"HELPDESK USER\",\n                    \"code\": \"HELPDESK_USER\",\n                    \"tenantId\": \"mz\"\n                },\n                {\n                    \"name\": \"Microplan Campaign integrator\",\n                    \"code\": \"MICROPLAN_CAMPAIGN_INTEGRATOR\",\n                    \"tenantId\": \"mz\"\n                },\n                {\n                    \"name\": \"Microplan Admin\",\n                    \"code\": \"MICROPLAN_ADMIN\",\n                    \"tenantId\": \"mz\"\n                },\n                {\n                    \"name\": \"Campaign Manager\",\n                    \"code\": \"CAMPAIGN_MANAGER\",\n                    \"tenantId\": \"mz\"\n                }\n            ],\n            \"active\": true,\n            \"tenantId\": \"mz\",\n            \"permanentCity\": null\n        },\n        \"msgId\": \"1732107203433|en_MZ\",\n        \"plainAccessRequest\": {}\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{mdmsHost}}/mdms-v2/v2/_create/HCM-ADMIN-CONSOLE.ChecklistTemplates",
+							"host": [
+								"{{mdmsHost}}"
+							],
+							"path": [
+								"mdms-v2",
+								"v2",
+								"_create",
+								"HCM-ADMIN-CONSOLE.ChecklistTemplates"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "projectTypeCode",
+			"value": "NTD",
+			"type": "string"
+		},
+		{
+			"key": "PrdductID",
+			"value": ""
+		},
+		{
+			"key": "ProductVariantid",
+			"value": ""
+		},
+		{
+			"key": "localisationHost",
+			"value": "https://unified-qa.digit.org",
+			"type": "string"
+		},
+		{
+			"key": "mdmsHost",
+			"value": "https://unified-qa.digit.org",
+			"type": "string"
+		},
+		{
+			"key": "productHost",
+			"value": "https://unified-qa.digit.org",
+			"type": "string"
+		},
+		{
+			"key": "locale",
+			"value": "en_MZ",
+			"type": "string"
+		}
+	]
+}
