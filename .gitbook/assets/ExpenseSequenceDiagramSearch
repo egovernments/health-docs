@@ -1,0 +1,19 @@
+@startuml
+
+actor       "Client"
+participant "Expense Service"
+database    Database
+
+Client -> "Expense Service": /bill/v1/_search
+"Expense Service"->"Expense Service": Request validation
+alt successful case
+    "Expense Service"->"Expense Service": Enrich pagination
+    "Expense Service"->Database: Fetch bills with criteria
+    Database->"Expense Service": Bill data
+    "Expense Service"-->Client: Response 200 Ok
+
+else some kind of failure
+    "Expense Service"-->Client: Response 400 \nFailure Error code
+end
+
+@enduml

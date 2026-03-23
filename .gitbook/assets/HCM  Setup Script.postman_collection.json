@@ -1,0 +1,2819 @@
+{
+	"info": {
+		"_postman_id": "ac0bcb23-1fce-437b-91bb-1898daf93cd4",
+		"name": "HCM  Setup Script",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3048487"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "User creation",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"",
+									"",
+									"",
+									"let registrarresponse = pm.response.json().user[0];",
+									"if (pm.response.code != 200) return;",
+									"console.log(registrarresponse);",
+									"console.log(\"Newly created Superadmin Username  \" + pm.response.json().user[0].userName + \" Password eGov@1234\")",
+									"pm.environment.set(\"userName\", pm.response.json().user[0].userName)",
+									"pm.environment.set(\"password\", \"eGov@1234\")",
+									"",
+									"pm.environment.set(\"superadminUUID\", pm.response.json().user[0].uuid)",
+									"console.log(\"Newly created superadminUUID  \" + pm.response.json().user[0].uuid)",
+									"",
+									"pm.sendRequest({",
+									"    url: pm.environment.get(\"URL\") + '/user/oauth/token',",
+									"    method: 'POST',",
+									"    header: { \"Content-Type\": \"application/x-www-form-urlencoded\", \"Authorization\": \"Basic ZWdvdi11c2VyLWNsaWVudDo=\" },",
+									"    body: {",
+									"        mode: 'urlencoded',",
+									"        urlencoded: [",
+									"            { key: 'grant_type', value: 'password' },",
+									"            { key: 'scope', value: 'read' },",
+									"            { key: 'username', value: pm.environment.get('userName') },",
+									"            { key: 'password', value: pm.environment.get('password') },",
+									"            { key: 'tenantId', value: 'mz' },",
+									"            { key: 'userType', value: 'EMPLOYEE' }",
+									"        ]",
+									"    }",
+									"},",
+									"",
+									"    function (err, response) {",
+									"        const responseJSON = response.json();",
+									"        console.log(\"Access Token is \" + responseJSON.access_token)",
+									"        pm.environment.set(\"access_token\", responseJSON.access_token)",
+									"        console.log(\"The auth token has been set up now\")",
+									"    });",
+									"",
+									"console.log(\"Calling Supervisor creation\")",
+									"pm.sendRequest({",
+									"    url: pm.environment.get(\"URL\") + '/user/users/_createnovalidate',",
+									"    method: 'POST',",
+									"    header: {",
+									"        'Content-Type': 'application/json',",
+									"    },",
+									"    body: {",
+									"        mode: 'raw',",
+									"        raw: JSON.stringify({",
+									"            \"RequestInfo\": {",
+									"                \"authToken\": pm.environment.get(\"authToken\")",
+									"            },",
+									"",
+									"            \"user\": {",
+									"                \"userName\": pm.environment.get(\"Supervisor\"),",
+									"                \"name\": \"supervisor\",",
+									"                \"mobileNumber\": \"5689999982\",",
+									"                \"gender\": \"Female\",",
+									"                \"type\": \"EMPLOYEE\",",
+									"                \"active\": true,",
+									"                \"password\": \"eGov@1234\",",
+									"                \"roles\": [",
+									"                    {",
+									"                        \"name\": \"Field Supervisor\",",
+									"                        \"code\": \"FIELD_SUPERVISOR\",",
+									"                        \"tenantId\": \"mz\"",
+									"                    },",
+									"                    {",
+									"                        \"name\": \"National Supervisor\",",
+									"                        \"code\": \"NATIONAL_SUPERVISOR\",",
+									"                        \"tenantId\": \"mz\"",
+									"                    },",
+									"                    {",
+									"                        \"name\": \"HRMS Admin\",",
+									"                        \"code\": \"HRMS_ADMIN\",",
+									"                        \"tenantId\": \"mz\"",
+									"                    },",
+									"                    {",
+									"                        \"name\": \"HELPDESK USER\",",
+									"                        \"code\": \"HELPDESK_USER\",",
+									"                        \"tenantId\": \"mz\"",
+									"                    },",
+									"                    {",
+									"                        \"name\": \"Registrar\",",
+									"                        \"code\": \"REGISTRAR\",",
+									"                        \"tenantId\": \"mz\"",
+									"                    },",
+									"                    {",
+									"                        \"name\": \"System Administrator\",",
+									"                        \"code\": \"SYSTEM_ADMINISTRATOR\",",
+									"                        \"tenantId\": \"mz\"",
+									"                    },",
+									"                    {",
+									"                        \"name\": \"Health Facilty Worker\",",
+									"                        \"code\": \"HEALTH_FACILITY_WORKER\",",
+									"                        \"tenantId\": \"mz\"",
+									"                    },",
+									"                    {",
+									"                        \"name\": \"Super User\",",
+									"                        \"code\": \"SUPERUSER\",",
+									"                        \"tenantId\": \"mz\"",
+									"                    },",
+									"                    {",
+									"                        \"name\": \"Distributor\",",
+									"                        \"code\": \"DISTRIBUTOR\",",
+									"                        \"tenantId\": \"mz\"",
+									"                    },",
+									"                    {",
+									"                        \"name\": \"Warehouse Manager\",",
+									"                        \"code\": \"WAREHOUSE_MANAGER\",",
+									"                        \"tenantId\": \"mz\"",
+									"                    },",
+									"                    {",
+									"                        \"name\": \"L2 Support\",",
+									"                        \"code\": \"L2_SUPPORT\",",
+									"                        \"tenantId\": \"mz\"",
+									"                    },",
+									"                    {",
+									"                        \"name\": \"PGR Administrator\",",
+									"                        \"code\": \"PGR-ADMIN\",",
+									"                        \"tenantId\": \"mz\"",
+									"                    },",
+									"                    {",
+									"                        \"name\": \"Provincial Supervisor\",",
+									"                        \"code\": \"PROVINCIAL_SUPERVISOR\",",
+									"                        \"tenantId\": \"mz\"",
+									"                    }",
+									"                ],",
+									"                \"tenantId\": \"mz\"",
+									"            }",
+									"        })",
+									"    }",
+									"},",
+									"    function (err, supervisorresponse) {",
+									"        if (err) {",
+									"            console.error(err);",
+									"            return;",
+									"        }",
+									"",
+									"        // Check the response",
+									"        else if (supervisorresponse.code === 200) {",
+									"",
+									"            //let response = userresponse.json().user;",
+									"            // const responseJSON = response.json();",
+									"            console.log(\"Newly created Supervisor Username  \" + supervisorresponse.json().user[0].userName + \" Password eGov@1234\")",
+									"            pm.environment.set(\"SupervisorUUID\", supervisorresponse.json().user[0].uuid)",
+									"            console.log(\"Newly created UUID  \" + supervisorresponse.json().user[0].uuid)",
+									"            console.log(\"Supervisor : Create completed, environment variable set\");",
+									"            console.log(\"Calling Warehouse manager creation\")",
+									"            pm.sendRequest({",
+									"                url: pm.environment.get(\"URL\") + '/user/users/_createnovalidate',",
+									"                method: 'POST',",
+									"                header: {",
+									"                    'Content-Type': 'application/json',",
+									"                },",
+									"                body: {",
+									"                    mode: 'raw',",
+									"                    raw: JSON.stringify({",
+									"                        \"RequestInfo\": {",
+									"                            \"authToken\": pm.environment.get(\"authToken\")",
+									"                        },",
+									"",
+									"                        \"user\": {",
+									"                            \"userName\": pm.environment.get(\"WarehouseManager\"),",
+									"                            \"name\": \"Warehouse manager\",",
+									"                            \"mobileNumber\": \"5689989982\",",
+									"                            \"gender\": \"Female\",",
+									"                            \"type\": \"EMPLOYEE\",",
+									"                            \"active\": true,",
+									"                            \"password\": \"eGov@1234\",",
+									"                            \"roles\": [",
+									"                                {",
+									"                                    \"name\": \"Warehouse Manager\",",
+									"                                    \"code\": \"WAREHOUSE_MANAGER\",",
+									"                                    \"tenantId\": \"mz\"",
+									"                                }",
+									"                            ],",
+									"                            \"tenantId\": \"mz\"",
+									"                        }",
+									"                    })",
+									"                }",
+									"            },",
+									"                function (err, wmresponse) {",
+									"                    if (err) {",
+									"                        console.error(err);",
+									"                        return;",
+									"                    }",
+									"",
+									"                    // Check the response",
+									"                    else if (wmresponse.code === 200) {",
+									"",
+									"                        //let response = userresponse.json().user;",
+									"                        // const responseJSON = response.json();",
+									"                        console.log(\"Newly created Warehouse Manager Username  \" + wmresponse.json().user[0].userName + \" Password eGov@1234\")",
+									"                        pm.environment.set(\"wmUUID\", wmresponse.json().user[0].uuid)",
+									"                        console.log(\"Newly created UUID  \" + wmresponse.json().user[0].uuid)",
+									"                        console.log(\"Warehouse Manager : Create completed, environment variable set\");",
+									"                        console.log(\"HF Referral creation\");",
+									"",
+									"                        pm.sendRequest({",
+									"                            url: pm.environment.get(\"URL\") + '/user/users/_createnovalidate',",
+									"                            method: 'POST',",
+									"                            header: {",
+									"                                'Content-Type': 'application/json',",
+									"                            },",
+									"                            body: {",
+									"                                mode: 'raw',",
+									"                                raw: JSON.stringify({",
+									"                                    \"RequestInfo\": {",
+									"                                        \"authToken\": pm.environment.get(\"authToken\")",
+									"                                    },",
+									"",
+									"                                    \"user\": {",
+									"                                        \"userName\": pm.environment.get(\"HFReferral\"),",
+									"                                        \"name\": \"HF Referral\",",
+									"                                        \"mobileNumber\": \"5689982982\",",
+									"                                        \"gender\": \"Female\",",
+									"                                        \"type\": \"EMPLOYEE\",",
+									"                                        \"active\": true,",
+									"                                        \"password\": \"eGov@1234\",",
+									"                                        \"roles\": [",
+									"                                            {",
+									"                                                \"name\": \"Health Facilty Worker\",",
+									"                                                \"code\": \"HEALTH_FACILITY_WORKER\",",
+									"                                                \"tenantId\": \"mz\"",
+									"                                            }",
+									"                                        ],",
+									"                                        \"tenantId\": \"mz\"",
+									"                                    }",
+									"                                })",
+									"                            }",
+									"                        },",
+									"                            function (err, hfresponse) {",
+									"                                if (err) {",
+									"                                    console.error(err);",
+									"                                    return;",
+									"                                }",
+									"",
+									"                                // Check the response",
+									"                                else if (hfresponse.code === 200) {",
+									"",
+									"                                    //let response = userresponse.json().user;",
+									"                                    // const responseJSON = response.json();",
+									"                                    console.log(\"Newly created HF Referral Username  \" + hfresponse.json().user[0].userName + \" Password eGov@1234\")",
+									"                                    pm.environment.set(\"hfReferralUUID\", hfresponse.json().user[0].uuid)",
+									"                                    console.log(\"Newly created hf referral UUID  \" + hfresponse.json().user[0].uuid)",
+									"                                    console.log(\"HF Referral : Create completed, environment variable set\");",
+									"",
+									"                                    console.log(\"Distributor creation\");",
+									"",
+									"                                    pm.sendRequest({",
+									"                                        url: pm.environment.get(\"URL\") + '/user/users/_createnovalidate',",
+									"                                        method: 'POST',",
+									"                                        header: {",
+									"                                            'Content-Type': 'application/json',",
+									"                                        },",
+									"                                        body: {",
+									"                                            mode: 'raw',",
+									"                                            raw: JSON.stringify({",
+									"                                                \"RequestInfo\": {",
+									"                                                    \"authToken\": pm.environment.get(\"authToken\")",
+									"                                                },",
+									"",
+									"                                                \"user\": {",
+									"                                                    \"userName\": pm.environment.get(\"Distributor\"),",
+									"                                                    \"name\": \"Distributor\",",
+									"                                                    \"mobileNumber\": \"5689982982\",",
+									"                                                    \"gender\": \"Female\",",
+									"                                                    \"type\": \"EMPLOYEE\",",
+									"                                                    \"active\": true,",
+									"                                                    \"password\": \"eGov@1234\",",
+									"                                                    \"roles\": [",
+									"                                                        {",
+									"                                                            \"name\": \"Distributor\",",
+									"                                                            \"code\": \"DISTRIBUTOR\",",
+									"                                                            \"tenantId\": \"mz\"",
+									"                                                        }",
+									"                                                    ],",
+									"                                                    \"tenantId\": \"mz\"",
+									"                                                }",
+									"                                            })",
+									"                                        }",
+									"                                    },",
+									"                                        function (err, distresponse) {",
+									"                                            if (err) {",
+									"                                                console.error(err);",
+									"                                                return;",
+									"                                            }",
+									"",
+									"                                            // Check the response",
+									"                                            else if (distresponse.code === 200) {",
+									"",
+									"                                                //let response = userresponse.json().user;",
+									"                                                // const responseJSON = response.json();",
+									"                                                console.log(\"Newly created Distributor Username  \" + distresponse.json().user[0].userName + \" Password eGov@1234\")",
+									"                                                pm.environment.set(\"distUUID\", distresponse.json().user[0].uuid)",
+									"                                                console.log(\"Newly created distresponseDistributor UUID  \" + distresponse.json().user[0].uuid)",
+									"                                                console.log(\"Distributor : Create completed, environment variable set\");",
+									"",
+									"",
+									"                                            }",
+									"                                        });",
+									"",
+									"                                }",
+									"                            });",
+									"",
+									"",
+									"                    }",
+									"                });",
+									"        }",
+									"    });",
+									"",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"requestInfo\": {\n        \"apiId\": \"Rainmaker\",\n        \"ver\": \".01\",\n        \"ts\": null,\n        \"action\": \"_create\",\n        \"did\": \"1\",\n        \"key\": \"\",\n        \"msgId\": \"20170310130900|en_IN\",\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"user\": {\n        \"userName\": \"{{Superadmin}}\",\n        \"name\": \"Superuer\",\n        \"mobileNumber\": \"5689999982\",\n        \"gender\": \"Female\",\n        \"type\": \"EMPLOYEE\",\n        \"active\": true,\n        \"password\": \"eGov@1234\",\n        \"roles\": [\n           \n            {\n                \"name\": \"HRMS Admin\",\n                \"code\": \"HRMS_ADMIN\",\n                \"tenantId\": \"mz\"\n            },\n            {\n                \"name\": \"HELPDESK USER\",\n                \"code\": \"HELPDESK_USER\",\n                \"tenantId\": \"mz\"\n            },\n            {\n                \"name\": \"Registrar\",\n                \"code\": \"REGISTRAR\",\n                \"tenantId\": \"mz\"\n            },\n          \n            {\n                \"name\": \"System Administrator\",\n                \"code\": \"SYSTEM_ADMINISTRATOR\",\n                \"tenantId\": \"mz\"\n            },\n            {\n                \"name\": \"Health Facilty Worker\",\n                \"code\": \"HEALTH_FACILITY_WORKER\",\n                \"tenantId\": \"mz\"\n            },\n            {\n                \"name\": \"Distributor\",\n                \"code\": \"DISTRIBUTOR\",\n                \"tenantId\": \"mz\"\n            },\n            {\n                \"name\": \"Warehouse Manager\",\n                \"code\": \"WAREHOUSE_MANAGER\",\n                \"tenantId\": \"mz\"\n            },\n            {\n                \"name\": \"L2 Support\",\n                \"code\": \"L2_SUPPORT\",\n                \"tenantId\": \"mz\"\n            },\n            {\n                \"name\": \"PGR Administrator\",\n                \"code\": \"PGR-ADMIN\",\n                \"tenantId\": \"mz\"\n            }\n        ],\n        \"tenantId\": \"mz\"\n    }\n}"
+						},
+						"url": {
+							"raw": "{{URL}}/user/users/_createnovalidate",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"user",
+								"users",
+								"_createnovalidate"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							"// User creation with dynamic username",
+							"pm.environment.set(\"Superadmin\", \"SA-\" + Math.floor((Math.random() * (9999 - 1000 + 1)) + 1000))",
+							"pm.environment.set(\"Distributor\", \"D-\" + Math.floor((Math.random() * (9999 - 1000 + 1)) + 1000))",
+							"pm.environment.set(\"WarehouseManager\", \"WM-\" + Math.floor((Math.random() * (9999 - 1000 + 1)) + 1000))",
+							"pm.environment.set(\"HFReferral\", \"HFW-\" + Math.floor((Math.random() * (9999 - 1000 + 1)) + 1000))",
+							"pm.environment.set(\"Supervisor\", \"SP-\" + Math.floor((Math.random() * (9999 - 1000 + 1)) + 1000))",
+							"",
+							"// User creation with given username",
+							"//format - pm.environment.set(\"ROLE\", \"USERNNAME\")",
+							"// pm.environment.set(\"Superadmin\", \"CMSAdmin\")",
+							"// pm.environment.set(\"Distributor\", \"CMSDistributor\")",
+							"// pm.environment.set(\"WarehouseManager\", \"CMSManager\")",
+							"// pm.environment.set(\"HFReferral\", \"CMSReferral\")",
+							"// pm.environment.set(\"Supervisor\", \"CMSSupervisor\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Individual Project",
+			"item": [
+				{
+					"name": "Project Create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Assuming that the response is stored in the \"response\" variable\r",
+									"const jsonResponse = pm.response.json();\r",
+									"\r",
+									"// Ensure that the \"Project\" array exists in the response\r",
+									"pm.expect(jsonResponse.Project).to.be.an(\"array\");\r",
+									"\r",
+									"// Extract the project ID from the first project in the array\r",
+									"const individualProjectId = jsonResponse.Project[0].id;\r",
+									"if (pm.response.code != 200) return;\r",
+									"pm.environment.set(\"individualProjectId\", individualProjectId);\r",
+									"// Log the extracted project ID\r",
+									"console.log(\"Individual Project ID extracted:\", individualProjectId);\r",
+									"\r",
+									"// Set a test result for visualization in the Postman collection runner\r",
+									"pm.test(\"Extract Project ID\", function () {\r",
+									"    pm.expect(individualProjectId).to.not.be.undefined;\r",
+									"    pm.expect(individualProjectId).to.be.a(\"string\");\r",
+									"    pm.expect(individualProjectId.length).to.be.greaterThan(0);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.variables.set(\"timeStampMs\", new Date().getTime());",
+									"pm.variables.set(\"projectName\", \"SMC Campaign\");",
+									"pm.variables.set(\"projectType\", \"LLIN-mz\");",
+									"pm.variables.set(\"projectSubType\", \"LLIN-mz\");",
+									"pm.variables.set(\"department\", \"MALERIA\");",
+									"pm.variables.set(\"projectTypeIdIndividual\", \"b1107f0c-7a91-4c76-afc2-a279d8a7b76a\");",
+									"pm.variables.set(\"beneficiaryTypeIndividual\", \"INDIVIDUAL\");",
+									"pm.variables.set(\"boundaryType\", \"Country\");",
+									"pm.variables.set(\"boundaryCountry\", \"mz\");",
+									"pm.variables.set(\"description\", \"mz project type configuration for LLIN Campaigns\");",
+									"",
+									"let date = new Date();",
+									"let timeStampMs = date.getTime();",
+									"function generateUUID() {",
+									"  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {",
+									"    var r = Math.random() * 16 | 0,",
+									"      v = c == 'x' ? r : (r & 0x3 | 0x8);",
+									"    return v.toString(16);",
+									"  });",
+									"}",
+									"",
+									"pm.sendRequest({",
+									"    url: pm.environment.get(\"URL\") + '/individual/v1/_create',",
+									"    method: 'POST',",
+									"    header: {",
+									"        'Content-Type': 'application/json',",
+									"    },",
+									"    body: {",
+									"        mode: 'raw',",
+									"        raw: JSON.stringify({",
+									"            \"RequestInfo\": {",
+									"                \"authToken\": pm.environment.get(\"access_token\")",
+									"            },",
+									"",
+									"             \"Individual\": {",
+									"          \"tenantId\": pm.environment.get(\"tenantId\"),",
+									"          \"clientReferenceId\": generateUUID(),",
+									"          \"name\": {",
+									"            \"givenName\": pm.environment.get(\"individualGivenName\"),",
+									"            \"familyName\": pm.environment.get(\"individualFamilyName\"),",
+									"            \"otherNames\": pm.environment.get(\"individualOtherName\")",
+									"          },",
+									"          \"dateOfBirth\": '17/04/2022',//pm.environment.get(\"individualDateOfBirth2\"),",
+									"          \"gender\": pm.environment.get(\"individualGenderType\"),",
+									"          \"bloodGroup\": pm.environment.get(\"individualBloodGroup\"),",
+									"          \"mobileNumber\": \"9972527130\",",
+									"          \"altContactNumber\": \"8765432109\",",
+									"          \"email\": \"souravganguly_dada@gmail.com\",",
+									"          \"address\": [{",
+									"            \"clientReferenceId\": generateUUID(),",
+									"            \"tenantId\": pm.environment.get(\"tenantId\"),",
+									"            \"doorNo\": \"123\",",
+									"            \"latitude\": 12.928759019220271,",
+									"            \"longitude\": 77.62797660364444,",
+									"            \"locationAccuracy\": 14.27,",
+									"            \"type\": \"PERMANENT\",",
+									"            \"addressLine1\": \"Apartment\",",
+									"            \"addressLine2\": \"2nd Floor\",",
+									"            \"landmark\": \"Near Juhu Beach\",",
+									"            \"city\": \"Mumbai\",",
+									"            \"pincode\": \"123456\",",
+									"            \"buildingName\": \"Apartment\",",
+									"            \"street\": \"Necklace Road\",",
+									"            \"locality\": {",
+									"              \"code\": pm.environment.get(\"boundaryCode\"),",
+									"              \"name\": \"test_58630a388978\",",
+									"              \"label\": \"test_7b7f928dcab8\",",
+									"              \"latitude\": \"test_15d4a90d15a6\",",
+									"              \"longitude\": \"test_e8854daed039\",",
+									"              \"children\": []",
+									"            }",
+									"          }],",
+									"          \"fatherName\": \"Ganguly Sr\",",
+									"          \"husbandName\": null,",
+									"            \"identifiers\":[",
+									"                {",
+									"                    \"clientReferenceId\": generateUUID(),",
+									"                    \"identifierType\": \"DEFAULT\",",
+									"                    \"identifierId\": generateUUID(),",
+									"                }",
+									"            ],",
+									"          \"skills\": [{",
+									"            \"type\": pm.environment.get(\"individualSkillType\"),",
+									"            \"level\": pm.environment.get(\"individualSkillLevel\"),",
+									"            \"experience\": pm.environment.get(\"individualSkillExperience\"),",
+									"            \"clientReferenceId\": generateUUID()",
+									"          }],",
+									"           \"userDetails\": {",
+									"                    \"username\": pm.environment.get(\"newUserName\"),",
+									"                    \"password\": \"eGov@1234\",",
+									"                    \"roles\": [",
+									"                      ",
+									"                        {",
+									"                            \"code\": \"HRMS_ADMIN\",",
+									"                            \"name\": \"HRMS Admin\",",
+									"                            \"tenantId\": pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"HELPDESK_USER\",",
+									"                            \"name\": \"HELPDESK USER\",",
+									"                            \"tenantId\":pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"REGISTRAR\",",
+									"                            \"name\": \"Registrar\",",
+									"                            \"tenantId\": pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                      ",
+									"                        {",
+									"                            \"code\": \"SYSTEM_ADMINISTRATOR\",",
+									"                            \"name\": \"System Administrator\",",
+									"                            \"tenantId\":pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"HEALTH_FACILITY_WORKER\",",
+									"                            \"name\": \"Health Facilty Worker\",",
+									"                            \"tenantId\": pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"SUPERUSER\",",
+									"                            \"name\": \"Super User\",",
+									"                            \"tenantId\": pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"DISTRIBUTOR\",",
+									"                            \"name\": \"Distributor\",",
+									"                            \"tenantId\":pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"WAREHOUSE_MANAGER\",",
+									"                            \"name\": \"Warehouse Manager\",",
+									"                            \"tenantId\": pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"L2_SUPPORT\",",
+									"                            \"name\": \"L2 Support\",",
+									"                            \"tenantId\":pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"PGR-ADMIN\",",
+									"                            \"name\": \"PGR Administrator\",",
+									"                            \"tenantId\":pm.environment.get(\"tenantId\")",
+									"                        }",
+									"                    ],",
+									"                    \"type\": \"EMPLOYEE\"",
+									"                },",
+									"          \"photo\": \"test_35bd4e8545d8\",",
+									"          \"additionalFields\": null,",
+									"          \"isSystemUser\": true,",
+									"          \"rowVersion\": 1,",
+									"          \"nonRecoverableError\": false,",
+									"          \"clientAuditDetails\": {",
+									"            \"createdBy\": \"8c11b1df-dded-4c9b-b413-65bd09c028fc\",",
+									"            \"lastModifiedBy\": \"8c11b1df-dded-4c9b-b413-65bd09c028fc\",",
+									"            \"createdTime\": timeStampMs,",
+									"            \"lastModifiedTime\": timeStampMs",
+									"          },",
+									"          \"auditDetails\": {",
+									"            \"createdBy\": \"a8c7b5c5-6007-4556-945e-3969c98b5155\",",
+									"            \"lastModifiedBy\": \"a8c7b5c5-6007-4556-945e-3969c98b5155\",",
+									"            \"createdTime\": timeStampMs,",
+									"            \"lastModifiedTime\": timeStampMs",
+									"          }",
+									"        }",
+									"        })",
+									"    }",
+									"},",
+									"    function (err, individualresponse) {",
+									"        if (err) {",
+									"            console.error(err);",
+									"            return;",
+									"        }",
+									"",
+									"        // Check the response",
+									"        else if (individualresponse.code === 202) {",
+									"",
+									"            //let response = userresponse.json().user;",
+									"            // const responseJSON = response.json();",
+									"            console.log(\"Newly created Username  \" + individualresponse.json().Individual.userDetails.username+\" Password eGov@1234\")",
+									"            pm.environment.set(\"UserUUID\", individualresponse.json().Individual.userUuid)",
+									"            console.log(\"Newly created UUID  \" + individualresponse.json().Individual.userUuid)",
+									"            console.log(\"User : Create completed, environment variable set\");",
+									"        }",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"Projects\": [\n        {\n            \"id\": \"f5F6xAskA05\",\n            \"tenantId\": \"mz\",\n            \"projectNumber\": \"f5F6xAskA05\",\n            \"name\": \"{{projectName}}\",\n            \"projectType\": \"{{projectType}}\",\n            \"projectSubType\": \"{{projectSubType}}\",\n            \"department\": \"{{department}}\",\n            \"description\": \"{{description}}\",\n            \"referenceID\": \"f5F6xAskA05\",\n            \"projectTypeId\": \"{{projectTypeIdIndividual}}\",\n            \"documents\": null,\n            \"address\": {\n                \"id\": null,\n                \"tenantId\": \"mz\",\n                \"clientReferenceId\": null,\n                \"doorNo\": null,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"locationAccuracy\": null,\n                \"type\": null,\n                \"addressLine1\": null,\n                \"addressLine2\": null,\n                \"landmark\": null,\n                \"city\": null,\n                \"pincode\": null,\n                \"buildingName\": null,\n                \"street\": null,\n                \"boundaryType\": \"Country\",\n                \"boundary\": \"mz\",\n                \"locality\": null\n            },\n            \"startDate\": {{startDate}},\n            \"endDate\": {{endDate}},\n            \"isTaskEnabled\": true,\n            \"parent\": null,\n            \"projectHierarchy\": \"LJX5GuypkKy\",\n            \"natureOfWork\": null,\n            \"ancestors\": null,\n            \"descendants\": null,\n            \"targets\": [\n                {\n                    \"id\": null,\n                    \"beneficiaryType\": \"INDIVIDUAL\",\n                    \"totalNo\": 50,\n                    \"targetNo\": 50,\n                    \"isDeleted\": null,\n                    \"auditDetails\": {\n                        \"createdBy\": \"test\",\n                        \"lastModifiedBy\": \"test\",\n                        \"createdTime\": 1683914109181,\n                        \"lastModifiedTime\": 1683914109181\n                    }\n                }\n            ],\n            \"additionalDetails\": null,\n            \"isDeleted\": false,\n            \"rowVersion\": 1,\n            \"auditDetails\": {\n                \"createdBy\": \"test\",\n                \"lastModifiedBy\": \"test\",\n                \"createdTime\": 1683914109181,\n                \"lastModifiedTime\": 1683914109181\n            }\n        }\n    ],\n    \"rowVersion\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/project/v1/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"project",
+								"v1",
+								"_create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Project Staff Create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// // Assuming that the UUID and Project ID have been extracted and stored in environment variables\r",
+									"// const userUuid = pm.environment.get(\"userUuid\");\r",
+									"// const projectId = pm.environment.get(\"projectId\");\r",
+									"\r",
+									"// // Ensure that the extracted UUID and Project ID are available\r",
+									"// pm.expect(userUuid).to.not.be.undefined;\r",
+									"// pm.expect(projectId).to.not.be.undefined;\r",
+									"\r",
+									"// // Set the startDate using the current timestamp\r",
+									"// const timeStamp = Math.floor(new Date().getTime() / 1000);\r",
+									"\r",
+									"// Build the request payload for \"ProjectStaff\"\r",
+									"// const projectStaffPayload = {\r",
+									"//     \"ProjectStaff\": {\r",
+									"//         \"tenantId\": \"mz\",\r",
+									"//         \"userId\": userUuid,\r",
+									"//         \"projectId\": projectId,\r",
+									"//         \"startDate\": timeStamp,\r",
+									"//         \"endDate\": 9983874101527,\r",
+									"//         \"channel\": \"testing for SMC individual\",\r",
+									"//         \"rowVersion\": 1,\r",
+									"//         \"additionalFields\": {\r",
+									"//             \"schema\": \"registration\",\r",
+									"//             \"version\": 1,\r",
+									"//             \"fields\": [\r",
+									"//                 {\r",
+									"//                     \"key\": \"key\",\r",
+									"//                     \"value\": \"value\"\r",
+									"//                 }\r",
+									"//             ]\r",
+									"//         }\r",
+									"//     }\r",
+									"// };\r",
+									"\r",
+									"// // Log the request payload for verification\r",
+									"// console.log(\"ProjectStaff Request Payload:\", projectStaffPayload);\r",
+									"\r",
+									"// // Set the request body\r",
+									"// pm.request.body.update(JSON.stringify(projectStaffPayload));\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"ProjectStaff\": {\n        \"tenantId\": \"{{tenantId}}\",\n        \"userId\": \"{{UserUUID}}\", //fetches UUID from searched user\n        \"projectId\": \"{{individualProjectId}}\", //fetches the project id from the created project\n        \"startDate\": {{startDate}},\n        \"endDate\": {{endDate}},\n        \"channel\": \"testing for HF module\",\n        \"rowVersion\": 1,\n        \"additionalFields\": {\n            \"schema\": \"registration\",\n            \"version\": 1,\n            \"fields\": [\n                {\n                    \"key\": \"key\",\n                    \"value\": \"value\"\n                }\n            ]\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{URL}}/project/staff/v1/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"project",
+								"staff",
+								"v1",
+								"_create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Project Staff Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"ProjectStaff\": [\n        {\n            \"tenantId\": \"default\",\n            \"userId\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n            \"projectId\": \"13\",\n            \"startDate\": {{timeStamp}},\n            \"endDate\": {{timeStamp}},\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            },\n            \"channel\": \"test_02c6c793f445\"\n        }\n    ],\n    \"apiOperation\": \"CREATE\"\n}"
+								},
+								"url": {
+									"raw": "{{qa}}/project/staff/v1/_create",
+									"host": [
+										"{{qa}}"
+									],
+									"path": [
+										"project",
+										"staff",
+										"v1",
+										"_create"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 Jan 2023 10:05:24 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubdomains; preload"
+								},
+								{
+									"key": "X-Lua-Resty-WAF-ID",
+									"value": "a9a679df0904f86af8b9"
+								},
+								{
+									"key": "x-correlation-id",
+									"value": "c8ad22bb-fab7-4f76-80b9-33f2df4181f0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; img-src 'self' https: data: blob:; style-src https: blob: 'unsafe-inline'; worker-src 'self' blob:; font-src 'self' https: data: blob:; child-src 'self' https: data: blob:;"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer-when-downgrade"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ResponseInfo\": {\n        \"apiId\": null,\n        \"ver\": null,\n        \"ts\": 1674122724368,\n        \"resMsgId\": null,\n        \"msgId\": null,\n        \"status\": \"successful\"\n    },\n    \"ProjectStaff\": [\n        {\n            \"id\": \"PTS-2023-01-19-000010\",\n            \"tenantId\": \"default\",\n            \"userId\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n            \"projectId\": \"13\",\n            \"startDate\": 1674122723,\n            \"endDate\": 1674122723,\n            \"channel\": \"test_02c6c793f445\",\n            \"isDeleted\": false,\n            \"rowVersion\": 1,\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            },\n            \"auditDetails\": {\n                \"createdBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"lastModifiedBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"createdTime\": 1674122724357,\n                \"lastModifiedTime\": 1674122724357\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Product Create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonResponse = pm.response.json();\r",
+									"pm.environment.set(\"productIDSP\", jsonResponse.Product[0].id);\r",
+									"pm.environment.set(\"productIDAQ\", jsonResponse.Product[1].id);\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"Product\": [\n        {\n            \"tenantId\": \"{{tenantId}}\",\n            \"type\": \"DRUG\",\n            \"name\": \"SP\",\n            \"manufacturer\": \"Generic\",\n            \"additionalFields\": {\n                \"schema\": \"test_3e1c7976b4d6\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"form\",\n                        \"value\": \"tablet\"\n                    }\n                ]\n            },\n            \"isDeleted\": false,\n            \"clientAuditDetails\": {\n                \"createdTime\": {{timeStamp}},\n                \"lastModifiedTime\": {{timeStamp}}\n            }\n        },\n        {\n            \"tenantId\": \"{{tenantId}}\",\n            \"type\": \"DRUG\",\n            \"name\": \"AQ\",\n            \"manufacturer\": \"Generic\",\n            \"additionalFields\": {\n                \"schema\": \"test_3e1c7976b4d6\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"form\",\n                        \"value\": \"tablet\"\n                    }\n                ]\n            },\n            \"isDeleted\": false,\n            \"clientAuditDetails\": {\n                \"createdTime\": {{timeStamp}},\n                \"lastModifiedTime\": {{timeStamp}}\n            }\n        }\n    ],\n    \"apiOperation\": \"CREATE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/product/v1/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product",
+								"v1",
+								"_create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Product Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestInfo\": {\n    \"authToken\": \"d17d68e1-73e3-481e-98e5-4219ed19eef4\"\n  },\n  \"Product\": [\n    {\n            \"tenantId\": \"default\",\n            \"type\": \"DRUG\",\n            \"name\": \"Gru Prod n\",\n            \"manufacturer\": \"Piramal\",\n            \"additionalFields\": {\n                \"schema\": \"test_3e1c7976b4d6\",\n                \"version\": 71,\n                \"fields\": [\n                    {\n                        \"key\": \"test_8c13e84511d7\",\n                        \"value\": \"test_8d6a63c71416\"\n                    }\n                ]\n            },\n            \"isDeleted\": false\n    }\n  ],\n  \"apiOperation\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://health-qa.digit.org/product/v1/_create",
+									"protocol": "https",
+									"host": [
+										"health-qa",
+										"digit",
+										"org"
+									],
+									"path": [
+										"product",
+										"v1",
+										"_create"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\n    \"ResponseInfo\": {\n        \"apiId\": null,\n        \"ver\": null,\n        \"ts\": 1671777783813,\n        \"resMsgId\": null,\n        \"msgId\": null,\n        \"status\": \"successful\"\n    },\n    \"Product\": [\n        {\n            \"id\": \"P-2022-12-23-000012\",\n            \"tenantId\": \"default\",\n            \"type\": \"DRUG\",\n            \"name\": \"Gru Prod n\",\n            \"manufacturer\": \"Piramal\",\n            \"additionalFields\": {\n                \"schema\": \"test_3e1c7976b4d6\",\n                \"version\": 71,\n                \"fields\": [\n                    {\n                        \"key\": \"test_8c13e84511d7\",\n                        \"value\": \"test_8d6a63c71416\"\n                    }\n                ]\n            },\n            \"isDeleted\": false,\n            \"rowVersion\": 1,\n            \"auditDetails\": {\n                \"createdBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"lastModifiedBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"createdTime\": 1671777783808,\n                \"lastModifiedTime\": 1671777783808\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Product Variant Create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonResponse = pm.response.json();",
+									"pm.environment.set(\"ProductVariantIdSP\", jsonResponse.ProductVariant[0].id);",
+									"pm.environment.set(\"ProductVariantIdAQ\", jsonResponse.ProductVariant[1].id);",
+									"console.log('Individual Project Product variant 1 - ' + jsonResponse.ProductVariant[0].id);",
+									"console.log('Individual Project Product variant 2 - ' + jsonResponse.ProductVariant[1].id);",
+									"",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"ProductVariant\": [\n        {\n            \"tenantId\": \"mz\",\n            \"productId\": \"{{productIDSP}}\",\n            \"sku\": \"SP 500mg\",\n            \"variation\": \"500mg\",\n            \"additionalFields\": {\n                \"schema\": \"test\",\n                \"version\": 2,\n                \"fields\": [\n                    {\n                        \"key\": \"weight\",\n                        \"value\": \"5g\"\n                    }\n                ]\n            }\n        },\n        {\n            \"tenantId\": \"mz\",\n            \"productId\": \"{{productIDAQ}}\",\n            \"sku\": \"SP 250mg\",\n            \"variation\": \"250mg\",\n            \"additionalFields\": {\n                \"schema\": \"test\",\n                \"version\": 2,\n                \"fields\": [\n                    {\n                        \"key\": \"weight\",\n                        \"value\": \"4g\"\n                    }\n                ]\n            }\n        }\n    ],\n    \"apiOperation\": \"CREATE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/product/variant/v1/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product",
+								"variant",
+								"v1",
+								"_create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Product Variant Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestInfo\": {\n    \"authToken\": \"{{authToken}}\"\n  },\n  \"ProductVariant\": [\n    {\n      \"tenantId\": \"default\",\n      \"productId\": \"P-2023-01-04-000021\",\n      \"sku\": \"CROCIN-650\",\n      \"variation\": \"Crocin 650mg\",\n      \"additionalFields\": {\n        \"schema\": \"test\",\n        \"version\": 2,\n        \"fields\": [\n          {\n            \"key\": \"weight\",\n            \"value\": \"10g\"\n          }\n        ]\n      }\n    }\n  ],\n  \"apiOperation\": \"CREATE\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://health-qa.digit.org/product/variant/v1/_create",
+									"protocol": "https",
+									"host": [
+										"health-qa",
+										"digit",
+										"org"
+									],
+									"path": [
+										"product",
+										"variant",
+										"v1",
+										"_create"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 05 Jan 2023 05:05:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubdomains; preload"
+								},
+								{
+									"key": "X-Lua-Resty-WAF-ID",
+									"value": "32a80ad624dff73a021b"
+								},
+								{
+									"key": "x-correlation-id",
+									"value": "b6cedcbc-7139-4c0e-bc7e-e8270ad464f9"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; img-src 'self' https: data: blob:; style-src https: blob: 'unsafe-inline'; worker-src 'self' blob:; font-src 'self' https: data: blob:; child-src 'self' https: data: blob:;"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer-when-downgrade"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ResponseInfo\": {\n        \"apiId\": null,\n        \"ver\": null,\n        \"ts\": 1672895119776,\n        \"resMsgId\": null,\n        \"msgId\": null,\n        \"status\": \"successful\"\n    },\n    \"ProductVariant\": [\n        {\n            \"id\": \"PVAR-2023-01-05-000014\",\n            \"tenantId\": \"default\",\n            \"productId\": \"P-2023-01-04-000021\",\n            \"sku\": \"CROCIN-650\",\n            \"variation\": \"Crocin 650mg\",\n            \"additionalFields\": {\n                \"schema\": \"test\",\n                \"version\": 2,\n                \"fields\": [\n                    {\n                        \"key\": \"weight\",\n                        \"value\": \"10g\"\n                    }\n                ]\n            },\n            \"isDeleted\": false,\n            \"rowVersion\": 1,\n            \"auditDetails\": {\n                \"createdBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"lastModifiedBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"createdTime\": 1672895119767,\n                \"lastModifiedTime\": 1672895119767\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Project Resource Bulk Create Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"ProjectResources\": [\n        {\n            \"tenantId\": \"{{tenantId}}\",\n            \"projectId\": \"{{individualProjectId}}\",\n            \"resource\": {\n                \"productVariantId\": \"{{ProductVariantIdSP}}\",\n                \"type\": \"DRUG\",\n                \"isBaseUnitVariant\": false\n            },\n            \"startDate\": {{timeStamp}},\n            \"endDate\": {{timeStamp}},\n            \"isDeleted\": false,\n            \"rowVersion\": 1\n        },\n        {\n            \"tenantId\": \"{{tenantId}}\",\n            \"projectId\": \"{{individualProjectId}}\",\n            \"resource\": {\n                \"productVariantId\": \"{{ProductVariantIdAQ}}\",\n                \"type\": \"DRUG\",\n                \"isBaseUnitVariant\": false\n            },\n            \"startDate\": {{timeStamp}},\n            \"endDate\": {{timeStamp}},\n            \"isDeleted\": false,\n            \"rowVersion\": 1\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/project/resource/v1/bulk/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"project",
+								"resource",
+								"v1",
+								"bulk",
+								"_create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Project Resource Bulk Create Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"ProjectResources\": [\n        {\n            \"tenantId\": \"default\",\n            \"projectId\": \"cec9b18d-37f0-49a4-90c2-ad462bb66134\",\n            \"resource\": {\n                \"productVariantId\": \"PVAR-2023-03-03-000023\",\n                \"type\": \"DRUG\",\n                \"isBaseUnitVariant\": false\n            },\n            \"startDate\": 1677732637,\n            \"endDate\": 1677932637,\n            \"isDeleted\": false,\n            \"rowVersion\": 1\n        },\n        {\n            \"tenantId\": \"default\",\n            \"projectId\": \"9bd01fe5-983c-4695-8492-1ab425b6d5c2\",\n            \"resource\": {\n                \"productVariantId\": \"PVAR-2023-03-03-000024\",\n                \"type\": \"DRUG\",\n                \"isBaseUnitVariant\": false\n            },\n            \"startDate\": 1677732637,\n            \"endDate\": 1677932637,\n            \"isDeleted\": false,\n            \"rowVersion\": 1\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{qa}}/project/resource/v1/bulk/_create",
+									"host": [
+										"{{qa}}"
+									],
+									"path": [
+										"project",
+										"resource",
+										"v1",
+										"bulk",
+										"_create"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 03 Mar 2023 03:12:41 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubdomains; preload"
+								},
+								{
+									"key": "X-Lua-Resty-WAF-ID",
+									"value": "fe70a28f318fdef859c7"
+								},
+								{
+									"key": "x-correlation-id",
+									"value": "823a5ff7-a820-4859-82a9-6dee9ae63cc7"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; img-src 'self' https: data: blob:; style-src https: blob: 'unsafe-inline'; worker-src 'self' blob:; font-src 'self' https: data: blob:; child-src 'self' https: data: blob:;"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer-when-downgrade"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"apiId\": \"/project/resource/v1/bulk/_create\",\n    \"ver\": null,\n    \"ts\": 1677813161324,\n    \"resMsgId\": null,\n    \"msgId\": null,\n    \"status\": \"successful\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Facility Create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonResponse = pm.response.json();",
+									"pm.environment.set(\"IndividualFacilityID\", jsonResponse.Facility.id);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"Facility\": {\n        \"tenantId\": \"{{tenantId}}\",\n        \"isPermanent\": \"true\",\n        \"name\": \"Facility bednet MDA-LF-Nairobi\",\n        \"usage\": \"Storing Resource\",\n        \"storageCapacity\": 200,\n        \"address\": {\n            \"tenantId\": \"{{tenantId}}\",\n            \"doorNo\": \"123\",\n            \"latitude\": 12.34,\n            \"longitude\": 123.45,\n            \"locationAccuracy\": 123.76,\n            \"type\": \"PERMANENT\",\n            \"addressLine1\": \"Alpine Apartments\",\n            \"addressLine2\": \"Road Number 12\",\n            \"landmark\": \"Near Niagara Lake\",\n            \"city\": \"Bangalore\",\n            \"pincode\": \"1234567\",\n            \"buildingName\": \"Alpine Apartments\",\n            \"street\": \"test_da0b8ebec5ef\",\n            \"locality\": {\n                \"code\": \"f5F6xAskA05\",\n                \"name\": \"f5F6xAskA05\"\n            }\n        },\n        \"additionalFields\": {\n            \"schema\": \"test_e37466be924cjhghjg\",\n            \"version\": 8,\n            \"fields\": [\n                {\n                    \"key\": \"test_12bc5f24692f\",\n                    \"value\": \"test_bf376bce4c01\"\n                }\n            ]\n        },\n        \"rowVersion\": 0,\n        \"clientAuditDetails\":{\n            \"createdTime\":1692774209,\n            \"lastModifiedTime\":1692774209\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/facility/v1/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"facility",
+								"v1",
+								"_create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Facility Create Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"Facility\": {\n        \"tenantId\": \"default\",\n        \"isPermanent\": \"true\",\n        \"name\": \"LLIN Warehouse1\",\n        \"usage\": \"Storing LLIN\",\n        \"storageCapacity\": 200,\n        \"address\": {\n            \"tenantId\": \"default\",\n            \"doorNo\": \"123\",\n            \"latitude\": 12.34,\n            \"longitude\": 123.45,\n            \"locationAccuracy\": 123.76,\n            \"type\": \"PERMANENT\",\n            \"addressLine1\": \"Alpine Apartments\",\n            \"addressLine2\": \"Road Number 12\",\n            \"landmark\": \"Near Niagara Lake\",\n            \"city\": \"Bangalore\",\n            \"pincode\": \"1234567\",\n            \"buildingName\": \"Alpine Apartments\",\n            \"street\": \"test_da0b8ebec5ef\",\n            \"locality\": {\n                \"code\": \"test_45ab2c1c24cfi67575478\",\n                \"name\": \"locality name\"\n            }\n        },\n        \"additionalFields\": {\n            \"schema\": \"test_e37466be924cjhghjg\",\n            \"version\": 8,\n            \"fields\": [\n                {\n                    \"key\": \"test_12bc5f24692f\",\n                    \"value\": \"test_bf376bce4c01\"\n                }\n            ]\n        },\n        \"rowVersion\": 0\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{qa}}/facility/v1/_create",
+									"host": [
+										"{{qa}}"
+									],
+									"path": [
+										"facility",
+										"v1",
+										"_create"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 28 Feb 2023 09:33:57 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubdomains; preload"
+								},
+								{
+									"key": "X-Lua-Resty-WAF-ID",
+									"value": "d8fe2665d808b5a2949f"
+								},
+								{
+									"key": "x-correlation-id",
+									"value": "8257850d-8295-4ad4-b1d6-aff87e7e2075"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; img-src 'self' https: data: blob:; style-src https: blob: 'unsafe-inline'; worker-src 'self' blob:; font-src 'self' https: data: blob:; child-src 'self' https: data: blob:;"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer-when-downgrade"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ResponseInfo\": {\n        \"apiId\": null,\n        \"ver\": null,\n        \"ts\": 1677576837701,\n        \"resMsgId\": null,\n        \"msgId\": null,\n        \"status\": \"successful\"\n    },\n    \"Facility\": {\n        \"id\": \"F-2023-02-28-000012\",\n        \"tenantId\": \"default\",\n        \"isPermanent\": true,\n        \"name\": \"LLIN Warehouse1\",\n        \"usage\": \"Storing LLIN\",\n        \"storageCapacity\": 200,\n        \"address\": {\n            \"id\": \"0717cfa6-8d89-42e7-b934-19e91ea9b16c\",\n            \"tenantId\": \"default\",\n            \"doorNo\": \"123\",\n            \"latitude\": 12.34,\n            \"longitude\": 123.45,\n            \"locationAccuracy\": 123.76,\n            \"type\": \"PERMANENT\",\n            \"addressLine1\": \"Alpine Apartments\",\n            \"addressLine2\": \"Road Number 12\",\n            \"landmark\": \"Near Niagara Lake\",\n            \"city\": \"Bangalore\",\n            \"pincode\": \"1234567\",\n            \"buildingName\": \"Alpine Apartments\",\n            \"street\": \"test_da0b8ebec5ef\",\n            \"locality\": {\n                \"code\": \"test_45ab2c1c24cfi67575478\",\n                \"name\": \"locality name\",\n                \"label\": null,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"children\": null,\n                \"materializedPath\": null\n            }\n        },\n        \"additionalFields\": {\n            \"schema\": \"test_e37466be924cjhghjg\",\n            \"version\": 8,\n            \"fields\": [\n                {\n                    \"key\": \"test_12bc5f24692f\",\n                    \"value\": \"test_bf376bce4c01\"\n                }\n            ]\n        },\n        \"isDeleted\": false,\n        \"rowVersion\": 1,\n        \"auditDetails\": {\n            \"createdBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n            \"lastModifiedBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n            \"createdTime\": 1677576837670,\n            \"lastModifiedTime\": 1677576837670\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Project Facility Bulk Create Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"ProjectFacilities\": [\n        {\n            \"tenantId\": \"{{tenantId}}\",\n            \"projectId\": \"{{individualProjectId}}\",\n            \"facilityId\": \"{{IndividualFacilityID}}\",\n            \"additionalFields\": {\n                \"schema\": \"test_e37466be924cjhghjg\",\n                \"version\": 8,\n                \"fields\": [\n                    {\n                        \"key\": \"test_12bc5f24692f\",\n                        \"value\": \"test_bf376bce4c01\"\n                    }\n                ]\n            },\n            \"rowVersion\": 0\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/project/facility/v1/bulk/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"project",
+								"facility",
+								"v1",
+								"bulk",
+								"_create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Project Facility Bulk Create Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"3670742c-ce1b-4f37-a1c5-f493968b592a\"\n    },\n    \"ProjectFacilities\": [\n        {\n            \"tenantId\": \"default\",\n            \"projectId\": \"cf72ca58-09dd-4e7f-bf40-41ebc680dea0\",\n            \"facilityId\": \"F-2023-03-01-000020\",\n            \"additionalFields\": {\n                \"schema\": \"test_e37466be924cjhghjg\",\n                \"version\": 8,\n                \"fields\": [\n                    {\n                        \"key\": \"test_12bc5f24692f\",\n                        \"value\": \"test_bf376bce4c01\"\n                    }\n                ]\n            },\n            \"rowVersion\": 0\n        },\n        {\n            \"tenantId\": \"default\",\n            \"projectId\": \"cf72ca58-09dd-4e7f-bf40-41ebc680dea0\",\n            \"facilityId\": \"F-2023-03-01-000021\",\n            \"additionalFields\": {\n                \"schema\": \"test_e37466be924cjhghjg\",\n                \"version\": 8,\n                \"fields\": [\n                    {\n                        \"key\": \"test_12bc5f24692f\",\n                        \"value\": \"test_bf376bce4c01\"\n                    }\n                ]\n            },\n            \"rowVersion\": 0\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{qa}}/project/facility/v1/bulk/_create",
+									"host": [
+										"{{qa}}"
+									],
+									"path": [
+										"project",
+										"facility",
+										"v1",
+										"bulk",
+										"_create"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 12:19:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubdomains; preload"
+								},
+								{
+									"key": "X-Lua-Resty-WAF-ID",
+									"value": "49104691a8fa2ecc7faa"
+								},
+								{
+									"key": "x-correlation-id",
+									"value": "56cfe92b-8e68-4a77-89cb-75d6e248d394"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; img-src 'self' https: data: blob:; style-src https: blob: 'unsafe-inline'; worker-src 'self' blob:; font-src 'self' https: data: blob:; child-src 'self' https: data: blob:;"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer-when-downgrade"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"apiId\": \"/project/facility/v1/bulk/_create\",\n    \"ver\": null,\n    \"ts\": 1677673166097,\n    \"resMsgId\": null,\n    \"msgId\": null,\n    \"status\": \"successful\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Household Project",
+			"item": [
+				{
+					"name": "Project Create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Assuming that the response is stored in the \"response\" variable\r",
+									"\r",
+									"const jsonResponse = pm.response.json();\r",
+									"\r",
+									"// Ensure that the \"Project\" array exists in the response\r",
+									"pm.expect(jsonResponse.Project).to.be.an(\"array\");\r",
+									"\r",
+									"// Extract the project ID from the first project in the array\r",
+									"const householdProjectId = jsonResponse.Project[0].id;\r",
+									"if (pm.response.code != 200) return;\r",
+									"pm.environment.set(\"householdProjectId\", householdProjectId);\r",
+									"// Log the extracted project ID\r",
+									"console.log(\"Household Project ID extracted:\", householdProjectId);\r",
+									"\r",
+									"// Set a test result for visualization in the Postman collection runner\r",
+									"pm.test(\"Extract Project ID\", function () {\r",
+									"    pm.expect(householdProjectId).to.not.be.undefined;\r",
+									"    pm.expect(householdProjectId).to.be.a(\"string\");\r",
+									"    pm.expect(householdProjectId.length).to.be.greaterThan(0);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.variables.set(\"timeStampMs\", new Date().getTime());",
+									"pm.variables.set(\"boundaryCode\", \"z004\");",
+									"pm.variables.set(\"tenantIdValue\", \"mz\");",
+									"pm.variables.set(\"projectName\", \"LLIN Bednet\");",
+									"pm.variables.set(\"projectType\", \"LLIN-mz\");",
+									"pm.variables.set(\"projectSubType\", \"LLIN-mz\");",
+									"pm.variables.set(\"department\", \"MALERIA\");",
+									"pm.variables.set(\"projectTypeIdHousehold\", \"dbd45c31-de9e-4e62-a9b6-abb818928fd1\");",
+									"pm.variables.set(\"beneficiaryTypeHousehold\", \"HOUSEHOLD\");",
+									"pm.variables.set(\"boundaryType\", \"Country\");",
+									"pm.variables.set(\"boundaryCountry\", \"mz\");",
+									"pm.variables.set(\"description\", \"mz project type configuration for LLIN Campaigns\");",
+									"let date = new Date();",
+									"let timeStampMs = date.getTime();",
+									"function generateUUID() {",
+									"  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {",
+									"    var r = Math.random() * 16 | 0,",
+									"      v = c == 'x' ? r : (r & 0x3 | 0x8);",
+									"    return v.toString(16);",
+									"  });",
+									"}",
+									"",
+									"pm.sendRequest({",
+									"    url: pm.environment.get(\"URL\") + '/individual/v1/_create',",
+									"    method: 'POST',",
+									"    header: {",
+									"        'Content-Type': 'application/json',",
+									"    },",
+									"    body: {",
+									"        mode: 'raw',",
+									"        raw: JSON.stringify({",
+									"            \"RequestInfo\": {",
+									"                \"authToken\": pm.environment.get(\"access_token\")",
+									"            },",
+									"",
+									"             \"Individual\": {",
+									"          \"tenantId\": pm.environment.get(\"tenantId\"),",
+									"          \"clientReferenceId\": generateUUID(),",
+									"          \"name\": {",
+									"            \"givenName\": pm.environment.get(\"individualGivenName\"),",
+									"            \"familyName\": pm.environment.get(\"individualFamilyName\"),",
+									"            \"otherNames\": pm.environment.get(\"individualOtherName\")",
+									"          },",
+									"          \"dateOfBirth\": '17/04/2022',//pm.environment.get(\"individualDateOfBirth2\"),",
+									"          \"gender\": pm.environment.get(\"individualGenderType\"),",
+									"          \"bloodGroup\": pm.environment.get(\"individualBloodGroup\"),",
+									"          \"mobileNumber\": \"9972527280\",",
+									"          \"altContactNumber\": \"8765432109\",",
+									"          \"email\": \"souravganguly_dada@gmail.com\",",
+									"          \"address\": [{",
+									"            \"clientReferenceId\": generateUUID(),",
+									"            \"tenantId\": pm.environment.get(\"tenantId\"),",
+									"            \"doorNo\": \"123\",",
+									"            \"latitude\": 12.928759019220271,",
+									"            \"longitude\": 77.62797660364444,",
+									"            \"locationAccuracy\": 14.27,",
+									"            \"type\": \"PERMANENT\",",
+									"            \"addressLine1\": \"Apartment\",",
+									"            \"addressLine2\": \"2nd Floor\",",
+									"            \"landmark\": \"Near Juhu Beach\",",
+									"            \"city\": \"Mumbai\",",
+									"            \"pincode\": \"123456\",",
+									"            \"buildingName\": \"Apartment\",",
+									"            \"street\": \"Necklace Road\",",
+									"            \"locality\": {",
+									"              \"code\": pm.environment.get(\"boundaryCode\"),",
+									"              \"name\": \"test_58630a388978\",",
+									"              \"label\": \"test_7b7f928dcab8\",",
+									"              \"latitude\": \"test_15d4a90d15a6\",",
+									"              \"longitude\": \"test_e8854daed039\",",
+									"              \"children\": []",
+									"            }",
+									"          }],",
+									"          \"fatherName\": \"Ganguly Sr\",",
+									"          \"husbandName\": null,",
+									"            \"identifiers\":[",
+									"                {",
+									"                    \"clientReferenceId\": generateUUID(),",
+									"                    \"identifierType\": \"DEFAULT\",",
+									"                    \"identifierId\": generateUUID(),",
+									"                }",
+									"            ],",
+									"          \"skills\": [{",
+									"            \"type\": pm.environment.get(\"individualSkillType\"),",
+									"            \"level\": pm.environment.get(\"individualSkillLevel\"),",
+									"            \"experience\": pm.environment.get(\"individualSkillExperience\"),",
+									"            \"clientReferenceId\": generateUUID()",
+									"          }],",
+									"           \"userDetails\": {",
+									"                    \"username\": pm.environment.get(\"newUserName\"),",
+									"                    \"password\": \"eGov@1234\",",
+									"                    \"roles\": [",
+									"                    ",
+									"                        {",
+									"                            \"code\": \"HRMS_ADMIN\",",
+									"                            \"name\": \"HRMS Admin\",",
+									"                            \"tenantId\": pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"HELPDESK_USER\",",
+									"                            \"name\": \"HELPDESK USER\",",
+									"                            \"tenantId\":pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"REGISTRAR\",",
+									"                            \"name\": \"Registrar\",",
+									"                            \"tenantId\": pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                     ",
+									"                        {",
+									"                            \"code\": \"SYSTEM_ADMINISTRATOR\",",
+									"                            \"name\": \"System Administrator\",",
+									"                            \"tenantId\": pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"HEALTH_FACILITY_WORKER\",",
+									"                            \"name\": \"Health Facilty Worker\",",
+									"                            \"tenantId\": pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"SUPERUSER\",",
+									"                            \"name\": \"Super User\",",
+									"                            \"tenantId\":pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"DISTRIBUTOR\",",
+									"                            \"name\": \"Distributor\",",
+									"                            \"tenantId\":pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"WAREHOUSE_MANAGER\",",
+									"                            \"name\": \"Warehouse Manager\",",
+									"                            \"tenantId\": pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"L2_SUPPORT\",",
+									"                            \"name\": \"L2 Support\",",
+									"                            \"tenantId\": pm.environment.get(\"tenantId\")",
+									"                        },",
+									"                        {",
+									"                            \"code\": \"PGR-ADMIN\",",
+									"                            \"name\": \"PGR Administrator\",",
+									"                            \"tenantId\":pm.environment.get(\"tenantId\")",
+									"                        }",
+									"                    ",
+									"                    ],",
+									"                    \"type\": \"EMPLOYEE\"",
+									"                },",
+									"          \"photo\": \"test_35bd4e8545d8\",",
+									"          \"additionalFields\": null,",
+									"          \"isSystemUser\": true,",
+									"          \"rowVersion\": 1,",
+									"          \"nonRecoverableError\": false,",
+									"          \"clientAuditDetails\": {",
+									"            \"createdBy\": \"8c11b1df-dded-4c9b-b413-65bd09c028fc\",",
+									"            \"lastModifiedBy\": \"8c11b1df-dded-4c9b-b413-65bd09c028fc\",",
+									"            \"createdTime\": timeStampMs,",
+									"            \"lastModifiedTime\": timeStampMs",
+									"          },",
+									"          \"auditDetails\": {",
+									"            \"createdBy\": \"a8c7b5c5-6007-4556-945e-3969c98b5155\",",
+									"            \"lastModifiedBy\": \"a8c7b5c5-6007-4556-945e-3969c98b5155\",",
+									"            \"createdTime\": timeStampMs,",
+									"            \"lastModifiedTime\": timeStampMs",
+									"          }",
+									"        }",
+									"        })",
+									"    }",
+									"},",
+									"    function (err, individualresponse) {",
+									"        if (err) {",
+									"            console.error(err);",
+									"            return;",
+									"        }",
+									"",
+									"        // Check the response",
+									"        else if (individualresponse.code === 202) {",
+									"",
+									"            //let response = userresponse.json().user;",
+									"            // const responseJSON = response.json();",
+									"            console.log(\"Newly created Username  \" + individualresponse.json().Individual.userDetails.username+\" Password eGov@1234\")",
+									"            pm.environment.set(\"UserUUID\", individualresponse.json().Individual.userUuid)",
+									"            console.log(\"Newly created UUID  \" + individualresponse.json().Individual.userUuid)",
+									"            console.log(\"User : Create completed, environment variable set\");",
+									"        }",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"Projects\": [\n        {\n            \"id\": \"f5F6xAskA05\",\n            \"tenantId\": \"{{tenantId}}\",\n            \"projectNumber\": \"f5F6xAskA05\",\n            \"name\": \"{{projectName}}\",\n            \"projectType\": \"{{projectType}}\",\n            \"projectSubType\": \"{{projectSubType}}\",\n            \"department\": \"{{department}}\",\n            \"description\": \"{{description}}\",\n            \"referenceID\": \"f5F6xAskA05\",\n            \"projectTypeId\": \"{{projectTypeIdHousehold}}\",\n            \"documents\": null,\n            \"address\": {\n                \"id\": null,\n                \"tenantId\": \"mz\",\n                \"clientReferenceId\": null,\n                \"doorNo\": null,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"locationAccuracy\": null,\n                \"type\": null,\n                \"addressLine1\": null,\n                \"addressLine2\": null,\n                \"landmark\": null,\n                \"city\": null,\n                \"pincode\": null,\n                \"buildingName\": null,\n                \"street\": null,\n                \"boundaryType\": \"Country\",\n                \"boundary\": \"mz\",\n                \"locality\": null\n            },\n            \"startDate\": {{startDate}},\n            \"endDate\": {{endDate}},\n            \"isTaskEnabled\": true,\n            \"parent\": null,\n            \"projectHierarchy\": \"LJX5GuypkKy\",\n            \"natureOfWork\": null,\n            \"ancestors\": null,\n            \"descendants\": null,\n            \"targets\": [\n                {\n                    \"id\": null,\n                    \"beneficiaryType\": \"{{beneficiaryTypeHousehold}}\",\n                    \"totalNo\": 50,\n                    \"targetNo\": 50,\n                    \"isDeleted\": null,\n                    \"auditDetails\": {\n                        \"createdBy\": \"test\",\n                        \"lastModifiedBy\": \"test\",\n                        \"createdTime\": 1683914109181,\n                        \"lastModifiedTime\": 1683914109181\n                    }\n                }\n            ],\n            \"additionalDetails\": null,\n            \"isDeleted\": false,\n            \"rowVersion\": 1,\n            \"auditDetails\": {\n                \"createdBy\": \"test\",\n                \"lastModifiedBy\": \"test\",\n                \"createdTime\": 1683914109181,\n                \"lastModifiedTime\": 1683914109181\n            }\n        }\n    ],\n    \"rowVersion\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/project/v1/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"project",
+								"v1",
+								"_create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Project Staff Create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// // Assuming that the UUID and Project ID have been extracted and stored in environment variables\r",
+									"// const userUuid = pm.environment.get(\"userUuid\");\r",
+									"// const projectId = pm.environment.get(\"projectId\");\r",
+									"\r",
+									"// // Ensure that the extracted UUID and Project ID are available\r",
+									"// pm.expect(userUuid).to.not.be.undefined;\r",
+									"// pm.expect(projectId).to.not.be.undefined;\r",
+									"\r",
+									"// // Set the startDate using the current timestamp\r",
+									"// const timeStamp = Math.floor(new Date().getTime() / 1000);\r",
+									"\r",
+									"// Build the request payload for \"ProjectStaff\"\r",
+									"// const projectStaffPayload = {\r",
+									"//     \"ProjectStaff\": {\r",
+									"//         \"tenantId\": \"mz\",\r",
+									"//         \"userId\": userUuid,\r",
+									"//         \"projectId\": projectId,\r",
+									"//         \"startDate\": timeStamp,\r",
+									"//         \"endDate\": 9983874101527,\r",
+									"//         \"channel\": \"testing for SMC individual\",\r",
+									"//         \"rowVersion\": 1,\r",
+									"//         \"additionalFields\": {\r",
+									"//             \"schema\": \"registration\",\r",
+									"//             \"version\": 1,\r",
+									"//             \"fields\": [\r",
+									"//                 {\r",
+									"//                     \"key\": \"key\",\r",
+									"//                     \"value\": \"value\"\r",
+									"//                 }\r",
+									"//             ]\r",
+									"//         }\r",
+									"//     }\r",
+									"// };\r",
+									"\r",
+									"// // Log the request payload for verification\r",
+									"// console.log(\"ProjectStaff Request Payload:\", projectStaffPayload);\r",
+									"\r",
+									"// // Set the request body\r",
+									"// pm.request.body.update(JSON.stringify(projectStaffPayload));\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"ProjectStaff\": {\n        \"tenantId\": \"{{tenantId}}\",\n        \"userId\": \"{{UserUUID}}\", //fetches UUID from searched user\n        \"projectId\": \"{{householdProjectId}}\", //fetches the project id from the created project\n        \"startDate\": {{startDate}},\n        \"endDate\": {{endDate}},\n        \"channel\": \"testing for HF module\",\n        \"rowVersion\": 1,\n        \"additionalFields\": {\n            \"schema\": \"registration\",\n            \"version\": 1,\n            \"fields\": [\n                {\n                    \"key\": \"key\",\n                    \"value\": \"value\"\n                }\n            ]\n        }\n    }\n}"
+						},
+						"url": {
+							"raw": "{{URL}}/project/staff/v1/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"project",
+								"staff",
+								"v1",
+								"_create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Project Staff Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"ProjectStaff\": [\n        {\n            \"tenantId\": \"default\",\n            \"userId\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n            \"projectId\": \"13\",\n            \"startDate\": {{timeStamp}},\n            \"endDate\": {{timeStamp}},\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            },\n            \"channel\": \"test_02c6c793f445\"\n        }\n    ],\n    \"apiOperation\": \"CREATE\"\n}"
+								},
+								"url": {
+									"raw": "{{qa}}/project/staff/v1/_create",
+									"host": [
+										"{{qa}}"
+									],
+									"path": [
+										"project",
+										"staff",
+										"v1",
+										"_create"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 Jan 2023 10:05:24 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubdomains; preload"
+								},
+								{
+									"key": "X-Lua-Resty-WAF-ID",
+									"value": "a9a679df0904f86af8b9"
+								},
+								{
+									"key": "x-correlation-id",
+									"value": "c8ad22bb-fab7-4f76-80b9-33f2df4181f0"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; img-src 'self' https: data: blob:; style-src https: blob: 'unsafe-inline'; worker-src 'self' blob:; font-src 'self' https: data: blob:; child-src 'self' https: data: blob:;"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer-when-downgrade"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ResponseInfo\": {\n        \"apiId\": null,\n        \"ver\": null,\n        \"ts\": 1674122724368,\n        \"resMsgId\": null,\n        \"msgId\": null,\n        \"status\": \"successful\"\n    },\n    \"ProjectStaff\": [\n        {\n            \"id\": \"PTS-2023-01-19-000010\",\n            \"tenantId\": \"default\",\n            \"userId\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n            \"projectId\": \"13\",\n            \"startDate\": 1674122723,\n            \"endDate\": 1674122723,\n            \"channel\": \"test_02c6c793f445\",\n            \"isDeleted\": false,\n            \"rowVersion\": 1,\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            },\n            \"auditDetails\": {\n                \"createdBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"lastModifiedBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"createdTime\": 1674122724357,\n                \"lastModifiedTime\": 1674122724357\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Product Create",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonResponse = pm.response.json();\r",
+									"pm.environment.set(\"productIDBednet\", jsonResponse.Product[0].id);\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"Product\": [\n        {\n            \"tenantId\": \"mz\",\n            \"type\": \"DRUG\",\n            \"name\": \"LLIN Bednet\",\n            \"manufacturer\": \"FDC Limited\",\n            \"additionalFields\": {\n                \"schema\": \"test_3e1c7976b4d6\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"form\",\n                        \"value\": \"bednet\"\n                    }\n                ]\n            },\n            \"isDeleted\": false,\n            \"clientAuditDetails\": {\n                \"createdTime\": {{timeStamp}},\n                \"lastModifiedTime\": {{timeStamp}}\n            }\n            // }\n        }\n    ],\n    \"apiOperation\": \"CREATE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/product/v1/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product",
+								"v1",
+								"_create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Product Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestInfo\": {\n    \"authToken\": \"d17d68e1-73e3-481e-98e5-4219ed19eef4\"\n  },\n  \"Product\": [\n    {\n            \"tenantId\": \"default\",\n            \"type\": \"DRUG\",\n            \"name\": \"Gru Prod n\",\n            \"manufacturer\": \"Piramal\",\n            \"additionalFields\": {\n                \"schema\": \"test_3e1c7976b4d6\",\n                \"version\": 71,\n                \"fields\": [\n                    {\n                        \"key\": \"test_8c13e84511d7\",\n                        \"value\": \"test_8d6a63c71416\"\n                    }\n                ]\n            },\n            \"isDeleted\": false\n    }\n  ],\n  \"apiOperation\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://health-qa.digit.org/product/v1/_create",
+									"protocol": "https",
+									"host": [
+										"health-qa",
+										"digit",
+										"org"
+									],
+									"path": [
+										"product",
+										"v1",
+										"_create"
+									]
+								}
+							},
+							"_postman_previewlanguage": "Text",
+							"header": [],
+							"cookie": [],
+							"body": "{\n    \"ResponseInfo\": {\n        \"apiId\": null,\n        \"ver\": null,\n        \"ts\": 1671777783813,\n        \"resMsgId\": null,\n        \"msgId\": null,\n        \"status\": \"successful\"\n    },\n    \"Product\": [\n        {\n            \"id\": \"P-2022-12-23-000012\",\n            \"tenantId\": \"default\",\n            \"type\": \"DRUG\",\n            \"name\": \"Gru Prod n\",\n            \"manufacturer\": \"Piramal\",\n            \"additionalFields\": {\n                \"schema\": \"test_3e1c7976b4d6\",\n                \"version\": 71,\n                \"fields\": [\n                    {\n                        \"key\": \"test_8c13e84511d7\",\n                        \"value\": \"test_8d6a63c71416\"\n                    }\n                ]\n            },\n            \"isDeleted\": false,\n            \"rowVersion\": 1,\n            \"auditDetails\": {\n                \"createdBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"lastModifiedBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"createdTime\": 1671777783808,\n                \"lastModifiedTime\": 1671777783808\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Product Variant Create Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonResponse = pm.response.json();",
+									"pm.environment.set(\"ProductVariantIdBednet\", jsonResponse.ProductVariant[0].id);",
+									"console.log('Household Project Product variant - ' + jsonResponse.ProductVariant[0].id);",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"ProductVariant\": [\n        {\n            \"tenantId\": \"mz\",\n            \"productId\": \"{{productIDBednet}}\",\n            \"sku\": \"SP 500mg\",\n            \"variation\": \"500mg\",\n            \"additionalFields\": {\n                \"schema\": \"test\",\n                \"version\": 2,\n                \"fields\": [\n                    {\n                        \"key\": \"weight\",\n                        \"value\": \"5g\"\n                    }\n                ]\n            }\n        }\n    ],\n    \"apiOperation\": \"CREATE\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/product/variant/v1/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"product",
+								"variant",
+								"v1",
+								"_create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Product Variant Create",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"RequestInfo\": {\n    \"authToken\": \"{{authToken}}\"\n  },\n  \"ProductVariant\": [\n    {\n      \"tenantId\": \"default\",\n      \"productId\": \"P-2023-01-04-000021\",\n      \"sku\": \"CROCIN-650\",\n      \"variation\": \"Crocin 650mg\",\n      \"additionalFields\": {\n        \"schema\": \"test\",\n        \"version\": 2,\n        \"fields\": [\n          {\n            \"key\": \"weight\",\n            \"value\": \"10g\"\n          }\n        ]\n      }\n    }\n  ],\n  \"apiOperation\": \"CREATE\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://health-qa.digit.org/product/variant/v1/_create",
+									"protocol": "https",
+									"host": [
+										"health-qa",
+										"digit",
+										"org"
+									],
+									"path": [
+										"product",
+										"variant",
+										"v1",
+										"_create"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 05 Jan 2023 05:05:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubdomains; preload"
+								},
+								{
+									"key": "X-Lua-Resty-WAF-ID",
+									"value": "32a80ad624dff73a021b"
+								},
+								{
+									"key": "x-correlation-id",
+									"value": "b6cedcbc-7139-4c0e-bc7e-e8270ad464f9"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; img-src 'self' https: data: blob:; style-src https: blob: 'unsafe-inline'; worker-src 'self' blob:; font-src 'self' https: data: blob:; child-src 'self' https: data: blob:;"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer-when-downgrade"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ResponseInfo\": {\n        \"apiId\": null,\n        \"ver\": null,\n        \"ts\": 1672895119776,\n        \"resMsgId\": null,\n        \"msgId\": null,\n        \"status\": \"successful\"\n    },\n    \"ProductVariant\": [\n        {\n            \"id\": \"PVAR-2023-01-05-000014\",\n            \"tenantId\": \"default\",\n            \"productId\": \"P-2023-01-04-000021\",\n            \"sku\": \"CROCIN-650\",\n            \"variation\": \"Crocin 650mg\",\n            \"additionalFields\": {\n                \"schema\": \"test\",\n                \"version\": 2,\n                \"fields\": [\n                    {\n                        \"key\": \"weight\",\n                        \"value\": \"10g\"\n                    }\n                ]\n            },\n            \"isDeleted\": false,\n            \"rowVersion\": 1,\n            \"auditDetails\": {\n                \"createdBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"lastModifiedBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"createdTime\": 1672895119767,\n                \"lastModifiedTime\": 1672895119767\n            }\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Project Resource Bulk Create Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"ProjectResources\": [\n        {\n            \"tenantId\": \"{{tenantId}}\",\n            \"projectId\": \"{{householdProjectId}}\",\n            \"resource\": {\n                \"productVariantId\": \"{{ProductVariantIdBednet}}\",\n                \"type\": \"DRUG\",\n                \"isBaseUnitVariant\": false\n            },\n            \"startDate\": {{timeStamp}},\n            \"endDate\": {{timeStamp}},\n            \"isDeleted\": false,\n            \"rowVersion\": 1\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/project/resource/v1/bulk/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"project",
+								"resource",
+								"v1",
+								"bulk",
+								"_create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Project Resource Bulk Create Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"ProjectResources\": [\n        {\n            \"tenantId\": \"default\",\n            \"projectId\": \"cec9b18d-37f0-49a4-90c2-ad462bb66134\",\n            \"resource\": {\n                \"productVariantId\": \"PVAR-2023-03-03-000023\",\n                \"type\": \"DRUG\",\n                \"isBaseUnitVariant\": false\n            },\n            \"startDate\": 1677732637,\n            \"endDate\": 1677932637,\n            \"isDeleted\": false,\n            \"rowVersion\": 1\n        },\n        {\n            \"tenantId\": \"default\",\n            \"projectId\": \"9bd01fe5-983c-4695-8492-1ab425b6d5c2\",\n            \"resource\": {\n                \"productVariantId\": \"PVAR-2023-03-03-000024\",\n                \"type\": \"DRUG\",\n                \"isBaseUnitVariant\": false\n            },\n            \"startDate\": 1677732637,\n            \"endDate\": 1677932637,\n            \"isDeleted\": false,\n            \"rowVersion\": 1\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{qa}}/project/resource/v1/bulk/_create",
+									"host": [
+										"{{qa}}"
+									],
+									"path": [
+										"project",
+										"resource",
+										"v1",
+										"bulk",
+										"_create"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Fri, 03 Mar 2023 03:12:41 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubdomains; preload"
+								},
+								{
+									"key": "X-Lua-Resty-WAF-ID",
+									"value": "fe70a28f318fdef859c7"
+								},
+								{
+									"key": "x-correlation-id",
+									"value": "823a5ff7-a820-4859-82a9-6dee9ae63cc7"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; img-src 'self' https: data: blob:; style-src https: blob: 'unsafe-inline'; worker-src 'self' blob:; font-src 'self' https: data: blob:; child-src 'self' https: data: blob:;"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer-when-downgrade"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"apiId\": \"/project/resource/v1/bulk/_create\",\n    \"ver\": null,\n    \"ts\": 1677813161324,\n    \"resMsgId\": null,\n    \"msgId\": null,\n    \"status\": \"successful\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Facility Create Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonResponse = pm.response.json();",
+									"pm.environment.set(\"HouseholdFacilityID\", jsonResponse.Facility.id);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"Facility\": {\n        \"tenantId\": \"{{tenantId}}\",\n        \"isPermanent\": \"true\",\n        \"name\": \"Facility bednet MDA-LF-Nairobi\",\n        \"usage\": \"Storing Resource\",\n        \"storageCapacity\": 200,\n        \"address\": {\n            \"tenantId\": \"{{tenantId}}\",\n            \"doorNo\": \"123\",\n            \"latitude\": 12.34,\n            \"longitude\": 123.45,\n            \"locationAccuracy\": 123.76,\n            \"type\": \"PERMANENT\",\n            \"addressLine1\": \"Alpine Apartments\",\n            \"addressLine2\": \"Road Number 12\",\n            \"landmark\": \"Near Niagara Lake\",\n            \"city\": \"Bangalore\",\n            \"pincode\": \"1234567\",\n            \"buildingName\": \"Alpine Apartments\",\n            \"street\": \"test_da0b8ebec5ef\",\n            \"locality\": {\n                \"code\": \"f5F6xAskA05\",\n                \"name\": \"f5F6xAskA05\"\n            }\n        },\n        \"additionalFields\": {\n            \"schema\": \"test_e37466be924cjhghjg\",\n            \"version\": 8,\n            \"fields\": [\n                {\n                    \"key\": \"test_12bc5f24692f\",\n                    \"value\": \"test_bf376bce4c01\"\n                }\n            ]\n        },\n        \"rowVersion\": 0,\n        \"clientAuditDetails\":{\n            \"createdTime\":1692774209,\n            \"lastModifiedTime\":1692774209\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/facility/v1/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"facility",
+								"v1",
+								"_create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Facility Create Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"Facility\": {\n        \"tenantId\": \"default\",\n        \"isPermanent\": \"true\",\n        \"name\": \"LLIN Warehouse1\",\n        \"usage\": \"Storing LLIN\",\n        \"storageCapacity\": 200,\n        \"address\": {\n            \"tenantId\": \"default\",\n            \"doorNo\": \"123\",\n            \"latitude\": 12.34,\n            \"longitude\": 123.45,\n            \"locationAccuracy\": 123.76,\n            \"type\": \"PERMANENT\",\n            \"addressLine1\": \"Alpine Apartments\",\n            \"addressLine2\": \"Road Number 12\",\n            \"landmark\": \"Near Niagara Lake\",\n            \"city\": \"Bangalore\",\n            \"pincode\": \"1234567\",\n            \"buildingName\": \"Alpine Apartments\",\n            \"street\": \"test_da0b8ebec5ef\",\n            \"locality\": {\n                \"code\": \"test_45ab2c1c24cfi67575478\",\n                \"name\": \"locality name\"\n            }\n        },\n        \"additionalFields\": {\n            \"schema\": \"test_e37466be924cjhghjg\",\n            \"version\": 8,\n            \"fields\": [\n                {\n                    \"key\": \"test_12bc5f24692f\",\n                    \"value\": \"test_bf376bce4c01\"\n                }\n            ]\n        },\n        \"rowVersion\": 0\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{qa}}/facility/v1/_create",
+									"host": [
+										"{{qa}}"
+									],
+									"path": [
+										"facility",
+										"v1",
+										"_create"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 28 Feb 2023 09:33:57 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubdomains; preload"
+								},
+								{
+									"key": "X-Lua-Resty-WAF-ID",
+									"value": "d8fe2665d808b5a2949f"
+								},
+								{
+									"key": "x-correlation-id",
+									"value": "8257850d-8295-4ad4-b1d6-aff87e7e2075"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; img-src 'self' https: data: blob:; style-src https: blob: 'unsafe-inline'; worker-src 'self' blob:; font-src 'self' https: data: blob:; child-src 'self' https: data: blob:;"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer-when-downgrade"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"ResponseInfo\": {\n        \"apiId\": null,\n        \"ver\": null,\n        \"ts\": 1677576837701,\n        \"resMsgId\": null,\n        \"msgId\": null,\n        \"status\": \"successful\"\n    },\n    \"Facility\": {\n        \"id\": \"F-2023-02-28-000012\",\n        \"tenantId\": \"default\",\n        \"isPermanent\": true,\n        \"name\": \"LLIN Warehouse1\",\n        \"usage\": \"Storing LLIN\",\n        \"storageCapacity\": 200,\n        \"address\": {\n            \"id\": \"0717cfa6-8d89-42e7-b934-19e91ea9b16c\",\n            \"tenantId\": \"default\",\n            \"doorNo\": \"123\",\n            \"latitude\": 12.34,\n            \"longitude\": 123.45,\n            \"locationAccuracy\": 123.76,\n            \"type\": \"PERMANENT\",\n            \"addressLine1\": \"Alpine Apartments\",\n            \"addressLine2\": \"Road Number 12\",\n            \"landmark\": \"Near Niagara Lake\",\n            \"city\": \"Bangalore\",\n            \"pincode\": \"1234567\",\n            \"buildingName\": \"Alpine Apartments\",\n            \"street\": \"test_da0b8ebec5ef\",\n            \"locality\": {\n                \"code\": \"test_45ab2c1c24cfi67575478\",\n                \"name\": \"locality name\",\n                \"label\": null,\n                \"latitude\": null,\n                \"longitude\": null,\n                \"children\": null,\n                \"materializedPath\": null\n            }\n        },\n        \"additionalFields\": {\n            \"schema\": \"test_e37466be924cjhghjg\",\n            \"version\": 8,\n            \"fields\": [\n                {\n                    \"key\": \"test_12bc5f24692f\",\n                    \"value\": \"test_bf376bce4c01\"\n                }\n            ]\n        },\n        \"isDeleted\": false,\n        \"rowVersion\": 1,\n        \"auditDetails\": {\n            \"createdBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n            \"lastModifiedBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n            \"createdTime\": 1677576837670,\n            \"lastModifiedTime\": 1677576837670\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Project Facility Bulk Create Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"ProjectFacilities\": [\n        {\n            \"tenantId\": \"{{tenantId}}\",\n            \"projectId\": \"{{householdProjectId}}\",\n            \"facilityId\": \"{{HouseholdFacilityID}}\",\n            \"additionalFields\": {\n                \"schema\": \"test_e37466be924cjhghjg\",\n                \"version\": 8,\n                \"fields\": [\n                    {\n                        \"key\": \"test_12bc5f24692f\",\n                        \"value\": \"test_bf376bce4c01\"\n                    }\n                ]\n            },\n            \"rowVersion\": 0\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/project/facility/v1/bulk/_create",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"project",
+								"facility",
+								"v1",
+								"bulk",
+								"_create"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Project Facility Bulk Create Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"3670742c-ce1b-4f37-a1c5-f493968b592a\"\n    },\n    \"ProjectFacilities\": [\n        {\n            \"tenantId\": \"default\",\n            \"projectId\": \"cf72ca58-09dd-4e7f-bf40-41ebc680dea0\",\n            \"facilityId\": \"F-2023-03-01-000020\",\n            \"additionalFields\": {\n                \"schema\": \"test_e37466be924cjhghjg\",\n                \"version\": 8,\n                \"fields\": [\n                    {\n                        \"key\": \"test_12bc5f24692f\",\n                        \"value\": \"test_bf376bce4c01\"\n                    }\n                ]\n            },\n            \"rowVersion\": 0\n        },\n        {\n            \"tenantId\": \"default\",\n            \"projectId\": \"cf72ca58-09dd-4e7f-bf40-41ebc680dea0\",\n            \"facilityId\": \"F-2023-03-01-000021\",\n            \"additionalFields\": {\n                \"schema\": \"test_e37466be924cjhghjg\",\n                \"version\": 8,\n                \"fields\": [\n                    {\n                        \"key\": \"test_12bc5f24692f\",\n                        \"value\": \"test_bf376bce4c01\"\n                    }\n                ]\n            },\n            \"rowVersion\": 0\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{qa}}/project/facility/v1/bulk/_create",
+									"host": [
+										"{{qa}}"
+									],
+									"path": [
+										"project",
+										"facility",
+										"v1",
+										"bulk",
+										"_create"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 01 Mar 2023 12:19:26 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=63072000; includeSubdomains; preload"
+								},
+								{
+									"key": "X-Lua-Resty-WAF-ID",
+									"value": "49104691a8fa2ecc7faa"
+								},
+								{
+									"key": "x-correlation-id",
+									"value": "56cfe92b-8e68-4a77-89cb-75d6e248d394"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; img-src 'self' https: data: blob:; style-src https: blob: 'unsafe-inline'; worker-src 'self' blob:; font-src 'self' https: data: blob:; child-src 'self' https: data: blob:;"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer-when-downgrade"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "sameorigin"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"apiId\": \"/project/facility/v1/bulk/_create\",\n    \"ver\": null,\n    \"ts\": 1677673166097,\n    \"resMsgId\": null,\n    \"msgId\": null,\n    \"status\": \"successful\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Project Staff Bulk Create",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"let URLPath = pm.environment.get(\"URL\");",
+							"pm.sendRequest({",
+							"    url: URLPath + '/project/facility/v1/bulk/_create', // Replace with the actual URL",
+							"    method: 'POST',",
+							"    header: {",
+							"        'Content-Type': 'application/json', // Replace with appropriate headers",
+							"    },",
+							"    body: {",
+							"        mode: 'raw',",
+							"        raw: JSON.stringify({",
+							"            \"RequestInfo\": {",
+							"                \"authToken\": pm.environment.get(\"access_token\")",
+							"            },",
+							"            \"ProjectFacilities\": [{",
+							"                \"tenantId\": pm.environment.get(\"tenantId\"),",
+							"                \"projectId\": pm.environment.get(\"individualProjectId\"),",
+							"                \"facilityId\": pm.environment.get(\"HouseholdFacilityID\"),",
+							"                \"additionalFields\": {",
+							"                    \"schema\": \"test_e37466be924cjhghjg\",",
+							"                    \"version\": 8,",
+							"                    \"fields\": [",
+							"                        {",
+							"                            \"key\": \"test_12bc5f24692f\",",
+							"                            \"value\": \"test_bf376bce4c01\"",
+							"                        }",
+							"                    ]",
+							"                },",
+							"                \"rowVersion\": 0",
+							"            },",
+							"            {",
+							"                \"tenantId\": pm.environment.get(\"tenantId\"),",
+							"                \"projectId\": pm.environment.get(\"householdProjectId\"),",
+							"                \"facilityId\": pm.environment.get(\"IndividualFacilityID\"),",
+							"                \"additionalFields\": {",
+							"                    \"schema\": \"test_e37466be924cjhghjg\",",
+							"                    \"version\": 8,",
+							"                    \"fields\": [",
+							"                        {",
+							"                            \"key\": \"test_12bc5f24692f\",",
+							"                            \"value\": \"test_bf376bce4c01\"",
+							"                        }",
+							"                    ]",
+							"                },",
+							"                \"rowVersion\": 0",
+							"            }]",
+							"        })",
+							"    }",
+							"}, function (err, response) {",
+							"    if (err) {",
+							"        console.error(err);",
+							"        return;",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{access_token}}\"\n    },\n    \"ProjectStaff\": [\n        {\n            \"tenantId\": \"mz\",\n            \"userId\": \"{{distUUID}}\", //userserviceID\n            \"projectId\": \"{{individualProjectId}}\",\n            \"startDate\": 1983874101527,\n            \"endDate\": 9983874101527,\n            \"channel\": \"testing for HCM multi round mobile app\",\n            \"rowVersion\": 1,\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            }\n        },\n        {\n            \"tenantId\": \"mz\",\n         \n            \"userId\": \"{{SupervisorUUID}}\", //userserviceID\n            \"projectId\": \"{{individualProjectId}}\",\n            \"startDate\": 1983874101527,\n            \"endDate\": 9983874101527,\n            \"channel\": \"testing for HCM multi round mobile app\",\n            \"rowVersion\": 1,\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            }\n        },\n        {\n            \"tenantId\": \"mz\",\n            \"userId\": \"{{wmUUID}}\", //userserviceID\n            \"projectId\": \"{{individualProjectId}}\",\n            \"startDate\": 1983874101527,\n            \"endDate\": 9983874101527,\n            \"channel\": \"testing for HCM multi round mobile app\",\n            \"rowVersion\": 1,\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            }\n        },\n        {\n            \"tenantId\": \"mz\",\n            \"userId\": \"{{hfReferralUUID}}\", //userserviceID\n            \"projectId\": \"{{individualProjectId}}\",\n            \"startDate\": 1983874101527,\n            \"endDate\": 9983874101527,\n            \"channel\": \"testing for HCM multi round mobile app\",\n            \"rowVersion\": 1,\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            }\n        },\n           {\n            \"tenantId\": \"mz\",\n            \"userId\": \"{{distUUID}}\", //userserviceID\n            \"projectId\": \"{{householdProjectId}}\",\n            \"startDate\": 1983874101527,\n            \"endDate\": 9983874101527,\n            \"channel\": \"testing for HCM multi round mobile app\",\n            \"rowVersion\": 1,\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            }\n        },\n        {\n            \"tenantId\": \"mz\",\n         \n            \"userId\": \"{{SupervisorUUID}}\", //userserviceID\n            \"projectId\": \"{{householdProjectId}}\",\n            \"startDate\": 1983874101527,\n            \"endDate\": 9983874101527,\n            \"channel\": \"testing for HCM multi round mobile app\",\n            \"rowVersion\": 1,\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            }\n        },\n        {\n            \"tenantId\": \"mz\",\n            // \"userId\": \"{{staffUserServiceUuid}}\", //userserviceID\n            \"userId\": \"{{wmUUID}}\", //userserviceID\n            \"projectId\": \"{{householdProjectId}}\",\n            \"startDate\": 1983874101527,\n            \"endDate\": 9983874101527,\n            \"channel\": \"testing for HCM multi round mobile app\",\n            \"rowVersion\": 1,\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            }\n        },\n      \n        {\n            \"tenantId\": \"mz\",\n            \"userId\": \"{{hfReferralUUID}}\", //userserviceID\n            \"projectId\": \"{{householdProjectId}}\",\n            \"startDate\": 1983874101527,\n            \"endDate\": 9983874101527,\n            \"channel\": \"testing for HCM multi round mobile app\",\n            \"rowVersion\": 1,\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            }\n        }\n    ]\n}"
+				},
+				"url": {
+					"raw": "{{URL}}/project/staff/v1/bulk/_create",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"project",
+						"staff",
+						"v1",
+						"bulk",
+						"_create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Project Staff Create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"RequestInfo\": {\n        \"authToken\": \"{{authToken}}\"\n    },\n    \"ProjectStaff\": [\n        {\n            \"tenantId\": \"default\",\n            \"userId\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n            \"projectId\": \"13\",\n            \"startDate\": {{timeStamp}},\n            \"endDate\": {{timeStamp}},\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            },\n            \"channel\": \"test_02c6c793f445\"\n        }\n    ],\n    \"apiOperation\": \"CREATE\"\n}"
+						},
+						"url": {
+							"raw": "{{qa}}/project/staff/v1/_create",
+							"host": [
+								"{{qa}}"
+							],
+							"path": [
+								"project",
+								"staff",
+								"v1",
+								"_create"
+							]
+						}
+					},
+					"status": "Accepted",
+					"code": 202,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jan 2023 10:05:24 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubdomains; preload"
+						},
+						{
+							"key": "X-Lua-Resty-WAF-ID",
+							"value": "a9a679df0904f86af8b9"
+						},
+						{
+							"key": "x-correlation-id",
+							"value": "c8ad22bb-fab7-4f76-80b9-33f2df4181f0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self' https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'; img-src 'self' https: data: blob:; style-src https: blob: 'unsafe-inline'; worker-src 'self' blob:; font-src 'self' https: data: blob:; child-src 'self' https: data: blob:;"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer-when-downgrade"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "sameorigin"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"ResponseInfo\": {\n        \"apiId\": null,\n        \"ver\": null,\n        \"ts\": 1674122724368,\n        \"resMsgId\": null,\n        \"msgId\": null,\n        \"status\": \"successful\"\n    },\n    \"ProjectStaff\": [\n        {\n            \"id\": \"PTS-2023-01-19-000010\",\n            \"tenantId\": \"default\",\n            \"userId\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n            \"projectId\": \"13\",\n            \"startDate\": 1674122723,\n            \"endDate\": 1674122723,\n            \"channel\": \"test_02c6c793f445\",\n            \"isDeleted\": false,\n            \"rowVersion\": 1,\n            \"additionalFields\": {\n                \"schema\": \"registration\",\n                \"version\": 1,\n                \"fields\": [\n                    {\n                        \"key\": \"key\",\n                        \"value\": \"value\"\n                    }\n                ]\n            },\n            \"auditDetails\": {\n                \"createdBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"lastModifiedBy\": \"56b5c31b-b843-426c-b8d5-64a4c80286aa\",\n                \"createdTime\": 1674122724357,\n                \"lastModifiedTime\": 1674122724357\n            }\n        }\n    ]\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"pm.environment.set(\"authToken\", \"\")",
+					"pm.environment.set(\"timeStamp\", new Date().getTime())",
+					"",
+					"",
+					"var uuid = require('uuid');",
+					"var clientReferenceId = uuid.v4();",
+					"pm.environment.set(\"uuid\", clientReferenceId)",
+					"clientReferenceId = uuid.v4();",
+					"pm.environment.set(\"uuid2\", clientReferenceId)",
+					"var beneficiaryClientReferenceId = uuid.v4();",
+					"pm.environment.set(\"beneficiaryClientReferenceId\", beneficiaryClientReferenceId)",
+					"beneficiaryClientReferenceId = uuid.v4();",
+					"pm.environment.set(\"beneficiaryClientReferenceId2\", beneficiaryClientReferenceId)",
+					"",
+					"var identifierTypes = [\"SYSTEM_GENERATED\", \"AADHAAR\", \"PAN\", \"VOTER ID CARD\", \"PASSPORT\", \"DRIVING LICENSE\"]",
+					"pm.environment.set(\"individualIdentifierType\", identifierTypes[Math.floor(Math.random() * identifierTypes.length)])",
+					"pm.environment.set(\"individualIdentifierId\", Math.floor((Math.random() * (999999999999 - 100000000000 + 1)) + 100000000000))",
+					"var skillTypes = [\"Type Writing\", \"Computer\", \"Science\", \"Singing\", \"Dancing\", \"Event Organizer\"]",
+					"pm.environment.set(\"individualSkillType\", skillTypes[Math.floor(Math.random() * skillTypes.length)])",
+					"var skillLevels = [\"Novice\", \"Learner\", \"Profecient\", \"Expert\"]",
+					"pm.environment.set(\"individualSkillLevel\", skillLevels[Math.floor(Math.random() * skillLevels.length)])",
+					"var skillExperiences = [\"1 Year\", \"2 Years\", \"3 Years\", \"4 Years\", \"5 Years\", \"6 Years\", \"7 Years\", \"8 Years\", \"9 Years\", \"10 Years\", \"10+ Years\"]",
+					"pm.environment.set(\"individualSkillExperience\", skillExperiences[Math.floor(Math.random() * skillExperiences.length)])",
+					"var bloodGroups = [\"A+\", \"B+\", \"O+\", \"AB+\", \"A-\", \"B-\", \"AB-\", \"O-\"]",
+					"pm.environment.set(\"individualBloodGroup\", bloodGroups[Math.floor(Math.random() * bloodGroups.length)])",
+					"var genderTypes = [ \"MALE\", \"FEMALE\"]",
+					"pm.environment.set(\"individualGenderType\", genderTypes[Math.floor(Math.random() * genderTypes.length)])",
+					"pm.environment.set(\"individualDateOfBirth\", new Date(new Date() - Math.random()*(1e+12)).toLocaleDateString('en-GB'))",
+					"pm.environment.set(\"individualGivenName\", \"Sourav\"+ Math.random().toString(36).slice(-10))",
+					"pm.environment.set(\"individualFamilyName\", \"Ganguly\"+ Math.random().toString(36).slice(-10))",
+					"pm.environment.set(\"individualOtherName\", \"Dada\"+ Math.random().toString(36).slice(-10))",
+					"",
+					"pm.environment.set(\"individualDateOfBirth2\", new Date(new Date() - Math.random()*(1e+12)).toLocaleDateString('en-GB'))",
+					"pm.environment.set(\"individualGivenName2\", \"Sourav\"+ Math.random().toString(36).slice(-10))",
+					"pm.environment.set(\"individualFamilyName2\", \"Ganguly\"+ Math.random().toString(36).slice(-10))",
+					"pm.environment.set(\"individualOtherName2\", \"Dada\"+ Math.random().toString(36).slice(-10))",
+					"pm.environment.set(\"individualIdentifierId2\", \"test_\" + String(Math.floor((Math.random() * (999999999999 - 100000000000 + 1)) + 100000000000)))",
+					"pm.environment.set(\"timeStamp\", new Date().getTime())",
+					"",
+					"pm.environment.set(\"newUserName\", \"USER-\" + Math.floor((Math.random() * (999999 - 100000 + 1)) + 100000))",
+					"pm.sendRequest({",
+					"    url: pm.environment.get(\"URL\") + '/user/oauth/token',",
+					"    method: 'POST',",
+					"    header: { \"Content-Type\": \"application/x-www-form-urlencoded\", \"Authorization\": \"Basic ZWdvdi11c2VyLWNsaWVudDo=\" },",
+					"    body: {",
+					"        mode: 'urlencoded',",
+					"        urlencoded: [",
+					"            { key: 'grant_type', value: 'password' },",
+					"            { key: 'scope', value: 'read' },",
+					"            { key: 'username', value: pm.environment.get('apiUserName') },",
+					"            { key: 'password', value: pm.environment.get('apiPassword') },",
+					"            { key: 'tenantId', value: 'mz' },",
+					"            { key: 'userType', value: 'EMPLOYEE' }",
+					"        ]",
+					"    }",
+					"},",
+					"",
+					"    function (err, response) {",
+					"        const responseJSON = response.json();",
+					"        // console.log(\"Access Token is \" + responseJSON.access_token)",
+					"        pm.environment.set(\"authToken\", responseJSON.access_token)",
+					"        // console.log(\"The auth token has been set up now\")",
+					"    });",
+					"",
+					"",
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
