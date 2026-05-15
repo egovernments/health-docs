@@ -79,7 +79,7 @@ flutter pub upgrade
 👉 This updates all packages to the latest versions that match your [pubspec.yam](https://github.com/egovernments/health-campaign-field-worker-app/blob/console-master/apps/health_campaign_field_worker_app/pubspec.yaml)l.
 {% endhint %}
 
-Step 2 — Clean project (to avoid old cached versions)
+#### Step 2 — Clean project (to avoid old cached versions)
 
 ```
 flutter clean
@@ -101,7 +101,7 @@ flutter pub outdated
 {% endstep %}
 
 {% step %}
-### &#x20; Summary
+### Summary
 
 * App version bumped: 0.2.0 → 2.0.0
 
