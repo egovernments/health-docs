@@ -119,7 +119,6 @@
         * [High Level Design](access/public-health-product-suite/campaign-management-dashboard/integrated-cross-campaign-dashboard-iccd/architecture/high-level-design.md)
         * [Low Level Design](access/public-health-product-suite/campaign-management-dashboard/integrated-cross-campaign-dashboard-iccd/architecture/low-level-design.md)
       * [Cross Campaign Dashboard User Manual](access/public-health-product-suite/campaign-management-dashboard/integrated-cross-campaign-dashboard-iccd/cross-campaign-dashboard-user-manual.md)
-  * [Product Roadmap](access/public-health-product-suite/product-roadmap.md)
 
 ## 🚀 Implementations
 
@@ -372,6 +371,7 @@
 ## 🔵 COMMUNITY
 
 * [Source Code](https://github.com/egovernments/health-campaign-services/)
+* [Product Roadmap](community/product-roadmap.md)
 * [Ask Our Bot](community/ask-our-bot.md)
 * [DIGIT Solutions Support](community/digit-solutions-support.md)
 * [FAQs](community/faqs.md)
